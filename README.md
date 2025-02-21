@@ -1,57 +1,53 @@
 ---
-source-git-commit: 0d0c3c1cb2d0af48352afbe2028966331f0bb8ae
+source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 5%
+source-wordcount: '403'
+ht-degree: 6%
 
 ---
-# Artigo do Contribute
+# Documentação do usuário do Adobe Commerce
 
-Agradecemos as contribuições de nossa comunidade, bem como de funcionários da Adobe de fora das equipes de documentação.
+Agradecemos as contribuições de nossa comunidade e de funcionários da Adobe de fora das equipes de documentação.
 
 ## Código de conduta do Adobe Open Source
 
 Este projeto adotou o [Código de conduta de código aberto da Adobe](code-of-conduct.md) ou o [Código de conduta do .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Para obter mais informações, consulte o artigo [Contribuição](contributing.md).
 
-## Como contribuir para o conteúdo do Adobe
+## Sobre suas contribuições para o conteúdo do Adobe
 
-**Se você não for um funcionário da Adobe**, poderá enviar uma contribuição externa da comunidade. As contribuições da comunidade são importadas para nossos sistemas internos e são editadas e mescladas no repositório público. O repositório público é então sincronizado com as alterações mais recentes e mesclado ao repositório privado.
+Consulte o [Guia do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
-**Se você for um funcionário de Adobe**, poderá contribuir diretamente para o [repositório de GitHub de Adobe](https://git.corp.adobe.com/AdobeDocs/) privado. Para obter detalhes, consulte o Guia de criação da Adobe Experience League para funcionários da Adobe.
-
-## Contribuidores externos
+A forma como você contribui depende de quem você é e do tipo de alterações com as quais deseja contribuir:
 
 ### Pequenas alterações
 
-Se você estiver contribuindo com uma pequena atualização:
+Caso esteja contribuindo com pequenas atualizações de livre e espontânea vontade, visite o artigo e clique no link **Editar** no artigo que vai para a origem GitHub do artigo. Em seguida, use a interface do usuário do GitHub para fazer suas atualizações. Consulte o [guia geral do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) para obter mais informações.
 
-1. Navegue até o tópico que deseja editar.
-1. Na mensagem &quot;Este conteúdo foi útil?&quot;, banner que aparece na parte inferior da janela do navegador clique em **Opções detalhadas de feedback**.
-1. Clique em **Sugerir uma edição** e envie uma solicitação de pull com suas alterações na interface do GitHub.
+Pequenas correções ou esclarecimentos que você envia para documentação e exemplos de código neste repositório são cobertos pelos termos de uso da Adobe.
 
-   Consulte o [guia geral do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) para obter mais informações.
+### Grandes alterações ou novos artigos de membros da comunidade
 
-As pequenas correções ou esclarecimentos que você envia para documentação e exemplos de código neste repositório são cobertos pelos termos de uso do Adobe.
+Se você fizer parte da comunidade da Adobe e quiser criar um novo artigo ou enviar grandes alterações, use a guia Problemas no repositório Git para enviar um problema e iniciar uma conversa com a equipe de documentação. Depois de concordar com um plano, você precisará trabalhar com um funcionário para ajudá-lo a inserir o novo conteúdo por meio de uma combinação de trabalho nos repositórios públicos e privados.
 
-### Grandes alterações ou novos tópicos da comunidade
+<!--
+If you submit a pull request with significant changes to documentation and code examples, you'll see a message in the pull request asking you to submit an online contribution license agreement (CLA). We need you to complete the online form before we can review your pull request.
+-->
 
-Se você fizer parte da comunidade do Adobe e quiser criar um novo tópico ou enviar grandes alterações, use a guia **Problemas** no repositório Git aplicável para enviar um problema e iniciar uma conversa com a equipe de documentação. Depois que um plano for acordado, você trabalhará com um escritor de Adobe para publicar suas revisões.
+### Grandes mudanças dos funcionários da Adobe
 
-**OBSERVAÇÃO:** se você enviar uma solicitação de pull com alterações significativas na documentação e exemplos de código, verá uma mensagem na solicitação de pull solicitando o envio de um contrato de licença de contribuição online (CLA). Precisamos que você preencha o formulário on-line antes que possamos revisar sua solicitação de pull.
+Se você for um autor técnico, gerente de programa ou desenvolvedor da equipe de produtos de uma solução da Adobe Experience Cloud e seu trabalho for contribuir com ou criar artigos técnicos, deverá usar o repositório privado em `https://git.corp.adobe.com/AdobeDocs`.
 
-### Ferramentas
+<!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
+
+## Ferramentas e configuração
 
 Os colaboradores da comunidade podem usar a interface do usuário do GitHub para a edição básica ou bifurcar o repositório para fazer grandes contribuições.
 
 Consulte o [Guia do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) para obter mais detalhes.
 
-## Colaboradores internos
+## Como usar marcação para formatar seu tópico
 
-Se você for um autor técnico, gerente de programa ou desenvolvedor da equipe de produtos de uma solução da Adobe Experience Cloud e seu trabalho for contribuir com ou criar artigos técnicos, use o [repositório privado](https://git.corp.adobe.com/AdobeDocs).
-
-## Formatar seu tópico
-
-Todos os artigos neste repositório usam GitHub-flavored Markdown. Se não estiver familiarizado com o Markdown, consulte:
+Todos os artigos neste repositório usam GitHub flavored markdown. Se não estiver familiarizado com a marcação, consulte:
 
 * [Noções básicas do Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 * [Cheatsheet de markdown para impressão](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)

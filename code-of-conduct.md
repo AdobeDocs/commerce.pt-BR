@@ -1,16 +1,15 @@
 ---
-source-git-commit: 0d0c3c1cb2d0af48352afbe2028966331f0bb8ae
+source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
-# Código de conduta do Adobe
+# Código de conduta da Adobe
 
 ## Nosso compromisso
 
-A fim de promover um ambiente aberto e acolhedor,
-contribuidores e administradores se comprometem a participar de nosso projeto e
+Com o intuito de promover um ambiente aberto e acolhedor, os contribuidores e administradores se comprometem a participar de nosso projeto e
 nossa comunidade uma experiência livre de assédio para todos, independentemente de idade, corpo
 dimensão, deficiência, etnia, identidade e expressão de gênero, nível de
 nacionalidade, aparência pessoal, raça, religião ou identidade sexual e
@@ -29,8 +28,7 @@ incluem:
 
 Exemplos de comportamento inaceitável por parte dos participantes incluem:
 
-* O uso de linguagem ou imagens sexualizadas e atenção sexual indesejada
-adiantamentos
+* O uso de linguagem ou imagens sexualizadas e atenção ou investidas sexuais indesejadas
 * Brincadeiras de mal gosto, insultos/comentários depreciativos e ataques pessoais ou políticos
 * Assédio público ou privado
 * Publicação de informações privadas de outras pessoas, como informações físicas ou eletrônicas
@@ -54,7 +52,7 @@ ameaçadora, ofensiva ou prejudicial.
 
 Este Código de conduta se aplica tanto em espaços de projetos quanto em espaços públicos
 quando um indivíduo representa o projeto ou sua comunidade. Exemplos de
-que representam um projeto ou uma comunidade, inclua o uso de um email oficial do projeto
+que representam um projeto ou uma comunidade, incluem o uso de um email oficial do projeto
 endereço, publicação através de uma conta oficial de redes sociais ou atuação
 representante em um evento online ou offline. A representação de um projeto
 definidos e esclarecidos pelos responsáveis pela manutenção do projeto.
@@ -63,7 +61,7 @@ definidos e esclarecidos pelos responsáveis pela manutenção do projeto.
 
 Instâncias de comportamento abusivo, assédio ou de outra forma inaceitável podem ser
 relatado ao entrar em contato com a equipe do projeto em Grp-opensourceoffice@adobe.com. Todos
-queixas serão analisadas e investigadas e darão origem a uma resposta que
+queixas são analisadas e investigadas e resultam numa resposta que
 for considerada necessária e adequada às circunstâncias. A equipe do projeto é
 obrigado a manter a confidencialidade em relação ao relator de um incidente.
 Mais detalhes sobre políticas de aplicação específicas podem ser publicados separadamente.
@@ -74,5 +72,5 @@ membros da liderança do projeto.
 
 ## Atribuição
 
-Este Código de conduta foi adaptado a partir do [Contrato do colaborador](https://contributor-covenant.org), versão 1.4,
-disponível em [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
+Este Código de conduta foi adaptado a partir do [Contrato do colaborador](https://www.contributor-covenant.org/), versão 1.4,
+disponível em [https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/](https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/).

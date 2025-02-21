@@ -1,0 +1,162 @@
+---
+title: Documentação de serviços
+description: Navegue pela documentação do produto Adobe Commerce para obter os serviços SaaS da Commerce
+seo-title: Services for Adobe Commerce
+seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
+breadcrumb-title: Documentação
+recommendations: noCatalog
+source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+workflow-type: tm+mt
+source-wordcount: '334'
+ht-degree: 0%
+
+---
+
+# Guias de serviços da Adobe Commerce
+
+A Adobe fornece uma coleção de serviços da Commerce, serviços de integração e ferramentas de dados para ajudar os comerciantes a dar suporte aos principais componentes de seus negócios.
+
+>[!NOTE]
+>
+>A Adobe recomenda atualizar para a versão mais recente compatível de todos os serviços da Commerce. Consulte as [notas de versão](release-notes-all.md).
+
+## Serviços da Commerce
+
+<table style="table-layout:fixed">
+<tr style="border: 0;">
+   <td valign="top">
+      <a href="../live-search//overview.md">
+      <img alt="Pesquisar" src="../assets/icons/Magnify.svg" width="40">
+      </a>
+      <div>
+         <a href="../live-search//overview.md">
+         <strong>[!DNL Live Search]</strong>
+         </a>
+      </div>
+      <p>
+         <em>Implemente esta ferramenta de pesquisa habilitada por IA que fornece resultados mais inteligentes, rápidos e relevantes para compradores B2C.</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../product-recommendations/overview.md">
+      <img alt="ThumbsUp" src="../assets/icons/ThumbUp.svg" width="40">
+      </a>
+      <div>
+         <a href="../product-recommendations/overview.md">
+         <strong>Recomendações de produto</strong>
+         </a>
+      </div>
+      <p>
+         <em>Adicione recomendações alimentadas por IA com base no comportamento do comprador, nas tendências populares, na similaridade do produto e muito mais.</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../catalog-service/overview.md">
+      <img alt="Dados do catálogo para serviços conectados" src="../assets/icons/DataBook.svg" width="40">
+      </a>
+      <div>
+         <a href="../catalog-service/overview.md">
+         <strong>Serviço de catálogo</strong>
+         </a>
+      </div>
+      <p>
+         <em>Ofereça aos seus clientes uma experiência de produto otimizada enquanto aumenta o desempenho, melhora a escalabilidade e aumenta as conversões.</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../payment-services/guide-overview.md">
+      <img alt="Pagamentos com cartão de crédito" src="../assets/icons/CreditCard.svg" width="40">
+      </a>
+      <div>
+         <a href="../payment-services/guide-overview.md">
+         <strong>Serviços de pagamento</strong>
+         </a>
+      </div>
+      <p>
+         <em>Impulsione a satisfação do cliente com diversos métodos de pagamento, incluindo prestações sem juros e exibições simplificadas de processamento de pagamento, ordens e faturas.</em>
+      </p>
+   </td>
+</tr>
+</table>
+
+## Serviços de integração
+
+<table style="table-layout:fixed">
+<tr style="border: 0;">
+   <td valign="top">
+      <a href="../data-connection/overview.md">
+      <img alt="Transferir dados para a plataforma" src="../assets/icons/TransferToPlatform.svg" width="40">
+      </a>
+      <div>
+         <a href="../data-connection/overview.md">
+         <strong>[!DNL Data Connection]</strong>
+         </a>
+      </div>
+      <p>
+         <em>Aproveite a conexão entre o Adobe Commerce e a borda do Adobe Experience Platform para usar dados do Commerce para outros produtos da Adobe Experience Cloud, como o Adobe Analytics e o Adobe Target.</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../landing/saas.md">
+      <img alt="ThumbsUp" src="../assets/icons/DataSetting.svg" width="40">
+      </a>
+      <div>
+          <a href="../landing/saas.md">
+         <strong>Commerce Services Connector</strong>
+         </a>
+      </div>
+      <p>
+         <em>Configure a autenticação para habilitar a comunicação segura entre o Adobe Commerce e os serviços conectados. Para cada ambiente, especifique a ID de espaço de dados para o armazenamento de dados dos serviços Commerce.</em>
+      </p>
+   </td>
+</tr>
+</table>
+
+## Ferramentas de dados
+
+<table style="table-layout:fixed">
+<tr style="border: 0;">
+   <td valign="top">
+       <a href="../data-export/overview.md">
+      <img alt="Gerenciamento de feed de exportação de dados SaaS" src="../assets/icons/FeedManagement.svg" width="40">
+      </a>
+      <div>
+         <a href="../data-export/overview.md">
+         <strong>[!DNL SaaS Data Export]</strong>
+         </a>
+      </div>
+      <p>
+         <em>Sincronizar automaticamente dados de catálogo, pedido e inventário da Adobe Commerce com os serviços conectados. Use comandos da CLI do Commerce ou o <strong>Painel de Gerenciamento de Dados</strong> para gerenciar o processamento de sincronização.</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="../price-index/price-indexing.md">
+      <img alt="Feed de preços do produto" src="../assets/icons/Feed.svg" width="40">
+      </a>
+      <div>
+          <a href="../price-index/price-indexing.md">
+         <strong>Indexador de preços SaaS</strong>
+         </a>
+      </div>
+      <p>
+         <em>Otimize o desempenho do site descarregando tarefas que consomem muitos recursos, como indexação e cálculo de preços, do aplicativo Commerce para a infraestrutura em nuvem da Adobe.</em>
+      </p>
+   </td>
+   <td valign="top">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+      <img alt="Monitorar sincronização de dados" src="../assets/icons/Monitoring.svg" width="40">
+      </a>
+      <div>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+         <strong>Painel de gerenciamento de dados</strong>
+         </a>
+      </div>
+      <p>
+         <em>Rastreie facilmente a sincronização de dados do Commerce e acione a ressincronização a partir de um painel unificado no Administrador do Commerce. Obtenha insights valiosos sobre a disponibilidade de dados para exibição oportuna a seus compradores.</em>
+      </p>
+   </td>
+</table>
+
+>[!NOTE]
+>
+>O Painel de gerenciamento de dados está disponível sem custo adicional para os comerciantes do Commerce que usam as Recomendações de produto v6.0.0, o Live Search v4.1.0 ou o Serviço de catálogo v1.17 com uma licença ativa. Os comerciantes que usam versões anteriores do serviço podem usar a [Sincronização de Catálogo](../landing/catalog-sync.md) para gerenciar e rastrear a sincronização de dados.
