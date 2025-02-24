@@ -2,9 +2,9 @@
 title: Introdução ao  [!DNL Live Search]
 description: Saiba mais sobre os requisitos de sistema e as etapas de instalação do  [!DNL Live Search] na Adobe Commerce.
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: 039f04814c4e0b0c31f160446c67b2689f687818
 workflow-type: tm+mt
-source-wordcount: '3100'
+source-wordcount: '3122'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,10 @@ Em um nível superior, a integração do [!DNL Live Search] exige que você:
 >[!NOTE]
 >
 >A partir de [!DNL Live Search] 3.0.2, a extensão [!DNL Catalog Service] é agrupada na instalação [!DNL Live Search].
+
+>[!IMPORTANT]
+>
+>A partir de [!DNL Live Search] 4.0.0, o Adaptador de Pesquisa será descontinuado. O Search Adapter será atualizado somente para resolver problemas de segurança.
 
 1. Confirme se os [trabalhos do cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) e os [indexadores](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) estão em execução.
 
