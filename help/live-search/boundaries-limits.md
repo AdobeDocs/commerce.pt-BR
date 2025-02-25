@@ -2,9 +2,10 @@
 title: Limites e limites
 description: Saiba mais sobre os limites do  [!DNL Live Search]  para garantir que ele atenda às necessidades da sua empresa.
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
+source-git-commit: 81bde302463a70e41318b494565694929703dff9
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -64,7 +65,6 @@ Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Revise o
 ## Sinônimos
 
 - [!DNL Live Search] pode gerenciar até 200 [sinônimos](synonyms.md) por exibição de armazenamento.
-- Sinônimos de várias palavras podem nem sempre funcionar como esperado. Certifique-se de testar esses sinônimos no ambiente de preparo antes de usá-los na produção, pois eles podem ter um efeito adverso na relevância.
 
 ## Merchandising de categoria
 

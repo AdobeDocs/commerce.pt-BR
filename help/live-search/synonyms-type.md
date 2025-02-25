@@ -1,9 +1,10 @@
 ---
 title: Tipos de sinônimos
 description: Sinônimos unidirecionais e bidirecionais [!DNL Live Search]  expandem a definição de palavras-chave.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: f5522428-c7cc-4627-a09b-d9148918c127
+source-git-commit: 81bde302463a70e41318b494565694929703dff9
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
@@ -38,10 +39,6 @@ a, an, and, são, como, at, be, mas, por, for, in, into, is, it, no, not, of, on
 
 As palavras de interrupção não tornam os sinônimos mais significativos, mas aumentam a quantidade de dados que devem ser processados.
 
-### Usar palavras isoladas
-
-Se um sinônimo contiver várias palavras, o espaço em branco entre as palavras faz com que elas sejam tratadas como sinônimos separados. Por exemplo, se você definir &quot;peça de tempo&quot; como um sinônimo para &quot;relógio&quot;, as palavras &quot;hora&quot; e &quot;peça&quot; serão tratadas como sinônimos separados.
-
 ### Uso do singular e do plural
 
 Não é necessário definir as formas singular e plural de uma palavra como sinônimo. Se você tiver uma mistura de termos no singular e no plural no catálogo, a Pesquisa encontrará o conjunto correto de produtos. Por exemplo, se você usar a palavra &quot;pant&quot; no nome do produto e um comprador procurar &quot;pants&quot;, o conjunto correto de produtos será retornado e a palavra singular &quot;pant&quot; será oferecida como uma sugestão. O termo singular &quot;pant&quot; é frequentemente usado na indústria da moda e, às vezes, no varejo, embora a forma plural &quot;pants&quot; seja mais comumente usada em algumas áreas. (A palavra &quot;calça&quot; tecnicamente se refere à parte de uma peça de vestuário que cobre uma perna, por isso você precisa de um &quot;par de calças&quot; para cobrir ambas as pernas.)
@@ -49,3 +46,13 @@ Não é necessário definir as formas singular e plural de uma palavra como sin�
 ### Consistência
 
 Seja consistente com a forma como a terminologia é usada em seu catálogo. Lembre-se de que pode haver diferenças regionais no uso e, às vezes, diferenças em um setor.
+
+## Comportamento de sinônimo de várias palavras
+
+Para sinônimos de várias palavras, a Commerce considera o sinônimo como uma frase. Por exemplo, se você criar um sinônimo bidirecional **mesa de jantar** ![Seletor bidirecional](assets/btn-two-way.png) **mesa de cozinha** ![Seletor bidirecional](assets/btn-two-way.png) **mesa de jantar**, o Commerce pesquisará em todos os campos definidos como pesquisáveis para a ocorrência de **mesa de sala de jantar** ou **mesa de cozinha** ou **mesa de jantar**.
+
+Se nenhum sinônimo for criado e um comprador procurar por **tabela de cozinha**, o Commerce procurará os termos em qualquer lugar nos campos pesquisáveis, mesmo em campos diferentes, por exemplo **tabela** no campo de nome e **cozinha** na palavra-chave meta.
+
+Depois de criar um sinônimo, o comportamento de pesquisa muda para procurar a frase exata **tabela de cozinha**. Isso pode reduzir o número de resultados, pois somente os produtos com a frase exata serão exibidos.
+
+Se quiser que os termos sejam pesquisados separadamente como antes, você pode [criar um tíquete de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide). Se houver demanda suficiente, a Commerce considerará adicionar essa funcionalidade ao produto em uma versão futura.

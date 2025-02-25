@@ -2,9 +2,10 @@
 title: Notas de versão do [!DNL Live Search]
 description: As informações da versão mais recente do  [!DNL Live Search] Adobe Commerce.
 feature: Services, Search, Release Notes
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
+source-git-commit: 81bde302463a70e41318b494565694929703dff9
 workflow-type: tm+mt
-source-wordcount: '2129'
+source-wordcount: '2170'
 ht-degree: 0%
 
 ---
@@ -22,6 +23,10 @@ As atualizações incluem:
 ## Atualizações do serviço hospedado
 
 Essas notas descrevem atualizações que foram publicadas fora de uma versão com controle de versão ou melhorias no serviço hospedado.
+
+_20 de fevereiro de 2025_
+
+![Novo](../assets/new.svg) O Commerce dá suporte a sinônimos de várias palavras. [Saiba mais](synonyms-type.md#multi-word-synonym-behavior). O suporte para sinônimos de várias palavras só está disponível após a data de lançamento de 20 de fevereiro. Qualquer sinônimo de várias palavras existente requer uma reindexação completa para funcionar, que você pode solicitar ao [criar um tíquete de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
 
 _31 de janeiro de 2025_
 
