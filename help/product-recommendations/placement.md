@@ -1,9 +1,10 @@
 ---
 title: Posicionamento e rótulos
 description: Saiba onde você pode fazer recomendações em várias páginas do site e obtenha sugestões para rótulos usados com frequência para cada tipo de recomendação.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 0576add8-50dd-4aac-91f5-38b7d85b751f
+source-git-commit: f67010c80c3dedcf3c431cb7dc6e4e7b0cdbde09
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
@@ -51,8 +52,8 @@ _Recomendação na parte superior dos resultados da pesquisa_
 
 A tabela a seguir lista as páginas de vitrine onde você pode colocar recomendações e os tipos de recomendação permitidos em cada página.
 
-| Página | Recomendações de posicionamento |
-|---|---|
+| Página | Recomendações de posicionamento | Tipos |
+|---|---|---|
 | Home page | Na parte superior do conteúdo principal<br>Na parte inferior do conteúdo principal (padrão) | Mais visualizados<br>Mais comprados<br>Mais adicionados ao carrinho<br>Recomendado para você<br>Tendências |
 | Categoria | Na parte superior do conteúdo principal<br>Na parte inferior do conteúdo principal (padrão) | Mais visualizados<br>Mais comprados<br>Mais adicionados ao carrinho<br>Recomendado para você<br>Tendências |
 | Detalhes do produto | Na parte inferior do conteúdo principal (padrão) | Mais visualizados<br>Mais comprados<br>Mais adicionados ao carrinho<br>Visualizaram isto, visualizaram aquilo<br>Visualizaram isto, compraram aquilo<br>Compraram isto, compraram aquilo<br>Mais parecidos com isto<br>Tendências<br>Similaridade visual |
