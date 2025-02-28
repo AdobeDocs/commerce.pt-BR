@@ -2,7 +2,8 @@
 title: Conectar sua instância
 description: Conecte sua instância do Commerce usando uma chave de API e uma chave privada e especifique o espaço de dados na configuração.
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: f2b3be02-e9dd-4bca-b9e4-c80a56bf8691
+source-git-commit: 16bd0e7ed1e8982e1571e2593115824a2004b7dc
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 0%
@@ -12,6 +13,8 @@ ht-degree: 0%
 # Conectar sua instância
 
 O [!DNL Payment Services] é desenvolvido pelos Serviços da Commerce e implantado como SaaS (software como um serviço). Conecte sua instância do Commerce usando uma chave de API e uma chave privada e especifique o espaço de dados na configuração usando o [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce/user-guides/saas.html). **Você configurou esta conexão apenas uma vez.**
+
+>[!VIDEO](https://video.tv.adobe.com/v/3447835)
 
 >[!INFO]
 >

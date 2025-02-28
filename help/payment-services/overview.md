@@ -4,9 +4,10 @@ description: Saiba como instalar e usar o [!DNL Payment Services] como uma solu�
 role: User
 level: Intermediate
 feature: Payments, Checkout
-source-git-commit: 95d86654ad185b2c37a59777a29f6de1b0091ad7
+exl-id: 1d41f86a-f874-48df-9173-9cf9f07e6d79
+source-git-commit: 62b708f79ac011ef33b37f67384df7c94571ced2
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
@@ -51,6 +52,12 @@ Os Serviços de Pagamento fornecem [recursos de Finalização Expressa](../payme
 
 Consulte as páginas [Política de ciclo de vida](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) e [[!DNL Payment Services] notas de versão](release-notes.md) para obter mais informações sobre versões e lançamentos específicos.
 
+### Qual é a opção [!DNL Payment Services] certa para você?
+
+>[!VIDEO](https://video.tv.adobe.com/v/3447811)
+
+Consulte [Conectar](connect.md) para obter mais informações sobre como configurar sua extensão do [!DNL Payment Services].
+
 ### Cartões de crédito e moedas aceitos
 
 [!DNL Payment Services] aceita as moedas dos países [nos quais está disponível](#availability). Consulte [Configuração de moeda](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) para obter mais informações.
@@ -71,9 +78,3 @@ A integração e a configuração do [!DNL Payment Services] foram concluídas e
 1. Ative [!DNL Payment Services] no modo Online para iniciar o processamento de pagamentos online.
 
 Para obter as instruções completas e iniciar o processo de integração, consulte [Integração [!DNL Payment Services]](onboard.md).
-
-## Demonstração do [!DNL Payment Services]
-
-Assista a este vídeo para saber mais sobre [!DNL Payment Services]:
-
->[!VIDEO](https://video.tv.adobe.com/v/343990?quality=12)
