@@ -2,9 +2,10 @@
 title: Revisar logs e solucionar problemas
 description: Saiba como solucionar erros [!DNL data export] usando os logs de exportação de dados e exportação de saas.
 feature: Services
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: d022756f-6e75-4c2a-9601-31958698dc43
+source-git-commit: 22c74c12ddfccdb4e6c4e02c3a15557e1020d5ef
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---
@@ -36,8 +37,8 @@ Cada registro de log tem a seguinte estrutura.
    "feed": "<feed name>",
    "operation": "<executed operation>",
    "status": "<status of operation>",
-   "elapsed": "<time elaspsed from script run>",
-   "pid": "<proccess id who executed `operation`>",
+   "elapsed": "<time elapsed from script run>",
+   "pid": "<process id that executed `operation`>",
    "caller": "<who called this `operation`>"
 } [] []
 ```
@@ -50,10 +51,10 @@ A tabela a seguir descreve os tipos de operação que podem ser registrados nos 
 
 | Operação | Descrição | Exemplo do chamador |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| sincronização completa | A sincronização completa coleta e envia todos os dados para o SaaS de um determinado feed. | `bin/magento saas:resync --feed=products` |
-| reindexação parcial | A sincronização parcial coleta e envia dados para o SaaS somente para entidades atualizadas em um determinado feed. Este log só estará presente se existirem entidades atualizadas. | `bin/magento cron:run --group=index` |
-| tentar novamente os itens com falha | Reenvia itens de um determinado feed para o SaaS se a operação de sincronização anterior falhou devido a um erro de aplicativo ou servidor do Commerce. Este log só estará presente se houver itens com falha. | `bin/magento cron:run --group=saas_data_exporter` (qualquer grupo cron &quot;*_data_exporter&quot;) |
-| sincronização completa (herdada) | Sincronização completa para um determinado feed no modo de exportação herdado. | `bin/magento saas:resync --feed=categories` |
+| sincronização completa | Coleta e envia todos os dados para o SaaS de um determinado feed. | `bin/magento saas:resync --feed=products` |
+| reindexação parcial | Coleta e envia dados para o SaaS somente para entidades atualizadas em um determinado feed. Este log só estará presente se existirem entidades atualizadas. | `bin/magento cron:run --group=index` |
+| tentar novamente os itens com falha | Reenviar itens de um determinado feed para o SaaS se a operação de sincronização anterior falhar devido a um erro de aplicativo ou servidor do Commerce. Este log só estará presente se houver itens com falha. | `bin/magento cron:run --group=saas_data_exporter` (qualquer grupo cron &quot;*_data_exporter&quot;) |
+| sincronização completa (herdada) | Coleta e envia todos os dados para o SaaS de um determinado feed no modo de exportação herdado. | `bin/magento saas:resync --feed=categories` |
 | reindexação parcial (herdado) | Envia entidades atualizadas para o SaaS para um determinado feed no modo de exportação herdado. Este log só estará presente se existirem entidades atualizadas. | `bin/magento cron:run --group=index` |
 | sincronização parcial (herdada) | Envia entidades atualizadas para o SaaS para um determinado feed no modo de exportação herdado. Este log só estará presente se existirem entidades atualizadas. | `bin/magento cron:run --group=saas_data_exporter` (qualquer grupo cron &quot;*_data_exporter&quot;) |
 
@@ -123,12 +124,12 @@ Esse exemplo adiciona uma regra que permite consultar logs do New Relic por tipo
 
 ## Solução de problemas
 
-Se os dados estiverem ausentes ou incorretos nos Serviços do Comércio, verifique os logs para ver se ocorreu um problema durante a sincronização da instância do Adobe Commerce com a plataforma Commerce Service. Se necessário, use o registro estendido para adicionar mais informações aos registros para solucionar problemas.
+Se os dados estiverem ausentes ou incorretos nos serviços da Commerce, verifique nos logs se há mensagens sobre erros que ocorreram durante a sincronização do Adobe Commerce com a plataforma dos serviços da Commerce. Se necessário, use o registro estendido para adicionar mais informações aos registros para solucionar problemas.
 
-- commerce-data-export-errors.log - se ocorreu um erro durante a fase de coleta
-- saas-export-errors.log - se um erro ocorreu durante a fase de transmissão
+- O log de erros de Exportação de Dados (`commerce-data-export-errors.log`) captura erros que ocorrem durante a fase de coleta.
+- O log de erros de exportação SaaS (`saas-export-errors.log`) captura os erros que ocorrem durante a fase de transmissão.
 
-Se você vir erros não relacionados à configuração ou a extensões de terceiros, envie um [tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) com o máximo de informações possível.
+Se você vir erros não relacionados à configuração ou a extensões de terceiros, envie um [tíquete de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) com o máximo de informações possível.
 
 ### Resolver problemas de sincronização do catálogo {#resolvesync}
 
@@ -143,26 +144,19 @@ Quando você aciona uma ressincronização de dados, pode levar até uma hora pa
 
 #### A sincronização não está em execução
 
-Se a sincronização não estiver sendo executada de acordo com um agendamento ou se nada estiver sincronizado, consulte este artigo da [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html).
+Se a sincronização não estiver sendo executada de acordo com um agendamento ou se nada estiver sincronizado, consulte este artigo da [KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce).
 
 #### Falha na sincronização
 
-Se a sincronização do catálogo tiver um status de **Falha**, envie um [tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+Se a sincronização do catálogo tiver um status de **Falha**, envie um [tíquete de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 ## Logon estendido
 
-Para obter informações de log adicionais, você pode usar variáveis de ambiente para estender logs com dados adicionais para rastreamento e solução de problemas.
-
-Há dois arquivos de log no diretório `var/log/`:
-
-- commerce-data-export-errors.log - se ocorreu um erro durante a fase de coleta
-- saas-export-errors.log - se um erro ocorreu durante a fase de transmissão
-
-Você pode usar variáveis de ambiente para estender logs com dados adicionais para rastreamento e solução de problemas.
+Use variáveis de ambiente para estender logs com dados adicionais para rastreamento e solução de problemas. Adicione a variável de ambiente à linha de comando quando executar comandos da CLI de exportação de dados, conforme mostrado nos exemplos a seguir.
 
 ### Verificar a carga do feed
 
-Inclua a carga do feed no log de exportação do SaaS, adicionando a variável de ambiente `EXPORTER_EXTENDED_LOG=1` quando sincronizar novamente o feed.
+Inclua a carga do feed no log de exportação do SaaS adicionando a variável de ambiente `EXPORTER_EXTENDED_LOG=1` ao sincronizar novamente o feed.
 
 ```shell script
 EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products
