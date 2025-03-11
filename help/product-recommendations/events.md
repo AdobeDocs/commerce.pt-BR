@@ -2,7 +2,8 @@
 title: Coletar dados
 description: Saiba como os eventos coletam dados para  [!DNL Product Recommendations].
 feature: Services, Recommendations, Eventing
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
+source-git-commit: 94d2a9911ab10d164d75779d1f310e5bdf2aea74
 workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 0%
@@ -118,14 +119,14 @@ Esta tabela descreve os eventos usados por cada tipo de recomendação.
 | Tipo de recomendação | Eventos | Página |
 | --- | --- | --- |
 | Mais visualizados | `page-view`<br>`product-view` | Página de detalhes do produto |
-| Mais comprados | `page-view`<br>`complete-checkout` | Carrinho/Check-out |
+| Mais comprados | `page-view`<br>`place-order` | Carrinho/Check-out |
 | Mais adicionados ao carrinho | `page-view`<br>`add-to-cart` | Página de detalhes do produto<br>Página de listagem do produto<br>Carrinho<br>Lista de desejos |
 | Visualizou isto, visualizou aquilo | `page-view`<br>`product-view` | Página de detalhes do produto |
 | Visualizou isto, comprou aquilo | Registros de produto | `page-view`<br>`product-view` | Página de detalhes do produto<br>Carrinho/Check-out |
 | Comprei isto, comprei aquilo | Registros de produto | `page-view`<br>`product-view` | Página de detalhes do produto |
 | Tendências | `page-view`<br>`product-view` | Página de detalhes do produto |
 | Conversão: exibir para compra | Registros de produto | `page-view`<br>`product-view` | Página de detalhes do produto |
-| Conversão: exibir para compra | Registros de produto | `page-view`<br>`complete-checkout` | Carrinho/Check-out |
+| Conversão: exibir para compra | Registros de produto | `page-view`<br>`place-order` | Carrinho/Check-out |
 | Conversão: exibir para carrinho | Registros de produto | `page-view`<br>`product-view` | Página de detalhes do produto |
 | Conversão: exibir para carrinho | Registros de produto | `page-view`<br>`add-to-cart` | Página de detalhes do produto<br>Página de listagem do produto<br>Carrinho<br>Lista de desejos |
 
