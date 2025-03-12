@@ -2,13 +2,13 @@
 title: Notas de versão do [!DNL Payment Services]
 description: Revise as notas de versão para obter informações sobre todas as  [!DNL Payment Services]  versões.
 feature: Payments, Release Notes
-source-git-commit: 313d69a7f791153fd56a1492f9012776cea1f3df
+exl-id: 1d24ae27-4a57-4482-a36b-22bbcaaa1b6f
+source-git-commit: 0ad77dca302d467ad5f037f0cd567e18bd148af0
 workflow-type: tm+mt
-source-wordcount: '3392'
+source-wordcount: '3644'
 ht-degree: 0%
 
 ---
-
 
 # Notas de versão
 
@@ -89,6 +89,33 @@ As ![Novas](../assets/new.svg)<!-- Issue PAY-2854 --> melhorias na experiência 
 ![Novo](../assets/new.svg)<!-- Issue PAY-2761 --> Agora é possível personalizar os dados exibidos no [Relatório de status do pagamento da ordem](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/order-payment-status.html#show-and-hide-columns) e no [Relatório de pagamentos](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/payouts.html#show-and-hide-columns) exibindo ou ocultando colunas usando o controle Configurações de coluna.
 
 +++
+
+## v2.11.0
+
+_13 de março de 2025_
+
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+
+
+![Novo](../assets/new.svg)<!-- PAY-5938 --> Agora, o [!DNL Payment Services] permite que os comerciantes gerenciem configurações de pagamento para maximizar a flexibilidade em seus negócios. Esta versão melhora a capacidade de anexar [várias contas do PayPal](https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/settings#use-multiple-paypal-accounts) para as regiões e marcas que um comerciante aceita. Nossa equipe de vendas pode fornecer um link de integração para configurar os escopos de visualização do site e da loja.
+
+![Novo](../assets/new.svg)<!-- PAY-5968 --> Agora, o [!DNL Payment Services] atualiza a configuração de Administrador com os valores de **ID do Comerciante do PayPal** e **Status do Comerciante do PayPal**. Esses valores fornecem aos comerciantes maior visibilidade sobre o status da conta do PayPal.
+
+![Corrigido o problema](../assets/fix.svg)<!-- PAY-5816 --> Restaurou a funcionalidade de ordem normal em [!DNL Payment Services] ao resolver um problema que estava causando erros em todos os posicionamentos de pedidos com a versão v2.9.0.
+
+![Correção de um problema](../assets/fix.svg)<!-- PAY-5825 --> em que o minicarrinho Apple Pay usava uma URL de totais estimados incorreta para clientes conectados. Agora, [!DNL Payment Services] garante cálculos totais precisos.
+
+![Correção de um problema](../assets/fix.svg)<!-- PAY-5826 --> Melhoria na confiabilidade do gerenciamento de pedidos ao resolver um problema que causava um erro HTTP 500 ao alterar o status da cotação para `inactive`.
+
+![Problema corrigido](../assets/fix.svg)<!-- PAY-5849 --> Corrigido um problema no qual `LineItemProvider` gerava exceções para quantidades decimais abaixo de 1. Agora, o [!DNL Payment Services] oferece melhor suporte para quantidades fracionárias.
+
+![Correção de um problema](../assets/fix.svg)<!-- PAY-5868 --> Correção de um erro de valor de cartão-presente durante o check-out. [!DNL Payment Services] agora garante valores precisos durante um processo de finalização.
+
+![Correção de um problema](../assets/fix.svg)<!-- PAY-5911 --> Resolução de erros durante a criação de remessas para pedidos feitos com métodos de pagamento online que não[!DNL Payment Services], aumentando a confiabilidade geral.
+
+![Problema corrigido](../assets/fix.svg)<!-- PAY-5954 --> O [!DNL Payment Services] agora oferece uma experiência de finalização mais suave ao resolver um problema em que o Apple Pay não conseguiu fazer um pedido quando um cartão de crédito diferente foi selecionado na carteira.
+
+![Problema corrigido](../assets/fix.svg)<!-- PAY-5971 --> O [!DNL Payment Services] não redireciona mais os clientes para a página de revisão do pedido quando o Apple Pay falha, evitando interrupções desnecessárias do check-out.
 
 ## v2.10.3
 
