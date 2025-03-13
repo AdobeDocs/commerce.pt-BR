@@ -4,9 +4,10 @@ description: Após a instalação, você pode configurar o [!DNL Payment Service
 role: Admin, Developer
 level: Intermediate
 feature: Payments, Checkout, Configuration, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: bb59bd49-6ecd-4ef1-a6b9-e1e93db04bf6
+source-git-commit: 24622b8a20b8cd95e13a68df6e0929206ffbb06b
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -88,6 +89,32 @@ bin/magento cron:run --group payment_services_data_export
 ```
 
 Para saber mais sobre indexação e indexadores, consulte o tópico [Gerenciar os indexadores](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) na documentação do desenvolvedor.
+
+## Configurar escopo via CLI
+
+[!DNL Payment Services] permite que comerciantes usem [várias contas do PayPal](settings.md#use-multiple-paypal-accounts). Agora, você pode alterar os escopos dessas contas via CLI.
+
+Para definir o escopo para o nível `website`, execute:
+
+```bash
+bin/magento config:set payment/payment_services/mba_scoping_level website
+```
+
+Para definir o escopo para o nível `store`, use:
+
+```bash
+bin/magento config:set payment/payment_services/mba_scoping_level store
+```
+
+>[!TIP]
+>
+> Se você quiser alterar o escopo para o nível de armazenamento, contate o representante de vendas [!DNL Payment Services].
+
+Ao alterar o escopo, limpe o cache para mostrar as alterações:
+
+```bash
+bin/magento cache:clean:payment_services_merchant_scopes
+```
 
 ## Configurar processamento L2/L3
 
