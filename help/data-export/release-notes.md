@@ -4,9 +4,9 @@ description: As informações da versão mais recente do  [!DNL Data Export Exte
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: e30210e6aac469929e4767e3747bd819bc10b9f4
+source-git-commit: 14231826dba842edb908005ea43b1893a324c68f
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '988'
 ht-degree: 0%
 
 ---
@@ -30,8 +30,13 @@ As atualizações incluem:
 
 ## Versão 103.3.21
 
-![Correção](../assets/new.svg) Adicionada a funcionalidade para sincronizar parcialmente os feeds do `product`, `productOverrides` e `productAttributes` com base em uma lista especificada de SKUs de produtos. Use a nova funcionalidade adicionando a opção `--by-ids` ao comando da CLI `bin/magento saas:resync --feed=<FEED_NAME>`. <!--MDEE-606-->
-![Correção](../assets/fix.svg) reduziu possíveis problemas de compatibilidade com o PHP 8.4 ao solucionar funcionalidades obsoletas. <!--MDEE-1002-->
+![Correção](../assets/new.svg) Adicionada a funcionalidade para sincronizar parcialmente os feeds do `products`, `productOverrides` e `productAttributes` com base em uma lista especificada de SKUs de produtos. Use a nova funcionalidade adicionando a opção `--by-ids` ao comando da CLI resync: <!--MDEE-606-->
+
+```shell
+bin/magento saas:resync --feed=<FEED_NAME> --by-ids='<SKU1>,<SKU2>,<SKU3>
+```
+
+![Correção](../assets/fix.svg) Reduziu possíveis problemas de compatibilidade com o PHP 8.4 ao solucionar funcionalidades obsoletas. <!--MDEE-1002-->
 
 ## Versão 103.3.20
 
