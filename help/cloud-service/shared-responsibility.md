@@ -1,18 +1,20 @@
 ---
 title: Responsabilidade compartilhada
-description: Saiba mais sobre as responsabilidades de segurança de cada parte envolvida em seu projeto do Adobe Commerce as a Cloud Service.
+description: Saiba mais sobre as responsabilidades de segurança de cada parte envolvida em seu projeto [!DNL Adobe Commerce as a Cloud Service] do.
 role: Admin, Architect, Leader
-source-git-commit: 19c49b2b9d630898353addd778e062d3208505c1
+exl-id: 424fe5cd-5d54-425d-97ce-024476d18dde
+source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
 
-
 # Segurança de responsabilidade compartilhada e modelo operacional
 
-O Adobe Commerce as a Cloud Service é um serviço sob demanda que depende de um modelo operacional e de segurança de responsabilidade compartilhada. Essas responsabilidades são compartilhadas entre a Adobe e os clientes. Cada parte tem uma responsabilidade distinta pela segurança e operação do aplicativo Adobe Commerce.
+{{accs-early-access}}
+
+[!DNL Adobe Commerce as a Cloud Service] é um serviço sob demanda que depende de um modelo operacional e de segurança de responsabilidade compartilhada. Essas responsabilidades são compartilhadas entre a Adobe e os clientes. Cada parte tem uma responsabilidade distinta pela segurança e operação do aplicativo Adobe Commerce.
 
 >[!BEGINSHADEBOX]
 
@@ -33,8 +35,8 @@ As tabelas de resumo a seguir usam o modelo RACI para mostrar as responsabilidad
 | Definição de regras WAF de CDN de back-end | RA | |
 | Implantação de regras do WAF da plataforma de back-end | RA | |
 | Implantação de regras WAF de CDN de back-end | RA | |
-| Correção de bugs principais no Adobe Commerce as a Cloud Service | RA | I |
-| Lançamento de patches de infraestrutura do Adobe Commerce as a Cloud Service | RA | |
+| Correção de bugs principais em [!DNL Adobe Commerce as a Cloud Service] | RA | I |
+| Liberando patches de infraestrutura do [!DNL Adobe Commerce as a Cloud Service] | RA | |
 | Dimensionamento (infraestrutura) | RA | |
 | Dimensionamento (aplicativo principal) | RA | |
 | Integração de aplicativos externos | | RA |

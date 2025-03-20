@@ -1,16 +1,18 @@
 ---
 title: Configurar a loja
-description: Saiba como executar a ferramenta de andaime para configurar a vitrine do Adobe Commerce as a Cloud Service.
+description: Saiba como executar a ferramenta de andaime para configurar sua vitrine  [!DNL Adobe Commerce as a Cloud Service] .
 role: Developer
-source-git-commit: 19c49b2b9d630898353addd778e062d3208505c1
+exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
+source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
 
-
 # Configurar a loja
+
+{{accs-early-access}}
 
 As etapas a seguir demonstram como configurar rapidamente sua Adobe Commerce Storefront habilitada pela Edge Delivery usando o comando `aio commerce init`. Esse processo configura o seguinte:
 
