@@ -2,9 +2,10 @@
 title: Notas de versão
 description: As informações da versão mais recente da extensão  [!DNL Data Connection]  do Adobe Commerce.
 feature: Personalization, Integration, Release Notes
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: f3b92632-947d-40cd-89b7-24ed0680be51
+source-git-commit: e92f6c2b748683fbe1a358680b03eefb27fe0093
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1118'
 ht-degree: 1%
 
 ---
@@ -76,6 +77,14 @@ _12 de outubro de 2022_
 ![Novo](../assets/new.svg) - Suporte adicionado para uma [vitrine do AEM](overview.md#aem-support).
 
 +++
+
+## 3.3.0
+
+_21 de março de 2025_
+
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+
+![Novo](../assets/new.svg) adicionou suporte ao PHP 8.4.
 
 ## 3.2.1
 
