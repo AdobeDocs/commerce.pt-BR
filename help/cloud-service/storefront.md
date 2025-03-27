@@ -3,9 +3,9 @@ title: Configurar a loja
 description: Saiba como executar a ferramenta de andaime para configurar sua vitrine  [!DNL Adobe Commerce as a Cloud Service] .
 role: Developer
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+source-git-commit: 7f7a674b856090bd02752a9e2ad29475b2b56fcf
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '519'
 ht-degree: 0%
 
 ---
@@ -102,13 +102,11 @@ A execução do comando a seguir criará um scaffolding para a loja do Commerce.
 
 1. Insira o nome do repositório que deseja criar.
 
-1. Selecione o modelo a ser usado, por exemplo, `adobe-commerce/adobe-demo-store`.
-
 1. Selecione uma das seguintes opções:
 
-   * **Usar a instância de demonstração do Adobe (Pontos de Extremidade Padrão)** - Use a instância Commerce de exemplo do Adobe.
+   * **Usar o locatário de demonstração do Adobe Commerce** - Usar um locatário de demonstração.
       * Se você selecionar essa opção, será solicitado a instalar o bot AEM Code Sync em uma janela do navegador. Você deve especificar o repositório criado e autorizar o bot. Retorne à CLI e digite `y` para confirmar a instalação do bot AEM Code Sync.
-   * **Escolher uma API disponível (Mesh -> SaaS)** - Selecione uma instância do Commerce existente na organização selecionada.
+   * **Escolher um locatário do Adobe Commerce disponível** - Selecione um locatário do Commerce existente na organização selecionada.
       * Se você selecionar essa opção, deverá selecionar o projeto e o espaço de trabalho para criar uma malha no.
 
    >[!NOTE]
