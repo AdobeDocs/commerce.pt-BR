@@ -1,9 +1,10 @@
 ---
 title: Workspace [!DNL Product Recommendations]
 description: Saiba como configurar, gerenciar e monitorar o desempenho de recomendações de produtos.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: eaf1f0b2-9d9d-4069-8269-06f30166f788
+source-git-commit: 3d92f4afc3aef990f2e86e306f4c6c47324aed97
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '874'
 ht-degree: 0%
 
 ---
@@ -18,6 +19,19 @@ O espaço de trabalho [!DNL Product Recommendations] exibe uma lista de recomend
 
 ![Espaço de trabalho de recomendações](assets/workspace.png)
 _Workspace de recomendações_
+
+## Coleção de dados
+
+Para garantir que cada área funcional do espaço de trabalho contenha os dados corretos, é necessário configurar a coleta de dados com base na implementação de vitrine selecionada:
+
+1. Luma - A coleção de dados está disponível e pronta para uso.
+1. Headless - a coleta de dados deve ser configurada manualmente, dependendo da implementação da loja.
+
+Se você estiver usando uma loja headless, consulte a seguinte documentação para obter mais informações sobre os eventos necessários que precisam ser adicionados:
+
+- [Eventos necessários](events.md) para o painel Recomendações de Produto.
+- [Coletor de eventos de vitrine](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) que precisa ser adicionado como pré-requisito.
+- [Exemplos](https://github.com/adobe/commerce-events/tree/main/examples) da estrutura de eventos.
 
 ## Definir o escopo
 

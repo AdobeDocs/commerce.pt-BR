@@ -1,9 +1,10 @@
 ---
 title: Facetas
 description: '[!DNL Live Search] facetas usam várias dimensões de valores de atributo como critérios de pesquisa.'
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: d036265e-1868-461d-ab4c-7f469b1c6f5b
+source-git-commit: 3d92f4afc3aef990f2e86e306f4c6c47324aed97
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -15,6 +16,8 @@ Faceting é um método de filtragem de alto desempenho que usa várias dimensõe
 [!DNL Live Search] usa a consulta `productSearch`, que retorna facetas e outros dados específicos de [!DNL Live Search]. Consulte [`productSearch` query](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) na documentação do desenvolvedor para ver exemplos de código.
 
 ![Resultados de pesquisa filtrados](assets/storefront-search-results-run.png)
+
+Em uma faceta, os compradores podem selecionar várias opções, como &quot;Básico&quot; e &quot;Consolado&quot; em &quot;Estilo&quot; e os resultados da pesquisa são atualizados para exibir apenas esses estilos. Da mesma forma, se um comprador selecionar opções em várias facetas, como &quot;Básico&quot; em &quot;Estilo&quot; e &quot;Interno&quot; em &quot;Clima&quot;, os resultados da pesquisa serão atualizados para exibir o estilo selecionado e o clima selecionado.
 
 Qualquer faceta definida pode ser usada como um parâmetro de URL e os resultados serão filtrados com base nos valores de parâmetro: `http://yourstore.com?brand=acme&color=red`.
 
