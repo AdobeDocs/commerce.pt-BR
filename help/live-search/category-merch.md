@@ -2,9 +2,10 @@
 title: Merchandising de categoria
 description: Use o  [!DNL Live Search] Merchandising por categoria para ter uma experiência de compra mais rápida.
 gourl: ls_catalog_merchandising
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
+source-git-commit: e5e5443e0bdb12e4774856336157067b4ff6eb7c
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1101'
 ht-degree: 0%
 
 ---
@@ -140,3 +141,7 @@ Para adicionar um evento manualmente:
 1. Em Classificação Manual, clique no menu **Selecionar um evento** e escolha um evento a ser realizado quando as condições associadas forem atendidas.
 1. Insira o nome do produto que você deseja que seja afetado. Os produtos são sugeridos à medida que você digita.
 1. Para vários eventos, escolha outros eventos que deseja acionar quando as condições forem atendidas.
+
+>[!NOTE]
+>
+>As regras são aplicadas quando uma categoria específica é aberta na loja e uma regra existe para essa categoria. Para regras de merchandising por categoria, a ordem de classificação padrão é &quot;Classificar por: Posição&quot;. Se um comprador alterar a ordem de classificação, todos os produtos ocultos, fixados e enterrados não serão mais classificados.

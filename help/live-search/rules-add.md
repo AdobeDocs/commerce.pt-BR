@@ -1,9 +1,10 @@
 ---
 title: Adicionar regras
 description: Saiba como criar regras de merchandising de pesquisa.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
+source-git-commit: 449b281e46d16de56f4c3d2e01e7165c59ee78a2
 workflow-type: tm+mt
-source-wordcount: '1604'
+source-wordcount: '1650'
 ht-degree: 0%
 
 ---
@@ -151,6 +152,10 @@ As informações inseridas aqui aparecem no painel [Detalhes da Regra](rules-wor
    A regra é adicionada à lista no espaço de trabalho *Regras*.
 
 1. Embora as regras ativas entrem em vigor imediatamente, talvez seja necessário aguardar até 15 minutos para que os resultados da consulta em cache na loja sejam atualizados.
+
+>[!NOTE]
+>
+>As regras e os produtos classificados manualmente são aplicados aos resultados da pesquisa quando a ordem de classificação padrão, &quot;Classificar por: Mais relevante&quot;, é selecionada. Se um comprador alterar a ordem de classificação para algo como classificar por nome ou preço, as regras e as classificações manuais não estarão mais em vigor.
 
 ## Descrições dos campos
 

@@ -3,9 +3,9 @@ title: Limites e limites
 description: Saiba mais sobre os limites do  [!DNL Live Search]  para garantir que ele atenda às necessidades da sua empresa.
 role: Admin, Developer
 exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
-source-git-commit: 81bde302463a70e41318b494565694929703dff9
+source-git-commit: 449b281e46d16de56f4c3d2e01e7165c59ee78a2
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -54,12 +54,12 @@ Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Revise o
 - O número máximo de resultados por página é 500.
 - Não é possível filtrar resultados usando um atributo de tipo de data.
 
-## Regras
+## Pesquisar merchandising
 
 - O número máximo de [regras](rules.md) de merchandising por exibição de loja é 50.
-- O merchandising por categoria pode ter uma regra por categoria.
 - O número máximo de condições por regra é 10.
 - O número máximo de eventos por regra é 25.
+- As regras e os produtos classificados manualmente são aplicados aos resultados da pesquisa quando a ordem de classificação padrão, &quot;Classificar por: Mais relevante&quot;, é selecionada. Se um comprador alterar a ordem de classificação para algo como classificar por nome ou preço, as regras e as classificações manuais não estarão mais em vigor.
 - Para evitar resultados imprevisíveis em respostas paginadas, o número de produtos fixados não deve exceder o tamanho de página solicitado.
 
 ## Sinônimos
@@ -68,9 +68,10 @@ Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Revise o
 
 ## Merchandising de categoria
 
-- Uma regra por categoria pode ser criada para cada exibição de loja. Cada regra pode ter:
-   - Até dez condições
-   - Até 25 eventos
+- É possível criar uma regra por categoria para cada exibição de loja.
+- O número máximo de condições por regra é 10.
+- O número máximo de eventos por regra é 25.
+- As regras são aplicadas quando uma categoria específica é aberta na loja e uma regra existe para essa categoria. Para regras de merchandising por categoria, a ordem de classificação padrão é &quot;Classificar por: Posição&quot;. Se um comprador alterar a ordem de classificação, todos os produtos ocultos, fixados e enterrados não serão mais classificados.
 
 ## Permissões B2B e de categoria
 
