@@ -1,7 +1,7 @@
 ---
-source-git-commit: 06193f394fd0feb06e74a1941cc6865216966b45
+source-git-commit: c9aae333fa9808f8f27f7a9db1a07e990bfb7912
 workflow-type: tm+mt
-source-wordcount: '20'
+source-wordcount: '23'
 ht-degree: 0%
 
 ---
@@ -11,4 +11,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Esta documentação está atualmente em um estado de pré-lançamento e está sujeita a alterações sem aviso prévio.
+>Esta documentação descreve um produto em desenvolvimento de acesso antecipado e não reflete toda a funcionalidade destinada à disponibilidade geral.
