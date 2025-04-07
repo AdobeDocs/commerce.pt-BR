@@ -3,9 +3,9 @@ title: Notas de versão do [!DNL Live Search]
 description: As informações da versão mais recente do  [!DNL Live Search] Adobe Commerce.
 feature: Services, Search, Release Notes
 exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
-source-git-commit: eb016fa8e53cfb9d035d73979495171feccb764f
+source-git-commit: 7dd7ebfae07351f32e781c61b3019b75b421287f
 workflow-type: tm+mt
-source-wordcount: '2186'
+source-wordcount: '2229'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ As atualizações incluem:
 ## Atualizações do serviço hospedado
 
 Essas notas descrevem atualizações que foram publicadas fora de uma versão com controle de versão ou melhorias no serviço hospedado.
+
+_3 de abril, 2025_
+
+![Correção](../assets/fix.svg) atualizou a extensão Exportação de dados SaaS para remover a [limitação](boundaries-limits.md#b2b-and-category-permissions) de &quot;Produtos devem ser atribuídos à categoria raiz&quot; para comerciantes B2B. Consulte [Gerenciar a extensão de exportação de dados](../data-export/manage-extension.md) para saber como atualizar a extensão de Exportação de dados SaaS para a versão 103.4.0+.
 
 _20 de fevereiro de 2025_
 
@@ -356,7 +360,7 @@ As instalações existentes do [!DNL Live Search] devem ser atualizadas para o [
 
 [!BADGE Com suporte]{type="Informativo" tooltip="Compatível"}
 
-O painel de relatórios ![Novo](../assets/new.svg)[Desempenho](performance.md) fornece informações sobre os termos de pesquisa que os compradores usam.
+O painel de relatórios ![Novo](../assets/new.svg)[Desempenho](performance.md) fornece à insight termos de pesquisa que os compradores usam.
 ![Novo](../assets/new.svg) [!DNL Live Search] [O Storefront Events SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) fornece acesso a uma camada de dados comum com métricas e serviços de assinatura e publicação de eventos.
 ![Correção](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) tem uma nova classe `active` para o contêiner `.search-autocomplete` que controla a visibilidade.
 ![Correção](../assets/fix.svg) Na loja, o link de rodapé [Termos de Pesquisa](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) foi removido e seu cache foi desabilitado para instalações de [!DNL Live Search].

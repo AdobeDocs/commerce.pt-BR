@@ -3,9 +3,9 @@ title: Limites e limites
 description: Saiba mais sobre os limites do  [!DNL Live Search]  para garantir que ele atenda às necessidades da sua empresa.
 role: Admin, Developer
 exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
-source-git-commit: 449b281e46d16de56f4c3d2e01e7165c59ee78a2
+source-git-commit: 7dd7ebfae07351f32e781c61b3019b75b421287f
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1036'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Revise o
 
 - Os produtos não serão exibidos se não forem adicionados a um catálogo compartilhado padrão.
 - Para restringir grupos de clientes usando [permissões de categoria](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions):
-   - Os produtos devem ser atribuídos à categoria raiz.
+   - Os produtos devem ser atribuídos à categoria raiz. (**Observação:** é possível remover essa limitação atualizando a extensão Exportação de dados SaaS para a versão 103.4.0+. Consulte [Gerenciar a extensão de exportação de dados](../data-export/manage-extension.md).
    - O grupo de clientes &quot;Não conectado&quot; deve receber permissões de navegação &quot;Permitir&quot;.
    - Para restringir produtos ao grupo de clientes &quot;Não conectado&quot;, vá para cada categoria e defina as permissões para cada [grupo de clientes](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage).
 - No momento, não há suporte pronto para uso para B2B com o widget PLP no PWA Studio. No entanto, você pode [usar a API](install.md#pwa-support) para implementar essa funcionalidade.
