@@ -4,9 +4,9 @@ description: Saiba mais sobre os principais recursos e benefícios do  [!DNL Ado
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+source-git-commit: 25a0d658776ea95fcae07f6390abeeb559642613
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1496'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Os principais recursos incluem:
 
 ### Integração simplificada
 
-Inicie instâncias de sandbox e produção em minutos com o portal de provisionamento de autoatendimento do Commerce Cloud Manager. Tudo o que você precisa, incluindo Serviços de merchandising, Commerce Storefront e App Builder, é automaticamente configurado e integrado às suas instâncias.
+Inicie instâncias de sandbox e produção em minutos com o portal de provisionamento de autoatendimento do [!UICONTROL Commerce Cloud Manager]. Tudo o que você precisa, incluindo Serviços de merchandising, uma instância do Commerce headless e o App Builder, é configurado automaticamente e integrado às suas instâncias.
 
 Consulte [Introdução](getting-started.md) para saber como criar e gerenciar instâncias do Commerce.
 
