@@ -3,9 +3,10 @@ title: '[!DNL Adobe Commerce Optimizer]'
 description: Saiba como você pode usar o [!DNL Adobe Commerce Optimizer] para fornecer uma vitrine rápida e eficiente com um catálogo escalável que permite otimizar seu back-end de comércio eletrônico existente, aumentando o tráfego e aumentando o engajamento e a conversão.
 hide: true
 recommendations: noCatalog
-source-git-commit: 6dd95d5c01bbe217decf3ee48a8ab2cee6167f47
+exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
+source-git-commit: 67a9d89a6f50818cdef0108c66e6c8dcb76bb29c
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Com [!DNL Adobe Commerce Optimizer], você pode:
 
 >[!BEGINSHADEBOX]
 
-Se você deseja participar do programa de acesso antecipado [!DNL Adobe Commerce Optimizer], envie uma solicitação de email para [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
+Se você estiver interessado em saber mais sobre o programa de acesso antecipado do [!DNL Adobe Commerce Optimizer], preencha o [formulário de solicitação de acesso antecipado](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u).
 
 >[!ENDSHADEBOX]
 
