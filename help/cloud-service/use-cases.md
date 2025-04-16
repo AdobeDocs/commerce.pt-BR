@@ -3,9 +3,9 @@ title: Casos de uso
 description: Saiba como realizar casos de uso práticos e cenários comerciais compatíveis com o [!DNL Adobe Commerce as a Cloud Service].
 role: User, Leader
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-source-git-commit: d38066b6db7da5bb029391716063ed098be1f519
+source-git-commit: d5935f4d080c3be1f51bf8916575a3b2f357ee22
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1305'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Crie, edite e publique conteúdo diretamente na loja.
 
 1. Abra a [vitrine](./storefront.md) que você criou nos pré-requisitos.
 
-1. Abra a Criação de documentos. Navegando até `https://da.live/#/<GitHub User Name>/<Repository Name>/main/da/index.md`.
+1. Abra o Construtor de vitrines. Navegando até `https://da.live/#/<GitHub User Name>/<Repository Name>/main/da/index.md`.
 
 1. Abra a página [!UICONTROL **Índice**].
 
@@ -110,7 +110,7 @@ O recurso de experimentação contextual do Adobe Commerce permite criar e geren
 
 * Instalar a [extensão do AEM Sidekick](https://www.aem.live/docs/sidekick)
 
-1. No modo de exibição Criação de Documentos da loja, selecione a página de índice e clique em [!UICONTROL **Copiar**].
+1. No Storefront Builder, selecione a página de índice e clique em [!UICONTROL **Copiar**].
 
 1. Crie uma pasta [!UICONTROL **experimentos**] na pasta principal, clicando no botão [!UICONTROL **Novo**] e selecionando [!UICONTROL **Pasta**].
 
