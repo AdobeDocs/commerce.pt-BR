@@ -3,9 +3,9 @@ title: Notas de versão do [!DNL Payment Services]
 description: Revise as notas de versão para obter informações sobre todas as  [!DNL Payment Services]  versões.
 feature: Payments, Release Notes
 exl-id: 1d24ae27-4a57-4482-a36b-22bbcaaa1b6f
-source-git-commit: 0098e5bab2ea72f9abd7c846d49d5ee4d523ad73
+source-git-commit: 359143c4f48ff911d6dbe9105f364615525fab8c
 workflow-type: tm+mt
-source-wordcount: '3681'
+source-wordcount: '3971'
 ht-degree: 0%
 
 ---
@@ -90,11 +90,15 @@ As ![Novas](../assets/new.svg)<!-- Issue PAY-2854 --> melhorias na experiência 
 
 +++
 
+>[!NOTE]
+>
+> As versões ocorrem frequentemente para fornecer novos recursos e correções, conforme necessário. A programação de lançamento não foi corrigida.
+
 ## v2.11.1
 
 _14 de março de 2025_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Correção de um problema](../assets/fix.svg)<!-- PAY-5849 --> que afetou [Itens de linha](line-items.md) durante o check-out. Agora, o [!DNL Payment Services] melhorou a confiabilidade do processo de finalização para **Itens de Linha**. Se você encontrar um problema semelhante, entre em contato com o representante de vendas do [!DNL Payment Services] para obter assistência.
 
@@ -102,7 +106,7 @@ _14 de março de 2025_
 
 _13 de março de 2025_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
 
 ![Novo](../assets/new.svg)<!-- PAY-5938 --> Agora, o [!DNL Payment Services] permite que os comerciantes gerenciem configurações de pagamento para maximizar a flexibilidade em seus negócios. Esta versão melhora a capacidade de anexar [várias contas do PayPal](https://experienceleague.adobe.com/en/docs/commerce/payment-services/configure/settings#use-multiple-paypal-accounts) para as regiões e marcas que um comerciante aceita. Nossa equipe de vendas pode fornecer um link de integração para configurar os escopos de visualização do site e da loja.
@@ -129,7 +133,7 @@ _13 de março de 2025_
 
 _24 de fevereiro de 2025_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Correção do problema](../assets/fix.svg)<!-- PAY-xxxx --> Melhoria geral na estabilidade e no desempenho.
 
@@ -139,7 +143,7 @@ _24 de fevereiro de 2025_
 
 _21 de fevereiro de 2025_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Problema conhecido](../assets/bug.svg)<!-- PAY-xxxx --> contém erros críticos que podem afetar a estabilidade e o desempenho. A Adobe recomenda atualizar para a v2.10.3 em vez de usar essa versão (v2.10.2).
 
@@ -147,7 +151,7 @@ _21 de fevereiro de 2025_
 
 _5 de fevereiro de 2025_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Novo](../assets/new.svg)<!-- PAY-5813 --> Suporte adicionado para Adobe Commerce 2.4.8 e PHP 8.4.
 
@@ -155,7 +159,7 @@ _5 de fevereiro de 2025_
 
 _13 de dezembro de 2024_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Novo](../assets/new.svg)<!-- PAY-5873 --> [!DNL Payment Services] agora oferece suporte a um [[!DNL Payment Services] componente de entrega](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/payment-services/) na [vitrine da Edge Delivery Services para o Adobe Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
 
@@ -175,7 +179,7 @@ _13 de dezembro de 2024_
 
 _7 de novembro de 2024_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Novo](../assets/new.svg)<!-- PAY-5629 --> [!DNL Payment Services] agora oferece suporte a uma **URL atualizada do SDK para Apple Pay**, melhorando a integração para comerciantes que usam o Apple Pay. Esse recurso é compatível com o macOS 14 e versões posteriores, os dispositivos que executam versões anteriores do macOS não exibirão essa funcionalidade.
 
@@ -193,7 +197,7 @@ _7 de novembro de 2024_
 
 _13 de setembro de 2024_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Correção](../assets/fix.svg)<!-- PAY-5644 --> Corrigiu um problema com o cache de parâmetros SDK ao usar vários escopos em [!DNL Payment Services]. A configuração do SDK agora é armazenada em cache separadamente para cada escopo, em vez de ser armazenada em uma única chave. Isso garante que o cache de cada escopo seja invalidado independentemente, melhorando a confiabilidade ao gerenciar vários escopos.
 
@@ -201,7 +205,7 @@ _13 de setembro de 2024_
 
 _13 de setembro de 2024_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Novo](../assets/new.svg)<!-- PAY-5499 --> [!DNL Payment Services] agora oferece suporte ao envio de informações de número de rastreamento para o PayPal quando um [número de rastreamento é inserido](track-shipment.md) no Adobe Commerce.
 
@@ -215,7 +219,7 @@ _13 de setembro de 2024_
 
 _2 de agosto de 2024_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Novo](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services] agora dá suporte a [dados de item de linha no nível de pedido](https://experienceleague.adobe.com/en/docs/commerce/payment-services/payments-checkout/manage/line-items). Esse recurso permite que os comerciantes vejam informações detalhadas sobre os itens de um pedido, como detalhes do produto, quantidade e preço (incluindo imposto, descontos e outras informações relevantes).
 
@@ -235,7 +239,7 @@ _2 de agosto de 2024_
 
 _4 de junho de 2024_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Novo](../assets/new.svg)<!-- PAY-4877 --> Agora, o [!DNL Payment Services] oferece suporte aos [recursos de preços L2/L3](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/levels-card-payment-transactions.html). Este recurso só está disponível para [!DNL Payment Services] clientes com preço do IC++ habilitado. Se quiser usar os dados de processamento L2/L3 para [!DNL Payment Services], entre em contato com o gerente de conta do [!DNL Payment Services].
 
@@ -245,7 +249,7 @@ _4 de junho de 2024_
 
 _23 de abril de 2024_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Correção](../assets/fix.svg)<!-- Issue PAY-5396 -->[!DNL Payment Services] agora oferece suporte às [diretrizes do Adobe Commerce para o `--db-prefix` parâmetro](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/advanced#install-from-the-command-line) para o Adobe Commerce versões 2.4.7 e mais recentes.
 
@@ -253,7 +257,7 @@ _23 de abril de 2024_
 
 _16 de abril de 2024_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Correção](../assets/fix.svg)<!-- Issue PAY-5106 --> Corrigido um problema que preenchia incorretamente os totais do valor do pedido durante o check-out entre o PayPal e a Adobe Commerce. Agora, os comerciantes podem garantir que os totais do valor do pedido estejam corretos ao fazer um pedido.
 
@@ -261,7 +265,7 @@ _16 de abril de 2024_
 
 _11 de abril, 2024_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Novo](../assets/new.svg)<!-- Issue xxx --> Suporte adicionado para o Adobe Commerce 2.4.7.
 
@@ -269,7 +273,7 @@ _11 de abril, 2024_
 
 _4 de abril, 2024_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Correção](../assets/fix.svg)<!-- PAY-5322 --> Corrigiu um problema de compatibilidade de PCI com versões mais recentes da Adobe Commerce. Agora, o [!DNL Payment Services] está adaptado aos requisitos de check-out no Adobe Commerce como a opção de pagamento.
 
@@ -279,7 +283,7 @@ _4 de abril, 2024_
 
 _20 de março de 2024_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Os novos](../assets/new.svg)<!-- PAY-4868 --> comerciantes podem [configurar o Google Pay com êxito durante toda a experiência de compra](https://experienceleague.adobe.com/docs/commerce/payment-services/payments-checkout/payments-options.html), de modo semelhante a outros botões de pagamento em [!DNL Payment Services] por meio do Administrador.
 
@@ -293,7 +297,7 @@ _20 de março de 2024_
 
 _1º de março de 2024_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Novo](../assets/new.svg)<!-- PAY-5244 --> Corrigido a compatibilidade de check-out assíncrono.
 
@@ -303,7 +307,7 @@ _1º de março de 2024_
 
 _14 de fevereiro de 2024_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Novo](../assets/new.svg)<!-- PAY-5048 --> suporte adicionado para PHP 8.3
 
@@ -313,7 +317,7 @@ _14 de fevereiro de 2024_
 
 _26 de janeiro de 2024_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Correção](../assets/fix.svg)<!-- PAY-5183 --> de problemas de desempenho REST/GraphQL corrigidos. Agora, o botão de cartão de crédito é renderizado quando buscado pela API.
 
@@ -321,7 +325,7 @@ _26 de janeiro de 2024_
 
 _7 de dezembro de 2023_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Novo](../assets/new.svg)<!-- PAY-5047 --> A marca do cartão de crédito/débito ou o tipo de método de pagamento agora está disponível nos seguintes locais:
 
@@ -333,7 +337,7 @@ _7 de dezembro de 2023_
 
 _1 de dezembro de 2023_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Novo](../assets/new.svg)<!-- PAY-4381 --> [Os Serviços de Pagamento agora oferecem suporte à integração com o GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/). Com suporte da GraphQL para botões de pagamento do PayPal, campos hospedados e Apple Pay, o [!DNL Payment Services] agora oferece suporte a uma configuração headless Commerce.
 
@@ -341,7 +345,7 @@ _1 de dezembro de 2023_
 
 _27 de setembro de 2023_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Correção de um problema](../assets/fix.svg)<!-- Issue PAY-4870 --> que preenche incorretamente o novo atributo de cabeçalho na loja ao enviar a versão da extensão com a versão mais recente. Anteriormente, com a versão `1.3.0` do Conector de serviços da Commerce, não era possível estender `User-Agent header` da extensão [!DNL Payment Services].
 
@@ -349,7 +353,7 @@ _27 de setembro de 2023_
 
 _30 de agosto de 2023_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Novo](../assets/new.svg)<!-- PAY-4638 --> Adição de uma [integração com Signifyd](https://experienceleague.adobe.com/docs/commerce/payment-services/security-compliance/fraud-protection.html), que fornece serviços automatizados de proteção contra fraude.
 
@@ -365,7 +369,7 @@ _30 de agosto de 2023_
 
 _9 de junho de 2023_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Novo](../assets/new.svg)<!-- Issue xxx --> Suporte adicionado para o Adobe Commerce 2.4.7-beta1.
 
@@ -381,7 +385,7 @@ _9 de junho de 2023_
 
 _10 de março de 2023_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Novo](../assets/new.svg)<!-- Issue PAY-4152 --> Suporte adicionado para PHP 8.2 e Adobe Commerce 2.4.6. Não compatível com PHP 7.x.
 
@@ -389,7 +393,7 @@ _10 de março de 2023_
 
 _10 de março de 2023_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Correção](../assets/fix.svg)<!-- Issue PAY-4226 --> Corrigido um problema que impedia que novos [!DNL Payment Services] comerciantes usassem o check-out no Administrador.[!DNL Payment Services] estava usando a ID de cliente do Commerce, que não existe para novos clientes.
 
@@ -401,7 +405,7 @@ _10 de março de 2023_
 
 _17 de fevereiro de 2023_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.0 e mais recentes
 
 ![Novo](../assets/new.svg)<!-- Issue PAY-3540 --> Adição do [recurso de conformidade PCI 3DS para comerciantes que fazem transações na União Europeia (UE) e na Grã-Bretanha](security.md#3ds). Esse nível adicional de segurança, que exige que os compradores se autentiquem junto ao emissor do cartão de crédito, ajuda a evitar fraudes on-line e é exigido como parte das regulamentações de conformidade da União Europeia (UE).
 
@@ -411,7 +415,7 @@ _17 de fevereiro de 2023_
 
 _29 de janeiro de 2023_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.0 e mais recentes
 
 ![Correção de um problema](../assets/fix.svg)<!-- Issue PAY-4110 --> que impedia os compradores de fazer um pedido usando botões de pagamento na página do produto, minicarrinho e carrinho. Os compradores agora podem concluir os pedidos com sucesso.
 
@@ -419,7 +423,7 @@ _29 de janeiro de 2023_
 
 _25 de janeiro de 2023_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.0 e mais recentes
 
 ![Correção de um problema](../assets/fix.svg)<!-- Issue PAY-4102 --> Liberou uma correção para um problema conhecido incompatível com versões anteriores. Esta versão bloqueia a versão da extensão de ID de serviço para a versão estável mais recente, o que habilita novamente as novas instalações do [!DNL Payment Services] para configurar os Serviços Commerce.
 
@@ -427,7 +431,7 @@ _25 de janeiro de 2023_
 
 _22 de dezembro de 2022_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.0 e mais recentes
 
 ![Problema corrigido](../assets/fix.svg)<!-- Issue PAY-3992 --> Faturamento aprimorado em [!DNL Payment Services] quando um método de pagamento é recusado.
 
@@ -437,7 +441,7 @@ _22 de dezembro de 2022_
 
 _23 de novembro de 2022_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.0 e mais recentes
 
 ![Novo](../assets/new.svg)<!-- Issue PAY-3923 -->[!DNL Payment Services] agora inclui o número da versão no cabeçalho do agente do usuário para que as solicitações possam rastrear, filtrar ou descontinuar pontos de extremidade não utilizados.
 
@@ -447,7 +451,7 @@ _23 de novembro de 2022_
 
 _18 de novembro de 2022_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.0 e mais recentes
 
 ![Novo](../assets/new.svg)<!-- Issue PAY-3880 --> Agora um comprador pode [guardar (salvar) suas informações de cartão de crédito durante o check-out](https://experienceleague.adobe.com/docs/commerce/payment-services/payments-checkout/vaulting.html) para usar em uma compra posterior para a mesma loja ou outra na mesma conta de comerciante.
 
@@ -457,7 +461,7 @@ Os ![Novos](../assets/new.svg)<!-- Issue PAY-3950 --> Comerciantes agora podem h
 
 _14 de outubro de 2022_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.0 e mais recentes
 
 ![Correção](../assets/fix.svg)<!-- Issue PAY-3766 --> Quando o método de pagamento de um cliente é recusado, a mensagem de erro visível é mais descritiva. Ele aconselha o cliente a inserir novamente as informações de pagamento e tentar novamente, tentar outro método de pagamento ou entrar em contato com o banco sobre a transação recusada.
 
@@ -465,7 +469,7 @@ _14 de outubro de 2022_
 
 _30 de setembro de 2022_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.0 e mais recentes
 
 ![Novo](../assets/new.svg)<!-- Issue PAY-784 -->[!DNL Payment Services] agora inclui a capacidade de configurar uma conta comercial para [usar várias contas comerciais do PayPal](https://experienceleague.adobe.com/docs/commerce/payment-services/configure/settings.html#use-multiple-paypal-accounts). Isso permite que o comerciante opere suas lojas em vários países usando moedas diferentes ou use o Adobe Commerce para uma parte da sua empresa.
 
@@ -479,7 +483,7 @@ _30 de setembro de 2022_
 
 _6 de setembro de 2022_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.0 e mais recentes
 
 ![Problema corrigido](../assets/fix.svg)<!-- Issue PAY-3663 --> Agora, quando o armazenamento de um comerciante está capturando uma ordem autorizada com uma moeda não global, o processo de captura é concluído e nenhum erro é exibido.
 
@@ -487,7 +491,7 @@ _6 de setembro de 2022_
 
 _9 de agosto de 2022_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.0 e mais recentes
 
 ![Nova](../assets/new.svg)<!-- Issue PAY-XX --> A versão de disponibilidade geral—[!DNL Payment Services] agora é [compatível com [!DNL Adobe Commerce] e [!DNL Magento Open Source] versões 2.4.0 a 2.4.5](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
@@ -497,7 +501,7 @@ _9 de agosto de 2022_
 
 _29 de junho de 2022_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.0 e mais recentes
 
 ![Problema conhecido](../assets/bug.svg)<!-- Issue PAY-x --> O Apple Pay é incompatível com o navegador Safari v15.5 no dispositivo móvel e no desktop. Ao usar o Safari versão 15.5, não é possível concluir o check-out com o Apple Pay.
 
@@ -515,7 +519,7 @@ _29 de junho de 2022_
 
 _31 de março de 2022_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.0 e mais recentes
 
 ![Nova](../assets/new.svg)<!-- Issue PAY-2127 --> A versão de disponibilidade geral—[!DNL Payment Services] agora é [compatível com [!DNL Adobe Commerce] e [!DNL Magento Open Source] versões 2.4.0 a 2.4.4](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
@@ -543,7 +547,7 @@ _31 de março de 2022_
 
 _29 de novembro de 2021_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.0 e mais recentes
 
 ![Nova](../assets/new.svg)<!-- Issue PAY-2127 --> A versão de disponibilidade geral—[[!DNL Payment Services]](https://commercemarketplace.adobe.com/magento-payment-services.html) agora é compatível com [!DNL Adobe Commerce] e [!DNL Magento Open Source] versões 2.4.0 a 2.4.3-p1.
 
