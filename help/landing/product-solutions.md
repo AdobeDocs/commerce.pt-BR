@@ -5,13 +5,13 @@ feature: Paas, Saas
 recommendations: noDisplay, noCatalog
 hide: true
 hidefromtoc: true
-source-git-commit: 1e73f4dd45114cfdcd2fef87ae0d9b2504214c6b
+exl-id: 5ba1fa65-391f-4af7-8c40-d8314ec9d3e5
+source-git-commit: 79d1b862c5cc307daf93f93c03f1993dbd45aa09
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
-
 
 # Soluções de produtos da Adobe Commerce
 
@@ -39,13 +39,9 @@ A tabela a seguir define os emblemas que são exibidos na documentação do Adob
 
 Esta medalha identifica somente a documentação dos projetos do [Adobe Commerce as a Cloud Service](../cloud-service/overview.md) e do [Adobe Commerce Optimizer](../optimizer/overview.md). Esses projetos são hospedados em uma solução de software como um serviço (SaaS) totalmente gerenciada e nativa em nuvem, na qual a Adobe é responsável pela maioria dos aspectos operacionais, como atualizações contínuas, monitoramento de segurança e escalabilidade, para que os clientes possam se concentrar no comércio, e não na infraestrutura.
 
-#### [!BADGE Somente PaaS]{type=Informative tooltip="Aplicável a projetos do Adobe Commerce na nuvem somente (infraestrutura do PaaS gerenciada pela Adobe)."}
+#### [!BADGE Somente PaaS]{type=Informative tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."}
 
-Este selo identifica a documentação relacionada somente aos projetos do [Adobe Commerce na nuvem](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview). Esses projetos são hospedados em uma solução de plataforma como um serviço (PaaS) totalmente gerenciada e nativa em nuvem com todos os recursos principais da Adobe Commerce em um ambiente pré-provisionado.
-
->[!NOTE]
->
->Salvo indicação em contrário, isso também inclui projetos locais.
+Este selo identifica a documentação relacionada ao [Adobe Commerce na nuvem](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) e somente projetos locais. Os projetos do Adobe Commerce na nuvem são hospedados em uma solução de plataforma como serviço (PaaS) totalmente gerenciada e nativa em nuvem com todos os recursos principais da Adobe Commerce em um ambiente pré-provisionado. Os projetos locais são hospedados em infraestrutura gerenciada pelo cliente.
 
 ### Regras
 
