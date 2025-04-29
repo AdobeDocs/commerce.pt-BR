@@ -3,9 +3,9 @@ title: Notas de versão do [!DNL Live Search]
 description: As informações da versão mais recente do  [!DNL Live Search] Adobe Commerce.
 feature: Services, Search, Release Notes
 exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
-source-git-commit: 5c34bf61ee441ef20a680a4f071308d17379f49d
+source-git-commit: bf36d522b45218a10bde7a383feca99bdba62aa6
 workflow-type: tm+mt
-source-wordcount: '2399'
+source-wordcount: '2460'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,12 @@ As atualizações incluem:
 ## Atualizações do serviço hospedado
 
 Essas notas descrevem atualizações que foram publicadas fora de uma versão com controle de versão ou melhorias no serviço hospedado.
+
+_29 de abril de 2025_
+
+![Correção](../assets/fix.svg) Corrigido um problema no qual o relatório **Exportar para CSV** na guia [**Desempenho**](./performance.md) não incluía todos os dados especificados no intervalo de datas.
+![Correção](../assets/fix.svg) Corrigido um problema no qual você não podia salvar uma [regra de merchandising](./rules.md) se o filtro de consulta de pesquisa fosse usado.
+![Correção](../assets/fix.svg) Corrigido um problema no qual [produtos fixados](./facets-manage.md#pinunpin-facet) não estavam listados na parte superior da página de resultados.
 
 _21 de abril, 2025_
 
