@@ -3,9 +3,9 @@ title: Notas de versão do [!DNL Payment Services]
 description: Revise as notas de versão para obter informações sobre todas as  [!DNL Payment Services]  versões.
 feature: Payments, Release Notes
 exl-id: 1d24ae27-4a57-4482-a36b-22bbcaaa1b6f
-source-git-commit: 359143c4f48ff911d6dbe9105f364615525fab8c
+source-git-commit: eb2e99dc3a0dbe1e27524c554886a57a4c8a1c30
 workflow-type: tm+mt
-source-wordcount: '3971'
+source-wordcount: '3986'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ Essas notas de versão descrevem alterações e correções de recursos que ocor
 
 +++Atualizações do serviço hospedado
 
+_25 de abril, 2025_
+
+![Novo problema](../assets/new.svg)<!-- Issue PAY-6051 --> Agora, o painel [!DNL Payment Services] exibe a versão da extensão atual e a versão do painel.
+
 _30 de agosto de 2024_
 
 ![Novo problema](../assets/new.svg)<!-- Issue PAY-5658 --> Agora, os comerciantes podem filtrar as transações por Detalhes do Pagamento no [relatório de transações](https://experienceleague.adobe.com/docs/commerce/payment-services/reporting/transactions.html), para obter dados mais detalhados e precisos sobre métodos de pagamento.
@@ -42,7 +46,7 @@ _9 de julho de 2024_
 
 _5 de março de 2024_
 
-![Problema corrigido](../assets/fix.svg)<!-- Issue PAY-5252 --> Agora, os comerciantes podem copiar dados das grades do Painel selecionando o conteúdo de uma única célula.
+![Problema corrigido](../assets/fix.svg)<!-- Issue PAY-5252 --> Agora, os comerciantes podem copiar dados das grades do painel selecionando o conteúdo de uma única célula.
 
 _10 de outubro de 2023_
 
