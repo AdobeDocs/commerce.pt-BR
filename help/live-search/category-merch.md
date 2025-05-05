@@ -16,7 +16,7 @@ O merchandising por categoria permite que os proprietários de lojas apliquem [!
 
 Este vídeo é uma introdução ao Merchandising por categoria.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424617)
+>[!VIDEO](https://video.tv.adobe.com/v/3448856?captions=por_br)
 
 O recurso é acessado no Administrador em **Marketing** > SEO e pesquisa > **[!DNL Live Search]** > **Merchandising de categorias**.
 

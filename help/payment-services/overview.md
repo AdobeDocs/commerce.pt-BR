@@ -54,7 +54,7 @@ Consulte as páginas [Política de ciclo de vida](https://experienceleague.adobe
 
 ### Qual é a opção [!DNL Payment Services] certa para você?
 
->[!VIDEO](https://video.tv.adobe.com/v/3447811)
+>[!VIDEO](https://video.tv.adobe.com/v/3447923?captions=por_br)
 
 Consulte [Conectar](connect.md) para obter mais informações sobre como configurar sua extensão do [!DNL Payment Services].
 
