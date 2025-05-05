@@ -20,7 +20,7 @@ Em um alto nível, com os Serviços de merchandising, você pode:
 - Desbloqueie a sindicalização de catálogos e forneça o conteúdo correto desenvolvendo seu catálogo de produtos para refletir seus negócios, incluindo produtos, clientes, preços e distribuição.
 - Assimile e atualize rapidamente os dados de catálogo e forneça rapidamente as atualizações à loja para suas promoções e necessidades de campanha.
 - Obtenha pontuações máximas com componentes de interface do usuário rápidos e prontos para uso alimentados pela Edge Delivery Services para navegação e recomendações ininterruptas de produtos.
-- Adote uma arquitetura de composição moderna usando a arquitetura de extensibilidade do Adobe ([App Builder](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-development)) para importar dados de produtos e vitrines comerciais headless avançados usando a [API Mesh](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-and-api-mesh) da Adobe.
+- Adote uma arquitetura de composição moderna usando a arquitetura de extensibilidade do Adobe ([App Builder](https://experienceleague.adobe.com/pt-br/playlists/commerce-get-started-app-builder-development)) para importar dados de produtos e vitrines comerciais headless avançados usando a [API Mesh](https://experienceleague.adobe.com/pt-br/playlists/commerce-get-started-app-builder-and-api-mesh) da Adobe.
 
 >[!INFO]
 >

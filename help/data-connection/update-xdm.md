@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Atualizar esquemas de evento de série de tempo para assimilação de dados do Commerce
 
-Uma das [etapas de integração](overview.md#onboarding-steps) para usar a extensão [!DNL Data Connection] é acessar o espaço de trabalho da sequência de dados e [criar uma sequência de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) específica para o Adobe Commerce. Ao criar esse fluxo de dados, você também deve selecionar um esquema que descreva os dados que planeja assimilar. Esse esquema deve incluir grupos de campos específicos do comércio.
+Uma das [etapas de integração](overview.md#onboarding-steps) para usar a extensão [!DNL Data Connection] é acessar o espaço de trabalho da sequência de dados e [criar uma sequência de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=pt-BR) específica para o Adobe Commerce. Ao criar esse fluxo de dados, você também deve selecionar um esquema que descreva os dados que planeja assimilar. Esse esquema deve incluir grupos de campos específicos do comércio.
 
 Este artigo fornece os grupos de campos que seu esquema deve incluir para coletar com êxito os seguintes dados de série temporal fornecidos pelos eventos do Adobe Commerce:
 
@@ -21,7 +21,7 @@ Este artigo fornece os grupos de campos que seu esquema deve incluir para coleta
 
 Saiba mais sobre [dados de série temporal](data-ingestion.md).
 
-Saiba mais sobre as [noções básicas da composição de esquema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html).
+Saiba mais sobre as [noções básicas da composição de esquema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=pt-BR).
 
 ## Atualizar esquema com dados comportamentais de série temporal e de evento de back office
 
@@ -31,9 +31,9 @@ Nesta seção, você aprenderá a atualizar seu esquema existente ou criar um es
 >
 >Consulte [dados do evento de perfil de série temporal](#time-series-profile-event-data) para saber como adicionar campos específicos de perfil.
 
-1. Se você ainda não tiver um esquema, [crie](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) um com a classe definida como **Evento de experiência**.
+1. Se você ainda não tiver um esquema, [crie](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=pt-BR#create) um com a classe definida como **Evento de experiência**.
 
-1. [Adicione](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups) os seguintes grupos de campos específicos da Commerce (ou edite o esquema existente e adicione esses grupos de campos):
+1. [Adicione](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=pt-BR#add-field-groups) os seguintes grupos de campos específicos da Commerce (ou edite o esquema existente e adicione esses grupos de campos):
 
    - Pesquisa no site
    - Visitar página da Web
@@ -50,15 +50,15 @@ Nesta seção, você aprenderá a atualizar seu esquema existente ou criar um es
 
    Seu esquema agora contém grupos de campos específicos do Commerce para que os dados de série temporal coletados dos eventos [comportamentais](events.md) e [back office](events-backoffice.md) do Commerce sejam representados no esquema.
 
-1. [Habilitar](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile) o esquema para o Perfil.
+1. [Habilitar](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=pt-BR#profile) o esquema para o Perfil.
 
    Quando um esquema é ativado para o Perfil, qualquer conjunto de dados criado a partir desse esquema participa do Real-Time CDP, que mescla dados de fontes diferentes para criar uma visualização completa de cada cliente.
 
-1. [Crie um conjunto de dados](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) com base no esquema que você criou ou atualizou.
+1. [Crie um conjunto de dados](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html?lang=pt-BR#create-a-dataset) com base no esquema que você criou ou atualizou.
 
    Um conjunto de dados é uma construção de armazenamento e gerenciamento para uma coleção de dados, normalmente uma tabela que contém um esquema (colunas) e campos (linhas). Os conjuntos de dados também contêm metadados que descrevem vários aspectos dos dados armazenados.
 
-1. [Crie uma sequência de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) e selecione o esquema que contém os grupos de campos específicos do Commerce e o conjunto de dados correspondente.
+1. [Crie uma sequência de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=pt-BR) e selecione o esquema que contém os grupos de campos específicos do Commerce e o conjunto de dados correspondente.
 
    O fluxo de dados encaminha os dados coletados para o conjunto de dados. Os dados são representados no conjunto de dados com base no esquema selecionado.
 
@@ -96,24 +96,24 @@ Com a adição do grupo de campos `Demographic Details` ao esquema existente do 
 
 Se você quiser adicionar [dados do evento de perfil do lado do servidor](events-backoffice.md#customer-profile-events-server-side) a um novo esquema e sequência de dados específicos do perfil, conclua as etapas a seguir.
 
-1. [Crie](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) um esquema e defina a classe como **Evento de Experiência**.
+1. [Crie](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=pt-BR#create) um esquema e defina a classe como **Evento de Experiência**.
 
-1. [Adicione](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups) os seguintes grupos de campos específicos de perfil:
+1. [Adicione](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=pt-BR#add-field-groups) os seguintes grupos de campos específicos de perfil:
 
    - Detalhes demográficos
    - Detalhes de contato pessoal
    - Detalhes do canal
    - Detalhes do Commerce
 
-1. [Habilitar](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile) o esquema para o Perfil.
+1. [Habilitar](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=pt-BR#profile) o esquema para o Perfil.
 
    Quando um esquema é ativado para o Perfil, qualquer conjunto de dados criado a partir desse esquema participa do Real-Time CDP, que mescla dados de fontes diferentes para criar uma visualização completa de cada cliente.
 
-1. [Crie um conjunto de dados](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) com base no esquema criado.
+1. [Crie um conjunto de dados](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html?lang=pt-BR#create-a-dataset) com base no esquema criado.
 
    Um conjunto de dados é uma construção de armazenamento e gerenciamento para uma coleção de dados, normalmente uma tabela que contém um esquema (colunas) e campos (linhas). Os conjuntos de dados também contêm metadados que descrevem vários aspectos dos dados armazenados.
 
-1. [Crie uma sequência de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) e selecione o esquema XDM que contém os grupos de campos específicos do Commerce e o conjunto de dados correspondente.
+1. [Crie uma sequência de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=pt-BR) e selecione o esquema XDM que contém os grupos de campos específicos do Commerce e o conjunto de dados correspondente.
 
    O fluxo de dados encaminha os dados coletados para o conjunto de dados. Os dados são representados no conjunto de dados com base no esquema selecionado.
 

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # [!DNL Live Search] Eventos
 
-[!DNL Live Search] usa eventos para potencializar algoritmos de pesquisa como &quot;Mais visualizados&quot; e &quot;Visualizou isto, Visualizou aquilo&quot;. Embora o [tema Luma de amostra do Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/design/themes/themes#the-default-theme) obtenha eventos por padrão, o headless e outras implementações personalizadas precisam implementar eventos para suas próprias necessidades.
+[!DNL Live Search] usa eventos para potencializar algoritmos de pesquisa como &quot;Mais visualizados&quot; e &quot;Visualizou isto, Visualizou aquilo&quot;. Embora o [tema Luma de amostra do Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/content-design/design/themes/themes#the-default-theme) obtenha eventos por padrão, o headless e outras implementações personalizadas precisam implementar eventos para suas próprias necessidades.
 
 Esta tabela descreve os eventos usados por [!DNL Live Search] [estratégias de classificação](rules-add.md#intelligent-ranking).
 
@@ -68,4 +68,4 @@ mse.publish.searchRequestSent("search-bar");
 
 >[!NOTE]
 >
->Se o [Modo de restrição de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) estiver habilitado, a Adobe Commerce não coletará dados comportamentais até que o comprador consente em usar cookies. Se o Modo de restrição de cookie estiver desativado, o Adobe Commerce coletará dados comportamentais por padrão.
+>Se o [Modo de restrição de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=pt-BR) estiver habilitado, a Adobe Commerce não coletará dados comportamentais até que o comprador consente em usar cookies. Se o Modo de restrição de cookie estiver desativado, o Adobe Commerce coletará dados comportamentais por padrão.

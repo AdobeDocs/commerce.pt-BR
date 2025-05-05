@@ -20,16 +20,16 @@ ht-degree: 37%
 - [Soluções do produto](product-solutions.md)
 - Serviços da Commerce {#commerce-services}
    - Serviços da Commerce {#commerce-services}
-   - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html)
-   - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce/product-recommendations/guide-overview.html)
-   - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce/catalog-service/guide-overview.html)
-   - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce/payment-services/guide-overview.html)
+   - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html?lang=pt-BR)
+   - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce/product-recommendations/guide-overview.html?lang=pt-BR)
+   - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce/catalog-service/guide-overview.html?lang=pt-BR)
+   - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce/payment-services/guide-overview.html?lang=pt-BR)
 - Serviços de integração {#integration-services}
-   - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html)
+   - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html?lang=pt-BR)
    - [Conector de serviços](/help/landing/saas.md)
 - Ferramentas de dados {#data-services}
-   - [Exportação De Dados SaaS](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html)
-   - [Indexação de preços SaaS](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html)
+   - [Exportação De Dados SaaS](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html?lang=pt-BR)
+   - [Indexação de preços SaaS](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html?lang=pt-BR)
    - [Sincronização de catálogo](/help/landing/catalog-sync.md)
 
 

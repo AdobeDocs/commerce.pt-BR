@@ -47,7 +47,7 @@ O campo de categoria exibe categorias que pertencem à loja atual.
 
 >[!NOTE]
 >
->Para comerciantes B2B, o filtro Categoria adere a qualquer [categoria de produto específica do cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) configurada.
+>Para comerciantes B2B, o filtro Categoria adere a qualquer [categoria de produto específica do cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html?lang=pt-BR) configurada.
 
 A Adobe Commerce recomenda usar a seguinte configuração de filtro de categoria ao implantar recomendações para seus tipos de página:
 
@@ -77,11 +77,11 @@ Filtra produtos com base na visibilidade, como: _Catálogo_, _Pesquisa_ ou ambos
 
 ### Preço
 
-Um filtro com base no preço do produto usa o preço final para executar a comparação. O preço final inclui descontos ou preços especiais disponíveis para compradores anônimos. Para comerciantes B2B, o preço exibido reflete o [preço de grupo específico do cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) que você configurou.
+Um filtro com base no preço do produto usa o preço final para executar a comparação. O preço final inclui descontos ou preços especiais disponíveis para compradores anônimos. Para comerciantes B2B, o preço exibido reflete o [preço de grupo específico do cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=pt-BR) que você configurou.
 
 ### Status do estoque
 
 Os seguintes filtros de exclusão podem ser usados para filtrar produtos com base no status do estoque:
 
 - Fora de estoque - (Somente exclusão) Exclui produtos que estão fora de estoque.
-- Baixo em estoque - (Somente exclusão) Exclui produtos com baixo estoque. O status de estoque baixo é baseado no valor _Somente X limite à esquerda_ na [Configuração de inventário](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html).
+- Baixo em estoque - (Somente exclusão) Exclui produtos com baixo estoque. O status de estoque baixo é baseado no valor _Somente X limite à esquerda_ na [Configuração de inventário](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html?lang=pt-BR).

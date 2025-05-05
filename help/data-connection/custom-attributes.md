@@ -344,7 +344,7 @@ ComponentRegistrar::register(
 
 Para garantir que os novos atributos de pedido personalizados possam ser assimilados pelo esquema [!DNL Commerce] no Experience Platform, é necessário estender o esquema para incluir esses campos personalizados.
 
-Para saber como estender um esquema XDM existente para incluir esses campos personalizados, consulte o artigo [Criar e editar esquemas na interface](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) na documentação da Experience Platform. O campo ID do locatário é gerado dinamicamente; no entanto, a estrutura do campo deve se parecer com o exemplo fornecido na documentação do Experience Platform.
+Para saber como estender um esquema XDM existente para incluir esses campos personalizados, consulte o artigo [Criar e editar esquemas na interface](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) na documentação da Experience Platform. O campo ID do locatário é gerado dinamicamente; no entanto, a estrutura do campo deve se parecer com o exemplo fornecido na documentação do Experience Platform.
 
 >[!IMPORTANT]
 >

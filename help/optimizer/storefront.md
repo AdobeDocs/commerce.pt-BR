@@ -15,14 +15,14 @@ ht-degree: 0%
 >
 >Esta documentação descreve um produto em desenvolvimento de acesso antecipado e não reflete toda a funcionalidade destinada à disponibilidade geral.
 
-Este tutorial demonstra como configurar e usar a [Loja do Adobe Commerce habilitada pelo Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) para criar uma vitrine do Commerce eficiente, escalável e segura habilitada por dados da sua instância [!DNL Adobe Commerce Optimizer].
+Este tutorial demonstra como configurar e usar a [Loja do Adobe Commerce habilitada pelo Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=pt-BR) para criar uma vitrine do Commerce eficiente, escalável e segura habilitada por dados da sua instância [!DNL Adobe Commerce Optimizer].
 
 
 ## Pré-requisitos
 
 * Verifique se você tem uma conta GitHub (github.com) que pode criar repositórios e está configurada para desenvolvimento local.
 
-* Familiarize-se com o fluxo de trabalho básico e o vocabulário relacionado à criação de uma vitrine para os serviços de entrega do Adobe Edge revisando a [Visão geral](https://experienceleague.adobe.com/developer/commerce/storefront/get-started) na documentação da Adobe Commerce Storefront.
+* Familiarize-se com o fluxo de trabalho básico e o vocabulário relacionado à criação de uma vitrine para os serviços de entrega do Adobe Edge revisando a [Visão geral](https://experienceleague.adobe.com/developer/commerce/storefront/get-started?lang=pt-BR) na documentação da Adobe Commerce Storefront.
 * Configurar o ambiente de desenvolvimento
 
 
@@ -60,7 +60,7 @@ Se necessário, conclua as seguintes etapas para instalar o Gerenciador de vers�
 
 >[!TIP]
 >
->Esta configuração é para desenvolvimento com [!DNL Adobe Commerce Optimizer] e a Adobe Commerce Edge Delivery Service Store. Recursos adicionais para estender e personalizar a solução do [!DNL Adobe Commerce Optimizer] estão disponíveis por meio do [App Builder para Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) e da [API Mesh para Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh). Para obter informações de acesso e uso, entre em contato com o representante de conta da Adobe.
+>Esta configuração é para desenvolvimento com [!DNL Adobe Commerce Optimizer] e a Adobe Commerce Edge Delivery Service Store. Recursos adicionais para estender e personalizar a solução do [!DNL Adobe Commerce Optimizer] estão disponíveis por meio do [App Builder para Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) e da [API Mesh para Adobe Developer App Builder](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh). Para obter informações de acesso e uso, entre em contato com o representante de conta da Adobe.
 
 #### Instalar o Sidekick
 
@@ -71,7 +71,7 @@ Instale a extensão do navegador Sidekick para editar, visualizar e publicar con
 
 A vitrine criada para o projeto [!DNL Adobe Commerce Optimizer] é criada usando uma versão personalizada da matriz da Adobe Commerce na Edge Delivery Services Storefront. O modelo é um conjunto de arquivos e pastas que fornecem um ponto de partida para a criação de sua vitrine eletrônica.
 
-Este processo de configuração da vitrine eletrônica foi personalizado especificamente para [!DNL Adobe Commerce Optimizer] projetos. O fluxo é diferente do fluxo para o Adobe Systems padrão [Comércio na configuração da Storefront dos serviços de](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) entrega do Edge.
+Este processo de configuração da vitrine eletrônica foi personalizado especificamente para [!DNL Adobe Commerce Optimizer] projetos. O fluxo é diferente do fluxo para o Adobe Systems padrão [Comércio na configuração da Storefront dos serviços de](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=pt-BR) entrega do Edge.
 
 >[!NOTE]
 >
@@ -96,8 +96,8 @@ Siga estas etapas para configurar uma vitrine para usar com o Adobe Systems Com�
 
 Siga as instruções na documentação da Adobe Commerce Storefront para adicionar uma pasta de conteúdo compartilhado no Google Drive ou Sharepoint e adicionar o conteúdo de amostra. A amostra de conteúdo inclui imagens, texto e outros ativos que compõem o site.
 
-* [Criar e compartilhar uma Google Drive ou uma pasta do Sharepoint](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#create-and-share-folder)
-* [Carregue o conteúdo de exemplo](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#add-sample-content) na sua pasta.
+* [Criar e compartilhar uma Google Drive ou uma pasta do Sharepoint](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=pt-BR#create-and-share-folder)
+* [Carregue o conteúdo de exemplo](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=pt-BR#add-sample-content) na sua pasta.
 
 ### Etapa 2: criar um repositório de código
 
@@ -177,7 +177,7 @@ Você precisa das seguintes informações para concluir essas etapas:
 
 1. Atualize o arquivo de configuração da loja para apontar para o URL de conteúdo.
 
-   1. Abra o arquivo de configuração [fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#vocabulary).
+   1. Abra o arquivo de configuração [fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=pt-BR#vocabulary).
 
       ```json
       mountpoints:
@@ -487,6 +487,6 @@ Consulte o [caso de uso completo do Storefront e do Catalog Administrator](./use
 
 >[!MORELIKETHIS]
 >
->* Se você planeja usar [!DNL Adobe Commerce Optimizer] sem um back-end Adobe Systems Comércio, consulte a [documentação](https://experienceleague.adobe.com/developer/commerce/storefront/) de vitrine Adobe Experience Manager para saber mais sobre como atualizar conteúdo do site e integrar com seus Comércio componentes de frontend e dados de back-end.
+>* Se você planeja usar [!DNL Adobe Commerce Optimizer] sem um back-end Adobe Systems Comércio, consulte a [documentação](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR) de vitrine Adobe Experience Manager para saber mais sobre como atualizar conteúdo do site e integrar com seus Comércio componentes de frontend e dados de back-end.
 ></br></br>
->* Se você planeja usar [!DNL Adobe Commerce Optimizer] com um backend Comércio Adobe Systems, consulte a [documentação](https://experienceleague.adobe.com/developer/commerce/storefront/) Adobe Systems Comércio Storefront para saber como atualizar conteúdo e configurar componentes de vitrine para gerenciamento de conta, check-out e outros recursos.
+>* Se você planeja usar [!DNL Adobe Commerce Optimizer] com um backend Comércio Adobe Systems, consulte a [documentação](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR) Adobe Systems Comércio Storefront para saber como atualizar conteúdo e configurar componentes de vitrine para gerenciamento de conta, check-out e outros recursos.

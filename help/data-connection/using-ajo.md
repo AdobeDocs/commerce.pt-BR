@@ -21,7 +21,7 @@ Crie um carrinho abandonado, navegue por e-mail ou envie notificações usando d
 | Tipos de dados | Dados da vitrine (Eventos comportamentais) | Dados de back office (eventos do lado do servidor) |
 |---|---|---|
 | **Definição** | Cliques ou ações que os clientes realizam no site. | Informações sobre o ciclo de vida e detalhes de cada pedido (passado e atual). |
-| **Eventos capturados pelo Adobe Commerce** | [pageView](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/en/docs/commerce/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[Histórico de pedidos](https://experienceleague.adobe.com/en/docs/commerce/data-connection/fundamentals/connect-data#send-historical-order-data) |
+| **Eventos capturados pelo Adobe Commerce** | [pageView](https://experienceleague.adobe.com/pt-br/docs/commerce/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/pt-br/docs/commerce/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/pt-br/docs/commerce/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/pt-br/docs/commerce/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/pt-br/docs/commerce/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/pt-br/docs/commerce/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/pt-br/docs/commerce/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[Histórico de pedidos](https://experienceleague.adobe.com/pt-br/docs/commerce/data-connection/fundamentals/connect-data#send-historical-order-data) |
 
 ### O que outros clientes conquistaram?
 
@@ -47,7 +47,7 @@ Esse caso de uso específico se concentra na criação de um email de carrinho a
 
 ### O que é o Adobe Journey Optimizer?
 
-O [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html) ajuda a personalizar a experiência de comércio para seus compradores. Por exemplo, você pode usar o Journey Optimizer para criar e entregar campanhas de marketing programadas, como promoções semanais para uma loja de varejo, ou gerar um email de carrinho abandonado se um cliente tiver adicionado um produto a um carrinho, mas não concluído o processo de finalização.
+O [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html?lang=pt-BR) ajuda a personalizar a experiência de comércio para seus compradores. Por exemplo, você pode usar o Journey Optimizer para criar e entregar campanhas de marketing programadas, como promoções semanais para uma loja de varejo, ou gerar um email de carrinho abandonado se um cliente tiver adicionado um produto a um carrinho, mas não concluído o processo de finalização.
 
 Neste tópico, você aprenderá a criar um email de carrinho abandonado ouvindo um evento `checkout` gerado da sua instância [!DNL Commerce] e respondendo a esse evento no Journey Optimizer.
 
@@ -83,7 +83,7 @@ Crie um usuário em seu ambiente de sandbox e confirme se as informações da co
 
 No ambiente de sandbox do [!DNL Commerce], acione eventos na loja visualizando páginas de produto, adicionando itens ao carrinho e concluindo várias outras atividades que um comprador realizaria. Em seguida, confirme se esses eventos estão fluindo para o Journey Optimizer.
 
-1. Iniciar [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html).
+1. Iniciar [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html?lang=pt-BR).
 1. Selecione **[!UICONTROL Profiles]**.
 1. Defina **[!UICONTROL Identity namespace]** como `Email`.
 1. Defina o **[!UICONTROL Identity value]** como seu endereço de email.
@@ -112,7 +112,7 @@ Configure dois eventos no Journey Optimizer: um evento escuta o evento `commerce
 
 ### Criar um evento de ouvinte
 
-1. Iniciar [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html).
+1. Iniciar [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html?lang=pt-BR).
 
 1. Clique em **[!UICONTROL Configurations]** na seção **[!UICONTROL Administration]** do painel esquerdo.
 
@@ -185,7 +185,7 @@ Crie um email de carrinho abandonado que é enviado quando um carrinho abandonad
 
 1. Na jornada criada acima, clique duas vezes no ícone **[!UICONTROL Email]** na tela.
 
-1. Siga as [etapas](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions.html#configure-email) do guia do Journey Optimizer para criar o email de carrinho abandonado.
+1. Siga as [etapas](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions.html?lang=pt-BR#configure-email) do guia do Journey Optimizer para criar o email de carrinho abandonado.
 
 Agora você tem uma jornada no Journey Optimizer que escuta o evento `commerce.checkouts` do seu armazenamento [!DNL Commerce] e um email de carrinho abandonado que é enviado após um período. A próxima seção mostra como testar a jornada.
 

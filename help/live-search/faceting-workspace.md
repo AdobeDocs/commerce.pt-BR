@@ -16,7 +16,7 @@ O espaço de trabalho *Faceting* lista todas as facetas disponíveis no momento 
 
 ## Definir o escopo
 
-Se a instalação do Adobe Commerce incluir vários modos de exibição de armazenamento, defina o **Escopo** como [modo de exibição de armazenamento](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) ao qual as configurações das facetas se aplicam.
+Se a instalação do Adobe Commerce incluir vários modos de exibição de armazenamento, defina o **Escopo** como [modo de exibição de armazenamento](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=pt-BR#scope-settings) ao qual as configurações das facetas se aplicam.
 
 ## Filtrar a lista
 

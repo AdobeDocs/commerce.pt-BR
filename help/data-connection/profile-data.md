@@ -14,24 +14,24 @@ ht-degree: 0%
 
 Quando os compradores criam um perfil no site do Commerce, um registro de perfil é criado e os dados são capturados. Você deve criar um esquema e um conjunto de dados específicos para esse registro de perfil antes de poder transmitir esses dados de perfil para a Experience Platform.
 
-1. [Crie](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas) um esquema e defina a classe como **Perfil Individual**.
+1. [Crie](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/ui/resources/schemas) um esquema e defina a classe como **Perfil Individual**.
 
-1. [Adicione](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas) os seguintes grupos de campos específicos de perfil:
+1. [Adicione](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/ui/resources/schemas) os seguintes grupos de campos específicos de perfil:
 
    - identityMap
    - Detalhes demográficos
    - Detalhes de contato pessoal
    - Detalhes da conta do usuário
 
-1. [Habilitar](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas) o esquema para o Perfil.
+1. [Habilitar](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/ui/resources/schemas) o esquema para o Perfil.
 
    Quando um esquema é ativado para o Perfil, qualquer conjunto de dados criado a partir desse esquema participa do Real-Time CDP, que mescla dados de fontes diferentes para criar uma visualização completa de cada cliente.
 
-1. [Crie um conjunto de dados](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform) com base no esquema que você criou ou atualizou.
+1. [Crie um conjunto de dados](https://experienceleague.adobe.com/pt-br/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform) com base no esquema que você criou ou atualizou.
 
    Um conjunto de dados é uma construção de armazenamento e gerenciamento para uma coleção de dados, normalmente uma tabela que contém um esquema (colunas) e campos (linhas). Os conjuntos de dados também contêm metadados que descrevem vários aspectos dos dados armazenados.
 
-1. Crie um [namespace personalizado](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces#create-namespaces) no Experience Platform com os seguintes valores:
+1. Crie um [namespace personalizado](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/namespaces#create-namespaces) no Experience Platform com os seguintes valores:
 
    - **Nome para Exibição**: _ID de Cliente da Commerce_
    - **Símbolo de Identidade**: _CustomerId_

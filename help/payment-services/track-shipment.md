@@ -13,7 +13,7 @@ ht-degree: 0%
 
 O [!DNL Payment Services] permite que os comerciantes vejam as informações de rastreamento de uma remessa no Painel do Comerciante do PayPal.
 
-Consulte o tópico [remessas](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/shipments){target=_blank} para obter mais informações sobre a grade remessas do Adobe Commerce.
+Consulte o tópico [remessas](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/order-management/shipments){target=_blank} para obter mais informações sobre a grade remessas do Adobe Commerce.
 
 ## Como funciona o rastreamento da sua remessa
 

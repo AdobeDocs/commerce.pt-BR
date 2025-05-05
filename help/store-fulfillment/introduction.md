@@ -34,7 +34,7 @@ A solução Store Fulfillment oferece suporte e aprimora os recursos nativos do 
 
 * Suporta a maioria dos tipos de produtos — simples, configuráveis, agrupados, agrupados e virtuais
 
-* Integra-se ao [[!DNL Adobe Commerce] Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/basics/sources-stocks)
+* Integra-se ao [[!DNL Adobe Commerce] Inventory management](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/inventory/basics/sources-stocks)
 
 * Integra-se a sistemas de gerenciamento de inventário de comerciantes de ponto de venda (POS), como ERP, OMS e WMS
 
@@ -76,6 +76,6 @@ O Store Fulfillment aprimora o Adobe Commerce ao adicionar recursos para oferece
 
 >[!TIP]
 >
-> Para obter uma demonstração rápida da solução de Atendimento da Loja, consulte a [Visão Geral de Atendimento da Loja](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html), disponível em _Vídeos e Tutoriais da Adobe Commerce_.
+> Para obter uma demonstração rápida da solução de Atendimento da Loja, consulte a [Visão Geral de Atendimento da Loja](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html?lang=pt-BR), disponível em _Vídeos e Tutoriais da Adobe Commerce_.
 
 

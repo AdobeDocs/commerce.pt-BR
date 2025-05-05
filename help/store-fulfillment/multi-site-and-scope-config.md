@@ -13,9 +13,9 @@ ht-degree: 0%
 
 # Configuração de vários sites e escopos
 
-Você pode definir o [Escopo](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) para alguns elementos para acomodar vários sites, lojas e visualizações de loja:
+Você pode definir o [Escopo](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) para alguns elementos para acomodar vários sites, lojas e visualizações de loja:
 
-- [Gerenciar Estoque](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage) por escopo
+- [Gerenciar Estoque](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/inventory/stocks/stocks-manage) por escopo
 
 - Gerenciar [!DNL Delivery Methods] por escopo
 

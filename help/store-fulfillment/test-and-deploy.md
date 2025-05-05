@@ -644,4 +644,4 @@ A implantação e o teste variam dependendo da infraestrutura e dos recursos.
 
 >[!TIP]
 >
->Para obter diretrizes de implantação, listas de verificação e práticas recomendadas para o Adobe Commerce em projetos de infraestrutura em nuvem, consulte [Implantar sua loja](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production) na documentação para desenvolvedores do Adobe Commerce.
+>Para obter diretrizes de implantação, listas de verificação e práticas recomendadas para o Adobe Commerce em projetos de infraestrutura em nuvem, consulte [Implantar sua loja](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production) na documentação para desenvolvedores do Adobe Commerce.

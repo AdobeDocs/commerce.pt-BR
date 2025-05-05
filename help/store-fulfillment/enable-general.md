@@ -150,7 +150,7 @@ Como o arquivo de log do aplicativo pode crescer rapidamente, habilite o log do 
 
 >[!TIP]
 >
->Para instalações locais do Adobe Commerce, peça ao administrador do sistema para configurar a rotação de log para o arquivo `var/log/walmart-bopis.log` para minimizar o tamanho. Para instalações locais do Adobe Commerce, consulte [Rotação de logs](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) no _Guia de Instalação do Adobe Commerce_. Para projetos de infraestrutura em nuvem do Adobe Commerce, consulte [Exibir e gerenciar logs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
+>Para instalações locais do Adobe Commerce, peça ao administrador do sistema para configurar a rotação de log para o arquivo `var/log/walmart-bopis.log` para minimizar o tamanho. Para instalações locais do Adobe Commerce, consulte [Rotação de logs](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=pt-BR#server-settings) no _Guia de Instalação do Adobe Commerce_. Para projetos de infraestrutura em nuvem do Adobe Commerce, consulte [Exibir e gerenciar logs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=pt-BR).
 
 <table>
 <thead>
@@ -355,7 +355,7 @@ Defina essas configurações no Administrador selecionando <strong>[!UICONTROL S
 
 >[!NOTE]
 >
->Para obter informações adicionais sobre a configuração das opções de entrega na loja, consulte [Entrega na loja](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery) no _Guia do Usuário do Adobe Commerce_.
+>Para obter informações adicionais sobre a configuração das opções de entrega na loja, consulte [Entrega na loja](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery) no _Guia do Usuário do Adobe Commerce_.
 
 
 ### Configuração de métodos de entrega

@@ -24,7 +24,7 @@ A seguir estão os dados capturados para um registro de perfil.
 
 | Campo | Descrição |
 |---|---|
-| `channel` | Contém informações sobre a fonte de dados. `_id` e `_type` contêm [valores com namespace](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/namespaces). |
+| `channel` | Contém informações sobre a fonte de dados. `_id` e `_type` contêm [valores com namespace](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/namespaces). |
 | `channel._id` | O identificador exclusivo do canal, como `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifica a origem dos dados do canal, como `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `person` | Contém informações sobre o cliente. |
@@ -59,6 +59,6 @@ A seguir estão os dados capturados para um registro de perfil.
 
 >[!NOTE]
 >
->Cada registro de perfil também inclui o campo [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap), que inclui a ID de cliente da Commerce gerada pelo sistema como o identificador principal do perfil e uma ID de email usada como um identificador secundário.
+>Cada registro de perfil também inclui o campo [`identityMap`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/field-groups/profile/identitymap), que inclui a ID de cliente da Commerce gerada pelo sistema como o identificador principal do perfil e uma ID de email usada como um identificador secundário.
 
 Saiba como [criar um esquema específico de registro de perfil](profile-data.md) que possa assimilar os dados de seus registros de perfil.

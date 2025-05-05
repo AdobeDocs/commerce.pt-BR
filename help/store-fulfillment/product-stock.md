@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Gerenciamento de Estoque de Produtos
 
-Como comerciante, você pode usar as opções de ações e de origem do Adobe Commerce [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction). Além disso, você pode usar a solução Store Fulfillment para controlar outras opções de disponibilidade de estoque relacionadas às operações de sua loja de comerciantes.
+Como comerciante, você pode usar as opções de ações e de origem do Adobe Commerce [Inventory management](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/inventory/introduction). Além disso, você pode usar a solução Store Fulfillment para controlar outras opções de disponibilidade de estoque relacionadas às operações de sua loja de comerciantes.
 
 - Opção de entrega doméstica de lojas comerciantes
 

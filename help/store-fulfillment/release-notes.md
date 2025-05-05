@@ -18,19 +18,19 @@ Estas notas de versão descrevem a versão inicial do [!DNL Store Fulfillment Se
 ![Problema corrigido](../assets/fix.svg) Correções e melhorias
 ![Problema conhecido](../assets/bug.svg) Problemas conhecidos
 
-Consulte [Versões futuras](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) para saber mais sobre os cronogramas de lançamento e o suporte.
+Consulte [Versões futuras](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html?lang=pt-BR) para saber mais sobre os cronogramas de lançamento e o suporte.
 
-Consulte [Disponibilidade do Produto](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) para saber quais versões do Adobe Commerce oferecem suporte a esta extensão.
+Consulte [Disponibilidade do Produto](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=pt-BR) para saber quais versões do Adobe Commerce oferecem suporte a esta extensão.
 
 ## v1.5.0
 
 *3 de agosto de 2023*
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}[Adobe Commerce 2.4.4 a 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html), incluindo as versões de patch de segurança 2.4.6-p1, 2.4.5-p3 e 2.4.4-p4
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"}[Adobe Commerce 2.4.4 a 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=pt-BR), incluindo as versões de patch de segurança 2.4.6-p1, 2.4.5-p3 e 2.4.4-p4
 
 Esta versão inclui as seguintes atualizações:
 
-![Novo](../assets/fix.svg) Atualização da extensão para oferecer suporte às [versões de patch de segurança do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/overview.html) 2.4.6-p1, 2.4.5-p3 e 2.4.4-p4.
+![Novo](../assets/fix.svg) Atualização da extensão para oferecer suporte às [versões de patch de segurança do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/overview.html?lang=pt-BR) 2.4.6-p1, 2.4.5-p3 e 2.4.4-p4.
 
 ![Novo](../assets/new.svg)<!-- WMTP-918 --> Suporte adicionado para a opção de configuração [Envio assíncrono](sales-emails.md) para emails de vendas. Os comerciantes que atualizam para a versão 1.5.0 têm a opção de enviar emails imediatamente (padrão) ou de forma assíncrona.
 
@@ -68,7 +68,7 @@ Esta versão inclui as seguintes atualizações:
 
 [!BADGE Com suporte]{type=Informative tooltip="Compatível"}
 
-![Novo](../assets/fix.svg) [!DNL Store Fulfillment] agora é [compatível com [!DNL Adobe Commerce] 2.4.4 a 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+![Novo](../assets/fix.svg) [!DNL Store Fulfillment] agora é [compatível com [!DNL Adobe Commerce] 2.4.4 a 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=pt-BR).
 
 
 ## v1.3.0
@@ -89,7 +89,7 @@ Esta versão inclui a seguinte atualização:
 
 Esta versão inclui a seguinte atualização:
 
-![Novo](../assets/fix.svg) [!DNL Store Fulfillment] agora é [compatível com [!DNL Adobe Commerce] 2.4.4 a 2.4.5](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+![Novo](../assets/fix.svg) [!DNL Store Fulfillment] agora é [compatível com [!DNL Adobe Commerce] 2.4.4 a 2.4.5](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=pt-BR).
 
 
 ## v1.1.0

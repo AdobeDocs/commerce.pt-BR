@@ -31,12 +31,12 @@ Este guia não aborda os principais recursos do Adobe Commerce.
 
 | Guia | Descrição |
 |-----------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [Guia do Usuário do Adobe Commerce 2.4](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) | Documentação voltada para o comerciante do Adobe Commerce |
+| [Guia do Usuário do Adobe Commerce 2.4](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/user-guides/home) | Documentação voltada para o comerciante do Adobe Commerce |
 | [Guia do desenvolvedor do Adobe Commerce 2.4](https://developer.adobe.com/commerce/docs/) | Documentação voltada para o desenvolvedor usada para criar e personalizar o Adobe Commerce |
 
 ## Suporte
 
 Se você precisar de informações ou tiver dúvidas que não são abordadas neste guia, use os seguintes recursos:
 
-* [Centro de ajuda](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} — Consulte os artigos de solução de problemas relacionados a [!DNL Store Fulfillment].
-* [Tíquetes de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"}—Envie um tíquete para receber ajuda adicional.
+* [Centro de ajuda](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket){target="_blank"} — Consulte os artigos de solução de problemas relacionados a [!DNL Store Fulfillment].
+* [Tíquetes de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket){target="_blank"}—Envie um tíquete para receber ajuda adicional.

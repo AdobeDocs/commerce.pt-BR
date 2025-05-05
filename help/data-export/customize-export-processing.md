@@ -63,7 +63,7 @@ As opções especificadas na linha de comando substituem a configuração de exp
 
 Para processar todas as operações de exportação de dados usando multi-threading, os integradores de sistema ou desenvolvedores podem modificar o número de threads e o tamanho do lote para cada feed na configuração do aplicativo do Commerce.
 
-Essas alterações podem ser aplicadas adicionando valores personalizados à [seção do sistema](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) do arquivo de configuração, `app/etc/config.php`.
+Essas alterações podem ser aplicadas adicionando valores personalizados à [seção do sistema](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) do arquivo de configuração, `app/etc/config.php`.
 
 **Exemplo: configuração de multithreading para produtos e preços**
 

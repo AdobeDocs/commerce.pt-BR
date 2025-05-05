@@ -20,7 +20,7 @@ As propriedades do atributo de produto (metadados) determinam:
 
 O escopo dos metadados do atributo é `website/store/store view`.
 
-A API [!DNL Live Search] permite que um cliente classifique por qualquer atributo de produto que tenha a `Use in Search` [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) propriedade de vitrine definida como `Yes` no Administrador do Adobe Commerce. Quando habilitado, `Search Weight` pode ser definido para o atributo.
+A API [!DNL Live Search] permite que um cliente classifique por qualquer atributo de produto que tenha a `Use in Search` [&#128279;](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/product-attributes/product-attributes) propriedade de vitrine definida como `Yes` no Administrador do Adobe Commerce. Quando habilitado, `Search Weight` pode ser definido para o atributo.
 
 [!DNL Live Search] não indexa produtos excluídos ou produtos definidos como `Not Visible Individually`.
 
@@ -32,7 +32,7 @@ A API [!DNL Live Search] permite que um cliente classifique por qualquer atribut
 
 O cliente chama o serviço de pesquisa da loja para recuperar (filtrável, classificável) os metadados do índice. O serviço de pesquisa pode chamar apenas atributos de produto pesquisáveis com a propriedade *Usar na Navegação em Camadas* definida como `Filterable (with results)` e *Usar para Classificação na Listagem de Produtos* definida como `Yes`.
 
-Para construir uma consulta dinâmica, o serviço de pesquisa precisa saber quais atributos podem ser pesquisados e seus [weight](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results). [!DNL Live Search] respeita os pesos de pesquisa do Adobe Commerce (1-10, onde 10 é a prioridade mais alta). A lista de dados sincronizados e compartilhados com o serviço de catálogo pode ser encontrada no schema, que é definido em:
+Para construir uma consulta dinâmica, o serviço de pesquisa precisa saber quais atributos podem ser pesquisados e seus [weight](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/search/search-results). [!DNL Live Search] respeita os pesos de pesquisa do Adobe Commerce (1-10, onde 10 é a prioridade mais alta). A lista de dados sincronizados e compartilhados com o serviço de catálogo pode ser encontrada no schema, que é definido em:
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 
@@ -89,7 +89,7 @@ A tabela a seguir descreve várias alterações e o tempo de espera aproximado a
 
 ## Pesquisa de cliente
 
-A API [!DNL Live Search] permite que um cliente classifique por qualquer atributo de produto classificável definindo a [propriedade de vitrine](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes), *Usada para classificar nas listagens de produtos* a `Yes`. Dependendo do tema, essa configuração faz com que o atributo seja incluído como uma opção no controle de paginação [Classificar por](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation) em páginas de catálogo. Até 200 atributos de produto podem ser indexados por [!DNL Live Search], com [propriedades de vitrine](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) que podem ser pesquisadas e filtradas.
+A API [!DNL Live Search] permite que um cliente classifique por qualquer atributo de produto classificável definindo a [propriedade de vitrine](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/product-attributes/product-attributes), *Usada para classificar nas listagens de produtos* a `Yes`. Dependendo do tema, essa configuração faz com que o atributo seja incluído como uma opção no controle de paginação [Classificar por](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/navigation/navigation) em páginas de catálogo. Até 200 atributos de produto podem ser indexados por [!DNL Live Search], com [propriedades de vitrine](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/product-attributes/product-attributes) que podem ser pesquisadas e filtradas.
 
 Os metadados do índice são armazenados no pipeline de indexação e podem ser acessados pelo serviço de pesquisa.
 

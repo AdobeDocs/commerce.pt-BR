@@ -19,7 +19,7 @@ espera-se que você mantenha esse código. Relatar comportamento inaceitável pa
 
 ## Documentação do Guia do colaborador
 
-Consulte o [Guia do Colaborador](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Consulte o [Guia do Colaborador](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=pt-BR).
 
 ## Você tem dúvidas?
 
@@ -56,4 +56,4 @@ fique à vontade para entrar em contato com os colaboradores existentes e conver
 
 ## Problemas de segurança
 
-Para relatar um problema de Segurança, [registre um problema junto aos nossos especialistas em segurança](https://helpx.adobe.com/security/alertus.html).
+Para relatar um problema de Segurança, [registre um problema junto aos nossos especialistas em segurança](https://helpx.adobe.com/br/security/alertus.html).

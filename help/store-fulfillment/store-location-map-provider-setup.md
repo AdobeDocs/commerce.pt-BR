@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Localização de armazenamento e configuração de mapeamento
 
-Habilite o local de armazenamento e os recursos de mapeamento para Atendimento de Loja configurando um [provedor de distância](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/distance-priority-algorithm) para procurar locais de loja de varejo.
+Habilite o local de armazenamento e os recursos de mapeamento para Atendimento de Loja configurando um [provedor de distância](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/inventory/configuration/distance-priority-algorithm) para procurar locais de loja de varejo.
 
 **Requisitos**
 
-Durante o processo de configuração, você fornece uma chave de API do Google para a plataforma Google Maps. Se você não tiver um, [gere um da plataforma Google Maps](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/distance-priority-algorithm#configure-google-maps).
+Durante o processo de configuração, você fornece uma chave de API do Google para a plataforma Google Maps. Se você não tiver um, [gere um da plataforma Google Maps](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/inventory/configuration/distance-priority-algorithm#configure-google-maps).
 
 Para configurar o provedor de distância:
 

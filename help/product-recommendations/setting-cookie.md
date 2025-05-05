@@ -10,7 +10,7 @@ ht-degree: 0%
 
 # Lidar com restrições de cookies
 
-O Adobe Commerce e o Magento Open Source solicitam consentimento antes que os dados sejam armazenados em cookies do navegador. Para obter mais informações, consulte [Modo de restrição de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html).
+O Adobe Commerce e o Magento Open Source solicitam consentimento antes que os dados sejam armazenados em cookies do navegador. Para obter mais informações, consulte [Modo de restrição de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=pt-BR).
 
 Quando você implanta o módulo `magento/product-recommendations` na produção, ele começa a coletar eventos de interação do comprador na loja. Como os dados desses eventos podem ser armazenados em cookies do navegador ou no armazenamento local, o recurso suporta o modo de restrição de cookie, pois não coleta eventos até que o comprador tenha dado o consentimento para o cookie.
 
