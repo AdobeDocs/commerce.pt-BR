@@ -370,7 +370,7 @@ As instalações existentes do [!DNL Live Search] devem ser atualizadas para o [
 
 [!BADGE Com suporte]{type="Informative" tooltip="Compatível"} Adobe Commerce versões 2.4.x e mais recentes
 
-O painel de relatórios ![Novo](../assets/new.svg)[Desempenho](performance.md) fornece à insight termos de pesquisa que os compradores usam.
+O painel de relatórios ![Novo](../assets/new.svg) [Desempenho](performance.md) fornece à insight termos de pesquisa que os compradores usam.
 ![Novo](../assets/new.svg) [!DNL Live Search] [O Storefront Events SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) fornece acesso a uma camada de dados comum com métricas e serviços de assinatura e publicação de eventos.
 ![Correção](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) tem uma nova classe `active` para o contêiner `.search-autocomplete` que controla a visibilidade.
 ![Correção](../assets/fix.svg) Na loja, o link de rodapé [Termos de Pesquisa](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) foi removido e seu cache foi desabilitado para instalações de [!DNL Live Search].

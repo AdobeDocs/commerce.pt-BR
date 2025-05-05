@@ -59,7 +59,7 @@ Agora que tem uma [!DNL Adobe Commerce Optimizer] instância, você está pronto
 
 ## Dados de catálogo disponíveis para participantes do acesso antecipado
 
-Como participante do acesso antecipado, o [!DNL Adobe Commerce Optimizer] instância contém dados simulados do catálogo baseados no caso](./use-case/admin-use-case.md) de uso do [Carvelo. Os dados simulados, juntamente com alguns canais e políticas pré-configurados, ajudam você a se familiarizar com as [!DNL Adobe Commerce Optimizer] interface.
+Como participante do acesso antecipado, o [!DNL Adobe Commerce Optimizer] instância contém dados simulados do catálogo baseados no caso[&#128279;](./use-case/admin-use-case.md) de uso do Carvelo. Os dados simulados, juntamente com alguns canais e políticas pré-configurados, ajudam você a se familiarizar com as [!DNL Adobe Commerce Optimizer] interface.
 
 <!--Ingest catalog data
 

@@ -296,7 +296,7 @@ Adicione a configuração do projeto para a extensão do Sidekick. O Sidekick é
 
    Consulte a [documentação da Biblioteca da Sidekick](https://www.aem.live/docs/sidekick-library) para obter mais informações.
 
-+++
+   +++
 
 1. Atualize os valores da chave `url` com os valores do seu repositório GitHub.
 
@@ -360,9 +360,9 @@ Para adicionar conteúdo à loja, é necessário visualizar e publicar o conteú
 
 1. Selecione os arquivos em cada pasta separadamente e use a barra de ferramentas do Sidekick para visualizar e publicar todos os arquivos.
 
-   * **** Visualização- Faz upload conteúdo para o ambiente de preparo. Os URLs de armazenamento à beira da loja terminam com `.aem.page`.
+   * **&#x200B;**&#x200B;Visualização- Faz upload conteúdo para o ambiente de preparo. Os URLs de armazenamento à beira da loja terminam com `.aem.page`.
 
-   * **** Publish-Faz upload de conteúdo para o ambiente de produção. Os URLs de produção terminam com `aem.live`.
+   * **&#x200B;**&#x200B;Publish-Faz upload de conteúdo para o ambiente de produção. Os URLs de produção terminam com `aem.live`.
 
 Para obter mais informações, consulte a documentação Adobe Experience Manager [Sidekick](https://www.aem.live/docs/sidekick) .
 

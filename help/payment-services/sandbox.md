@@ -28,7 +28,7 @@ Para concluir a integração da sandbox:
       Se você criou uma conta de sandbox do PayPal durante o processo de integração do PayPal com sandbox, deverá [redefinir sua sandbox de integração](#reset-your-sandbox-account), pois, ou não poderá verificar seu email.
 
    1. Selecione **[!UICONTROL Business]** como o Tipo de Conta e clique em **[!UICONTROL Create]**.
-   1. Na seção _[!UICONTROL Sandbox Accounts]_, clique nos três pontos na coluna_[!UICONTROL Manage accounts]_ para a conta de sandbox que você criou.
+   1. Na seção _[!UICONTROL Sandbox Accounts]_, clique nos três pontos na coluna&#x200B;_[!UICONTROL Manage accounts]_ para a conta de sandbox que você criou.
    1. Clique em **[!UICONTROL View/edit account]**.
 
       ![PayPal - Exibir/editar conta de sandbox](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}

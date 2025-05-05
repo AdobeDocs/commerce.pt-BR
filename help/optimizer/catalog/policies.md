@@ -31,7 +31,7 @@ Um filtro é composto pelas seguintes partes:
 | Parte | Descrição | Exemplo |
 |---|---|---|
 | **Atributo** | O atributo de produto usado para filtragem. | `part_category` |
-| **Operador** | A condição aplicada ao atributo. | `IN`, , `EQUALS``CONTAINS` |
+| **Operador** | A condição aplicada ao atributo. | `IN`, , `EQUALS` `CONTAINS` |
 | **Valor fonte** | Especifica se os valores são `STATIC` ou `TRIGGER`. | `STATIC` |
 | **Valor** | Os valores específicos que atendem à condição. | `brakes, suspension` |
 
@@ -117,10 +117,10 @@ Nesta seção, você cria uma nova regra. A política pode ser **ESTÁTICA** ou 
 
 1. Adicione os detalhes do filtro. Por exemplo:
 
-   1. **** Atributo - Insira um atributo do catálogo. Por exemplo, &quot;part_categoria&quot;. Este nome deve corresponder exatamente ao nome do atributo no catálogo.
+   1. **&#x200B;**&#x200B;Atributo - Insira um atributo do catálogo. Por exemplo, &quot;part_categoria&quot;. Este nome deve corresponder exatamente ao nome do atributo no catálogo.
    1. **Operador** - Escolha o operador. Por exemplo, **IN**.
-   1. **Valor Origem** - Selecione Acionador ****.
-   1. **** Valor - Insira o nome do acionador que você criou anteriormente (**AC-Policy-Brand**).
+   1. **Valor Origem** - Selecione Acionador **&#x200B;**.
+   1. **&#x200B;**&#x200B;Valor - Insira o nome do acionador que você criou anteriormente (**AC-Policy-Brand**).
 
 1. Clique na **[!UICONTROL Save]** botão na caixa de diálogo de detalhes do filtro.
 

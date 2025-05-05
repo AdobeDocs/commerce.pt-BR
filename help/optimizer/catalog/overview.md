@@ -24,11 +24,11 @@ Em um alto nível, com serviços de merchandising você pode:
 - Desbloqueie a agregação de catálogos e entregue as conteúdo certas ao criar seu catálogo de produtos para refletir seus negócios, incluindo produtos, clientes, preços e distribuição.
 - Rapidamente assimilar e atualize os dados do catálogo e envie rapidamente as atualizações para a vitrine para suas promoções e necessidades campanha.
 - Faça pontuações perfeitas de farol com componentes de interface prontos para uso e rápidos, alimentados pelo Edge Delivery Services para navegação perfeita de produtos e recomendações.
-- Adote uma arquitetura composável moderna usando a arquitetura de extensibilidade da Adobe Systems ([aplicativo Builder](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-development)) para importar dados de produtos e vitrines de comércio sem periféricos usando a Malha](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-and-api-mesh) da API da [Adobe Systems.
+- Adote uma arquitetura composável moderna usando a arquitetura de extensibilidade da Adobe Systems ([aplicativo Builder](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-development)) para importar dados de produtos e vitrines de comércio sem periféricos usando a Malha[&#128279;](https://experienceleague.adobe.com/en/playlists/commerce-get-started-app-builder-and-api-mesh) da API da Adobe Systems.
 
 >[!INFO]
 >
->Para saber mais sobre as APIs disponíveis nos Serviços de merchandising fornecidos por Canais e Políticas, consulte a documentação](https://developer-stage.adobe.com/commerce/services/composable-catalog) do [desenvolvedor.
+>Para saber mais sobre as APIs disponíveis nos Serviços de merchandising fornecidos por Canais e Políticas, consulte a documentação[&#128279;](https://developer-stage.adobe.com/commerce/services/composable-catalog) do desenvolvedor.
 
 ## Arquitetura
 
@@ -64,7 +64,7 @@ Os dados do produto incluem os seguintes tipos:
 - **Produtos** - SKUs individuais ou coleções de SKUs que representam bens físicos ou serviços intangíveis com atributos que representam o produto, incluindo descrição, peso, tamanho, dimensões e muito mais. Os atributos também especificam os escopos de canal e política de uma SKU. Os produtos podem ser agrupados em vários tipos de produtos, como simples, configurável, pacote, pacote de pacotes, assinaturas e muito mais.
 - **Metadados** - Os metadados do atributo de produto definem e gerenciam como os atributos de produto são exibidos na vitrine em listas de produtos, páginas de detalhes, resultados de pesquisa e assim por diante. Os metadados também definem como os atributos do produto são usados na pesquisa — classificação, filtragem, pesos de pesquisa e assim por diante.
 - **Catálogos de preços e preços** - Determina os preços de venda dos produtos. No Merchandising Services, um produto SKU e preço são dissociados, portanto, você tem o poder de definir vários livros de preços para um único SKU. Ao dissociar os preços do SKU, você pode desbloquear preços específicos escopo em diferentes níveis de clientes, unidades de negócios e geografias. Você pode definir preços regulares e com desconto e gerenciar tudo isso em escala.
-- **** Assets - Artefatos associados a produtos, como imagens, vídeos, PDFs ou outros tipos de arquivos (roteiro futuro).
+- **&#x200B;**&#x200B;Assets - Artefatos associados a produtos, como imagens, vídeos, PDFs ou outros tipos de arquivos (roteiro futuro).
 
 ### Gerenciamento de contexto do produto
 

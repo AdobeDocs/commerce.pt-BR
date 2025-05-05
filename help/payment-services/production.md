@@ -28,8 +28,8 @@ Depois de [configurar seus Serviços Commerce](connect.md#configure-commerce-ser
 
    Você é direcionado para a área de configurações na exibição Página Inicial com as opções relevantes expandidas (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), onde é possível habilitar as opções [!DNL Payment Services] como seu [método de pagamento](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}.
 
-1. Em _[!UICONTROL General Configuration]_, defina **[!UICONTROL Enable]**como `Yes`.
-1. Defina **[!UICONTROL Payment Action]**, para _[!UICONTROL Credit Card Fields]_e_[!UICONTROL PayPal payment buttons]_, para um dos seguintes:
+1. Em _[!UICONTROL General Configuration]_, defina **[!UICONTROL Enable]**&#x200B;como `Yes`.
+1. Defina **[!UICONTROL Payment Action]**, para _[!UICONTROL Credit Card Fields]_&#x200B;e_[!UICONTROL PayPal payment buttons]_, para um dos seguintes:
 
    | Configuração | Descrição |
    |---|---|
@@ -104,7 +104,7 @@ Depois que o país for selecionado:
 
 1. Na barra lateral Admin, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**
 
-   O botão _[!UICONTROL Live onboarding]_não está mais visível e você vê uma caixa de texto &quot;[!UICONTROL Live payments pending]&quot;.
+   O botão _[!UICONTROL Live onboarding]_&#x200B;não está mais visível e você vê uma caixa de texto &quot;[!UICONTROL Live payments pending]&quot;.
 
    Nessa caixa de texto, também pode ser solicitado que você confirme seu endereço de email no PayPal para concluir a integração.
 
@@ -154,7 +154,7 @@ Ativar pagamentos em tempo real:
 
 1. Na barra lateral _Admin_, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Na Página Inicial, clique em **[!UICONTROL Settings]** na parte superior direita da página. Consulte [Página inicial](payments-home.md) para obter mais informações.
-1. Na seção _[!UICONTROL General Configuration]_, defina **[!UICONTROL Payment mode]**como `Production`.
+1. Na seção _[!UICONTROL General Configuration]_, defina **[!UICONTROL Payment mode]**&#x200B;como `Production`.
 1. Clique em **[!UICONTROL Save]**.
 1. [Limpar o cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}.
 
