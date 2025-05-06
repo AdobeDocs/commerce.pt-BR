@@ -4,9 +4,10 @@ description: Saiba como usar o [!DNL Adobe Commerce Optimizer] para gerenciar se
 hide: true
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
+exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
+source-git-commit: 149b87fc822e5d07eed36f3d6a38c80e7b493214
 workflow-type: tm+mt
-source-wordcount: '1656'
+source-wordcount: '1672'
 ht-degree: 0%
 
 ---
@@ -78,7 +79,7 @@ A Carvelo quer vender peças em suas três marcas (Aurora, Bolt e Cruz) por meio
 Em última análise, Carvelo tem dois objetivos principais:
 
 1. Mantenha um site &quot;global&quot;, que tenha todas as SKUs nas três marcas.
-1. Forneça um caminho para que as concessionárias configurem suas próprias lojas com base na visibilidade exclusiva do SKU e nos preços de cada SKU para cada concessionária.
+1. Forneça um caminho para que as concessionárias configurem suas próprias lojas com base na visibilidade exclusiva do SKU e nos preços de cada SKU para cada concessionária. Tudo isso ao usar um único catálogo básico, o que elimina a duplicação do catálogo.
 
 >[!ENDSHADEBOX]
 
@@ -269,12 +270,14 @@ A parte final deste tutorial envolve a atualização da loja que [você já crio
    - `ac-environment-id`: `"Fwus6kdpvYCmeEdcCX7PZg"`
    - `ac-price-book-id`: `"west_coast_inc"`
 
-   +++
++++
 
 1. Substitua o valor `ac-channel-id` pela ID de canal Celport copiada anteriormente.
-1. Se necessário, substitua o valor `ac-environment-id` pela ID do locatário para sua instância [!DNL Adobe Commerce Optimizer]. Você pode encontrar a ID no email de integração do programa de acesso antecipado ou entrando em contato com o representante de conta da Adobe.
+1. Substitua o valor `ac-environment-id` pela ID do locatário da instância [!DNL Adobe Commerce Optimizer]. Você pode encontrar a ID no email de integração do programa de acesso antecipado ou entrando em contato com o representante de conta da Adobe.
 
-   Verifique se o valor `commerce-endpoint` corresponde ao ponto de extremidade do GraphQL para a instância [!DNL Adobe Commerce Optimizer].
+   >[!IMPORTANT]
+   >
+   >Verifique se o valor `commerce-endpoint` corresponde ao ponto de extremidade do GraphQL para a instância [!DNL Adobe Commerce Optimizer]. Isso é fornecido no email de boas-vindas.
 
 1. Substitua o valor `ac-price-book-id` por `"east_coast_inc"`.
 1. Salve o arquivo.

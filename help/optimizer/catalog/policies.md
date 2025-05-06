@@ -3,9 +3,10 @@ title: Políticas
 description: Saiba como usar políticas para filtrar dados em um canal para garantir que os dados sejam enviados para o destino correto.
 hide: true
 recommendations: noCatalog
-source-git-commit: 425c801a852de566120504563e256b0351df588e
+exl-id: 05bbad1a-d612-41a4-9575-543f507089c3
+source-git-commit: a731d978aa180633431b0dd9dde5439c286461a2
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '910'
 ht-degree: 0%
 
 ---
@@ -26,18 +27,18 @@ Filtros são o mecanismo em uma política que impõe a segmentação de catálog
 
 ### Partes de um filtro
 
-Um filtro é composto pelas seguintes partes:
+Um filtro é composto das seguintes partes:
 
 | Parte | Descrição | Exemplo |
 |---|---|---|
 | **Atributo** | O atributo de produto usado para filtragem. | `part_category` |
-| **Operador** | A condição aplicada ao atributo. | `IN`, , `EQUALS` `CONTAINS` |
-| **Valor fonte** | Especifica se os valores são `STATIC` ou `TRIGGER`. | `STATIC` |
+| **Operador** | A condição aplicada ao atributo. | `IN`, `EQUALS`, `CONTAINS` |
+| **Origem do valor** | Especifica se os valores são `STATIC` ou `TRIGGER`. | `STATIC` [Saiba mais](#value-source-types) |
 | **Valor** | Os valores específicos que atendem à condição. | `brakes, suspension` |
 
 ### Exemplo
 
-Um filtro com o atributo `part_category`, um operador de `IN` e valores `brakes, suspension` garante que apenas produtos categorizados como freios e suspensão sejam incluídos na política.
+Um filtro com o atributo `part_category`, um operador de `IN` e valores `brakes, suspension` garante que apenas produtos com um atributo `part_category` que tenha um valor de `brake` ou `suspension` sejam filtrados e exibidos pela política.
 
 ### Tipos de origem de valor
 
@@ -111,20 +112,20 @@ Nesta seção, você cria uma nova regra. A política pode ser **ESTÁTICA** ou 
 
 1. Clique no botão **[!UICONTROL Save]** para salvar o acionador.
 
-1. Clique no **[!UICONTROL Add Filter]** botão.
+1. Clique no botão **[!UICONTROL Add Filter]**.
 
-   Uma caixa de diálogo é aberta para você adicionar detalhes do filtro.
+   Uma caixa de diálogo é aberta para que você adicione detalhes do filtro.
 
 1. Adicione os detalhes do filtro. Por exemplo:
 
-   1. **&#x200B;**&#x200B;Atributo - Insira um atributo do catálogo. Por exemplo, &quot;part_categoria&quot;. Este nome deve corresponder exatamente ao nome do atributo no catálogo.
-   1. **Operador** - Escolha o operador. Por exemplo, **IN**.
-   1. **Valor Origem** - Selecione Acionador **&#x200B;**.
-   1. **&#x200B;**&#x200B;Valor - Insira o nome do acionador que você criou anteriormente (**AC-Policy-Brand**).
+   1. **Atributo** - Insira um atributo do catálogo. Por exemplo, &quot;part_category&quot;. Esse nome deve corresponder exatamente ao nome do atributo no catálogo.
+   1. **Operador** - Escolha o operador. Por exemplo, **IN**. &#x200B;
+   1. **Value Source** - Selecione **TRIGGER**. &#x200B;
+   1. **Valor** - Insira o nome do acionador criado anteriormente (**AC-Policy-Brand**).
 
-1. Clique na **[!UICONTROL Save]** botão na caixa de diálogo de detalhes do filtro.
+1. Clique no botão **[!UICONTROL Save]** na caixa de diálogo de detalhes do filtro. &#x200B;
 
-1. Clique nos pontos de ação (...) ao lado do filtro criado e selecione **Ativar**. A partir daqui você também **pode Editar**, **Desativar** ou **Excluir** filtro.
+1. Clique nos pontos de ação (...) ao lado do filtro criado e selecione **Habilitar**. Aqui, você também pode **Editar**, **Desabilitar** ou **Excluir** o filtro.
 
    A coluna **Status** mostra um ícone verde e a palavra &quot;Habilitado&quot;.
 

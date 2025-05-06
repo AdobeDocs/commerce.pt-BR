@@ -2,9 +2,10 @@
 title: Limites e limites
 description: Saiba mais sobre os limites do  [!DNL Adobe Commerce Optimizer]  para garantir que ele atenda às necessidades da sua empresa.
 role: Admin, Developer
-source-git-commit: 45a43fe2ada206515c512a04aa6e9072e08844cc
+exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
+source-git-commit: 149b87fc822e5d07eed36f3d6a38c80e7b493214
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -28,10 +29,7 @@ A seguir são fornecidos limites e limites para o Adobe Commerce Optimizer.
 
 ## Preços
 
-- O número máximo de tabelas de preços é 30.000. O número de catálogo de preços da camada base não pode exceder 100 e deve seguir a regra em que (o número de catálogo de preços) x (o número de canais) deve ser menor que ou igual a 100.
-- A taxa de ingestão de feed de preço garantido é de 5.000 registros por minuto.
-- Um único registro de preço não pode ter mais de 10 descontos.
-- O número base de atualizações de preço por dia é 5.000.000.
+- O número máximo de tabelas de preços é 1.000.
 
 ## Pesquisa e loja
 
@@ -53,6 +51,6 @@ A seguir são fornecidos limites e limites para o Adobe Commerce Optimizer.
 - Para a descoberta de produtos, não há suporte para merchandising baseado em atributos e configurações de preço.
 - Para obter recomendações:
 
-   - ACO dá suporte ao tipo de recomendação _Recentemente Visualizados_ para EA
+   - [!DNL Adobe Commerce Optimizer] dá suporte ao tipo de recomendação _Recentemente Visualizados_ para acesso antecipado.
    - Não há suporte para inclusões ou exclusões de categoria ou atributo.
    - Você não pode visualizar recomendações em [!DNL Adobe Commerce Optimizer].

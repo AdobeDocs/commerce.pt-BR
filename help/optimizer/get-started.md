@@ -1,22 +1,23 @@
 ---
-title: Introdução com [!DNL Adobe Commerce Optimizer]
-description: Aprenda a começar com [!DNL Adobe Commerce Optimizer] isso.
+title: Introdução ao  [!DNL Adobe Commerce Optimizer]
+description: Saiba como começar a usar o  [!DNL Adobe Commerce Optimizer].
 hide: true
 recommendations: noCatalog
-source-git-commit: d716dd9d75beb642bfad30271b6ecd3490ee7328
+exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
+source-git-commit: ac79c8aa43ced017743fbef1f181b4eaf8e0a754
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
 
-# Começar
+# Introdução
 
 >[!NOTE]
 >
->Esta documentação descreve um produto no desenvolvimento de acesso antecipado e não reflete todas as funcionalidade destinadas à disponibilidade geral.
+>Esta documentação descreve um produto em desenvolvimento de acesso antecipado e não reflete toda a funcionalidade destinada à disponibilidade geral.
 
-Este guia o conduz a criar e trabalhar com um [!DNL Adobe Commerce Optimizer] instância.
+Este guia orienta você na criação e no trabalho com uma instância do [!DNL Adobe Commerce Optimizer].
 
 <!--Click the tabs below to see high-level workflow overviews for the following user types:
 
@@ -28,7 +29,7 @@ Este guia o conduz a criar e trabalhar com um [!DNL Adobe Commerce Optimizer] in
 
 >[!TAB Administrator and merchant workflow]
 
-This diagram provides a high-level overview of how administrators and merchants access and manage [!DNL Adobe Commerce Optimizer] instances. See the [Adobe Admin Console Guide](https://helpx.adobe.com/br/enterprise/admin-guide.html) for more information about administrator workflows.
+This diagram provides a high-level overview of how administrators and merchants access and manage [!DNL Adobe Commerce Optimizer] instances. See the [Adobe Admin Console Guide](https://helpx.adobe.com/enterprise/admin-guide.html) for more information about administrator workflows.
 
 NEED DIAGRAM
 
@@ -43,23 +44,27 @@ NEED DIAGRAM
 
 ## Provisionamento
 
-Depois que as [!DNL Adobe Commerce Optimizer] instâncias estiverem prontas, o [!DNL Adobe Commerce Optimizer] provisionamento equipe fornece os seguintes endpoints:
+Depois que as instâncias do [!DNL Adobe Commerce Optimizer] estiverem prontas, a equipe de provisionamento do [!DNL Adobe Commerce Optimizer] fornecerá os seguintes pontos de extremidade:
 
-| Item | Amostra URL | Propósito |
+| Item | Amostra do URL | Finalidade |
 |---|---|---|
-| [!DNL Adobe Commerce Optimizer] UI | `https://experience.adobe.com/#/@commerceprojectbeacon/commerce-optimizer-studio?tenant=<tenantId>` | Acesse o interface do Comércio Optimizer para gerenciar o catálogo em:<br>1. Regras de comercialização (Product Discovery, Product recomendações).<br>2. Gerenciamento de catálogos (criação de canais e políticas).<br>3. Insights de dados (Exibir o status de ingestão de dados do catálogo). |
-| APIs de vitrine | `https://na1-sandbox.api.commerce.adobe.com/<tenantId>/graphql` | Acesse as APIs necessárias para configurar sua vitrine Comércio fornecida pelos Serviços de entrega do Edge. |
-| APIs de ingestão de dados de catálogo | `https://na1-sandbox.api.commerce.adobe.com/<tenantId>/v1/catalog/<entity>` | Acesse as APIs necessárias para assimilar os dados do catálogo. |
+| IU [!DNL Adobe Commerce Optimizer] | `https://experience.adobe.com/#/@commerceprojectbeacon/commerce-optimizer-studio?tenant=<tenantId>` | Acesse a interface do Commerce Optimizer para gerenciar seu catálogo em:<br>1. Regras de merchandising (descoberta de produtos, recomendações de produtos).<br>2. Gerenciamento de catálogo (criação de canal e política).<br>3. Insights de dados (veja o status de assimilação de dados do catálogo). |
+| APIs da loja | `https://na1-sandbox.api.commerce.adobe.com/<tenantId>/graphql` | Acesse as APIs necessárias para configurar sua loja do Commerce com a tecnologia do Edge Delivery Services. |
+| APIs de assimilação de dados do catálogo | `https://na1-sandbox.api.commerce.adobe.com/<tenantId>/v1/catalog/<entity>` | Acesse as APIs necessárias para assimilar os dados do catálogo. |
 
-Como participante de acesso antecipado, você receberá um e-mail com uma link segura que, juntamente com o token IMS, permite fazer logon [!DNL Adobe Commerce Optimizer] ou fazer chamadas de API.
+>[!NOTE]
+>
+>Consulte a [documentação do desenvolvedor](https://developer-stage.adobe.com/commerce/services/composable-catalog/) para saber mais sobre as APIs necessárias para a configuração da loja e a assimilação do catálogo.
 
-## Configurar a vitrine
+Como participante de acesso antecipado, você receberá um email com um link seguro que, junto com o token IMS, permite fazer logon no [!DNL Adobe Commerce Optimizer] ou fazer chamadas de API.
 
-Agora que tem uma [!DNL Adobe Commerce Optimizer] instância, você está pronto para continuar [configurando](./storefront.md) seu Comércio Storefront fornecido pelos Serviços de Entrega de Edge.
+## Configurar a loja
 
-## Dados de catálogo disponíveis para participantes do acesso antecipado
+Agora que você tem uma instância do [!DNL Adobe Commerce Optimizer], está pronto para prosseguir com a [configuração](./storefront.md) da sua Commerce Storefront habilitada pela Edge Delivery Services.
 
-Como participante do acesso antecipado, o [!DNL Adobe Commerce Optimizer] instância contém dados simulados do catálogo baseados no caso[&#128279;](./use-case/admin-use-case.md) de uso do Carvelo. Os dados simulados, juntamente com alguns canais e políticas pré-configurados, ajudam você a se familiarizar com as [!DNL Adobe Commerce Optimizer] interface.
+## Dados de catálogo disponíveis para os participantes de acesso antecipado
+
+Como um participante de acesso antecipado, a instância [!DNL Adobe Commerce Optimizer] contém dados de catálogo simulados com base no [caso de uso Carvelo](./use-case/admin-use-case.md). Os dados simulados, juntamente com alguns canais e políticas pré-configurados, ajudam você a se familiarizar com a interface do usuário do [!DNL Adobe Commerce Optimizer].
 
 <!--Ingest catalog data
 
