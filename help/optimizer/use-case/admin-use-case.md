@@ -270,7 +270,7 @@ A parte final deste tutorial envolve a atualização da loja que [você já crio
    - `ac-environment-id`: `"Fwus6kdpvYCmeEdcCX7PZg"`
    - `ac-price-book-id`: `"west_coast_inc"`
 
-+++
+   +++
 
 1. Substitua o valor `ac-channel-id` pela ID de canal Celport copiada anteriormente.
 1. Substitua o valor `ac-environment-id` pela ID do locatário da instância [!DNL Adobe Commerce Optimizer]. Você pode encontrar a ID no email de integração do programa de acesso antecipado ou entrando em contato com o representante de conta da Adobe.
