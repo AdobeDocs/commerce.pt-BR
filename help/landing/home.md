@@ -1,13 +1,14 @@
 ---
-title: Documentação de serviços
+title: Services documentation
 description: Navegue pela documentação do produto Adobe Commerce para obter os serviços SaaS da Commerce
 seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
 breadcrumb-title: Documentação
 recommendations: noCatalog
-source-git-commit: acea87211010e5ed2761de91cf9101813d4b9190
+exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
+source-git-commit: be1c739f3821a5f1e846b3026088e3a3ff45a60f
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '356'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ A Adobe fornece uma coleção de serviços da Commerce, serviços de integraçã
 
 >[!NOTE]
 >
->A Adobe recomenda atualizar para a versão mais recente compatível de todos os serviços da Commerce. Consulte as [notas de versão](release-notes-all.md).
+>Adobe recommends upgrading to the latest supported version of all Commerce services. See the [release notes](release-notes-all.md).
 
 ## Serviços da Commerce
 
@@ -34,7 +35,7 @@ A Adobe fornece uma coleção de serviços da Commerce, serviços de integraçã
          </a>
       </div>
       <p>
-         <em>Implemente esta ferramenta de pesquisa habilitada por IA que fornece resultados mais inteligentes, rápidos e relevantes para compradores B2C.</em>
+         <em>Implement this AI-powered search tool that delivers smarter, faster, and more relevant results for B2C shoppers.</em>
       </p>
    </td>
    <td valign="top">
@@ -43,16 +44,16 @@ A Adobe fornece uma coleção de serviços da Commerce, serviços de integraçã
       </a>
       <div>
          <a href="../product-recommendations/overview.md">
-         <strong>Recomendações de produto</strong>
+         <strong>Product Recommendations</strong>
          </a>
       </div>
       <p>
-         <em>Adicione recomendações alimentadas por IA com base no comportamento do comprador, nas tendências populares, na similaridade do produto e muito mais.</em>
+         <em>Add AI-fueled recommendations based on shopper behavior, popular trends, product similarity, and more.</em>
       </p>
    </td>
    <td valign="top">
       <a href="../catalog-service/overview.md">
-      <img alt="Dados do catálogo para serviços conectados" src="../assets/icons/DataBook.svg" width="40">
+      <img alt="Catalog data for connected services" src="../assets/icons/DataBook.svg" width="40">
       </a>
       <div>
          <a href="../catalog-service/overview.md">
@@ -65,15 +66,15 @@ A Adobe fornece uma coleção de serviços da Commerce, serviços de integraçã
    </td>
    <td valign="top">
       <a href="../payment-services/guide-overview.md">
-      <img alt="Pagamentos com cartão de crédito" src="../assets/icons/CreditCard.svg" width="40">
+      <img alt="Credit Card payments" src="../assets/icons/CreditCard.svg" width="40">
       </a>
       <div>
          <a href="../payment-services/guide-overview.md">
-         <strong>Serviços de pagamento</strong>
+         <strong>Payment Services</strong>
          </a>
       </div>
       <p>
-         <em>Impulsione a satisfação do cliente com diversos métodos de pagamento, incluindo prestações sem juros e exibições simplificadas de processamento de pagamento, ordens e faturas.</em>
+         <em>Drive customer satisfaction with diverse payment methods, including interest-free installments, and streamlined views of payment processing, orders, and invoices.</em>
       </p>
    </td>
 </tr>
@@ -85,7 +86,7 @@ A Adobe fornece uma coleção de serviços da Commerce, serviços de integraçã
 <tr style="border: 0;">
    <td valign="top">
       <a href="../data-connection/overview.md">
-      <img alt="Transferir dados para a plataforma" src="../assets/icons/TransferToPlatform.svg" width="40">
+      <img alt="Transfer data to platform" src="../assets/icons/TransferToPlatform.svg" width="40">
       </a>
       <div>
          <a href="../data-connection/overview.md">
@@ -93,7 +94,7 @@ A Adobe fornece uma coleção de serviços da Commerce, serviços de integraçã
          </a>
       </div>
       <p>
-         <em>Aproveite a conexão entre o Adobe Commerce e a borda do Adobe Experience Platform para usar dados do Commerce para outros produtos da Adobe Experience Cloud, como o Adobe Analytics e o Adobe Target.</em>
+         <em>Leverage the connection between Adobe Commerce and the Adobe Experience Platform edge to use Commerce data for other Adobe Experience Cloud products, such as Adobe Analytics and Adobe Target.</em>
       </p>
    </td>
    <td valign="top">
@@ -102,7 +103,7 @@ A Adobe fornece uma coleção de serviços da Commerce, serviços de integraçã
       </a>
       <div>
           <a href="../landing/saas.md">
-         <strong>Commerce Services Connector</strong>
+         <strong>Commerce Services Connector</strong> [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Applies to Adobe Commerce on Cloud projects (Adobe-managed PaaS infrastructure) and on-premises projects only."}
          </a>
       </div>
       <p>
@@ -126,28 +127,28 @@ A Adobe fornece uma coleção de serviços da Commerce, serviços de integraçã
          </a>
       </div>
       <p>
-         <em>Sincronizar automaticamente dados de catálogo, pedido e inventário da Adobe Commerce com os serviços conectados. Use comandos da CLI do Commerce ou o <strong>Painel de Gerenciamento de Dados</strong> para gerenciar o processamento de sincronização.</em>
+         <em>Automatically sync catalog, order, and inventory data from Adobe Commerce to connected services. Use Commerce CLI commands or the <strong>Data Management Dashboard</strong> to manage sync processing.</em>
       </p>
    </td>
    <td valign="top">
       <a href="../price-index/price-indexing.md">
-      <img alt="Feed de preços do produto" src="../assets/icons/Feed.svg" width="40">
+      <img alt="Product prices feed" src="../assets/icons/Feed.svg" width="40">
       </a>
       <div>
           <a href="../price-index/price-indexing.md">
-         <strong>Indexador de preços SaaS</strong>
+         <strong>SaaS Price Indexer</strong>
          </a>
       </div>
       <p>
-         <em>Otimize o desempenho do site descarregando tarefas que consomem muitos recursos, como indexação e cálculo de preços, do aplicativo Commerce para a infraestrutura em nuvem da Adobe.</em>
+         <em>Optimize site performance by offloading resource-intensive tasks—like indexation and price calculation—from the Commerce application to Adobe's Cloud infrastructure.</em>
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
-      <img alt="Monitorar sincronização de dados" src="../assets/icons/Monitoring.svg" width="40">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+      <img alt="Monitor data sync" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard" target="_blank">
          <strong>Painel de gerenciamento de dados</strong>
          </a>
       </div>
@@ -159,4 +160,4 @@ A Adobe fornece uma coleção de serviços da Commerce, serviços de integraçã
 
 >[!NOTE]
 >
->O Painel de gerenciamento de dados está disponível sem custo adicional para os comerciantes do Commerce que usam as Recomendações de produto v6.0.0, o Live Search v4.1.0 ou o Serviço de catálogo v1.17 com uma licença ativa. Os comerciantes que usam versões anteriores do serviço podem usar a [Sincronização de Catálogo](../landing/catalog-sync.md) para gerenciar e rastrear a sincronização de dados.
+>O Painel de gerenciamento de dados está disponível sem custo adicional para os comerciantes do Commerce que usam as Recomendações de produto v6.0.0, o Live Search v4.1.0 ou o Serviço de catálogo v1.17 com uma licença ativa. Merchants using earlier service versions can use [Catalog Sync](../landing/catalog-sync.md) to manage and track data synchronization.

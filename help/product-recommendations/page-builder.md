@@ -2,9 +2,11 @@
 title: Integração do [!DNL Page Builder]
 description: Saiba como usar  [!DNL Product Recommendations]  unidades no Page Builder.
 feature: Services, Recommendations, Page Builder
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 001e8e1d-3590-4b44-b5f8-dd8b9b61f370
+badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
+source-git-commit: be1c739f3821a5f1e846b3026088e3a3ff45a60f
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '272'
 ht-degree: 0%
 
 ---
