@@ -3,9 +3,9 @@ title: Configurar a loja
 description: Saiba como executar a ferramenta de andaime para configurar sua vitrine  [!DNL Adobe Commerce as a Cloud Service] .
 role: Developer
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-source-git-commit: 7f7a674b856090bd02752a9e2ad29475b2b56fcf
+source-git-commit: 022e3474b8f2839d2501c46def21733a8d4ad9cc
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 As etapas a seguir demonstram como configurar rapidamente sua Adobe Commerce Storefront habilitada pela Edge Delivery usando o comando `aio commerce init`. Esse processo configura o seguinte:
 
-* [Commerce Storefront baseado na Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=pt-BR) - Uma vitrine eficiente, escalável e segura que é baseada na Edge Delivery Services da Adobe.
+* [Commerce Storefront baseado na Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) - Uma vitrine eficiente, escalável e segura que é baseada na Edge Delivery Services da Adobe.
 * [Malha de API para Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/mesh/) - uma plataforma de API que permite aos desenvolvedores combinar várias fontes de dados em um único ponto de extremidade do GraphQL. A API Mesh orquestra API de terceiros com a API do Adobe por meio de um único gateway. Uma consulta para o único endpoint do GraphQL pode retornar resultados de várias fontes.
 * [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/) - Uma coleção de ferramentas de desenvolvedor com acesso a APIs, eventos, funções de tempo de execução e plug-ins, que você pode usar para criar projetos para aplicativos do Adobe.
 * [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/) - Um mecanismo sem servidor para implantar código personalizado que responde a eventos e executa funções na nuvem.
@@ -89,7 +89,7 @@ Antes de executar o comando `aio commerce init`, você deve concluir os seguinte
 
 ## Executar o comando `aio commerce init`
 
-A execução do comando a seguir criará um scaffolding para a loja do Commerce. Este andaime fornece um excelente ponto de partida para construir e entender sua loja. Para obter mais informações sobre como trabalhar com a loja, consulte a [documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR).
+A execução do comando a seguir criará um scaffolding para a loja do Commerce. Este andaime fornece um excelente ponto de partida para construir e entender sua loja. Para obter mais informações sobre como trabalhar com a loja, consulte a [documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/).
 
 
 1. Execute o comando `init`:
@@ -108,6 +108,7 @@ A execução do comando a seguir criará um scaffolding para a loja do Commerce.
       * Se você selecionar essa opção, será solicitado a instalar o bot AEM Code Sync em uma janela do navegador. Você deve especificar o repositório criado e autorizar o bot. Retorne à CLI e digite `y` para confirmar a instalação do bot AEM Code Sync.
    * **Escolher um locatário do Adobe Commerce disponível** - Selecione um locatário do Commerce existente na organização selecionada.
       * Se você selecionar essa opção, deverá selecionar o projeto e o espaço de trabalho para criar uma malha no.
+   * **Forneça sua própria URL da API de locatário do Adobe Commerce** - Selecione esta opção se você for um participante do Programa de Acesso Antecipado. Insira o URL da API fornecido em seu email de integração do Adobe.
 
    >[!NOTE]
    >
@@ -121,4 +122,4 @@ A execução do comando a seguir criará um scaffolding para a loja do Commerce.
    * Visualizar sua loja: `https://main--<repo name>--<username or org>.aem.page/`
    * Executar localmente: `aio commerce:dev`
 
-Para personalizar sua loja, consulte a [documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR).
+Para personalizar sua loja, consulte a [documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/).
