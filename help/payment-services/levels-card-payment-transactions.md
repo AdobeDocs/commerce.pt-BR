@@ -2,41 +2,44 @@
 title: Processamento de nível 2 e nível 3
 description: Níveis de processamento de pagamento de cartão em  [!DNL Payment Services]  transações.
 role: Admin
-feature: Payments
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+feature: Payments, Paas, Saas
+exl-id: db8993fe-dd6f-48b5-9e7b-69a0f2e08552
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
 
 # Processamento de nível 2 e nível 3
 
-Há três níveis de processamento de cartão disponíveis no [!DNL Payment Services]:
+A [!DNL Payment Services] oferece recursos avançados de processamento de cartão para ajudar os comerciantes a otimizar suas transações de pagamento e reduzir as taxas de intercâmbio. Há três níveis de processamento de cartão disponíveis, cada um com diferentes requisitos de dados de transação.
 
-* O Nível 1 é o mais comum, requer menos informações e, portanto, geralmente incorre em taxas de intercâmbio mais altas em comparação às transações processadas com dados de Nível 2 ou Nível 3, que geralmente estão relacionados a cartões de crédito corporativos e de compra.
+## Requisitos em matéria de dados por nível de processamento
 
-* Com os níveis 2 e 3, os clientes do [!DNL Payment Services] com preços do Interchange Plus (IC++) que aceitam muitas transações de cartão de compra ou de cartão corporativo podem receber uma taxa de processamento mais baixa ao permitir que o [!DNL Payment Services] envie mais informações sobre uma transação. Se a transação se qualificar, de acordo com os requisitos da rede de cartões, o comerciante poderá receber uma taxa de processamento mais baixa para uma determinada transação.
-
->[!NOTE]
->
->Os preços de Nível 2 e Nível 3 só se aplicam às transações Visa e MasterCard. A American Express oferece somente preços de nível 2. A Discover não oferece preços de nível 2 nem de nível 3. Consulte [processamento de pagamento](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank} na documentação do desenvolvedor do PayPal para obter mais informações.
-
-Consulte [O que é IC++?](https://www.paypal.com/us/brc/article/what-is-interchange-plus-plus){target=_blank} na documentação do desenvolvedor do PayPal para obter mais informações.
-
-Os dados de processamento de nível 2 e nível 3 permitem que os comerciantes reduzam os preços do IC++ se fornecerem alguns detalhes adicionais sobre a compra que reduzam o risco do processador e forneçam aspectos benéficos:
-
-* Os grandes clientes pagarão menos ao fornecer esses dados de processamento.
-
-* Os clientes têm menos probabilidade de encontrar situações fraudulentas, pois os pedidos têm mais informações.
-
-No entanto, as redes de cartões, como Visa e Mastercard, determinam, em última análise, se uma transação se qualifica para o processamento de nível 2 ou de nível 3:
-
-* Os dados de Nível 2 contêm informações adicionais, como o valor do imposto do pedido, o código do cliente ou o número da OC.
-
-* Os dados de nível 3 são informações mais detalhadas sobre a venda, o que ajuda a se qualificar para taxas de intercâmbio ainda mais baixas em comparação ao nível 2. Os dados de Nível 3 contêm informações como uma descrição do item comprado, a quantidade de unidades compradas, a unidade de medida dos itens solicitados e outros detalhes específicos.
+![Relatório de transações](assets/level-processing-details.png){width="500" zoomable="yes"}
 
 O [!DNL Payment Services] coleta esses dados e fornece relatórios detalhados das suas transações de pagamento.
+
+## Níveis de processamento disponíveis por rede de cartão
+
+![Detalhes do cartão](assets/cards-details-level-processing.png){width="500" zoomable="yes"}
+
+Consulte [processamento de pagamento](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank} na documentação do desenvolvedor do PayPal para obter mais informações.
+
+### Nível 1
+
+O Nível 1 é o mais comum, requer menos informações e, portanto, geralmente incorre em taxas de intercâmbio mais altas em comparação às transações processadas com dados de Nível 2 ou Nível 3, que geralmente estão relacionados a cartões de crédito corporativos e de compra.
+
+### Nível 2 e nível 3
+
+[!DNL Payment Services] comerciantes no Interchange Plus (IC++) podem se qualificar para o processamento de Nível 2/Nível 3 se fornecerem detalhes de transação adicionais a redes de cartões e atenderem a critérios de qualificação específicos. Esses níveis são particularmente benéficos para os comerciantes que lidam com volumes significativos de compras ou de cartões corporativos, pois podem resultar em economias significativas de custos. O fornecimento de dados detalhados de Nível 2 ou Nível 3 pode:
+
+* Diminua as taxas de processamento e otimize os custos gerais
+* Evite fraudes, diminuindo o risco do processador
+* Melhorar a segurança da transação
+
+Consulte [O que é IC++?](https://www.paypal.com/us/brc/article/what-is-interchange-plus-plus){target=_blank} na documentação do desenvolvedor do PayPal para obter mais informações.
 
 ## Transações de pagamento com cartão de Nível 2 e Nível 3 em [!DNL Payment Services]
 

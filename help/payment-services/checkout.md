@@ -1,8 +1,9 @@
 ---
 title: Check-out em  [!DNL Payment Services]
 description: Personalize o check-out do  [!DNL Payment Services]  de acordo com as necessidades do cliente.
-feature: Payments, Checkout
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+feature: Payments, Checkout, Paas, Saas
+exl-id: 47df165f-2145-4e0e-b272-54b8e768cf19
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
@@ -22,7 +23,7 @@ Uma mensagem de erro é exibida na página de check-out do comprador. A mensagem
 
 ![Erro ao verificar](assets/user-checkout-error.png "Erro ao fazer check-out"){width="600" zoomable="yes"}
 
-Um comentário sobre o pedido cancelado também é exibido no Admin para um [pedido](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=pt-BR) específico.
+Um comentário sobre o pedido cancelado também é exibido no Admin para um [pedido](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en) específico.
 
 ![Comentário de pedido cancelado no Administrador para pedido](assets/admin-checkout-error.png "Comentário de pedido cancelado no Administrador para pedido"){width="600" zoomable="yes"}
 

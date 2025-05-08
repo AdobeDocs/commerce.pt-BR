@@ -1,54 +1,57 @@
 ---
-title: Integrar [!DNL Payment Services]
+title: Fluxo [!DNL Payment Services] de integração
 description: Conecte sua instância com a funcionalidade  [!DNL Payment Services]  ao concluir algumas etapas de integração.
 role: User
 level: Intermediate
-feature: Payments, Checkout, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
+feature: Payments, Checkout, Integration, Paas, Saas
+source-git-commit: 9f7690ae325853b9b4a590b3d1cd538909a26462
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
 
-# Integrar [!DNL Payment Services]
+# Fluxo de integração do [!DNL Payment Services]
 
-Para começar a usar o [!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magento Open Source], você deve concluir algumas etapas de integração para conectar sua instância à funcionalidade de pagamentos.
+Para começar a usar o [!DNL Payment Services], você deve concluir algumas etapas de integração. Para obter uma orientação precisa, selecione a opção Adobe Commerce abaixo que melhor se alinha à instância e à versão da sua organização.
 
-## Fluxo de integração
+Este diagrama de fluxo mostra o processo geral de integração do [!DNL Payment Services] em todas as versões:
 
-Este diagrama de fluxo mostra o processo geral de integração do [!DNL Payment Services].
+![Fluxo de integração](assets/flow-payment-services.png){width="700" zoomable="yes"}
 
-![Fluxo de integração](assets/onboarding-diagram.svg){width="600" zoomable="yes"}
+Veja abaixo a sua versão específica do Adobe Commerce para integrar com o [!DNL Payment Services].
 
->[!NOTE]
->
-> Para as versões 2.4.7 ou mais recentes do Adobe Commerce, você pode ignorar a etapa de extensão do Marketplace, pois o [!DNL Payment Services] está disponível e pronto para uso.
+## Ajude-me a encontrar minha instância e versão
 
-Após concluir a integração para sandbox ou pagamentos ao vivo, os relatórios financeiros podem ser acessados de [!DNL Payment Services] no Administrador.
+### Adobe Commerce ou Magento Open Source | v2.4.7+
 
-Se a sandbox e os pagamentos ao vivo forem integrados e ativados, você poderá alternar facilmente entre esses modos na Página Inicial do [!DNL Payment Services].
+Estes diagramas de fluxo mostram o processo geral de integração do [!DNL Payment Services] com um Adobe Commerce ou Magento Open Source mais recente do que a v2.4.7.
 
-## Pré-requisitos
+>[!BEGINTABS]
 
-Para usar o [!DNL Payment Services], você deve ter todos os módulos dependentes habilitados e os seguintes módulos disponíveis para a sua instância:
+>[!TAB Sandbox]
 
-* Módulo do Conector de Serviços
-* Módulo de ID de serviços
-* Chaves de API
+Este diagrama de fluxo mostra o processo de integração da sandbox com uma Adobe Commerce ou Magento Open Source mais recente que a v2.4.7, em que o [!DNL Payment Services] já está pronto para uso com o Adobe Commerce.
 
-Os módulos Services Connector e Services ID são instalados automaticamente durante a [instalação do [!DNL Payment Services]](install.md).
+![Fluxo de integração](assets/flow-sandbox-configuration-onboarding-2.4.7.png){width="700" zoomable="yes"}
 
-Quando a instalação for concluída, você poderá ver uma nova seção nas definições de configuração (**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**) se expandir **[!UICONTROL Services]**—**[!UICONTROL Commerce Services Connector]**.
+**Etapas de integração para versões v2.4.7+ Parte 1: Sandbox**
 
-Para saber como criar ou acessar suas chaves de API, consulte [Credenciais de API](#obtain-api-credentials).
-
-## Etapas de integração
-
-1. [Instalar a [!DNL Payment Services] extensão](install.md#get-payment-services).
-1. [Obter credenciais de API](connect.md#obtain-api-credentials).
-1. [Conecte sua instância](connect.md#configure-commerce-services) aos Serviços Commerce. Essa conexão deve ser concluída apenas uma vez por instância do Commerce.
+1. [Conecte sua instância](connect.md#configure-commerce-services) aos Serviços Commerce. Essa conexão deve ser concluída apenas uma vez por instância do Commerce. [!BADGE Somente PaaS]{type=Informative tooltip="Aplicável a projetos do Adobe Commerce na nuvem somente (infraestrutura do PaaS gerenciada pela Adobe)."}
 1. [Configure o serviço de sandbox](sandbox.md#enable-sandbox-testing) (ou, como alternativa, prossiga para [habilitar pagamentos ao vivo](sandbox.md#enable-live-payments) se você testou a funcionalidade em outro ambiente) com uma conta de processamento de pagamento do PayPal de teste.
+1. Testar Pagamentos em um ambiente [sandbox](sandbox.md#test-in-sandbox-environment).
+
+[![saiba mais](assets/learn-more-button.svg)](https://helpx.adobe.com/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
+
+>[!TAB Produção]
+
+Este diagrama de fluxo mostra as etapas de produção necessárias para habilitar o [!DNL Payment Services].
+
+![Fluxo de integração](assets/flow-production-payment-services.png){width="700" zoomable="yes"}
+
+**Etapas de integração para versões v2.4.7+ Parte 2: Produção**
+
 1. [Defina [!DNL Payment Services] como seu método de pagamento](production.md#set-payment-services-as-payment-method), no modo sandbox, para iniciar o processamento de pagamentos de teste.
 1. [Solicitar direitos de pagamentos](production.md#request-payments-entitlement-from-adobe) para habilitar a integração ao vivo.
 1. [Conclua a integração do comerciante](production.md#complete-merchant-onboarding) para habilitar os pagamentos ao vivo para seus sites da Commerce.
@@ -56,13 +59,58 @@ Para saber como criar ou acessar suas chaves de API, consulte [Credenciais de AP
 1. [Habilite [!DNL Payment Services] no modo ativo](production.md#enable-live-payments) para iniciar o processamento de pagamentos ao vivo.
 1. Testar Pagamentos, nos ambientes [sandbox](sandbox.md#test-in-sandbox-environment) e [produção](production.md#test-in-production).
 
+[![saiba mais](assets/learn-more-button.svg)](production.md)
+
+>[!ENDTABS]
+
+### Adobe Commerce ou Magento Open Source | v2.4.0-2.4.6 [!BADGE Somente PaaS]{type=Informative tooltip="Aplicável a projetos do Adobe Commerce na nuvem somente (infraestrutura do PaaS gerenciada pela Adobe)."}
+
+Estes diagramas de fluxo mostram o processo geral de integração do [!DNL Payment Services] com o Adobe Commerce ou o Magento Open Source versões 2.4.0 a 2.4.6. É necessário baixar e instalar o [!DNL Payment Services] para iniciar a integração.
+
+>[!BEGINTABS]
+
+>[!TAB Sandbox]
+
+Este diagrama de fluxo mostra as etapas da sandbox necessárias para a integração do [!DNL Payment Services] com o Adobe Commerce ou o Magento Open Source versões 2.4.0 a 2.4.6.
+
+![Fluxo de integração](assets/flow-sandbox-installation-configuration-onboarding-2.4.0.png){width="700" zoomable="yes"}
+
+**Etapas de integração para versões v2.4.0-2.4.6 Parte 1: Sandbox**
+
+1. [Instale a [!DNL Payment Services] extensão](install.md#get-payment-services), se necessário.
+1. [Obter credenciais de API](connect.md#obtain-api-credentials).
+1. [Conecte sua instância](connect.md#configure-commerce-services) aos Serviços Commerce. Essa conexão deve ser concluída apenas uma vez por instância do Commerce.
+1. [Configure o serviço de sandbox](sandbox.md#enable-sandbox-testing) (ou, como alternativa, prossiga para [habilitar pagamentos ao vivo](sandbox.md#enable-live-payments) se você testou a funcionalidade em outro ambiente) com uma conta de processamento de pagamento do PayPal de teste.
+1. Testar Pagamentos em um ambiente [sandbox](sandbox.md#test-in-sandbox-environment).
+
+[![saiba mais](assets/learn-more-button.svg)](https://helpx.adobe.com/legal/product-descriptions/payment-services-for-Adobe-Commerce-and-Magento-Open-Source-On-demand-Services.html)
+
+>[!TAB Produção]
+
+Este diagrama de fluxo mostra o processo geral de habilitação do [!DNL Payment Services] em um ambiente de produção com o Adobe Commerce ou Magento Open Source versões 2.4.0 a 2.4.6.
+
+![Fluxo de integração](assets/flow-production-payment-services.png){width="700" zoomable="yes"}
+
+**Etapas de integração para versões v2.4.0-2.4.6 Parte 2: Produção**
+
+1. [Defina [!DNL Payment Services] como seu método de pagamento](production.md#set-payment-services-as-payment-method), no modo sandbox, para iniciar o processamento de pagamentos de teste.
+1. [Solicitar direitos de pagamentos](production.md#request-payments-entitlement-from-adobe) para habilitar a integração ao vivo.
+1. [Conclua a integração do comerciante](production.md#complete-merchant-onboarding) para habilitar os pagamentos ao vivo para seus sites da Commerce.
+1. [Obtenha sua [!DNL Payment Services] ID do Comerciante](production.md#configure-pricing-tier) e entregue-a ao setor de Vendas para configurar o tipo de preço correto.
+1. [Habilite [!DNL Payment Services] no modo ativo](production.md#enable-live-payments) para iniciar o processamento de pagamentos ao vivo.
+1. Testar Pagamentos, nos ambientes [sandbox](sandbox.md#test-in-sandbox-environment) e [produção](production.md#test-in-production).
+
+[![saiba mais](assets/learn-more-button.svg)](onboard.md)
+
+>[!ENDTABS]
+
 >[!NOTE]
 >
->Se você não configurar os Serviços da Commerce no Administrador (etapa 3), não poderá configurar sandbox ou pagamentos em tempo real.
+>Se você não configurar os Serviços da Commerce no Administrador (Parte 1), não poderá configurar sandbox ou pagamentos em tempo real.
 
-## Solução de problemas
-
-* [Solução de problemas [!DNL Payment Services] instalação](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=pt-BR)
-* [Conta de sandbox do PayPal não verificada](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html?lang=pt-BR)
-* [Dados do relatório [!DNL Payment Services] atrasados](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html?lang=pt-BR)
-* [Falha no cartão de crédito de teste com PayPal ao processar pagamentos em um ambiente de Sandbox](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=pt-BR)
+>[!MORELIKETHIS]
+>
+> * [Solução de problemas [!DNL Payment Services] instalação](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=en)
+> * [Conta de sandbox do PayPal não verificada](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html)
+> * [Dados do relatório [!DNL Payment Services] atrasados](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html)
+> * [Falha no cartão de crédito de teste com PayPal ao processar pagamentos em um ambiente de Sandbox](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=en)

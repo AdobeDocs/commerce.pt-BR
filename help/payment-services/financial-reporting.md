@@ -2,9 +2,9 @@
 title: Relatórios financeiros
 description: A [!DNL Payment Services] oferece relatórios abrangentes para que você possa ter uma visão clara dos pedidos e pagamentos da loja.
 role: User
-feature: Payments, Checkout
+feature: Payments, Checkout, Paas, Saas
 level: Intermediate
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '79'
 ht-degree: 0%

@@ -1,8 +1,9 @@
 ---
 title: Acompanhando suas remessas em [!DNL Payment Services]
 description: Personalizar [!DNL Payment Services] informações de remessa e rastreamento exibidas no Painel do Comerciante do Paypal.
-feature: Payments
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+feature: Payments, Paas, Saas
+exl-id: 17aede1f-56ae-441a-b723-3193e865e469
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 O [!DNL Payment Services] permite que os comerciantes vejam as informações de rastreamento de uma remessa no Painel do Comerciante do PayPal.
 
-Consulte o tópico [remessas](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/order-management/shipments){target=_blank} para obter mais informações sobre a grade remessas do Adobe Commerce.
+Consulte o tópico [remessas](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/shipments){target=_blank} para obter mais informações sobre a grade remessas do Adobe Commerce.
 
 ## Como funciona o rastreamento da sua remessa
 

@@ -1,10 +1,11 @@
 ---
 title: Habilitar [!DNL Payment Services] para produção
 description: Conclua o processo de integração habilitando  [!DNL Payment Services]  para produção.
-feature: Payments, Checkout, Configuration, Install
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
+feature: Payments, Checkout, Configuration, Install, Paas, Saas
+source-git-commit: 0f2e9c3a7d990a46bafc5f3b8a083436d42643b5
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
@@ -13,8 +14,8 @@ ht-degree: 0%
 
 Você pode colocar o serviço em produção e concluir o [processo de integração](onboard.md), de acordo com as etapas deste tópico, após:
 
-* [Instalar](install.md) a extensão Serviços de Pagamento
-* [Configurar e conectar](connect.md) à sua instância
+* [!BADGE Somente PaaS]{type=Informative tooltip="Aplicável a projetos do Adobe Commerce na nuvem somente (infraestrutura do PaaS gerenciada pela Adobe)."} [Instalar](install.md) a extensão de Serviços de Pagamento
+* [!BADGE Somente PaaS]{type=Informative tooltip="Aplicável a projetos do Adobe Commerce na nuvem somente (infraestrutura do PaaS gerenciada pela Adobe)."} [Configurar e conectar](connect.md) sua instância
 * [Configurar](sandbox.md) e [testar](test-validate.md) sua sandbox
 
 ## Definir [!DNL Payment Services] como método de pagamento
@@ -26,10 +27,10 @@ Depois de [configurar seus Serviços Commerce](connect.md#configure-commerce-ser
 
    Esta opção estará visível se você ainda não tiver configurado o [!DNL Payment Services] como o método de pagamento para um ou mais sites.
 
-   Você é direcionado para a área de configurações na exibição Página Inicial com as opções relevantes expandidas (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), onde é possível habilitar as opções [!DNL Payment Services] como seu [método de pagamento](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}.
+   Você é direcionado para a área de configurações na exibição Página Inicial com as opções relevantes expandidas (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), onde é possível habilitar as opções [!DNL Payment Services] como seu [método de pagamento](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}.
 
-1. Em _[!UICONTROL General Configuration]_, defina **[!UICONTROL Enable]**&#x200B;como `Yes`.
-1. Defina **[!UICONTROL Payment Action]**, para _[!UICONTROL Credit Card Fields]_&#x200B;e_[!UICONTROL PayPal payment buttons]_, para um dos seguintes:
+1. Em _[!UICONTROL General Configuration]_, defina **[!UICONTROL Enable]**como `Yes`.
+1. Defina **[!UICONTROL Payment Action]**, para _[!UICONTROL Credit Card Fields]_e_[!UICONTROL PayPal payment buttons]_, para um dos seguintes:
 
    | Configuração | Descrição |
    |---|---|
@@ -42,7 +43,7 @@ Depois de [configurar seus Serviços Commerce](connect.md#configure-commerce-ser
 
 1. Clique em **[!UICONTROL Save]**.
 1. Clique em **[!UICONTROL Go to Payment Services]** para ser direcionado de volta à Página Inicial de [!DNL Payment Services].
-1. [Limpar o cache](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=pt-BR).
+1. [Limpar o cache](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html).
 
    A limpeza deve ser feita após cada alteração de configuração.
 
@@ -61,7 +62,7 @@ Os Serviços de Pagamento fornecem opções de pagamento [**Avançado** (com sup
 
 1. No modal _Selecione seu país_, selecione o país do qual você está operando.
 
-   Atualmente, os Serviços de Pagamento oferecem suporte total para todas as opções de pagamento em [cinco países](../payment-services/overview.md#availability). Os Serviços de pagamento fornecem recursos de Finalização expressa (um subconjunto de opções de pagamento) para todos os outros países representados na lista de países.
+   Atualmente, os Serviços de Pagamento oferecem suporte total para todas as opções de pagamento em [cinco países](../payment-services/introduction.md#availability). Os Serviços de pagamento fornecem recursos de Finalização expressa (um subconjunto de opções de pagamento) para todos os outros países representados na lista de países.
 
    O país que você escolher na lista determinará as opções de pagamento, e o fluxo de integração—[Avançado](#advanced-onboarding) (com suporte total) ou [Padrão](#standard-onboarding) (Check-out Expresso) — disponível para você.
 
@@ -71,7 +72,7 @@ Os Serviços de Pagamento fornecem opções de pagamento [**Avançado** (com sup
 
 ### Integração avançada
 
-Este fluxo de integração está disponível para comerciantes em [países com suporte total](../payment-services/overview.md#availability).
+Este fluxo de integração está disponível para comerciantes em [países com suporte total](../payment-services/introduction.md#availability).
 
 Depois que o país for selecionado:
 
@@ -88,7 +89,7 @@ Depois que o país for selecionado:
 
 ### Integração padrão
 
-Este fluxo de integração Padrão está disponível para comerciantes nos países disponíveis para os quais [somente o suporte para Finalização Expressa](../payment-services/overview.md#availability) é fornecido.
+Este fluxo de integração Padrão está disponível para comerciantes nos países disponíveis para os quais [somente o suporte para Finalização Expressa](../payment-services/introduction.md#availability) é fornecido.
 
 Depois que o país for selecionado:
 
@@ -104,7 +105,7 @@ Depois que o país for selecionado:
 
 1. Na barra lateral Admin, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**
 
-   O botão _[!UICONTROL Live onboarding]_&#x200B;não está mais visível e você vê uma caixa de texto &quot;[!UICONTROL Live payments pending]&quot;.
+   O botão _[!UICONTROL Live onboarding]_não está mais visível e você vê uma caixa de texto &quot;[!UICONTROL Live payments pending]&quot;.
 
    Nessa caixa de texto, também pode ser solicitado que você confirme seu endereço de email no PayPal para concluir a integração.
 
@@ -154,9 +155,9 @@ Ativar pagamentos em tempo real:
 
 1. Na barra lateral _Admin_, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Na Página Inicial, clique em **[!UICONTROL Settings]** na parte superior direita da página. Consulte [Página inicial](payments-home.md) para obter mais informações.
-1. Na seção _[!UICONTROL General Configuration]_, defina **[!UICONTROL Payment mode]**&#x200B;como `Production`.
+1. Na seção _[!UICONTROL General Configuration]_, defina **[!UICONTROL Payment mode]**como `Production`.
 1. Clique em **[!UICONTROL Save]**.
-1. [Limpar o cache](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/cache-management){target="_blank"}.
+1. [Limpar o cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}.
 
    >[!IMPORTANT]
    >

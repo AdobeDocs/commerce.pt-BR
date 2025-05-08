@@ -1,8 +1,9 @@
 ---
 title: Compartimentalização do cartão de crédito
 description: Os compradores podem guardar (salvar) os detalhes do cartão de crédito para compras futuras.
-feature: Payments, Checkout
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
+feature: Payments, Checkout, Paas, Saas
+source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
@@ -31,7 +32,7 @@ Os clientes conectados podem colocar no cofre um método de pagamento no painel 
 
 1. Navegando até **[!UICONTROL Stored Payment Methods]** na navegação à esquerda para ver todos os métodos de pagamento armazenados.
 
-   Consulte [Métodos de pagamento armazenados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/payments/stored-payment-methods) para obter mais informações.
+   Consulte [Métodos de pagamento armazenados](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods) para obter mais informações.
 
 1. O cliente clica em **[!UICONTROL Add New Card]** para armazenar um novo cartão.
 
@@ -72,10 +73,10 @@ Você só poderá usar cartões com cofre no Administrador se o cliente tiver um
 
 Para criar um pedido no Administrador para um cliente usando seu cartão de crédito com cofre:
 
-1. [Criar um pedido e adicionar produtos](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=pt-BR).
-1. Em _[!UICONTROL Payment & Shipping Information]_, selecione **[!UICONTROL Stored Cards]**&#x200B;como método de pagamento.
+1. [Criar um pedido e adicionar produtos](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
+1. Em _[!UICONTROL Payment & Shipping Information]_, selecione **[!UICONTROL Stored Cards]**como método de pagamento.
 1. Selecione o método de pagamento com cartão de crédito com cofre desejado.
-1. Após concluir quaisquer outras etapas necessárias para o pedido, [envie-o](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=pt-BR#step-3%3A-submit-the-order).
+1. Após concluir quaisquer outras etapas necessárias para o pedido, [envie-o](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
 
    ![Usar cartão de crédito com cofre no Administrador para o cliente](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 

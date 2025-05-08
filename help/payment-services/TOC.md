@@ -6,9 +6,9 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: eba63e5a0086689ae254545c1ad9a1430fc8a524
 workflow-type: tm+mt
-source-wordcount: '108'
+source-wordcount: '109'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,8 @@ ht-degree: 3%
 # [!DNL Payment Services] para Commerce {#payment-services}
 
 - [Visão geral do guia](guide-overview.md)
-- [Introdução a  [!DNL Payment Services]](overview.md)
+- [Introdução a  [!DNL Payment Services]](introduction.md)
+- [Compatibilidade para  [!DNL Payment Services]](compatibility.md)
 - [Notas de versão](release-notes.md)
 - Integrar [!DNL Payment Services] {#get-started}
    - [Visão geral da integração](onboard.md)
@@ -31,7 +32,7 @@ ht-degree: 3%
    - [Configuração da linha de comando](configure-cli.md)
    - [Configuração herdada](configure-admin.md)
    - [Teste e validação](test-validate.md)
-- Pagamentos e check-out {#payments-checkout}
+- Pagamentos e finalização {#payments-checkout}
    - [Opções de pagamento](payments-options.md)
    - [Compartimentalização de cartão de crédito](vaulting.md)
    - [Check-out em  [!DNL Payment Services]](checkout.md)
@@ -41,8 +42,8 @@ ht-degree: 3%
       - [Nulos](voids.md)
    - [Criar um pedido no Administrador](create-order.md)
    - [Acompanhando suas remessas em [!DNL Payment Services]](track-shipment.md)
-- Relatórios financeiros {#reporting}
-   - [Relatório de transações](transactions.md)
+- Relatórios financeiros {#financial-reports}
+   - [Relatórios](reporting.md)
    - [Relatório de status do pagamento da ordem](order-payment-status.md)
    - [Relatório de pagamentos](payouts.md)
    - [Dados disponíveis](data.md)
@@ -50,4 +51,4 @@ ht-degree: 3%
 - Segurança e conformidade {#security-compliance}
    - [Segurança](security.md)
    - [Proteção contra fraude Signifyd](fraud-protection.md)
-- [Retornar à Página Inicial dos Serviços Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=pt-BR)
+- [Retornar à Página Inicial dos Serviços Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
