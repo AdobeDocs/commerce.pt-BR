@@ -39,13 +39,13 @@ Este diagrama ilustra o fluxo de dados entre o [!DNL Adobe Commerce as a Cloud S
 
 ## Commerce Storefront
 
-Use a [Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront) da Adobe alimentada pela Edge Delivery Services para criar experiências ricas em minutos com criação simples baseada em documentos ou edição visual com o Storefront Builder.
+Use a [Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront?lang=pt-BR) da Adobe alimentada pela Edge Delivery Services para criar experiências ricas em minutos com criação simples baseada em documentos ou edição visual com o Storefront Builder.
 
 A Commerce Storefront é totalmente headless com uma arquitetura dissociada que fornece todos os serviços e dados de merchandising por meio de uma camada de API do GraphQL. Essa arquitetura permite que as equipes desenvolvam seus front-ends independentemente da Commerce Foundation, fornecendo agilidade para criar e testar novos pontos de contato com tecnologias emergentes.
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] não dá suporte a vitrines Luma. Se você estiver migrando do Adobe Commerce na Nuvem ou no local, consulte [vitrines existentes](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) para obter orientação sobre a transição.
+>[!DNL Adobe Commerce as a Cloud Service] não dá suporte a vitrines Luma. Se você estiver migrando do Adobe Commerce na Nuvem ou no local, consulte [vitrines existentes](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=pt-BR#existing-storefronts) para obter orientação sobre a transição.
 
 ## Serviços de merchandising e serviços de pagamento
 
@@ -60,7 +60,7 @@ A Adobe fornece um conjunto avançado de serviços de merchandising inteligentes
 
 Simplifique o gerenciamento de ativos usando um sistema robusto de gerenciamento de ativos digitais (DAM) que se integra ao Adobe Experience Manager para gerenciar conteúdo de mídia avançada. Como alternativa, o miniDAM nativo fornece ferramentas básicas de gerenciamento de ativos para armazenar e gerenciar ativos digitais.
 
-Consulte [gerenciamento de ativos](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration) para saber mais.
+Consulte [gerenciamento de ativos](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration) para saber mais.
 
 ## Plataforma do desenvolvedor
 
@@ -115,7 +115,7 @@ Os desenvolvedores podem usar as abrangentes [APIs do GraphQL e REST](https://de
 
 ## Integração do Experience Cloud
 
-O [!DNL Adobe Commerce as a Cloud Service] integra-se com todas as soluções da Experience Cloud para fornecer [experiências de comércio personalizadas em escala](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+O [!DNL Adobe Commerce as a Cloud Service] integra-se com todas as soluções da Experience Cloud para fornecer [experiências de comércio personalizadas em escala](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 A [Conexão de Dados](../data-connection/overview.md) desbloqueia insights sobre o comportamento de compra dos compradores para que você possa criar experiências de compra personalizadas em todos os canais com outros produtos da Adobe Digital Experience.
 
@@ -139,14 +139,14 @@ As seções a seguir fornecem informações sobre os benefícios que o [!DNL Ado
 
 ## Novas soluções de recursos
 
-A [Interface do Administrador](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/guide-overview) é a principal interface para acessar recursos para gerenciar operações de armazenamento de back-end, inventário, preços, promoções e interações com o cliente. No entanto, o [!DNL Adobe Commerce as a Cloud Service] oferece soluções exclusivas que substituem alguns dos recursos conhecidos disponíveis no Adobe Commerce em nuvem e em projetos locais. A tabela a seguir descreve os recursos e as soluções de substituição disponíveis no [!DNL Adobe Commerce as a Cloud Service]:
+A [Interface do Administrador](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/guide-overview) é a principal interface para acessar recursos para gerenciar operações de armazenamento de back-end, inventário, preços, promoções e interações com o cliente. No entanto, o [!DNL Adobe Commerce as a Cloud Service] oferece soluções exclusivas que substituem alguns dos recursos conhecidos disponíveis no Adobe Commerce em nuvem e em projetos locais. A tabela a seguir descreve os recursos e as soluções de substituição disponíveis no [!DNL Adobe Commerce as a Cloud Service]:
 
 | Recurso | Solução | Disponibilidade | Detalhes |
 |---------|----------|--------------|--------|
-| [Gerenciamento de ativos digitais](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management) | [Visuais de Produto](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration) ou miniDAM | Disponível | Um sistema robusto de gerenciamento de ativos digitais (DAM) que se integra ao Adobe Experience Manager para gerenciar conteúdo de mídia avançada. Como alternativa, o miniDAM fornece ferramentas básicas de gerenciamento de ativos para armazenar e gerenciar ativos digitais. |
-| [Sistema de gerenciamento de conteúdo (CMS)](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview) | [Commerce Storefront](https://www.aem.live/) | Disponível | Um CMS básico que permite que os usuários criem e gerenciem documentos e conteúdo de sites facilmente usando a criação baseada em documentos. Como alternativa, um Editor universal que permite um gerenciamento de conteúdo e personalização mais avançados em várias plataformas. |
-| [Preparo de conteúdo](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging) | [Serviço de catálogo](../catalog-service/overview.md) | Roteiro | Uma ferramenta de gerenciamento de catálogos que se vincula ao Adobe Experience Platform, permitindo o gerenciamento de catálogos grandes. |
-| [Construtor de páginas](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview) | [Commerce Storefront](https://www.aem.live/) | Disponível | Um CMS básico que permite que os usuários criem e gerenciem documentos e conteúdo de sites facilmente usando a criação baseada em documentos. Como alternativa, um Editor universal que permite um gerenciamento de conteúdo e personalização mais avançados em várias plataformas. |
-| [Pagamentos](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments) | [Serviços de pagamento para o Adobe Commerce](../payment-services/guide-overview.md) | Disponível | Um serviço de pagamento integrado que facilita transações seguras e eficientes. |
-| [substituições de URL](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) | [Commerce Storefront](https://www.aem.live/) | Disponível | Um CMS básico que permite que os usuários criem e gerenciem documentos e conteúdo de sites facilmente usando a criação baseada em documentos. Como alternativa, um Editor universal que permite um gerenciamento de conteúdo e personalização mais avançados em várias plataformas. |
-| [Merchandiser visual](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser) | [Serviço de catálogo](../catalog-service/overview.md) | Roteiro | Uma ferramenta de gerenciamento de catálogos que se vincula ao Adobe Experience Platform, permitindo o gerenciamento de catálogos grandes. |
+| [Gerenciamento de ativos digitais](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management) | [Visuais de Produto](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/content-design/aem-asset-management/aem-assets-integration) ou miniDAM | Disponível | Um sistema robusto de gerenciamento de ativos digitais (DAM) que se integra ao Adobe Experience Manager para gerenciar conteúdo de mídia avançada. Como alternativa, o miniDAM fornece ferramentas básicas de gerenciamento de ativos para armazenar e gerenciar ativos digitais. |
+| [Sistema de gerenciamento de conteúdo (CMS)](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/content-design/guide-overview) | [Commerce Storefront](https://www.aem.live/) | Disponível | Um CMS básico que permite que os usuários criem e gerenciem documentos e conteúdo de sites facilmente usando a criação baseada em documentos. Como alternativa, um Editor universal que permite um gerenciamento de conteúdo e personalização mais avançados em várias plataformas. |
+| [Preparo de conteúdo](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/content-design/staging/content-staging) | [Serviço de catálogo](../catalog-service/overview.md) | Roteiro | Uma ferramenta de gerenciamento de catálogos que se vincula ao Adobe Experience Platform, permitindo o gerenciamento de catálogos grandes. |
+| [Construtor de páginas](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/page-builder/guide-overview) | [Commerce Storefront](https://www.aem.live/) | Disponível | Um CMS básico que permite que os usuários criem e gerenciem documentos e conteúdo de sites facilmente usando a criação baseada em documentos. Como alternativa, um Editor universal que permite um gerenciamento de conteúdo e personalização mais avançados em várias plataformas. |
+| [Pagamentos](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/payments/payments) | [Serviços de pagamento para o Adobe Commerce](../payment-services/guide-overview.md) | Disponível | Um serviço de pagamento integrado que facilita transações seguras e eficientes. |
+| [substituições de URL](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) | [Commerce Storefront](https://www.aem.live/) | Disponível | Um CMS básico que permite que os usuários criem e gerenciem documentos e conteúdo de sites facilmente usando a criação baseada em documentos. Como alternativa, um Editor universal que permite um gerenciamento de conteúdo e personalização mais avançados em várias plataformas. |
+| [Merchandiser visual](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser) | [Serviço de catálogo](../catalog-service/overview.md) | Roteiro | Uma ferramenta de gerenciamento de catálogos que se vincula ao Adobe Experience Platform, permitindo o gerenciamento de catálogos grandes. |

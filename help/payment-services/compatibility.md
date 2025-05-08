@@ -26,7 +26,7 @@ Para usar o [!DNL Payment Services], primeiro você precisará conectar sua inst
 
    >[!TIP]
    >
-   > Consulte nosso vídeo tutorial do [Adobe Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector) para obter mais informações.
+   > Consulte nosso vídeo tutorial do [Adobe Commerce Services Connector](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector) para obter mais informações.
 
 1. Se você já tiver conectado sua instância, navegue até a página [integração](onboard.md) para obter as próximas etapas.
 
@@ -96,13 +96,13 @@ Botão ![verificar](assets/icon-check.png) pagar mais tarde
 
 >[!ENDTABS]
 
-Consulte as páginas da [política de ciclo de vida](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) e das [[!DNL Payment Services] notas de versão](release-notes.md) para obter mais informações sobre versões e lançamentos específicos.
+Consulte as páginas da [política de ciclo de vida](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html?lang=pt-BR) e das [[!DNL Payment Services] notas de versão](release-notes.md) para obter mais informações sobre versões e lançamentos específicos.
 
 Para obter as instruções completas e iniciar o processo de integração, consulte [Introdução ao [!DNL Payment Services]](onboard.md).
 
 ### Cartões de crédito e moedas aceitos
 
-[!DNL Payment Services] aceita as moedas dos países [nos quais está disponível](#availability). Consulte [Configuração de moeda](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) para obter mais informações sobre a configuração de taxas de moeda.
+[!DNL Payment Services] aceita as moedas dos países [nos quais está disponível](#availability). Consulte [Configuração de moeda](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html?lang=pt-BR) para obter mais informações sobre a configuração de taxas de moeda.
 
 Para obter mais informações sobre as moedas e os métodos de pagamento disponíveis com os produtos e serviços do PayPal, consulte as seguintes páginas:
 

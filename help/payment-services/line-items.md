@@ -127,7 +127,7 @@ Consulte a [documentação do desenvolvedor do PayPal sobre os itens de linha](h
 
 ## Gerenciar itens de linha
 
-O Adobe Commerce [calcula o imposto com base no valor total de cada linha](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}, o que pode causar problemas de arredondamento se várias quantidades do mesmo item forem solicitadas ou se preços com imposto incluído forem exibidos no catálogo. Nesses casos, a quantidade total pode ser dividida em duas linhas, mas a quantidade será igual ao total de itens solicitados.
+O Adobe Commerce [calcula o imposto com base no valor total de cada linha](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}, o que pode causar problemas de arredondamento se várias quantidades do mesmo item forem solicitadas ou se preços com imposto incluído forem exibidos no catálogo. Nesses casos, a quantidade total pode ser dividida em duas linhas, mas a quantidade será igual ao total de itens solicitados.
 
 > Exemplo de itens de linha com problemas de arredondamento na exibição do painel do comerciante
 
