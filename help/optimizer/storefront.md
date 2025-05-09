@@ -278,7 +278,7 @@ Adicione a configuração do projeto para a extensão do Sidekick. Essa configur
 
    Consulte a [documentação da Biblioteca da Sidekick](https://www.aem.live/docs/sidekick-library) para obter mais informações.
 
-+++
+   +++
 
 1. Atualize os valores da chave `url` com os valores do seu repositório GitHub.
 
@@ -318,7 +318,7 @@ Adicione a configuração do projeto para a extensão do Sidekick. Essa configur
    }
    ```
 
-+++
+   +++
 
 1. Salve o arquivo.
 
