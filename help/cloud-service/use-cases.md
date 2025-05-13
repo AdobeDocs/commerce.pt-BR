@@ -199,7 +199,7 @@ Considere um cenário em que você deseja modificar rapidamente o plano de fundo
 
 #### Adicionar a imagem ao Commerce AEM Assets
 
-1. No [Painel de Navegação](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) do AEM as a Cloud Service, selecione **Assets** > **Arquivos** > **Commerce** e clique no ativo criado na seção anterior.
+1. No [Painel de Navegação](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) do AEM as a Cloud Service, selecione **Assets** > **Arquivos** > **Commerce** e clique no ativo criado na seção anterior.
 
    ![pasta de comércio](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -249,7 +249,7 @@ O recurso Gerar variações do Adobe Commerce aproveita a IA gerativa para autom
 
 ### Gerar texto
 
-1. Abra o site da loja usando o [Editor Universal](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
+1. Abra o site da loja usando o [Editor Universal](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
 
 1. Selecione o bloco de texto que deseja editar.
 
@@ -263,7 +263,7 @@ O recurso Gerar variações do Adobe Commerce aproveita a IA gerativa para autom
 
 ### Gerar conteúdo e imagens
 
-1. Abrir [Gerar Variações](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. Abrir [Gerar Variações](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 1. Selecione o modelo [!UICONTROL **Banner principal**].
 
