@@ -3,9 +3,9 @@ title: Casos de uso
 description: Saiba como realizar casos de uso práticos e cenários comerciais compatíveis com o [!DNL Adobe Commerce as a Cloud Service].
 role: User, Leader
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-source-git-commit: d5935f4d080c3be1f51bf8916575a3b2f357ee22
+source-git-commit: f01e9ae84830ab265c8b6557ec81e5594179fb10
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1306'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Esse fluxo de trabalho demonstra o processo de finalização para um cliente que
 
 ### Habilitar serviços de pagamento
 
-1. No Administrador do Commerce, navegue até [!UICONTROL **Configurações**] > [!UICONTROL **Métodos de pagamento**].
+1. No Administrador do Commerce, navegue até [!UICONTROL **Lojas**] > [!UICONTROL Settings] > [!UICONTROL **Configuração**] > [!UICONTROL **Métodos de pagamento**].
 
 1. Na seção [!UICONTROL **Configuração Geral**], digite os `Payment Services Sandbox ID` e `Payment Services Sandbox Key`. Você pode obter essas IDs seguindo as etapas descritas em [Integração da sandbox](../payment-services/sandbox.md#sandbox-onboarding)
 
@@ -199,7 +199,7 @@ Considere um cenário em que você deseja modificar rapidamente o plano de fundo
 
 #### Adicionar a imagem ao Commerce AEM Assets
 
-1. No [Painel de Navegação](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) do AEM as a Cloud Service, selecione **Assets** > **Arquivos** > **Commerce** e clique no ativo criado na seção anterior.
+1. No [Painel de Navegação](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) do AEM as a Cloud Service, selecione **Assets** > **Arquivos** > **Commerce** e clique no ativo criado na seção anterior.
 
    ![pasta de comércio](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -249,7 +249,7 @@ O recurso Gerar variações do Adobe Commerce aproveita a IA gerativa para autom
 
 ### Gerar texto
 
-1. Abra o site da loja usando o [Editor Universal](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
+1. Abra o site da loja usando o [Editor Universal](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
 
 1. Selecione o bloco de texto que deseja editar.
 
@@ -263,7 +263,7 @@ O recurso Gerar variações do Adobe Commerce aproveita a IA gerativa para autom
 
 ### Gerar conteúdo e imagens
 
-1. Abrir [Gerar Variações](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. Abrir [Gerar Variações](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 1. Selecione o modelo [!UICONTROL **Banner principal**].
 
