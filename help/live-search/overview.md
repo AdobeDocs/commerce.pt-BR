@@ -2,9 +2,10 @@
 title: O que é  [!DNL Live Search]?
 description: O [!DNL Live Search] da Adobe Commerce oferece uma experiência de pesquisa rápida, relevante e intuitiva.
 recommendations: noCatalog
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 15399216-6a96-4d0b-bbc1-293190cb9e14
+source-git-commit: 29374c45f57e923666e255bfefadd9a1e736cfef
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '966'
 ht-degree: 0%
 
 ---
@@ -34,13 +35,13 @@ O lado Adobe Commerce da arquitetura inclui hospedar a pesquisa *Admin*, sincron
 
 Com foco na velocidade, relevância e facilidade de uso, o [!DNL Live Search] é um divisor de águas para compradores e comerciantes. Assista ao vídeo a seguir e faça um rápido tour pelo [!DNL Live Search] na loja.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452574?learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3418797?learn=on)
 
-Para ver um vídeo mais detalhado sobre o uso e a configuração do Live Search, consulte o tópico [Demonstração completa sobre [!DNL Live Search]](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration).
+Para ver um vídeo mais detalhado sobre o uso e a configuração do Live Search, consulte o tópico [Demonstração completa sobre [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration).
 
 ### Pesquisar enquanto digita
 
-[!DNL Live Search] responde com produtos sugeridos e uma imagem em miniatura dos principais resultados da pesquisa em um [popover](storefront-popover.md), à medida que os compradores digitam consultas na caixa [Pesquisa](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/search/search). A página [detalhes do produto](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/storefront/storefront) é exibida quando os compradores clicam em um produto sugerido ou em destaque. Um link _Exibir todos_ no rodapé do popover exibe a página de resultados da pesquisa.
+[!DNL Live Search] responde com produtos sugeridos e uma imagem em miniatura dos principais resultados da pesquisa em um [popover](storefront-popover.md), à medida que os compradores digitam consultas na caixa [Pesquisa](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search). A página [detalhes do produto](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) é exibida quando os compradores clicam em um produto sugerido ou em destaque. Um link _Exibir todos_ no rodapé do popover exibe a página de resultados da pesquisa.
 
 [!DNL Live Search] retorna resultados de &quot;pesquisa ao digitar&quot; para uma consulta de dois ou mais caracteres. Para uma correspondência parcial, o número máximo de caracteres por palavra é 20. O número de caracteres na consulta não é configurável. O popover inclui os campos `name`, `sku` e `category_ids`.
 
@@ -51,6 +52,18 @@ Para ver um vídeo mais detalhado sobre o uso e a configuração do Live Search,
 Para listar todos os produtos retornados pela consulta &quot;pesquisar ao digitar&quot;, clique em _Exibir todos_ no rodapé do popover.
 
 ![Exemplo de vitrine - aspectos do preço](assets/storefront-view-all-search-results.png)
+
+### Como [!DNL Live Search] lida com erros de digitação
+
+Quando uma pesquisa é feita, o [!DNL Live Search] executa uma pesquisa não difusa que não leva em conta erros de digitação. Se nenhum resultado for encontrado, [!DNL Live Search] executará uma segunda pesquisa difusa, o que leva em consideração pequenos erros de digitação. A pesquisa difusa é executada com uma distância máxima de edição de 1. Esta distância de edição usa o conceito de [Distância de Levenshtein](https://en.wikipedia.org/wiki/Levenshtein_distance) e permite três tipos de operações:
+
+| Operação | Descrição | Exemplo |
+|---|---|---|
+| Inserção | Adição de um caractere. | &quot;cat&quot; -> &quot;cart&quot; |
+| Exclusão | Remoção de um caractere. | &quot;cart&quot; -> &quot;cat&quot; |
+| Substituição | Substituição de um caractere por outro. | &quot;cart&quot; -> &quot;cast&quot; |
+
+Além da lógica de pesquisa difusa, transposições também são contabilizadas, ou seja, onde dois caracteres adjacentes em uma palavra são trocados, por exemplo, &quot;o&quot; em vez de &quot;o&quot;. Observe que esses limites de edição são por palavra e não pela frase como um todo.
 
 ### Pesquisa filtrada com facetas
 
@@ -68,7 +81,7 @@ As [regras](rules.md) de merchandising moldam a experiência de compra com instr
 
 ### Suporte a termos de pesquisa
 
-[!DNL Live Search] dá suporte a [redirecionamentos de termo de pesquisa](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/search/search-terms) do Commerce. Por exemplo, os usuários podem procurar por um termo como &quot;Taxas de envio&quot; e ser direcionados diretamente para a página de taxas de envio.
+[!DNL Live Search] dá suporte a [redirecionamentos de termo de pesquisa](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) do Commerce. Por exemplo, os usuários podem procurar por um termo como &quot;Taxas de envio&quot; e ser direcionados diretamente para a página de taxas de envio.
 
 ## Componentes do Live Search
 
@@ -88,4 +101,4 @@ O [!DNL Live Search] [espaço de trabalho](workspace.md) é a área no Administr
 
 Se você não enviar uma consulta de pesquisa para os dados do catálogo no ambiente de teste por 90 dias consecutivos, os dados do catálogo serão definidos para o modo de hibernação e nenhum dado será retornado para qualquer consulta de pesquisa. Os dados do catálogo em seu ambiente de produção não são afetados por essa política.
 
-Para reativar os dados do catálogo no ambiente de teste, [envie uma solicitação de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) com o título: &quot;Reativar [!DNL Live Search]&quot; e incluir as IDs de ambiente. Os dados do catálogo no ambiente de teste devem ser restaurados em algumas horas.
+Para reativar os dados do catálogo no ambiente de teste, [envie uma solicitação de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) com o título: &quot;Reativar [!DNL Live Search]&quot; e incluir as IDs de ambiente. Os dados do catálogo no ambiente de teste devem ser restaurados em algumas horas.

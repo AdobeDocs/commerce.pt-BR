@@ -1,9 +1,10 @@
 ---
 title: Configurações
 description: Saiba como alterar a fonte de seus dados do  [!DNL Product Recommendations]  e como habilitar recomendações visuais.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: fe37624d-c53e-40cd-b182-10f62cba74c0
+source-git-commit: c11e3fbc871600f413867e0c5c0b75ad705cf115
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ As ordens de preparo são registradas usando o preparo `environmentId`. Isso nã
 
 >[!NOTE]
 >
->Ao usar Recomendações de Produto por meio de REST, o parâmetro `alternateEnvironmentId` pode ser usado para especificar outros dataspaces. Quando você usa Recomendações de produto por meio do GraphQL, esse parâmetro não está disponível.
+>Ao usar Recomendações de Produto por meio de REST, o parâmetro `alternateEnvironmentId` pode ser usado para especificar outros dataspaces. Ao usar as Recomendações de Produto por meio do [GraphQL](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/), este parâmetro não está disponível.
 
 ## Escolher a fonte de recomendações
 
