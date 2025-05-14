@@ -15,7 +15,7 @@ Você pode integrar o [!DNL Product Recommendations] em uma loja headless usando
 
 Os integradores personalizados e headless devem consultar essas instruções do Luma e do PWA como uma implementação sugerida. Há muitas maneiras de implementar as Recomendações de produto em soluções headless e esta documentação não aborda todos os cenários. Os integradores devem cobrir o evento, o design e o teste de suas implementações.
 
-[!DNL Product Recommendations] requer [dados comportamentais e de catálogo](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html) para operar. O processo de sincronização de dados de catálogo permanece inalterado em uma implementação headless, mas são necessárias alterações para a coleta de dados comportamentais.
+[!DNL Product Recommendations] requer [dados comportamentais e de catálogo](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html?lang=pt-BR) para operar. O processo de sincronização de dados de catálogo permanece inalterado em uma implementação headless, mas são necessárias alterações para a coleta de dados comportamentais.
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ Você pode executar essas duas ações usando os SDKs disponíveis, conforme des
 
 1. [Instalar](install-configure.md) o módulo [!DNL Product Recommendations].
 
-1. Instale e use o [Adobe Commerce Storefront Event SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) para acionar os [eventos comportamentais](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html).
+1. Instale e use o [Adobe Commerce Storefront Event SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) para acionar os [eventos comportamentais](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/events.html?lang=pt-BR).
 
    O mínimo de eventos necessário para retornar [!DNL Product Recommendations] resultados:
 
