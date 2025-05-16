@@ -3,9 +3,10 @@ title: Merchandising de categoria
 description: Use o  [!DNL Live Search] Merchandising por categoria para ter uma experiência de compra mais rápida.
 gourl: ls_catalog_merchandising
 exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
-source-git-commit: e5e5443e0bdb12e4774856336157067b4ff6eb7c
+badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
+source-git-commit: 59aa4ae67a1a8a853b72d78cd65a6cc44a6bc662
 workflow-type: tm+mt
-source-wordcount: '1101'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ O merchandising por categoria permite que os proprietários de lojas apliquem [!
 
 Este vídeo é uma introdução ao Merchandising por categoria.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448856?captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
 O recurso é acessado no Administrador em **Marketing** > SEO e pesquisa > **[!DNL Live Search]** > **Merchandising de categorias**.
 
