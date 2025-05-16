@@ -4,7 +4,8 @@ description: Informações abrangentes sobre o  [!DNL Product Recommendations]  
 seo-title: Adobe Commerce [!DNL Product Recommendations] Guide
 seo-description: Describes how to use [!DNL Product Recommendations] with Adobe Commerce.
 feature: Services, Recommendations
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 8df3ef2e-b00e-42d8-b92b-4fbdaaed9f8f
+source-git-commit: 8e3e71c7de56b367a73ab048fa13ba2cdeb55f41
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 0%
@@ -31,12 +32,12 @@ Este guia não aborda os principais recursos do Adobe Commerce e do Magento Open
 
 | Guia | Descrição |
 |------ | ----------- |
-| [Guia do Usuário do Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce.html?lang=pt-BR) | Documentação voltada para o comerciante do Adobe Commerce e da Magento Open Source |
+| [Guia do Usuário do Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce.html) | Documentação voltada para o comerciante do Adobe Commerce e da Magento Open Source |
 | [Guia do desenvolvedor do Adobe Commerce 2.4](https://developer.adobe.com/commerce/docs) | Documentação voltada para o desenvolvedor usada para criar e personalizar o Adobe Commerce ou o Magento Open Source |
 
 ## Suporte
 
 Se você precisar de informações ou tiver dúvidas que não são abordadas neste guia, use os seguintes recursos:
 
-* [Centro de ajuda](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-tickets){target="_blank"} — Consulte os artigos de solução de problemas relacionados a [!DNL Product Recommendations].
-* [Tíquetes de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket){target="_blank"}—Envie um tíquete para receber ajuda adicional.
+* [Centro de ajuda](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-tickets){target="_blank"} — Consulte os artigos de solução de problemas relacionados a [!DNL Product Recommendations].
+* [Tíquetes de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"}—Envie um tíquete para receber ajuda adicional.

@@ -2,7 +2,8 @@
 title: Visão geral do Guia do [!DNL Catalog Service]
 description: O [!DNL Catalog Service for Adobe Commerce] fornece uma maneira de recuperar o conteúdo das Páginas de Exibição de Produtos e das Páginas de Lista de Produtos mais rapidamente do que as consultas nativas do Adobe Commerce GraphQL.
 recommendations: noCatalog
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 1a83bbc5-8901-49c0-8d8f-daec415edf70
+source-git-commit: 8e3e71c7de56b367a73ab048fa13ba2cdeb55f41
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
@@ -22,15 +23,15 @@ Este guia destina-se aos administradores do Adobe [!DNL Commerce]. Inclui inform
 
 | Guia | Descrição |
 |------ | ----------- |
-| [Guia do Usuário do Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce.html?lang=pt-BR) | Documentação voltada para o comerciante do Adobe Commerce e da Magento Open Source |
+| [Guia do Usuário do Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce.html) | Documentação voltada para o comerciante do Adobe Commerce e da Magento Open Source |
 | [Guia do desenvolvedor do Adobe Commerce 2.4](https://developer.adobe.com/commerce/docs) | Documentação voltada para o desenvolvedor usada para criar e personalizar o Adobe Commerce ou o Magento Open Source |
 
 ## Suporte
 
-O [processo de integração](https://experienceleague.adobe.com/docs/commerce/catalog-service/installation.html?lang=pt-BR) foi projetado para orientá-lo pelas etapas necessárias para configurar e habilitar a funcionalidade [!DNL Catalog Service].
+O [processo de integração](https://experienceleague.adobe.com/docs/commerce/catalog-service/installation.html) foi projetado para orientá-lo pelas etapas necessárias para configurar e habilitar a funcionalidade [!DNL Catalog Service].
 
 Se você precisar de informações ou tiver dúvidas que não são abordadas neste guia, use os seguintes recursos:
 
-* [Central de ajuda](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=pt-BR) para artigos de solução de problemas.
-* [Tíquetes de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) - Envie um tíquete para receber ajuda adicional.
+* [Central de ajuda](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) para artigos de solução de problemas.
+* [Tíquetes de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - Envie um tíquete para receber ajuda adicional.
 * Junte-se à equipe de engenharia da Adobe Commerce e aos usuários de serviços da loja SaaS no canal público do Slack [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) para estar atualizado.
