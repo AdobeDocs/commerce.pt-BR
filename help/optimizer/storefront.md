@@ -274,7 +274,7 @@ Esses valores definem a ID do canal, o local e a ID do catálogo de preços para
 
    Consulte a [documentação da Biblioteca da Sidekick](https://www.aem.live/docs/sidekick-library) para obter mais informações.
 
-+++
+   +++
 
 1. Atualize os valores da chave `url` com os valores do seu repositório GitHub.
 
@@ -314,7 +314,7 @@ Esses valores definem a ID do canal, o local e a ID do catálogo de preços para
    }
    ```
 
-+++
+   +++
 
 1. Salve o arquivo.
 
