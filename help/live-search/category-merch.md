@@ -3,7 +3,7 @@ title: Merchandising de categoria
 description: Use o  [!DNL Live Search] Merchandising por categoria para ter uma experiência de compra mais rápida.
 gourl: ls_catalog_merchandising
 exl-id: b2645096-aafc-4d68-8adc-ab5410a9dfb6
-badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
+badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
 source-git-commit: 59aa4ae67a1a8a853b72d78cd65a6cc44a6bc662
 workflow-type: tm+mt
 source-wordcount: '1118'
