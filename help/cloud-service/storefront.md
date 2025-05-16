@@ -3,7 +3,7 @@ title: Configurar a loja
 description: Saiba como executar a ferramenta de andaime para configurar sua vitrine  [!DNL Adobe Commerce as a Cloud Service] .
 role: Developer
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 source-git-commit: 72e1dca161c0e3b2898cd48eb3d17b5c50db7066
 workflow-type: tm+mt
 source-wordcount: '568'
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 As etapas a seguir demonstram como configurar rapidamente sua Adobe Commerce Storefront habilitada pela Edge Delivery usando o comando `aio commerce init`. Esse processo configura o seguinte:
 
-* [Commerce Storefront baseado na Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) - Uma vitrine eficiente, escalável e segura que é baseada na Edge Delivery Services da Adobe.
+* [Commerce Storefront baseado na Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=pt-BR) - Uma vitrine eficiente, escalável e segura que é baseada na Edge Delivery Services da Adobe.
 * [Malha de API para Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/mesh/) - uma plataforma de API que permite aos desenvolvedores combinar várias fontes de dados em um único ponto de extremidade do GraphQL. A API Mesh orquestra API de terceiros com a API do Adobe por meio de um único gateway. Uma consulta para o único endpoint do GraphQL pode retornar resultados de várias fontes.
 * [Adobe Developer Console](https://developer.adobe.com/developer-console/docs/guides/) - Uma coleção de ferramentas de desenvolvedor com acesso a APIs, eventos, funções de tempo de execução e plug-ins, que você pode usar para criar projetos para aplicativos do Adobe.
 * [Adobe I/O Runtime](https://developer.adobe.com/runtime/docs/) - Um mecanismo sem servidor para implantar código personalizado que responde a eventos e executa funções na nuvem.
@@ -90,7 +90,7 @@ Antes de executar o comando `aio commerce init`, você deve concluir os seguinte
 
 ## Executar o comando `aio commerce init`
 
-A execução do comando a seguir criará um scaffolding para a loja do Commerce. Este andaime fornece um excelente ponto de partida para construir e entender sua loja. Para obter mais informações sobre como trabalhar com a loja, consulte a [documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/).
+A execução do comando a seguir criará um scaffolding para a loja do Commerce. Este andaime fornece um excelente ponto de partida para construir e entender sua loja. Para obter mais informações sobre como trabalhar com a loja, consulte a [documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR).
 
 
 1. Execute o comando `init`:
@@ -123,4 +123,4 @@ A execução do comando a seguir criará um scaffolding para a loja do Commerce.
    * Visualizar sua loja: `https://main--<repo name>--<username or org>.aem.page/`
    * Executar localmente: `aio commerce:dev`
 
-Para personalizar sua loja, consulte a [documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/).
+Para personalizar sua loja, consulte a [documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR).
