@@ -4,9 +4,9 @@ description: As informações da versão mais recente do  [!DNL Data Export Exte
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 5e5b3340f45b5db7a6a01ed1b89c42f6399f66b9
+source-git-commit: 1b3af0084d622d544cad5f144d3cd7bd8191814c
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1186'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,14 @@ As atualizações incluem:
 >A extensão de exportação de dados SaaS é uma coleção de módulos instalados automaticamente com o Live Search, o Product Recommendations e o Catalog Service. Você pode verificar a versão instalada em seu sistema usando o Composer. Em alguns casos, você pode querer atualizar a extensão de exportação de dados no seu sistema para coletar correções ou novos recursos sem atualizar a versão do Serviço do Commerce.
 
 ## Versão principal atual
+
+## Versão 103.4.4
+
+![Novo](../assets/new.svg) Adicionou uma mensagem de aviso que é exibida quando o argumento `cleanup-feed` é adicionado ao comando da CLI `saas:resync`. A opção `--cleanup-feed` deve ser usada com cuidado e somente em cenários específicos, como após a limpeza do ambiente ou com a opção `--dry-run`. Usá-lo em outros casos pode levar à perda de dados e a problemas de sincronização. <!--MDEE-1047-->
+![Correção](../assets/fix.svg) adicionou o `x-request-id` da resposta do servidor para melhorar a rastreabilidade. <!--MDEE-1041-->
+![Correção](../assets/fix.svg) Corrigido um problema no qual o status de sincronização não era salvo para todo o lote de feeds, o que resultava em ressincronização desnecessária. <!--MDEE-1049-->
+![Correção](../assets/fix.svg) Corrigido um problema no qual todos os feeds do lote de feeds eram ignorados durante a sincronização se um feed contivesse um erro. <!--MDEE-976-->
+![Correção](../assets/fix.svg) Suporte adicionado para dimensões no indexador de permissões de categoria. <!--MDEE-654-->
 
 ## Versão 103.4.3
 
