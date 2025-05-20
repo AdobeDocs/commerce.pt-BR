@@ -113,11 +113,11 @@ Para obter uma visão geral das soluções de pagamento prontas para uso, inclui
 
 >[!MORELIKETHIS]
 >
-> * [[!DNL Adobe Commerce] 2.4 Guia do Usuário](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)—Documentação focada no comerciante para [!DNL Adobe Commerce] e [!DNL Magento Open Source]
-> * [[!DNL Adobe Commerce] 2.4 Guia do Usuário](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)—Documentação focada no desenvolvedor usada para compilar e personalizar o [!DNL Adobe Commerce] ou o [!DNL Magento Open Source]
+> * [[!DNL Adobe Commerce] 2.4 Guia do Usuário](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=pt-BR)—Documentação focada no comerciante para [!DNL Adobe Commerce] e [!DNL Magento Open Source]
+> * [[!DNL Adobe Commerce] 2.4 Guia do Usuário](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=pt-BR)—Documentação focada no desenvolvedor usada para compilar e personalizar o [!DNL Adobe Commerce] ou o [!DNL Magento Open Source]
 > * [Notas de versão](release-notes.md)—Saiba mais sobre versões futuras, detalhes do produto e quais versões do Adobe Commerce oferecem suporte à extensão [!DNL Payment Services]
-> * [Centro de ajuda](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html)—Procure por artigos de solução de problemas relacionados a [!DNL Payment Services] na base de conhecimento
-> * [Tíquetes de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) — os clientes da Commerce podem enviar um tíquete para receber ajuda adicional
+> * [Centro de ajuda](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=pt-BR)—Procure por artigos de solução de problemas relacionados a [!DNL Payment Services] na base de conhecimento
+> * [Tíquetes de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) — os clientes da Commerce podem enviar um tíquete para receber ajuda adicional
 
 ## Suporte
 
