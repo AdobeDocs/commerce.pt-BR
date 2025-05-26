@@ -23,15 +23,15 @@ Este guia destina-se aos administradores do Adobe [!DNL Commerce]. Inclui inform
 
 | Guia | Descrição |
 |------ | ----------- |
-| [Guia do Usuário do Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce.html) | Documentação voltada para o comerciante do Adobe Commerce e da Magento Open Source |
+| [Guia do Usuário do Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce.html?lang=pt-BR) | Documentação voltada para o comerciante do Adobe Commerce e da Magento Open Source |
 | [Guia do desenvolvedor do Adobe Commerce 2.4](https://developer.adobe.com/commerce/docs) | Documentação voltada para o desenvolvedor usada para criar e personalizar o Adobe Commerce ou o Magento Open Source |
 
 ## Suporte
 
-O [processo de integração](https://experienceleague.adobe.com/docs/commerce/catalog-service/installation.html) foi projetado para orientá-lo pelas etapas necessárias para configurar e habilitar a funcionalidade [!DNL Catalog Service].
+O [processo de integração](https://experienceleague.adobe.com/docs/commerce/catalog-service/installation.html?lang=pt-BR) foi projetado para orientá-lo pelas etapas necessárias para configurar e habilitar a funcionalidade [!DNL Catalog Service].
 
 Se você precisar de informações ou tiver dúvidas que não são abordadas neste guia, use os seguintes recursos:
 
-* [Central de ajuda](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) para artigos de solução de problemas.
-* [Tíquetes de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - Envie um tíquete para receber ajuda adicional.
+* [Central de ajuda](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=pt-BR) para artigos de solução de problemas.
+* [Tíquetes de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) - Envie um tíquete para receber ajuda adicional.
 * Junte-se à equipe de engenharia da Adobe Commerce e aos usuários de serviços da loja SaaS no canal público do Slack [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) para estar atualizado.
