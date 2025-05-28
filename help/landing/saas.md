@@ -84,7 +84,7 @@ Para [!DNL Product Recommendations], o espaço de dados SaaS contém dados de ca
 >[!WARNING]
 >
 > Use seu **espaço de dados SaaS de produção** somente em sua instalação de produção [!DNL Commerce] para evitar colisões de dados. Caso contrário, você corre o risco de poluir os dados do site de produção com dados de teste, o que causa atrasos de implantação. Por exemplo, os dados do produto de produção podem ser substituídos por engano dos dados de preparo, como URLs de preparo.
-> > Se isso acontecer, [envie uma solicitação de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) para solicitar limpeza de dados.
+> &#x200B;> Se isso acontecer, [envie uma solicitação de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) para solicitar limpeza de dados.
 
 ### Provisionamento de espaço de dados SaaS
 
@@ -114,7 +114,7 @@ Para selecionar ou criar um projeto SaaS, solicite a chave de API [!DNL Commerce
 
    Se você não vir a seção **[!UICONTROL Commerce Services Connector]** na configuração [!DNL Commerce], instale os módulos [!DNL Commerce] do [[!DNL Commerce] serviço](#availableservices) desejado. Além disso, verifique se o pacote `magento/module-services-id` está instalado.
 
-1. Nas seções _[!UICONTROL Sandbox API Keys]_e_[!UICONTROL Production API Keys]_, cole seus valores de chave.
+1. Nas seções _[!UICONTROL Sandbox API Keys]_&#x200B;e_[!UICONTROL Production API Keys]_, cole seus valores de chave.
 
    - As chaves privadas devem incluir `----BEGIN PRIVATE KEY---` no início da chave e `----END PRIVATE KEY----` no final da chave.
    - Se você não tiver uma cópia das chaves reais, peça ao Proprietário da conta que as informe e, em seguida, conecte os valores à configuração.
