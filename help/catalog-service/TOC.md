@@ -22,6 +22,6 @@ ht-degree: 12%
    - [Serviço de catálogo e API Mesh](mesh.md)
    - [Caso de Uso: Exibir Preços Tributados](taxes.md)
 - [Notas de versão](release-notes.md)
-- [Retornar à Página Inicial dos Serviços Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Retornar à Página Inicial dos Serviços Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/home)
 
 
