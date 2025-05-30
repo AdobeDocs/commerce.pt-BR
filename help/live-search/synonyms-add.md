@@ -2,23 +2,23 @@
 title: Adicionar sinônimos
 description: Adicione  [!DNL Live Search] sinônimos para melhorar a resposta às solicitações de pesquisa.
 exl-id: 2dc535ea-35a3-45a8-8171-901005223cc9
-source-git-commit: 81bde302463a70e41318b494565694929703dff9
+source-git-commit: 6dcfd0a54e6a6814b7f5708e0c221452b8af4537
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
 
 # Adicionar sinônimos
 
-Aumente o engajamento do cliente adicionando sua própria lista com curadoria de sinônimos do [!DNL Live Search]. [!DNL Live Search] pode gerenciar até 200 sinônimos por `Data Space ID`.
+Aumente o engajamento do cliente adicionando sua própria lista com curadoria de sinônimos do [!DNL Live Search]. [!DNL Live Search] pode gerenciar até 200 sinônimos por exibição de loja.
 
 ![[!DNL Live Search] sinônimos](assets/synonym-workspace.png)
 
 ## Etapa 1: adicionar um sinônimo
 
 1. No Administrador, vá para **Marketing** > SEO e pesquisa > **[!DNL Live Search]**.
-1. Para vários armazenamentos, defina o **Escopo** para a [exibição de armazenamento](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=pt-BR#scope-settings) onde as configurações de sinônimo se aplicam.
+1. Para vários armazenamentos, defina o **Escopo** para a [exibição de armazenamento](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) onde as configurações de sinônimo se aplicam.
 1. Clique na guia **Sinônimos**.
 1. Clique no botão **Adicionar sinônimos**.
 
