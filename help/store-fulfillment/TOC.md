@@ -1,15 +1,14 @@
 ---
 user-guide-title: '[!DNL Store FulFillment Guide]'
 user-guide-description: Informações detalhadas sobre a instalação, configuração e uso do Atendimento da loja para lojas Adobe Commerce.
-breadcrumb-title: Processamento na loja para o Adobe Commerce
 index: true
 feature: Shipping/Delivery
 role: Admin, User
 recommendations: noDisplay
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 8%
+source-wordcount: '79'
+ht-degree: 2%
 
 ---
 
@@ -21,13 +20,13 @@ ht-degree: 8%
 - [Fluxos de trabalho de assistência da loja](store-assist-modules.md)
 - [Requisitos](solution-requirements.md)
 - [Notas de versão](release-notes.md)
-- Atendimento de Loja Integrada {#onboarding}
+- Atendimento de loja integrada {#onboarding}
    - [Visão geral da integração](onboard.md)
    - [Instalar a extensão](install.md)
    - [Conectar Atendimento da Loja](connect-set-up-service.md)
    - [Teste e implantação](test-and-deploy.md)
 - [Visão geral da configuração](service-config-settings-overview.md)
-- Configuração de armazenamento {#store-configuration}
+- Configuração da loja {#store-configuration}
    - [Configuração geral](enable-general.md)
    - [Modelos de email de vendas](sales-emails.md)
    - [Loja do comerciante (fontes)](merchant-store-configuration.md)

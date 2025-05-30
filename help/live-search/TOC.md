@@ -1,13 +1,12 @@
 ---
 user-guide-title: Guia do [!DNL Live Search]
 user-guide-description: Este guia fornece instruções detalhadas para usar o  [!DNL Live Search] da Adobe Commerce.
-breadcrumb-title: Guia do [!DNL Live Search]
 role: Admin
 feature: Services, Search
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
 workflow-type: tm+mt
-source-wordcount: '76'
-ht-degree: 11%
+source-wordcount: '75'
+ht-degree: 10%
 
 ---
 
@@ -23,7 +22,7 @@ ht-degree: 11%
    - [Widgets da vitrine](storefront-widgets.md)
    - [Página de listagem de produtos](plp-styling.md)
    - [Loja [!DNL Popover]](storefront-popover.md)
-- Administrador {#live-search-admin}
+- Admin {#live-search-admin}
    - [Desempenho](performance.md)
    - Facetas {#facets}
       - [Visão geral](facets.md)
@@ -36,7 +35,7 @@ ht-degree: 11%
       - [Tipos de sinônimos](synonyms-type.md)
       - [Adicionar sinônimos](synonyms-add.md)
       - [Gerenciar sinônimos](synonyms-manage.md)
-   - Pesquisar Merchandising {#rules}
+   - Pesquisar merchandising {#rules}
       - [Visão geral](rules.md)
       - [Workspace](rules-workspace.md)
       - [Adicionar regras](rules-add.md)
@@ -46,4 +45,4 @@ ht-degree: 11%
    - [GraphQL](graphql.md)
    - [Configurações](settings.md)
 - [Eventos](events.md)
-- [Retornar à Página Inicial dos Serviços Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=pt-BR)
+- [Retornar à Página Inicial dos Serviços Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)

@@ -1,14 +1,13 @@
 ---
 user-guide-title: Guia do [!DNL Adobe Commerce as a Cloud Service]
 user-guide-description: Este guia fornece instruções detalhadas para usar o  [!DNL Adobe Commerce as a Cloud Service].
-breadcrumb-title: Guia do Cloud Service
 hide: true
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: 34057c1e55ff117ea7aab4407f31548ce826691b
+source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
 workflow-type: tm+mt
-source-wordcount: '26'
-ht-degree: 23%
+source-wordcount: '23'
+ht-degree: 26%
 
 ---
 
