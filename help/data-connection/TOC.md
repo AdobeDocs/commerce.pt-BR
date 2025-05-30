@@ -4,7 +4,7 @@ user-guide-description: Este guia fornece instruções detalhadas para usar a ex
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
+badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
 source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
 workflow-type: tm+mt
 source-wordcount: '142'
@@ -36,4 +36,4 @@ ht-degree: 2%
 - Casos de uso {#use-cases}
    - [Usar o Adobe Journey Optimizer para enviar um email de carrinho abandonado](using-ajo.md)
    - [Criar um público-alvo no Real-Time CDP usando dados de evento do Commerce](create-audience.md)
-- [Retornar à Página Inicial dos Serviços Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Retornar à Página Inicial dos Serviços Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=pt-BR)

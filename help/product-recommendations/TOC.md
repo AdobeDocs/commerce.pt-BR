@@ -36,4 +36,4 @@ ht-degree: 12%
    - [Verificar](verify.md)
    - [Personalizar](customize.md)
    - [Lidar com restrições de cookies](setting-cookie.md)
-- [Retornar à Página Inicial dos Serviços Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Retornar à Página Inicial dos Serviços Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=pt-BR)
