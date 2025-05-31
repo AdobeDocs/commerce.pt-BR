@@ -31,7 +31,7 @@ Use a tabela a seguir para localizar notas de versão e informações importante
         <p>Saiba mais sobre as melhorias mais recentes nos serviços de integração que permitem que nossos Serviços da Commerce se conectem a outros serviços e às extensões e produtos da Adobe.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/data-connection/release-notes.html?lang=pt-BR">[!DNL Data Connection]</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/saas.html">[!DNL Services Connector]</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/saas.html?lang=pt-BR">[!DNL Services Connector]</a></li>
           </ul>
       </td>
       <td><strong>Serviços de dados</strong>
