@@ -1,7 +1,7 @@
 ---
 title: Gerenciamento de usuários
 description: Saiba como gerenciar usuários no [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 source-git-commit: 1427db02c65fd45777f69eac3d10417d6e6177a1
 workflow-type: tm+mt
 source-wordcount: '508'
@@ -21,10 +21,10 @@ Para habilitar o acesso a [!DNL Adobe Commerce Optimizer], adicione usuários do
 
 * **Usuário** - Os usuários têm acesso à interface do usuário [!DNL Adobe Commerce Optimizer] para exibir e gerenciar exibições de catálogo e regras de merchandising, além de acompanhar métricas de desempenho.
 
-* [**Desenvolvedor**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} Os desenvolvedores têm permissões de usuário e acesso à Adobe Developer Console. Isso significa que eles podem criar projetos e configurar credenciais para usar ferramentas de desenvolvedor, como as APIs e SDKs do [!DNL Adobe Commerce Optimizer], juntamente com ferramentas de extensibilidade do Adobe, como o App Builder e a API Mesh.
+* [**Desenvolvedor**](https://helpx.adobe.com/br/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} Os desenvolvedores têm permissões de usuário e acesso à Adobe Developer Console. Isso significa que eles podem criar projetos e configurar credenciais para usar ferramentas de desenvolvedor, como as APIs e SDKs do [!DNL Adobe Commerce Optimizer], juntamente com ferramentas de extensibilidade do Adobe, como o App Builder e a API Mesh.
 
 * **Administrador** - Há três tipos diferentes de funções administrativas:
-   * [Administradores do sistema](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - O administrador do sistema tem acesso a todos os produtos e perfis de produtos na organização por meio da Adobe Admin Console.
+   * [Administradores do sistema](https://helpx.adobe.com/br/enterprise/using/admin-roles.html){target="_blank"} - O administrador do sistema tem acesso a todos os produtos e perfis de produtos na organização por meio da Adobe Admin Console.
    * [Administradores de produtos](#add-a-product-admin) - Os administradores de produtos podem [gerenciar usuários, funções e permissões do produto](#add-users-and-admins) no [!DNL Adobe Admin Console].
    * [Administradores de perfil de produto](#add-users-developers-and-product-profile-admins) - Os administradores de perfil de produto podem gerenciar usuários para o produto no [!DNL Adobe Admin Console].
 
@@ -79,6 +79,6 @@ Use as instruções a seguir para adicionar usuários e desenvolvedores ao [!DNL
 
 É possível adicionar vários usuários com mais eficiência usando um dos seguintes métodos:
 
-* Use o recurso **Adicionar usuários por CSV** na Adobe Admin Console para executar um [upload CSV em massa](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}.
-* Adicione vários usuários a uma função criando um [grupo de usuários](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}. Em seguida, adicione o produto [!UICONTROL **Adobe Commerce as a Cloud Service - Back-end**] ao grupo de usuários.
+* Use o recurso **Adicionar usuários por CSV** na Adobe Admin Console para executar um [upload CSV em massa](https://helpx.adobe.com/br/enterprise/using/bulk-upload-users.html){target="_blank"}.
+* Adicione vários usuários a uma função criando um [grupo de usuários](https://helpx.adobe.com/br/enterprise/using/user-groups.html){target="_blank"}. Em seguida, adicione o produto [!UICONTROL **Adobe Commerce as a Cloud Service - Back-end**] ao grupo de usuários.
 
