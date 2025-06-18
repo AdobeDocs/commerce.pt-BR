@@ -56,7 +56,7 @@ Para aproveitar essa integração, as empresas devem atender aos seguintes requi
 
 Assista a este vídeo para saber como o Adobe Commerce e o AEM Assets trabalham juntos para simplificar os fluxos de trabalho de conteúdo:
 
->[!VIDEO](https://video.tv.adobe.com/v/3447837)
+>[!VIDEO](https://video.tv.adobe.com/v/3447888?captions=por_br)
 
 ## Próximas etapas
 
