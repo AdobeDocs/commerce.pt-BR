@@ -106,5 +106,5 @@ Veja a seguir uma visão geral de alto nível sobre o uso da ferramenta.
 >[!MORELIKETHIS]
 >
 > [Demonstração de vídeo da ferramenta de importação em massa](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
-> > [Dicas, práticas recomendadas e limitações](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
-> > [Carregar ou assimilar ativos usando APIs](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)
+> &#x200B;> [Dicas, práticas recomendadas e limitações](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
+> &#x200B;> [Carregar ou assimilar ativos usando APIs](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)
