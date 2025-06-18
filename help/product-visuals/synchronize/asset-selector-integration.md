@@ -22,7 +22,7 @@ Quando a integração do **Seletor de ativos do AEM** é configurada, os profiss
 
 >[!NOTE]
 >
-> O Seletor de ativos do AEM é um componente de front-end do AEM Assets para integrar o AEM Assets com aplicativos de criação. Para obter mais informações sobre este componente, consulte o [Seletor de ativos de microfront-end](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank} no *Guia do Usuário do AEM as a Cloud Service*.
+> O Seletor de ativos do AEM é um componente de front-end do AEM Assets para integrar o AEM Assets com aplicativos de criação. Para obter mais informações sobre este componente, consulte o [Seletor de ativos de microfront-end](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank} no *Guia do Usuário do AEM as a Cloud Service*.
 
 ## Principais benefícios
 
