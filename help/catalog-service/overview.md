@@ -4,7 +4,7 @@ description: O [!DNL Catalog Service] for Adobe Commerce fornece uma maneira de 
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: 525e3ff0-efa6-48c7-9111-d0b00f42957a
-source-git-commit: be1c739f3821a5f1e846b3026088e3a3ff45a60f
+source-git-commit: ff5c717dbdd638e114bccc3f6dec26f4be269194
 workflow-type: tm+mt
 source-wordcount: '1095'
 ht-degree: 0%
@@ -65,7 +65,7 @@ Opções complexas de produto são unificadas e diferenciadas por seu comportame
 
 #### Atributos de exibição do produto
 
-Produtos simples e complexos têm atributos definidos pelo cliente que podem ser exibidos na loja. Estes atributos são retornados como [ProductViewAttributes](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/#productviewattribute-type). No Adobe Commerce, os atributos disponíveis são definidos quando o produto é criado. Você pode adicionar atributos adicionais do back-end do Adobe Commerce ou de forma programática. Consulte [Estender e personalizar dados do feed de exportação de dados SaaS](../data-export/extensibility-and-customizations.md).
+Produtos simples e complexos têm atributos definidos pelo cliente que podem ser exibidos na loja. Estes atributos são retornados como [ProductViewAttributes](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type). No Adobe Commerce, os atributos disponíveis são definidos quando o produto é criado. Você pode adicionar atributos adicionais do back-end do Adobe Commerce ou de forma programática. Consulte [Estender e personalizar dados do feed de exportação de dados SaaS](../data-export/extensibility-and-customizations.md).
 
 >[!TIP]
 >
@@ -85,6 +85,6 @@ O Serviço de catálogo garante atualizações de preços e cálculos precisos, 
 
 ## Implementação
 
-[!BADGE Somente PaaS]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."}
+[!BADGE Somente PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."}
 
 O processo de instalação requer a configuração do [Commerce Services Connector](../landing/saas.md). Depois que isso for realizado, a próxima etapa é para um integrador de sistemas atualizar o código da loja para incorporar as consultas [!DNL Catalog Service]. Todas as consultas [!DNL Catalog Service] são roteadas para o gateway do GraphQL. O URL é fornecido durante o processo de integração.
