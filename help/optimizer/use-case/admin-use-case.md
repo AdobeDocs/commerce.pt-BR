@@ -1,44 +1,68 @@
 ---
-title: Caso de uso Carvelo
-description: Saiba como usar o [!DNL Adobe Commerce Optimizer] para gerenciar seu catálogo usando canais e políticas e como configurar sua loja com base na configuração do catálogo.
-hide: true
+title: Caso de uso completo do administrador de vitrine e catálogo
+description: Saiba como usar o [!DNL Adobe Commerce Optimizer] para gerenciar seu catálogo usando exibições e políticas de catálogo e como configurar sua loja com base na configuração do catálogo.
 role: Admin, Developer
 feature: Personalization, Integration
-exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
-source-git-commit: 149b87fc822e5d07eed36f3d6a38c80e7b493214
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+source-git-commit: 474426ef1f99eed8d2c1b5d736332aaa666872fa
 workflow-type: tm+mt
-source-wordcount: '1672'
+source-wordcount: '2211'
 ht-degree: 0%
 
 ---
 
-# Caso de uso Carvelo
+# Caso de uso completo do administrador de vitrine e catálogo
 
->[!NOTE]
->
->Esta documentação descreve um produto em desenvolvimento de acesso antecipado e não reflete toda a funcionalidade destinada à disponibilidade geral.
+Esse caso de uso é baseado em um conglomerado fictício de automóveis chamado Carvelo Automobile, que tem uma configuração operacional complexa. Ele demonstra como usar o [!DNL Adobe Commerce Optimizer] para gerenciar um catálogo que oferece suporte a várias marcas, concessionárias e catálogos de preços, além de fornecer uma experiência de vitrine personalizada.
 
-O caso de uso a seguir demonstra como você pode usar o [!DNL Adobe Commerce Optimizer] para organizar seu catálogo para corresponder operações de varejo usando um único catálogo base. Ele também demonstra como configurar uma loja habilitada pelo Edge Delivery Services.
+## Pré-requisitos
 
-## Pré-requisito
+Este caso de uso foi projetado para administradores e desenvolvedores que desejam aprender a configurar uma vitrine e gerenciar um catálogo usando o [!DNL Adobe Commerce Optimizer]. Ele pressupõe que você tenha uma compreensão básica do [!DNL Adobe Commerce Optimizer] e de seus recursos.
 
-Antes de examinar este caso de uso, verifique se você [configurou sua vitrine](../storefront.md).
+**Tempo estimado para conclusão:** 45-60 minutos
+
+### Configuração necessária
+
+Antes de iniciar este tutorial, verifique se os seguintes pré-requisitos estão em vigor:
+
+- **Instância do Adobe Commerce Optimizer**
+   - Acesso a uma instância de teste no Cloud Manager
+   - Consulte [Introdução](../get-started.md) para obter instruções de configuração
+
+- **Permissões de usuário**
+   - Acesso de administrador ao Adobe Admin Console
+   - Consulte [Gerenciamento de usuários](../user-management.md) para obter a configuração da conta
+   - Se você não tiver acesso, entre em contato com o representante de conta da Adobe ou preencha o [formulário do Programa de Acesso Antecipado](https://experienceleague.adobe.com/go/aco-early-access-program)
+
+- **Dados de Exemplo**
+   - Dados de catálogo do Carvelo Automobile carregados em sua instância
+   - Siga as instruções no [Repositório de assimilação de dados do catálogo de amostra](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)
+   - Você pode excluir dados de exemplo após a conclusão usando o script `reset.js` incluído
+
+- **Ambiente de vitrine**
+   - Ambiente de desenvolvimento local com Node.js
+   - Projeto de vitrine da loja clonado e configurado
+   - Consulte [Configuração de vitrine](../storefront.md) para obter instruções detalhadas
 
 ## Vamos começar
 
 Nesse caso de uso, você trabalhará com o seguinte:
 
-1. Interface do usuário do [!DNL Adobe Commerce Optimizer] - Configure os canais e políticas necessários para gerenciar configurações operacionais complexas de catálogos.
+1. Interface do usuário do [!DNL Adobe Commerce Optimizer] - Configure exibições e políticas de catálogo para gerenciar a complexa configuração operacional de catálogo para o caso de uso Carvelo.
 
-1. Commerce Storefront - Renderize a loja com os dados de catálogo configurados na interface do usuário do [!DNL Adobe Commerce Optimizer] e os arquivos de configuração da Commerce Storefront, `fstab.yaml` e `config.json`.
+1. Commerce Storefront - renderize a loja usando os dados de catálogo de exemplo carregados em sua instância [!DNL Adobe Commerce Optimizer] e os arquivos de configuração da Commerce Storefront, `fstab.yaml` e `config.json`.
+
+>[!NOTE]
+>
+> Saiba mais sobre os arquivos de configuração da loja revisando o [Tópico de introdução](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) na documentação da Adobe Commerce Storefront.
 
 ### ‌Principais pontos
 
 No final deste artigo, você deverá:
 
-- Conheça os fundamentos do [!DNL Adobe Commerce Optimizer] com seu modelo de dados de catálogo escalável e com desempenho exclusivo.
-- Saiba como o modelo de dados de catálogo se vincula perfeitamente aos componentes de vitrine independentes de plataforma criados pela Adobe.
-- Saiba como usar canais e políticas da Adobe Commerce Optimizer para criar visualizações de catálogo e filtros de acesso a dados personalizados e enviar os dados para uma loja da Adobe Commerce alimentada pela Edge Delivery.
+- Saiba mais sobre os fundamentos do [!DNL Adobe Commerce Optimizer] com seu modelo de dados de catálogo escalável e de alto desempenho.
+- Saiba como o modelo de dados de catálogo se integra a componentes de vitrine independentes de plataforma criados pela Adobe.
+- Saiba como usar visualizações e políticas de catálogo do Adobe Commerce Optimizer para criar visualizações de catálogo personalizadas e filtros de acesso a dados, e enviar os dados para uma loja da Adobe Commerce habilitada pelo Edge Delivery.
 
 ## Cenário de negócios - Carvelo Automobile
 
@@ -74,7 +98,7 @@ Agora que você tem uma visão geral do caso de uso de negócios, este é seu ob
 
 >[!BEGINSHADEBOX]
 
-A Carvelo quer vender peças em suas três marcas (Aurora, Bolt e Cruz) por meio de diferentes concessionárias (Akbridge, Kingsbluff e Celport). A Carvelo quer garantir que as concessionárias tenham acesso apenas às peças e aos preços corretos de acordo com seus respectivos contratos de licenciamento.
+A Carvelo quer vender peças em suas três marcas (Aurora, Bolt e Cruz) por meio de diferentes concessionárias (Arkbridge, Kingsbluff e Celport). A Carvelo quer garantir que as concessionárias tenham acesso apenas às peças e aos preços corretos de acordo com seus respectivos contratos de licenciamento.
 
 Em última análise, Carvelo tem dois objetivos principais:
 
@@ -83,11 +107,9 @@ Em última análise, Carvelo tem dois objetivos principais:
 
 >[!ENDSHADEBOX]
 
-Agora, acesse sua instância do [!DNL Adobe Commerce Optimizer].
+## &#x200B;1. Acessar a instância [!DNL Adobe Commerce Optimizer]
 
-## 1. Acessar a instância [!DNL Adobe Commerce Optimizer]
-
-Depois que você integrar o programa de Acesso antecipado, o Adobe enviará um email com o URL para acessar a instância do [!DNL Adobe Commerce Optimizer] provisionada para você. Esta instância é pré-configurada com tudo o que você precisa para concluir com êxito as etapas descritas neste tutorial, incluindo dados de catálogo que oferecem suporte ao caso de uso Carvelo Automobile.
+Navegue até o URL do aplicativo do Commerce Optimizer que é pré-configurado com os dados de amostra. Você pode encontrar o URL no Commerce Cloud Manager nos detalhes da instância do seu projeto do Commerce Optimizer ou obtê-lo do administrador do sistema. (Consulte [Acessar uma instância](../get-started.md#access-an-instance).)
 
 Ao iniciar o [!DNL Adobe Commerce Optimizer], você verá o seguinte:
 
@@ -95,17 +117,17 @@ Ao iniciar o [!DNL Adobe Commerce Optimizer], você verá o seguinte:
 
 >[!NOTE]
 >
->Consulte o artigo [visão geral](../overview.md) para saber mais sobre as diferentes partes que compõem a interface do usuário do [!DNL Adobe Commerce Optimizer].
+>Consulte o artigo [visão geral](../overview.md) para saber mais sobre os componentes principais da interface do usuário do [!DNL Adobe Commerce Optimizer].
 
-Na navegação à esquerda, expanda a seção **[!UICONTROL Catalog]** e clique em **[!UICONTROL Channels]**. Observe que as concessionárias Arkbridge e Kingsbluff já criaram canais:
+Na navegação à esquerda, expanda a seção _Configuração de armazenamento_ e clique em **[!UICONTROL Catalog views]**. Observe que as concessionárias Arkbridge e Kingsbluff já têm visualizações de catálogo criadas:
 
-![Canais pré-configurados](../assets/existing-channels-list.png)
+![Exibições de catálogo existentes configuradas para dados de exemplo](../assets/existing-channels-list.png)
 
 >[!NOTE]
 >
->Você pode ignorar o canal **Global** por enquanto.
+>Você pode ignorar a exibição do catálogo **Global** por enquanto.
 
-Clique no ícone de informações para analisar os detalhes do canal.
+Clique no ícone de informações para revisar os detalhes de exibição do catálogo.
 
 A Arkbridge tem as seguintes políticas:
 
@@ -121,9 +143,9 @@ Kingsbluff tem as seguintes políticas:
 - Marcas East Coast Inc
 - Categorias de peças Kingsbluff
 
-Na próxima seção, você criará um canal e políticas para a concessionária Celport.
+Na próxima seção, você criará uma visualização de catálogo e políticas para a concessionária Celport.
 
-## 2. Criar uma política e um canal
+## &#x200B;2. Criar uma exibição de política e catálogo
 
 O gerente de comércio da Carvelo precisa configurar uma nova loja para um revendedor chamado *Celport* que pertence à empresa *East Coast Inc*. A Celport venderá freios e suspensões para as marcas Bolt e Cruz.
 
@@ -132,10 +154,10 @@ O gerente de comércio da Carvelo precisa configurar uma nova loja para um reven
 Usando o [!DNL Adobe Commerce Optimizer], o gerente de comércio irá:
 
 1. Crie uma nova política chamada *Categorias de peças do Celport* para o Celport vender somente peças de freio e suspensão.
-1. Crie um novo canal para a loja Celport.
+1. Crie uma nova visualização de catálogo para a loja Celport.
 
-   Este canal usa sua política recém-criada *Categorias de partes do Celport* e as *Marcas da East Coast Inc* existentes para garantir que o Celport possa vender somente as marcas Bolt e Cruz como parte do contrato com a East Coast Inc. O canal Celport usará a tabela de preços `east_coast_inc` para dar suporte às programações de preços de produtos que se alinham aos contratos de licenciamento de marca.
-1. Atualize a configuração da loja de comércio para usar os dados do canal Celport criado.
+   Esta exibição de catálogo usa sua política recém-criada *Categorias de partes do Celport* e as *Marcas da East Coast Inc* existentes para garantir que a Celport possa vender somente as marcas Bolt e Cruz como parte do contrato com a East Coast Inc. A exibição de catálogo da Celport usará o catálogo de preços `east_coast_inc` para dar suporte a cronogramas de preços de produtos que se alinham aos contratos de licenciamento de marca.
+1. Atualize a configuração da loja de comércio para usar os dados da visualização do catálogo do Celport que você criou.
 
 No final desta seção, a Celport estará pronta para vender os produtos da Carvelo.
 
@@ -143,9 +165,9 @@ No final desta seção, a Celport estará pronta para vender os produtos da Carv
 
 Vamos criar uma nova política chamada *Categorias de peças do Celport* para filtrar as SKUs que o revendedor Celport vende, que incluem peças de freio e suspensão.
 
-1. Na navegação à esquerda, expanda a seção **[!UICONTROL Catalog]** e clique em **[!UICONTROL Policies]**.
+1. No painel à esquerda, expanda a seção _Configuração de armazenamento_ e clique em **[!UICONTROL Policies]**.
 
-1. Clique em **[!UICONTROL Add Policy]**.
+1. Clique em **[!UICONTROL Create Policy]**.
 
    Uma nova página é exibida para adicionar os detalhes da política.
 
@@ -168,7 +190,7 @@ Vamos criar uma nova política chamada *Categorias de peças do Celport* para fi
    >
    >Verifique se o nome do atributo especificado corresponde exatamente ao nome do atributo SKU no catálogo.
 
-   Para saber mais sobre a diferença entre uma origem de valor STATIC e TRIGGER, consulte [tipos de origem de valor](../catalog/policies.md#value-source-types).
+   Para saber mais sobre a diferença entre uma origem de valor STATIC e TRIGGER, consulte [tipos de origem de valor](../setup/policies.md#value-source-types).
 
 1. Na caixa de diálogo **[!UICONTROL Filter details]**, clique em **[!UICONTROL Save]**.
 
@@ -184,49 +206,59 @@ Vamos criar uma nova política chamada *Categorias de peças do Celport* para fi
 
    Sua nova política de *Categorias de parte do Celport* aparece na lista.
 
-### Criar um canal
+**Para verificar se esta etapa foi concluída corretamente:**
 
-Crie um novo canal para o revendedor *Celport* e vincule as seguintes políticas: *Marcas da East Coast Inc* e *Categorias de Peças Celport*.
+- Política aparece na lista de políticas
+- O status da política é exibido como ativado (indicador verde)
+- Detalhes do filtro mostram &quot;part_category IN (freios, suspensão)&quot;
+- O nome da política é &quot;Categorias de peças Celport&quot;
 
-1. Na navegação à esquerda, expanda a seção **[!UICONTROL Catalog]** e clique em **[!UICONTROL Channels]**.
+### Criar uma exibição de catálogo
 
-   ![Canais](../assets/channels.png)
+Crie uma nova exibição de catálogo para o revendedor *Celport* e vincule as seguintes políticas: *Marcas da East Coast Inc* e *Categorias de Partes da Celport*.
 
-   Observe os canais existentes: *Arkbridge*, *Kingsbluff* e *Global*.
+1. No painel à esquerda, expanda a seção _Configuração de armazenamento_ e clique em **[!UICONTROL Catalog views]**.
 
-   ![Página de canais existente](../assets/existing-channels-list.png)
+   Observe as exibições existentes do catálogo: *Arkbridge*, *Kingsbluff* e *Global*.
 
-1. Clique em **[!UICONTROL Add Channel]**.
+   ![Página de exibições do catálogo existente](../assets/existing-channels-list.png)
 
-1. Preencher detalhes do canal:
+1. Clique em **[!UICONTROL Add catalog view]**.
+
+1. Preencha os detalhes de exibição do catálogo:
 
    - **Nome** = *Celport*
-   - **Escopos** = *en-US* (centro de ocorrências)
+   - **Fontes do catálogo** = *en-US* (centro de ocorrências)
    - **Políticas** (use a lista suspensa) = *Marcas da East Coast Inc*; *Categorias de partes do Celport*; *Marca*; *Modelo*                          
+1. Clique em **[!UICONTROL Add]** para criar a exibição do catálogo.
 
-1. Clique em **[!UICONTROL Add]** para criar o canal.
+   A página Exibições de catálogo é atualizada para exibir a nova exibição de catálogo.
 
-   A página Canais é atualizada para exibir o novo canal.
-
-   ![Lista de Canais Atualizada](../assets/updated-channels-list.png)
+   ![Lista de Modos de Exibição de Catálogo Atualizada](../assets/updated-catalog-view-list.png)
 
    >[!NOTE]
    >
-   >Se o botão **[!UICONTROL Add]** não estiver azul, certifique-se de que o escopo esteja selecionado colocando o cursor na seção **[!UICONTROL Scopes]** e pressionando **enter**.
+   >Se o botão **[!UICONTROL Add]** não estiver azul, certifique-se de que a origem do catálogo esteja selecionada, colocando o cursor na seção **[!UICONTROL Catalog sources]** e pressionando **enter**.
 
-1. Obtenha a ID de canal do Celport.
+1. Obtenha a ID de visualização do catálogo do Celport.
 
-   Clique no ícone de informações do canal Celport na página **Canais**.
+   Clique no ícone de informações da exibição do catálogo do Celport na página **Exibições do catálogo**.
 
-   ![Celport Channel ID](../assets/celport-channel-id.png)
+   ![ID de exibição do catálogo do Celport](../assets/celport-channel-id.png)
 
-   Copie e salve a ID do canal. Você precisa dessa ID ao atualizar a configuração da loja para entregar dados ao seu novo catálogo do Celport.
+   Copie e salve a ID de exibição do catálogo. Você precisa dessa ID ao atualizar a configuração da loja para entregar dados ao seu novo catálogo do Celport.
 
-Depois de criar o canal Celport e as políticas associadas, o próximo passo é configurar a loja para criar seu novo catálogo Celport.
+   **Para verificar se esta etapa foi concluída corretamente:**
+   - O nome da exibição do catálogo é &quot;Celport&quot;
+   - A visualização do catálogo mostra quatro políticas associadas
+   - A ID de exibição do catálogo é exibida e pode ser copiada
+   - A origem do catálogo mostra &quot;en-US&quot;
 
-## 3. Atualize sua loja
+Depois de criar a visualização de catálogo do Celport e as políticas associadas, o próximo passo é configurar a loja para usar seu novo catálogo do Celport.
 
-A parte final deste tutorial envolve a atualização da loja que [você já criou](#prerequisite) para entregar dados ao novo catálogo do Celport. Nesta seção, você substitui a ID de canal no arquivo de configuração da loja pela ID de canal do Celport.
+## &#x200B;3. Atualize sua loja
+
+A parte final deste tutorial envolve a atualização da loja que [você já criou](#prerequisite) para entregar dados ao novo catálogo do Celport. Nesta seção, você substitui a ID de visualização do catálogo no arquivo de configuração da loja pela ID de visualização do catálogo do Celport.
 
 1. No ambiente de desenvolvimento local, abra a pasta onde você clonou o repositório GitHub com os arquivos de configuração padrão da loja.
 
@@ -242,10 +274,9 @@ A parte final deste tutorial envolve a atualização da loja que [você já crio
       "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/Fwus6kdpvYCmeEdcCX7PZg/graphql",
       "headers": {
          "cs": {
-            "ac-channel-id": "9ced53d7-35a6-40c5-830e-8288c00985ad",
-            "ac-environment-id": "Fwus6kdpvYCmeEdcCX7PZg",
+            "ac-catalog-view-id": "9ced53d7-35a6-40c5-830e-8288c00985ad",
             "ac-price-book-id": "west_coast_inc",
-            "ac-scope-locale": "en-US"
+            "ac-source-locale": "en-US"
            }
          },
          "analytics": {
@@ -264,25 +295,63 @@ A parte final deste tutorial envolve a atualização da loja que [você já crio
    }
    ```
 
-   Observe que o cabeçalho do canal contém as seguintes linhas:
+   Observe que o cabeçalho de exibição de catálogo inclui os seguintes valores:
 
-   - `ac-channel-id`:`"9ced53d7-35a6-40c5-830e-8288c00985ad"`
-   - `ac-environment-id`: `"Fwus6kdpvYCmeEdcCX7PZg"`
+   - `commerce-endpoint`: `"https://na1-sandbox.api.commerce.adobe.com/Fwus6kdpvYCmeEdcCX7PZg/graphql"`
+   - `ac-catalog-view-id`:`"9ced53d7-35a6-40c5-830e-8288c00985ad"`
    - `ac-price-book-id`: `"west_coast_inc"`
+   - `ac-source-locale`: `"en-US"`
 
-   +++
+1. No valor `commerce-endpoint`, substitua a ID do locatário na URL pela URL da instância [!DNL Adobe Commerce Optimizer].
 
-1. Substitua o valor `ac-channel-id` pela ID de canal Celport copiada anteriormente.
-1. Substitua o valor `ac-environment-id` pela ID do locatário da instância [!DNL Adobe Commerce Optimizer]. Você pode encontrar a ID no email de integração do programa de acesso antecipado ou entrando em contato com o representante de conta da Adobe.
+   Você pode encontrar a ID do locatário no URL da interface do usuário do Commerce Optimizer. Por exemplo, na URL a seguir, a ID do locatário é `XDevkG9W6UbwgQmPn995r3`.
 
-   >[!IMPORTANT]
-   >
-   >Verifique se o valor `commerce-endpoint` corresponde ao ponto de extremidade do GraphQL para a instância [!DNL Adobe Commerce Optimizer]. Isso é fornecido no email de boas-vindas.
+   ```text
+   https://experience.adobe.com/#/@commerceprojectbeacon/in:XDevkG9W6UbwgQmPn995r3/commerce-optimizer-studio/catalog
+   ```
+
+1. Substitua o valor `ac-catalog-view-id` pela ID de exibição de catálogo do Celport copiada anteriormente.
 
 1. Substitua o valor `ac-price-book-id` por `"east_coast_inc"`.
+
+   Depois que você fizer essas alterações, o arquivo `config.json` deverá ter a seguinte aparência, com os espaços reservados `ACO-tenant-id` e `celport-catalog-view-id` substituídos por seus valores:
+
+   ```json
+   {
+     "public": {
+        "default": {
+        "commerce-core-endpoint": "https://www.aemshop.net/graphql",
+        "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/{{ACO-tenant-id}}/graphql",
+        "headers": {
+            "cs": {
+                "ac-catalog-view-id": "{{celport-catalog-view-id}}",
+                "ac-price-book-id": "east_coast_inc",
+                "ac-source-locale": "en-US"
+              }
+            },
+            "analytics": {
+                "base-currency-code": "USD",
+                "environment": "Production",
+                "store-id": 1,
+                "store-name": "ACO Demo",
+                "store-url": "https://www.aemshop.net",
+                "store-view-id": 1,
+                "store-view-name": "Default Store View",
+                "website-id": 1,
+                "website-name": "Main Website"
+             }
+         }
+     }
+   }
+   ```
+
 1. Salve o arquivo.
 
-Ao salvar as alterações, você atualiza a configuração do catálogo para usar o canal Carvelo que foi configurado para vender apenas peças de freio e suspensão.
+   Ao salvar as alterações, atualize a configuração do catálogo para usar a visualização do catálogo Carvelo que foi configurada para vender somente peças de freio e suspensão.
+
+## &#x200B;4. Visualizar a loja
+
+Agora que você atualizou a configuração da loja para usar a visualização de catálogo do Celport, é possível visualizar a loja para ver como ela renderiza os dados do catálogo.
 
 1. Inicie a loja para visualizar a experiência de catálogo específica do Celport criada pela configuração da loja.
 
@@ -292,29 +361,29 @@ Ao salvar as alterações, você atualiza a configuração do catálogo para usa
       npm start
       ```
 
-   O navegador abre para a visualização de desenvolvimento local em `http://localhost:3000`.
+      O navegador abre para a visualização de desenvolvimento local em `http://localhost:3000`.
 
-   Se o comando falhar ou o navegador não abrir, revise as [instruções para desenvolvimento local](../storefront.md) no tópico de configuração Loja.
+      Se o comando falhar ou o navegador não abrir, revise as [instruções para desenvolvimento local](../storefront.md) no tópico de configuração Loja.
 
-   1. No navegador, procure por `brakes` e pressione **Enter**.
+1. No navegador, procure por `brakes` e pressione **Enter**.
 
-      A loja atualiza para exibir a página da lista de produtos mostrando as peças de freio.
+   A loja atualiza para exibir a página da lista de produtos mostrando as peças de freio.
 
    ![Página da Lista de Produtos Brakes](../assets/brakes-listing-page.png)
 
    Clique em uma imagem de peça de freio para visualizar os detalhes do produto com informações de preço e anotar as informações de preço do produto.
 
-1. Agora pesquise por `tires`, que é outra categoria de parte disponível nos dados de caso de uso na sua instância [!DNL Adobe Commerce Optimizer].
+1. Procure por `tires`, que é outra categoria de parte disponível nos dados de caso de uso na sua instância [!DNL Adobe Commerce Optimizer].
 
    ![Configuração de vitrine com cabeçalhos incorretos](../assets/storefront-configuration-with-incorrect-headers.png)
 
-   Observe que nenhum resultado é retornado. Isso ocorre porque o canal Celport foi configurado para vender apenas peças de freio e suspensão.
+   Observe que nenhum resultado é retornado. Isso ocorre porque a visualização do catálogo Celport foi configurada para vender somente peças de freio e suspensão.
 
 1. Experimente atualizar o arquivo de configuração da loja (`config.json`).
 
-   1. Altere os valores de `ac-channel-id` e `ac-price-book`.
+   1. Altere os valores de `ac-catalog-view-id` e `ac-price-book`.
 
-      Por exemplo, você pode alterar a ID do canal para o canal Kingsbluff e a ID do catálogo de preços para `east_coast_inc`. Você pode ver as categorias de partes disponíveis para Kingsbluff revisando a política *categorias de partes Kingsbluff*.
+   Por exemplo, você pode alterar a ID de exibição do catálogo para a exibição do catálogo Kingsbluff e a ID do catálogo de preços para `east_coast_inc`. Você pode ver as categorias de partes disponíveis para Kingsbluff revisando a política *categorias de partes Kingsbluff*.
 
    1. Salve o arquivo.
 
@@ -322,14 +391,67 @@ Ao salvar as alterações, você atualiza a configuração do catálogo para usa
 
    1. Pré-visualize as alterações no navegador usando o recurso Pesquisar para localizar as partes do pneu.
 
-      Observe os diferentes tipos de peças disponíveis e observe os preços atribuídos ao canal Kingsbluff.
+      Observe os diferentes tipos de peças disponíveis e observe os preços atribuídos à visualização do catálogo Kingsbluff.
 
-      Ao alterar os valores do cabeçalho no arquivo de configuração da loja e explorar a loja atualizada, você pode ver como é fácil atualizar a visualização do catálogo e os filtros de dados para personalizar a experiência da loja.
+   Esses experimentos demonstram a flexibilidade do Adobe Commerce Optimizer — você pode alternar rapidamente entre diferentes exibições de catálogo e catálogos de preços para criar experiências de compra personalizadas para públicos diferentes sem duplicar os dados do catálogo.
 
-## Pronto!
+## Solução de problemas
 
-Neste tutorial, você aprendeu como o [!DNL Adobe Commerce Optimizer] pode ajudar a organizar seu catálogo para corresponder às suas operações de varejo usando um único catálogo base. Você também aprendeu a configurar uma loja habilitada pelo Edge Delivery Services.
+Se você encontrar problemas durante este tutorial, tente as seguintes soluções:
 
-## Aonde ir daqui
+### Problemas de criação de política
 
-Para saber como você pode usar a Descoberta de Produtos e o Recommendations para personalizar a experiência de compra para seus clientes, consulte a [visão geral de merchandising](../merchandising/overview.md).
+**Problema:** o botão Salvar não está ativo
+
+- **Solução:** verifique se o nome da política foi inserido e se todos os campos necessários foram preenchidos
+
+**Problema:** O filtro não está funcionando como esperado
+
+- **Solução:** verifique se o nome do atributo corresponde exatamente ao atributo SKU no catálogo
+
+### Problemas de visualização do catálogo
+
+**Problema:** a exibição do catálogo não aparece na lista
+
+- **Solução:** verifique se todas as políticas associadas estão habilitadas e configuradas corretamente
+
+**Problema:** o botão Adicionar não é azul
+
+- **Solução:** verifique se a origem do catálogo está selecionada colocando o cursor no campo e pressionando Enter
+
+### Problemas de configuração da vitrine
+
+**Problema:** Storefront não está carregando
+
+- **Solução:** verifique se a ID do locatário e a ID da exibição do catálogo foram inseridas corretamente no arquivo config.json
+
+**Problema:** nenhum produto sendo exibido
+
+- **Solução:** verifique se a ID do catálogo de preços corresponde a uma disponível em sua instância do Adobe Commerce Optimizer
+
+**Problema:** pesquisa não retornou resultados
+
+- **Solução:** confirme se as políticas de exibição de catálogo permitem a categoria de produto pesquisada
+
+Para obter ajuda adicional, consulte a [documentação do Adobe Commerce Optimizer](../overview.md) ou entre em contato com o suporte da Adobe.
+
+## Resumo
+
+Neste tutorial, você pode:
+
+- Criação de uma nova política para filtrar categorias de produtos para a concessionária Celport
+- Configurar uma visualização de catálogo com várias políticas para controlar a visibilidade do produto
+- Configurada uma vitrine para usar a nova visualização de catálogo
+- Verificada a configuração testando a visibilidade e o preço do produto
+
+## Próximas etapas
+
+Para continuar aprendendo sobre o Adobe Commerce Optimizer:
+
+- Explore os [recursos de merchandising](../merchandising/overview.md) para personalizar a experiência de compra
+- Saiba mais sobre [configurações avançadas de política](../setup/policies.md)
+- Configurar [exibições adicionais do catálogo](../setup/catalog-view.md) para outras concessionárias
+- Revise a [documentação da API](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/) para obter gerenciamento programático de catálogos
+- Saiba como configurar componentes integrados para a sua loja do Edge Delivery Services para criar experiências personalizadas de vitrine para descobertas de produtos, recomendações e outros recursos da loja. Consulte a [documentação da Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)
+
+
