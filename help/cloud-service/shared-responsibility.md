@@ -3,7 +3,7 @@ title: Responsabilidade compartilhada
 description: Saiba mais sobre as responsabilidades de segurança de cada parte envolvida em seu projeto [!DNL Adobe Commerce as a Cloud Service] do.
 role: Admin, Architect, Leader
 exl-id: 424fe5cd-5d54-425d-97ce-024476d18dde
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 source-git-commit: a06d64566fda76c0527aabfa9e8fdf27e7c149ca
 workflow-type: tm+mt
 source-wordcount: '0'
