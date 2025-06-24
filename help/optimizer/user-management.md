@@ -44,7 +44,7 @@ Para habilitar o acesso a [!DNL Adobe Commerce Optimizer], adicione usuários do
 
 >[!BEGINSHADEBOX &quot;Pré-requisitos&quot;]
 >
-O provisionamento a seguir é necessário para o gerenciamento de usuários:
+>O provisionamento a seguir é necessário para o gerenciamento de usuários:
 
 - Organização IMS provisionada para [!DNL Adobe Commerce Optimizer]
 - Uma conta do Adobe Experience Cloud na mesma organização IMS com a função de administrador do sistema ou do produto
