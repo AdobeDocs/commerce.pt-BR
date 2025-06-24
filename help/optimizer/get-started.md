@@ -3,7 +3,7 @@ title: Introdução
 description: Saiba como começar a usar o  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
 workflow-type: tm+mt
 source-wordcount: '753'
@@ -45,7 +45,7 @@ Cada função desempenha uma parte integral na integração e inicialização be
 
 Os administradores são responsáveis por configurar instâncias, gerenciar usuários, grupos e direitos para sua organização.
 
-- **[Acesse o Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html)** - Gerenciar Direitos do Adobe em toda a organização. Consulte [gerenciamento de usuários](./user-management.md) para saber como você, o administrador de produtos ou o administrador de sistemas de sua organização pode adicionar usuários ao produto [!DNL Adobe Commerce Optimizer].
+- **[Acesse o Adobe Admin Console](https://helpx.adobe.com/br/enterprise/admin-guide.html)** - Gerenciar Direitos do Adobe em toda a organização. Consulte [gerenciamento de usuários](./user-management.md) para saber como você, o administrador de produtos ou o administrador de sistemas de sua organização pode adicionar usuários ao produto [!DNL Adobe Commerce Optimizer].
 
 - **Criar uma instância** - [!DNL Adobe Commerce Optimizer] instâncias usam um sistema baseado em crédito. É possível criar várias instâncias de Sandbox e Produção, com cada instância exigindo um crédito correspondente. A quantidade de créditos que você tem inicialmente depende de sua assinatura. [Saiba mais](#create-an-instance).
 
