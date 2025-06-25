@@ -226,7 +226,7 @@ Você precisa das seguintes informações para atualizar o código de modelo pad
 
    Consulte a [documentação da Biblioteca da Sidekick](https://www.aem.live/docs/sidekick-library) para obter mais informações.
 
-+++
+   +++
 
 1. Atualize os valores da chave `url` com os valores do seu repositório GitHub.
 
@@ -266,7 +266,7 @@ Você precisa das seguintes informações para atualizar o código de modelo pad
    }
    ```
 
-+++
+   +++
 
 1. Salve o arquivo.
 
