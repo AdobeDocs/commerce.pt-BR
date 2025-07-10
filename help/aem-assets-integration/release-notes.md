@@ -20,7 +20,7 @@ Essas notas de versão descrevem a versão inicial da integração do AEM Assets
 
 Para alterações e correções de recursos lançadas fora da versão normal do recurso, revise as seções _Atualizações do serviço hospedado_.
 
-Saiba mais sobre as próximas versões, o suporte ao produto e quais versões do Adobe Commerce oferecem suporte à extensão de Integração do AEM Assets, consulte os tópicos [Agendamento de versão](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) e [Disponibilidade do produto](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) do Adobe Commerce.
+Saiba mais sobre as próximas versões, o suporte ao produto e quais versões do Adobe Commerce oferecem suporte à extensão de Integração do AEM Assets, consulte os tópicos [Agendamento de versão](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/planning/schedule) e [Disponibilidade do produto](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/product-availability) do Adobe Commerce.
 
 ## Atualizações do serviço hospedado
 
