@@ -125,7 +125,7 @@ O Serviço de catálogo garante atualizações de preços e cálculos precisos, 
 
 O processo de implementação envolve:
 
-1. [!BADGE Somente PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."} **[Instalar e configurar o Serviço de Catálogo](installation.md)**—Instale e configure a extensão Serviço de Catálogo e configure a conexão SaaS usando o [!DNL Commerce Services Connector].
+1. [!BADGE Somente PaaS]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."} **[Instalar e configurar o Serviço de Catálogo](installation.md)**—Instale e configure a extensão Serviço de Catálogo e configure a conexão SaaS usando o [!DNL Commerce Services Connector].
 2. **Atualizar código de vitrine**: integre consultas GraphQL do Serviço de Catálogo ao seu front-end.
 3. **Consultas de rota**: todas as consultas do Serviço de catálogo passam pelo gateway do GraphQL (URL fornecida durante a integração)
 4. **Monitorar e solucionar problemas de sincronização de dados**: verifique o desempenho aprimorado e monitore os resultados
