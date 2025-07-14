@@ -16,7 +16,7 @@ Para criar uma regra, a primeira etapa é usar o editor de regras para definir a
 ## Adicionar uma regra
 
 1. No Administrador, vá para **Marketing** > SEO e pesquisa > **[!DNL Live Search]**.
-1. Defina o **Escopo** para identificar a [exibição de repositório](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) onde a regra se aplica.
+1. Defina o **Escopo** para identificar a [exibição de repositório](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=pt-BR#scope-settings) onde a regra se aplica.
 1. Clique no espaço de trabalho **Pesquisar Merchandising**.
 1. Clique em **Adicionar regra** para iniciar o editor de regras.
 
