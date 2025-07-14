@@ -1,9 +1,10 @@
 ---
 title: Configurações
 description: Defina as configurações do serviço  [!DNL Live Search] .
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 6387a365-7e23-4023-95ac-27908164d81c
+source-git-commit: 70ff444afbe7ddf41e966e479e03975a02f4e10f
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Você pode especificar o número de grupos de faixas de preços e como os valore
 
 1. No Administrador, vá para **Marketing** > *SEO e pesquisa* > **[!DNL Live Search]**.
 1. No espaço de trabalho **Configurações** em *Facetagem de preços*, faça o seguinte:
-   * Insira o **Número de seleções** ou agrupamentos de preços que estarão disponíveis. Até 50 agrupamentos de preços podem ser definidos.
+   * Insira o **Número de seleções** ou agrupamentos de preços que estarão disponíveis. Com o [!DNL Live Search] 4.4.0, é possível definir até 100 agrupamentos de preços. As versões anteriores permitiam 50 agrupamentos de preços.
    * Insira o **Valor do intervalo** ou o intervalo de preços para cada grupo. O valor máximo é 40.000.000.
 1. Clique em **Salvar**.
 
@@ -34,7 +35,7 @@ Você pode especificar o número de grupos de faixas de preços e como os valore
 
 | Campo | Descrição |
 |--- |--- |
-| Número de seleções | Especifica o número de agrupamentos de intervalo de preços que podem ser usados como filtros de pesquisa na loja. Valor padrão: 8, Valor máximo: 50 |
+| Número de seleções | Especifica o número de agrupamentos de intervalo de preços que podem ser usados como filtros de pesquisa na loja. Valor padrão: 8, Valor máximo: 100 (a partir de [!DNL Live Search] 4.4.0) |
 | Valor do intervalo | Especifica o intervalo de preço para cada grupo. Por exemplo, cinco seleções com um valor de intervalo de 20 cria cinco agrupamentos de 0-20, 20-40, 40-60, 60-80 e >80. Valor padrão: 5, Valor máximo: 40.000.000 |
 
 ## Idioma

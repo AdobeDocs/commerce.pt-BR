@@ -2,9 +2,9 @@
 title: Adicionar regras
 description: Saiba como criar regras de merchandising de pesquisa.
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
-source-git-commit: 449b281e46d16de56f4c3d2e01e7165c59ee78a2
+source-git-commit: 00c6d728b1bc425c873bdf46293085b8da242782
 workflow-type: tm+mt
-source-wordcount: '1650'
+source-wordcount: '1710'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Para criar uma regra, a primeira etapa é usar o editor de regras para definir a
 ## Adicionar uma regra
 
 1. No Administrador, vá para **Marketing** > SEO e pesquisa > **[!DNL Live Search]**.
-1. Defina o **Escopo** para identificar a [exibição de repositório](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=pt-BR#scope-settings) onde a regra se aplica.
+1. Defina o **Escopo** para identificar a [exibição de repositório](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) onde a regra se aplica.
 1. Clique no espaço de trabalho **Pesquisar Merchandising**.
 1. Clique em **Adicionar regra** para iniciar o editor de regras.
 
@@ -101,6 +101,10 @@ Selecione o tipo de estratégia para a regra. A janela **Testar sua regra** exib
    1. Na página **Informações do Atributo** > **Propriedades da vitrine**, defina o peso da pesquisa como menor ou igual a `5`.
 
       ![Produto - Peso de Pesquisa](assets/set-search-weight.png)
+
+>[!NOTE]
+>
+>A experiência de pesquisa da loja é afetada por várias configurações que trabalham juntas, como facetas, sinônimos e regras de merchandising de pesquisa/categoria, o que pode levar a resultados que diferem daqueles vistos ao testar configurações individuais no Administrador. Enquanto o teste administrativo isola áreas de configuração específicas, a loja aplica todas as configurações relevantes juntas, resultando em um resultado de pesquisa mais complexo e realista.
 
 ## Classificação manual
 
@@ -197,6 +201,6 @@ As informações inseridas aqui aparecem no painel [Detalhes da Regra](rules-wor
 |--- |--- |
 | Nome | O nome da regra. Rule names must be unique. |
 | Tipo de regra | Padrão ou Consulta. O padrão é aplicado a todas as regras, a menos que uma regra de Query mais específica seja definida. |
-| Data de início | A data de início da regra, se programada. |
+| Data inicial | A data de início da regra, se programada. |
 | Data final | A data final da regra, se programada. |
 | Descrição | Uma breve descrição da regra. |
