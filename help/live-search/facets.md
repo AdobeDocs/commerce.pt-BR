@@ -2,16 +2,16 @@
 title: Facetas
 description: '[!DNL Live Search] facetas usam várias dimensões de valores de atributo como critérios de pesquisa.'
 exl-id: d036265e-1868-461d-ab4c-7f469b1c6f5b
-source-git-commit: ff5c717dbdd638e114bccc3f6dec26f4be269194
+source-git-commit: 58252ffc7417f30b835ec1baf21a709191afd033
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '589'
 ht-degree: 0%
 
 ---
 
 # Facetas
 
-Faceting é um método de filtragem de alto desempenho que usa várias dimensões de valores de atributo como critérios de pesquisa. A pesquisa facetada é semelhante, mas consideravelmente &quot;mais inteligente&quot; do que a [navegação em camadas](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=pt-BR) padrão. A lista de filtros disponíveis é determinada pelos [atributos filtráveis](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html?lang=pt-BR#filterable-attributes) de produtos retornados nos resultados da pesquisa.
+Faceting é um método de filtragem de alto desempenho que usa várias dimensões de valores de atributo como critérios de pesquisa. A pesquisa facetada é semelhante, mas consideravelmente &quot;mais inteligente&quot; do que a [navegação em camadas](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html) padrão. A lista de filtros disponíveis é determinada pelos [atributos filtráveis](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) de produtos retornados nos resultados da pesquisa.
 
 [!DNL Live Search] usa a consulta `productSearch`, que retorna facetas e outros dados específicos de [!DNL Live Search]. Consulte [`productSearch` query](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) na documentação do desenvolvedor para ver exemplos de código.
 
@@ -25,23 +25,20 @@ Qualquer faceta definida pode ser usada como um parâmetro de URL e os resultado
 
 Os requisitos do atributo de categoria e produto para facetas são semelhantes aos atributos filtráveis usados para navegação em camadas. Cada propriedade da loja de um atributo deve ter o valor &quot;Usar na navegação em camadas dos resultados da pesquisa&quot; definido como &quot;Sim&quot;.
 
-[!DNL Live Search] suporta até:
-
-* 100 atributos configurados como facetas
-* 50 atributos classificáveis
-* 200 atributos filtráveis
-* 200 atributos pesquisáveis
-
 >[!NOTE]
 >
-> Se houver mais de 200 atributos filtráveis definidos, não é determinístico quais 200 serão realmente indexados.
+>Se você definir uma categoria de produto como uma faceta, a faceta exibirá a categoria e a subcategoria.
+>
+>![Faceta de categorias](assets/facet-category.png)
+
+Consulte [limites e limites](./boundaries-limits.md#facets) para saber mais sobre os requisitos de facetas em [!DNL Live Search].
 
 Se você tiver um grande número de atributos com os quais lidar, considere combinar atributos em um único &quot;metatributo&quot;. Por exemplo, sapatos geralmente têm tamanhos numéricos, enquanto camisas são comumente dimensionadas &quot;S/M/L/XL&quot;. Esses dois tipos de tamanhos podem ser combinados em um único atributo pesquisável.
 
 | Configuração | Descrição |
 |--- |--- |
-| [Configurações de exibição de categoria](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html?lang=pt-BR) | Âncora - `Yes` |
-| [Propriedades do atributo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=pt-BR) | [Tipo de Entrada de Catálogo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html?lang=pt-BR) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (somente widget), `Text swatch` (somente widget) |
+| [Configurações de exibição de categoria](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | Âncora - `Yes` |
+| [Propriedades do atributo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [Tipo de Entrada de Catálogo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (somente widget), `Text swatch` (somente widget) |
 | Propriedades da vitrine do atributo | Usar na Navegação em Camadas de Resultados da Pesquisa - `Yes` |
 
 ## Agregação de facetas
@@ -54,7 +51,7 @@ A agregação de facetas é executada da seguinte maneira: se a loja tiver três
 
 ## Valores de atributo padrão
 
-Os seguintes atributos de produto têm [propriedades de vitrine](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=pt-BR) que são usadas por [!DNL Live Search] e habilitadas por padrão.
+Os seguintes atributos de produto têm [propriedades de vitrine](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) que são usadas por [!DNL Live Search] e habilitadas por padrão.
 
 | Propriedade | Propriedade da vitrine | Atributo |
 |---|---|---|
