@@ -1,15 +1,15 @@
 ---
 title: Ferramenta Migração de dados em massa
 description: Saiba como usar a Ferramenta de migração de dados em massa para migrar dados da sua instância existente do Adobe Commerce na nuvem para o  [!DNL Adobe Commerce as a Cloud Service].
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 role: Architect
-source-git-commit: bc8011189a46ccab986b22020881c808da6ee2cd
+exl-id: 81522de9-df54-4651-b8ed-58956376af86
+source-git-commit: 8bf8eb58aa9c1ae965f4bbf5a2987fb22f004769
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
-
 
 # Ferramenta de migração de dados em massa
 
@@ -39,8 +39,8 @@ As seções a seguir descrevem essas etapas em detalhes.
 
 A disponibilidade da ferramenta de migração de dados em massa é a seguinte:
 
-- **Meados de julho de 2025** - Para acessar a ferramenta de migração de dados em massa, envie um tíquete de suporte.
-- **Meados de agosto de 2025** - A ferramenta de migração de dados em massa estará disponível publicamente e será acessível nesta página.
+- **T3 de 2025** - Para acessar a ferramenta de migração de dados em massa, envie um tíquete de suporte.
+- **T3 de 2025** - A ferramenta de migração de dados em massa estará disponível publicamente e poderá ser acessada nesta página.
 
 ## Criar ambiente de destino
 
