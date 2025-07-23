@@ -4,9 +4,9 @@ description: As informações da versão mais recente do  [!DNL Data Export Exte
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 597cdd929f7abed24a68f1347a214b46664b1c75
+source-git-commit: 6876a5fbde2b3292cd788a50d104083cf51109ed
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1286'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ As atualizações incluem:
 >A extensão de exportação de dados SaaS é uma coleção de módulos instalados automaticamente com o Live Search, o Product Recommendations e o Catalog Service. Você pode verificar a versão instalada em seu sistema usando o Composer. Em alguns casos, você pode querer atualizar a extensão de exportação de dados no seu sistema para coletar correções ou novos recursos sem atualizar a versão do Serviço do Commerce.
 
 ## Versão principal atual
+
+## Versão 103.4.7
+
+![Correção](../assets/fix.svg) Remoção de tabelas obsoletas que armazenavam permissões de categoria para produtos. <!--MDEE-1065-->
 
 ## Versão 103.4.6
 
