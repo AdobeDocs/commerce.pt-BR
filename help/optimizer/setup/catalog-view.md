@@ -3,11 +3,11 @@ title: Exibição de catálogo
 description: Saiba o que são exibições de catálogo e como criá-las para organizar o catálogo de produtos por estrutura de negócios, políticas e preços.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: f67a5327b742338655b0f7ffa4076a174219f711
+source-git-commit: 2e47c770d204c9c7f959893704dd0ebcc6ac792a
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Antes de criar uma visualização de catálogo, verifique se você tem:
 
 - [Políticas criadas](policies.md) para definir filtros de produto
 
-- [Configurar catálogos de preços](pricebooks.md) para preços
+- [Catálogos de preços assimilados](pricebooks.md) para preços
 
 1. No menu esquerdo, vá para _Configuração da loja_ e clique em **[!UICONTROL Catalog views]**.
 
@@ -49,14 +49,16 @@ Antes de criar uma visualização de catálogo, verifique se você tem:
 1. Configure os detalhes de exibição do catálogo:
 
    - **Nome** — Digite o nome da exibição do catálogo, por exemplo `Celport`. &#x200B;
-   - **Origens do catálogo** — Adicione a origem do catálogo (localidade), por exemplo `en-US`. Pressione **enter**.
+   - **Origens do catálogo** — Selecione a origem do catálogo (localidade), por exemplo `en-US`.
    - **Políticas** — use o menu suspenso para selecionar as políticas relevantes. Por exemplo, &quot;Marca&quot;, &quot;Modelo&quot;. &#x200B;Verifique se você já [criou uma política](policies.md).
 
 1. Selecione o catálogo de preços a ser vinculado à exibição do catálogo.
 
-1. Clique em **[!UICONTROL Add]** para criar a exibição de catálogo com as políticas e o catálogo de preços vinculados.
+   - **Usar todos os catálogos de preços disponíveis**-Essa opção extrai dados de preços de todos os catálogos de preços disponíveis.
+   - **Permitir somente catálogos de preços selecionados**-Essa opção exibe a caixa de diálogo **Adicionar catálogos de preços permitidos**, onde é possível selecionar qual catálogo de preços específico usar para a exibição do catálogo.
+   - **Desabilitar preço**-Esta opção não está disponível no momento.
 
-   Se o botão **[!UICONTROL Add]** não estiver ativo, verifique se a origem do catálogo foi adicionada corretamente colocando o cursor no campo Origens do catálogo e pressionando **enter**. &#x200B;
+1. Clique em **[!UICONTROL Add]** para criar a exibição de catálogo com as políticas e os catálogos de preços vinculados.
 
 A página Exibições de catálogo é atualizada para exibir a nova exibição de catálogo.&#x200B;
 
@@ -71,7 +73,7 @@ Arquitetura ![[!DNL Merchandising Services]](../assets/merchandising-svcs-archit
 ### Como funciona
 
 **1. Assimilação de dados**
-Os dados do catálogo do PIM, ERP e outros sistemas são assimilados na estrutura de serviços de merchandising. Cada SKU contém informações de local e atributos de produto que mapeiam para exibições de catálogo, políticas e locais. Para obter mais informações sobre a assimilação de dados, consulte a [documentação do desenvolvedor](https://developer-stage.adobe.com/commerce/services/composable-catalog).
+Os dados do catálogo do PIM, ERP e outros sistemas são assimilados na estrutura de serviços de merchandising. Cada SKU contém informações de local e atributos de produto que mapeiam para exibições de catálogo, políticas e locais. Para obter mais informações sobre a assimilação de dados, consulte a [documentação do desenvolvedor](https://developer.adobe.com/commerce/services/optimizer/).
 
 **2. Catálogo de Base Unificada**
 Os dados assimilados criam um catálogo base unificado no pipeline de dados do Serviço de catálogo. Essa única fonte elimina a duplicação de dados nas unidades de negócios.
@@ -80,7 +82,7 @@ Os dados assimilados criam um catálogo base unificado no pipeline de dados do S
 Várias exibições de catálogo representam unidades de negócios diferentes (por exemplo, &quot;Texas Retail&quot;, &quot;Texas Retail Seasonal&quot;). Locais, políticas e catálogos de preços podem ser compartilhados entre exibições de catálogo para maior flexibilidade.
 
 **4. Entrega multicanal**
-Os dados de catálogo filtrados são entregues para vários destinos, incluindo lojas Edge Delivery Services, marketplaces, plataformas de publicidade e microlojas personalizadas. Para obter mais informações sobre a entrega de dados do catálogo, consulte a [documentação do desenvolvedor](https://developer-stage.adobe.com/commerce/services/composable-catalog).
+Os dados de catálogo filtrados são entregues para vários destinos, incluindo lojas Edge Delivery Services, marketplaces, plataformas de publicidade e microlojas personalizadas. Para obter mais informações sobre a entrega de dados do catálogo, consulte a [documentação do desenvolvedor](https://developer.adobe.com/commerce/services/optimizer/).
 
 ### Componentes-chave
 
@@ -126,4 +128,4 @@ Os dados de catálogo filtrados são entregues para vários destinos, incluindo 
 
 >[!INFO]
 >
->Para obter informações detalhadas sobre a assimilação e a entrega de dados do catálogo, consulte a [documentação do desenvolvedor](https://developer-stage.adobe.com/commerce/services/composable-catalog).
+>Para obter informações detalhadas sobre a assimilação e a entrega de dados do catálogo, consulte a [documentação do desenvolvedor](https://developer.adobe.com/commerce/services/optimizer/).

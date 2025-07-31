@@ -3,11 +3,11 @@ title: Introdução
 description: Saiba como começar a usar o  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: 036e04a02edadf4b8a48fc38e784d9dde734ba45
+source-git-commit: f1861e890ec661d441b6f2c9b0c0cd54b4c20ece
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '888'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,11 @@ Os merchandisers otimizam e personalizam a experiência de compra por meio da de
 
 1. Acesse sua instância:
 
-   Clique no nome da instância para abrir o aplicativo [!DNL Adobe Commerce Optimizer].
+   Clique no nome da instância para abrir o aplicativo [!DNL Adobe Commerce Optimizer]. No aplicativo, você pode alternar entre diferentes instâncias do [!DNL Adobe Commerce Optimizer] usando o menu suspenso na parte superior da página:
+
+   ![Alternador de Instância](./assets/context-switcher.png){zoomable="yes"}
+
+   Todas as instâncias exibidas pertencem à mesma organização. Você pode alternar entre instâncias para exibir dados e configurações para cada uma, como entre ambientes de sandbox e produção.
 
 1. Obter detalhes da instância:
    - Clique no ícone de informações ao lado do nome da instância.
@@ -186,5 +190,5 @@ Após concluir a instalação:
 ### Obter ajuda
 
 - **Recursos do desenvolvedor**: [Documentação do desenvolvedor](https://developer-stage.adobe.com/commerce/services/composable-catalog/)
-- **Recursos da Storefront**: [Documentação da Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR)
-- **Suporte**: [recursos de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/overview)
+- **Recursos da Storefront**: [Documentação da Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Suporte**: [recursos de Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
