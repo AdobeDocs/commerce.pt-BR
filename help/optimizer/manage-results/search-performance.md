@@ -1,8 +1,9 @@
 ---
 title: Desempenho da pesquisa
 description: A página Desempenho da pesquisa fornece o insight para os termos de pesquisa que os compradores usam.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
-source-git-commit: f49a86b8793e2d91413acfbc0b922cb94db67362
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
+source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
 workflow-type: tm+mt
 source-wordcount: '1737'
 ht-degree: 0%
@@ -51,7 +52,7 @@ A seção a seguir fornece estratégias que você pode usar para aprimorar a fun
 Há vários fatores principais que determinam a relevância e a eficácia dos resultados da pesquisa:
 
 - Dados de produtos bem estruturados garantem que os algoritmos de pesquisa possam corresponder de forma eficaz os produtos às consultas. Dados de produtos de baixa qualidade levam a resultados de pesquisa menos relevantes. Para afetar diretamente o sucesso de sua estratégia de merchandising:
-   - Configure os [atributos corretos como pesquisáveis](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata) com seu peso correspondente.
+   - Configure os [atributos corretos como pesquisáveis](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata) com seu peso correspondente.
    - Verifique se os dados nesses atributos são relevantes.
 - Uma experiência de pesquisa bem projetada cria confiança com os clientes e inspira confiança de que encontrarão o que precisam.
 - As regras de pesquisa são críticas, pois podem elevar a visibilidade de determinados produtos com base em popularidade, novos concorrentes, critérios promocionais ou qualquer outra estratégia de merchandising para atender aos requisitos da sua empresa.
@@ -97,7 +98,7 @@ Para otimizar sua funcionalidade de pesquisa, use [sinônimos e ortografias](../
 
 ## Melhorar relevância dos resultados da pesquisa
 
-Para melhorar a relevância dos resultados da pesquisa, implemente [regras de pesquisa](../merchandising/rules/overview.md) efetivas e use metadados de produto para garantir que os [atributos precisos e detalhados sejam pesquisáveis](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata).
+Para melhorar a relevância dos resultados da pesquisa, implemente [regras de pesquisa](../merchandising/rules/overview.md) efetivas e use metadados de produto para garantir que os [atributos precisos e detalhados sejam pesquisáveis](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata).
 
 ### Imagens
 
@@ -109,7 +110,7 @@ Certifique-se de que os produtos secundários dos produtos configuráveis tenham
 
 ### Aproveitar os metadados do produto
 
-Verifique se os [atributos precisos e detalhados do produto estão configurados como pesquisáveis](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata). Observe que os atributos SKU, nome e categoria podem ser pesquisados por padrão e não podem ser excluídos da pesquisa. Para obter melhores resultados, não use espaços nas SKUs.
+Verifique se os [atributos precisos e detalhados do produto estão configurados como pesquisáveis](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata). Observe que os atributos SKU, nome e categoria podem ser pesquisados por padrão e não podem ser excluídos da pesquisa. Para obter melhores resultados, não use espaços nas SKUs.
 
 Para aumentar a relevância da pesquisa, atribua um peso a cada atributo pesquisável. Atributos com um peso maior devem aparecer mais altos nos resultados da pesquisa. A classificação por relevância é afetada por vários critérios, como peso da pesquisa. Isso significa que, às vezes, os atributos com menor peso de pesquisa ainda podem ter mais relevância do que os atributos com maior peso de pesquisa. Outros critérios podem incluir o número de correspondências em qualquer atributo, a posição do termo de pesquisa encontrado e a estrutura geral do texto antes e depois de um termo de pesquisa.
 
@@ -117,8 +118,8 @@ Verifique se cada produto tem conteúdo relevante em cada atributo pesquisável.
 
 Saiba mais sobre atributos de produto para pesquisa:
 
-- [Definir atributos como pesquisáveis](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata)
-- [Atribuir peso aos atributos](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#operation/createProductMetadata)
+- [Definir atributos como pesquisáveis](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)
+- [Atribuir peso aos atributos](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata)
 
 ## Descrições dos campos
 

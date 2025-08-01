@@ -1,10 +1,11 @@
 ---
 title: Visão geral dos aspectos
 description: Saiba mais sobre os aspectos em [!DNL Adobe Commerce Optimizer] e como eles melhoram os resultados da pesquisa.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
-source-git-commit: 3020386cd051b4453ed6b90d2c694a5bb31dfb24
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+exl-id: cf16626e-8f85-47ca-b973-891b16c31fe3
+source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -29,12 +30,14 @@ A agregação de facetas é executada da seguinte maneira: se a loja tiver três
 
 ## Valores de atributo padrão
 
-Os [atributos do produto](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#operation/createProductMetadata) a seguir são usados por [!DNL Adobe Commerce Optimizer] e habilitados por padrão.
+Os atributos de produto a seguir são usados por [!DNL Adobe Commerce Optimizer] e habilitados por padrão.
 
 | Propriedade | Descrição | Atributo |
 |---|---|---|
 | Classificável | Usado para Classificação na Lista de Produtos | `price` |
 | Pesquisável | Usar na pesquisa | `price` <br />`sku`<br />`name` |
+
+Consulte a [API de metadados de assimilação de dados](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata) para saber mais sobre os atributos do produto e suas propriedades.
 
 ## Propriedades de atributo não-sistema padrão
 

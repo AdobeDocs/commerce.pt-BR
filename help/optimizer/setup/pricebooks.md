@@ -3,11 +3,11 @@ title: Catálogos de Preços
 description: Saiba como gerenciar catálogos de preços no [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: a1849830-3d0e-4df9-ab73-380659c3f9dc
-source-git-commit: 513ed97442bfffe74d64f4eb0484cfa8f25b5ecc
+source-git-commit: 502d8d21ff052f4ecb212176459b38ce51f85dfc
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '307'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ As tabelas de preços permitem definir preços de produtos para uma origem de ca
 
 O catálogo de preços base define a moeda para si mesmo e para todos os seus catálogos de preços filhos. Os catálogos de preços filhos herdam essa moeda e não podem substituí-la.
 
-Consulte a [documentação do desenvolvedor](https://developer.adobe.com/commerce/services/reference/rest/) para saber como criar, atualizar e excluir catálogos de preços [!DNL Adobe Commerce Optimizer] usando a API de Catálogo de Preços.
+Consulte a [documentação do desenvolvedor](https://developer.adobe.com/commerce/services/reference/rest/) para saber como criar, atualizar e excluir catálogos de preços para [!DNL Adobe Commerce Optimizer] usando a API de Catálogo de Preços.
 
 ## Principais conceitos
 

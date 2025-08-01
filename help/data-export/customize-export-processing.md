@@ -2,9 +2,10 @@
 title: Melhore o desempenho da exportação de dados SaaS
 description: Saiba como melhorar o desempenho da exportação de dados SaaS para Serviços da Commerce usando o modo de exportação de dados de vários threads.
 role: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 7151118c-5e30-44d0-b515-5801a73e44ec
+source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,7 @@ Lembre-se de que um planejamento criterioso, incluindo a estimativa do volume de
 
 >[!NOTE]
 >
->A Adobe recomenda ter cuidado ao usar o processamento de vários threads. Esse recurso é um recurso de acesso antecipado que ainda está sendo aprimorado. Se você configurar multi-threading para um desempenho mais rápido, poderá acionar as medidas de proteção incluídas dos Serviços Adobe Commerce para evitar o uso indevido do sistema durante a assimilação de dados. Essas medidas de proteção também impedem que os usuários acionem alterações de sincronização que podem sobrecarregar o sistema. Quando as grades de proteção são acionadas, as solicitações são bloqueadas e o sistema retorna erros 429. Se encontrar esses erros, ajuste sua configuração e envie um tíquete de suporte para obter assistência.
+>A Adobe recomenda ter cuidado ao usar o processamento de vários threads. Se você configurar multi-threading para um desempenho mais rápido, poderá acionar as medidas de proteção incluídas dos Serviços Adobe Commerce para evitar o uso indevido do sistema durante a assimilação de dados. Essas medidas de proteção também impedem que os usuários acionem alterações de sincronização que podem sobrecarregar o sistema. Quando as grades de proteção são acionadas, as solicitações são bloqueadas e o sistema retorna erros 429. Se encontrar esses erros, ajuste sua configuração e envie um tíquete de suporte para obter assistência.
 
 ## Configurar multi-threading
 
@@ -63,7 +64,7 @@ As opções especificadas na linha de comando substituem a configuração de exp
 
 Para processar todas as operações de exportação de dados usando multi-threading, os integradores de sistema ou desenvolvedores podem modificar o número de threads e o tamanho do lote para cada feed na configuração do aplicativo do Commerce.
 
-Essas alterações podem ser aplicadas adicionando valores personalizados à [seção do sistema](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) do arquivo de configuração, `app/etc/config.php`.
+Essas alterações podem ser aplicadas adicionando valores personalizados à [seção do sistema](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) do arquivo de configuração, `app/etc/config.php`.
 
 **Exemplo: configuração de multithreading para produtos e preços**
 

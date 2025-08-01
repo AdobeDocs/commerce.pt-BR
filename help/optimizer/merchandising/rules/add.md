@@ -1,10 +1,11 @@
 ---
 title: Criar e gerenciar regras
 description: Saiba como criar e gerenciar regras de merchandising.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
-source-git-commit: 746c016f149fb49b9c483968a8a5f40196b163ed
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
+source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -88,7 +89,9 @@ Selecione o tipo de estratégia para a regra. A janela **Testar sua regra** exib
 #### Avisos
 
 - Apóstrofos e citações em queries podem levar a alguns problemas menores com classificação e relevância em alguns idiomas.
-- Para garantir que a classificação inteligente funcione corretamente, verifique se o **Peso da Pesquisa** para qualquer [atributo de produto](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/api-reference/#tag/Metadata) usado para pesquisa ou filtragem (facetas) é `5` ou menos.
+- Para garantir que a classificação inteligente funcione corretamente, verifique se o **Peso da Pesquisa** para qualquer atributo usado para pesquisa ou filtragem (facetas) é `5` ou menos.
+
+Para obter informações sobre como definir pesos de pesquisa, consulte a [API de metadados](https://developer.adobe.com/commerce/services/reference/rest/).
 
 ### Classificação manual
 
@@ -198,6 +201,6 @@ Esta opção fornece uma maneira rápida de ver todos os parâmetros de regra, e
 |--- |--- |
 | Nome | O nome da regra. Rule names must be unique. |
 | Tipo de regra | Padrão ou Consulta. O padrão é aplicado a todas as regras, a menos que uma regra de Query mais específica seja definida. |
-| Data de início | A data de início da regra, se programada. |
+| Data inicial | A data de início da regra, se programada. |
 | Data final | A data final da regra, se programada. |
 | Descrição | Uma breve descrição da regra. |

@@ -3,11 +3,11 @@ title: Introdução
 description: Saiba como começar a usar o  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: f920cfe7cd433e85f343fefe1062a1972e5e5e5f
+source-git-commit: b0ce0a399e89baaeabe87c53d069df866378f8c8
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ Os desenvolvedores lidam com a implementação técnica e a integração de dado
 | Tarefa | Descrição | Link |
 |---|---|---|
 | **Acessar o Developer Console** | Criar projetos e gerar credenciais | [Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started) |
-| **Assimilar Dados do Catálogo** | Importar dados do produto de sistemas existentes | [API de assimilação de dados](https://developer-stage.adobe.com/commerce/services/composable-catalog/data-ingestion/using-the-api/) |
+| **Assimilar Dados do Catálogo** | Importar dados do produto de sistemas existentes | [API de assimilação de dados](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/) |
 | **Configurar vitrine** | Configurar vitrine do Edge Delivery Services | [Instalação da Storefront](./storefront.md) |
 
 ### Tarefas do merchandiser
@@ -143,14 +143,14 @@ Os dados de amostra são baseados no [cenário comercial do Carvelo](./use-case/
 
 **Carregar os dados de exemplo:**
 
-1. Acesse o repositório GitHub:
-   - Visite o [repositório de assimilação de dados do catálogo de amostra](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)
+1. Acesse o [repositório GitHub da Assimilação de dados do catálogo de amostra](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion).
 
-1. Siga as instruções de configuração no arquivo README do repositório.
+1. Siga as instruções de configuração no arquivo README do repositório para concluir as seguintes tarefas:
 
-   - Configurar e executar a assimilação de dados
-   - Configurar políticas e visualizações do catálogo usando os dados de amostra
-   - Limpar dados de amostra (opcional)
+   - Configurar o ambiente
+   - Concluir o processo de assimilação de dados
+   - Criar exibições e políticas de catálogo usando os dados de amostra
+   - Verifique a assimilação de dados verificando os dados do Serviço de Catálogo na página [Sincronização de Dados](./setup/data-sync.md)
 
 ## Próximas etapas
 
@@ -185,6 +185,6 @@ Após concluir a instalação:
 
 ### Obter ajuda
 
-- **Recursos do desenvolvedor**: [Documentação do desenvolvedor](https://developer-stage.adobe.com/commerce/services/composable-catalog/)
-- **Recursos da Storefront**: [Documentação da Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR)
-- **Suporte**: [recursos de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/overview)
+- **Recursos do desenvolvedor**: [Documentação do desenvolvedor](https://developer.adobe.com/commerce/services/optimizer/)
+- **Recursos da Storefront**: [Documentação da Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Suporte**: [recursos de Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
