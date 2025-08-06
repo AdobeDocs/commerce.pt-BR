@@ -4,9 +4,9 @@ description: As informações da versão mais recente do  [!DNL Data Export Exte
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 6876a5fbde2b3292cd788a50d104083cf51109ed
+source-git-commit: d859da62f54cf9a86a57d34d5f74aae972dc99be
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1353'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,12 @@ As atualizações incluem:
 >A extensão de exportação de dados SaaS é uma coleção de módulos instalados automaticamente com o Live Search, o Product Recommendations e o Catalog Service. Você pode verificar a versão instalada em seu sistema usando o Composer. Em alguns casos, você pode querer atualizar a extensão de exportação de dados no seu sistema para coletar correções ou novos recursos sem atualizar a versão do Serviço do Commerce.
 
 ## Versão principal atual
+
+## Versão 103.4.8
+
+![Novo](../assets/new.svg) Foram adicionadas informações de preço de camada ao feed de preços. <!--MDEE-1070-->
+![Correção](../assets/fix.svg) A extensão Exportador de Dados agora exporta corretamente os preços de seleção de pacotes no escopo do site, garantindo que os preços da loja reflitam valores precisos com base na configuração &quot;Escopo do Preço de Catálogo&quot;.<!--MDEE-1115-->
+![Correção](../assets/fix.svg) Anteriormente, os produtos eram sincronizados com um status `lowStock=true` incorreto ao usar o Inventory management (Inventory management de várias origens) com configuração de limite. Esse problema foi corrigido para garantir um relatório preciso de estoque baixo.<!--MDEE-1113-->
 
 ## Versão 103.4.7
 
