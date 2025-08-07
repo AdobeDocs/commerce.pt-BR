@@ -3,16 +3,16 @@ title: Correspondência automática personalizada
 description: Saiba como a correspondência automática personalizada é particularmente útil para comerciantes com lógica de correspondência complexa ou que dependem de um sistema de terceiros que não pode preencher metadados no AEM Assets.
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-source-git-commit: 7639422b237ad04cada366c541c041bc146ce085
+source-git-commit: ff6affa5bcc4111e14054f3f6b3ce970619ca295
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 0%
+source-wordcount: '299'
+ht-degree: 1%
 
 ---
 
 # Correspondência automática personalizada
 
-Se a estratégia de correspondência automática padrão (**correspondência automática OOTB**) não estiver alinhada aos seus requisitos de negócios específicos, selecione a opção de correspondência personalizada. Esta opção oferece suporte ao uso do [Adobe Developer App Builder](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) para desenvolver um aplicativo de correspondência personalizado que lida com lógica de correspondência complexa ou com ativos provenientes de um sistema de terceiros que não pode preencher metadados no AEM Assets.
+Se a estratégia de correspondência automática padrão (**correspondência automática OOTB**) não estiver alinhada aos seus requisitos de negócios específicos, selecione a opção de correspondência personalizada. Esta opção oferece suporte ao uso do [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) para desenvolver um aplicativo de correspondência personalizado que lida com lógica de correspondência complexa ou com ativos provenientes de um sistema de terceiros que não pode preencher metadados no AEM Assets.
 
 ## Configurar correspondência automática personalizada
 
@@ -24,7 +24,7 @@ Se a estratégia de correspondência automática padrão (**correspondência aut
 
 ## Pontos de extremidade da API do correspondedor personalizado
 
-Ao criar um aplicativo de correspondência personalizado usando o [App Builder](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, o aplicativo deve expor os seguintes pontos de extremidade:
+Ao criar um aplicativo de correspondência personalizado usando o [App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, o aplicativo deve expor os seguintes pontos de extremidade:
 
 * Ponto de extremidade **Ativo App Builder para URL do produto**
 * Ponto de extremidade **Produto App Builder para URL do ativo**
@@ -37,36 +37,47 @@ Esse endpoint recupera a lista de SKUs associadas a um determinado ativo:
 
 ```bash
 const { Core } = require('@adobe/aio-sdk')
- 
-async function main (params) {
-    // return the products that map to the assetId
+
+async function main(params) {
+
+    // Build your own matching logic here to return the products that map to the assetId
+    // var productMatches = [];
+    // params.assetId
+    // params.eventData.assetMetadata['commerce:isCommerce']
+    // params.eventData.assetMetadata['commerce:skus'][i]
+    // params.eventData.assetMetadata['commerce:roles']
+    // params.eventData.assetMetadata['commerce:positions'][i]
+    // ...
+    // End of your matching logic
+
     return {
-        statusCode: 200,
+        statusCode: 500,
         body: {
-          asset_id: "urn:aaid:aem:1aa1d4a0-18b8-40a7-a228-e0ab588deee1",
-          product_matches: [
-            {
-              product_sku: "SKU1",
-              asset_roles: ["thumbnail"],
-              asset_position: [1]
-            }
-          ]
+            asset_id: params.assetId,
+            product_matches: [
+                {
+                    product_sku: "<YOUR-SKU-HERE>",
+                    asset_roles: ["thumbnail", "image", "swatch_image", "small_image"],
+                    asset_position: 1
+                }
+            ]
         }
-   }
+    };
 }
- 
-exports.main = main
+
+exports.main = main;
 ```
 
 **Solicitação**
 
 ```bash
-GET https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-product
+POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-product
 ```
 
 | Parâmetro | Tipo de dados | Descrição |
 | --- | --- | --- |
 | `assetId` | String | Representa a ID de ativo atualizada |
+| `eventData` | String | Retorna a carga de dados associada ao `assetId` |
 
 **Resposta**
 
@@ -94,24 +105,32 @@ Esse endpoint recupera a lista de ativos associados a determinada SKU:
 
 ```bash
 const { Core } = require('@adobe/aio-sdk')
- 
-async function main (params) {
+
+async function main(params) {
     // return asset matches for a product
+    // Build your own matching logic here to return the assets that map to the productSku
+    // var assetMatches = [];
+    // params.productSku
+    // ...
+    // End of your matching logic
+
     return {
-        statusCode: 200,
+        statusCode: 500,
         body: {
-          product_sku: params.productSku, //SKU-1
-          asset_matches: [
-            {
-              asset_id: "urn:aaid:aem:1aa1d4a0-18b8-40a7-a228-e0ab588deee1",
-              asset_roles: ["thumbnail","image"]
-            }
-          ]
+            product_sku: params.productSku,
+            asset_matches: [
+                {
+                    asset_id: "<YOUR-ASSET-ID-HERE>", // urn:aaid:aem:1aa1d5i2-17h8-40a7-a228-e3ur588deee1
+                    asset_roles: ["thumbnail", "image", "swatch_image", "small_image"],
+                    asset_format: "image", // can be "image" or "video"
+                    asset_position: 1
+                }
+            ]
         }
-      }
+    };
 }
- 
-exports.main = main
+
+exports.main = main;
 ```
 
 **Solicitação**
@@ -122,7 +141,17 @@ GET https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-to
 
 | Parâmetro | Tipo de dados | Descrição |
 | --- | --- | --- |
-| `productSKU` | String | Representa o SKU do produto atualizado |
+| `productSKU` | String | Representa o SKU do produto atualizado. |
+| `asset_matches` | String | Retorna todos os ativos associados a um `productSku` específico. |
+
+O parâmetro `asset_matches` contém os seguintes atributos:
+
+| Atributo | Tipo de dados | Descrição |
+| --- | --- | --- |
+| `asset_id` | String | Representa a ID de ativo atualizada. |
+| `asset_roles` | String | Retorna todas as funções de ativo disponíveis. Usa [funções de ativos do Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) com suporte, como `thumbnail`, `image`, `small_image` e `swatch_image`. |
+| `asset_format` | String | Fornece os formatos disponíveis para o ativo. Os valores possíveis são `image` e `video`. |
+| `asset_position` | String | Mostra a posição do ativo. |
 
 **Resposta**
 
@@ -141,7 +170,3 @@ GET https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-to
   ]
 }
 ```
-
->[!TIP]
->
-> Na chave `asset_roles`, use as [funções de ativos do Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) com suporte, como `thumbnail`, `image`, `small_image` e `swatch_image`.
