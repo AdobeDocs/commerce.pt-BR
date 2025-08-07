@@ -3,9 +3,9 @@ title: Notas de versão
 description: As informações da versão mais recente da extensão  [!DNL Data Connection]  do Adobe Commerce.
 feature: Personalization, Integration, Release Notes
 exl-id: f3b92632-947d-40cd-89b7-24ed0680be51
-source-git-commit: e92f6c2b748683fbe1a358680b03eefb27fe0093
+source-git-commit: 43020e33ce57861cf586ace12a0832b24c23872d
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1266'
 ht-degree: 1%
 
 ---
@@ -24,15 +24,19 @@ Estas notas de versão contêm atualizações para a extensão [!DNL Data Connec
 
 Para obter alterações e correções de recursos relacionadas a extensões usadas pela extensão [!DNL Data Connection], consulte **Atualizações de serviço com suporte**.
 
-Consulte [Versões futuras](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/planning/schedule) para saber mais sobre os cronogramas de lançamento e o suporte.
+Consulte [Versões futuras](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) para saber mais sobre os cronogramas de lançamento e o suporte.
 
-Consulte a documentação do desenvolvedor para [saber quais versões do Commerce são compatíveis com este módulo](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/product-availability).
+Consulte a documentação do desenvolvedor para [saber quais versões do Commerce são compatíveis com este módulo](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## Atualizações de serviço compatíveis
 
 Essas notas de versão descrevem alterações de recursos e correções relacionadas a extensões usadas pela extensão [!DNL Data Connection].
 
 +++Atualizações de serviço com suporte
+
+_7 de agosto de 2025_
+
+![Novo](../assets/new.svg) - Com a versão 3.3.0, agora é possível adicionar [atributos personalizados a perfis](custom-identities.md).
 
 _2 de agosto de 2024_
 
@@ -82,7 +86,7 @@ _12 de outubro de 2022_
 
 _21 de março de 2025_
 
-[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Novo](../assets/new.svg) adicionou suporte ao PHP 8.4.
 
@@ -90,7 +94,7 @@ _21 de março de 2025_
 
 _17 de janeiro de 2025_
 
-[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Novo](../assets/new.svg) - Adicionada a [extensão pronta para HIPAA](hipaa-readiness.md) a [!DNL Data Connection] para que os comerciantes possam compartilhar [!DNL Commerce] dados de eventos de back office com a Experience Platform e manter a conformidade com a HIPAA.
 ![Correção](../assets/fix.svg) - Corrigido um problema no qual a extensão [!DNL Data Connection] substituía os dados `eventForwarding` e definia o sinalizador `HIPAA` para todos os clientes. Agora, a extensão só define o sinalizador para clientes da HIPAA.
@@ -99,7 +103,7 @@ _17 de janeiro de 2025_
 
 _7 de outubro de 2024_
 
-[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Novo](../assets/new.svg) - Adição da capacidade de criar [atributos de pedido personalizados](custom-attributes.md) para dados de back office.
 ![Novo](../assets/new.svg) - Adição de uma nova tabela de [Atributos de Pedido Personalizado](connect-data.md#data-customization) para ajudá-lo a exibir atributos personalizados configurados no [!DNL Commerce] e enviados para a Experience Platform.
@@ -109,7 +113,7 @@ _7 de outubro de 2024_
 
 _27 de agosto de 2024_
 
-[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Novo](../assets/new.svg) - Se você estiver participando do beta, verifique se o arquivo `composer.json` tem o seguinte no nível raiz: ` "minimum-stability": "beta"`. Além disso, adicione `composer require "magento/customers-connector: ^1.2.0"` para enviar perfis de clientes da sua instância do Commerce para o SaaS.
 ![Novo](../assets/new.svg) - Esta versão contém os patches lançados nas versões 3.1.1, 3.1.2, 3.1.3 e 3.1.4.
@@ -118,7 +122,7 @@ _27 de agosto de 2024_
 
 _9 de agosto de 2024_
 
-[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Correção](../assets/fix.svg) - Atualizado o metapackage `experience-platform-connector` para remover exportadores e indexadores de dados não utilizados.
 
@@ -126,7 +130,7 @@ _9 de agosto de 2024_
 
 _22 de julho de 2024_
 
-[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Correção](../assets/fix.svg) - Atualizado o metapackage `experience-platform-connector` para remover exportadores e indexadores de dados não utilizados.
 
@@ -134,7 +138,7 @@ _22 de julho de 2024_
 
 _5 de junho de 2024_
 
-[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Correção](../assets/fix.svg) - Corrigido um problema no qual o formato de data incorreto estava sendo usado ao iniciar uma [sincronização histórica](connect-data.md#specify-order-history-date-range).
 ![Correção](../assets/fix.svg) - Corrigido um problema no qual o evento [startCheckout](events.md#startcheckout) não estava sendo enviado no Adobe Commerce 2.4.7.
@@ -143,7 +147,7 @@ _5 de junho de 2024_
 
 _4 de abril, 2024_
 
-[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Novo](../assets/new.svg) - Suporte adicionado para PHP 8.3 para todas as extensões [!DNL Data Connection].
 ![Novo](../assets/new.svg) - Adição de um artigo sobre como [integrar](mobile-sdk-epc.md) o Adobe Experience Platform Mobile SDK com o Commerce.
@@ -152,7 +156,7 @@ _4 de abril, 2024_
 
 _4 de março de 2024_
 
-[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Novo](../assets/new.svg) - Se você estiver participando do beta, verifique se o arquivo `composer.json` tem o seguinte no nível raiz: ` "minimum-stability": "beta"`. Além disso, adicione `composer require "magento/customers-connector: ^1.2.0"` para enviar perfis de clientes da sua instância do Commerce para o SaaS.
 ![Novo](../assets/new.svg) - Adição da capacidade de [adicionar atributos personalizados](custom-attributes.md).
@@ -162,7 +166,7 @@ _4 de março de 2024_
 
 _16 de novembro de 2023_
 
-[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"} Adobe Commerce versões 2.4.4 e mais recentes
 
 ![Novo](../assets/new.svg) - O conector do Experience Platform foi renomeado para [!DNL Data Connection].
 ![Correção](../assets/fix.svg) - Adição da capacidade de registrar resposta de erro se o Adobe IMS não puder gerar o token de acesso.
@@ -172,7 +176,7 @@ _16 de novembro de 2023_
 
 _10 de outubro de 2023_
 
-[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"} Adobe Commerce versões 2.4.4 e mais recentes
 
 Esta é uma versão principal. [Edite](install.md#update-the-data-connection) o arquivo composer.json raiz do seu projeto.
 
@@ -184,7 +188,7 @@ Esta é uma versão principal. [Edite](install.md#update-the-data-connection) o 
 
 _27 de junho de 2023_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.3 e mais recentes
 
 ![Novo](../assets/new.svg) - Adição da capacidade de [desativar o envio de eventos de vitrine](connect-data.md#data-collection) para a Experience Platform.
 ![Correção](../assets/fix.svg) - Configurações de Política de Segurança de Conteúdo atualizadas.
@@ -195,7 +199,7 @@ _27 de junho de 2023_
 
 _13 de junho de 2023_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.3 e mais recentes
 
 ![Novo](../assets/new.svg) - (Beta) Adição da capacidade de [enviar dados e status de ordem histórica](connect-data.md#beta-send-historical-order-data) para a Experience Platform.
 
@@ -203,7 +207,7 @@ _13 de junho de 2023_
 
 _30 de março de 2023_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.3 e mais recentes
 
 ![Novo](../assets/new.svg) - Agrupou as dependências `commerce-data-export` e `saas-export` com a extensão `experience-platform-connector`. Anteriormente, você tinha que instalar essas dependências separadamente. Essas dependências, juntamente com a configuração de comerciante, permitem o processamento do lado do servidor de [eventos de back office](events-backoffice.md).
 ![Novo](../assets/new.svg) - Adição de um novo evento de back office chamado [`orderShipmentCompleted`](events-backoffice.md#ordershipmentcompleted).
@@ -212,7 +216,7 @@ _30 de março de 2023_
 
 _28 de fevereiro de 2023_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.3 e mais recentes
 
 ![Novo](../assets/new.svg) - Suporte adicionado para PHP 8.2 para todas as extensões [!DNL Data Connection].
 
@@ -220,7 +224,7 @@ _28 de fevereiro de 2023_
 
 _17 de janeiro de 2023_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.3 e mais recentes
 
 ![Novo](../assets/new.svg) - O [[!DNL Data Connection] administrador de extensão](connect-data.md) foi atualizado para que você possa especificar seu próprio AEP Web SDK (alloy).
 ![Correção](../assets/fix.svg) alterada para usar `identityMap` em vez de `personID` ao definir a identidade principal para quaisquer dados enviados para a borda.
@@ -229,7 +233,7 @@ _17 de janeiro de 2023_
 
 _10 de novembro de 2022_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.3 e mais recentes
 
 ![Correção](../assets/fix.svg) - Agora o contexto do Adobe Experience Platform é definido somente após o Coletor de Eventos da Storefront e o SDK de Eventos da Storefront serem carregados com êxito.
 
@@ -237,7 +241,7 @@ _10 de novembro de 2022_
 
 _12 de outubro de 2022_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.3 e mais recentes
 
 ![Novo](../assets/new.svg) - Adição da capacidade de especificar seu próprio AEP Web SDK ao [conectar](connect-data.md) sua instância do Adobe Commerce à Experience Platform.
 ![Correção](../assets/fix.svg) - Atualização do requisito de escopo da sequência de dados para que as IDs da sequência de dados devam ser enviadas ao site em vez de armazenadas.
@@ -246,6 +250,6 @@ _12 de outubro de 2022_
 
 _9 de agosto de 2022_
 
-[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.3 e mais recentes
 
 ![Novo](../assets/new.svg) - Versão de disponibilidade geral.

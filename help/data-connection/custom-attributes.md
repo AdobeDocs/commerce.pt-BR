@@ -1,18 +1,23 @@
 ---
-title: Adicionar atributos de ordem personalizados
+title: Adicionar atributos personalizados aos pedidos
 description: Saiba como adicionar atributos de pedido personalizados aos dados de back office e enviar esses atributos à Experience Platform.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: dcd0b9e7-8d36-4bde-b226-ac19e83f00e4
+source-git-commit: 5b1387e18e059c938aca600cc31951a3f5289e7e
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '602'
 ht-degree: 2%
 
 ---
 
-# Adicionar atributos de ordem personalizados
+# Adicionar atributos personalizados aos pedidos
 
 Neste artigo, você aprenderá a adicionar atributos personalizados a eventos de back office. Com atributos personalizados, você pode capturar insights de dados avançados para aprimorar as análises e criar experiências personalizadas para seus compradores.
+
+>[!NOTE]
+>
+>Saiba como [adicionar identidades personalizadas](custom-identities.md) a perfis.
 
 Os atributos personalizados são aceitos em dois níveis:
 
@@ -344,7 +349,7 @@ ComponentRegistrar::register(
 
 Para garantir que os novos atributos de pedido personalizados possam ser assimilados pelo esquema [!DNL Commerce] no Experience Platform, é necessário estender o esquema para incluir esses campos personalizados.
 
-Para saber como estender um esquema XDM existente para incluir esses campos personalizados, consulte o artigo [Criar e editar esquemas na interface](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) na documentação da Experience Platform. O campo ID do locatário é gerado dinamicamente; no entanto, a estrutura do campo deve se parecer com o exemplo fornecido na documentação do Experience Platform.
+Para saber como estender um esquema XDM existente para incluir esses campos personalizados, consulte o artigo [Criar e editar esquemas na interface](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) na documentação da Experience Platform. O campo ID do locatário é gerado dinamicamente; no entanto, a estrutura do campo deve se parecer com o exemplo fornecido na documentação do Experience Platform.
 
 >[!IMPORTANT]
 >
