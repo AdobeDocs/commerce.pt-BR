@@ -3,11 +3,11 @@ title: Exibição de catálogo
 description: Saiba o que são exibições de catálogo e como criá-las para organizar o catálogo de produtos por estrutura de negócios, políticas e preços.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: 2e47c770d204c9c7f959893704dd0ebcc6ac792a
+source-git-commit: ff53f84b4ab7cfb219aae0e29cc35b23d0f6601b
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,43 @@ Antes de criar uma visualização de catálogo, verifique se você tem:
 A página Exibições de catálogo é atualizada para exibir a nova exibição de catálogo.&#x200B;
 
 Após concluir essas etapas, a exibição do catálogo agora está configurada para exibir produtos e preços com base nas fontes e políticas selecionadas.
+
+## Gerenciar exibição de catálogo
+
+Siga estas instruções para atualizar ou exibir as propriedades de exibições de catálogo existentes.
+
+### Editar exibição de catálogo
+
+1. No espaço de trabalho *Exibições de catálogo*, localize a exibição de catálogo na grade que você deseja editar e clique em **...** para abrir o menu de ações.
+1. Clique em **Editar** para acessar o editor de exibição de catálogo.
+1. Atualize o nome, as origens do catálogo, as políticas e as informações do catálogo de preços conforme necessário.
+1. Salve as alterações.
+
+### Excluir exibição de catálogo
+
+1. No espaço de trabalho *Exibições de catálogo*, localize a exibição de catálogo na grade que você deseja editar e clique em **...** para abrir o menu de ações.
+1. Clique em **Excluir**.
+
+   Quando a caixa de diálogo de confirmação for exibida, clique em **[!UICONTROL Delete]**.
+
+### Exibir detalhes
+
+Esta opção fornece uma maneira rápida de ver todos os parâmetros de exibição de catálogo, permanecendo na tabela *Exibições de catálogo*.
+
+No espaço de trabalho *Exibições de catálogo*, localize a exibição de catálogo na grade que você deseja editar e clique no ![ícone de informações](../assets/info-icon.png).
+
+![Detalhes de exibição do catálogo](../assets/catalog-view-details.png)
+
+Aqui, você pode ver os detalhes de configuração da visualização do catálogo, como:
+
+- ID da Visualização
+- Nome
+- Origens do catálogo
+- Políticas
+- Data de criação
+- Dados modificados
+
+Algumas dessas configurações são necessárias à medida que você configura sua loja ou usa a API de assimilação de dados.
 
 ## Visão geral da arquitetura
 
