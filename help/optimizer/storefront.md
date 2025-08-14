@@ -2,29 +2,30 @@
 title: Configurar a loja
 description: Saiba como configurar sua  [!DNL Adobe Commerce Optimizer] loja.
 role: Developer
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
-source-git-commit: 7ff78711972cbd73fc75f7523d8ac734081dbe10
+source-git-commit: 475706df971e75091ee72e89d64088fa56aec4dd
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1858'
 ht-degree: 0%
 
 ---
 
 # Configurar a loja
 
->[!NOTE]
+Este tutorial fornece instruções detalhadas para configurar e usar a [Adobe Commerce Storefront habilitada pelo Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) para criar uma loja Commerce eficiente, escalável e segura habilitada por dados da sua instância [!DNL Adobe Commerce Optimizer].
+
+
+>[!TIP]
 >
->Esta documentação descreve um produto em desenvolvimento de acesso antecipado e não reflete toda a funcionalidade destinada à disponibilidade geral.
-
-Este tutorial demonstra como configurar e usar a [Loja do Adobe Commerce habilitada pelo Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=pt-BR) para criar uma vitrine do Commerce eficiente, escalável e segura habilitada por dados da sua instância [!DNL Adobe Commerce Optimizer].
-
+>Acelere o processo de configuração da vitrine eletrônica usando a ferramenta Site Creator para configurar o repositório de código da vitrine e o ambiente do autor do documento
+>>automaticamente. Depois disso, você poderá usar essas instruções para entender como a loja foi criada e saber mais sobre os componentes disponíveis para você.
 
 ## Pré-requisitos
 
 * Verifique se você tem uma conta GitHub (github.com) que pode criar repositórios e está configurada para desenvolvimento local.
 
-* Saiba mais sobre os conceitos e o fluxo de trabalho para desenvolver vitrines do Commerce nos Serviços de entrega do Adobe Edge revisando a [Visão geral](https://experienceleague.adobe.com/developer/commerce/storefront/get-started?lang=pt-BR) na documentação da Adobe Commerce Storefront.
+* Saiba mais sobre os conceitos e o fluxo de trabalho para desenvolver vitrines do Commerce nos Serviços de entrega do Adobe Edge revisando a [Visão geral](https://experienceleague.adobe.com/developer/commerce/storefront/get-started) na documentação da Adobe Commerce Storefront.
 * Configurar o ambiente de desenvolvimento
 
 
@@ -60,7 +61,7 @@ Instale o Gerenciador de versão do nó (NVM) e a versão necessária do Node.js
 
 >[!TIP]
 >
->Recursos adicionais para estender e personalizar a solução do [!DNL Adobe Commerce Optimizer] estão disponíveis por meio do [App Builder para Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) e da [API Mesh para Adobe Developer App Builder](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh). Para obter informações de acesso e uso, entre em contato com o representante de conta da Adobe.
+>Recursos adicionais para estender e personalizar a solução do [!DNL Adobe Commerce Optimizer] estão disponíveis por meio do [App Builder para Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) e da [API Mesh para Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh). Para obter informações de acesso e uso, entre em contato com o representante de conta da Adobe.
 
 #### Instalar o Sidekick
 
@@ -68,7 +69,7 @@ Instale a extensão do navegador Sidekick para editar, visualizar e publicar con
 
 ## Criar sua loja
 
-A vitrine criada para o projeto [!DNL Adobe Commerce Optimizer] usa uma versão personalizada do modelo da Adobe Commerce na Edge Delivery Services Storefront. O modelo é um conjunto de arquivos e pastas que fornecem um ponto de partida para o desenvolvimento da loja. Este processo de instalação é diferente do processo padrão para uma [Adobe Commerce na Edge Delivery Services Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=pt-BR).
+A vitrine criada para o projeto [!DNL Adobe Commerce Optimizer] usa uma versão personalizada do modelo da Adobe Commerce na Edge Delivery Services Storefront. O modelo é um conjunto de arquivos e pastas que fornecem um ponto de partida para o desenvolvimento da loja. Este processo de instalação é diferente do processo padrão para uma [Adobe Commerce na Edge Delivery Services Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
 
 >[!NOTE]
 >
@@ -107,7 +108,6 @@ Crie um repositório GitHub para o código do modelo do site da sua vitrine elet
 1. Preencha o formulário de configuração com os seguintes detalhes:
 
    * **Modelo de repositório**—`hlxsites/aem-boilerplate-commerce` (padrão).
-   * **Incluir todas as ramificações** — Selecione a opção para incluir todas as ramificações.
    * **Proprietário** — Sua organização ou conta (obrigatório).
    * **Nome do repositório** — Um nome exclusivo para o novo repositório (obrigatório).
    * **Descrição** — Uma breve descrição do repositório (opcional).
@@ -145,12 +145,6 @@ Você precisa das seguintes informações para atualizar o código de modelo pad
 
 1. Abra o repositório no terminal ou IDE.
 
-1. Confira a ramificação `aco`
-
-   ```bash
-   git checkout aco
-   ```
-
 1. Crie seu arquivo de configuração copiando o arquivo `default-fstab.yaml` para `fstab.yaml`.
 
    ```bash
@@ -159,7 +153,7 @@ Você precisa das seguintes informações para atualizar o código de modelo pad
 
 1. Atualize o ponto de montagem no arquivo de configuração da loja para apontar para o URL do conteúdo.
 
-   1. Abra o arquivo de configuração [fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=pt-BR#vocabulary).
+   1. Abra o arquivo de configuração [fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#vocabulary).
 
       ```yaml
       mountpoints:
@@ -192,47 +186,39 @@ Você precisa das seguintes informações para atualizar o código de modelo pad
 >
 >Verifique se você instalou a [extensão do Sidekick](https://www.aem.live/docs/sidekick#installation) em seu navegador.
 
-1. Abra o arquivo `tools/sidekick/config.json`.
+1. Crie um novo diretório `tools/sidekick`.
+
+   ```shell
+   mkdir tools/sidekick
+   ```
+
+1. Copie o arquivo `demo-sidekick.json` no diretório raiz para o diretório `tools/sidekick` e renomeie-o para `config.json`.
+
+   ```shell
+   cp demo-sidekick.json tools/sidekick/config.json
+   ```
+
+1. Personalize a configuração do Sidekick para o seu site.
+
+   No diretório `tools/sidekick/`, edite o arquivo `config.json`.
 
    +++Arquivo de configuração do Sidekick
 
    ```json
    {
-     "project": "Boilerplate",
-     "plugins": [
-       {
-         "id": "cif",
-         "title": "Commerce",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--{SITE}--{ORG}.aem.live/tools/picker/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       },
-       {
-         "id": "personalisation",
-         "title": "Personalisation",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--{SITE}--{ORG}.aem.live/tools/segments/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       }
-     ]
+     "project": "My Project",
+     "editUrlLabel": "Document Authoring",
+     "editUrlPattern": "https://da.live/edit#/{{org}}/{{site}}{{pathname}}"
    }
    ```
 
-   Consulte a [documentação da Biblioteca da Sidekick](https://www.aem.live/docs/sidekick-library) para obter mais informações.
-
-   +++
-
 1. Atualize os valores da chave `url` com os valores do seu repositório GitHub.
 
-   * Substitua a cadeia de caracteres `{ORG}` pela organização ou pelo nome de usuário de seu repositório.
+   * Substitua a cadeia de caracteres `{{ORG}}` pela organização ou pelo nome de usuário de seu repositório.
 
-   * Substituir a cadeia de caracteres `{SITE}` pelo nome do repositório
+   * Substitua a cadeia de caracteres `{{SITE}}` pelo nome do repositório.
+
+   * A variável `pathname` foi preenchida pelo sistema.
 
    +++Exemplo de arquivo de configuração atualizado
 
@@ -240,29 +226,9 @@ Você precisa das seguintes informações para atualizar o código de modelo pad
 
    ```json
    {
-     "project": "Boilerplate",
-     "plugins": [
-       {
-         "id": "cif",
-         "title": "Commerce",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--aco-storefront--early-adopter.aem.live/tools/picker/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       },
-       {
-         "id": "personalisation",
-         "title": "Personalisation",
-         "environments": [
-           "edit"
-         ],
-         "url": "https://main--aco-storefront--early-adopter.aem.live/tools/segments/dist/index.html",
-         "isPalette": true,
-         "paletteRect": "top: 54px; left: 5px; bottom: 5px; width: 300px; height: calc(100% - 59px); border-radius: var(--hlx-sk-button-border-radius); overflow: hidden; resize: horizontal;"
-       }
-     ]
+     "project": "My Project",
+     "editUrlLabel": "Document Authoring",
+     "editUrlPattern": "https://da.live/edit#/aco-storefront/early-adopter{{pathname}}"
    }
    ```
 
@@ -284,8 +250,8 @@ Para usar o código de modelo personalizado da vitrine personalizada, substitua 
 
    ```bash
    git status
-   On branch aco
-   Your branch is up to date with 'origin/aco'.
+   On branch main
+   Your branch is up to date with 'origin/main'.
    
    Changes to be committed:
     (use "git restore --staged <file>..." to unstage)
@@ -293,16 +259,16 @@ Para usar o código de modelo personalizado da vitrine personalizada, substitua 
         modified:   tools/sidekick/config.json
    ```
 
-1. Confirme as alterações na ramificação `aco`.
+1. Confirme as alterações.
 
    ```bash
    git commit -m "Update storefront boilerplate for Adobe Commerce Optimizer"
    ```
 
-1. Substituir a estrutura na ramificação `main` pelas alterações na ramificação `aco`.
+1. Aplique as alterações.
 
    ```bash
-   git push origin aco:main -f
+   git push
    ```
 
 ### Etapa 5: adicionar o aplicativo Sincronização de código do AEM
@@ -327,7 +293,7 @@ Conecte seu repositório ao Edge Delivery Service adicionando o aplicativo GitHu
 
 Crie e inicialize seu conteúdo da loja no ambiente de Autor de Documentos hospedado em `https://da.live` usando a ferramenta Criador de Sites. Essa ferramenta importa o conteúdo de amostra para o ambiente Autor do documento e conclui o processo de visualização e publicação de conteúdo para todos os documentos no conteúdo de amostra. O conteúdo de exemplo inclui os layouts de página, banners, rótulos e outros elementos para preencher sua loja.
 
-1. Abra a [ferramenta do criador do site](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator).
+1. Abrir a [ferramenta do criador do site](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator)
 
 1. Configurar o repositório:
 
@@ -474,4 +440,4 @@ Consulte o [caso de uso completo do Storefront e do Catalog Administrator](./use
 
 >[!MORELIKETHIS]
 >
-> Consulte a [documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR) para saber mais sobre a atualização do conteúdo do site e a integração com componentes de front-end e dados de back-end do Commerce.
+> Consulte a [documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) para saber mais sobre a atualização do conteúdo do site e a integração com componentes de front-end e dados de back-end do Commerce.
