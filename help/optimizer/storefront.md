@@ -19,7 +19,7 @@ Este tutorial fornece instruções detalhadas para configurar e usar a [Adobe Co
 >[!TIP]
 >
 >Acelere o processo de configuração da vitrine eletrônica usando a ferramenta Site Creator para configurar o repositório de código da vitrine e o ambiente do autor do documento
->>automaticamente. Depois disso, você poderá usar essas instruções para entender como a loja foi criada e saber mais sobre os componentes disponíveis para você.
+>&#x200B;>automaticamente. Depois disso, você poderá usar essas instruções para entender como a loja foi criada e saber mais sobre os componentes disponíveis para você.
 
 ## Pré-requisitos
 
