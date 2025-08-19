@@ -3,7 +3,7 @@ title: Caso de uso completo do administrador de vitrine e catálogo
 description: Saiba como usar o [!DNL Adobe Commerce Optimizer] para gerenciar seu catálogo usando exibições e políticas de catálogo e como configurar sua loja com base na configuração do catálogo.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
 source-git-commit: e5844cad1d666a81042db64e51e124e6444d19ac
 workflow-type: tm+mt
@@ -55,7 +55,7 @@ Nesse caso de uso, você está trabalhando com:
 
 >[!NOTE]
 >
-> Saiba mais sobre os arquivos de configuração da loja revisando o [Tópico de introdução](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) na documentação da Adobe Commerce Storefront.
+> Saiba mais sobre os arquivos de configuração da loja revisando o [Tópico de introdução](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=pt-BR) na documentação da Adobe Commerce Storefront.
 
 ### ‌Principais pontos
 
@@ -447,4 +447,4 @@ Para continuar aprendendo sobre o Adobe Commerce Optimizer:
 - Saiba mais sobre [configurações avançadas de política](../setup/policies.md)
 - Configurar [exibições adicionais do catálogo](../setup/catalog-view.md) para outras concessionárias
 - Revise a [documentação da API](https://developer.adobe.com/commerce/services/optimizer/) para obter gerenciamento programático de catálogos
-- Saiba como configurar componentes integrados para a sua loja do Edge Delivery Services para criar experiências personalizadas de vitrine para descobertas de produtos, recomendações e outros recursos da loja. Consulte a [documentação da Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)
+- Saiba como configurar componentes integrados para a sua loja do Edge Delivery Services para criar experiências personalizadas de vitrine para descobertas de produtos, recomendações e outros recursos da loja. Consulte a [documentação da Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=pt-BR)
