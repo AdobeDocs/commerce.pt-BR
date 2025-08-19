@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration, Security, Paas, Saas
 exl-id: 440296bb-a6ff-408b-8195-3027916e4f84
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,10 @@ O Adobe Commerce é compatível com o Signifyd versões 5.4.0 e mais recentes. [
 
 A integração Signifyd/[!DNL Payment Services] fornece cobertura para cartões de crédito, cartões de débito, cartões com cofre, check-out por meio do Admin e métodos de pagamento PayPal e Apple. Embora alguns detalhes das transações não sejam compartilhados entre os Serviços de Pagamento e a Signifyd, a Signifyd fornece uma cobertura de risco abrangente para todos os métodos de pagamento, garantindo o máximo de proteção.
 
+>[!CAUTION]
+>
+> [Fastlane](payments-options.md#fastlane-button) não é compatível com Signifyd.
+
 Consulte a [documentação do Signifyd](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#downloadandinstallingmagento2extension) para saber mais sobre como instalar e configurar a extensão.
 
 ## Integração
@@ -29,7 +33,7 @@ Você deve se comunicar diretamente com o Signifyd para integrar a extensão par
 Ao integrar com o Signifyd, você deve:
 
 1. Contate Signifyd para configurar uma nova conta.
-1. Incluir na lista de permissões Por padrão, Signifyd é [&#128279;](https://github.com/signifyd/magento2/blob/main/docs/RESTRICT-PAYMENTS.md) para garantir que Signifyd não acione outras opções de pagamento não compatíveis no momento. Se quiser proibir um método de pagamento específico, faça alterações.
+1. Incluir na lista de permissões Por padrão, Signifyd é [](https://github.com/signifyd/magento2/blob/main/docs/RESTRICT-PAYMENTS.md) para garantir que Signifyd não acione outras opções de pagamento não compatíveis no momento. Se quiser proibir um método de pagamento específico, faça alterações.
 1. Confirme com a Signifyd que o PayPal não rejeitará pedidos, por meio da configuração de proteção contra fraude do comerciante no Paypal, que podem ser aprovados pela Signifyd.
 1. Habilite a extensão Signifyd para ser compatível com [!DNL Payment Services]:
    * Ao usar [!DNL Payment Services] no modo _Live_, Signifyd deve estar no modo de Produção.
@@ -41,12 +45,12 @@ Como Signifyd executa alguma ação em seus pedidos, é necessário configurar a
 
 Estas opções de configuração não são compatíveis com os Serviços de pagamento e a integração com o Signifyd:
 
-* Quando [!DNL Payment Services] é configurado com a ação de pagamento _and_ de `Authorize`, Signifyd está no modo `PostAuth` com a opção _[!UICONTROL Decline Guarantees]_&#x200B;definida como **Criar memorando de crédito**.
+* Quando [!DNL Payment Services] é configurado com a ação de pagamento `Authorize`and _de_, Signifyd está no modo `PostAuth` com a opção _[!UICONTROL Decline Guarantees]_definida como **Criar memorando de crédito**.
 
   Motivo: [!DNL Payment Services] cria uma transação de autorização que Signify e tenta reembolsar.
 
 
-* [!DNL Payment Services] está configurado com a ação de pagamento _de `Authorize and Capture` e_ Signifyd está no modo `PostAuth` com a opção _[!UICONTROL Decline Guarantees]_&#x200B;definida como **Cancelar ordem**.
+* [!DNL Payment Services] está configurado com a ação de pagamento `Authorize and Capture` de _e_ Signifyd está no modo `PostAuth` com a opção _[!UICONTROL Decline Guarantees]_definida como **Cancelar ordem**.
 
   Motivo: [!DNL Payment Services] cria uma transação de captura que Signifyd então tenta anular.
 
