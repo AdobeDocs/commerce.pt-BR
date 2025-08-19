@@ -2,30 +2,30 @@
 title: Configurar a loja
 description: Saiba como configurar sua  [!DNL Adobe Commerce Optimizer] loja.
 role: Developer
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
-source-git-commit: 475706df971e75091ee72e89d64088fa56aec4dd
+source-git-commit: 2b35e822e192bdac316379f55c3bc924d62ca008
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1855'
 ht-degree: 0%
 
 ---
 
 # Configurar a loja
 
-Este tutorial fornece instruções detalhadas para configurar e usar a [Adobe Commerce Storefront habilitada pelo Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=pt-BR) para criar uma loja Commerce eficiente, escalável e segura habilitada por dados da sua instância [!DNL Adobe Commerce Optimizer].
+Este tutorial fornece instruções detalhadas para configurar e usar a [Adobe Commerce Storefront habilitada pelo Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/) para criar uma loja Commerce eficiente, escalável e segura habilitada por dados da sua instância [!DNL Adobe Commerce Optimizer].
 
 
 >[!TIP]
 >
 >Acelere o processo de configuração da vitrine eletrônica usando a ferramenta Site Creator para configurar o repositório de código da vitrine e o ambiente do autor do documento
->&#x200B;>automaticamente. Depois disso, você poderá usar essas instruções para entender como a loja foi criada e saber mais sobre os componentes disponíveis para você.
+>>automaticamente. Depois disso, você poderá usar essas instruções para entender como a loja foi criada e saber mais sobre os componentes disponíveis para você.
 
 ## Pré-requisitos
 
 * Verifique se você tem uma conta GitHub (github.com) que pode criar repositórios e está configurada para desenvolvimento local.
 
-* Saiba mais sobre os conceitos e o fluxo de trabalho para desenvolver vitrines do Commerce nos Serviços de entrega do Adobe Edge revisando a [Visão geral](https://experienceleague.adobe.com/developer/commerce/storefront/get-started?lang=pt-BR) na documentação da Adobe Commerce Storefront.
+* Saiba mais sobre os conceitos e o fluxo de trabalho para desenvolver vitrines do Commerce nos Serviços de entrega do Adobe Edge revisando a [Visão geral](https://experienceleague.adobe.com/developer/commerce/storefront/get-started) na documentação da Adobe Commerce Storefront.
 * Configurar o ambiente de desenvolvimento
 
 
@@ -61,7 +61,7 @@ Instale o Gerenciador de versão do nó (NVM) e a versão necessária do Node.js
 
 >[!TIP]
 >
->Recursos adicionais para estender e personalizar a solução do [!DNL Adobe Commerce Optimizer] estão disponíveis por meio do [App Builder para Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) e da [API Mesh para Adobe Developer App Builder](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh). Para obter informações de acesso e uso, entre em contato com o representante de conta da Adobe.
+>Recursos adicionais para estender e personalizar a solução do [!DNL Adobe Commerce Optimizer] estão disponíveis por meio do [App Builder para Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) e da [API Mesh para Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/api-mesh/getting-started-api-mesh). Para obter informações de acesso e uso, entre em contato com o representante de conta da Adobe.
 
 #### Instalar o Sidekick
 
@@ -69,7 +69,7 @@ Instale a extensão do navegador Sidekick para editar, visualizar e publicar con
 
 ## Criar sua loja
 
-A vitrine criada para o projeto [!DNL Adobe Commerce Optimizer] usa uma versão personalizada do modelo da Adobe Commerce na Edge Delivery Services Storefront. O modelo é um conjunto de arquivos e pastas que fornecem um ponto de partida para o desenvolvimento da loja. Este processo de instalação é diferente do processo padrão para uma [Adobe Commerce na Edge Delivery Services Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=pt-BR).
+A vitrine criada para o projeto [!DNL Adobe Commerce Optimizer] usa uma versão personalizada do modelo da Adobe Commerce na Edge Delivery Services Storefront. O modelo é um conjunto de arquivos e pastas que fornecem um ponto de partida para o desenvolvimento da loja. Este processo de instalação é diferente do processo padrão para uma [Adobe Commerce na Edge Delivery Services Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
 
 >[!NOTE]
 >
@@ -80,9 +80,9 @@ A vitrine criada para o projeto [!DNL Adobe Commerce Optimizer] usa uma versão 
 Siga estas etapas para configurar uma vitrine para usar com o [!DNL Adobe Commerce Optimizer].
 
 1. **[Criar um repositório de código](#step-1-create-site-code-repository)**-Crie um repositório GitHub a partir do modelo padrão do Adobe Commerce + Edge Delivery Services. Incluir todas as ramificações do repositório de origem.
-1. **[Atualizar modelo padrão da loja](#step-2-update-the-storefront-boilerplate)**-Atualizar o modelo padrão personalizado na ramificação `aco` para conectar a pasta de conteúdo à loja.
-1. **[Implantar alterações](#step-3-deploy-changes)**-Substituir o código na ramificação `main` pelo código atualizado da ramificação `aco`.
-1. **[Adicionar o aplicativo CodeSync](#step-5-add-the-aem-code-sync-app)**-Conecte seu repositório ao Serviço Edge Delivery. Não conecte o aplicativo Sincronização de Código até concluir a personalização do código-fonte e ter enviado o código para a ramificação `main`.
+1. **[Atualizar a placa-modelo da vitrine](#step-2-update-the-storefront-boilerplate)**-Atualizar o modelo-padrão personalizado para conectar sua pasta de conteúdo à loja.
+1. **[Implantar alterações](#step-3-deploy-changes)** - Confirme e envie sua personalização padronizada para o GitHub para aplicar as alterações.
+1. **[Adicionar o aplicativo CodeSync](#step-5-add-the-aem-code-sync-app)**-Conecte seu repositório ao Serviço Edge Delivery. Não conecte o aplicativo Sincronização de código até concluir a personalização do código-fonte e enviar o código para o repositório GitHub.
 1. **[Adicionar conteúdo](#step-6-add-content)**-Use a ferramenta de clonagem de conteúdo de demonstração para criar e inicializar o conteúdo da loja no ambiente de Autor de Documentos hospedado em `https://da.live`.
 1. **[Visualizar site de demonstração](#step-7-preview-demo-site)**-Conecte-se ao site da loja para exibir o conteúdo de exemplo e os dados da instância de demonstração [!DNL Adobe Commerce Optimizer].
 1. **[Desenvolver em seu ambiente local](#step-8-develop-in-your-local-environment)**-Instale as dependências necessárias. Inicie o servidor de desenvolvimento local e atualize a configuração da loja para se conectar à instância [!DNL Adobe Commerce Optimizer] que o Adobe provisionou para você.
@@ -153,7 +153,7 @@ Você precisa das seguintes informações para atualizar o código de modelo pad
 
 1. Atualize o ponto de montagem no arquivo de configuração da loja para apontar para o URL do conteúdo.
 
-   1. Abra o arquivo de configuração [fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=pt-BR#vocabulary).
+   1. Abra o arquivo de configuração [fstab.yaml](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/#vocabulary).
 
       ```yaml
       mountpoints:
@@ -440,4 +440,4 @@ Consulte o [caso de uso completo do Storefront e do Catalog Administrator](./use
 
 >[!MORELIKETHIS]
 >
-> Consulte a [documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR) para saber mais sobre a atualização do conteúdo do site e a integração com componentes de front-end e dados de back-end do Commerce.
+> Consulte a [documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) para saber mais sobre a atualização do conteúdo do site e a integração com componentes de front-end e dados de back-end do Commerce.
