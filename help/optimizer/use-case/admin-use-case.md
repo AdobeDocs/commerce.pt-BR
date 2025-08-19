@@ -3,11 +3,11 @@ title: Caso de uso completo do administrador de vitrine e catálogo
 description: Saiba como usar o [!DNL Adobe Commerce Optimizer] para gerenciar seu catálogo usando exibições e políticas de catálogo e como configurar sua loja com base na configuração do catálogo.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
-source-git-commit: 1ab7ee5673f261b43db25caf0ad340a0fd9e3341
+source-git-commit: e5844cad1d666a81042db64e51e124e6444d19ac
 workflow-type: tm+mt
-source-wordcount: '2158'
+source-wordcount: '2179'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Nesse caso de uso, você está trabalhando com:
 
 >[!NOTE]
 >
-> Saiba mais sobre os arquivos de configuração da loja revisando o [Tópico de introdução](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=pt-BR) na documentação da Adobe Commerce Storefront.
+> Saiba mais sobre os arquivos de configuração da loja revisando o [Tópico de introdução](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) na documentação da Adobe Commerce Storefront.
 
 ### ‌Principais pontos
 
@@ -185,11 +185,12 @@ Vamos criar uma nova política chamada *Categorias de peças do Celport* para fi
    - **Atributo** = *parte_categoria*
    - **Operador** = **EM**
    - **Source de Valor** = **ESTÁTICO**
-   - **Valor** = *freios*, *suspensão*
+   - **Valor** = *freios*
+   - **Valor** = *suspensão*
 
    >[!IMPORTANT]
    >
-   >Verifique se o nome do atributo especificado corresponde exatamente ao nome do atributo SKU no catálogo.
+   >Cada valor de atributo deve ser inserido separadamente. Depois de inserir um valor, pressione **Enter** para adicioná-lo à configuração de filtro. Em seguida, insira o próximo valor. Todos os valores devem corresponder exatamente ao nome do atributo SKU no catálogo.
 
    Para saber mais sobre a diferença entre uma origem de valor STATIC e TRIGGER, consulte [tipos de origem de valor](../setup/policies.md#value-source-types).
 
@@ -230,7 +231,8 @@ Crie uma nova exibição de catálogo para o revendedor *Celport* e vincule as s
 
    - **Nome** = *Celport*
    - **Fontes do catálogo** = *en-US*
-   - **Políticas** (use a lista suspensa) = *Marcas da East Coast Inc*; *Categorias de partes do Celport*; *Marca*; *Modelo*                          
+   - **Políticas** (use a lista suspensa) = *Marcas da East Coast Inc*; *Categorias de partes do Celport*; *Marca*; *Modelo*
+                         
 1. Clique em **[!UICONTROL Add]** para criar a exibição do catálogo.
 
    A página Exibições de catálogo é atualizada para exibir a nova exibição de catálogo.
@@ -261,7 +263,7 @@ A parte final deste tutorial envolve a atualização da loja que [você já crio
 
 1. No diretório raiz da pasta, abra o arquivo `config.json`.
 
-   +++config.json código
+   +++código config.json
 
    ```json
    {
@@ -445,4 +447,4 @@ Para continuar aprendendo sobre o Adobe Commerce Optimizer:
 - Saiba mais sobre [configurações avançadas de política](../setup/policies.md)
 - Configurar [exibições adicionais do catálogo](../setup/catalog-view.md) para outras concessionárias
 - Revise a [documentação da API](https://developer.adobe.com/commerce/services/optimizer/) para obter gerenciamento programático de catálogos
-- Saiba como configurar componentes integrados para a sua loja do Edge Delivery Services para criar experiências personalizadas de vitrine para descobertas de produtos, recomendações e outros recursos da loja. Consulte a [documentação da Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=pt-BR)
+- Saiba como configurar componentes integrados para a sua loja do Edge Delivery Services para criar experiências personalizadas de vitrine para descobertas de produtos, recomendações e outros recursos da loja. Consulte a [documentação da Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)

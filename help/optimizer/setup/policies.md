@@ -2,10 +2,11 @@
 title: Políticas
 description: Saiba como criar e gerenciar políticas no [!DNL Adobe Commerce Optimizer].
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
-source-git-commit: 356b10704c9e7c7329d3e9c0e10baa15d5142ec0
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+exl-id: 77f524f6-e283-44d2-9c79-9d40f686a7bf
+source-git-commit: 845d93e367c8e2495943afe8c7d5d0a4bde990c2
 workflow-type: tm+mt
-source-wordcount: '906'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
@@ -75,7 +76,10 @@ Nesta seção, você cria uma nova regra. A política pode ser **ESTÁTICA** ou 
    1. **Atributo** - Insira um atributo do catálogo. Por exemplo, &quot;part_category&quot;. Esse nome deve corresponder exatamente ao nome do atributo no catálogo.
    1. **Operador** - Escolha o operador. Por exemplo, **IN**. &#x200B;
    1. **Value Source** - Selecione **STATIC**. &#x200B;
-   1. **Valor** - Insira o(s) valor(es) no atributo especificado anteriormente. Por exemplo, &quot;freios, suspensão&quot;. &#x200B;Esses nomes devem corresponder exatamente aos nomes dos valores do atributo especificado anteriormente.
+   1. **Valor** - Insira um valor da definição de atributo especificada anteriormente. Por exemplo, insira &quot;freios&quot; para criar um filtro para peças de freios. &#x200B;O valor deve corresponder exatamente ao nome do atributo.
+   1. Para salvar o valor, pressione **Enter**.
+
+      Se a política tiver sido projetada para filtrar por vários valores, insira cada valor separadamente.
 
 1. Clique no botão **[!UICONTROL Save]** na caixa de diálogo de detalhes do filtro. &#x200B;
 
