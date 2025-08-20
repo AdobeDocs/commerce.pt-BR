@@ -2,9 +2,9 @@
 title: Sincronizar feeds usando a CLI do Commerce
 description: Saiba como usar os comandos da interface de linha de comando para gerenciar feeds e processos do  [!DNL data export extension] para serviços SaaS do Adobe Commerce.
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
-source-git-commit: 8233b2e184c8af293ffc41cb22e085388cf18049
+source-git-commit: 0f1d55f81cb030d218f0aa8dfa2af4dfd8f640c1
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ O comando `saas:resync` no pacote `magento/saas-export` permite gerenciar a sinc
 A Adobe não recomenda usar o comando `saas:resync` regularmente. Os cenários típicos para usar o comando são:
 
 - Sincronização inicial
-- Sincronizar dados com um novo espaço de dados após alterar a [ID do Espaço de Dados SaaS](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/config/services/saas)
+- Sincronizar dados com um novo espaço de dados após alterar a [ID do Espaço de Dados SaaS](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)
 - Solução de problemas
 
 Monitorar operações de sincronização no arquivo `var/log/saas-export.log`.
@@ -145,7 +145,6 @@ Feeds disponíveis:
 
 - `categories`
 - `categoryPermissions`
-- `inventoryStockStatus`
 - `orders`
 - `prices`
 - `products`
@@ -154,6 +153,10 @@ Feeds disponíveis:
 - `scopesWebsite`
 - `scopesCustomerGroup`
 - `variants`
+
+>[!NOTE]
+>
+>Os feeds disponíveis no ambiente podem ser diferentes, dependendo de quais módulos estão instalados no ambiente do Adobe Commerce.
 
 **Exemplo:**
 
