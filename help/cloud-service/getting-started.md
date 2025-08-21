@@ -3,10 +3,10 @@ title: Introdução ao  [!DNL Adobe Commerce as a Cloud Service]
 description: Saiba como começar a usar o  [!DNL Adobe Commerce as a Cloud Service].
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
-source-git-commit: 81dd617b0a6460b8dcb01c0a21b696663b0ae493
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+source-git-commit: d8c0cf5f54a8518b033013cdb24b25f8ff363f02
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '530'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Clique nas guias abaixo para ver as visões gerais de alto nível do fluxo de tr
 
 >[!TAB Fluxo de trabalho de administrador e comerciante]
 
-Este diagrama fornece uma visão geral de alto nível de como administradores e comerciantes acessam e gerenciam instâncias do [!DNL Adobe Commerce as a Cloud Service]. Consulte o [Guia do Adobe Admin Console](https://helpx.adobe.com/br/enterprise/admin-guide.html) para obter mais informações sobre fluxos de trabalho de administrador.
+Este diagrama fornece uma visão geral de alto nível de como administradores e comerciantes acessam e gerenciam instâncias do [!DNL Adobe Commerce as a Cloud Service]. Consulte o [Guia do Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html) para obter mais informações sobre fluxos de trabalho de administrador.
 
 ![[!DNL Adobe Commerce as a Cloud Service] diagrama de fluxo de comerciante](./assets/merchant-flow.svg){zoomable="yes"}
 
@@ -59,12 +59,6 @@ Este diagrama fornece uma visão geral de alto nível de como os desenvolvedores
 
 1. Insira um **Nome** e uma **Descrição** para sua instância.
 
-1. Selecione a região onde deseja que sua instância seja hospedada.
-
-   >[!NOTE]
-   >
-   >Depois de criar a instância, você não poderá modificar a região.
-
 1. Escolha o [!UICONTROL **Tipo de Ambiente**] para sua instância. Você pode escolher entre as seguintes opções:
 
    * [!UICONTROL **Sandbox**] - Ideal para fins de design e teste. Você deve iniciar a jornada [!DNL Adobe Commerce as a Cloud Service] usando o ambiente de sandbox.
@@ -72,8 +66,14 @@ Este diagrama fornece uma visão geral de alto nível de como os desenvolvedores
 
    >[!NOTE]
    >
-   >* Atualmente, as instâncias de sandbox estão limitadas à região da América do Norte.
+   >* As instâncias de sandbox estão limitadas à região da América do Norte.
    >* A opção para instalar dados de amostra não está disponível no momento.
+
+1. Selecione a região onde deseja que sua instância seja hospedada.
+
+   >[!NOTE]
+   >
+   >Depois de criar a instância, você não poderá modificar a região.
 
 1. Clique em [!UICONTROL **Adicionar instância**].
 
@@ -99,7 +99,7 @@ Por padrão, [!DNL Adobe Commerce as a Cloud Service] instâncias não incluem d
 
 Há duas maneiras de importar seu catálogo para o [!DNL Adobe Commerce as a Cloud Service]:
 
-* [**Administrador do Commerce**](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/import/data-import) - Uma interface amigável que permite importar os dados do catálogo com apenas alguns cliques.
+* [**Administrador do Commerce**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) - Uma interface amigável que permite importar os dados do catálogo com apenas alguns cliques.
 * [**Importar API JSON**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - Uma API REST que permite importar os dados do catálogo de forma programática.
 
 <!-- TODO
