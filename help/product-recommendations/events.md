@@ -3,16 +3,18 @@ title: Coletar dados
 description: Saiba como os eventos coletam dados para  [!DNL Product Recommendations].
 feature: Services, Recommendations, Eventing
 exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
-source-git-commit: fe96b2922583c0fcb0fcadbdacead6267806f44b
+source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
 workflow-type: tm+mt
-source-wordcount: '1343'
+source-wordcount: '980'
 ht-degree: 0%
 
 ---
 
 # Coletar dados
 
-Quando você instala e configura recursos do Adobe Commerce baseados em SaaS, como [[!DNL Product Recommendations]](install-configure.md) ou [[!DNL Live Search]](../live-search/install.md), os módulos implantam a coleção de dados comportamentais na loja. Esse mecanismo coleta dados comportamentais anônimos de seus compradores e habilita o [!DNL Product Recommendations]. Por exemplo, o evento `view` é usado para calcular o tipo de recomendação `Viewed this, viewed that`, e o evento `place-order` é usado para calcular o tipo de recomendação `Bought this, bought that`.
+Quando você instala e configura o [[!DNL Product Recommendations]](install-configure.md), o módulo implanta a coleta de dados comportamentais na vitrine. Esse mecanismo coleta dados comportamentais anônimos de seus compradores e habilita o [!DNL Product Recommendations]. Por exemplo, o evento `view` é usado para calcular o tipo de recomendação `Viewed this, viewed that`, e o evento `place-order` é usado para calcular o tipo de recomendação `Bought this, bought that`.
+
+Consulte a [documentação do desenvolvedor](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) para saber mais sobre os dados comportamentais coletados pelos eventos do [!DNL Product Recommendations].
 
 >[!NOTE]
 >
@@ -77,61 +79,6 @@ No caso de coleta de dados de entrada insuficiente, os seguintes tipos de recome
 - `Conversion (view to purchase)`
 - `Conversion (view to cart)`
 
-### Eventos
-
-O [Coletor de Eventos da Adobe Commerce Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) lista todos os eventos implantados na sua loja. Nessa lista, há um subconjunto de eventos específicos para [!DNL Product Recommendations]. Esses eventos coletam dados quando os compradores interagem com as unidades de recomendação na loja e alimentam as métricas para analisar o desempenho de suas recomendações.
-
-| Evento | Descrição |
-| --- | --- |
-| `impression-render` | Enviado quando a unidade de recomendação é renderizada na página. Se uma página tiver duas unidades de recomendação (compradas, exibição), dois eventos `impression-render` serão enviados. Esse evento é usado para rastrear a métrica para impressões. |
-| `rec-add-to-cart-click` | O comprador clica no botão **Adicionar ao carrinho** para um item na unidade de recomendação. |
-| `rec-click` | O comprador clica em um produto na unidade de recomendação. |
-| `view` | Enviado quando a unidade de recomendação se torna pelo menos 50% visível, como ao rolar a página para baixo. Por exemplo, se uma unidade de recomendação tiver duas linhas, um evento `view` será enviado quando uma linha mais um pixel da segunda linha se tornar visível para o comprador. Se o comprador rolar a página várias vezes para cima e para baixo, o evento `view` será enviado tantas vezes quanto o comprador vir toda a unidade de recomendação novamente na página. |
-
-Embora as métricas de Recomendação de produto sejam otimizadas para vitrines Luma, elas também funcionam com outras implementações de vitrines:
-
-- [Edge Delivery Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/setup/analytics/instrumentation/?lang=pt-BR)
-- [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/)
-- [Frente personalizada (React, Vue JS)](headless.md)
-
-#### Eventos de painel obrigatórios
-
-Os seguintes eventos são necessários para preencher o [[!DNL Product Recommendations] painel](workspace.md)
-
-| Coluna do painel | Eventos | Ingressar no campo |
-| ---------------- | --------- | ----------- |
-| Impressões | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render` | `unitId` |
-| Visualizações | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view` | `unitId` |
-| Cliques | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click` | `unitId` |
-| Receita | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | `unitId`, `sku`, `parentSku` |
-| Receita LT | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | `unitId`, `sku`, `parentSku` |
-| CTR | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-item-click`, `recs-add-to-cart-click` | `unitId`, `sku`, `parentSku` |
-| vCTR | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view`, `recs-item-click`, `recs-add-to-cart-click` | `unitId`, `sku`, `parentSku` |
-
-Os seguintes eventos não são específicos das Recomendações de produto, mas são necessários para que o Adobe Sensei interprete os dados do comprador corretamente:
-
-- `view`
-- `add-to-cart`
-- `place-order`
-
-#### Tipo de recomendação
-
-Esta tabela descreve os eventos usados por cada tipo de recomendação.
-
-| Tipo de recomendação | Eventos | Página |
-| --- | --- | --- |
-| Mais visualizados | `page-view`<br>`product-view` | Página de detalhes do produto |
-| Mais comprados | `page-view`<br>`place-order` | Carrinho/Check-out |
-| Mais adicionados ao carrinho | `page-view`<br>`add-to-cart` | Página de detalhes do produto<br>Página de listagem do produto<br>Carrinho<br>Lista de desejos |
-| Visualizou isto, visualizou aquilo | `page-view`<br>`product-view` | Página de detalhes do produto |
-| Visualizou isto, comprou aquilo | Registros de produto | `page-view`<br>`product-view` | Página de detalhes do produto<br>Carrinho/Check-out |
-| Comprei isto, comprei aquilo | Registros de produto | `page-view`<br>`product-view` | Página de detalhes do produto |
-| Tendências | `page-view`<br>`product-view` | Página de detalhes do produto |
-| Conversão: exibir para compra | Registros de produto | `page-view`<br>`product-view` | Página de detalhes do produto |
-| Conversão: exibir para compra | Registros de produto | `page-view`<br>`place-order` | Carrinho/Check-out |
-| Conversão: exibir para carrinho | Registros de produto | `page-view`<br>`product-view` | Página de detalhes do produto |
-| Conversão: exibir para carrinho | Registros de produto | `page-view`<br>`add-to-cart` | Página de detalhes do produto<br>Página de listagem do produto<br>Carrinho<br>Lista de desejos |
-
 #### Avisos
 
 - Os bloqueadores de anúncios e as configurações de privacidade podem impedir que eventos sejam capturados e podem fazer com que as [métricas](workspace.md#column-descriptions) de envolvimento e receita sejam reportadas incorretamente. Além disso, alguns eventos podem não ser enviados porque os compradores saem da página ou por problemas de rede.
@@ -140,4 +87,4 @@ Esta tabela descreve os eventos usados por cada tipo de recomendação.
 
 >[!NOTE]
 >
->Se o [Modo de restrição de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=pt-BR) estiver habilitado, a Adobe Commerce não coletará dados comportamentais até que o comprador consente em usar cookies. Se o Modo de restrição de cookie estiver desativado, o Adobe Commerce coletará dados comportamentais por padrão.
+>Se o [Modo de restrição de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) estiver habilitado, a Adobe Commerce não coletará dados comportamentais até que o comprador consente em usar cookies. Se o Modo de restrição de cookie estiver desativado, o Adobe Commerce coletará dados comportamentais por padrão.

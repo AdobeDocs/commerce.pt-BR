@@ -2,9 +2,9 @@
 title: Configuração do Live Search
 description: O espaço de trabalho  [!DNL Live Search]  é usado para configurar, gerenciar e monitorar o desempenho da pesquisa.
 exl-id: 07c32b26-3fa4-4fae-afba-8a10866857c3
-source-git-commit: 54fbf7f65ee5e464a4b61a9df95fef7536f1cedb
+source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -24,17 +24,17 @@ Para garantir que cada área funcional do espaço de trabalho contenha os dados 
 
 Se você estiver usando uma loja headless, consulte a seguinte documentação para obter mais informações sobre os eventos necessários que precisam ser adicionados:
 
-- [Eventos necessários](events.md) para o painel do Live Search.
+- [Eventos necessários](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search) para o painel do Live Search.
 - [Coletor de eventos de vitrine](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) que precisa ser adicionado como pré-requisito.
 - [Exemplos](https://github.com/adobe/commerce-events/tree/main/examples) da estrutura de eventos.
 
 ### Clientes da área de saúde
 
-Se você for um cliente da área de saúde e tiver instalado a [extensão HIPAA do Data Services](../data-connection/hipaa-readiness.md#installation), que faz parte da [conexão de dados](../data-connection/overview.md), os dados do evento de vitrine usados por [!DNL Live Search] não serão mais capturados. Isso ocorre porque os dados do evento da loja são gerados no lado do cliente. Para continuar capturando e enviando dados do evento da loja, habilite novamente a coleção de eventos para [!DNL Live Search]. Consulte [configuração geral](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/config/general/general#data-services) para saber mais.
+Se você for um cliente da área de saúde e tiver instalado a [extensão HIPAA do Data Services](../data-connection/hipaa-readiness.md#installation), que faz parte da [conexão de dados](../data-connection/overview.md), os dados do evento de vitrine usados por [!DNL Live Search] não serão mais capturados. Isso ocorre porque os dados do evento da loja são gerados no lado do cliente. Para continuar capturando e enviando dados do evento da loja, habilite novamente a coleção de eventos para [!DNL Live Search]. Consulte [configuração geral](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services) para saber mais.
 
 ## Definir o escopo
 
-Inicialmente, o [escopo](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=pt-BR#scope-settings) de todas as configurações de [!DNL Live Search] está definido como `Default Store View`. Se a instalação do [!DNL Commerce] incluir vários modos de exibição de repositório, defina o **Escopo** como [modo de exibição de repositório](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=pt-BR) ao qual as configurações das facetas se aplicam.
+Inicialmente, o [escopo](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) de todas as configurações de [!DNL Live Search] está definido como `Default Store View`. Se a instalação do [!DNL Commerce] incluir vários modos de exibição de repositório, defina o **Escopo** como [modo de exibição de repositório](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) ao qual as configurações das facetas se aplicam.
 
 ## Opções de Menu
 
@@ -50,7 +50,7 @@ Inicialmente, o [escopo](https://experienceleague.adobe.com/docs/commerce-admin/
 
 ## Definir atributos como pesquisáveis
 
-Para produzir resultados altamente direcionados, revise o conjunto de atributos de produto [pesquisáveis](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=pt-BR) (`searchable=true`). Para garantir relevância, torne os atributos pesquisáveis somente se eles tiverem conteúdo com significado claro e conciso. Evite usar atributos que contenham texto menos preciso e longo, como `description`, que, embora habilitado para pesquisa por padrão, pode reduzir a precisão dos resultados da pesquisa. Por exemplo, se uma pessoa procurar por &quot;shorts&quot; e houver camisas com uma descrição que inclua o termo &quot;mangas curtas&quot;, as camisas serão incluídas nos resultados da pesquisa.
+Para produzir resultados altamente direcionados, revise o conjunto de atributos de produto [pesquisáveis](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`). Para garantir relevância, torne os atributos pesquisáveis somente se eles tiverem conteúdo com significado claro e conciso. Evite usar atributos que contenham texto menos preciso e longo, como `description`, que, embora habilitado para pesquisa por padrão, pode reduzir a precisão dos resultados da pesquisa. Por exemplo, se uma pessoa procurar por &quot;shorts&quot; e houver camisas com uma descrição que inclua o termo &quot;mangas curtas&quot;, as camisas serão incluídas nos resultados da pesquisa.
 
 Para permitir que os atributos sejam pesquisáveis, conclua as seguintes etapas:
 
@@ -60,7 +60,7 @@ Para permitir que os atributos sejam pesquisáveis, conclua as seguintes etapas:
 
    ![Workspace](assets/attribute-searchable.png)
 
-[!DNL Live Search] também respeita o [peso](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html?lang=pt-BR#weighted-search) de um atributo de produto, conforme definido no Adobe Commerce. Atributos com um peso maior aparecerão mais altos nos resultados da pesquisa.
+[!DNL Live Search] também respeita o [peso](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) de um atributo de produto, conforme definido no Adobe Commerce. Atributos com um peso maior aparecerão mais altos nos resultados da pesquisa.
 
 Os seguintes atributos são sempre pesquisáveis:
 
@@ -105,4 +105,4 @@ Os preços na Página de listagem de produtos do widget e Popover são convertid
 
 ### Pesquisar termos
 
-[!DNL Live Search] dá suporte a [redirecionamentos de termo de pesquisa](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=pt-BR) em implementações em que o Adobe Commerce lida com o roteamento, como no Luma e outros temas baseados em php.
+[!DNL Live Search] dá suporte a [redirecionamentos de termo de pesquisa](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html) em implementações em que o Adobe Commerce lida com o roteamento, como no Luma e outros temas baseados em php.

@@ -2,9 +2,9 @@
 title: Criar nova recomendação
 description: Saiba como criar uma unidade de recomendação de produto.
 exl-id: 1d5f83c4-1613-4236-9d98-d455f45a47da
-source-git-commit: f67010c80c3dedcf3c431cb7dc6e4e7b0cdbde09
+source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1512'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,11 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
 
 1. Na barra lateral _Administrador_, vá para **Marketing** > _Promoções_ > **Recomendações de Produtos** para exibir o espaço de trabalho _Recomendações de Produtos_.
 
-1. Especifique o [Modo de Exibição de Armazenamento](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/setup/websites-stores-views) onde deseja que as recomendações sejam exibidas.
+1. Especifique o [Modo de Exibição de Armazenamento](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) onde deseja que as recomendações sejam exibidas.
 
    >[!NOTE]
    >
-   > As unidades de recomendação do Page Builder devem ser criadas na exibição de armazenamento padrão, mas podem ser usadas em qualquer lugar. Para saber mais sobre como criar recomendações de produto com o Page Builder, consulte [Adicionar conteúdo - Recomendações de produto](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/page-builder/add-content/recommendations).
+   > As unidades de recomendação do Page Builder devem ser criadas na exibição de armazenamento padrão, mas podem ser usadas em qualquer lugar. Para saber mais sobre como criar recomendações de produto com o Page Builder, consulte [Adicionar conteúdo - Recomendações de produto](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations).
 
 1. Clique em **Criar recomendação**.
 
@@ -38,14 +38,14 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
 
    >[!NOTE]
    >
-   > As Recomendações de Produto não são suportadas na página Carrinho quando sua loja está configurada para [exibir a página do carrinho de compras imediatamente após adicionar um produto ao carrinho](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
+   > As Recomendações de Produto não são suportadas na página Carrinho quando sua loja está configurada para [exibir a página do carrinho de compras imediatamente após adicionar um produto ao carrinho](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
 
    * Página inicial
    * Categoria
    * Detalhes do produto
    * Carrinho
    * Confirmação
-   * [Construtor de páginas](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [Construtor de páginas](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
    Você pode criar até cinco unidades de recomendação ativas para cada tipo de página e até 25 para o Page Builder. O tipo de página fica esmaecido quando o limite é atingido.
 
@@ -172,7 +172,7 @@ A seguir, uma lista de possíveis motivos e soluções para pontuações comuns 
 * **Baseado em estática** - Baixo percentual para esses indicadores pode ser causado pela falta de dados de catálogo para os produtos exibíveis. Se forem menores do que o esperado, uma sincronização completa pode corrigir esse problema.
 * **Baseado em dinâmico** - Baixo percentual para indicadores baseados em dinâmico pode ser causado por:
 
-   * Campos ausentes nos [eventos de loja](events.md) necessários para os respectivos tipos de recomendação (requestId, contexto do produto e assim por diante).
+   * Campos ausentes nos [eventos de loja](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) necessários para os respectivos tipos de recomendação (requestId, contexto do produto e assim por diante).
    * Baixo tráfego na loja, portanto, o volume de eventos comportamentais que recebemos é baixo.
    * A variedade de eventos comportamentais de vitrine em diferentes produtos em sua loja é baixa. Por exemplo, se apenas 10% dos seus produtos forem visualizados ou comprados na maior parte do tempo, os respectivos indicadores de disponibilidade serão baixos.
 
