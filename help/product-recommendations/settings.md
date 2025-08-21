@@ -2,9 +2,9 @@
 title: Configurações
 description: Saiba como alterar a fonte de seus dados do  [!DNL Product Recommendations]  e como habilitar recomendações visuais.
 exl-id: fe37624d-c53e-40cd-b182-10f62cba74c0
-source-git-commit: fe5f864262478d1f9e205f2cd275452594cf4675
+source-git-commit: 7d5e3faeef2fb16779d1558027a0b76ff3fe3a38
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ As ordens de preparo são registradas usando o preparo `environmentId`. Isso nã
 
 Para alterar a origem dos dados de recomendações de produtos, escolha o espaço de dados SaaS com os dados comportamentais que deseja usar. Antes de começar, verifique se:
 
-- A coleta de dados da loja deve ser [configurada e habilitada](install-configure.md) para o ambiente de produção e [verificou](verify.md) se os dados comportamentais estão sendo enviados para a Adobe Commerce.
+- A coleta de dados da loja deve ser [configurada e habilitada](install-configure.md) para o ambiente de produção e [verificou](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) se os dados comportamentais estão sendo enviados para a Adobe Commerce.
 - Seu catálogo de ambientes de não produção deve ser essencialmente o mesmo que seu catálogo de produção. Usar catálogos semelhantes garante que as unidades de recomendação do produto retornem imitando de perto as que estão em produção.
 
 1. Faça logon no Admin do seu ambiente de não produção do Adobe Commerce.
