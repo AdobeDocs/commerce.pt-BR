@@ -2,10 +2,11 @@
 title: Visão geral de merchandising
 description: Saiba mais sobre os recursos de merchandising do  [!DNL Adobe Commerce Optimizer].
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
-source-git-commit: 356b10704c9e7c7329d3e9c0e10baa15d5142ec0
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+exl-id: cc0f280c-3934-47ca-b5dc-d83023d8e2be
+source-git-commit: 17d1872321e664ca58a702b0948fd5e6d2f33202
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -16,13 +17,17 @@ Nesta seção, você aprenderá a criar experiências personalizadas para seus c
 
 ## Descoberta de produto
 
-A descoberta de produtos melhora a funcionalidade de pesquisa do site, garantindo uma experiência perfeita e eficiente do comprador que maximiza as taxas de conversão. Ela permite que os comerciantes garantam que os compradores obtenham os produtos certos na hora certa.
+A Descoberta de produtos equipe os merchandisers com ferramentas poderosas para preparar e otimizar a experiência de compra, garantindo que os clientes encontrem os produtos certos rapidamente, na hora certa. Ao ajustar o comportamento da pesquisa, você pode influenciar diretamente a visibilidade, a relevância e a conversão do produto.
 
-Com a descoberta de produtos, você configura aspectos, regras e sinônimos para:
+Com a descoberta de produtos, você pode:
 
-- Crie experiências de pesquisa significativas para ajudar compradores e compradores a encontrar o que desejam com o menor esforço possível.
-- Aproveite a faceta dinâmica alimentada por IA e a reclassificação dos resultados de pesquisa em resposta aos comportamentos do comprador na sessão.
+* **Configure [facetas](./facets/overview.md), [regras de merchandising](./rules/overview.md) e [sinônimos](./synonyms/overview.md)** para orientar os compradores para os produtos mais relevantes com o mínimo de atrito.
+* **Crie experiências de pesquisa intuitivas e orientadas a metas** que refletem sua estratégia de merchandising e prioridades sazonais.
+* **Use facetas dinâmicas orientadas por IA e a reclassificação de resultados** para adaptar os resultados da pesquisa em tempo real com base no comportamento do comprador, aumentando o engajamento e as vendas.
+* **Garanta que os itens promocionais e de alta prioridade apareçam efetivamente** para alinhar os resultados da pesquisa com as metas comerciais.
 
 ## Recommendations
 
-O Recommendations usa inteligência artificial e algoritmos de aprendizado de máquina do para executar uma análise profunda dos dados agregados do visitante. Esses dados, quando combinados com seu catálogo, resultam em uma experiência altamente envolvente, relevante e personalizada. As recomendações são exibidas na loja como unidades com rótulos, como &quot;Clientes que visualizaram este produto também visualizaram&quot;. Você pode criar, gerenciar e implantar recomendações diretamente do [!DNL Adobe Commerce Optimizer].
+O Recommendations usa inteligência artificial e aprendizado de máquina para analisar o comportamento agregado do visitante e as interações do produto na loja. Ao combinar esses dados comportamentais com seu catálogo de produtos, o [!DNL Adobe Commerce Optimizer] fornece sugestões de produtos relevantes e altamente personalizadas que melhoram o engajamento do comprador e aumentam a conversão.
+
+As recomendações são exibidas na loja como unidades rotuladas, como &quot;Clientes que visualizaram este produto também visualizaram&quot;. Essas unidades podem ser colocadas estrategicamente na jornada de compras. Como comerciante, você pode criar, gerenciar e implantar facilmente essas unidades de recomendação diretamente no [!DNL Adobe Commerce Optimizer] para oferecer suporte a metas promocionais, estratégias de venda cruzada e experiências personalizadas.
