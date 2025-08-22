@@ -4,10 +4,10 @@ description: Saiba mais sobre os principais recursos e benefícios do  [!DNL Ado
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Architect, Developer, User, Leader
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
-source-git-commit: 8fc46b0b93ac5102477f33bf2a8ae70a7acaf85d
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+source-git-commit: 31d1f1fe784247d6db8a26f8a9e6ae0291e416b5
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1406'
 ht-degree: 0%
 
 ---
@@ -21,46 +21,34 @@ A tabela a seguir destaca os produtos que alimentam o [!DNL Adobe Commerce as a 
 
 <table style="table-layout:auto">
   <tr>
-    <td>
-      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
-        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">⌘</span>
-      </span>
-      <strong>Commerce Storefront</strong>
+    <td align="left">
+      <img src="../assets/icon-checkmark-circle-outline.svg" alt="marca de seleção" align="center"> <strong>Commerce Storefront</strong>
     </td>
-    <td>
+    <td align="left">
       Interface voltada para o cliente, onde os compradores navegam e compram produtos
     </td>
   </tr>
   <tr>
-    <td>
-      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
-        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">⌘</span>
-      </span>
-      <strong>Serviços de merchandising</strong>
+    <td align="left">
+      <img src="../assets/icon-checkmark-circle-outline.svg" alt="marca de seleção" align="center"> <strong>Serviços de merchandising</strong>
     </td>
-    <td>
+    <td align="left">
       Serviços de back-end que gerenciam catálogos de produtos, preços e inventário
     </td>
   </tr>
   <tr>
-    <td>
-      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
-        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">⌘</span>
-      </span>
-      <strong>Visuais do produto</strong>
+    <td align="left">
+      <img src="../assets/icon-checkmark-circle-outline.svg" alt="marca de seleção" align="center"> <strong>Visuais do Produto</strong>
     </td>
-    <td>
+    <td align="left">
       Gerenciamento de ativos digitais para imagens e mídia de produtos
     </td>
   </tr>
   <tr>
-    <td>
-      <span style="display: inline-block; width: 20px; height: 20px; background: white; border: 1px solid #d32f2f; border-radius: 50%; margin-right: 8px; vertical-align: middle;">
-        <span style="color: #d32f2f; font-size: 14px; line-height: 18px; display: block; text-align: center;">⌘</span>
-      </span>
-      <strong>Plataforma de desenvolvedor</strong>
+    <td align="left">
+      <img src="../assets/icon-checkmark-circle-outline.svg" alt="marca de seleção" align="center"> <strong>Plataforma de desenvolvedor</strong>
     </td>
-    <td>
+    <td align="left">
       Ferramentas e APIs de desenvolvimento principais para a criação de funcionalidade personalizada
     </td>
   </tr>
@@ -70,7 +58,7 @@ A tabela a seguir destaca os produtos que alimentam o [!DNL Adobe Commerce as a 
 
 Assista ao vídeo a seguir para obter uma breve introdução à arquitetura [!DNL Adobe Commerce as a Cloud Service]. Diagramas que ilustram a arquitetura são fornecidos abaixo do vídeo.
 
->[!VIDEO](https://video.tv.adobe.com/v/3443272?learn=on&captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3443232?learn=on)
 
 Este diagrama ilustra o fluxo de dados entre o [!DNL Adobe Commerce as a Cloud Service] e todas as soluções da Adobe Experience Cloud.
 
@@ -78,13 +66,13 @@ Este diagrama ilustra o fluxo de dados entre o [!DNL Adobe Commerce as a Cloud S
 
 ## Commerce Storefront
 
-Use a [Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront?lang=pt-BR) da Adobe alimentada pela Edge Delivery Services para criar experiências ricas em minutos com criação simples baseada em documentos ou edição visual com o Storefront Builder.
+Use a [Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront) da Adobe alimentada pela Edge Delivery Services para criar experiências ricas em minutos com criação simples baseada em documentos ou edição visual com o Storefront Builder.
 
 A Commerce Storefront é totalmente headless com uma arquitetura dissociada que fornece todos os serviços e dados de merchandising por meio de uma camada de API do GraphQL. Essa arquitetura permite que as equipes desenvolvam seus front-ends independentemente da Commerce Foundation, fornecendo agilidade para criar e testar novos pontos de contato com tecnologias emergentes.
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] não dá suporte a vitrines Luma. Se você estiver migrando do Adobe Commerce na Nuvem ou no local, consulte [vitrines existentes](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=pt-BR#existing-storefronts) para obter orientação sobre a transição.
+>[!DNL Adobe Commerce as a Cloud Service] não dá suporte a vitrines Luma. Se você estiver migrando do Adobe Commerce na Nuvem ou no local, consulte [vitrines existentes](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) para obter orientação sobre a transição.
 
 ## Serviços de merchandising e serviços de pagamento
 
@@ -109,11 +97,11 @@ Como alternativa, os recursos nativos no [!DNL Adobe Commerce as a Cloud Service
 
 A comparação a seguir ajuda a selecionar a melhor opção para as necessidades da cadeia de suprimento de conteúdo:
 
-<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-  <tr style="border: none;">
-    <td style="width: 45%; vertical-align: top; border: 2px solid #e0e0e0; padding: 20px; background: #fafafa;">
-      <p style="color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px; margin-top: 0;">Visualizações de produto viabilizadas pelo AEM Assets</h3>
-      <ul style="margin: 0; padding-left: 20px;">
+<table>
+  <tr>
+    <td align="left">
+      <strong>Visualizações de produto fornecidas pelo AEM Assets</strong>
+      <ul>
         <li>Gerente de ativos digitais (DAM) de vídeo e imagem de produto integrados e automatizados</li>
         <li>Redimensionar, cortar e converter imagens</li>
         <li>Entrega de vídeo e imagem em alta velocidade</li>
@@ -123,12 +111,13 @@ A comparação a seguir ajuda a selecionar a melhor opção para as necessidades
         <li>Seletor de ativos integrado</li>
       </ul>
     </td>
-    <td style="width: 10%; text-align: center; vertical-align: middle; font-size: 98px; color: #d32f2f; font-weight: bold;">
-      ›
+    <td align="center">
+      <br><br><br><br><br><br><br><br><br><br><br>
+      <img src="../assets/icon-double-chevron-right.svg" alt="divisa" width="100">
     </td>
-    <td style="width: 45%; vertical-align: top; border: 2px solid #e0e0e0; padding: 20px; background: #fafafa;">
-      <p style="color: #d32f2f; border-bottom: 2px solid #d32f2f; padding-bottom: 10px; margin-top: 0;">AEM Assets</h3>
-      <ul style="margin: 0; padding-left: 20px;">
+    <td align="left">
+      <strong>AEM Assets</strong>
+      <ul>
         <li>Todos os recursos dos Visuais do produto</li>
         <li>Gerenciador de ativos digitais de marketing completo (DAM)</li>
         <li>Usuários ilimitados (pagamento por usuário)</li>
@@ -139,19 +128,16 @@ A comparação a seguir ajuda a selecionar a melhor opção para as necessidades
           <li>Suporte a modelo 3D e conteúdo imersivo</li>
           <li>Suporte ao PDF</li>
           <li>Corte inteligente alimentado por IA</li>
-         <li>Modelos dinâmicos de imagem</li>
-        <li>Marcação inteligente</li>
-        <li>Rastreamento e análise do desempenho dos ativos</li>
+          <li>Modelos dinâmicos de imagem</li>
+          <li>Marcação inteligente</li>
+          <li>Rastreamento e análise do desempenho dos ativos</li>
         </ul>
       </ul>
     </td>
   </tr>
-</table>
-
-<table style="width: 100%; margin: 20px 0;">
-  <tr>
-    <td style="background: #f5f5f5; padding: 15px; text-align: center; font-weight: bold;">
-      A integração da marca Adobe está disponível para facilitar a migração entre ofertas.
+    <tr>
+    <td align="center" colspan="3">
+      <strong>A integração com a marca Adobe está disponível para facilitar a migração entre as ofertas.</strong>
     </td>
   </tr>
 </table>
@@ -211,7 +197,7 @@ Os desenvolvedores podem usar as abrangentes [APIs do GraphQL](https://developer
 
 <!-- ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. -->
 
