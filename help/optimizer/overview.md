@@ -2,11 +2,11 @@
 title: O que é o Adobe Commerce Optimizer?
 description: Saiba mais sobre  [!DNL Adobe Commerce Optimizer]  e seus principais recursos.
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 877f3c377715f204904eefe3b93d796084721aa7
+source-git-commit: 69c752322b01985a2eb55de69d4736d75f6bd60a
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '899'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Com [!DNL Adobe Commerce Optimizer], você pode:
 
 Assista ao vídeo a seguir para obter uma visão geral de alto nível do [!DNL Adobe Commerce Optimizer]:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450468?captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## Quem se beneficia mais de [!DNL Adobe Commerce Optimizer]?
 
@@ -79,7 +79,7 @@ Defina as visualizações e políticas do catálogo. O catálogo não só conté
 
 Os principais recursos incluem:
 
-- **Assimilação de catálogo de terceiros** - Assimile dados de catálogo de qualquer origem de terceiros (seu catálogo Commerce existente, PIM, ERP e assim por diante). Os dados do catálogo são assimilados diretamente na camada de serviços de merchandising, que é um componente SaaS chamado Serviços de merchandising fornecido pelas Visualizações e políticas do catálogo (Visualizações e políticas do catálogo).
+- **Assimilação de catálogo de terceiros** - Assimile dados de catálogo de qualquer origem de terceiros (seu catálogo Commerce existente, PIM, ERP e assim por diante). Seus dados de catálogo são assimilados diretamente na camada de serviços de merchandising, que é um componente SaaS chamado Serviços de merchandising potencializados por Visualizações e políticas de catálogo.
 - **Serviços de merchandising baseados em exibições e políticas de catálogo** - Esta solução é a peça fundamental do [!DNL Adobe Commerce Optimizer]. Os serviços de merchandising viabilizados por visualizações e políticas de catálogo são um modelo de dados de catálogo altamente escalável e flexível que desbloqueia casos de uso de várias marcas, unidades de vários negócios e vários idiomas. Esses serviços de merchandising fornecem blocos fundamentais que os comerciantes podem usar para criar e gerenciar catálogos em escala. No [!DNL Adobe Commerce Optimizer], você pode gerenciar seu catálogo criando exibições e políticas de catálogo que melhor definem suas metas comerciais. Além disso, o merchandiser pode fornecer experiências personalizadas para impulsionar o tráfego e o engajamento usando descoberta de produtos&#x200B; recomendações e merchandising inteligente.
 - **Métricas antes e depois** - Fornece insights em tempo real sobre o desempenho de suas iniciativas de comércio. Você pode visualizar os resultados antes e depois de KPIs específicos e avaliar o impacto das alterações e otimizar para obter melhores resultados. Você pode exportar os resultados em uma PDF.
 - **vitrine da Commerce com a tecnologia do Edge Delivery** - Com a entrega do Edge, você pode iniciar seu site rapidamente usando componentes de vitrine pré-criados com funcionalidade de comércio integrada — incluindo páginas de listagem de produtos, páginas de detalhes do produto, carrinho e check-out.
