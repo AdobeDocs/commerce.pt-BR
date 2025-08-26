@@ -4,7 +4,7 @@ description: Saiba mais sobre os eventos que o [!DNL Adobe Commerce Optimizer] u
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: c102c558-a680-4622-80f0-6e5c34d497e9
-source-git-commit: f12aff86957c2f8f1f830da6f481d28cd54e1f20
+source-git-commit: 7a77cc79be9b6f835668b394909ea2325b642b03
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 0%
@@ -62,7 +62,7 @@ Esta tabela descreve os eventos usados pela descoberta de produtos [estratégias
 | Mais adicionados ao carrinho | `page-view`<br>`add-to-cart` | Página de detalhes do produto<br>Página de listagem do produto<br>Carrinho<br>Lista de desejos |
 | Visualizou isto, visualizou aquilo | `page-view`<br>`product-view` | Página de detalhes do produto |
 
-#### Eventos de painel obrigatórios
+### Eventos de painel obrigatórios
 
 Alguns eventos são necessários para preencher o [painel de desempenho de pesquisa](../../manage-results/search-performance.md)
 
@@ -174,4 +174,4 @@ Esta tabela descreve os eventos usados por cada tipo de recomendação.
 
 ## Suporte
 
-Se você observar discrepâncias de dados ou se as recomendações e os resultados da pesquisa não estiverem funcionando como esperado, [envie um tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Se você observar discrepâncias de dados ou se as recomendações e os resultados da pesquisa não estiverem funcionando como esperado, [envie um tíquete de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
