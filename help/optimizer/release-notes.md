@@ -3,7 +3,7 @@ title: Notas de versão
 description: As informações da versão mais recente de  [!DNL Adobe Commerce Optimizer].
 role: Admin, Architect, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 source-git-commit: 0b27bd80b6471f83dddb1f2e4a3ece5ebd9d05a0
 workflow-type: tm+mt
 source-wordcount: '103'
