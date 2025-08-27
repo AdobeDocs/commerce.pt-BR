@@ -4,10 +4,10 @@ user-guide-description: Documentação e recursos de  [!DNL Adobe Commerce Optim
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
+source-git-commit: 15a708db9a9a31798877ea3a400d5a9f6f930bda
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 10%
+source-wordcount: '92'
+ht-degree: 11%
 
 ---
 
@@ -18,6 +18,7 @@ ht-degree: 10%
 - [User Management](user-management.md)
 - [Responsabilidade compartilhada](shared-responsibility.md)
 - [Limites e limitações](boundaries-limits.md)
+- [Notas de versão](release-notes.md)
 - Gerenciamento de resultados {#manage-results}
    - [Relatório de métricas de sucesso](./manage-results/success-metrics.md)
    - [Desempenho da pesquisa](./manage-results/search-performance.md)

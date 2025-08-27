@@ -3,11 +3,11 @@ title: Introdução
 description: Saiba como começar a usar o  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: 7a77cc79be9b6f835668b394909ea2325b642b03
+source-git-commit: 15a708db9a9a31798877ea3a400d5a9f6f930bda
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '1002'
 ht-degree: 0%
 
 ---
@@ -38,24 +38,24 @@ Siga estas etapas essenciais para executar o ambiente [!DNL Adobe Commerce Optim
    ![Criar Instância](./assets/create-aco-instance.png){width="60%" zoomable="yes"}
 
 1. Definir configurações de instância:
-   - **Nome**: nome descritivo (por exemplo, &quot;Sandbox da minha empresa&quot;)
+   - **Nome da instância**: nome descritivo (por exemplo, &quot;Sandbox da minha empresa&quot;)
    - **Descrição**: breve descrição da finalidade
-   - **Região**: selecione sua região preferencial
    - **Tipo de ambiente**: começar com um ambiente **Sandbox** para testes
+   - **Região**: selecione sua região preferencial
 
 1. Clique em **Adicionar instância**.
 
-   A Cloud Manager é atualizada para incluir sua nova instância. Para obter detalhes sobre como acessá-lo e gerenciá-lo, consulte [Gerenciar uma instância](#manage-an-instance).
+   A Cloud Manager é atualizada para incluir sua nova instância. Para obter detalhes sobre como acessá-lo e gerenciá-lo, consulte [Gerenciar uma instância](#manage-instances).
 
 >[!NOTE]
 >
->As instâncias de sandbox estão limitadas à região da América do Norte. Não é possível alterar a região após a criação.
+>Você só pode criar ambientes de sandbox na região da América do Norte. Depois que uma instância é criada, não é possível alterar a região.
 
 ### Etapa 2. Configurar o ambiente
 
 Depois de criar sua instância:
 
-1. [Gerencie sua instância](#manage-an-instance) pelo Commerce Cloud Manager.
+1. [Gerencie sua instância](#manage-instances) pelo Commerce Cloud Manager.
 1. Configure o acesso do usuário usando o [Guia de Gerenciamento de Usuários](./user-management.md).
 
 ### Etapa 3. Adicionar dados de amostra (opcional)
@@ -217,6 +217,6 @@ Após concluir a instalação:
 ### Obter ajuda
 
 - **Recursos do desenvolvedor**: [Documentação do desenvolvedor](https://developer.adobe.com/commerce/services/optimizer/)
-- **Recursos da vitrine**: [documentação da vitrine da Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR)
-- **Tutoriais**: [Tutoriais do Commerce Optimizer](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **Suporte**: [recursos de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/overview)
+- **Recursos da vitrine**: [documentação da vitrine da Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Tutoriais**: [Tutoriais do Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **Suporte**: [recursos de Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
