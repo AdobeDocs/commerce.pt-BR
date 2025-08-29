@@ -25,4 +25,4 @@ ht-degree: 17%
    - [Visão geral](migration/overview.md)
    - [Ferramenta Migração de dados em massa](migration/bulk-data.md)
 - [Notas de versão](release-notes.md)
-- [Retornar à Página Inicial dos Serviços Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Retornar à Página Inicial dos Serviços Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/home)
