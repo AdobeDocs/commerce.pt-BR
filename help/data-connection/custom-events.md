@@ -3,10 +3,11 @@ title: Criar eventos personalizados
 description: Saiba como criar eventos personalizados para conectar seus dados do Adobe Commerce a outros produtos Adobe DX.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: db782c0a-8f13-4076-9b17-4c5bf98e9d01
+source-git-commit: 81fbcde11da6f5d086c2b94daeffeec60a9fdbcc
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 0%
+source-wordcount: '271'
+ht-degree: 1%
 
 ---
 
@@ -76,11 +77,7 @@ As substituições de atributo para eventos padrão são compatíveis somente co
 
 Para qualquer evento com `customContext`, o coletor substitui campos de junções definidos em contextos relevantes por campos em `customContext`. O caso de uso para substituições é quando um desenvolvedor deseja reutilizar e estender contextos definidos por outras partes da página em eventos já compatíveis.
 
->[!NOTE]
->
->Ao substituir eventos personalizados, o encaminhamento de eventos para o Experience Platform deve ser desativado para esse tipo de evento para evitar contagem dupla.
-
-Exemplos:
+### Exemplos
 
 Exibição de produto com substituições publicadas pelo Adobe Commerce Events SDK:
 
@@ -131,6 +128,30 @@ No Experience Platform Edge:
   }
 }
 ```
+
+Lojas baseadas em Luma:
+
+Em lojas baseadas em Luma, a publicação de eventos é implementada nativamente. Portanto, você pode definir dados personalizados estendendo o `customContext`.
+
+Por exemplo:
+
+```javascript
+mse.context.setCustom({
+  productListItems: [
+    {
+      productCategories: [
+        {
+          categoryID: "cat_15",
+          categoryName: "summer pants",
+          categoryPath: "pants/mens/summer",
+        },
+      ],
+    },
+  ],
+});
+```
+
+Consulte [substituição de evento personalizado](https://github.com/adobe/commerce-events/blob/main/examples/events/custom-event-override.md) para saber mais sobre como lidar com dados personalizados.
 
 >[!NOTE]
 >
