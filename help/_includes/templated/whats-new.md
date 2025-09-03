@@ -1,5 +1,5 @@
 ---
-source-git-commit: 757c1f430346ef82cba0f708cdd17580d8e6dba9
+source-git-commit: c7c9c19936ed1db8e262daaf391bd2d168b91741
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 3%
@@ -23,12 +23,12 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>FALTAM as novidades na atualização principal da PR #197: "remoção de scaffolder" atribuída a jhoover (https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/197)</p>
+      <td><p>Agora você pode usar a <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">ferramenta do criador de sites</a> para configurar sua loja sem usar a CLI.</p>
 </td>
       <td>
         Atualização importante
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bf3954af26fba0aa943261a0673166c0537e692e">confirmar</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/bf3954af26fba0aa943261a0673166c0537e692e">confirmar</a></td>
     </tr>
   </tbody>
 </table>
@@ -45,12 +45,12 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>O que está FALTANDO no novo tópico PR #158: "Adição de novo tópico sobre identidades personalizadas" atribuído ao emarr (https://git.corp.adobe.com/AdobeDocs/commerce.en/pull/158)</p>
+      <td><p>Adição de um tópico sobre como adicionar <a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/customize-data/custom-identities">atributos personalizados aos perfis</a>.</p>
 </td>
       <td>
         Novo tópico
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/403b15368c52f3965e65a9175c82c2f6cd1773bb">confirmar</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/403b15368c52f3965e65a9175c82c2f6cd1773bb">confirmar</a></td>
     </tr>
   </tbody>
 </table>
@@ -72,7 +72,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
       <td>
         Feedback
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ad0c36006a01491aee1ca1643c6a3ab63f39f7e4">confirmar</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ad0c36006a01491aee1ca1643c6a3ab63f39f7e4">confirmar</a></td>
     </tr>
   </tbody>
 </table>
