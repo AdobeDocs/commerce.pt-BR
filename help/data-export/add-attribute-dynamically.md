@@ -3,7 +3,7 @@ title: Adicionar atributos de produto dinamicamente
 description: Saiba como adicionar atributos de produto personalizados ao feed de exportação de dados de forma dinâmica durante o processo de sincronização de dados.
 role: Admin, Developer
 exl-id: d5ed7497-4be1-440a-a567-81b64fdc54fc
-source-git-commit: bf45670a0bc5fb02dd229a9e3d7af7f2676c5a1f
+source-git-commit: 37d5699315e34f1504602090fae5201ee51cf470
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -176,3 +176,4 @@ Se você criar dinamicamente um atributo de produto personalizado e quiser usá-
    ```
    bin/magento saas:resync --feed=productattributes
    ```
+
