@@ -283,7 +283,7 @@ Os ![Novos](../assets/new.svg) [!DNL Product Recommendations] agora oferecem sup
 [!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.x e mais recentes
 
 ![Correção](../assets/fix.svg) Corrigido o erro &quot;Não é possível recuperar dados de opções do produto&quot; que poderia ocorrer durante a exportação do catálogo.
-![Correção](../assets/fix.svg) O símbolo de moeda na coluna _Receita_ do painel _[!DNL Product Recommendations]_agora reflete corretamente a moeda base configurada.
+![Correção](../assets/fix.svg) O símbolo de moeda na coluna _Receita_ do painel _[!DNL Product Recommendations]_&#x200B;agora reflete corretamente a moeda base configurada.
 
 ### 3.0.4 do magento/product-recommendations
 
