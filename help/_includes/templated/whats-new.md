@@ -23,7 +23,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição de documentação para o <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/extensibility/add-tax-attribute-set-inventory-attributes">módulo opcional de Atributos do Produto</a>. Quando este módulo é instalado em um ambiente Adobe Commerce, o processo de Exportação de Dados exporta automaticamente a classe de imposto, o conjunto de atributos e os metadados de inventário da configuração do produto Commerce para os feeds <code class="language-plaintext highlighter-rouge">products</code> e <code class="language-plaintext highlighter-rouge">product attributes</code>.</p>
+      <td><p>Adição de documentação para o <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/saas-data-export/extensibility/add-tax-attribute-set-inventory-attributes">módulo opcional de Atributos do Produto</a>. Quando este módulo é instalado em um ambiente Adobe Commerce, o processo de Exportação de Dados exporta automaticamente a classe de imposto, o conjunto de atributos e os metadados de inventário da configuração do produto Commerce para os feeds <code class="language-plaintext highlighter-rouge">products</code> e <code class="language-plaintext highlighter-rouge">product attributes</code>.</p>
 </td>
       <td>
         Novo tópico
@@ -45,7 +45,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Agora você pode usar a <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">ferramenta do criador de sites</a> para configurar sua loja sem usar a CLI.</p>
+      <td><p>Agora você pode usar a <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/storefront">ferramenta do criador de sites</a> para configurar sua loja sem usar a CLI.</p>
 </td>
       <td>
         Atualização importante
@@ -67,7 +67,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição de um tópico sobre como adicionar <a href="https://experienceleague.adobe.com/en/docs/commerce/data-connection/customize-data/custom-identities">atributos personalizados aos perfis</a>.</p>
+      <td><p>Adição de um tópico sobre como adicionar <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/data-connection/customize-data/custom-identities">atributos personalizados aos perfis</a>.</p>
 </td>
       <td>
         Novo tópico
