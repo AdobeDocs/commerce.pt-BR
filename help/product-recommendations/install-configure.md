@@ -41,7 +41,7 @@ O [!DNL Product Recommendations] for Page Builder é um módulo opcional e é in
 composer require magento/module-page-builder-product-recommendations
 ```
 
-Ao habilitar [!DNL Product Recommendations] no Page Builder, você pode adicionar uma [unidade de recomendação](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations) existente e ativa a qualquer conteúdo criado no Page Builder, como páginas, blocos e blocos dinâmicos.
+Ao habilitar [!DNL Product Recommendations] no Page Builder, você pode adicionar uma [unidade de recomendação](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/page-builder/add-content/recommendations) existente e ativa a qualquer conteúdo criado no Page Builder, como páginas, blocos e blocos dinâmicos.
 
 Consulte [Usar [!DNL Product Recommendations] com conteúdo do Page Builder](page-builder.md) para obter mais instruções.
 
@@ -59,13 +59,13 @@ composer require magento/module-visual-product-recommendations
 
    A configuração dessa conexão permite a sincronização de dados e a comunicação entre a instância do Commerce, o Serviço de catálogo e outros serviços de suporte. A sincronização de dados é realizada pela [extensão de Exportação de Dados SaaS](../data-export/overview.md).
 
-1. Para garantir que a exportação de catálogo possa ser executada corretamente, confirme se os trabalhos [cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) e os [indexadores](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) estão em execução e se o indexador `Product Feed` está definido como `Update by Schedule`.
+1. Para garantir que a exportação de catálogo possa ser executada corretamente, confirme se os trabalhos [cron](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) e os [indexadores](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/cli/manage-indexers) estão em execução e se o indexador `Product Feed` está definido como `Update by Schedule`.
 
 Depois de vincular com êxito o aplicativo do Commerce aos Serviços da Commerce e especificar o [Espaço de Dados SaaS](../landing/saas.md#saas-configuration), a sincronização do catálogo será iniciada. Em seguida, você pode [verificar](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) se os dados comportamentais estão sendo enviados para a loja.
 
 ## Monitorar e solucionar problemas de sincronização de dados
 
-Com o Administrador do Commerce, é possível monitorar o processo de sincronização usando o [Painel de Gerenciamento de Dados](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Use a [CLI do Commerce](../data-export/data-export-cli-commands.md#troubleshooting) e os logs para gerenciar e solucionar problemas do processo.
+Com o Administrador do Commerce, é possível monitorar o processo de sincronização usando o [Painel de Gerenciamento de Dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-dashboard). Use a [CLI do Commerce](../data-export/data-export-cli-commands.md#troubleshooting) e os logs para gerenciar e solucionar problemas do processo.
 
 Em seguida, você pode [verificar](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) se os dados comportamentais estão sendo enviados para a loja.
 
@@ -119,4 +119,4 @@ Para permitir que as Recomendações de Produto passem por um firewall, adicione
 
 ## Desinstalar [!DNL Product Recommendations] {#uninstall}
 
-Se necessário, você pode [desinstalar](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) o módulo product-recommendations.
+Se necessário, você pode [desinstalar](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) o módulo product-recommendations.
