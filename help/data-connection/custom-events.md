@@ -4,10 +4,10 @@ description: Saiba como criar eventos personalizados para conectar seus dados do
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: db782c0a-8f13-4076-9b17-4c5bf98e9d01
-source-git-commit: 81fbcde11da6f5d086c2b94daeffeec60a9fdbcc
+source-git-commit: 25d796da49406216f26d12e3b1be01902dfe9302
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 1%
+source-wordcount: '314'
+ht-degree: 0%
 
 ---
 
@@ -73,16 +73,26 @@ No Experience Platform Edge:
 
 ## Lidar com substituições de eventos (atributos personalizados)
 
-As substituições de atributo para eventos padrão são compatíveis somente com o Experience Platform. Os dados personalizados não são encaminhados para painéis e rastreadores de métricas do Commerce.
+Para qualquer conjunto de eventos com um `customContext`, o coletor substitui ou estende os campos na carga do evento dos campos no `custom context`. O caso de uso para substituições é quando um desenvolvedor deseja reutilizar e estender contextos definidos por outras partes da página em eventos já compatíveis.
 
-Para qualquer evento com `customContext`, o coletor substitui campos de junções definidos em contextos relevantes por campos em `customContext`. O caso de uso para substituições é quando um desenvolvedor deseja reutilizar e estender contextos definidos por outras partes da página em eventos já compatíveis.
+As substituições de evento são aplicáveis somente ao encaminhar para o Experience Platform. Elas não são aplicadas aos eventos de análise do Adobe Commerce e do Sensei. O Coletor de Eventos da Adobe Commerce [README](https://github.com/adobe/commerce-events/blob/e34bcfc0deca8d5ac1f9310fc1ee4c1becf4ffbb/packages/storefront-events-collector/README.md) fornece informações adicionais.
 
-### Exemplos
+>[!NOTE]
+>
+>Ao aumentar o `productListItems` com atributos personalizados em cargas de evento do Experience Platform, associe produtos usando o SKU. Este requisito não se aplica a `product-page-view` eventos.
 
-Exibição de produto com substituições publicadas pelo Adobe Commerce Events SDK:
+### Uso
 
 ```javascript
-mse.publish.productPageView({
+const mse = window.magentoStorefrontEvents;
+
+mse.publish.productPageView(customCtx);
+```
+
+### Exemplo 1 - adicionar `productCategories`
+
+```javascript
+magentoStorefrontEvents.publish.productPageView({
     productListItems: [
         {
             productCategories: [
@@ -97,45 +107,11 @@ mse.publish.productPageView({
 });
 ```
 
-No Experience Platform Edge:
+### Exemplo 2 - adicionar contexto personalizado antes de publicar o evento
 
 ```javascript
-{
-  xdm: {
-    eventType: 'commerce.productViews',
-    identityMap: {
-      ECID: [
-        {
-          id: 'ecid1234',
-          primary: true,
-        }
-      ]
-    },
-    commerce: {
-      productViews: {
-        value : 1,
-      }
-    },
-    productListItems: [{
-        SKU: "1234",
-        name: "leora summer pants",
-        productCategories: [{
-            categoryID: "cat_15",
-            categoryName: "summer pants",
-            categoryPath: "pants/mens/summer",
-        }],
-    }],
-  }
-}
-```
+const mse = window.magentoStorefrontEvents;
 
-Lojas baseadas em Luma:
-
-Em lojas baseadas em Luma, a publicação de eventos é implementada nativamente. Portanto, você pode definir dados personalizados estendendo o `customContext`.
-
-Por exemplo:
-
-```javascript
 mse.context.setCustom({
   productListItems: [
     {
@@ -149,9 +125,56 @@ mse.context.setCustom({
     },
   ],
 });
+
+mse.publish.productPageView();
 ```
 
-Consulte [substituição de evento personalizado](https://github.com/adobe/commerce-events/blob/main/examples/events/custom-event-override.md) para saber mais sobre como lidar com dados personalizados.
+### Exemplo 3 - o contexto personalizado definido no editor substitui o contexto personalizado definido anteriormente na Camada de dados de clientes Adobe.
+
+Neste exemplo, o evento `pageView` terá **Nome de Página Personalizado 2** no campo `web.webPageDetails.name`.
+
+```javascript
+const mse = window.magentoStorefrontEvents;
+
+mse.context.setCustom({
+  web: {
+    webPageDetails: {
+      name: 'Custom Page Name 1'
+    },
+  },
+});
+
+mse.publish.pageView({
+  web: {
+    webPageDetails: {
+      name: 'Custom Page Name 2'
+    },
+  },
+});
+```
+
+### Exemplo 4 - adicionar contexto personalizado a `productListItems` com eventos com vários produtos
+
+```javascript
+const mse = window.magentoStorefrontEvents;
+
+mse.context.setCustom({
+  productListItems: [
+    {
+      SKU: "24-WB01", //Match SKU to override correct product in event payload
+      productCategory: "Hand Bag", //Custom attribute added to event payload
+      name: "Strive Handbag (CustomName)" //Override existing attribute with custom value in event payload
+    },
+    {
+      SKU: "24-MB04",
+      productCategory: "Backpack Bag",
+      name: "Strive Backpack (CustomName)"
+    },
+  ],
+});
+
+mse.publish.shoppingCartView();
+```
 
 >[!NOTE]
 >
