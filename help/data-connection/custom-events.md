@@ -4,9 +4,9 @@ description: Saiba como criar eventos personalizados para conectar seus dados do
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: db782c0a-8f13-4076-9b17-4c5bf98e9d01
-source-git-commit: 25d796da49406216f26d12e3b1be01902dfe9302
+source-git-commit: 4e8cf0ad3f8f94d4f59bc8d78a44f4b3e86cbc3e
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,9 @@ const mse = window.magentoStorefrontEvents;
 mse.publish.productPageView(customCtx);
 ```
 
-### Exemplo 1 - adicionar `productCategories`
+### Exemplo 1
+
+Este exemplo adiciona contexto personalizado ao publicar o evento.
 
 ```javascript
 magentoStorefrontEvents.publish.productPageView({
@@ -107,7 +109,9 @@ magentoStorefrontEvents.publish.productPageView({
 });
 ```
 
-### Exemplo 2 - adicionar contexto personalizado antes de publicar o evento
+### Exemplo 2
+
+Este exemplo adiciona contexto personalizado antes de publicar o evento.
 
 ```javascript
 const mse = window.magentoStorefrontEvents;
@@ -129,7 +133,9 @@ mse.context.setCustom({
 mse.publish.productPageView();
 ```
 
-### Exemplo 3 - o contexto personalizado definido no editor substitui o contexto personalizado definido anteriormente na Camada de dados de clientes Adobe.
+### Exemplo 3
+
+Este exemplo define o contexto personalizado no editor e substitui o contexto personalizado definido anteriormente na Camada de dados de clientes Adobe.
 
 Neste exemplo, o evento `pageView` terá **Nome de Página Personalizado 2** no campo `web.webPageDetails.name`.
 
@@ -153,7 +159,9 @@ mse.publish.pageView({
 });
 ```
 
-### Exemplo 4 - adicionar contexto personalizado a `productListItems` com eventos com vários produtos
+### Exemplo 4
+
+Este exemplo adiciona contexto personalizado a `productListItems` eventos com vários produtos.
 
 ```javascript
 const mse = window.magentoStorefrontEvents;
@@ -174,6 +182,22 @@ mse.context.setCustom({
 });
 
 mse.publish.shoppingCartView();
+```
+
+Lojas baseadas em Luma:
+
+As lojas baseadas em Luma implementam nativamente os eventos de publicação, de modo que você possa definir dados personalizados estendendo o `customContext`.
+
+Por exemplo:
+
+```javascript
+mse.context.setCustom({
+  web: {
+    webPageDetails: {
+      name: 'Custom Page Name'
+    },
+  },
+});
 ```
 
 >[!NOTE]
