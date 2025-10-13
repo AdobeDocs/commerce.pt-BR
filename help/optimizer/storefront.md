@@ -2,7 +2,7 @@
 title: Configurar a loja
 description: Saiba como configurar sua  [!DNL Adobe Commerce Optimizer] loja.
 role: Developer
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
 source-git-commit: c00cb55bd7b61d6506ee8b9b81d28118c1adde00
 workflow-type: tm+mt
@@ -216,26 +216,26 @@ A funcionalidade de pesquisa ![Lista de verificação](/help/assets/icons/Smock_
 
 Se os problemas persistirem:
 
-* Revise a [documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)
+* Revise a [documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR)
 * Verifique o [guia do desenvolvedor do Adobe Commerce Optimizer](https://developer.adobe.com/commerce/services/optimizer/)
-* Visite os [recursos de Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
+* Visite os [recursos de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/overview)
 
 ## Próximas etapas
 
 Depois de configurar e verificar sua loja, você pode:
 
-1. **[Instalar o Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#install-and-configure-sidekick)** - Extensão do navegador para editar, visualizar e publicar conteúdo diretamente do seu site
+1. **[Instalar o Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=pt-BR#install-and-configure-sidekick)** - Extensão do navegador para editar, visualizar e publicar conteúdo diretamente do seu site
 
-2. **[Configurar um ambiente de desenvolvimento local](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment)** - Criar um ambiente local para personalizar o código e o conteúdo da vitrine
+2. **[Configurar um ambiente de desenvolvimento local](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=pt-BR#set-up-local-environment)** - Criar um ambiente local para personalizar o código e o conteúdo da vitrine
 
 ### Aprender e explorar
 
 * **[Conclua o caso de uso completo](./use-case/admin-use-case.md)** - Saiba mais sobre a instalação de vitrine e o gerenciamento de catálogos usando o [!DNL Adobe Commerce Optimizer]
 
-* **[Explorar a personalização de vitrine](https://experienceleague.adobe.com/developer/commerce/storefront/setup/)** - Saiba mais sobre as opções avançadas de instalação e configuração
+* **[Explorar a personalização de vitrine](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=pt-BR)** - Saiba mais sobre as opções avançadas de instalação e configuração
 
-* **[Use os suplementos do Commerce para personalizar a experiência da vitrine eletrônica](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)**-Adicione componentes pré-construídos para aprimorar sua experiência com a vitrine eletrônica
+* **[Use os suplementos do Commerce para personalizar a experiência da vitrine eletrônica](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=pt-BR)**-Adicione componentes pré-construídos para aprimorar sua experiência com a vitrine eletrônica
 
 >[!MORELIKETHIS]
 >
-> Consulte a [documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) para saber mais sobre a atualização do conteúdo do site e a integração com componentes de front-end e dados de back-end do Commerce.
+> Consulte a [documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR) para saber mais sobre a atualização do conteúdo do site e a integração com componentes de front-end e dados de back-end do Commerce.
