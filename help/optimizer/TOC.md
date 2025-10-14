@@ -4,10 +4,10 @@ user-guide-description: Documentação e recursos de  [!DNL Adobe Commerce Optim
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: a1872e89625c0c2f78e25ebe9a91cc5bca1f44f6
+source-git-commit: b524c75b59984ddfa63ce133a917b9891dd6719f
 workflow-type: tm+mt
-source-wordcount: '91'
-ht-degree: 12%
+source-wordcount: '104'
+ht-degree: 10%
 
 ---
 
@@ -58,4 +58,7 @@ ht-degree: 12%
 - [Configurações](settings.md)
 - Caso de uso {#use-case}
    - [Caso de uso completo do administrador de vitrine e catálogo](./use-case/admin-use-case.md)
-- [Guia do desenvolvedor](https://developer.adobe.com/commerce/services/optimizer/)
+- Recursos do desenvolvedor {#developer}
+   - [Salesforce Commerce Connector](./developer/salesforce-connector.md)
+   - [Referência da API REST de Assimilação de Dados](https://developer.adobe.com/commerce/services/reference/rest/)
+   - [Referência da API do GraphQL de merchandising](https://developer.adobe.com/commerce/services/reference/graphql/)

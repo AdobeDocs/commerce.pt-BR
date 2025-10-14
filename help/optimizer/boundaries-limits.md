@@ -2,10 +2,11 @@
 title: Limites e limites
 description: Saiba mais sobre os limites de  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
-source-git-commit: 553490762ef10e43ccce1654acec59aeb83bb5f9
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
+source-git-commit: 1eb95f26a196ad4e66cbc980c7f8a41cae950cb6
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ A seguir são fornecidos limites e limites para [!DNL Adobe Commerce Optimizer].
 
 ## Catálogo
 
-- A taxa garantida de assimilação do catálogo é: 1000 produtos/minuto e 5000 preços/minuto.
+- A taxa garantida de assimilação do catálogo é: 1.000 produtos/minuto e 5.000 preços/minuto.
 - O número base de atualizações de produtos por dia é 1.000.000.
 - O número total de SKUs permitidas em uma única instância é 250.000. 
 - O número máximo de origens de catálogo é 50.
@@ -34,11 +35,11 @@ A seguir são fornecidos limites e limites para [!DNL Adobe Commerce Optimizer].
 - O número máximo de atributos pesquisáveis é 200.
 - O número máximo de atributos classificáveis é 50.
 - O número máximo de facetas é 100. Todas as facetas devem ser atributos filtráveis.
-- O número máximo de opções que um único facet cat retorna é 100, que pode ser aumentado por solicitação de suporte.
+- O número máximo de opções que uma única faceta pode retornar é 100, que pode ser aumentado por solicitação de suporte.
 
 ## Exibições e políticas do catálogo
 
-- O número máximo de exibições de catálogo por locatário é 1000.
+- O número máximo de exibições de catálogo por locatário é 1.000.
 - O número máximo de políticas atribuídas a uma exibição de catálogo é 10.
 - O número máximo de valores de atributo usados em uma política é 100. 
 
