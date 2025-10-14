@@ -93,7 +93,7 @@ A API [!DNL Live Search] permite que um cliente classifique por qualquer atribut
 
 Os metadados do índice são armazenados no pipeline de indexação e podem ser acessados pelo serviço de pesquisa.
 
-![[!DNL Live Search] diagrama da API de metadados do índice ](assets/index-metadata-api.svg)
+![[!DNL Live Search] diagrama da API de metadados do índice &#x200B;](assets/index-metadata-api.svg)
 
 ### Fluxo de trabalho de atributo classificável
 

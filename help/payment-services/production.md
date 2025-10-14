@@ -30,7 +30,7 @@ Depois de [configurar seus Serviços Commerce](connect.md#configure-commerce-ser
    Você é direcionado para a área de configurações na exibição Página Inicial com as opções relevantes expandidas (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), onde é possível habilitar as opções [!DNL Payment Services] como seu [método de pagamento](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}.
 
 1. Em _[!UICONTROL General Configuration]_, defina **[!UICONTROL Enable]**&#x200B;como `Yes`.
-1. Defina **[!UICONTROL Payment Action]**, para _[!UICONTROL Credit Card Fields]_&#x200B;e_[!UICONTROL PayPal payment buttons]_, para um dos seguintes:
+1. Defina **[!UICONTROL Payment Action]**, para _[!UICONTROL Credit Card Fields]_&#x200B;e&#x200B;_[!UICONTROL PayPal payment buttons]_, para um dos seguintes:
 
    | Configuração | Descrição |
    |---|---|
