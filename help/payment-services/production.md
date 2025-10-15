@@ -131,7 +131,7 @@ Para permitir que suas lojas sejam ativadas, solicite direitos de pagamentos à 
 1. Complete o formulário.
 1. Um membro da equipe de vendas entrará em contato com você.
 
-Como alternativa, você pode solicitar direitos de pagamento da Adobe em [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
+Como alternativa, você pode solicitar direitos de pagamento da Adobe em [business.adobe.com](https://business.adobe.com/br/resources/payment-services.html).
 
 >[!IMPORTANT]
 >
