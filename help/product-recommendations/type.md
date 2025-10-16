@@ -2,9 +2,9 @@
 title: Tipos de Recomendação
 description: Saiba mais sobre as recomendações que você pode implantar em várias páginas do site.
 exl-id: bbb290b0-b50b-43d9-bf71-1813298d5f39
-source-git-commit: 1548b7e11249febc2cd8682581616619f80c052f
+source-git-commit: 67d0b98f3a9317c0db944a176fd99375091a3970
 workflow-type: tm+mt
-source-wordcount: '1719'
+source-wordcount: '1991'
 ht-degree: 0%
 
 ---
@@ -32,9 +32,29 @@ Como prática recomendada, a Adobe recomenda as seguintes diretrizes ao usar o r
 >
 >Para obter mais informações sobre os eventos descritos neste artigo, consulte [eventos da loja](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) na documentação do desenvolvedor.
 
+## Requisitos em matéria de dados e comportamento
+
+O Recommendations de produtos é um sistema orientado por dados que depende de dados comportamentais coletados de sua loja. A qualidade e a quantidade de recomendações dependem da quantidade de dados do evento disponíveis.
+
+>[!IMPORTANT]
+>
+>A maioria dos tipos de recomendações requer dados comportamentais suficientes (como exibições de produtos, ações complementares ao carrinho e compras) para gerar resultados significativos. O sistema normalmente precisa de vários dias de atividade ativa do comprador para criar recomendações precisas. Consulte [indicadores de disponibilidade](create.md#readiness-indicators) para saber como o tráfego do site ajuda a preencher os vários tipos de recomendação.
+
+### O que acontece com dados insuficientes
+
+Quando não houver dados de evento suficientes para gerar recomendações, o sistema poderá:
+
+- Retorna resultados vazios para a unidade de recomendação.
+- Acione as [recomendações de backup](events.md#backup-recommendations), como mostrar os produtos do `Most viewed` quando as recomendações personalizadas ainda não estiverem disponíveis.
+- Exibir menos produtos do que [configurados](create.md) na unidade de recomendação.
+
 ## Personalizado {#personalized}
 
 Esses tipos de recomendações recomendam produtos com base no histórico comportamental específico do comprador em seu site. Por exemplo, se um comprador já buscou uma jaqueta ou comprou uma jaqueta no seu site, essas recomendações basicamente escolhem onde pararam e recomendam outras jaquetas ou produtos semelhantes.
+
+>[!NOTE]
+>
+>As recomendações personalizadas exigem que os compradores tenham um histórico comportamental estabelecido. Novos visitantes ou compradores sem histórico de interação suficiente verão [recomendações de backup](events.md#backup-recommendations), como Produtos mais visualizados, até que gerem sinais comportamentais suficientes no site.
 
 | Tipo | Descrição |
 |---|---|
@@ -48,6 +68,8 @@ Esses tipos de recomendações são orientados à prova social para ajudar os co
 >[!NOTE]
 >
 >Os tipos de recomendação &quot;visualizou isto, visualizou aquilo&quot;, &quot;visualizou isto, comprou aquilo&quot; e &quot;comprou isto, comprou aquilo&quot; não usam uma métrica de ocorrência simples, mas sim um algoritmo mais sofisticado de filtragem colaborativa que busca *semelhanças interessantes* que não se voltam para produtos populares. Os dados usados para informar esses tipos de recomendações são baseados no comportamento agregado do comprador derivado de várias sessões do site. Os dados não se baseiam no comportamento do comprador derivado de uma única ocorrência na sessão do site. Esses tipos de recomendações ajudam os compradores a encontrar os produtos adjacentes que podem não ser óbvios para emparelhar com o produto visualizado atualmente.
+>
+>Esses tipos de recomendações exigem dados substanciais de interação entre produtos para identificar correlações significativas. As lojas com diversidade limitada de catálogos de produtos ou tráfego baixo podem ver menos recomendações até que padrões comportamentais suficientes surjam.
 
 | Tipo | Descrição |
 |---|---|
@@ -61,6 +83,10 @@ Esses tipos de recomendações são orientados à prova social para ajudar os co
 
 Esses tipos de recomendações recomendam produtos que são os mais populares ou em tendência nos últimos sete dias.
 
+>[!NOTE]
+>
+>Recomendações baseadas em popularidade exigem dados de evento suficientes da loja. Se sua loja for nova ou tiver tráfego baixo, esses tipos de recomendação poderão retornar resultados limitados ou nenhum resultado até que os dados comportamentais adequados tenham sido coletados. Monitore o [indicador de disponibilidade de dados](workspace.md) para garantir um desempenho ideal.
+
 | Tipo | Descrição |
 |---|---|
 | Mais visualizados | Recomenda produtos que foram mais visualizados ao contar o número de sessões em que uma ação de visualização ocorreu nos últimos sete dias.<br/><br/>**Onde usado:**<br/>- Página inicial<br/>- Categoria<br/>- Detalhes do produto<br/>- Carrinho<br/>- Confirmação <br/><br/>**Rótulos sugeridos:**<br/>- Mais popular<br/>- Tendências<br/>- Popular no momento<br/>- Popular no momento<br/>- Produtos populares inspirados neste produto (PDP)<br/>- Mais vendidos |
@@ -71,6 +97,10 @@ Esses tipos de recomendações recomendam produtos que são os mais populares ou
 ## Alto desempenho {#highperf}
 
 Esses tipos de recomendações recomendam produtos de melhor desempenho com base em critérios de sucesso, como adicionar ao carrinho ou taxas de conversão.
+
+>[!NOTE]
+>
+>Os tipos de recomendação de alto desempenho dependem dos dados de conversão (compras e ações de adição ao carrinho). É possível que novos armazenamentos ou lojas com volumes de conversão baixos precisem coletar dados de 7 a 14 dias antes de essas recomendações entrarem em vigor.
 
 | Tipo | Descrição |
 |---|---|
