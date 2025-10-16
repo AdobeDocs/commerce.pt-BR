@@ -3,9 +3,9 @@ title: Opções de pagamento
 description: Defina as opções de pagamento para personalizar os métodos disponíveis para seus clientes de loja.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
+source-git-commit: 999407f00b118441abe39209a15f587ec73fa75d
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1350'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Quando [!DNL Fastlane] está habilitado, a opção [!UICONTROL Credit Card Field
 
 >[!NOTE]
 >
-> Atualmente, o Fastlane é suportado apenas para comerciantes dos EUA; Portanto, [!UICONTROL 3D Secure authentication] não é suportado atualmente.
+> Em instâncias de sandbox, as transações do Fastlane não mostram o endereço de entrega na visualização Atividade de transação.
 
 Consulte o tópico [Fastlane by PayPal](https://www.paypal.com/us/fastlane){target=_blank} para obter mais informações.
 
@@ -156,7 +156,7 @@ Para **capturar pagamentos com seu provedor de cartão de crédito existente _e_
 1. Certifique-se de que seu repositório esteja [no modo de produção](configure-admin.md#enable-payment-services).
 1. [Configure os botões de pagamento do PayPal desejados](configure-admin.md#payment-buttons).
 1. Desative _a opção_ na seção **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)**._[!UICONTROL Payment buttons]_
-1. Desative _a opção_ na seção **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** e use sua _[!UICONTROL Credit card fields]_&#x200B;conta de provedor de cartão de crédito existente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=pt-BR#payments)
+1. Desative _a opção_ na seção **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** e use sua _[!UICONTROL Credit card fields]_conta de provedor de cartão de crédito existente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)
 
 ## Opções de check-out
 
