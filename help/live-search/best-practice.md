@@ -101,7 +101,7 @@ Casos de uso recomendados para configurar redirecionamentos de pesquisa:
 
 Sempre teste os redirecionamentos de pesquisa para garantir que estejam funcionando corretamente e levando às páginas mais relevantes. Monitore continuamente seu desempenho e faça os ajustes necessários.
 
-Saiba como [gerenciar redirecionamentos de pesquisa](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms).
+Saiba como [gerenciar redirecionamentos de pesquisa](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/search/search-terms).
 
 ## Melhorar relevância dos resultados da pesquisa
 
@@ -155,7 +155,7 @@ Verifique se cada produto tem conteúdo relevante em cada atributo pesquisável.
 Saiba mais sobre atributos de produto para pesquisa:
 
 - [Definir atributos como pesquisáveis](workspace.md#set-attributes-as-searchable)
-- [Atribuir peso aos atributos](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Atribuir peso aos atributos](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Monitorar resultados da pesquisa
 
