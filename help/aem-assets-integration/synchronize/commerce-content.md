@@ -3,9 +3,9 @@ title: Manter conteúdo preciso e relevante
 description: Uma plataforma de comércio eletrônico é um dos canais de envolvimento mais importantes. Garantir atualizações perfeitas no sistema de gerenciamento de ativos garante que as vitrines comerciais sempre exibam as informações mais atualizadas do produto.
 feature: CMS, Media, Integration
 exl-id: 2c749e84-fcc4-4bf9-90b2-87438329889e
-source-git-commit: 6640635fca5c53fe4b06b9bbb3120fffc46cb0b8
+source-git-commit: 141f2291d1ead324a159053145e92ee7d4237a7d
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,10 @@ Ao dissociar a criação de conteúdo do gerenciamento de catálogos, as empresa
 * As atualizações de produtos permanecem rápidas porque a criação de ativos não atrasa as alterações no catálogo, permitindo maior agilidade no gerenciamento de novos produtos.
 
 * A automação melhora a eficiência e a precisão, reduzindo as incompatibilidades entre os dados do produto e o conteúdo associado.
+
+>[!NOTE]
+>
+> As importações de produtos CSV no PaaS e SaaS não acionam eventos de atualização. Use a API para importações e atualizações de catálogo.
 
 ## Alterações no ciclo de vida do AEM Assets
 
