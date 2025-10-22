@@ -79,7 +79,7 @@ A associação com a imagem selecionada será armazenada no Adobe Commerce como 
 
 >[!TIP]
 >
-> [DA.live (Criação de Documentos)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/#dalive-document-authoring){target=_blank} também fornece um seletor de Ativos para enriquecer dados.
+> [DA.live (Criação de Documentos)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/?lang=pt-BR#dalive-document-authoring){target=_blank} também fornece um seletor de Ativos para enriquecer dados.
 
 ## Vídeos de produtos
 
@@ -149,7 +149,7 @@ Após configurar o [Seletor de ativos do AEM](synchronize/asset-selector-integra
 
 1. Clique em **[!UICONTROL Save]** e continue.
 
-   Para obter mais informações sobre como criar uma categoria, consulte [Concluir o conteúdo da categoria](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) no **Guia de Gerenciamento do Catálogo do Commerce**.
+   Para obter mais informações sobre como criar uma categoria, consulte [Concluir o conteúdo da categoria](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) no **Guia de Gerenciamento do Catálogo do Commerce**.
 
 ## Atualizar um ativo
 
@@ -157,6 +157,6 @@ Depois de atualizar e aprovar um ativo no AEM Assets, as atualizações são aut
 
 Para obter detalhes, consulte a seguinte documentação do AEM Assets.
 
-* [Reprocessando ativos digitais](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+* [Reprocessando ativos digitais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
 
-* [Aprovar um ativo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
+* [Aprovar um ativo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)

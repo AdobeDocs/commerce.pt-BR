@@ -3,7 +3,7 @@ title: Notas de versão do [!DNL Adobe Commerce as a Cloud Service]
 description: Saiba mais sobre os recursos e as melhorias mais recentes do  [!DNL Adobe Commerce as a Cloud Service].
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: cf06dec6-8d6b-413e-9977-df88373c188e
 source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Notas de versão
 
-As notas de versão a seguir contêm atualizações para [!DNL Adobe Commerce as a Cloud Service]. Para obter informações sobre a versão de outros produtos, consulte o [Adobe Commerce Optimizer](../optimizer/release-notes.md) ou o [Adobe Commerce no local e o Adobe Commerce na Nuvem](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
+As notas de versão a seguir contêm atualizações para [!DNL Adobe Commerce as a Cloud Service]. Para obter informações sobre a versão de outros produtos, consulte o [Adobe Commerce Optimizer](../optimizer/release-notes.md) ou o [Adobe Commerce no local e o Adobe Commerce na Nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/overview).
 
 ## Agosto de 2025
 
