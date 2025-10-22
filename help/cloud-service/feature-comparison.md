@@ -1,9 +1,9 @@
 ---
 title: Comparação entre SaaS e PaaS da Adobe Commerce
 description: Compare os modelos SaaS e PaaS da Adobe Commerce para determinar a melhor abordagem de implementação para suas necessidades de negócios.
-role: Architect
+role: Developer
 exl-id: c8c9a0b4-f47c-46ec-bc9d-39dee9641f59
-source-git-commit: ba5cbe72507eed75a3627988deeaae8ffc515005
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 0%
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 A Adobe Commerce oferece três modelos de implantação:
 
-- [!BADGE Somente SaaS]{type=Positive url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."} [Adobe Commerce as a Cloud Service](overview.md) (SaaS)
-- [!BADGE Somente PaaS]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."} [Adobe Commerce na Nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/overview) (PaaS)
-- [Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/overview) (local)
+- [!BADGE Somente SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."} [Adobe Commerce as a Cloud Service](overview.md) (SaaS)
+- [!BADGE Somente PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."} [Adobe Commerce na Nuvem](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) (PaaS)
+- [Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) (local)
 
 Essa comparação enfoca as diferenças entre os modelos de software como serviço (SaaS) e plataforma como serviço (PaaS), que fornecem diferentes níveis de personalização, extensibilidade e controle sobre a implementação comercial.
 
@@ -26,45 +26,45 @@ Essa comparação enfoca as diferenças entre os modelos de software como servi�
 
 ## Recursos de gerenciamento de loja
 
-A [Interface do Administrador do Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/guide-overview) é a principal interface para acessar recursos para gerenciar operações de armazenamento de back-end, inventário, preços, promoções e interações com clientes. No entanto, o [!DNL Adobe Commerce as a Cloud Service] oferece soluções exclusivas que substituem alguns dos recursos conhecidos disponíveis no Adobe Commerce em nuvem e em projetos locais.
+A [Interface do Administrador do Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/guide-overview) é a principal interface para acessar recursos para gerenciar operações de armazenamento de back-end, inventário, preços, promoções e interações com clientes. No entanto, o [!DNL Adobe Commerce as a Cloud Service] oferece soluções exclusivas que substituem alguns dos recursos conhecidos disponíveis no Adobe Commerce em nuvem e em projetos locais.
 
 A tabela a seguir descreve os recursos e as soluções de substituição disponíveis no [!DNL Adobe Commerce as a Cloud Service]:
 
 <table>
     <thead>
         <tr>
-            <th>Modelo PaaS [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se a projetos do Adobe Commerce na nuvem (infraestrutura PaaS gerenciada pela Adobe) e somente a projetos locais."}</th>
-            <th>Modelo SaaS [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."}</th>
+            <th>Modelo PaaS [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se a projetos do Adobe Commerce na nuvem (infraestrutura PaaS gerenciada pela Adobe) e somente a projetos locais."}</th>
+            <th>Modelo SaaS [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."}</th>
             <th>Detalhes</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td><a href="https://experienceleague.adobe.com/pt-br/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management">Gerenciamento de ativos digitais</a></td>
+            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/gallery/media-gallery-asset-management">Gerenciamento de ativos digitais</a></td>
             <td><a href="../aem-assets-integration/overview.md">Integração do AEM Assets</a></td>
             <td>Um sistema robusto de gerenciamento de ativos digitais (DAM) que se integra ao Adobe Experience Manager para gerenciar conteúdo de mídia avançada. Como alternativa, o recurso de gerenciamento de arquivos e ativos digitais padrão fornece ferramentas básicas de gerenciamento de ativos para armazenar e gerenciar ativos digitais.</td>
         </tr>
         <tr>
-            <td><a href="https://experienceleague.adobe.com/pt-br/docs/commerce-admin/content-design/guide-overview">Sistema de gerenciamento de conteúdo (CMS)</a></td>
-            <td rowspan="3"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/merchants/get-started/?lang=pt-BR">Construtor de vitrines</a></td>
+            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview">Sistema de gerenciamento de conteúdo (CMS)</a></td>
+            <td rowspan="3"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/merchants/get-started/">Construtor de vitrines</a></td>
             <td rowspan="3">Um CMS que permite aos usuários criar e gerenciar conteúdo da loja facilmente usando a criação de documentos ou um Editor visual e inclui recursos nativos de experimentação.</td>
         </tr>
         <tr>
-            <td><a href="https://experienceleague.adobe.com/pt-br/docs/commerce-admin/page-builder/guide-overview">Page Builder</a></td>
+            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/guide-overview">Page Builder</a></td>
         </tr>
         <tr>
-            <td><a href="https://experienceleague.adobe.com/pt-br/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite">Substituições de URL</a></td>
+            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite">Substituições de URL</a></td>
         </tr>
         <tr>
-            <td><a href="https://experienceleague.adobe.com/pt-br/docs/commerce-admin/content-design/staging/content-staging">Preparo de conteúdo</a></td>
+            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging">Preparo de conteúdo</a></td>
             <td rowspan="2"><a href="../catalog-service/overview.md">Serviço de catálogo</a></td>
             <td rowspan="2">Um serviço de modelo de exibição avançado (somente leitura) para gerenciar dados de catálogo e renderizar experiências da loja relacionadas ao produto.</td>
         </tr>
         <tr>
-            <td><a href="https://experienceleague.adobe.com/pt-br/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser">Visual Merchandiser</a></td>
+            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/merchandising/visual-merch/visual-merchandiser">Visual Merchandiser</a></td>
         </tr>
         <tr>
-            <td><a href="https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/payments/payments">Pagamentos</a></td>
+            <td><a href="https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/payments">Pagamentos</a></td>
             <td><a href="../payment-services/guide-overview.md">Payment Services</a></td>
             <td>Um serviço de pagamento integrado que facilita transações seguras e eficientes.</td>
         </tr>
@@ -79,8 +79,8 @@ A tabela a seguir compara os recursos da plataforma e os recursos de extensibili
     <thead>
         <tr>
             <th>Recurso</th>
-            <th>Modelo PaaS [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se a projetos do Adobe Commerce na nuvem (infraestrutura PaaS gerenciada pela Adobe) e somente a projetos locais."}</th>
-            <th>Modelo SaaS [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."}</th>
+            <th>Modelo PaaS [!BADGE PaaS only]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se a projetos do Adobe Commerce na nuvem (infraestrutura PaaS gerenciada pela Adobe) e somente a projetos locais."}</th>
+            <th>Modelo SaaS [!BADGE SaaS only]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."}</th>
         </tr>
     </thead>
     <tbody>
@@ -170,7 +170,7 @@ A tabela a seguir compara os recursos da plataforma e os recursos de extensibili
     <tfoot>
         <tr>
             <td colspan="3">
-                <sup>1</sup> Os <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-admin/b2b/guide-overview">recursos B2B</a> principais, como gerenciamento e cotação da empresa, estão disponíveis prontamente no SaaS. No entanto, as personalizações específicas do setor podem exigir considerações adicionais de implementação.
+                <sup>1</sup> Os <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview">recursos B2B</a> principais, como gerenciamento e cotação da empresa, estão disponíveis prontamente no SaaS. No entanto, as personalizações específicas do setor podem exigir considerações adicionais de implementação.
                 <br><br>
                 <sup>2</sup> A extensibilidade do modelo de dados no SaaS oferece suporte a <a href="https://developer.adobe.com/commerce/webapi/graphql/schema/attributes/mutations/">entidades principais de extensão</a> além do produto e do cliente, incluindo entidades B2B. No entanto, os modelos de dados específicos do setor (por exemplo, atributos específicos do revendedor) podem exigir considerações arquitetônicas adicionais.
                 <br><br>

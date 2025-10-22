@@ -4,7 +4,7 @@ description: As informações da versão mais recente do  [!DNL Data Export Exte
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 9cca531a5f50850366a1c942fcda71eacecef5d0
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '1775'
 ht-degree: 0%
@@ -43,7 +43,7 @@ As atualizações incluem:
 
 ## Versão 103.4.11
 
-![Novo](../assets/new.svg) [!BADGE Somente PaaS]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."}
+![Novo](../assets/new.svg) [!BADGE Somente PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."}
 Foi adicionado suporte para atributos de produto adicionais para incluir classe de imposto, conjunto de atributos e dados de inventário das configurações de produto da Commerce no feed de produto. Os clientes que quiserem incluir esses atributos em feeds de exportação de produtos devem adicionar o módulo Atributos de produto extras aos seus projetos do Adobe Commerce. Consulte [Adicionar classe de imposto, conjunto de atributos e atributos de inventário](add-tax-attribute-set-inventory-attributes.md).<!--MDEE-1135-->
 ![Correção](../assets/fix.svg) resolveu um problema que causava a sincronização incorreta de atualizações de produtos excluídos se um erro ocorresse durante um índice de produto completo. Agora, todas as exclusões de produtos são sincronizadas corretamente, mesmo que ocorra um erro durante o processo de indexação. <!--MDEE-1144-->
 
@@ -218,14 +218,18 @@ A ![nova](../assets/new.svg) exportação de dados SaaS agora armazena em cache 
 ![Novo](../assets/new.svg) cron-jobs de feed de exportação imediata renomeados para `*_feed_resend_failed_items`.
 
 ![Novo](../assets/new.svg) renomeou feeds de exportação imediatos, IDs de exibição de indexador e tabelas de log de alterações.
+
 - tabelas de feed (e IDs de exibição do indexador):
+
    - `catalog_data_exporter_products` -> `cde_products_feed`
    - `catalog_data_exporter_product_attributes` -> `cde_product_attributes_feed`
    - `catalog_data_exporter_categories` -> `cde_categories_feed`
    - `catalog_data_exporter_product_prices` -> `cde_product_prices_feed`
    - `catalog_data_exporter_product_variants` -> `cde_product_variants_feed`
    - `inventory_data_exporter_stock_status` -> `inventory_data_exporter_stock_status_feed`
+
 - alterar nomes de tabela de log - Segue o mesmo padrão de nomenclatura das tabelas de feed, mas os nomes de tabela de log de alteração adicionam um sufixo `_cl`.  Por exemplo `catalog_data_exporter_products_cl`-> `cde-products_feed_cl`
+
 Se você tiver um código personalizado que faça referência a qualquer uma dessas entidades, atualize as referências com os novos nomes para garantir que seu código continue a funcionar corretamente.
 
 ![Correção](../assets/fix.svg) Defina o campo `modified_at` nos dados de feed somente para feeds que o exijam.

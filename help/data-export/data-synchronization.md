@@ -3,9 +3,9 @@ title: Sincronizar dados com a exportação de dados SaaS
 description: Saiba como o  [!DNL SaaS Data Export]  coleta e sincroniza dados entre instâncias do Adobe Commerce e serviços SaaS conectados.
 role: Admin, Developer
 exl-id: 2ca7c92a-fb52-4055-ae16-11e99b38d161
-source-git-commit: 291babe5dbdabb7d626ae744335b94e44ba6a6f5
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '880'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Quando você instala um serviço do Commerce que requer exportação de dados, como Serviço de catálogo, Live Search ou Recomendações de produto, uma coleção de módulos de exportação de dados do Saas é instalada para gerenciar o processo de coleta e sincronização de dados.
 
-A exportação de dados SaaS move os dados do produto de uma instância do Adobe Commerce para a plataforma de serviços da Commerce de forma contínua para manter os dados atualizados. Por exemplo, as Recomendações de produto exigem informações atuais do catálogo para retornar com precisão as recomendações com nomes, preços e disponibilidade corretos. Use o [painel de Gerenciamento de Dados](https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/data-services/catalog-sync) para observar e gerenciar o processo de sincronização, ou a interface de linha de comando para disparar uma sincronização e reindexar os dados do produto para consumo pelos Serviços Commerce.
+A exportação de dados SaaS move os dados do produto de uma instância do Adobe Commerce para a plataforma de serviços da Commerce de forma contínua para manter os dados atualizados. Por exemplo, as Recomendações de produto exigem informações atuais do catálogo para retornar com precisão as recomendações com nomes, preços e disponibilidade corretos. Use o [painel de Gerenciamento de Dados](https://experienceleague.adobe.com/en/docs/commerce/user-guides/data-services/catalog-sync) para observar e gerenciar o processo de sincronização, ou a interface de linha de comando para disparar uma sincronização e reindexar os dados do produto para consumo pelos Serviços Commerce.
 
 O diagrama a seguir mostra o fluxo de exportação de dados SaaS.
 
@@ -26,7 +26,7 @@ Os principais componentes do fluxo de exportação de dados SaaS incluem:
 - Módulos de exportação SaaS que exportam dados, configuram o roteamento e publicam os feeds para serviços conectados.
 - O Serviço do Adobe Commerce gerencia o processo de assimilação de dados para validar feeds recebidos e atualizações persistentes nos serviços conectados.
 
->[OBSERVAÇÃO!]
+>[!NOTE]
 >
 >Para garantir uma programação perfeita e evitar interrupções nas operações do site, a Adobe recomenda estimar o volume de dados e o tempo de sincronização antes de iniciar qualquer sincronização do feed de dados. Essa estimativa é importante ao planejar sincronizações iniciais ou atualizações de catálogos em larga escala, como alterações de preço em massa. Para obter detalhes, consulte [Estimar volume de dados e tempo de transmissão para sincronização de dados](estimate-data-volume-sync-time.md)
 
@@ -65,7 +65,7 @@ Esses trabalhos são executados a cada minuto.
 
 Para que a sincronização parcial funcione, o aplicativo Commerce requer a seguinte configuração:
 
-- [O agendamento de tarefas está habilitado por meio de trabalhos cron](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=pt-BR)
+- [O agendamento de tarefas está habilitado por meio de trabalhos cron](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html)
 
 - Todos os indexadores de exportação de dados SaaS estão configurados no modo `Update by Schedule`.
 
@@ -82,7 +82,7 @@ A sincronização Repetir itens com falha usa um processo separado para reenviar
 
 A maioria das atividades de sincronização é processada automaticamente com base na configuração do aplicativo. No entanto, a exportação de dados SaaS também fornece ferramentas para gerenciar o processo.
 
-- Os usuários administradores podem exibir e acompanhar o progresso da sincronização e obter informações sobre os dados no [painel de Gerenciamento de Dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-dashboard).
+- Os usuários administradores podem exibir e acompanhar o progresso da sincronização e obter informações sobre os dados no [painel de Gerenciamento de Dados](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard).
 
 - Desenvolvedores, integradores de sistemas ou administradores com acesso ao servidor de aplicativos do Commerce podem gerenciar o processo de sincronização e os feeds de dados usando a CLI (Command-Line Tool, ferramenta de linha de comando) do Adobe Commerce. Consulte [Gerenciar operações de sincronização usando a CLI do Commerce](data-export-cli-commands.md).
 
@@ -90,11 +90,11 @@ A maioria das atividades de sincronização é processada automaticamente com ba
 
 A sincronização parcial e a sincronização de itens com falha de Repetir funcionam somente se a instância do Commerce tiver sido configurada corretamente. Normalmente, a configuração é concluída ao configurar o serviço do Commerce. Se a exportação de dados não estiver funcionando corretamente, verifique a seguinte configuração.
 
-- [Confirme se os trabalhos cron estão em execução](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
+- [Confirme se os trabalhos cron estão em execução](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
 
-- Verifique se os indexadores estão sendo executados do [Admin](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/index-management) ou usando o comando `bin/magento indexer:info` da CLI do Commerce.
+- Verifique se os indexadores estão sendo executados do [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) ou usando o comando `bin/magento indexer:info` da CLI do Commerce.
 
-- Verifique se os indexadores dos seguintes feeds estão definidos como `Update by Schedule`: Atributos do Catálogo, Produto, Substituições de Produto e Variante de Produto. Você pode verificar os indexadores do [Gerenciamento de Índice](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/index-management) no Administrador ou usando a CLI (`bin/magento indexer:show-mode | grep -i feed`).
+- Verifique se os indexadores dos seguintes feeds estão definidos como `Update by Schedule`: Atributos do Catálogo, Produto, Substituições de Produto e Variante de Produto. Você pode verificar os indexadores do [Gerenciamento de Índice](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) no Administrador ou usando a CLI (`bin/magento indexer:show-mode | grep -i feed`).
 
 ### Notificações do gerenciador de eventos para o log de transferência de dados
 

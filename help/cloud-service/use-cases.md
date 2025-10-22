@@ -3,8 +3,8 @@ title: Casos de uso
 description: Saiba como realizar casos de uso práticos e cenários comerciais compatíveis com o [!DNL Adobe Commerce as a Cloud Service].
 role: User, Leader
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
-source-git-commit: 47eb8ee55bb093767f76aa23df8bb347ee280aae
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '1325'
 ht-degree: 0%
@@ -198,7 +198,7 @@ Considere um cenário em que você deseja modificar rapidamente o plano de fundo
 
 #### Adicionar a imagem ao Commerce AEM Assets
 
-1. No [Painel de Navegação](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) do AEM as a Cloud Service, selecione **Assets** > **Arquivos** > **Commerce** e clique no ativo criado na seção anterior.
+1. No [Painel de Navegação](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) do AEM as a Cloud Service, selecione **Assets** > **Arquivos** > **Commerce** e clique no ativo criado na seção anterior.
 
    ![pasta de comércio](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -248,7 +248,7 @@ O recurso Gerar variações do Adobe Commerce aproveita a IA gerativa para autom
 
 ### Gerar texto
 
-1. Abra o site da loja usando o [Editor Universal](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
+1. Abra o site da loja usando o [Editor Universal](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
 
 1. Selecione o bloco de texto que deseja editar.
 
@@ -262,7 +262,7 @@ O recurso Gerar variações do Adobe Commerce aproveita a IA gerativa para autom
 
 ### Gerar conteúdo e imagens
 
-1. Abrir [Gerar Variações](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. Abrir [Gerar Variações](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 1. Selecione o modelo [!UICONTROL **Banner principal**].
 
@@ -290,30 +290,36 @@ O recurso Gerar variações do Adobe Commerce aproveita a IA gerativa para autom
 Use as sugestões a seguir para resolver qualquer problema ao tentar utilizar esses tutoriais.
 
 * Se você precisar de orientação sobre comandos ou sinalizadores:
+
    1. Execute `aio --help` para ver todos os comandos e sinalizadores disponíveis.
    1. Para comandos específicos, use o sinalizador `--help`. Por exemplo:
       * `aio console --help`
       * `aio commerce –help`
 
 * Se você encontrar problemas de login inválidos:
-   1. Executar `aio config clear `.
-   1. Executar `aio auth login –-force `.
+
+   1. Executar `aio config clear`.
+   1. Executar `aio auth login –-force`.
    1. Faça logon no navegador.
    1. Selecione seu perfil.
    1. Volte para o terminal para continuar.
 
 * Se o comando `init` falhar:
+
    1. Executar `aio api-mesh delete`.
    1. Execute `aio commerce init` novamente.
 
 * Se você selecionou a organização, o projeto ou o espaço de trabalho errado antes de executar o comando `init`:
+
    1. Executar `aio console org select`.
    1. Executar `aio console project select`.
    1. Executar `aio console workspace select`.
 
 * Se você tiver uma seleção de locatário inválida:
+
    1. Cancele a execução atual da CLI pressionando **Ctrl-C**.
    1. Executar `aio commerce init`.
 
 * Se você encontrar uma instalação inválida do API Mesh:
+
    * Executar `aio api-mesh update mesh-config.json`.

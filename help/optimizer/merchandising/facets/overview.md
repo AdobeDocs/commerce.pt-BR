@@ -1,9 +1,9 @@
 ---
 title: Visão geral dos aspectos
 description: Saiba mais sobre os aspectos em [!DNL Adobe Commerce Optimizer] e como eles melhoram os resultados da pesquisa.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: cf16626e-8f85-47ca-b973-891b16c31fe3
-source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
+source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%
@@ -52,7 +52,7 @@ A tabela a seguir mostra a pesquisa padrão e as propriedades filtráveis de atr
 | colar | Sim |
 | cor | Sim |
 | custo | Sim |
-| eco_collection |
+| eco_collection |  |
 | gênero | Sim |
 | fabricante | Sim |
 | material | Sim |
