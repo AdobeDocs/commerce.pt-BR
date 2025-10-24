@@ -3,8 +3,8 @@ title: Introdução ao  [!DNL Live Search]
 description: Saiba mais sobre os requisitos de sistema e as etapas de instalação do  [!DNL Live Search] na Adobe Commerce.
 role: Admin, Developer
 exl-id: 45b985f1-9afb-4a07-93e8-f2fe231c5400
-badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
-source-git-commit: cb172b67d3284b30cda3960d9fc1d51d1237612c
+badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
+source-git-commit: 27c9479cfa702ce382c8ed09e99ef68d2ff057bf
 workflow-type: tm+mt
 source-wordcount: '2522'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Este artigo destina-se ao desenvolvedor ou ao integrador de sistemas de sua equi
 
 ## Requisitos
 
-- [Adobe Commerce](https://business.adobe.com/br/products/magento/magento-commerce.html) 2.4.4+
+- [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+
 - PHP 8.1, 8.2 ou 8.3
 - [!DNL Composer]
 - Execução de trabalhos e indexadores do cron
@@ -45,16 +45,16 @@ Este artigo destina-se ao desenvolvedor ou ao integrador de sistemas de sua equi
 
 Em um nível superior, a integração do [!DNL Live Search] exige que você:
 
-1. [Instalar](#1-install-the-live-search-extension) a extensão [!DNL Live Search]
-1. [Configurar](#2-configure-api-keys) as chaves de API
-1. [Sincronizar](#3-sync-your-catalog-data) seus dados de catálogo
-1. [Verificar](#4-verify-that-the-data-was-exported) se os dados do catálogo foram exportados
-1. [Configurar](#5-configure-the-data) os dados
-1. [Testar](#6-test-the-connection) a conexão
-1. [Validar](#7-verify-that-events-are-capturing-data) se os eventos estão capturando dados
-1. [Personalizar](#8-customize-for-your-storefront) sua loja
+1. [Instalar](#install) a extensão [!DNL Live Search]
+1. [Configurar](#configure) as chaves de API
+1. [Sincronizar](#sync) seus dados de catálogo
+1. [Verificar](#verify) se os dados do catálogo foram exportados
+1. [Configurar](#configuredata) os dados
+1. [Testar](#test) a conexão
+1. [Validar](#capture) se os eventos estão capturando dados
+1. [Personalizar](#customize) sua loja
 
-## &#x200B;1. Instalar a extensão [!DNL Live Search]
+## &#x200B;1. Instalar a extensão [!DNL Live Search] {#install}
 
 [!DNL Live Search] está instalado como uma extensão do [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html) até o [Composer](https://getcomposer.org/). Após instalar e configurar o [!DNL Live Search], o Adobe [!DNL Commerce] começa a compartilhar dados de pesquisa e catálogo com serviços SaaS. Neste ponto, os usuários do *Administrador* podem configurar, personalizar e gerenciar aspectos de pesquisa, sinônimos e regras de merchandising.
 
@@ -64,7 +64,7 @@ Em um nível superior, a integração do [!DNL Live Search] exige que você:
 
 Siga estas instruções se estiver instalando o [!DNL Live Search] em uma nova instância do Commerce.
 
-1. Confirme se os [trabalhos do cron](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) e os [indexadores](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/index-management) estão em execução.
+1. Confirme se os [trabalhos do cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) e os [indexadores](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) estão em execução.
 
 1. Use o Composer para adicionar o módulo Live Search ao seu projeto:
 
@@ -92,7 +92,7 @@ Siga estas instruções se estiver instalando o [!DNL Live Search] em uma nova i
    bin/magento setup:upgrade
    ```
 
-1. Verifique se os [indexadores](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/index-management) a seguir estão definidos como &quot;Atualizar por Agendamento&quot;:
+1. Verifique se os [indexadores](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) a seguir estão definidos como &quot;Atualizar por Agendamento&quot;:
 
    - Feed do produto
    - Feed de variante de produto
@@ -109,7 +109,7 @@ Depois de verificar os indexadores, a próxima etapa é [configurar as chaves de
 
 Siga estas instruções se estiver instalando o [!DNL Live Search] em uma instância existente do Commerce.
 
-1. Confirme se os [trabalhos do cron](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) e os [indexadores](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/index-management) estão em execução.
+1. Confirme se os [trabalhos do cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) e os [indexadores](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) estão em execução.
 
 1. Use o Composer para adicionar o módulo Live Search ao seu projeto:
 
@@ -137,7 +137,7 @@ Siga estas instruções se estiver instalando o [!DNL Live Search] em uma instâ
    bin/magento setup:upgrade
    ```
 
-1. Verifique se os [indexadores](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/index-management) a seguir estão definidos como &quot;Atualizar por Agendamento&quot;:
+1. Verifique se os [indexadores](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) a seguir estão definidos como &quot;Atualizar por Agendamento&quot;:
 
    - Feed do produto
    - Feed de variante de produto
@@ -172,13 +172,13 @@ Depois de verificar os indexadores, a próxima etapa é [configurar as chaves de
 
 >[!ENDTABS]
 
-## &#x200B;2. Configurar chaves de API
+## &#x200B;2. Configurar chaves de API {#configure}
 
 A chave de API do Adobe Commerce e sua chave privada associada são necessárias para conectar o [!DNL Live Search] a uma instalação do Adobe Commerce. A chave de API é gerada e mantida na conta do detentor da licença [!DNL Commerce], que pode compartilhá-la com o desenvolvedor ou com o integrador de sistemas. Em seguida, o desenvolvedor poderá criar e gerenciar os Espaços de dados SaaS em nome do detentor da licença. Se você já tiver um conjunto de chaves de API, não será necessário gerá-las novamente.
 
 Saiba como configurar suas chaves de API no artigo [Commerce Services Connector](../landing/saas.md).
 
-## &#x200B;3. Sincronizar os dados do catálogo
+## &#x200B;3. Sincronizar os dados do catálogo {#sync}
 
 O [!DNL Live Search] move dados de catálogo para a infraestrutura SaaS da Adobe. Os dados são indexados e os resultados da pesquisa são enviados desse índice diretamente para a loja. Dependendo do tamanho e da complexidade, a indexação pode levar de 30 minutos a algumas horas.
 
@@ -204,7 +204,7 @@ Quando você executa esses comandos, a sincronização inicial dos dados do cat�
 
 ### Monitorar progresso da sincronização
 
-Use o [Painel de Gerenciamento de Dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-dashboard) para monitorar o progresso da sincronização. Esse painel fornece informações valiosas sobre a disponibilidade dos dados do produto na loja, garantindo que eles possam ser exibidos imediatamente para os clientes.
+Use o [Painel de Gerenciamento de Dados](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) para monitorar o progresso da sincronização. Esse painel fornece informações valiosas sobre a disponibilidade dos dados do produto na loja, garantindo que eles possam ser exibidos imediatamente para os clientes.
 
 ![Painel de gerenciamento de dados](assets/data-management-dashboard.png)
 
@@ -214,7 +214,7 @@ Você também pode executar comandos de sincronização e solucionar problemas d
 
 Após a sincronização inicial, pode levar até 15 minutos para que atualizações de produtos incrementais sejam disponibilizadas para pesquisa na loja. Para saber mais, consulte [Streaming de Atualizações de Produto](indexing.md) na documentação de Indexação.
 
-## &#x200B;4. Verifique se os dados foram exportados
+## &#x200B;4. Verifique se os dados foram exportados {#verify}
 
 Para verificar se os dados do catálogo foram exportados do Adobe Commerce e sincronizados com o [!DNL Live Search], você tem algumas opções:
 
@@ -227,14 +227,14 @@ Para verificar se os dados do catálogo foram exportados do Adobe Commerce e sin
   >
   >Se você receber um erro `table does not exist`, procure entradas nas tabelas `catalog_data_exporter_products` e `catalog_data_exporter_product_attributes`. Estes nomes de tabela são usados em [!DNL Live Search] versões anteriores à 4.2.1.
 
-- Use a [área de jogo do GraphQL](https://experienceleague.adobe.com/pt-br/docs/commerce/live-search/live-search-admin/graphql) com a consulta padrão (consulte a [referência do GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) para obter mais detalhes) para verificar o seguinte:
+- Use a [área de jogo do GraphQL](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/graphql) com a consulta padrão (consulte a [referência do GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) para obter mais detalhes) para verificar o seguinte:
 
    - A contagem de produtos retornada está próxima do que você espera da exibição da loja.
    - Os aspectos são retornados.
 
-Para obter ajuda adicional, consulte [[!DNL Live Search] catálogo não sincronizado](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) na Base de Dados de Conhecimento de Suporte.
+Para obter ajuda adicional, consulte [[!DNL Live Search] catálogo não sincronizado](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) na Base de Dados de Conhecimento de Suporte.
 
-## &#x200B;5. Configurar os dados
+## &#x200B;5. Configurar os dados {#configuredata}
 
 A configuração correta dos dados do produto garante bons resultados de pesquisa para os clientes. Nesta seção, você ativa os widgets da lista de produtos e atribui categorias.
 
@@ -252,7 +252,7 @@ Se você tiver uma versão do [!DNL Live Search] anterior à 4.0.0+, deverá hab
 
 Quando você alterar essa configuração, a mensagem `Page cache is invalidated` será exibida. É necessário liberar o cache do Magento para salvar a alteração.
 
-1. Acesse a página [Gerenciamento de Cache](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/cache-management) seguindo um destes procedimentos:
+1. Acesse a página [Gerenciamento de Cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) seguindo um destes procedimentos:
 
    - Clique no link **[!UICONTROL Cache Management]** na mensagem acima do espaço de trabalho.
    - Na barra lateral _Admin_, vá para **[!UICONTROL System]** > _[!UICONTROL Tools]_>**[!UICONTROL Cache Management]**.
@@ -263,9 +263,9 @@ Quando você alterar essa configuração, a mensagem `Page cache is invalidated`
 
 ### Atribuir categorias
 
-Os produtos retornados em [!DNL Live Search] devem ser atribuídos a uma [categoria](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/categories/categories). Na Luma, por exemplo, os produtos são colocados em categorias como &quot;Homens&quot;, &quot;Mulheres&quot; e &quot;Engrenagens&quot;. As subcategorias também são configuradas para &quot;Topos&quot;, &quot;Partes inferiores&quot; e &quot;Inspeções&quot;. Essas atribuições de categoria melhoram a granularidade ao filtrar.
+Os produtos retornados em [!DNL Live Search] devem ser atribuídos a uma [categoria](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories). Na Luma, por exemplo, os produtos são colocados em categorias como &quot;Homens&quot;, &quot;Mulheres&quot; e &quot;Engrenagens&quot;. As subcategorias também são configuradas para &quot;Topos&quot;, &quot;Partes inferiores&quot; e &quot;Inspeções&quot;. Essas atribuições de categoria melhoram a granularidade ao filtrar.
 
-## &#x200B;6. Testar a conexão
+## &#x200B;6. Testar a conexão {#test}
 
 Com seus dados de catálogo agora em SaaS, teste para garantir que os dados do produto sejam retornados nas seguintes situações:
 
@@ -279,7 +279,7 @@ Se você encontrar problemas na loja, verifique o arquivo `var/log/system.log` e
 
 Para permitir [!DNL Live Search] por meio de um firewall, adicione `commerce.adobe.io` ao arquivo de inclui na lista de permissões.
 
-## &#x200B;7. Verifique se os eventos estão capturando dados
+## &#x200B;7. Verifique se os eventos estão capturando dados {#capture}
 
 Verifique se os eventos da loja implantados em seu site estão funcionando. Essa verificação é especialmente importante para implementações headless.
 
@@ -287,7 +287,7 @@ Verifique se os eventos da loja implantados em seu site estão funcionando. Essa
 - Verifique se o [painel do Live Search](performance.md) está exibindo dados de seu(s) ambiente(s) de não produção.
 - [Verificar coleção de eventos](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/).
 
-## &#x200B;8. Personalize para sua loja
+## &#x200B;8. Personalize para sua loja {#customize}
 
 Você instalou a extensão [!DNL Live Search], sincronizou, validou e configurou seus dados. A próxima etapa é garantir que os widgets do [!DNL Live Search] estejam de acordo com a aparência da sua loja.
 
@@ -347,7 +347,7 @@ Para atualizar para uma versão principal, como 3.1.1 para 4.0.0, edite o arquiv
 
 ## Desinstalando [!DNL Live Search]
 
-Para desinstalar o [!DNL Live Search], consulte [Desinstalar módulos](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/tutorials/uninstall-modules).
+Para desinstalar o [!DNL Live Search], consulte [Desinstalar módulos](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules).
 
 ## [!DNL Live Search] pacotes
 
@@ -356,7 +356,7 @@ A extensão [!DNL Live Search] consiste nos seguintes pacotes:
 | Pacote | Descrição |
 |--- |--- |
 | `module-live-search` | Permite que os comerciantes definam suas configurações de pesquisa para facetas, sinônimos, regras de consulta e assim por diante, além de fornecer acesso a um playground do GraphQL somente leitura para testar consultas do *Administrador*. |
-| `module-live-search-adapter` | Encaminha solicitações de pesquisa da loja para o serviço [!DNL Live Search] e renderiza os resultados na loja. <br />- Navegação de categoria - Encaminha solicitações da [navegação superior](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/navigation/navigation-top) da vitrine para o serviço de pesquisa.<br />- Pesquisa global - Encaminha solicitações do campo [pesquisa rápida](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/search/search) para o serviço [!DNL Live Search]. O campo de pesquisa rápida está localizado no canto superior direito da página da loja. |
+| `module-live-search-adapter` | Encaminha solicitações de pesquisa da loja para o serviço [!DNL Live Search] e renderiza os resultados na loja. <br />- Navegação de categoria - Encaminha solicitações da [navegação superior](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-top) da vitrine para o serviço de pesquisa.<br />- Pesquisa global - Encaminha solicitações do campo [pesquisa rápida](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) para o serviço [!DNL Live Search]. O campo de pesquisa rápida está localizado no canto superior direito da página da loja. |
 | `module-live-search-storefront-popover` | Um popover &quot;pesquisar ao digitar&quot; substitui a pesquisa rápida padrão e retorna dados e miniaturas dos principais resultados da pesquisa. |
 
 ## [!DNL Live Search] dependências
@@ -467,7 +467,7 @@ Depois que [!DNL Live Search] é habilitado, a extensão Exportação de Dados s
 
 ### Inventory management
 
-O [!DNL Live Search] oferece suporte aos recursos do [Inventory management](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/inventory/introduction) na Commerce (anteriormente conhecido como Inventário de Várias Source, ou MSI). Para habilitar o suporte completo, você deve [atualizar](install.md#updating-live-search) o módulo de dependência `commerce-data-export` para a versão 102.2.0+.
+O [!DNL Live Search] oferece suporte aos recursos do [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) na Commerce (anteriormente conhecido como Inventário de Várias Source, ou MSI). Para habilitar o suporte completo, você deve [atualizar](install.md#updating-live-search) o módulo de dependência `commerce-data-export` para a versão 102.2.0+.
 
 [!DNL Live Search] retorna um valor booleano observando se um produto está disponível no Inventory management, mas não contém informações sobre qual origem tem o estoque.
 
@@ -504,7 +504,7 @@ Esse módulo adiciona contextos adicionais às consultas do GraphQL:
 
 ### Suporte B2B
 
-[!DNL Live Search] dá suporte à [funcionalidade B2B](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/b2b/guide-overview) com [limitações](boundaries-limits.md#b2b-and-category-permissions) adicionais.
+[!DNL Live Search] dá suporte à [funcionalidade B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview) com [limitações](boundaries-limits.md#b2b-and-category-permissions) adicionais.
 
 ### Suporte ao PWA
 
