@@ -30,7 +30,7 @@ As atualizações incluem:
 
 ## Versão 103.4.15
 
-![Novo](../assets/new.svg) adição de suporte à extensão Status de sincronização do feed de dados para monitorar e solucionar problemas de transferências de dados do Adobe Commerce para serviços conectados (Serviço de catálogo, Live Search e Recomendações de produto). Para obter detalhes sobre como instalar e usar essa extensão, consulte [Monitoramento do Status de Sincronização do Feed de Dados](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) no *Guia de Administração do Commerce*. <!--MDEE-954-->
+![Novo](../assets/new.svg) adição de suporte à extensão Status de sincronização do feed de dados para monitorar e solucionar problemas de transferências de dados do Adobe Commerce para serviços conectados (Serviço de catálogo, Live Search e Recomendações de produto). Para obter detalhes sobre como instalar e usar essa extensão, consulte [Monitoramento do Status de Sincronização do Feed de Dados](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=pt-BR) no *Guia de Administração do Commerce*. <!--MDEE-954-->
 
 ## Versão 103.4.14
 
