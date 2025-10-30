@@ -3,7 +3,7 @@ title: Práticas recomendadas do [!DNL Live Search]
 description: Conheça as práticas recomendadas para implementar o [!DNL Live Search] em sua loja.
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
-source-git-commit: 4ba9734946f551784cd429ffa7cb23358f0f9710
+source-git-commit: 4634df5ef5421275d44a6a3419a4f55c11e4be45
 workflow-type: tm+mt
 source-wordcount: '2429'
 ht-degree: 0%
@@ -63,7 +63,7 @@ A funcionalidade de filtro e faceta é um componente crítico do site [!DNL Comm
 
 Para configurar um atributo de produto como uma faceta, ele deve ter as seguintes [propriedades definidas](facets-add.md#step-1-add-a-facet):
 
-- **[!UICONTROL Use in Search]** -  `No`
+- **[!UICONTROL Use in Search]** -  `Yes`
 - **[!UICONTROL Use in Layered Navigation]** -  `Filterable (with results)`
 - **[!UICONTROL Use in Search Results Layered Navigation]** -  `Yes`
 
@@ -101,7 +101,7 @@ Casos de uso recomendados para configurar redirecionamentos de pesquisa:
 
 Sempre teste os redirecionamentos de pesquisa para garantir que estejam funcionando corretamente e levando às páginas mais relevantes. Monitore continuamente seu desempenho e faça os ajustes necessários.
 
-Saiba como [gerenciar redirecionamentos de pesquisa](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/search/search-terms).
+Saiba como [gerenciar redirecionamentos de pesquisa](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms).
 
 ## Melhorar relevância dos resultados da pesquisa
 
@@ -155,7 +155,7 @@ Verifique se cada produto tem conteúdo relevante em cada atributo pesquisável.
 Saiba mais sobre atributos de produto para pesquisa:
 
 - [Definir atributos como pesquisáveis](workspace.md#set-attributes-as-searchable)
-- [Atribuir peso aos atributos](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Atribuir peso aos atributos](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Monitorar resultados da pesquisa
 

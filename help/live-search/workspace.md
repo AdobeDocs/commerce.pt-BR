@@ -2,7 +2,7 @@
 title: Configuração do Live Search
 description: O espaço de trabalho  [!DNL Live Search]  é usado para configurar, gerenciar e monitorar o desempenho da pesquisa.
 exl-id: 07c32b26-3fa4-4fae-afba-8a10866857c3
-source-git-commit: 4ba9734946f551784cd429ffa7cb23358f0f9710
+source-git-commit: 4634df5ef5421275d44a6a3419a4f55c11e4be45
 workflow-type: tm+mt
 source-wordcount: '2013'
 ht-degree: 0%
@@ -30,11 +30,11 @@ Se você estiver usando uma loja headless, consulte a seguinte documentação pa
 
 ### Clientes da área de saúde
 
-Se você for um cliente da área de saúde e tiver instalado a [extensão HIPAA do Data Services](../data-connection/hipaa-readiness.md#installation), que faz parte da [conexão de dados](../data-connection/overview.md), os dados do evento de vitrine usados por [!DNL Live Search] não serão mais capturados. Isso ocorre porque os dados do evento da loja são gerados no lado do cliente. Para continuar capturando e enviando dados do evento da loja, habilite novamente a coleção de eventos para [!DNL Live Search]. Consulte [configuração geral](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/config/general/general#data-services) para saber mais.
+Se você for um cliente da área de saúde e tiver instalado a [extensão HIPAA do Data Services](../data-connection/hipaa-readiness.md#installation), que faz parte da [conexão de dados](../data-connection/overview.md), os dados do evento de vitrine usados por [!DNL Live Search] não serão mais capturados. Isso ocorre porque os dados do evento da loja são gerados no lado do cliente. Para continuar capturando e enviando dados do evento da loja, habilite novamente a coleção de eventos para [!DNL Live Search]. Consulte [configuração geral](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services) para saber mais.
 
 ## Definir o escopo
 
-Inicialmente, o [escopo](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=pt-BR#scope-settings) de todas as configurações de [!DNL Live Search] está definido como `Default Store View`. Se a instalação do [!DNL Commerce] incluir vários modos de exibição de repositório, defina o **Escopo** como [modo de exibição de repositório](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=pt-BR) ao qual as configurações das facetas se aplicam.
+Inicialmente, o [escopo](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) de todas as configurações de [!DNL Live Search] está definido como `Default Store View`. Se a instalação do [!DNL Commerce] incluir vários modos de exibição de repositório, defina o **Escopo** como [modo de exibição de repositório](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) ao qual as configurações das facetas se aplicam.
 
 ## Opções de Menu
 
@@ -50,7 +50,7 @@ Inicialmente, o [escopo](https://experienceleague.adobe.com/docs/commerce-admin/
 
 ## Definir atributos como pesquisáveis
 
-Para produzir resultados altamente direcionados, revise o conjunto de atributos de produto [pesquisáveis](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=pt-BR) (`searchable=true`). Para garantir relevância, torne os atributos pesquisáveis somente se eles tiverem conteúdo com significado claro e conciso. Evite usar atributos que contenham texto menos preciso e longo, como `description`, que, embora habilitado para pesquisa por padrão, pode reduzir a precisão dos resultados da pesquisa. Por exemplo, se uma pessoa procurar por &quot;shorts&quot; e houver camisas com uma descrição que inclua o termo &quot;mangas curtas&quot;, as camisas serão incluídas nos resultados da pesquisa.
+Para produzir resultados altamente direcionados, revise o conjunto de atributos de produto [pesquisáveis](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`). Para garantir relevância, torne os atributos pesquisáveis somente se eles tiverem conteúdo com significado claro e conciso. Evite usar atributos que contenham texto menos preciso e longo, como `description`, que, embora habilitado para pesquisa por padrão, pode reduzir a precisão dos resultados da pesquisa. Por exemplo, se uma pessoa procurar por &quot;shorts&quot; e houver camisas com uma descrição que inclua o termo &quot;mangas curtas&quot;, as camisas serão incluídas nos resultados da pesquisa.
 
 Para permitir que os atributos sejam pesquisáveis, conclua as seguintes etapas:
 
@@ -58,7 +58,7 @@ Para permitir que os atributos sejam pesquisáveis, conclua as seguintes etapas:
 1. Selecione o atributo que você deseja pesquisar, como `color`.
 1. Selecione **Propriedades da vitrine** e defina **Usar na Pesquisa** como `yes`.
 
-[!DNL Live Search] também respeita o [peso](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html?lang=pt-BR#weighted-search) de um atributo de produto, conforme definido no Adobe Commerce. Atributos com um peso maior aparecerão mais altos nos resultados da pesquisa.
+[!DNL Live Search] também respeita o [peso](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) de um atributo de produto, conforme definido no Adobe Commerce. Atributos com um peso maior aparecerão mais altos nos resultados da pesquisa.
 
 Os seguintes atributos são sempre pesquisáveis:
 
@@ -103,9 +103,9 @@ Essas novas condições aprimoram o mecanismo de filtragem de consultas de pesqu
 
 #### Implementação
 
-1. No Administrador, [defina um atributo de produto](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) para ser pesquisável.
+1. No Administrador, [defina um atributo de produto](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) para ser pesquisável.
 
-   Consulte a lista de [atributos](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/product-attributes/attributes-input-types) pesquisáveis.
+   Consulte a lista de [atributos](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) pesquisáveis.
 
 1. Especifique o recurso de pesquisa para esse atributo, como **Contém** (padrão) ou **Começa com**. Você pode especificar no máximo seis atributos a serem habilitados para **Contém** e seis atributos a serem habilitados para **Começa com**. Além disso, para a indexação **Contains**, o comprimento da sequência de caracteres é limitado a 50 caracteres ou menos.
 
@@ -145,7 +145,7 @@ Facetas e sinônimos são outra maneira de melhorar a experiência de pesquisa p
 
 >[!NOTE]
 >
->Um atributo de produto só poderá ser filtrado se a configuração do atributo de produto tiver as propriedades necessárias: *Usar na Pesquisa = Não*, *Usar na Navegação em Camadas de Resultados da Pesquisa=sim* e *Usar na Navegação em Camadas=Filtrável (com resultados)*. Se essas propriedades estiverem ausentes ou não estiverem definidas corretamente, o atributo não estará visível na configuração Faceta. Para obter instruções de configuração, consulte [Adicionar uma faceta](facets-add.md#add-a-facet).
+>Um atributo de produto só poderá ser filtrado se a configuração do atributo de produto tiver as propriedades necessárias: *Usar na Pesquisa = Sim*, *Usar na Navegação em Camadas de Resultados da Pesquisa=sim* e *Usar na Navegação em Camadas=Filtrável (com resultados)*. Se essas propriedades estiverem ausentes ou não estiverem definidas corretamente, o atributo não estará visível na configuração Faceta. Para obter instruções de configuração, consulte [Adicionar uma faceta](facets-add.md#add-a-facet).
 
 [Sinônimos](synonyms.md) são termos que você pode definir para ajudar a orientar os usuários sobre o produto correto. Os usuários que procuram calças podem digitar &quot;calças&quot; ou &quot;pretas&quot;. É possível definir sinônimos para que esses termos de pesquisa direcionem os usuários aos resultados de &quot;calças&quot;.
 
@@ -182,11 +182,11 @@ Os preços na Página de listagem de produtos do widget e Popover são convertid
 
 ### Pesquisar termos
 
-[!DNL Live Search] dá suporte a [redirecionamentos de termo de pesquisa](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html?lang=pt-BR) em implementações em que o Adobe Commerce lida com o roteamento, como no Luma e outros temas baseados em php.
+[!DNL Live Search] dá suporte a [redirecionamentos de termo de pesquisa](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html) em implementações em que o Adobe Commerce lida com o roteamento, como no Luma e outros temas baseados em php.
 
 ## Valores de atributo padrão
 
-Os seguintes atributos de produto têm [propriedades de vitrine](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=pt-BR) que são usadas por [!DNL Live Search] e habilitadas por padrão.
+Os seguintes atributos de produto têm [propriedades de vitrine](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) que são usadas por [!DNL Live Search] e habilitadas por padrão.
 
 | Propriedade | Propriedade da vitrine | Atributo |
 |---|---|---|
