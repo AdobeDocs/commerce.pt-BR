@@ -1,11 +1,11 @@
 ---
 title: Desempenho da pesquisa
 description: A página Desempenho da pesquisa fornece o insight para os termos de pesquisa que os compradores usam.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 75b43c6f-d876-4379-ad70-5c2a2f29a5ac
-source-git-commit: b8b7af1119163589b7d83654b13edae656fea339
+source-git-commit: c9fc68fb54f66b6d471295c6d68f09404a7ac17a
 workflow-type: tm+mt
-source-wordcount: '1737'
+source-wordcount: '1837'
 ht-degree: 0%
 
 ---
@@ -136,3 +136,41 @@ Saiba mais sobre atributos de produto para pesquisa:
 | Zero resultados | Lista as consultas de pesquisa que não retornam resultados e o número de vezes usadas durante o intervalo de datas especificado. Limite de relatório: 500 termos principais |
 | Resultados populares | Lista os nomes dos produtos que receberam mais visualizações durante o intervalo de datas especificado. Os resultados populares são calculados somente com base em impressões e não são afetados pelo número de cliques ou pela receita gerada. Limite de relatório: 500 termos principais |
 | Pesquisas únicas | Lista as consultas de pesquisa exclusivas usadas durante o intervalo de datas especificado. Os dados do relatório são calculados da mesma forma que os dados de instantâneo de pesquisa exclusiva. Se um comprador digitar a mesma consulta de pesquisa duas vezes, mas com mais de uma hora de diferença, a pesquisa será considerada duas pesquisas exclusivas. Limite de relatório: 500 termos principais |
+
+## Propriedades de atributo não-sistema padrão
+
+A tabela a seguir mostra a pesquisa padrão e as propriedades filtráveis de atributos que não são do sistema. Definir a propriedade de atributo *Usar na Pesquisa* como `Yes` torna o atributo pesquisável em [!DNL Adobe Commerce Optimizer].
+
+| Código do atributo | Pesquisável |
+|--- |--- |
+| atividade | Sim |
+| attributes_brand | Sim |
+| marca | Sim |
+| clima | Sim |
+| colar | Sim |
+| cor | Sim |
+| custo | Sim |
+| eco_collection |  |
+| gênero | Sim |
+| fabricante | Sim |
+| material | Sim |
+| finalidade | Sim |
+| strap_bags | Sim |
+| style_general | Sim |
+
+## Propriedades padrão do atributo do sistema
+
+A tabela a seguir mostra a pesquisa padrão e as propriedades filtráveis dos atributos do sistema.
+
+| Código do atributo | Pesquisável |
+|--- |--- |
+| allow_open_amount | Sim |
+| descrição | Sim |
+| name | Sim |
+| preço | Sim |
+| descrição_curta | Sim |
+| sku | Sim |
+| status | Sim |
+| tax_class_id | Sim |
+| url_key | Sim |
+| peso | Sim |
