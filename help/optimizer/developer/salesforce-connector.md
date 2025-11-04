@@ -2,9 +2,9 @@
 title: Salesforce Commerce Connector
 description: Saiba mais sobre o [!DNL Commerce Optimizer SFCC Connector] que fornece um ponto de partida para a integração do Salesforce Commerce B2C com o [!DNL Adobe Commerce Optimizer] para sincronizar dados de catálogo e implementar e personalizar o conector para oferecer suporte a operações comerciais.
 role: Admin, Developer
-source-git-commit: f3da99ec4d2c518748d0911d6cf5d2d89ab45a47
+source-git-commit: fc6f8566a1932e830a37bcfa32cd1c4168c67c68
 workflow-type: tm+mt
-source-wordcount: '1099'
+source-wordcount: '1115'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 0%
 Baseado na tecnologia App Builder da Adobe, o [!DNL Commerce Optimizer Salesforce Commerce Connector] permite a transferência e o gerenciamento ininterruptos de dados de catálogo do Salesforce Commerce Cloud B2C para o [!DNL Adobe Commerce Optimizer]. Ele conecta ambas as plataformas, mantendo as informações, os preços e as atualizações do produto em sincronia, sem necessidade de uma nova plataforma.
 
 Pronto para uso, o conector oferece recursos confiáveis de sincronização de dados e a flexibilidade para personalizar workflows de acordo com as necessidades da sua empresa.
+
+Para obter uma série completa de tutoriais em vídeo, consulte [Saiba mais sobre o kit de início de nuvem do Salesforce Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
 
 ## Principais recursos
 
@@ -87,7 +89,6 @@ O [!DNL Commerce Optimizer SFCC Connector] consiste em vários componentes princ
 * **Aplicativo App Builder do Starter Kit SFCC do ACO** - Fornece funções sem servidor que lidam com a sincronização de dados entre o SFCC e o Adobe Commerce Optimizer.
 * **Cartucho SFCC personalizado** - Cartucho necessário que estende a instância do Salesforce Commerce Cloud com as APIs necessárias para a extração de dados.
 * **Interface do usuário de Gerenciamento** - Interface da Web para monitorar o status de sincronização e gerenciar operações do conector.
-
 
 ### Processo de sincronização
 
