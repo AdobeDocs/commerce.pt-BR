@@ -16,8 +16,8 @@ Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Revise o
 
 ## Geral
 
-- O módulo [Pesquisa Avançada](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) é desabilitado quando [!DNL Live Search] é instalado e o link Pesquisa Avançada no rodapé da loja é removido.
-- Não há suporte para o [Preço da camada](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) no campo [!DNL Live Search] e no Widget de página de listagem de produtos.
+- O módulo [Pesquisa Avançada](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/search/search) é desabilitado quando [!DNL Live Search] é instalado e o link Pesquisa Avançada no rodapé da loja é removido.
+- Não há suporte para o [Preço da camada](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/products/pricing/product-price-tier) no campo [!DNL Live Search] e no Widget de página de listagem de produtos.
 - Os preços dos produtos incluem IVA (imposto sobre valor agregado), mas [!DNL Live Search] não pode exibir o IVA como um valor separado.
 - A pesquisa de conteúdo (páginas e blocos do CMS) não é compatível.
 - O número máximo de resultados que podem ser paginados é 10.000. Para garantir que os compradores não precisem usar paginação profunda quando uma categoria ou resultado de pesquisa incluir um grande número de produtos, forneça maneiras significativas de filtrar produtos.
@@ -29,7 +29,7 @@ Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Revise o
 - Você pode filtrar os resultados usando as condições &quot;inicia com&quot; ou &quot;contém&quot; com algumas limitações, conforme descrito na [documentação do desenvolvedor](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#limitations).
 - Você só pode acompanhar métricas de desempenho no último ano.
 - Se uma consulta de pesquisa contiver várias palavras, o espaço em branco entre as palavras fará com que elas sejam tratadas como termos de pesquisa separados. Use [sinônimos](./synonyms.md) se desejar considerar as consultas de pesquisa de várias palavras.
-- [!DNL Live Search] não dá suporte a [redirecionamentos de termo de pesquisa](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) nativamente. Implemente redirecionamentos usando o Fastly ou outra configuração personalizada.
+- [!DNL Live Search] não dá suporte a [redirecionamentos de termo de pesquisa](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/search/search-terms) nativamente. Implemente redirecionamentos usando o Fastly ou outra configuração personalizada.
 
 ## Indexação
 
@@ -44,7 +44,7 @@ Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Revise o
 ## Facetas
 
 - No conjunto de atributos filtráveis definidos, é possível configurar até 100 atributos como facetas.
-- Dentro de uma faceta, um máximo de 100 grupos podem ser retornados. Se você precisar retornar mais de 100 compartimentos, [crie um tíquete de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) para que a Adobe possa analisar o impacto no desempenho e determinar se é viável aumentar esse limite no seu ambiente.
+- Dentro de uma faceta, um máximo de 100 grupos podem ser retornados. Se você precisar retornar mais de 100 compartimentos, [crie um tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) para que a Adobe possa analisar o impacto no desempenho e determinar se é viável aumentar esse limite no seu ambiente.
 - Os aspectos dinâmicos podem causar problemas de desempenho em índices grandes e índices com alta ordinalidade. Se você tiver criado facetas dinâmicas e notar qualquer deterioração de desempenho ou carregamento de página sem erros de tempo limite, tente alterar suas facetas para fixado para determinar se isso resolve seu problema de desempenho.
 - O status do estoque (`quantity_and_stock_status`) não tem suporte como uma faceta. Você pode usar o `inStock: 'true'` para filtrar por produtos de falta de estoque. Isso é suportado imediatamente no módulo `LiveSearchAdapter` quando &quot;Exibir produtos esgotados&quot; está definido como &quot;Verdadeiro&quot; no Administrador [!DNL Commerce].
 - Atributos de tipo de data não são suportados como uma faceta.
@@ -80,12 +80,12 @@ Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Revise o
 ## Permissões B2B e de categoria
 
 - Os produtos não serão exibidos se não forem adicionados a um catálogo compartilhado padrão.
-- Para restringir grupos de clientes usando [permissões de categoria](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions):
+- Para restringir grupos de clientes usando [permissões de categoria](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/categories/category-permissions):
    - Os produtos devem ser atribuídos à categoria raiz. (**Observação:** é possível remover essa limitação atualizando a extensão Exportação de dados SaaS para a versão 103.4.0+. Consulte [Gerenciar a extensão de exportação de dados](../data-export/manage-extension.md).
    - O grupo de clientes &quot;Não conectado&quot; deve receber permissões de navegação &quot;Permitir&quot;.
-   - Para restringir produtos ao grupo de clientes &quot;Não conectado&quot;, vá para cada categoria e defina as permissões para cada [grupo de clientes](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage).
+   - Para restringir produtos ao grupo de clientes &quot;Não conectado&quot;, vá para cada categoria e defina as permissões para cada [grupo de clientes](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage).
 - No momento, não há suporte pronto para uso para B2B com o widget PLP no PWA Studio. No entanto, você pode [usar a API](install.md#pwa-support) para implementar essa funcionalidade.
-- Os aspectos da categoria em [!DNL Live Search] podem exibir categorias que não podem ser exibidas para um [grupo de clientes](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage) específico.
+- Os aspectos da categoria em [!DNL Live Search] podem exibir categorias que não podem ser exibidas para um [grupo de clientes](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage) específico.
 - O [!DNL Live Search] pode oferecer suporte a até 1.000 grupos de clientes.
 
 ## [!DNL Storefront popover]
@@ -100,8 +100,8 @@ Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Revise o
 
 Para obter ajuda para solucionar alguns problemas comuns no [!DNL Live Search], consulte os seguintes artigos da base de dados de conhecimento:
 
-- [[!DNL Live Search] catálogo não sincronizado](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync)
-- [[!DNL Live Search] a classificação do painel e do resultado da pesquisa está incorreta](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect)
-- [[!DNL Live Search] as facetas não estão classificadas alfabeticamente](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted)
+- [[!DNL Live Search] catálogo não sincronizado](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync)
+- [[!DNL Live Search] a classificação do painel e do resultado da pesquisa está incorreta](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect)
+- [[!DNL Live Search] as facetas não estão classificadas alfabeticamente](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted)
 
-Se precisar de assistência adicional, contate o [suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Se precisar de assistência adicional, contate o [suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
