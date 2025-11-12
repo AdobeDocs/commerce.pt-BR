@@ -130,11 +130,11 @@ Depois de criar o projeto, salve os seguintes valores da página de credenciais 
 
 Salve os seguintes valores dos detalhes da instância do Adobe Commerce Optimizer.
 
-* **ID da instância—**O identificador exclusivo da instância do Adobe Commerce Optimizer. Também conhecida como ID do locatário.
+* **ID da instância—**&#x200B;O identificador exclusivo da instância do Adobe Commerce Optimizer. Também conhecida como ID do locatário.
 
   Obtenha a ID da instância do URL para acessar sua instância do Adobe Commerce Optimizer. Por exemplo, na URL `https://na1-sandbox.admin.commerce.adobe.com/1234567890abcdef`, a ID da instância é `1234567890abcdef`.
 
-* **Região —**A região em que sua instância da sandbox da Adobe Commerce Optimizer está hospedada.
+* **Região —**&#x200B;A região em que sua instância da sandbox da Adobe Commerce Optimizer está hospedada.
 
   Obtenha a região no URL do Adobe Commerce Optimizer. Por exemplo, na URL `https://na1-sandbox.admin.commerce.adobe.com/1234567890abcdef`, a região é `na1`.
 
@@ -172,7 +172,7 @@ Você pode verificar a sincronização de dados do Commerce Admin e do Commerce 
 
 1. Verifique se os dados do catálogo estão fluindo do Commerce para o Commerce Optimizer:
 
-   No Administrador do Commerce, abra a página [!UICONTROL Data Feed Sync Status] selecionando [!UICONTROL System]** > [!UICONTROL Data Transfer] > **[!UICONTROL Data Feed Sync Status]**.
+   No Administrador do Commerce, abra a página [!UICONTROL Data Feed Sync Status] selecionando [!UICONTROL System] **&#x200B; > [!UICONTROL Data Transfer] > &#x200B;** [!UICONTROL Data Feed Sync Status]**.
 
    ![Página Status da sincronização do feed de dados com relatórios de status do item de feed](./assets/data-feed-sync-status.png)
 
