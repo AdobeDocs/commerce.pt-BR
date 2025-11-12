@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
-source-git-commit: fd3857e93dbaaf7ffce97715b77ee63e8460af16
+source-git-commit: 8c2d206227d8dbac0e56bb7e687f217a3a62ddb0
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '930'
 ht-degree: 0%
 
 ---
@@ -22,8 +22,8 @@ Todos os serviços do Commerce se conectam à sua instância do Commerce por mei
 
 Quando o Commerce Services Connector está configurado, você tem acesso aos seguintes recursos:
 
-- [Serviços de vitrine](#storefront-services) - recursos alimentados por IA para descoberta de produtos, recomendações e pagamentos
-- [Serviços de integração](#integration-services) - Conexões com a Adobe Experience Platform, a AEM Assets e outras soluções da Adobe
+- **Serviços de vitrine** - recursos alimentados por IA para descoberta de produtos, recomendações e pagamentos
+- **Serviços de integração** - Conexões com a Adobe Experience Platform, a AEM Assets e outras soluções da Adobe
 
 Esses serviços ajudam a aumentar as conversões, fornecer experiências personalizadas e usar melhor os dados de comércio no ecossistema do Adobe.
 
@@ -33,7 +33,7 @@ Esses serviços ajudam a aumentar as conversões, fornecer experiências persona
 >
 >A Adobe recomenda atualizar para a versão mais recente compatível de todos os serviços da Commerce. Consulte as [notas de versão](release-notes-all.md).
 
-Além desses recursos, há ferramentas que permitem monitorar o fluxo de dados da instância do Commerce para a plataforma SaaS. Essas ferramentas podem sincronizar os dados automaticamente e ajudar você a otimizar o desempenho. Saiba mais sobre as [ferramentas de dados](#data-tools) disponíveis.
+Além desses recursos, há ferramentas que permitem monitorar o fluxo de dados da instância do Commerce para a plataforma SaaS. Essas ferramentas de dados podem sincronizar os dados automaticamente e ajudar você a otimizar o desempenho.
 
 ## Serviços disponíveis
 
@@ -168,11 +168,11 @@ As ferramentas de dados ajudam você a gerenciar e otimizar o fluxo de informaç
       </p>
    </td>
    <td valign="top">
-      <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
       <img alt="Monitorar sincronização de dados" src="../assets/icons/Monitoring.svg" width="40">
       </a>
       <div>
-          <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
          <strong>Painel de gerenciamento de dados</strong>
          </a>
       </div>
@@ -198,7 +198,7 @@ Se você deseja dimensionar seus negócios, melhorar a experiência do cliente o
 | Criar experiências personalizadas omnicanal | Seus dados de comércio estão em silos, impedindo que você forneça experiências personalizadas entre canais. | Use a [Conexão de Dados](../data-connection/overview.md) para enviar dados comportamentais, transacionais e de perfil à Adobe Experience Platform. Crie segmentos de clientes sofisticados, crie campanhas de carrinho abandonadas, públicos-alvo semelhantes e analise tendências sazonais em toda a jornada do cliente. |
 | Simplifique o gerenciamento de ativos digitais | O gerenciamento de imagens de produtos e mídia avançada em vários sistemas é demorado e sujeito a erros. | A [Integração do AEM Assets](../aem-assets-integration/overview.md) fornece gerenciamento de ativos centralizado, conectando o Adobe Commerce a um projeto do Adobe Experience Manager Assets, simplificando os fluxos de trabalho e garantindo experiências de marca consistentes em todos os pontos de contato. |
 | Otimizar o processamento de pagamentos | As opções de pagamento limitadas e as más experiências de pagamento estão prejudicando a satisfação e a conversão dos clientes. | Os [Serviços de Pagamento](../payment-services/guide-overview.md) oferecem vários métodos de pagamento, incluindo prestações sem juros, com um painel unificado para gerenciar pagamentos, pedidos e faturas. |
-| Gerenciar a sincronização de dados em escala | A indexação com muitos recursos está atrasando seu site e você não pode rastrear problemas de sincronização de dados facilmente. | [Exportação de Dados SaaS](../data-export/overview.md), [Indexador de Preços SaaS](../price-index/price-indexing.md) e o [Painel de Gerenciamento de Dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) sincronizam automaticamente dados de catálogo, pedido e inventário, descarregam cálculos de preço na infraestrutura de nuvem da Adobe e fornecem visibilidade em tempo real sobre o status da sincronização. |
+| Gerenciar a sincronização de dados em escala | A indexação com muitos recursos está atrasando seu site e você não pode rastrear problemas de sincronização de dados facilmente. | [Exportação de Dados SaaS](../data-export/overview.md), [Indexador de Preços SaaS](../price-index/price-indexing.md) e o [Painel de Gerenciamento de Dados](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) sincronizam automaticamente dados de catálogo, pedido e inventário, descarregam cálculos de preço na infraestrutura de nuvem da Adobe e fornecem visibilidade em tempo real sobre o status da sincronização. |
 | Conquiste clientes perdidos e reduza os retornos | As altas taxas de rotatividade do cliente e de retorno do produto estão afetando a lucratividade. | Combine a [Conexão de Dados](../data-connection/overview.md) com o Adobe Journey Optimizer e o Real-Time CDP para identificar padrões de retorno, criar campanhas de retorno, segmentar clientes por comportamento e enviar campanhas de reengajamento personalizadas por email e SMS. |
 | Tomar decisões de merchandising orientadas por dados | Você não tem certeza de quais produtos promover ou quando executar promoções. | O [Live Search](../live-search/overview.md) fornece insights de desempenho de pesquisa e ferramentas de merchandising para acessar métricas principais, analisar termos de pesquisa e usar regras de merchandising inteligentes para impulsionar ou enterrar produtos com base no comportamento real do cliente e nas metas comerciais. |
 | Mantenha a conformidade com dados confidenciais | Você precisa lidar com dados confidenciais do cliente enquanto mantém a conformidade com a HIPAA. | A [Conexão de Dados](../data-connection/overview.md) está pronta para HIPAA, permitindo que você compartilhe dados de back-office com a Experience Platform enquanto mantém a conformidade e lida sistematicamente com solicitações de privacidade. |
