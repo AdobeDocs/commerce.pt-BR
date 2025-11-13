@@ -1,11 +1,11 @@
 ---
 title: Desempenho do Recommendations
 description: A página de desempenho do Recommendations fornece informações sobre o desempenho das recomendações de produtos do insight.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
-source-git-commit: 0eea4658d554f2913c7c2d25e0c0753f22016aaa
+source-git-commit: 177ebffe0295fdc87b6f4a60473ebfda6bea0f01
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
@@ -20,19 +20,15 @@ A página Desempenho do Recommendations exibe uma lista de recomendações confi
 
 ![Desempenho de recomendações](../assets/rec-performance.png){zoomable="yes"}
 
-## Escolha a **Exibição de catálogo**
-
-Selecione a [exibição do catálogo](../setup/catalog-view.md) onde suas recomendações se aplicam.
-
-![Exibição de catálogo](../assets/catalog-view.png)
-
 ## Exibir um relatório
 
-Clique em **[!UICONTROL Date Range]** e selecione um dos seguintes intervalos:
+1. Escolha a **origem do catálogo**, como `en-US` onde as recomendações se aplicam.
 
-![Intervalo de datas das recomendações](../assets/rec-perf-date-range.png)
+1. Clique em **[!UICONTROL Date Range]** e selecione um dos seguintes intervalos:
 
-A tabela de recomendações é atualizada para exibir as métricas desse intervalo de datas.
+   ![Intervalo de datas das recomendações](../assets/rec-perf-date-range.png)
+
+   A tabela de recomendações é atualizada para exibir as métricas desse intervalo de datas.
 
 ## Personalizar tabela
 
@@ -46,14 +42,6 @@ A tabela de recomendações é atualizada para exibir as métricas desse interva
    - Para ocultar uma coluna visível, clique em qualquer nome de coluna com uma marca de seleção.
 
    A tabela é atualizada para incluir apenas as colunas selecionadas.
-
-## Definir filtros
-
-Clique no ícone de filtro para filtrar as métricas no espaço de trabalho de desempenho das recomendações.
-
-![Métricas de filtro](../assets/rec-filters.png)
-
-É possível configurar vários valores para cada um dos filtros. Consulte a [tabela abaixo](#column-descriptions) para obter descrições de cada filtro.
 
 ## Exibir detalhes
 
