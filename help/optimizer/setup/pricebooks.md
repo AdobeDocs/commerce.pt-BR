@@ -3,11 +3,11 @@ title: Catálogos de Preços
 description: Saiba como gerenciar catálogos de preços no [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: a1849830-3d0e-4df9-ab73-380659c3f9dc
-source-git-commit: 502d8d21ff052f4ecb212176459b38ce51f85dfc
+source-git-commit: 1c720bc3ba755639eff2f17912fb3a3446e367f6
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,25 @@ ht-degree: 0%
 
 As tabelas de preços permitem definir preços de produtos para uma origem de catálogo em diferentes níveis de clientes e mercados. Os catálogos de preços suportam um modelo hierárquico, permitindo até três níveis de catálogos de preços filhos aninhados em cada catálogo de preços base. Cada catálogo de preços pode fazer referência a um catálogo de preços pai, formando uma estrutura em árvore para origens de catálogo de preços.
 
+![Hierarquia do Catálogo de Preços](../assets/price-book-hier.png)
+
 O catálogo de preços base define a moeda para si mesmo e para todos os seus catálogos de preços filhos. Os catálogos de preços filhos herdam essa moeda e não podem substituí-la.
 
-Consulte a [documentação do desenvolvedor](https://developer.adobe.com/commerce/services/reference/rest/) para saber como criar, atualizar e excluir catálogos de preços para [!DNL Adobe Commerce Optimizer] usando a API de Catálogo de Preços.
+## Adicionar catálogos de preços ao Commerce Optimizer
+
+Você adiciona catálogos de preços ao Commerce Optimizer usando a API Catálogo de preços. Consulte a [documentação do desenvolvedor](https://developer.adobe.com/commerce/services/reference/rest/) para saber como criar, atualizar e excluir catálogos de preços para [!DNL Adobe Commerce Optimizer].
+
+## Exibir catálogos de preços no Commerce Optimizer
+
+Depois de assimilar catálogos de preços na Commerce Optimizer, você pode ver a lista de catálogos e suas IDs correspondentes na página **Exibição de catálogo**.
+
+1. Vá para _Configuração da loja_ e clique em **[!UICONTROL Catalog views]**.
+
+1. Clique em **[!UICONTROL Create catalog view]**. &#x200B;
+
+   Em configurar os detalhes de exibição do catálogo, selecione um dos catálogos de preços disponíveis.
+
+   ![Nomes e IDs do Catálogo de Preços](../assets/price-book-name-ids.png)
 
 ## Principais conceitos
 
