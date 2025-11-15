@@ -1,9 +1,10 @@
 ---
 title: Widget da página de listagem de produtos
 description: Habilitando e estilizando o  [!DNL Live Search Product Listing Page Widget]
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 50ba8046-869a-4071-b3a3-a6392544c07b
+source-git-commit: 7684d5cded63f2b0805ee307dff77932607c47eb
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,15 @@ O [!DNL Live Search Product Listing Page Widget] (PLP) usa a plataforma Commerce
 
 Quando o serviço [!DNL Live Search] é instalado, a funcionalidade de pesquisa padrão é convertida para [!DNL Live Search] automaticamente.
 
-O widget PLP [!DNL Live Search] é habilitado por padrão para novas instalações. Se você estiver atualizando o [!DNL Live Search] e o widget PLP já tiver sido desativado, ele permanecerá assim.
+O widget PLP [!DNL Live Search] é habilitado por padrão para novas instalações.
+
+Se você estiver atualizando o [!DNL Live Search] e o widget PLP já tiver sido desativado, ele permanecerá assim. Para ativá-lo:
+1. No Administrador do Adobe Commerce, acesse Lojas → Configurações → Configuração.
+1. Na navegação à esquerda, clique em **[!UICONTROL Live Search]** > **[!UICONTROL Storefront Features]**.
+1. Clique na seção [!UICONTROL Storefront Features].
+1. Definir [!UICONTROL Enable Product Listing Widget] = Sim
+1. Salvar configuração
+1. Se solicitado, limpe o cache ( vá para Sistema > Ferramentas > Gerenciamento de cache > [!UICONTROL Flush Magento Cache]).
 
 >[!IMPORTANT]
 >
