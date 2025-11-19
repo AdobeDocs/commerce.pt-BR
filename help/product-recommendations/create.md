@@ -2,9 +2,9 @@
 title: Criar nova recomendação
 description: Saiba como criar uma unidade de recomendação de produto.
 exl-id: 1d5f83c4-1613-4236-9d98-d455f45a47da
-source-git-commit: 67d0b98f3a9317c0db944a176fd99375091a3970
+source-git-commit: 41eae72cbd01f0e0f2c4a6cf028a2a11c79921ad
 workflow-type: tm+mt
-source-wordcount: '1512'
+source-wordcount: '1505'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,11 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
 
 1. Na barra lateral _Administrador_, vá para **Marketing** > _Promoções_ > **Recomendações de Produtos** para exibir o espaço de trabalho _Recomendações de Produtos_.
 
-1. Especifique o [Modo de Exibição de Armazenamento](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/setup/websites-stores-views) onde deseja que as recomendações sejam exibidas.
+1. Especifique o [Modo de Exibição de Armazenamento](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) onde deseja que as recomendações sejam exibidas.
 
    >[!NOTE]
    >
-   > As unidades de recomendação do Page Builder devem ser criadas na exibição de armazenamento padrão, mas podem ser usadas em qualquer lugar. Para saber mais sobre como criar recomendações de produto com o Page Builder, consulte [Adicionar conteúdo - Recomendações de produto](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/page-builder/add-content/recommendations).
+   > As unidades de recomendação do Page Builder devem ser criadas na exibição de armazenamento padrão, mas podem ser usadas em qualquer lugar. Para saber mais sobre como criar recomendações de produto com o Page Builder, consulte [Adicionar conteúdo - Recomendações de produto](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations).
 
 1. Clique em **Criar recomendação**.
 
@@ -38,16 +38,16 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
 
    >[!NOTE]
    >
-   > As Recomendações de Produto não são suportadas na página Carrinho quando sua loja está configurada para [exibir a página do carrinho de compras imediatamente após adicionar um produto ao carrinho](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
+   > As Recomendações de Produto não são suportadas na página Carrinho quando sua loja está configurada para [exibir a página do carrinho de compras imediatamente após adicionar um produto ao carrinho](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
 
    * Página inicial
    * Categoria
    * Detalhes do produto
    * Carrinho
    * Confirmação
-   * [Construtor de páginas](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [Construtor de páginas](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
-   Você pode criar até cinco unidades de recomendação ativas para cada tipo de página e até 25 para o Page Builder. O tipo de página fica esmaecido quando o limite é atingido.
+   É possível criar até 50 unidades de recomendação ativas para cada tipo de página. O tipo de página fica esmaecido quando o limite é atingido.
 
    ![Nome e página de recomendação](assets/create-recommendation.png)
    _Nome de recomendação e posicionamento da página_
