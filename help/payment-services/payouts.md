@@ -5,7 +5,7 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: a0f9ddbf3d0f291855cb51fd70a782c48b8efc6c
 workflow-type: tm+mt
 source-wordcount: '1303'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Você pode [baixar transações de pagamento](#download-transactions) em um form
 
 >[!NOTE]
 >
->Os relatórios de pagamentos mostram apenas pedidos capturados (a ação de pagamento está definida como [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html?lang=pt-BR#set-payment-services-as-payment-method)) ou [marcados como `Invoiced`](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
+>Os relatórios de pagamentos mostram apenas pedidos capturados (a ação de pagamento está definida como [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method)) ou [marcados como `Invoiced`](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
 
 ## Visualização de visualização de dados de pagamentos
 
@@ -69,7 +69,7 @@ A visualização de visualização de dados dos Pagamentos inclui as seguintes i
 
 A visualização de relatório Pagamentos está disponível na visualização Pagamentos dos Serviços de pagamento. Ele inclui todas as informações disponíveis sobre pagamentos para sua(s) loja(s).
 
-Na barra lateral _Admin_, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**&#x200B;para ver a exibição detalhada do relatório de Pagamentos em tabelas.
+Na barra lateral _Admin_, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**para ver a exibição detalhada do relatório de Pagamentos em tabelas.
 
 ![Transações de pagamento no Administrador](assets/payouts-report-new.png){width="800" zoomable="yes"}
 
@@ -89,12 +89,12 @@ Na exibição de relatório de Pagamentos, você pode selecionar a fonte de dado
 
 ![Seleção de fontes de dados](assets/datasource.png){width="300" zoomable="yes"}
 
-Se _[!UICONTROL Live]_&#x200B;for a fonte de dados selecionada, você poderá ver informações do relatório de armazenamentos no modo de produção. Se&#x200B;_[!UICONTROL Sandbox]_ for a fonte de dados selecionada, você poderá ver os armazenamentos de informações do relatório no modo sandbox.
+Se _[!UICONTROL Live]_for a fonte de dados selecionada, você poderá ver informações do relatório de armazenamentos no modo de produção. Se_[!UICONTROL Sandbox]_ for a fonte de dados selecionada, você poderá ver os armazenamentos de informações do relatório no modo sandbox.
 
 As seleções de fonte de dados funcionam da seguinte maneira:
 
-* Se você não tiver armazenamentos que estejam no modo Online, a seleção da fonte de dados assumirá _[!UICONTROL Sandbox]_&#x200B;como padrão.
-* Se você tiver armazenamentos (um ou vários) no modo Online, a seleção da fonte de dados assumirá _[!UICONTROL Live]_&#x200B;como padrão.
+* Se você não tiver armazenamentos que estejam no modo Online, a seleção da fonte de dados assumirá _[!UICONTROL Sandbox]_como padrão.
+* Se você tiver armazenamentos (um ou vários) no modo Online, a seleção da fonte de dados assumirá _[!UICONTROL Live]_como padrão.
 * As exportações de relatórios sempre seguem a seleção da fonte de dados.
 
 Para selecionar a origem de dados para o relatório de Status de Pagamento da Ordem:
@@ -137,7 +137,7 @@ A visualização de relatório de Pagamentos mostra a maioria das colunas de inf
 
 1. Na barra lateral _Admin_, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. [Personalize o período do intervalo de datas para suas transações](#customize-transactions-timeframe).
-1. Clique no ícone _Download_ (![Ícone de download](assets/icon-download.png){width="20" zoomable="yes"}).
+1. Clique no ícone _Download_ ( ![Ícone de download](assets/icon-download.png){width="20" zoomable="yes"} ).
 
 Suas transações de pagamento são baixadas em um formato .csv.
 
@@ -155,7 +155,7 @@ Os relatórios de pagamento incluem as seguintes informações.
 | [!UICONTROL Code] | Código de transação que indica Crédito (*CR*) ou Débito (*DR*) |
 | [!UICONTROL Reference ID] | ID da transação original para a qual este evento está relacionado |
 | [!UICONTROL Invoice] | ID da fatura (uma por pedido) da transação |
-| [!UICONTROL Commerce order] | ID do pedido Commerce <br> <br>Para ver as [informações do pedido](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/order-management/orders/orders) relacionadas, clique na ID. |
+| [!UICONTROL Commerce order] | ID do pedido Commerce <br> <br>Para ver as [informações do pedido](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders) relacionadas, clique na ID. |
 | [!UICONTROL Commerce trans] | ID de transação do Commerce |
 | [!UICONTROL Pay method] | Tipo de cartão de crédito—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*—e provedor de cartão associado (como *Visa* ou *MasterCard*) |
 | [!UICONTROL TRANS AMT] | Valor da transação |
