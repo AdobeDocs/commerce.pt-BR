@@ -1,11 +1,11 @@
 ---
 title: Criar e gerenciar recomendações
 description: Saiba como criar e gerenciar recomendações.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
-source-git-commit: 0b8e0222a1de1c425964f9f54294d7e0435a26d8
+source-git-commit: 41eae72cbd01f0e0f2c4a6cf028a2a11c79921ad
 workflow-type: tm+mt
-source-wordcount: '1360'
+source-wordcount: '1369'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,10 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
    - **Ative** para habilitar a unidade de recomendação na sua vitrine eletrônica.
 
 1. Quando solicitado, copie a ID da recomendação. Use essa ID para ajudar a identificar qual unidade de recomendação está sendo usada no menu suspenso de recomendações na sua loja do Edge Delivery Services.
+
+>[!NOTE]
+>
+> É possível criar até 50 unidades de recomendação ativas.
 
 >[!IMPORTANT]
 >
