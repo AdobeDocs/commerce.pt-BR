@@ -69,7 +69,7 @@ A visualização de visualização de dados dos Pagamentos inclui as seguintes i
 
 A visualização de relatório Pagamentos está disponível na visualização Pagamentos dos Serviços de pagamento. Ele inclui todas as informações disponíveis sobre pagamentos para sua(s) loja(s).
 
-Na barra lateral _Admin_, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**para ver a exibição detalhada do relatório de Pagamentos em tabelas.
+Na barra lateral _Admin_, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**&#x200B;para ver a exibição detalhada do relatório de Pagamentos em tabelas.
 
 ![Transações de pagamento no Administrador](assets/payouts-report-new.png){width="800" zoomable="yes"}
 
@@ -89,12 +89,12 @@ Na exibição de relatório de Pagamentos, você pode selecionar a fonte de dado
 
 ![Seleção de fontes de dados](assets/datasource.png){width="300" zoomable="yes"}
 
-Se _[!UICONTROL Live]_for a fonte de dados selecionada, você poderá ver informações do relatório de armazenamentos no modo de produção. Se_[!UICONTROL Sandbox]_ for a fonte de dados selecionada, você poderá ver os armazenamentos de informações do relatório no modo sandbox.
+Se _[!UICONTROL Live]_&#x200B;for a fonte de dados selecionada, você poderá ver informações do relatório de armazenamentos no modo de produção. Se&#x200B;_[!UICONTROL Sandbox]_ for a fonte de dados selecionada, você poderá ver os armazenamentos de informações do relatório no modo sandbox.
 
 As seleções de fonte de dados funcionam da seguinte maneira:
 
-* Se você não tiver armazenamentos que estejam no modo Online, a seleção da fonte de dados assumirá _[!UICONTROL Sandbox]_como padrão.
-* Se você tiver armazenamentos (um ou vários) no modo Online, a seleção da fonte de dados assumirá _[!UICONTROL Live]_como padrão.
+* Se você não tiver armazenamentos que estejam no modo Online, a seleção da fonte de dados assumirá _[!UICONTROL Sandbox]_&#x200B;como padrão.
+* Se você tiver armazenamentos (um ou vários) no modo Online, a seleção da fonte de dados assumirá _[!UICONTROL Live]_&#x200B;como padrão.
 * As exportações de relatórios sempre seguem a seleção da fonte de dados.
 
 Para selecionar a origem de dados para o relatório de Status de Pagamento da Ordem:
