@@ -195,7 +195,7 @@ Embora o Commerce já colete os dados históricos do pedido, há várias etapas 
 
 Assista a este vídeo para saber mais sobre pedidos históricos e, em seguida, conclua as etapas a seguir para implementar a coleção de pedidos históricos.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424672)
+>[!VIDEO](https://video.tv.adobe.com/v/3450232?captions=por_br)
 
 #### Configurar o serviço de sincronização de pedidos
 
