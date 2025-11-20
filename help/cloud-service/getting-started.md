@@ -3,10 +3,10 @@ title: Introdução ao  [!DNL Adobe Commerce as a Cloud Service]
 description: Saiba como começar a usar o  [!DNL Adobe Commerce as a Cloud Service].
 role: Admin, Developer, User
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
-source-git-commit: 911d984efa9587c0154db3ab97f6136bf6c34166
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+source-git-commit: 69870bc7037bdad5a8d5fa769a06c07f8cd920aa
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1298'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Selecione uma guia abaixo para ver gráficos de fluxo de trabalho de alto nível
 
 >[!TAB Fluxo de trabalho de comerciante e administrador do sistema]
 
-Este diagrama fornece uma visão geral de alto nível de como os administradores do sistema e comerciantes acessam e gerenciam as instâncias do [!DNL Adobe Commerce as a Cloud Service]. Consulte o [Guia do Adobe Admin Console](https://helpx.adobe.com/br/enterprise/admin-guide.html) para obter mais informações sobre fluxos de trabalho de administrador.
+Este diagrama fornece uma visão geral de alto nível de como os administradores do sistema e comerciantes acessam e gerenciam as instâncias do [!DNL Adobe Commerce as a Cloud Service]. Consulte o [Guia do Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html) para obter mais informações sobre fluxos de trabalho de administrador.
 
 ![[!DNL Adobe Commerce as a Cloud Service] diagrama de fluxo de comerciante](./assets/merchant-flow.svg){zoomable="yes"}
 
@@ -148,13 +148,19 @@ As seções a seguir descrevem os processos básicos que você precisa concluir 
 
 1. Escolha o [!UICONTROL **Tipo de Ambiente**] para sua instância. Você pode escolher entre as seguintes opções:
 
-   * [!UICONTROL **Sandbox**] - Ideal para fins de design e teste. Você deve iniciar a jornada [!DNL Adobe Commerce as a Cloud Service] usando o ambiente de sandbox.
+   * [!UICONTROL **Sandbox**] - Somente para fins de design e teste. Você deve iniciar a jornada [!DNL Adobe Commerce as a Cloud Service] usando o ambiente de sandbox.
+
+   >[!NOTE]
+   >
+   > As instâncias de sandbox são somente para fins de design e teste. Você não deve usar dados de produção em um ambiente de sandbox.
+   >
+   >As instâncias de sandbox estão limitadas à região da América do Norte.
+
    * [!UICONTROL **Produção**] - Para lojas online e sites voltados para o cliente.
 
    >[!NOTE]
    >
-   >* As instâncias de sandbox estão limitadas à região da América do Norte.
-   >* A opção para instalar dados de amostra não está disponível no momento.
+   >A infraestrutura do Adobe Commerce as a Cloud Service está disponível globalmente. Para obter informações sobre ambientes de produção em sua região, entre em contato com o representante de atendimento ao cliente.
 
 1. Selecione a região onde deseja que sua instância seja hospedada.
 
@@ -197,7 +203,7 @@ Por padrão, [!DNL Adobe Commerce as a Cloud Service] instâncias não incluem d
 
 Há duas maneiras de importar seu catálogo para o [!DNL Adobe Commerce as a Cloud Service]:
 
-* [**Administrador do Commerce**](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/import/data-import) - Uma interface amigável que permite importar os dados do catálogo com apenas alguns cliques.
+* [**Administrador do Commerce**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) - Uma interface amigável que permite importar os dados do catálogo com apenas alguns cliques.
 * [**Importar API JSON**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - Uma API REST que permite importar os dados do catálogo de forma programática.
 
 ### Configurar a loja
@@ -208,4 +214,4 @@ Agora que você criou uma instância, você está pronto para [configurar sua vi
 
 * [Notas de versão](release-notes.md)
 * [Guia de migração](migration/overview.md)
-* [Documentação da Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR)
+* [Documentação da Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)
