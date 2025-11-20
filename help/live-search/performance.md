@@ -1,7 +1,8 @@
 ---
 title: Desempenho
-description: O espaço de trabalho Desempenho [!DNL Live Search] fornece informações sobre os termos de pesquisa que os compradores usam.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+description: O espaço de trabalho Desempenho [!DNL Live Search] fornece o insight nos termos de pesquisa que os compradores usam.
+exl-id: 07a63df8-b981-4913-841a-7e81ec634281
+source-git-commit: ae672ed3f2693e2f14e8c7f379e59ef117a34fc3
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%
@@ -10,7 +11,7 @@ ht-degree: 0%
 
 # Desempenho
 
-O espaço de trabalho *Desempenho* fornece informações sobre os termos de pesquisa que os compradores usam. As informações podem ser usadas para identificar tendências, aumentar o click-through e melhorar o índice de conversão. O espaço de trabalho Desempenho fornece um instantâneo das métricas de pesquisa para um intervalo de datas específico e inclui os seguintes relatórios:
+O espaço de trabalho *Desempenho* fornece o insight nos termos de pesquisa que os compradores usam. As informações podem ser usadas para identificar tendências, aumentar o click-through e melhorar o índice de conversão. O espaço de trabalho Desempenho fornece um instantâneo das métricas de pesquisa para um intervalo de datas específico e inclui os seguintes relatórios:
 
 * Pesquisas únicas
 * Zero resultados
@@ -18,7 +19,7 @@ O espaço de trabalho *Desempenho* fornece informações sobre os termos de pesq
 
 ![Desempenho](assets/performance-unique-searches.png)
 
-Você também pode consultar o [Painel de gerenciamento de dados](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html?lang=pt-BR) para obter mais dados sobre a sincronização de dados.
+Você também pode consultar o [Painel de gerenciamento de dados](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) para obter mais dados sobre a sincronização de dados.
 
 >[!NOTE]
 >

@@ -3,7 +3,7 @@ title: '[!DNL SaaS Data Export Guide]'
 description: Saiba mais sobre como usar a extensão  [!DNL data export]  para serviços SaaS do Adobe Commerce que sincroniza dados entre o Adobe Commerce e os serviços Commerce conectados.
 role: Admin, Developer
 exl-id: 8a0067ba-90a4-48a6-8276-208d09abe6fc
-source-git-commit: 8e3e71c7de56b367a73ab048fa13ba2cdeb55f41
+source-git-commit: ae672ed3f2693e2f14e8c7f379e59ef117a34fc3
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
@@ -25,9 +25,9 @@ A exportação de dados SaaS é fornecida como uma extensão PHP. Ela é compat�
 
 - **Sincronização manual do Administrador ou da linha de comando**
 
-   - O [painel de Gerenciamento de Dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-dashboard) no Administrador do Commerce fornece uma exibição gráfica do status de sincronização. Você pode usar o painel para executar uma ressincronização completa (_sincronização completa_) de todos os feeds. No entanto, a Adobe recomenda apenas executar uma sincronização completa na primeira vez que você conecta o Adobe Commerce a um serviço do Commerce. Consulte [Processo de sincronização](data-synchronization.md).
+   - O [painel de Gerenciamento de Dados](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) no Administrador do Commerce fornece uma exibição gráfica do status de sincronização. Você pode usar o painel para executar uma ressincronização completa (_sincronização completa_) de todos os feeds. No entanto, a Adobe recomenda apenas executar uma sincronização completa na primeira vez que você conecta o Adobe Commerce a um serviço do Commerce. Consulte [Processo de sincronização](data-synchronization.md).
 
-   - A [ferramenta de linha de comando do Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) fornece comandos para sincronizar feeds específicos e inclui opções adicionais para personalizar o processamento do feed.
+   - A [ferramenta de linha de comando do Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) fornece comandos para sincronizar feeds específicos e inclui opções adicionais para personalizar o processamento do feed.
 
 - **Sincronização automatizada com trabalhos cron**
 
