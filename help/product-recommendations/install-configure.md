@@ -15,7 +15,7 @@ ht-degree: 0%
 A implantação do [!DNL Product Recommendations] na vitrine e no Administrador requer a instalação do módulo e a configuração do [Commerce Services Connector](../landing/saas.md). À medida que as atualizações forem lançadas, você poderá atualizar facilmente a instalação com a versão mais recente.
 
 - [Instalar](#install)
-- [Configurar ](#configure)
+- [Configurar &#x200B;](#configure)
 - [Atualizar](#update)
 - [Desinstalar](#uninstall)
 
