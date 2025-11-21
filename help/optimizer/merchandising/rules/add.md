@@ -1,11 +1,11 @@
 ---
 title: Criar e gerenciar regras
 description: Saiba como criar e gerenciar regras de merchandising.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: ad8fb7d1d7e1ad124647ba84377079dcfbd46a3c
+source-git-commit: 5f3bde7070857cbfd6892e5881ce0437973f0cc0
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '2103'
 ht-degree: 0%
 
 ---
@@ -85,6 +85,33 @@ Os proprietários de lojas podem configurar os seguintes tipos de estratégias d
 - Nenhum: os produtos são ordenados por Relevância.
 
 Selecione o tipo de estratégia para a regra. A janela **Testar sua regra** exibe os resultados esperados.
+
+#### Como funciona a pontuação inteligente de classificação
+
+A classificação inteligente determina a ordem final do produto ao combinar dois fatores principais: **relevância textual** e **sinais comportamentais**. Entender como esses fatores interagem ajuda a definir expectativas realistas para os resultados da pesquisa.
+
+**Componentes de pontuação:**
+
+- **Relevância textual**: o fator dominante na pontuação. Isso mede o nível de correspondência entre o nome, a descrição e os atributos de um produto e a consulta de pesquisa. A pontuação de relevância do texto é ilimitada (não tem limite superior específico) e é influenciada por fatores como:
+
+   - Frequência de ocorrência de palavras correspondentes.
+   - Comprimento (por palavras) dos nomes/descrições dos produtos.
+
+- **Sinais comportamentais**: um aumento limitado aplicado sobre a pontuação de relevância do texto. Ao selecionar uma estratégia de classificação inteligente como &quot;Mais visualizados&quot; ou &quot;Mais comprados&quot;, os produtos com sinais comportamentais mais altos recebem um aumento fixo em suas pontuações. No entanto, esse reforço tem um limite definido.
+
+**Por que o produto mais exibido pode não aparecer primeiro:**
+
+A relevância textual normalmente domina a classificação porque sua pontuação é ilimitada, enquanto os aumentos comportamentais são fixos. Como resultado, os produtos com texto forte corresponde muitas vezes mais do que aqueles com sinais de engajamento mais altos. Os aumentos comportamentais por si só podem não compensar grandes lacunas na relevância do texto. A classificação inteligente aborda isso considerando a qualidade da correspondência e a interação do comprador, melhorando a relevância geral. No entanto, a qualidade da correspondência de texto continua sendo o principal impulsionador da classificação.
+
+**Exemplo:**
+
+Um comerciante usa a estratégia de classificação inteligente &quot;Mais visto&quot; e pesquisa por &quot;vela&quot;. Eles esperam que o SKU YAN-K-E-512 do produto apareça no topo dos resultados porque ele tem a maior contagem de visualizações. No entanto, outros produtos têm classificação mais alta:
+
+- **Vela do Texas** (1ª posição): tem um nome de produto mais curto e limpo que cria uma pontuação de relevância de texto muito alta. Mesmo que tenha menos visualizações do que YAN-K-E-512, sua correspondência de texto superior supera o impulso comportamental.
+
+- **YAN-K-E-512** (posição inferior): apesar de ter o maior percentil de exibição nos dados comportamentais &quot;Mais visualizados&quot;, seu nome complexo baseado em SKU gera uma pontuação de relevância de texto mais baixa. O impulso comportamental fixo não é suficiente para superar essa lacuna de relevância do texto.
+
+Consulte [regras de pesquisa](./best-practice.md#tips-to-optimize-search-rules) para saber como melhorar a localização de produtos usando regras.
 
 #### Avisos
 

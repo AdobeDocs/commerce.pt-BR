@@ -2,9 +2,9 @@
 title: Adicionar regras
 description: Saiba como criar regras de merchandising de pesquisa.
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
-source-git-commit: 00c6d728b1bc425c873bdf46293085b8da242782
+source-git-commit: 0b8ab786bb6ec333337dc114de214b6d8e4df427
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '2046'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Para criar uma regra, a primeira etapa é usar o editor de regras para definir a
 ## Adicionar uma regra
 
 1. No Administrador, vá para **Marketing** > SEO e pesquisa > **[!DNL Live Search]**.
-1. Defina o **Escopo** para identificar a [exibição de repositório](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=pt-BR#scope-settings) onde a regra se aplica.
+1. Defina o **Escopo** para identificar a [exibição de repositório](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) onde a regra se aplica.
 1. Clique no espaço de trabalho **Pesquisar Merchandising**.
 1. Clique em **Adicionar regra** para iniciar o editor de regras.
 
@@ -90,6 +90,33 @@ Os proprietários de lojas podem configurar os seguintes tipos de estratégias d
 * Nenhum: os produtos são ordenados por Relevância.
 
 Selecione o tipo de estratégia para a regra. A janela **Testar sua regra** exibe os resultados esperados.
+
+### Como funciona a pontuação inteligente de classificação
+
+A classificação inteligente determina a ordem final do produto ao combinar dois fatores principais: **relevância textual** e **sinais comportamentais**. Entender como esses fatores interagem ajuda a definir expectativas realistas para os resultados da pesquisa.
+
+**Componentes de pontuação:**
+
+* **Relevância textual**: o fator dominante na pontuação. Isso mede o nível de correspondência entre o nome, a descrição e os atributos de um produto e a consulta de pesquisa. A pontuação de relevância do texto é ilimitada (não tem limite superior específico) e é influenciada por fatores como:
+
+   * Frequência de ocorrência de palavras correspondentes.
+   * Comprimento (por palavras) dos nomes/descrições dos produtos.
+
+* **Sinais comportamentais**: um aumento limitado aplicado sobre a pontuação de relevância do texto. Ao selecionar uma estratégia de classificação inteligente como &quot;Mais visualizados&quot; ou &quot;Mais comprados&quot;, os produtos com sinais comportamentais mais altos recebem um aumento fixo em suas pontuações. No entanto, esse reforço tem um limite definido.
+
+**Por que o produto mais exibido pode não aparecer primeiro:**
+
+A relevância textual normalmente domina a classificação porque sua pontuação é ilimitada, enquanto os aumentos comportamentais são fixos. Como resultado, os produtos com texto forte corresponde muitas vezes mais do que aqueles com sinais de engajamento mais altos. Os aumentos comportamentais por si só podem não compensar grandes lacunas na relevância do texto. A classificação inteligente aborda isso considerando a qualidade da correspondência e a interação do comprador, melhorando a relevância geral. No entanto, a qualidade da correspondência de texto continua sendo o principal impulsionador da classificação.
+
+**Exemplo:**
+
+Um comerciante usa a estratégia de classificação inteligente &quot;Mais visto&quot; e pesquisa por &quot;vela&quot;. Eles esperam que o SKU YAN-K-E-512 do produto apareça no topo dos resultados porque ele tem a maior contagem de visualizações. No entanto, outros produtos têm classificação mais alta:
+
+* **Vela do Texas** (1ª posição): tem um nome de produto mais curto e limpo que cria uma pontuação de relevância de texto muito alta. Mesmo que tenha menos visualizações do que YAN-K-E-512, sua correspondência de texto superior supera o impulso comportamental.
+
+* **YAN-K-E-512** (posição inferior): apesar de ter o maior percentil de exibição nos dados comportamentais &quot;Mais visualizados&quot;, seu nome complexo baseado em SKU gera uma pontuação de relevância de texto mais baixa. O impulso comportamental fixo não é suficiente para superar essa lacuna de relevância do texto.
+
+Consulte [regras de pesquisa](./best-practice.md#search-rules) para saber como melhorar a localização de produtos usando regras.
 
 ### Avisos
 

@@ -2,10 +2,11 @@
 title: Práticas recomendadas das regras de merchandising
 description: Conheça as práticas recomendadas para implementar regras de merchandising na sua loja.
 role: Admin, Developer
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
-source-git-commit: 09b6b1dea5916c5671c0eb58a551295b5be35fc0
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+exl-id: cc8d0879-c253-4ad4-8e7d-e066dff9112d
+source-git-commit: f966a3f6f59c28e9f394d5eb7e41aaef1a992fec
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -25,3 +26,4 @@ Para otimizar sua taxa de conversão e receita, você deve implementar regras de
 - Destaque os produtos que estão à venda ou que fazem parte de promoções especiais.
 - Defina regras de pesquisa durante os períodos de promoção ou de vendas automaticamente usando o intervalo de datas durante o período de promoção.
 - Personalize os resultados da pesquisa com base no comportamento individual do comprador usando [classificação inteligente](add.md#intelligent-ranking), como &quot;recomendado para você&quot;, &quot;mais visto&quot; e assim por diante.
+- Sempre use o painel &quot;Testar a regra&quot; para visualizar como sua estratégia de classificação inteligente afeta os resultados reais da pesquisa para consultas diferentes.

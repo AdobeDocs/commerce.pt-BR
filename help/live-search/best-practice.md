@@ -3,9 +3,9 @@ title: Práticas recomendadas do [!DNL Live Search]
 description: Conheça as práticas recomendadas para implementar o [!DNL Live Search] em sua loja.
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
-source-git-commit: a22a57f52503811a3a3e9294174a6626c5630b79
+source-git-commit: f966a3f6f59c28e9f394d5eb7e41aaef1a992fec
 workflow-type: tm+mt
-source-wordcount: '2180'
+source-wordcount: '2201'
 ht-degree: 0%
 
 ---
@@ -111,6 +111,7 @@ Para otimizar sua taxa de conversão e receita, você deve implementar regras de
 - Priorize levemente os produtos com margens de lucro mais altas sem comprometer a relevância.
 - Destaque os produtos que estão à venda ou que fazem parte de promoções especiais.
 - Defina regras de pesquisa durante os períodos de promoção ou de vendas automaticamente usando o intervalo de datas durante o período de promoção.
+- Sempre use o painel &quot;Testar a regra&quot; para visualizar como sua estratégia de classificação inteligente afeta os resultados reais da pesquisa para consultas diferentes.
 - Personalize os resultados da pesquisa com base no comportamento individual do comprador usando [classificação inteligente](rules-add.md#intelligent-ranking), como &quot;recomendado para você&quot;, &quot;mais visto&quot; e assim por diante. Para adaptar o comportamento do comprador, você deve garantir que o evento seja implementado corretamente. Para os comerciantes da Luma, o evento está disponível e pronto para uso. Para implementações headless ou personalizadas, você deve [implementar um evento](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) com base nas suas necessidades específicas.
 
 Saiba mais sobre regras de pesquisa:
@@ -137,7 +138,7 @@ Verifique se cada produto tem conteúdo relevante em cada atributo pesquisável.
 Saiba mais sobre atributos de produto para pesquisa:
 
 - [Definir atributos como pesquisáveis](workspace.md#set-attributes-as-searchable)
-- [Atribuir peso aos atributos](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Atribuir peso aos atributos](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Monitorar resultados da pesquisa
 
