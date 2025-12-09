@@ -1,10 +1,11 @@
 ---
 title: Filtros de recomendação
 description: Saiba como usar filtros para controlar quais produtos aparecem nas  [!DNL Adobe Commerce Optimizer] recomendações.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
-source-git-commit: 746c016f149fb49b9c483968a8a5f40196b163ed
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+exl-id: f6100538-23c0-4e90-9834-a895d4707282
+source-git-commit: 032a19183b79cea1bfe27e8a4e20c60ba5ac6b8b
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
@@ -44,10 +45,10 @@ Os filtros de produto especificam quais produtos específicos estão qualificado
 >
 >Os produtos derivados de um produto configurável não são exibidos em uma unidade de recomendação porque esses produtos secundários têm a visibilidade de _Não visível individualmente_.
 
-### Preço
+<!--### Price
 
-Um filtro com base no preço do produto usa o preço final para executar a comparação. O preço final inclui descontos ou preços especiais disponíveis para compradores anônimos.
+A filter based on the product price uses the final price to perform the comparison. The final price includes any discounts or special pricing available to anonymous shoppers.
 
-<!--### Attribute
+### Attribute
 
 You can filter products based on attribute criteria, including attribute values. Selected values use OR logic to either include or exclude products when any of the specified values are found.-->

@@ -1,11 +1,11 @@
 ---
 title: Criar e gerenciar recomendações
 description: Saiba como criar e gerenciar recomendações.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
-source-git-commit: 41eae72cbd01f0e0f2c4a6cf028a2a11c79921ad
+source-git-commit: 032a19183b79cea1bfe27e8a4e20c60ba5ac6b8b
 workflow-type: tm+mt
-source-wordcount: '1369'
+source-wordcount: '1365'
 ht-degree: 0%
 
 ---
@@ -161,11 +161,9 @@ A seguir, uma lista de possíveis motivos e soluções para pontuações comuns 
 
 ## Visualizar recomendações
 
->[!IMPORTANT]
->
->Este recurso ainda não está disponível.
-
 O painel _Visualização de produtos recomendada_ está sempre disponível com uma amostra de seleção de produtos que podem aparecer na unidade de recomendação quando ela for implantada na loja.
+
+![Visualização do Recommendations](../../assets/rec-preview.png)
 
 Para testar uma recomendação ao trabalhar em um ambiente de não produção, você pode buscar dados de recomendação de uma fonte diferente. Isso permite que os comerciantes experimentem com regras e visualizem as recomendações antes de implantar na produção.
 
