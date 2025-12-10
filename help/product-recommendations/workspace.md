@@ -39,7 +39,7 @@ Inicialmente, o [escopo](https://experienceleague.adobe.com/docs/commerce-admin/
 
 ## Definir intervalo de datas das métricas
 
-1. Clique no controle **Seletor de** Calendário![ ](assets/icon-calendar.png).
+1. Clique no controle **Seletor de** Calendário![&#x200B; &#x200B;](assets/icon-calendar.png).
 
 1. Escolha uma das seguintes opções:
 
