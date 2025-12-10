@@ -17,21 +17,21 @@ O Adobe Experience Platform Privacy Service fornece uma API RESTful e uma interf
 
 Para obter mais informações sobre o Privacy Service e como criar e gerenciar solicitações de privacidade, consulte a documentação do Adobe Experience Platform:
 
-* [visão geral do Privacy Service](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/home)
-* [Gerenciamento de trabalhos de privacidade na interface do Privacy Service](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/ui/user-guide)
+* [visão geral do Privacy Service](https://experienceleague.adobe.com/pt-br/docs/experience-platform/privacy/home)
+* [Gerenciamento de trabalhos de privacidade na interface do Privacy Service](https://experienceleague.adobe.com/pt-br/docs/experience-platform/privacy/ui/user-guide)
 
 ## Gerenciar solicitações individuais de privacidade de dados
 
 Você pode enviar solicitações individuais para acessar e excluir dados do consumidor de [!DNL Commerce] de duas maneiras:
 
-* Por meio da **interface do usuário do Privacy Service**. Consulte a documentação [aqui](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/ui/user-guide#_blank).
+* Por meio da **interface do usuário do Privacy Service**. Consulte a documentação [aqui](https://experienceleague.adobe.com/pt-br/docs/experience-platform/privacy/ui/user-guide#_blank).
 * Por meio da **API do Privacy Service**. Consulte a documentação [aqui](https://developer.adobe.com/experience-platform-apis/references/privacy-service/#_blank) e as informações sobre a API [aqui](https://developer.adobe.com/experience-platform-apis/#_blank).
 
 O Privacy Service oferece suporte a dois tipos de solicitações: **acesso aos dados** e **exclusão de dados**.
 
 >[!NOTE]
 >
->Este artigo se concentra em fazer solicitações de privacidade para [!DNL Commerce]. Se você planeja fazer solicitações de privacidade para o [data lake da Platform](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/privacy), o [Perfil de cliente em tempo real](https://experienceleague.adobe.com/en/docs/experience-platform/profile/privacy) ou o [Serviço de identidade](https://experienceleague.adobe.com/en/docs/experience-platform/identity/privacy), consulte os respectivos guias de usuário. Observe que as solicitações de exclusão e acesso devem ser feitas a cada sistema individualmente, pois uma solicitação de privacidade para o Commerce não remove dados de todos esses sistemas.
+>Este artigo se concentra em fazer solicitações de privacidade para [!DNL Commerce]. Se você planeja fazer solicitações de privacidade para o [data lake da Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/catalog/privacy), o [Perfil de cliente em tempo real](https://experienceleague.adobe.com/pt-br/docs/experience-platform/profile/privacy) ou o [Serviço de identidade](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/privacy), consulte os respectivos guias de usuário. Observe que as solicitações de exclusão e acesso devem ser feitas a cada sistema individualmente, pois uma solicitação de privacidade para o Commerce não remove dados de todos esses sistemas.
 
 ## Acesso aos dados
 
@@ -39,7 +39,7 @@ Para **solicitações de acesso**, especifique &quot;Commerce (Personalization)&
 
 ## Exclusão de dados
 
-Para solicitações de exclusão, o Privacy Service exclui [!DNL Commerce] dados armazenados nos serviços SaaS da Commerce para fins de marketing, o que significa que perfis e pedidos de titulares de dados não são mais enviados para aplicativos de marketing da Adobe para uso em campanhas e jornadas de clientes. No entanto, a Privacy Service não exclui dados no aplicativo [!DNL Commerce], pois eles podem ser necessários para necessidades transacionais de comerciante. Os comerciantes são responsáveis por qualquer solicitação de exclusão/acesso de dados no aplicativo [!DNL Commerce]. Consulte [Modelo operacional e de segurança de responsabilidade compartilhada](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) para saber mais.
+Para solicitações de exclusão, o Privacy Service exclui [!DNL Commerce] dados armazenados nos serviços SaaS da Commerce para fins de marketing, o que significa que perfis e pedidos de titulares de dados não são mais enviados para aplicativos de marketing da Adobe para uso em campanhas e jornadas de clientes. No entanto, a Privacy Service não exclui dados no aplicativo [!DNL Commerce], pois eles podem ser necessários para necessidades transacionais de comerciante. Os comerciantes são responsáveis por qualquer solicitação de exclusão/acesso de dados no aplicativo [!DNL Commerce]. Consulte [Modelo operacional e de segurança de responsabilidade compartilhada](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/security-and-compliance/shared-responsibility) para saber mais.
 
 [!DNL Commerce] notificará os comerciantes sobre solicitações de exclusão enviando informações para titulares de dados que solicitam a exclusão de determinados dados.
 
@@ -64,8 +64,8 @@ Para **excluir solicitações**, verifique se a caixa de seleção &quot;Commerc
 
 Para enviar solicitações de acesso e exclusão por meio da API de privacidade, é necessário autenticar e gerenciar permissões para o Privacy Service:
 
-* [Autenticar e acessar a API do Privacy Service](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/api/getting-started)
-* [Gerenciar permissões do Privacy Service](https://experienceleague.adobe.com/en/docs/experience-platform/privacy/permissions)
+* [Autenticar e acessar a API do Privacy Service](https://experienceleague.adobe.com/pt-br/docs/experience-platform/privacy/api/getting-started)
+* [Gerenciar permissões do Privacy Service](https://experienceleague.adobe.com/pt-br/docs/experience-platform/privacy/permissions)
 
 **Cabeçalhos obrigatórios**
 

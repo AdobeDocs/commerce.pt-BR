@@ -15,7 +15,7 @@ Baseado na tecnologia App Builder da Adobe, o [!DNL Commerce Optimizer Salesforc
 
 Pronto para uso, o conector oferece recursos confiáveis de sincronização de dados e a flexibilidade para personalizar workflows de acordo com as necessidades da sua empresa.
 
-Para obter uma série completa de tutoriais em vídeo, consulte [Saiba mais sobre o kit de início de nuvem do Salesforce Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
+Para obter uma série completa de tutoriais em vídeo, consulte [Saiba mais sobre o kit de início de nuvem do Salesforce Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
 
 ## Principais recursos
 
