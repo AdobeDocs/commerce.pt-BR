@@ -2,7 +2,7 @@
 title: Salesforce Commerce Connector
 description: Saiba mais sobre o [!DNL Commerce Optimizer SFCC Connector] que fornece um ponto de partida para a integração do Salesforce Commerce B2C com o [!DNL Adobe Commerce Optimizer] para sincronizar dados de catálogo e implementar e personalizar o conector para oferecer suporte a operações comerciais.
 role: Admin, Developer
-source-git-commit: fc6f8566a1932e830a37bcfa32cd1c4168c67c68
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '1115'
 ht-degree: 0%
@@ -15,7 +15,7 @@ Baseado na tecnologia App Builder da Adobe, o [!DNL Commerce Optimizer Salesforc
 
 Pronto para uso, o conector oferece recursos confiáveis de sincronização de dados e a flexibilidade para personalizar workflows de acordo com as necessidades da sua empresa.
 
-Para obter uma série completa de tutoriais em vídeo, consulte [Saiba mais sobre o kit de início de nuvem do Salesforce Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
+Para obter uma série completa de tutoriais em vídeo, consulte [Saiba mais sobre o kit de início de nuvem do Salesforce Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
 
 ## Principais recursos
 
@@ -36,7 +36,7 @@ Para obter uma série completa de tutoriais em vídeo, consulte [Saiba mais sobr
 >
 >O conector é projetado especificamente para o Salesforce Commerce Cloud B2C. Ele não é compatível com os produtos B2B ou D2C da Salesforce, que são criados em diferentes pilhas de tecnologia.
 
-## Quem se beneficia com o Salesforce Connector?
+## Quem se beneficia do Salesforce Connector?
 
 O [!DNL Salesforce Commerce Connector] é ideal para:
 
@@ -82,7 +82,7 @@ O diagrama a seguir ilustra o fluxo de dados de alto nível da integração:
 
 ![Arquitetura do Salesforce Commerce Connector](../assets/sfcc_starter_kit.png){zoomable="yes"}
 
-### Componentes-chave
+### Componentes principais
 
 O [!DNL Commerce Optimizer SFCC Connector] consiste em vários componentes principais:
 
@@ -110,7 +110,7 @@ Ao planejar sua implementação, considere estes fatores principais:
 * **Mapeamento de atributos:** planeje o mapeamento de atributos de produto B2C do Salesforce Commerce para [!DNL Commerce Optimizer] metadados com base nos requisitos da sua empresa.
 * **Campos pesquisáveis padrão:** o conector torna automaticamente os atributos principais (`name`, `description`, `ID`) pesquisáveis por padrão.
 
-### Escopo de Sincronização
+### Escopo de sincronização
 
 * **Seleção do site:** o Salesforce Commerce B2C tem um conceito de sites aos quais os catálogos se anexam. Durante a sincronização completa, selecione o site do Salesforce a ser sincronizado.
 * **Gerenciamento de localidade:** cada localidade do Salesforce Commerce resulta em um ciclo de assimilação de produto separado em [!DNL Commerce Optimizer].

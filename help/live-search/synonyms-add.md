@@ -2,7 +2,7 @@
 title: Adicionar sinônimos
 description: Adicione  [!DNL Live Search] sinônimos para melhorar a resposta às solicitações de pesquisa.
 exl-id: 2dc535ea-35a3-45a8-8171-901005223cc9
-source-git-commit: 6dcfd0a54e6a6814b7f5708e0c221452b8af4537
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Aumente o engajamento do cliente adicionando sua própria lista com curadoria de
 ## Etapa 1: adicionar um sinônimo
 
 1. No Administrador, vá para **Marketing** > SEO e pesquisa > **[!DNL Live Search]**.
-1. Para vários armazenamentos, defina o **Escopo** para a [exibição de armazenamento](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=pt-BR#scope-settings) onde as configurações de sinônimo se aplicam.
+1. Para vários armazenamentos, defina o **Escopo** para a [exibição de armazenamento](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) onde as configurações de sinônimo se aplicam.
 1. Clique na guia **Sinônimos**.
 1. Clique no botão **Adicionar sinônimos**.
 
@@ -65,7 +65,7 @@ O conjunto de sinônimos aparece na lista com uma seta unidirecional apontando d
 1. Quando seus sinônimos estiverem completos, clique em **Publicar alterações**.
 1. Aguarde até duas horas para que suas atualizações fiquem disponíveis na loja.
 
-## Descrições de campo
+## Descrições dos campos
 
 | Campo | Descrição |
 |--- |--- |

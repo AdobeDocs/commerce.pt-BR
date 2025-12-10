@@ -1,8 +1,9 @@
 ---
 title: Regras de merchandising
 description: As regras de merchandising do [!DNL Adobe Commerce Optimizer] combinam lógica e ações para moldar a experiência de compra.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
-source-git-commit: 356b10704c9e7c7329d3e9c0e10baa15d5142ec0
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+exl-id: f2a9b5e8-d23d-4855-b424-ca6b40e057df
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 0%
@@ -38,7 +39,7 @@ O texto da consulta pode conter:
 
 Os operadores lógicos `AND` e `OR` unem duas condições e retornam resultados diferentes. Todos os operadores lógicos usados em uma regra com várias condições são os mesmos. Não é possível usar `AND` e `OR` na mesma regra.
 
-### Operadores de correspondência
+### Corresponder operadores
 
 Os operadores Match `All` e `Any` determinam o operador lógico usado para unir várias condições na regra e podem ser usados para alterar o operador existente.
 

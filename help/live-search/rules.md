@@ -1,7 +1,8 @@
 ---
 title: Pesquisar merchandising
 description: As regras de merchandising do [!DNL Live Search] combinam lógica e ações para moldar a experiência de compra.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 9894bf2b-8556-4057-aa23-ebdcb1599914
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '681'
 ht-degree: 0%
@@ -37,7 +38,7 @@ O texto da consulta pode conter:
 
 Os operadores lógicos `AND` e `OR` unem duas condições e retornam resultados diferentes. Todos os operadores lógicos usados em uma regra com várias condições são os mesmos. Não é possível usar `AND` e `OR` na mesma regra.
 
-### Operadores de correspondência
+### Corresponder operadores
 
 Os operadores Match `All` e `Any` determinam o operador lógico usado para unir várias condições na regra e podem ser usados para alterar o operador existente.
 
@@ -74,4 +75,4 @@ A solicitação feita no Administrador funciona de forma um pouco diferente. Ao 
 ## Merchandising de categoria e atribuições de produto de categoria
 
 [!DNL Live Search] permite que você filtre por Categorias. Consulte [Merchandising de categoria](category-merch.md) para obter mais informações.
-No entanto, no Adobe Commerce, você pode criar uma categoria virtual com [Atribuições de produto de categoria](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html?lang=pt-BR). Esse tipo de categoria é criado no tempo de execução e não existe no banco de dados de categorias. Portanto, [!DNL Live Search] não pode ler ou usar este tipo de categoria.
+No entanto, no Adobe Commerce, você pode criar uma categoria virtual com [Atribuições de produto de categoria](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). Esse tipo de categoria é criado no tempo de execução e não existe no banco de dados de categorias. Portanto, [!DNL Live Search] não pode ler ou usar este tipo de categoria.

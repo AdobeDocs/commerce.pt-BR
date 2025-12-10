@@ -3,9 +3,9 @@ title: Exibição de catálogo
 description: Saiba o que são exibições de catálogo e como criá-las para organizar o catálogo de produtos por estrutura de negócios, políticas e preços.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: ff53f84b4ab7cfb219aae0e29cc35b23d0f6601b
+source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
 workflow-type: tm+mt
 source-wordcount: '951'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Considere as exibições de catálogo como diferentes &quot;lentes&quot; pelas q
 - Uma exibição de catálogo regional pode mostrar produtos e preços específicos de uma área geográfica
 - A exibição do catálogo de marcas pode mostrar apenas produtos de uma marca específica
 
-## Criar uma visualização do catálogo
+## Criar uma exibição de catálogo
 
 Nesta seção, você cria uma exibição de catálogo, selecione uma [política](policies.md) e um [catálogo de preços](pricebooks.md).
 
@@ -121,7 +121,7 @@ Várias exibições de catálogo representam unidades de negócios diferentes (p
 **4. Entrega multicanal**
 Os dados de catálogo filtrados são entregues para vários destinos, incluindo lojas Edge Delivery Services, marketplaces, plataformas de publicidade e microlojas personalizadas. Para obter mais informações sobre a entrega de dados do catálogo, consulte a [documentação do desenvolvedor](https://developer.adobe.com/commerce/services/optimizer/).
 
-### Componentes-chave
+### Componentes principais
 
 | Componente | Finalidade | Exemplo |
 |---|---|---|
