@@ -4,9 +4,9 @@ description: Saiba mais sobre os pré-requisitos do laboratório de extensões d
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: e153e974be1dc5ec8ff2eff8d699ce87ef6708dc
+source-git-commit: fda04de3301a305c897c34d3dd0166d50fc3c12a
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -27,10 +27,10 @@ Esta página lista os pré-requisitos e as etapas de configuração para tutoria
   npm install -g @adobe/aio-cli
   ```
 
-* Instalar o plug-in do Commerce
+* Instale os plug-ins [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce), [Adobe I/O CLI Runtime](https://github.com/adobe/aio-cli-plugin-runtime) e [App Builder CLI](https://github.com/adobe/aio-cli-plugin-app-dev):
 
   ```bash
-  aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce
+  aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
   ```
 
 * Baixar um IDE assistido por IA, como [Cursor](https://cursor.com/download) (recomendado). Outros IDEs, como Claude Code, Gemini CLI ou Copilot também são suportados, mas podem exigir modificações nos prompts e em outras etapas do tutorial.
@@ -169,6 +169,12 @@ Execute o seguinte comando para baixar o arquivo de configuração do espaço de
 
 ```bash
 aio console workspace download workspace.json
+```
+
+Copie o arquivo de configuração do espaço de trabalho para o diretório `scripts`:
+
+```bash
+cp workspace.json scripts/
 ```
 
 ### Conectar o espaço de trabalho local ao espaço de trabalho remoto
