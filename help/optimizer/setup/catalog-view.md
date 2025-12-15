@@ -3,11 +3,11 @@ title: Exibição de catálogo
 description: Saiba o que são exibições de catálogo e como criá-las para organizar o catálogo de produtos por estrutura de negócios, políticas e preços.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: 769aafeb261d978623e68c466888924c92632883
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '1143'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,11 @@ Nesta seção, você cria uma exibição de catálogo, selecione uma [política]
 
 Antes de criar uma visualização de catálogo, verifique se você tem:
 
-- [Políticas criadas](policies.md) para definir filtros de produto
+- [Políticas criadas](policies.md) para definir filtros de produto.
 
-- [Catálogos de preços assimilados](pricebooks.md) para preços
+- [Definiu camadas de catálogo](catalog-layer.md) para definir variantes de seus produtos.
+
+- [Catálogos de preços assimilados](pricebooks.md) para preços.
 
 1. No menu esquerdo, vá para _Configuração da loja_ e clique em **[!UICONTROL Catalog views]**.
 
@@ -50,6 +52,7 @@ Antes de criar uma visualização de catálogo, verifique se você tem:
 
    - **Nome** — Digite o nome da exibição do catálogo, por exemplo `Celport`. &#x200B;
    - **Origens do catálogo** — Selecione a origem do catálogo (localidade), por exemplo `en-US`.
+   - **Camadas do catálogo**-Revise as camadas e a prioridade assimiladas.
    - **Políticas** — use o menu suspenso para selecionar as políticas relevantes. Por exemplo, &quot;Marca&quot;, &quot;Modelo&quot;. &#x200B;Verifique se você já [criou uma política](policies.md).
 
 1. Selecione o catálogo de preços a ser vinculado à exibição do catálogo.
@@ -63,6 +66,20 @@ Antes de criar uma visualização de catálogo, verifique se você tem:
 A página Exibições de catálogo é atualizada para exibir a nova exibição de catálogo.&#x200B;
 
 Após concluir essas etapas, a exibição do catálogo agora está configurada para exibir produtos e preços com base nas fontes e políticas selecionadas.
+
+## Camadas do catálogo
+
+As camadas de catálogo permitem modificar os dados do produto em uma exibição de catálogo sem alterar os dados de origem originais. As camadas aplicam alterações a atributos específicos do produto, como nome, descrição, imagens, links e metadados, criando uma camada na parte superior do catálogo base. Os dados originais do produto permanecem intactos, permitindo personalizar produtos com segurança e reverter alterações a qualquer momento.
+
+Casos de uso comuns para camadas de catálogo incluem:
+
+- **Otimização de SEO**—Substitua metatítulos e descrições do produto com base nas recomendações de IA do [Sites Optimizer](../manage-results/opportunities.md)
+- **Campanhas sazonais** — Atualize temporariamente nomes de produtos, descrições ou imagens para promoções
+- **Personalização regional**—Exibir informações de produto diferentes com base na localização geográfica ou no idioma
+- **Teste A/B**—Teste diferentes apresentações de produtos para otimizar as taxas de conversão
+- **Gerenciamento de várias marcas**—Personalize atributos de produto para diferentes exibições de catálogos de marcas
+
+Para saber mais sobre como criar, gerenciar e priorizar camadas de catálogo, consulte [Camadas de catálogo](catalog-layer.md).
 
 ## Gerenciar exibição de catálogo
 
@@ -166,3 +183,9 @@ Os dados de catálogo filtrados são entregues para vários destinos, incluindo 
 >[!INFO]
 >
 >Para obter informações detalhadas sobre a assimilação e a entrega de dados do catálogo, consulte a [documentação do desenvolvedor](https://developer.adobe.com/commerce/services/optimizer/).
+
+## Veja mais aqui
+
+- [Camadas do catálogo](catalog-layer.md) - Saiba como modificar dados do produto sem alterar a origem original
+- [Políticas](policies.md) - Criar políticas para filtrar produtos nas exibições de catálogo
+- [Catálogos de preços](pricebooks.md) - Gerenciar estruturas de preços para diferentes segmentos de clientes

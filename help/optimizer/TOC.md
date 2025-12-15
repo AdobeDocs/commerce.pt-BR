@@ -4,9 +4,9 @@ user-guide-description: Documentação e recursos de  [!DNL Adobe Commerce Optim
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: b3a3fcc34154cb231a4a656f0b9cafb9f4bef9bb
+source-git-commit: 49c74bbdbf2c951c79a95d8bb9395228d5655fdf
 workflow-type: tm+mt
-source-wordcount: '101'
+source-wordcount: '104'
 ht-degree: 10%
 
 ---
@@ -20,6 +20,7 @@ ht-degree: 10%
 - [Limites e limitações](boundaries-limits.md)
 - [Notas de versão](release-notes.md)
 - Gerenciamento de resultados {#manage-results}
+   - [Oportunidades](./manage-results/opportunities.md)
    - [Métricas de sucesso](./manage-results/success-metrics.md)
    - [Desempenho da pesquisa](./manage-results/search-performance.md)
    - [Desempenho do Recommendations](./manage-results/recommendation-performance.md)
@@ -49,6 +50,7 @@ ht-degree: 10%
       - [Práticas recomendadas](./merchandising/synonyms/best-practice.md)
 - Configuração da loja {#setup}
    - [Exibições do catálogo](./setup/catalog-view.md)
+   - [Camadas do catálogo](./setup/catalog-layer.md)
    - [Políticas](./setup/policies.md)
    - [Catálogos de Preços](./setup/pricebooks.md)
    - [Sincronização de dados](./setup/data-sync.md)
