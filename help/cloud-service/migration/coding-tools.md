@@ -1,11 +1,11 @@
 ---
 title: Ferramentas de codificação de IA para extensões
 description: Saiba como usar as ferramentas de IA para criar extensões do Commerce App Builder.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: d0b9fd3ebbf0c88abbbf12821c5c4825ffcf10f0
+source-git-commit: c160632905631949c9503ceaf896b47e7a71fe55
 workflow-type: tm+mt
 source-wordcount: '1849'
 ht-degree: 0%
@@ -72,7 +72,7 @@ O uso das ferramentas de codificação de IA oferece os seguintes benefícios:
 
 O processo de instalação solicitará as opções de configuração. Para o local de configuração, escolha &quot;Diretório atual&quot; para instalar as ferramentas em seu espaço de trabalho atual:
 
-```plain
+```shell-session
 ? Where would you like to setup the tools?
 ❯ Current directory
   New directory
@@ -80,7 +80,7 @@ O processo de instalação solicitará as opções de configuração. Para o loc
 
 Ao selecionar o agente de codificação, a Adobe recomenda selecionar `Cursor` para obter a melhor experiência de desenvolvimento:
 
-```plain
+```shell-session
 ? Which coding agent would you like to use?
 ❯ Cursor
   Copilot
@@ -90,7 +90,7 @@ Ao selecionar o agente de codificação, a Adobe recomenda selecionar `Cursor` p
 
 Ao selecionar o gerenciador de pacotes, a Adobe recomenda o uso de `npm` para consistência:
 
-```plain
+```shell-session
 ? Which package manager would you like to use?
 ❯ npm
   yarn
@@ -168,7 +168,7 @@ aio auth login
 
 1. Verifique o status do servidor - o servidor MCP de extensibilidade do Commerce deve aparecer como:
 
-   ```plain
+   ```shell-session
    Status: Connected/Active
    Server: commerce-extensibility
    Configuration: Automatically configured via .cursor/mcp.json
@@ -176,7 +176,7 @@ aio auth login
 
 1. Use o prompt a seguir para ver se o agente usa o servidor MCP. Caso contrário, peça explicitamente ao agente para usar as ferramentas MCP disponíveis.
 
-```plain
+```shell-session
 What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Cloud Service when configuring a webhook that activates an App Builder runtime action?
 ```
 
@@ -195,7 +195,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 1. Verifique o status do servidor. A saída `MCP:commerce-extensibility` deve corresponder ao seguinte:
 
-   ```plain
+   ```shell-session
    2025-11-13 12:58:50.652 [info] Starting server commerce-extensibility
    2025-11-13 12:58:50.652 [info] Connection state: Starting
    2025-11-13 12:58:50.652 [info] Starting server from LocalProcess extension host
@@ -209,7 +209,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 1. Use o prompt a seguir para ver se o agente usa o servidor MCP. Caso contrário, peça explicitamente ao agente para usar as ferramentas MCP disponíveis.
 
-   ```plain
+   ```shell-session
    What are the differences between Adobe Commerce PaaS and SaaS when configuring a webhook that activates an App Builder runtime action?
    ```
 
@@ -217,7 +217,7 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 
 O prompt de amostra a seguir cria uma extensão para enviar notificações quando um pedido é feito.
 
-```plain
+```shell-session
 Implement an Adobe Commerce SaaS extension that will send an ERP notification when a customer places an order. The ERP notification must be sent as a POST HTTP call to <ERP URL> with the following details in the request JSON body:
 
 Order ID -> orderID
@@ -230,7 +230,7 @@ Payment Type -> pType
 
 Além do prompt, você pode usar o comando `/search-commerce-docs` para pesquisar a documentação em conversas com seu agente. Por exemplo:
 
-```plain
+```shell-session
 /search-commerce-docs "How do I subscribe to Commerce events?"
 ```
 
@@ -275,7 +275,7 @@ Consulte os seguintes recursos para começar:
 
 * [Kit de início de integração](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [modelos do kit inicial do Adobe Commerce](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [modelos iniciais do Adobe I/O Events](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [modelos iniciais do Adobe I/O Events](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [aplicativos de exemplo do App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Por que você deve usar esses recursos
@@ -304,7 +304,7 @@ O protocolo de quatro fases a seguir é aplicado automaticamente pelo sistema de
 
 Para um desenvolvimento complexo envolvendo várias ações de tempo de execução, pontos de contato ou integrações, solicite explicitamente que as ferramentas de IA criem um plano de implementação detalhado. Quando você vir um plano de alto nível na [Fase 2](#protocol) que envolve vários componentes, peça um plano de implementação detalhado para separá-lo em tarefas gerenciáveis:
 
-```plain
+```shell-session
 Create a detailed implementation plan for this complex development.
 ```
 
@@ -326,7 +326,7 @@ O padrão de ferramenta são as ferramentas MCP, mas, em determinadas circunstâ
 
 Se você vir comandos CLI sendo usados e quiser usar ferramentas MCP, use o seguinte prompt:
 
-```plain
+```shell-session
 Use only MCP tools and not CLI commands
 ```
 
@@ -346,7 +346,7 @@ Os comandos da CLI podem ser usados para os seguintes cenários:
 
 Quando arquivos desnecessários forem adicionados (`validator.js`, `transformer.js`, `sender.js`) para pontos de extremidade somente leitura simples, use os seguintes prompts:
 
-```plain
+```shell-session
 Why do we need these files for a simple read-only endpoint?
 Perform a root cause analysis before adding complexity
 Verify if simpler solutions exist
@@ -402,47 +402,47 @@ Solicitar ajuda com testes. As ferramentas podem ajudar na depuração, análise
 
 **Testar ações de tempo de execução**:
 
-```plain
+```shell-session
 Help me test the customer-created runtime action running locally
 ```
 
 **Falhas de depuração**:
 
-```plain
+```shell-session
 Why did the subscription-updated runtime action activation fail?
 ```
 
 **Verificar logs**:
 
-```plain
+```shell-session
 Help me check the logs for the last stock-monitoring runtime action invocation
 ```
 
 **Criar cargas de teste**:
 
-```plain
+```shell-session
 Generate test data for this Commerce event
 ```
 
-```plain
+```shell-session
 Create a test payload for the customer_save_after event
 ```
 
 **Localizar pontos de extremidade de tempo de execução**:
 
-```plain
+```shell-session
 What's the URL for this deployed action?
 ```
 
 **Manipular autenticação**:
 
-```plain
+```shell-session
 How do I authenticate with this external API?
 ```
 
 **Solução de problemas**:
 
-```plain
+```shell-session
 Help me debug why this action is returning 500 errors
 ```
 
@@ -477,19 +477,19 @@ Implante somente ações modificadas para acelerar o desenvolvimento. Isso reduz
 
 Após grandes alterações, aproveite as ferramentas para limpar ações órfãs. Deixe a ferramenta de IA lidar com o processo de limpeza sistematicamente, ela pode identificar com eficiência ações órfãs, verificar seu status e removê-las com segurança sem intervenção manual.
 
-```plain
+```shell-session
 Help me identify and clean up orphaned runtime actions
 ```
 
 Solicite a ferramenta de IA para listar as ações implantadas e identificar as não usadas
 
-```plain
+```shell-session
 List all deployed actions and identify which ones are no longer needed
 ```
 
 Faça com que as ferramentas de IA removam ações órfãs usando comandos apropriados
 
-```plain
+```shell-session
 Remove the orphaned actions that are no longer part of the current implementation
 ```
 
