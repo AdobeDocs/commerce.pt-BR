@@ -3,7 +3,7 @@ title: Camada de catálogo
 description: Saiba como as camadas de catálogo permitem modificar dados do produto sem alterar os dados de origem originais, para que você possa personalizar com segurança e reverter alterações a qualquer momento.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 source-git-commit: 4a904527af172a5e35b87410135d55484d07ad84
 workflow-type: tm+mt
 source-wordcount: '1207'
