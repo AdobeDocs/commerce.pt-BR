@@ -127,7 +127,7 @@ Antes de instalar, verifique se você tem:
 
 ## Uso
 
-Depois de instalado, você pode chamar os índices [automaticamente](#automatic-index-selection-recommended) ou [explicitamente](#explicit-index-selection). Você também pode usar o comando [`/search-commerce-docs` ](#command-based-search).
+Depois de instalado, você pode chamar os índices [automaticamente](#automatic-index-selection-recommended) ou [explicitamente](#explicit-index-selection). Você também pode usar o comando [`/search-commerce-docs` &#x200B;](#command-based-search).
 
 >[!NOTE]
 >
