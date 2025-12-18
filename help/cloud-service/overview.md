@@ -58,7 +58,7 @@ A tabela a seguir destaca os produtos que alimentam o [!DNL Adobe Commerce as a 
 
 Assista ao vídeo a seguir para obter uma breve introdução à arquitetura [!DNL Adobe Commerce as a Cloud Service]. Diagramas que ilustram a arquitetura são fornecidos abaixo do vídeo.
 
->[!VIDEO](https://video.tv.adobe.com/v/3443232?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443272?captions=por_br&learn=on)
 
 Este diagrama ilustra o fluxo de dados entre o [!DNL Adobe Commerce as a Cloud Service] e todas as soluções da Adobe Experience Cloud.
 
