@@ -42,7 +42,7 @@ Quando a regra de correspondência do **[!UICONTROL Match by product SKU]** é c
    >
    > Se um ativo for usado para vários produtos, configure os metadados para cada SKU associada.
 
-1. Na guia `Basic`, defina o valor padrão do campo _[!UICONTROL Review Status]_como `approved`.
+1. Na guia `Basic`, defina o valor padrão do campo _[!UICONTROL Review Status]_&#x200B;como `approved`.
 
    ![Exemplo de metadados](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 
