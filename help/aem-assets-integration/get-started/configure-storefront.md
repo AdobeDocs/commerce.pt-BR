@@ -28,4 +28,4 @@ Para habilitar a integração em vitrines do Commerce viabilizadas pelo Edge Del
 
 Os menus suspensos do Commerce detectam automaticamente a configuração `commerce-assets-enabled` e ajustam o tratamento da imagem de acordo.
 
-Para obter mais informações sobre como usar o AEM Assets com a Loja Commerce da Edge Delivery Services, conclua a configuração da loja descrita no tópico [integração com o AEM Assets](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/) na documentação da *Loja Adobe Commerce*.
+Para obter mais informações sobre como usar o AEM Assets com a Loja Commerce da Edge Delivery Services, conclua a configuração da loja descrita no tópico [integração com o AEM Assets](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/aem-assets-configuration/?lang=pt-BR) na documentação da *Loja Adobe Commerce*.
