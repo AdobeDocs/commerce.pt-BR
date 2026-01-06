@@ -48,7 +48,7 @@ Como um grupo combinado, o administrador do sistema, o comerciante e o desenvolv
 
 As etapas a seguir são necessárias para integrar [!DNL Adobe Experience Manager Assets] ou [!DNL Product Visuals powered by AEM Assets] a [!DNL Adobe Commerce as a Cloud Service]:
 
-1. **Administrador do Sistema**: [Adicionar usuários ao [!DNL AEM Assets] perfil de produto [!DNL Product Visuals] 5}](user-management.md#add-a-user-to-aem-assets-or-product-visuals)
+1. **Administrador do Sistema**: [Adicionar usuários ao [!DNL AEM Assets] perfil de produto [!DNL Product Visuals] 5&rbrace;](user-management.md#add-a-user-to-aem-assets-or-product-visuals)
 1. **Desenvolvedores**: [Integrar [!DNL AEM Assets] e [!DNL Product Visuals]](../aem-assets-integration/overview.md)
 1. **Comerciantes**: [Acesse seus [!DNL AEM Assets] e [!DNL Product Visuals]](./user-management.md#access-the-experience-manager-interface)
 
