@@ -4,9 +4,10 @@ description: As informações da versão mais recente do  [!DNL Catalog Adapter]
 feature: Services, Release Notes
 recommendations: noCatalog
 roles: Admin, Developer
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: d4dd0288-8853-43fe-9103-1aead8d3b56e
+source-git-commit: 47419e7e19611dc4a045c195f259e2126ab77372
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '197'
 ht-degree: 0%
 
 ---
@@ -27,6 +28,10 @@ As atualizações incluem:
 >A [Extensão do Adaptador de Catálogo](catalog-adapter.md) desabilita a indexação de preços do Adobe Commerce. Se você o instalou, pode verificar a versão instalada em seu sistema usando o Composer. Em alguns casos, convém atualizar a extensão do adaptador de catálogo no sistema para obter correções ou novos recursos sem atualizar a versão do Commerce Service.
 
 ## Versão principal atual
+
+## Versão 1.0.10
+
+![Correção](../assets/fix.svg) Correção de um problema em que as consultas de preço para produtos de pacote importados ou recém-criados podiam resultar em erros internos de servidor porque o sistema tentou usar uma SKU concatenada para pesquisa em vez da SKU válida e correta. Consultas de preço para produtos do pacote agora usam o SKU apropriado e são resolvidas corretamente.<!--MDEE-1040-->
 
 ## Versão 1.0.9
 

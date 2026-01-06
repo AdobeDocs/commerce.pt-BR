@@ -4,9 +4,9 @@ description: As informações da versão mais recente do  [!DNL Data Export Exte
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: f945cb34e57a6c51e308d05944821e37e1a4c7d4
+source-git-commit: 029cbbf75a21ba68f9829d5755a40a610d34d479
 workflow-type: tm+mt
-source-wordcount: '1827'
+source-wordcount: '1962'
 ht-degree: 0%
 
 ---
@@ -28,9 +28,20 @@ As atualizações incluem:
 
 ## Versão principal atual
 
+## Versão 103.4.17   
+
+![Correção](../assets/fix.svg) Atualizada a extensão de exportação de dados (`magento/module-data-exporter`) para remover a dependência `magento/module-analytics`, que não é mais necessária.<!--MDEE-1260--> 
+![Correção](../assets/fix.svg) Corrigido um problema no qual a atualização dos preços de camada de um produto não removia valores antigos, resultando em entradas de preços de camada duplicadas ou desatualizadas. Agora, somente os preços da camada atual são mostrados após as atualizações. <!--MDEE-1157-->  
+![Correção](../assets/fix.svg) Corrigido um problema no qual os produtos com preço de $0 ou desconto de 100% não eram exibidos gratuitamente na loja. Os preços da loja e do carrinho agora são consistentes. <!--MDEE-1159-->  
+![Correção](../assets/fix.svg) Compatibilidade com o Symfony 7.4 LTS adicionada às extensões de exportação de dados para oferecer suporte a atualizações e integrações futuras. <!--MDEE-1272-->   
+
+## Versão 103.4.16   
+
+![Correção](../assets/fix.svg) Resolveu um problema em que determinados indexadores falharam ao alternar para o modo `Update On Schedule` durante a instalação ou atualização devido à falta de implementações de ActionInterface em vários indexadores. Essa correção garante que a instalação e a atualização da extensão sejam bem-sucedidas sem encontrar erros relacionados ao indexador. <!--MDEE-1235-->
+
 ## Versão 103.4.15
 
-![Novo](../assets/new.svg) adição de suporte à extensão Status de sincronização do feed de dados para monitorar e solucionar problemas de transferências de dados do Adobe Commerce para serviços conectados (Serviço de catálogo, Live Search e Recomendações de produto). Para obter detalhes sobre como instalar e usar essa extensão, consulte [Monitoramento do Status de Sincronização do Feed de Dados](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=pt-BR) no *Guia de Administração do Commerce*. <!--MDEE-954-->
+![Novo](../assets/new.svg) adição de suporte à extensão Status de sincronização do feed de dados para monitorar e solucionar problemas de transferências de dados do Adobe Commerce para serviços conectados (Serviço de catálogo, Live Search e Recomendações de produto). Para obter detalhes sobre como instalar e usar essa extensão, consulte [Monitoramento do Status de Sincronização do Feed de Dados](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) no *Guia de Administração do Commerce*. <!--MDEE-954-->
 
 ## Versão 103.4.14
 
@@ -47,7 +58,7 @@ As atualizações incluem:
 
 ## Versão 103.4.11
 
-![Novo](../assets/new.svg) [!BADGE Somente PaaS]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."}
+![Novo](../assets/new.svg) [!BADGE Somente PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."}
 Foi adicionado suporte para atributos de produto adicionais para incluir classe de imposto, conjunto de atributos e dados de inventário das configurações de produto da Commerce no feed de produto. Os clientes que quiserem incluir esses atributos em feeds de exportação de produtos devem adicionar o módulo Atributos de produto extras aos seus projetos do Adobe Commerce. Consulte [Adicionar classe de imposto, conjunto de atributos e atributos de inventário](add-tax-attribute-set-inventory-attributes.md).<!--MDEE-1135-->
 ![Correção](../assets/fix.svg) resolveu um problema que causava a sincronização incorreta de atualizações de produtos excluídos se um erro ocorresse durante um índice de produto completo. Agora, todas as exclusões de produtos são sincronizadas corretamente, mesmo que ocorra um erro durante o processo de indexação. <!--MDEE-1144-->
 
