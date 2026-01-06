@@ -1,27 +1,29 @@
 ---
 title: Ferramenta Migração de dados em massa
 description: Saiba como usar a Ferramenta de migração de dados em massa para migrar dados da sua instância existente do Adobe Commerce na nuvem para o  [!DNL Adobe Commerce as a Cloud Service].
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+feature: Cloud
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 role: Developer
+level: Intermediate
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+source-git-commit: 06bdcfbff5d376064b18bdab3945e7609075b8bc
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '706'
 ht-degree: 0%
 
 ---
 
 # Ferramenta de migração de dados em massa
 
-A ferramenta de migração de dados em massa segue uma arquitetura distribuída que permite a migração de dados segura e eficiente de PaaS para ambientes SaaS. Essa ferramenta foi projetada para que os implementadores de soluções migrem dados de uma instância existente do Adobe Commerce na nuvem (PaaS) para [!DNL Adobe Commerce as a Cloud Service] (SaaS). Para obter mais informações sobre o processo de migração, consulte a [Visão geral da migração](./overview.md).
+A ferramenta de migração de dados em massa segue uma arquitetura distribuída que permite a migração de dados segura e eficiente de PaaS para ambientes SaaS. Esta ferramenta ajuda os implementadores da solução a migrar dados de uma instância existente do Adobe Commerce na nuvem (PaaS) para [!DNL Adobe Commerce as a Cloud Service] (SaaS). Para obter mais informações sobre o processo de migração, consulte a [Visão geral da migração](./overview.md).
 
 >[!NOTE]
 >
->A ferramenta de migração de dados em massa é compatível apenas com a migração de dados comerciais principais de terceiros. No momento, não há suporte para a migração de dados personalizada.
+>A ferramenta de migração de dados em massa é compatível com a migração somente de dados principais de comércio primários. No momento, não há suporte para a migração de dados personalizada.
 
 A imagem a seguir detalha a arquitetura e os principais componentes para usar a ferramenta Migração de dados em massa.
 
-![Arquitetura da Ferramenta de Migração de Dados em Massa](../assets/bulk-data-diagram.png)
+![Diagrama da arquitetura da Ferramenta de Migração de Dados em Massa mostrando o fluxo de dados PaaS para SaaS](../assets/bulk-data-diagram.png){zoomable="yes"}
 
 ## Fluxo de trabalho de migração
 
@@ -44,13 +46,13 @@ A disponibilidade da ferramenta de migração de dados em massa é a seguinte:
 
 ## Criar ambiente de destino
 
-O implementador de soluções (SI) cria um ambiente de destino para a migração. Esse ambiente é usado para armazenar os dados migrados da instância de origem.
+O implementador de soluções (SI) cria um ambiente de destino para a migração. Esse ambiente armazena os dados migrados da instância de origem.
 
 Primeiro, [crie uma nova instância [!DNL Adobe Commerce as a Cloud Service] (SaaS)](../getting-started.md#create-an-instance).
 
 ### Configurar ferramenta de extração
 
-A ferramenta de extração é usada para extrair dados da instância de origem.
+Use a ferramenta de extração para extrair dados da instância de origem.
 
 1. Baixe a ferramenta de extração no link fornecido pelo Adobe.
 1. Defina as seguintes variáveis de ambiente na ferramenta de extração:
@@ -87,13 +89,13 @@ Execute a ferramenta carregar dados fornecida pelo Adobe. Essa ferramenta irá:
 1. Gerar um plano de carregamento.
 1. Execute o plano, movendo dados para o banco de dados de locatários SaaS em lotes.
 1. Processe a mídia do catálogo e transfira-a para o ambiente de destino.
-1. Libera o cache SaaS Redis e invalida os índices de banco de dados do locatário.
+1. Limpe o cache SaaS Redis e invalide os índices do banco de dados do locatário.
 
 ### Assimilação de dados do catálogo
 
 Depois que os dados são carregados, os dados do catálogo fluem automaticamente do banco de dados do locatário SaaS para o Serviço de catálogo.
 
-O Serviço de catálogo compartilha esses dados com o Live Search e as Recomendações de produto. Nenhuma intervenção manual é necessária para esse processo. Os dados estarão disponíveis em todos os serviços quando a assimilação for concluída.
+O Serviço de catálogo compartilha esses dados com o Live Search e as Recomendações de produto. Nenhuma intervenção manual é necessária para esse processo. Os dados são disponibilizados em todos os serviços após a conclusão da assimilação.
 
 ### Verificação da integridade dos dados
 

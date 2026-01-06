@@ -1,33 +1,35 @@
 ---
 title: Introdução ao  [!DNL Adobe Commerce as a Cloud Service]
 description: Saiba como começar a usar o  [!DNL Adobe Commerce as a Cloud Service].
+feature: Cloud, Integration
 role: Admin, Developer, User
+level: Beginner
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
-source-git-commit: 69870bc7037bdad5a8d5fa769a06c07f8cd920aa
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+source-git-commit: 3fe22d47b6fd6cf1077cbd4644ffad08f55826ca
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: '1261'
 ht-degree: 0%
 
 ---
 
 # Introdução
 
-[!DNL Adobe Commerce as a Cloud Service] fornece a maioria das configurações prontas para uso. Depois de concluir alguns processos de configuração básica, seu armazenamento entrará em funcionamento rapidamente. Este guia orienta você na criação e no trabalho com uma instância. Este guia também ajuda a configurar sua organização para ser bem-sucedida, garantindo que suas equipes tenham acesso adequado ao [!DNL Adobe Commerce as a Cloud Service] e às ferramentas necessárias para começar.
+[!DNL Adobe Commerce as a Cloud Service] fornece a maioria das configurações prontas para uso. Depois de concluir alguns processos de configuração básica, seu armazenamento não pára de funcionar. Este guia orienta você na criação e no trabalho com uma instância e ajuda a configurar sua organização para ter sucesso. Ele garante que suas equipes tenham acesso adequado ao [!DNL Adobe Commerce as a Cloud Service] e às ferramentas necessárias para começar.
 
-O [!DNL Adobe Commerce as a Cloud Service] é uma plataforma comercial nativa em nuvem que oferece flexibilidade, escalabilidade e eficiência para proporcionar experiências de comércio digital. Essa oferta SaaS é uma plataforma totalmente gerenciada e sem versão que fornece uma experiência de atualização contínua sem a necessidade de intervenção manual.
+O [!DNL Adobe Commerce as a Cloud Service] é uma plataforma comercial nativa em nuvem que oferece flexibilidade, escalabilidade e eficiência para proporcionar experiências de comércio digital. Essa oferta SaaS é uma plataforma totalmente gerenciada e sem versão que fornece uma experiência de atualização contínua sem intervenção manual.
 
 ## Componentes principais
 
 [!DNL Adobe Commerce as a Cloud Service] consiste nos seguintes componentes:
 
-* **[Adobe Experience Cloud](https://experience.adobe.com/)** - Seu ponto de entrada central para todos os produtos do [!DNL Adobe Commerce] em [experience.adobe.com](https://experience.adobe.com/)
+* **[[!DNL Adobe Experience Cloud]](https://experience.adobe.com/)** - Seu ponto de entrada central para todos os produtos do [!DNL Adobe Commerce] em [experience.adobe.com](https://experience.adobe.com/)
    * Clique em [!UICONTROL **Commerce**] em [!UICONTROL **Acesso rápido**] para abrir o Commerce Cloud Manager
-* **[Commerce Cloud Manager](https://experience.adobe.com/#/commerce/cloud-service)** - Crie e gerencie instâncias, URLs de API de acesso e seu administrador do Commerce
-* **[Adobe Admin Console](https://adminconsole.adobe.com/)** - Gerenciar usuários e funções
+* **[[!DNL Commerce Cloud Manager]](https://experience.adobe.com/#/commerce/cloud-service)** - Crie e gerencie instâncias, acesse URLs de API e o Administrador do Commerce
+* **[[!DNL Adobe Admin Console]](https://adminconsole.adobe.com/)** - Gerenciar usuários e funções
 * **Administrador do Commerce** - Gerencie configurações de produtos, pedidos, clientes e loja
-* **[Loja da Edge Delivery Services](./storefront.md)** - Crie e personalize uma loja voltada para o cliente usando um sistema combinável de alto desempenho que ofereça velocidade, SEO e experiência do usuário excepcionais para comerciantes e desenvolvedores
-* **[Adobe Developer App Builder](https://developer.adobe.com/app-builder/)** - Crie integrações personalizadas usando o App Builder, juntamente com outras ferramentas de extensibilidade, como o [kit de início de integração](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) e a [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/)
+* **[Loja equipada com [!DNL Edge Delivery Services]](./storefront.md)** - Crie e personalize uma loja voltada para o cliente usando um sistema combinável de alto desempenho que ofereça velocidade, SEO e experiência do usuário excepcionais para comerciantes e desenvolvedores
+* **[[!DNL Adobe Developer App Builder]](https://developer.adobe.com/app-builder/)** - Crie integrações personalizadas usando o [!DNL App Builder], juntamente com outras ferramentas de extensibilidade, como o [kit inicial de integração](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) e [[!DNL API Mesh]](https://developer.adobe.com/graphql-mesh-gateway/)
 
 ## Configuração e gerenciamento
 
@@ -46,9 +48,9 @@ Como um grupo combinado, o administrador do sistema, o comerciante e o desenvolv
 
 As etapas a seguir são necessárias para integrar [!DNL Adobe Experience Manager Assets] ou [!DNL Product Visuals powered by AEM Assets] a [!DNL Adobe Commerce as a Cloud Service]:
 
-1. **Administrador do Sistema**: [Adicionar usuários ao perfil de produto AEM Assets e Visuais de Produto](user-management.md#add-a-user-to-aem-assets-or-product-visuals)
-1. **Desenvolvedores**: [Integrar o AEM Assets e o Product Visual](../aem-assets-integration/overview.md)
-1. **Comerciantes**: [Acesse as visualizações do AEM Assets e do produto](./user-management.md#access-the-experience-manager-interface)
+1. **Administrador do Sistema**: [Adicionar usuários ao [!DNL AEM Assets] perfil de produto [!DNL Product Visuals] 5}](user-management.md#add-a-user-to-aem-assets-or-product-visuals)
+1. **Desenvolvedores**: [Integrar [!DNL AEM Assets] e [!DNL Product Visuals]](../aem-assets-integration/overview.md)
+1. **Comerciantes**: [Acesse seus [!DNL AEM Assets] e [!DNL Product Visuals]](./user-management.md#access-the-experience-manager-interface)
 
 ### Tarefas de configuração e gerenciamento baseadas em função
 
@@ -58,15 +60,15 @@ Selecione uma guia abaixo para ver gráficos de fluxo de trabalho de alto nível
 
 >[!TAB Fluxo de trabalho de comerciante e administrador do sistema]
 
-Este diagrama fornece uma visão geral de alto nível de como os administradores do sistema e comerciantes acessam e gerenciam as instâncias do [!DNL Adobe Commerce as a Cloud Service]. Consulte o [Guia do Adobe Admin Console](https://helpx.adobe.com/br/enterprise/admin-guide.html) para obter mais informações sobre fluxos de trabalho de administrador.
+Este diagrama fornece uma visão geral de alto nível de como os administradores do sistema e comerciantes acessam e gerenciam as instâncias do [!DNL Adobe Commerce as a Cloud Service]. Consulte o [Guia do Adobe Admin Console](https://helpx.adobe.com/enterprise/admin-guide.html) para obter mais informações sobre fluxos de trabalho de administrador.
 
-![[!DNL Adobe Commerce as a Cloud Service] diagrama de fluxo de comerciante](./assets/merchant-flow.svg){zoomable="yes"}
+![Diagrama do administrador do sistema e do fluxo de trabalho do comerciante para o Adobe Commerce as a Cloud Service](./assets/merchant-flow.svg){zoomable="yes"}
 
 >[!TAB Fluxo de trabalho do desenvolvedor]
 
 Este diagrama fornece uma visão geral de alto nível de como os desenvolvedores criam integrações com o [!DNL Adobe Commerce as a Cloud Service] usando o App Builder. Consulte a [documentação da API](https://developer.adobe.com/commerce/webapi/rest/) para obter mais informações.
 
-![[!DNL Adobe Commerce as a Cloud Service] diagrama do fluxo do desenvolvedor](./assets/developer-flow.svg){zoomable="yes"}
+![Diagrama do fluxo de trabalho do desenvolvedor para criar integrações com o Adobe Commerce as a Cloud Service](./assets/developer-flow.svg){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -84,7 +86,7 @@ Como administrador do sistema, você é responsável por configurar a organizaç
 | Comparar recursos | Entender as diferenças entre o Cloud Service e outras ofertas da Adobe Commerce | [Comparação de recursos](feature-comparison.md) |
 | Criar uma instância | Provisionamento de ambientes de sandbox e produção | [Criar uma instância](#create-an-instance) |
 | Configurar gerenciamento de usuários | Adicionar usuários, atribuir funções e gerenciar permissões | [Gerenciamento de usuários](user-management.md) |
-| Configurar visualizações do AEM Assets e do produto (opcional) | Adicionar usuários, atribuir funções e gerenciar permissões | [Gerenciamento de usuários](user-management.md#add-a-user-to-aem-assets-or-product-visuals) |
+| Configurar [!DNL AEM Assets] e [!DNL Product Visuals] (opcional) | Adicionar usuários, atribuir funções e gerenciar permissões | [Gerenciamento de usuários](user-management.md#add-a-user-to-aem-assets-or-product-visuals) |
 
 >[!TAB Comerciante]
 
@@ -95,7 +97,7 @@ Como comerciante, você se concentra no gerenciamento de produtos, pedidos e con
 | Acessar sua instância | Faça logon no Administrador do Commerce para gerenciar sua loja | [Acessar uma instância](#access-an-instance) |
 | Explorar casos de uso | Conheça os cenários e workflows práticos de negócios | [Casos de uso](./use-cases.md) |
 | Importar catálogo | Saiba como importar os dados do produto para a plataforma | [Importar seu catálogo](#import-your-catalog) |
-| Acessar visuais de produto e do AEM Assets (opcional) | Acesse o Experience Manager para começar a usar o AEM Assets e Visuais de produto | [Acessar a interface do Experience Manager](./user-management.md#access-the-experience-manager-interface) |
+| Acessar [!DNL AEM Assets] e [!DNL Product Visuals] (opcional) | Acesse o experience manager para começar a usar o [!DNL AEM Assets] e o [!DNL Product Visuals] | [Acessar a interface do Experience Manager](./user-management.md#access-the-experience-manager-interface) |
 
 >[!TAB Desenvolvedor]
 
@@ -108,7 +110,7 @@ Como desenvolvedor, você precisa saber como criar integrações personalizadas 
 | Criar loja | Saiba como configurar e personalizar a Commerce Storefront | [Configuração de vitrine](./storefront.md) |
 | Configurar a loja | Saiba como configurar sua loja | [Configuração de vitrine](./storefront.md) |
 | Explorar opções de integração | Saiba mais sobre o App Builder, a API Mesh e outras ferramentas de extensibilidade às quais você tem acesso | [Visão geral - Plataforma do desenvolvedor](overview.md#developer-platform) |
-| Integrar visualizações do AEM Assets e do produto (opcional) | Saiba como integrar o AEM Assets e Visuais de produto ao Adobe Commerce | [integração com o AEM Assets](../aem-assets-integration/overview.md) |
+| Integrar [!DNL AEM Assets] e [!DNL Product Visuals] (opcional) | Saiba como integrar [!DNL AEM Assets] e [!DNL Product Visuals] a [!DNL Adobe Commerce] | [integração com o AEM Assets](../aem-assets-integration/overview.md) |
 
 >[!ENDTABS]
 
@@ -132,7 +134,7 @@ As seções a seguir descrevem os processos básicos que você precisa concluir 
 
 [!DNL Adobe Commerce as a Cloud Service] instâncias usam um sistema baseado em crédito. Você pode criar várias instâncias, mas cada instância requer créditos disponíveis. O número de créditos que você tem inicialmente depende da sua assinatura.
 
-1. Faça logon em sua conta do [Adobe Experience Cloud](https://experience.adobe.com/).
+1. Faça logon em sua conta do [[!DNL Adobe Experience Cloud]](https://experience.adobe.com/).
 
 1. Em [!UICONTROL Quick access], clique em [!UICONTROL **Commerce**] para abrir o [!UICONTROL Commerce Cloud Manager].
 
@@ -140,7 +142,7 @@ As seções a seguir descrevem os processos básicos que você precisa concluir 
 
 1. Clique em [!UICONTROL **Adicionar instância**] no canto superior direito da tela.
 
-   ![Criar Instância](./assets/create-instance.png){width="50%" align="center" zoomable="yes"}
+   ![Botão Criar instância e campo de nome de instância no Commerce Cloud Manager](./assets/create-instance.png){width="50%" align="center" zoomable="yes"}
 
 1. Selecione [!UICONTROL **Commerce as a Cloud Service**].
 
@@ -203,15 +205,15 @@ Por padrão, [!DNL Adobe Commerce as a Cloud Service] instâncias não incluem d
 
 Há duas maneiras de importar seu catálogo para o [!DNL Adobe Commerce as a Cloud Service]:
 
-* [**Administrador do Commerce**](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/import/data-import) - Uma interface amigável que permite importar os dados do catálogo com apenas alguns cliques.
+* [**Administrador do Commerce**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) - Uma interface amigável que permite importar os dados do catálogo com apenas alguns cliques.
 * [**Importar API JSON**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - Uma API REST que permite importar os dados do catálogo de forma programática.
 
 ### Configurar a loja
 
-Agora que você criou uma instância, você está pronto para [configurar sua vitrine](storefront.md) com a tecnologia do Edge Delivery Services.
+Agora que você criou uma instância, você está pronto para [configurar sua vitrine eletrônica](storefront.md) com a tecnologia do [!DNL Edge Delivery Services].
 
 ## Recursos adicionais
 
 * [Notas de versão](release-notes.md)
 * [Guia de migração](migration/overview.md)
-* [Documentação da Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR)
+* [Documentação da Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)

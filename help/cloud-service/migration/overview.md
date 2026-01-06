@@ -1,19 +1,21 @@
 ---
 title: Migrar para  [!DNL Adobe Commerce as a Cloud Service]
 description: Saiba como migrar para o  [!DNL Adobe Commerce as a Cloud Service].
+feature: Cloud
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 role: Developer
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+level: Intermediate
+source-git-commit: 3fe22d47b6fd6cf1077cbd4644ffad08f55826ca
 workflow-type: tm+mt
-source-wordcount: '3031'
+source-wordcount: '3020'
 ht-degree: 0%
 
 ---
 
 # Migrar para [!DNL Adobe Commerce as a Cloud Service]
 
-O [!DNL Adobe Commerce as a Cloud Service] fornece um guia abrangente para desenvolvedores que estão fazendo a transição de uma implementação existente do Adobe Commerce PaaS para a nova oferta do Adobe Commerce as a Cloud Service (SaaS). O Adobe Commerce as a Cloud Service representa uma mudança significativa para um modelo SaaS totalmente gerenciado e sem versão, oferecendo desempenho aprimorado, escalabilidade, operações simplificadas e maior integração com a Adobe Experience Cloud mais ampla.
+O [!DNL Adobe Commerce as a Cloud Service] fornece um guia abrangente para desenvolvedores que estão fazendo a transição de uma implementação existente do Adobe Commerce PaaS para a nova oferta do Adobe Commerce as a Cloud Service (SaaS). O Adobe Commerce as a Cloud Service representa uma mudança significativa para um modelo SaaS totalmente gerenciado e sem versão, oferecendo desempenho aprimorado, escalabilidade, operações simplificadas e maior integração com o [!DNL Adobe Experience Cloud] mais amplo.
 
 >[!NOTE]
 >
@@ -23,8 +25,8 @@ O [!DNL Adobe Commerce as a Cloud Service] fornece um guia abrangente para desen
 
 **Principais diferenças**
 
-* [!BADGE Somente PaaS]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."} **PaaS (Atual)**: o comerciante gerencia o código do aplicativo, as atualizações, os patches e a configuração da infraestrutura no ambiente hospedado da Adobe. [Modelo de responsabilidade compartilhada](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/security-and-compliance/shared-responsibility) para serviços (MySQL, Elasticsearch e outros).
-* [!BADGE Somente SaaS]{type=Positive url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."} **SaaS (Novo - [!DNL Adobe Commerce as a Cloud Service])**: o Adobe gerencia totalmente o aplicativo principal, a infraestrutura e as atualizações. Os comerciantes se concentram na personalização por meio de pontos de extensibilidade (APIs, App Builder, SDKs de interface do usuário). O código do aplicativo principal está bloqueado.
+* [!BADGE Somente PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."} **PaaS (Atual)**: o comerciante gerencia o código do aplicativo, as atualizações, os patches e a configuração da infraestrutura no ambiente hospedado da Adobe. [Modelo de responsabilidade compartilhada](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility) para serviços (MySQL, Elasticsearch e outros).
+* [!BADGE Somente SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."} **SaaS (Novo - [!DNL Adobe Commerce as a Cloud Service])**: o Adobe gerencia totalmente o aplicativo principal, a infraestrutura e as atualizações. Os comerciantes se concentram na personalização por meio de pontos de extensibilidade (APIs, App Builder, SDKs de interface do usuário). O código do aplicativo principal está bloqueado.
 
 **Implicações arquitetônicas**
 
@@ -37,7 +39,7 @@ O [!DNL Adobe Commerce as a Cloud Service] fornece um guia abrangente para desen
 
 * [Adobe Developer App Builder](https://developer.adobe.com/app-builder/) e [API Mesh para Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway)
 * [Commerce Optimizer](../../optimizer/overview.md)
-* [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR)
+* [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/)
 * Provisionamento de autoatendimento com o [Commerce Cloud Manager](../getting-started.md#create-an-instance)
 
 ## Caminhos de migração
@@ -50,7 +52,7 @@ Como alternativa a uma migração completa, o [!DNL Adobe Commerce as a Cloud Se
 
 ![migração incremental](../assets/incremental.png){width="600" zoomable="yes"}
 
-* **Commerce Optimizer**—Esta abordagem permite a migração iterativa, usando o Commerce Optimizer como uma fase de transição para mover personalizações e dados complexos para o [!DNL Adobe Commerce as a Cloud Service] no seu próprio ritmo. A Commerce Optimizer fornece acesso a Serviços de merchandising viabilizados por Exibições e políticas de catálogo, Commerce Storefront viabilizada pela Edge Delivery e Visualizações de produto viabilizadas pela AEM Assets.
+* **Commerce Optimizer**—Esta abordagem permite a migração iterativa, usando o Commerce Optimizer como uma fase de transição para mover personalizações e dados complexos para o [!DNL Adobe Commerce as a Cloud Service] no seu próprio ritmo. A Commerce Optimizer fornece acesso aos Serviços de merchandising fornecidos pelas Exibições e políticas do catálogo, pela Commerce Storefront fornecida pela Edge Delivery e pelo [!DNL Product Visuals powered by AEM Assets].
 
 ![migração iterativa](../assets/optimizer.png){width="600" zoomable="yes"}
 
@@ -75,7 +77,7 @@ Conforme indicado na tabela, as mitigações para cada migração consistirão e
 * **[Malha de API](https://developer.adobe.com/graphql-mesh-gateway)**—Crie uma nova malha ou modifique a existente. A Adobe fornecerá malhas pré-configuradas para auxiliar nesse processo.
 * **Integrações** — Todas as integrações precisam aproveitar o [kit inicial de integração](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/) ou a [[!DNL Adobe Commerce as a Cloud Service] API REST](https://developer.adobe.com/commerce/webapi/reference/rest/saas/).
 * **Personalizações** — Todas as personalizações devem ser movidas para o App Builder e para a API Mesh.
-* **Gerenciamento do Assets**—Todo o gerenciamento de ativos requer migração. Se você já estiver usando o AEM Assets, não será necessário migrar.
+* **Gerenciamento do Assets**—Todo o gerenciamento de ativos requer migração. Se você já estiver usando o [!DNL AEM Assets], não há necessidade de migrar.
 * **Extensões** — Todas as extensões em andamento precisam ser recriadas como extensões fora do processo. Até o final de 2025, a Adobe fornecerá acesso às nossas extensões mais populares para minimizar os tempos de compilação.
 
 ## Fases de migração
@@ -113,7 +115,7 @@ Essa fase é essencial para minimizar os riscos e estabelecer um caminho de migr
 
 **Revisão da configuração de segurança:**
 
-* Avalie quaisquer regras personalizadas do WAF, listas de permissões de IP e outras configurações de segurança.
+* Avalie quaisquer regras WAF personalizadas, incluis na lista de permissões de IP e quaisquer outras configurações de segurança.
 
 **Definir escopo e estratégia de migração:**
 
@@ -167,7 +169,7 @@ Esta opção serve como uma etapa de transição, com base em uma integração e
 
 * **Sincronização de dados do catálogo**: certifique-se de que a instância do Adobe Commerce PaaS continue a sincronizar dados de produtos e catálogos com o serviço SaaS do catálogo Adobe Commerce existente. Normalmente, isso depende de conectores ou módulos estabelecidos na instância do PaaS. O serviço SaaS de catálogo permanece como a fonte oficial para funções de pesquisa e merchandising, derivando seus dados do back-end do PaaS.
 * **API Mesh para otimização**: embora a loja headless (no Edge Delivery Services) e outros serviços possam consumir dados diretamente do serviço SaaS do catálogo, a Adobe recomenda usar a API Mesh (no App Builder). A API Mesh pode unificar APIs do serviço SaaS de catálogo com outras APIs necessárias do back-end do PaaS (por exemplo, verificações de inventário em tempo real do banco de dados transacional ou atributos de produto personalizados não totalmente replicados para o serviço SaaS de catálogo) em um único endpoint GraphQL com bom desempenho. Isso também permite armazenamento em cache, autenticação e transformação de resposta centralizados.
-* **Integrar o Live Search e as Recomendações de Produto**: Configurar os serviços SaaS do Live Search e das Recomendações de Produto para [assimilar dados do catálogo](https://experienceleague.adobe.com/pt-br/docs/commerce/live-search/install#configure-the-data) diretamente do seu serviço SaaS do Catálogo do Adobe Commerce existente, que por sua vez é preenchido pelo seu back-end PaaS.
+* **Integrar o Live Search e as Recomendações de Produto**: Configurar os serviços SaaS do Live Search e das Recomendações de Produto para [assimilar dados do catálogo](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#configure-the-data) diretamente do seu serviço SaaS do Catálogo do Adobe Commerce existente, que por sua vez é preenchido pelo seu back-end PaaS.
 
 **Benefício**: fornece um caminho mais rápido para uma loja headless e recursos de merchandising SaaS avançados, aproveitando um serviço SaaS de catálogo existente e operacional e seu pipeline de integração com seu back-end PaaS. No entanto, ela mantém a dependência do back-end PaaS para a fonte de dados do catálogo principal e não fornece os recursos de agregação de várias fontes inerentes ao novo Modelo de dados de catálogo combinável. Essa opção é um trampolim válido para uma arquitetura de composição mais completa.
 

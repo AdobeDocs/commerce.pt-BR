@@ -1,19 +1,21 @@
 ---
 title: Responsabilidade compartilhada
 description: Saiba mais sobre as responsabilidades de segurança de cada parte envolvida em seu projeto [!DNL Adobe Commerce as a Cloud Service] do.
+feature: Cloud, Security
 role: Admin, Architect, Leader
+level: Intermediate
 exl-id: 424fe5cd-5d54-425d-97ce-024476d18dde
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
-source-git-commit: a06d64566fda76c0527aabfa9e8fdf27e7c149ca
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+source-git-commit: 1ce3b6b6b94b1b4e94c0d34c081dec2884d7f0f8
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '342'
 ht-degree: 0%
 
 ---
 
 # Segurança de responsabilidade compartilhada e modelo operacional
 
-[!DNL Adobe Commerce as a Cloud Service] é um serviço sob demanda que depende de um modelo operacional e de segurança de responsabilidade compartilhada. Essas responsabilidades são compartilhadas entre a Adobe e os clientes. Cada parte tem uma responsabilidade distinta pela segurança e operação do aplicativo Adobe Commerce.
+[!DNL Adobe Commerce as a Cloud Service] é um serviço sob demanda que depende de um modelo operacional e de segurança de responsabilidade compartilhada. A Adobe e os clientes compartilham essas responsabilidades, com cada parte com responsabilidades distintas para proteger e operar o aplicativo da Adobe Commerce.
 
 >[!BEGINSHADEBOX]
 

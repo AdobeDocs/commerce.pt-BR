@@ -1,22 +1,24 @@
 ---
 title: Ferramentas de codificação de IA para extensões
 description: Saiba como usar as ferramentas de IA para criar extensões do Commerce App Builder.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+feature: App Builder, Cloud
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 role: Developer
+level: Intermediate
 hide: true
 hidefromtoc: true
-source-git-commit: d2f2563a1f3a656d7bfaa12a0c3ca2b828e7fc33
+source-git-commit: 991a8683b9a333d2699f1ef22f3dc54d7b401573
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1847'
 ht-degree: 0%
 
 ---
 
 # Ferramentas de codificação de IA para extensões
 
-Ao migrar para o [!DNL Adobe Commerce as a Cloud Service], você pode usar as ferramentas de codificação da IA para converter extensões existentes do PHP [!DNL Adobe Commerce] em extensões [!DNL Adobe Developer App Builder]. Ele também pode ser usado para criar novas extensões para o [!DNL App Builder].
+Ao migrar para o [!DNL Adobe Commerce as a Cloud Service], você pode usar as ferramentas de codificação da IA para converter extensões existentes do PHP [!DNL Adobe Commerce] em extensões [!DNL Adobe Developer App Builder]. Você também pode usar essas ferramentas para criar novas extensões para o [!DNL App Builder].
 
-O uso das ferramentas de codificação de IA oferece os seguintes benefícios:
+As ferramentas de codificação de IA oferecem os seguintes benefícios:
 
 * **Fluxo de trabalho de desenvolvimento aprimorado**: ferramentas de desenvolvimento integradas do Adobe Commerce.
 * **Assistência fornecida por IA**: geração e depuração de código com reconhecimento de contexto.
@@ -74,7 +76,7 @@ O uso das ferramentas de codificação de IA oferece os seguintes benefícios:
    aio commerce extensibility tools-setup
    ```
 
-O processo de instalação solicitará as opções de configuração. Para o local de configuração, escolha &quot;Diretório atual&quot; para instalar as ferramentas em seu espaço de trabalho atual:
+O processo de instalação solicita que você informe as opções de configuração. Para o local de configuração, escolha &quot;Diretório atual&quot; para instalar as ferramentas em seu espaço de trabalho atual:
 
 ```shell-session
 ? Where would you like to setup the tools?
@@ -130,9 +132,9 @@ Ao selecionar o gerenciador de pacotes, a Adobe recomenda o uso de `npm` para co
 
 ## Configuração pós-instalação
 
-### Fazer logon no [!DNL Adobe I/O CLI]
+### Faça logon na Adobe I/O CLI
 
-Após instalar o [!DNL Adobe I/O CLI], você precisa fazer login sempre que quiser usar o servidor MCP.
+Após instalar o [!DNL Adobe I/O CLI], faça login sempre que quiser usar o servidor MCP.
 
 ```bash
 aio auth login
@@ -193,9 +195,9 @@ What are the differences between Adobe Commerce PaaS and Adobe Commerce as a Clo
 1. Ativar o servidor MCP:
 
    * Abra o Painel Extensões clicando no ícone **Extensões** na Barra de Atividades na barra lateral esquerda ou usando **Cmd+Shift+X** (macOs) ou **Ctrl+Shift+X** (Windows e Linux).
-   * Clique em **SERVIDORES MCP - INSTALADOS**.
-   * Clique no ícone de engrenagem ao lado de **Commerce-extensibility MCP Server** e selecione **Iniciar Servidor**, se o servidor estiver parado.
-   * Clique no ícone de engrenagem novamente e selecione **Mostrar saída**.
+   * Clique em [!UICONTROL **SERVIDORES MCP - INSTALADOS**].
+   * Clique no ícone de engrenagem ao lado de [!UICONTROL **Commerce-extensibility MCP Server**] e selecione [!UICONTROL **Iniciar Servidor**], se o servidor estiver parado.
+   * Clique no ícone de engrenagem novamente e selecione [!UICONTROL **Mostrar saída**].
 
 1. Verifique o status do servidor. A saída `MCP:commerce-extensibility` deve corresponder ao seguinte:
 
@@ -279,7 +281,7 @@ Consulte os seguintes recursos para começar:
 
 * [Kit de início de integração](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [modelos do kit inicial do Adobe Commerce](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [modelos iniciais do Adobe I/O Events](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [modelos iniciais do Adobe I/O Events](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [aplicativos de exemplo do App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Por que você deve usar esses recursos
@@ -326,7 +328,7 @@ Extensões complexas do Adobe Commerce geralmente envolvem:
 >
 >Antes de usar as ferramentas do MCP, verifique se você está [conectado à Adobe I/O CLI](#log-in-to-the-adobe-io-cli).
 
-O padrão de ferramenta são as ferramentas MCP, mas, em determinadas circunstâncias, é possível usar comandos CLI. Se quiser garantir o uso da ferramenta MCP, solicite-os explicitamente no prompt.
+A ferramenta usa como padrão as ferramentas MCP, mas, em determinadas circunstâncias, pode usar comandos CLI. Para garantir o uso da ferramenta MCP, solicite-os explicitamente em seu prompt.
 
 Se você vir comandos CLI sendo usados e quiser usar ferramentas MCP, use o seguinte prompt:
 
@@ -346,7 +348,7 @@ Os comandos da CLI podem ser usados para os seguintes cenários:
 
 ### Desenvolvimento
 
-É importante questionar a complexidade desnecessária criada pelas ferramentas de IA.
+Questionar a complexidade desnecessária criada pelas ferramentas de IA.
 
 Quando arquivos desnecessários forem adicionados (`validator.js`, `transformer.js`, `sender.js`) para pontos de extremidade somente leitura simples, use os seguintes prompts:
 
@@ -466,7 +468,7 @@ Use as seguintes práticas recomendadas ao implantar:
 
 #### Implantar de forma incremental
 
-Implante somente ações modificadas para acelerar o desenvolvimento. Isso reduzirá o risco de romper a funcionalidade existente e fornecerá feedback mais rápido sobre as alterações. Também reduz o risco de romper a funcionalidade existente.
+Implante somente ações modificadas para acelerar o desenvolvimento. Essa abordagem reduz o risco de romper a funcionalidade existente e fornece feedback mais rápido sobre as alterações.
 
 * Usar ferramentas MCP para implantar ações específicas
 
@@ -479,7 +481,7 @@ Implante somente ações modificadas para acelerar o desenvolvimento. Isso reduz
 
 #### Limpeza em tempo de execução
 
-Após grandes alterações, aproveite as ferramentas para limpar ações órfãs. Deixe a ferramenta de IA lidar com o processo de limpeza sistematicamente, ela pode identificar com eficiência ações órfãs, verificar seu status e removê-las com segurança sem intervenção manual.
+Após grandes alterações, aproveite as ferramentas para limpar ações órfãs. Deixar que a ferramenta de IA lide com o processo de limpeza sistematicamente. Ele pode identificar com eficiência as ações órfãs, verificar seu status e removê-las com segurança sem intervenção manual.
 
 ```shell-session
 Help me identify and clean up orphaned runtime actions
@@ -520,7 +522,7 @@ Rastrear padrões de uso de token:
 
 ## O que evitar
 
-Você deve evitar os seguintes padrões de proteção ao usar as ferramentas de codificação de IA:
+Evite os seguintes antipadrões ao usar as ferramentas de codificação de IA:
 
 * **Não ignore a fase de esclarecimento**. Sempre verifique se a Fase 1 foi concluída antes da implementação.
 * **Não ignore os testes após cada recurso** - Teste de forma incremental, não espere até que tudo esteja concluído.

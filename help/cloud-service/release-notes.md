@@ -3,9 +3,10 @@ title: Notas de versão do [!DNL Adobe Commerce as a Cloud Service]
 description: Saiba mais sobre os recursos e as melhorias mais recentes do  [!DNL Adobe Commerce as a Cloud Service].
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+level: Beginner
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: cf06dec6-8d6b-413e-9977-df88373c188e
-source-git-commit: 925df19c2827f474efe85708ea49974b285df29e
+source-git-commit: 1ce3b6b6b94b1b4e94c0d34c081dec2884d7f0f8
 workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 # Notas de versão
 
-As notas de versão a seguir contêm atualizações para [!DNL Adobe Commerce as a Cloud Service]. Para obter informações sobre a versão de outros produtos, consulte o [Adobe Commerce Optimizer](../optimizer/release-notes.md) ou o [Adobe Commerce no local e o Adobe Commerce na Nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/overview).
+As notas de versão a seguir contêm atualizações para [!DNL Adobe Commerce as a Cloud Service]. Para obter informações sobre a versão de outros produtos, consulte o [Adobe Commerce Optimizer](../optimizer/release-notes.md) ou o [Adobe Commerce no local e o Adobe Commerce na Nuvem](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
 [!DNL Adobe Commerce as a Cloud Service] contém as versões mais recentes de serviços de merchandising, serviços de pagamentos e versões de extensibilidade. Use os links a seguir para exibir as notas de versão de cada um:
 
@@ -48,6 +49,6 @@ As notas de versão a seguir contêm atualizações para [!DNL Adobe Commerce as
 
 #### Atributos de ordem personalizados
 
-* Os usuários administradores agora podem exibir e editar [atributos de pedido personalizados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes) diretamente nas telas Exibir, Editar e Criar Pedido no painel Administrador. Esse aprimoramento melhora o gerenciamento de dados de pedidos personalizados criados via GraphQL. <!-- CEXT-5044 -->
+* Os usuários administradores agora podem exibir e editar [atributos de pedido personalizados](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes) diretamente nas telas Exibir, Editar e Criar Pedido no painel Administrador. Esse aprimoramento melhora o gerenciamento de dados de pedidos personalizados criados via GraphQL. <!-- CEXT-5044 -->
 
 >[!ENDSHADEBOX]
