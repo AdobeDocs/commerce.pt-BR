@@ -5,7 +5,7 @@ feature: Cloud, Integration
 role: User, Leader
 level: Beginner
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 source-git-commit: 3fe22d47b6fd6cf1077cbd4644ffad08f55826ca
 workflow-type: tm+mt
 source-wordcount: '1390'
@@ -200,7 +200,7 @@ Considere um cenário em que você deseja modificar rapidamente o plano de fundo
 
 #### Adicionar a imagem a [!DNL Commerce AEM Assets]
 
-1. No [Painel de Navegação](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) de [!DNL AEM as a Cloud Service], selecione [!UICONTROL **Assets**] > [!UICONTROL **Arquivos**] > [!UICONTROL **Commerce**] e clique no ativo criado na seção anterior.
+1. No [Painel de Navegação](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/sites/authoring/basic-handling#navigation-panel) de [!DNL AEM as a Cloud Service], selecione [!UICONTROL **Assets**] > [!UICONTROL **Arquivos**] > [!UICONTROL **Commerce**] e clique no ativo criado na seção anterior.
 
    ![Pasta do Commerce em [!DNL AEM Assets] com imagens do produto](./assets/commerce-folder.png){width="600" zoomable="yes"}
 
@@ -250,7 +250,7 @@ A função Gerar variações de [!DNL Adobe Commerce] aproveita a IA gerativa pa
 
 ### Gerar texto
 
-1. Abra o site da loja usando o [Editor Universal](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
+1. Abra o site da loja usando o [Editor Universal](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction).
 
 1. Selecione o bloco de texto que deseja editar.
 
@@ -264,7 +264,7 @@ A função Gerar variações de [!DNL Adobe Commerce] aproveita a IA gerativa pa
 
 ### Gerar conteúdo e imagens
 
-1. Abrir [[!DNL Generate Variations]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. Abrir [[!DNL Generate Variations]](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
 
 1. Selecione o modelo [!UICONTROL **Banner principal**].
 
