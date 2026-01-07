@@ -6,9 +6,9 @@ seo-description: Describes contents of the [!DNL Payment Services] for Adobe Com
 exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
 feature: Payments, Checkout, Paas, Saas
 recommendations: noCatalog
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: b75cad4fd71b5ab9c0199ca47800c36cbd1ae76c
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -113,16 +113,16 @@ Para obter uma visão geral das soluções de pagamento prontas para uso, inclui
 
 >[!MORELIKETHIS]
 >
-> * [[!DNL Adobe Commerce] 2.4 Guia do Usuário](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=pt-BR)—Documentação focada no comerciante para [!DNL Adobe Commerce] e [!DNL Magento Open Source]
-> * [[!DNL Adobe Commerce] 2.4 Guia do Usuário](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=pt-BR)—Documentação focada no desenvolvedor usada para compilar e personalizar o [!DNL Adobe Commerce] ou o [!DNL Magento Open Source]
+> * [[!DNL Adobe Commerce] 2.4 Guia do Usuário](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)—Documentação focada no comerciante para [!DNL Adobe Commerce] e [!DNL Magento Open Source]
+> * [[!DNL Adobe Commerce] 2.4 Guia do Usuário](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)—Documentação focada no desenvolvedor usada para compilar e personalizar o [!DNL Adobe Commerce] ou o [!DNL Magento Open Source]
 > * [Notas de versão](release-notes.md)—Saiba mais sobre versões futuras, detalhes do produto e quais versões do Adobe Commerce oferecem suporte à extensão [!DNL Payment Services]
-> * [Centro de ajuda](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=pt-BR)—Procure por artigos de solução de problemas relacionados a [!DNL Payment Services] na base de conhecimento
-> * [Tíquetes de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) — os clientes da Commerce podem enviar um tíquete para receber ajuda adicional
+> * [Centro de ajuda](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html)—Procure por artigos de solução de problemas relacionados a [!DNL Payment Services] na base de conhecimento
+> * [Tíquetes de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) — os clientes da Commerce podem enviar um tíquete para receber ajuda adicional
 
 ## Suporte
 
-Se precisar de informações ou se tiver dúvidas não abordadas neste guia, contate o representante de vendas do [!DNL Payment Services] ou use os recursos disponíveis na Página Inicial do [!DNL Payment Services]:
+Se precisar de informações ou se tiver dúvidas não abordadas neste guia sobre o [!DNL Payment Services], contate o representante de vendas do [!DNL Payment Services] ou use os recursos disponíveis na sua Página Inicial do [!DNL Payment Services]:
 
->[!VIDEO](https://video.tv.adobe.com/v/3448232?captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3447836)
 
 Consulte [Qual [!DNL Payment Services] opção é adequada para você?](compatibility.md#which-payment-services-option-is-right-for-you) tópico para verificar qual é a opção [!DNL Payment Services] mais adequada para você.
