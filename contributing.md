@@ -1,8 +1,8 @@
 ---
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: 4ddab6bbd62a3cc7c6dff089745c1b5ef5c20f70
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 3%
+source-wordcount: '551'
+ht-degree: 1%
 
 ---
 # Contribuição
@@ -17,11 +17,11 @@ Este projeto adere ao [código de conduta](code-of-conduct.md) da Adobe. Ao part
 espera-se que você mantenha esse código. Relatar comportamento inaceitável para
 [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
-## Documentação do Guia do colaborador
+## Documentação do guia do colaborador
 
-Consulte o [Guia do Colaborador](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=pt-BR).
+Consulte o [Guia do Colaborador](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
-## Você tem dúvidas?
+## Você tem uma pergunta?
 
 Comece registrando um problema. Os contribuidores existentes neste projeto trabalham para
 consenso sobre a direção do projeto e soluções de problemas em threads de problemas quando apropriado.
@@ -34,18 +34,16 @@ como parte do projeto. [Assine nosso CLA](https://opensource.adobe.com/cla.html)
 é necessário enviar apenas um Adobe CLA por vez. Se você submeteu um anteriormente,
 você está pronto para ir!
 
-## Revisões do código
+## Revisões de código
 
 Todos os envios devem vir na forma de solicitações de pull e precisam ser revisados
 por colaboradores do projeto. Leia a [documentação de solicitação de pull do GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 para obter mais informações sobre envio de pull requests.
 
-<!--
-Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
-submitting a pull request!
--->
+Por último, siga o [modelo de solicitação de pull](PULL_REQUEST_TEMPLATE.md) quando
+enviando um pull request!
 
-## Do contribuidor para o executor
+## Do colaborador para o confirmador
 
 Adoramos contribuições vindas de nossa comunidade! Se você quiser ir além como colaborador
 e se tornar um executor com acesso total à gravação e voz ativa no projeto, você deve
@@ -56,4 +54,52 @@ fique à vontade para entrar em contato com os colaboradores existentes e conver
 
 ## Problemas de segurança
 
-Para relatar um problema de Segurança, [registre um problema junto aos nossos especialistas em segurança](https://helpx.adobe.com/br/security/alertus.html).
+Para relatar um problema de Segurança, [registre um problema junto aos nossos especialistas em segurança](https://helpx.adobe.com/security/alertus.html).
+
+## Destaques das novidades
+
+Se as alterações introduzirem novos tópicos, atualizações significativas ou correções que precisam ser destacadas, você poderá adicionar uma breve descrição à [seção Novidades](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home#whats-new) diretamente do corpo da solicitação de pull.
+
+Para adicionar um destaque de Novidades:
+
+1. Inclua a tag `whatsnew` com a descrição apropriada no corpo da solicitação de pull no final. A descrição deve fornecer contexto sobre a alteração e um link para o(s) tópico(s) de destino. Use o seguinte formato (as aspas de bloco de código são somente para representação e não as inclua no corpo da solicitação de pull):
+
+   ```text
+   whatsnew
+   Short description of the change in the [target topic](https://experienceleague.adobe.com/en/docs/commerce/target-topic.html).
+   ```
+
+   ou, se houver vários tópicos:
+
+   ```text
+   whatsnew
+   Short description of the changes in the [first target topic](https://experienceleague.adobe.com/en/docs/commerce/target-topic.html), [second target topic](https://experienceleague.adobe.com/en/docs/commerce/second-target-topic.html), and [third target topic](https://experienceleague.adobe.com/en/docs/commerce/third-target-topic.html).
+   ```
+
+   você também pode usar listas para vários destaques:
+
+   ```text
+   whatsnew
+   - Short description of the first change in the [first topic](https://experienceleague.adobe.com/en/docs/commerce/first-topic.html).
+   - Short description of the second change in the [second topic](https://experienceleague.adobe.com/en/docs/commerce/second-topic.html).
+   ```
+
+   ```text
+   whatsnew
+   The following changes were made to the documentation:
+   - Short description of the first change in the [first topic](https://experienceleague.adobe.com/en/docs/commerce/first-topic.html).
+   - Short description of the second change in the [second topic](https://experienceleague.adobe.com/en/docs/commerce/second-topic.html).
+   ```
+
+1. Adicione rótulos compatíveis que indiquem o tipo de alteração. Os rótulos compatíveis incluem rótulos para cada tipo de alteração, como:
+
+   - `new-topic` - para novos tópicos
+   - `major-update` - para atualizações importantes que podem incluir alterações significativas no conteúdo, estrutura ou funcionalidade
+   - `technical` - para alterações técnicas que não são consideradas atualizações importantes, mas ainda exigem atenção
+
+**Importante:**
+
+1. A parte `whatsnew` deve começar na tag `whatsnew` e estar no final do corpo da solicitação de pull.
+1. As descrições das alterações devem incluir os links de trabalho. Certifique-se de que os links estejam corretos e levem aos tópicos pretendidos. Se o tópico for novo, verifique se os links estão funcionando após mesclar a solicitação de pull e publicar o novo tópico. Não há problema em corrigir os links após a mesclagem da solicitação de pull.
+
+Por exemplo, pesquise nas solicitações de pull fechadas no repositório para ver como os realces existentes estão formatados e compare-os com a [seção Novidades](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home#whats-new) para ver como eles aparecem na documentação.
