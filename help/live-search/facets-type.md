@@ -14,7 +14,7 @@ ht-degree: 0%
 [!DNL Live Search] usa uma variedade de tipos de facetas e elas aparecem na lista *Filtros* somente quando relevantes. A lista de aspectos disponíveis muda de acordo com os produtos retornados. As seguintes características afetam sua apresentação e comportamento:
 
 * Facetas fixadas - As facetas mais usadas podem ser fixadas no topo da lista. As facetas restantes estão listadas na ordem *Tipo de classificação* depois das facetas fixadas.
-* Aspectos dinâmicos - Atributos de produto que a [IA do Adobe](https://business.adobe.com/ai.html) considera mais relevantes para um conjunto de produtos e uma consulta. O cálculo leva em conta os metadados do atributo de todo o catálogo e determina, no momento da consulta, os aspectos mais relevantes da consulta.
+* Aspectos dinâmicos - Atributos de produto que a [IA do Adobe](https://business.adobe.com/br/ai.html) considera mais relevantes para um conjunto de produtos e uma consulta. O cálculo leva em conta os metadados do atributo de todo o catálogo e determina, no momento da consulta, os aspectos mais relevantes da consulta.
 
   >[!NOTE]
   >
@@ -35,7 +35,7 @@ Por outro lado, as implementações [headless](https://developer.adobe.com/comme
 
 ### Rótulos de facetas
 
-Para [!DNL Commerce] vitrines, o rótulo da faceta é determinado pelas [*Propriedades do Atributo*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html). Para lojas com vários modos de exibição, rótulos adicionais podem ser definidos em *Gerenciar Rótulos*. Para implementações headless, os rótulos são editados no [espaço de trabalho de facetamento](faceting-workspace.md).
+Para [!DNL Commerce] vitrines, o rótulo da faceta é determinado pelas [*Propriedades do Atributo*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=pt-BR). Para lojas com vários modos de exibição, rótulos adicionais podem ser definidos em *Gerenciar Rótulos*. Para implementações headless, os rótulos são editados no [espaço de trabalho de facetamento](faceting-workspace.md).
 
 ### Tipo de classificação
 
