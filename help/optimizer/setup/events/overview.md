@@ -4,7 +4,7 @@ description: Saiba mais sobre os eventos que o [!DNL Adobe Commerce Optimizer] u
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: c102c558-a680-4622-80f0-6e5c34d497e9
-source-git-commit: 15a708db9a9a31798877ea3a400d5a9f6f930bda
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Há dois tipos de dados usados nas recomendações:
 - **Comportamento** - Dados do envolvimento de um comprador no seu site, como exibições de produtos, itens adicionados ao carrinho e compras.
 - **Catálogo** - Metadados do produto, como nome, preço, disponibilidade etc.
 
-O Adobe Sensei agrega os dados comportamentais e de catálogo, criando Recommendations para cada tipo de recomendação. O serviço de recomendações implanta essas recomendações na vitrine eletrônica em um widget que contém o produto recomendado _itens_.
+A IA do Adobe agrega os dados comportamentais e de catálogo, criando Recomendações para cada tipo de recomendação. O serviço de recomendações implanta essas recomendações na vitrine eletrônica em um widget que contém o produto recomendado _itens_.
 
 Alguns tipos de recomendações usam dados comportamentais de seus compradores para treinar modelos de aprendizado de máquina para criar recomendações personalizadas. Outros tipos de recomendações usam apenas dados de catálogo e não usam dados comportamentais. Se você quiser começar rapidamente a usar o Recommendations em seu site, poderá usar o tipo de recomendação `More like this`.
 
@@ -86,7 +86,7 @@ Alguns tipos de recomendações usam dados comportamentais de seus compradores p
 
 Quando você pode começar a usar tipos de recomendação que usam dados comportamentais? Depende. Isso é conhecido como o problema _Cold Start_.
 
-O problema _Cold Start_ refere-se ao tempo que um modelo leva para ser treinado e se tornar efetivo. Para recomendações, isso significa aguardar que o Adobe Sensei colete dados suficientes para treinar seus modelos de aprendizado de máquina antes de implantar unidades de recomendação em seu site. Quanto mais dados os modelos tiverem, mais precisas e úteis serão as recomendações. Como a coleta de dados acontece em um site ativo, é melhor iniciar esse processo antecipadamente.
+O problema _Cold Start_ refere-se ao tempo que um modelo leva para ser treinado e se tornar efetivo. Para recomendações, isso significa aguardar que a IA do Adobe colete dados suficientes para treinar seus modelos de aprendizado de máquina antes de implantar unidades de recomendação em seu site. Quanto mais dados os modelos tiverem, mais precisas e úteis serão as recomendações. Como a coleta de dados acontece em um site ativo, é melhor iniciar esse processo antecipadamente.
 
 A tabela a seguir fornece algumas orientações gerais sobre o tempo necessário para coletar dados suficientes para cada tipo de recomendação:
 
@@ -148,7 +148,7 @@ Os seguintes eventos são necessários para preencher o [painel de Desempenho do
 | CTR | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-item-click`, `recs-add-to-cart-click` | `unitId`, `sku`, `parentSku` |
 | vCTR | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view`, `recs-item-click`, `recs-add-to-cart-click` | `unitId`, `sku`, `parentSku` |
 
-Os seguintes eventos não são específicos do Recommendations, mas são necessários para que o Adobe Sensei interprete os dados do comprador corretamente:
+Os seguintes eventos não são específicos do Recommendations, mas são necessários para que o Adobe AI interprete os dados do comprador corretamente:
 
 - `view`
 - `add-to-cart`
@@ -174,4 +174,4 @@ Esta tabela descreve os eventos usados por cada tipo de recomendação.
 
 ## Suporte
 
-Se você observar discrepâncias de dados ou se as recomendações e os resultados da pesquisa não estiverem funcionando como esperado, [envie um tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Se você observar discrepâncias de dados ou se as recomendações e os resultados da pesquisa não estiverem funcionando como esperado, [envie um tíquete de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).

@@ -3,7 +3,7 @@ title: Coletar dados
 description: Saiba como os eventos coletam dados para  [!DNL Product Recommendations].
 feature: Services, Recommendations, Eventing
 exl-id: 0d5317e3-c049-4fcd-a8e4-228668d89386
-source-git-commit: d770d4d99802f7ecf6e395518dfc9aeaac9aa130
+source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Consulte a [documentação do desenvolvedor](https://developer.adobe.com/commerc
 
 ## Clientes da área de saúde
 
-Se você for um cliente da área de saúde e tiver instalado a [extensão HIPAA do Data Services](../data-connection/hipaa-readiness.md#installation), que faz parte da [conexão de dados](../data-connection/overview.md), os dados do evento de vitrine usados por [!DNL Product Recommendations] não serão mais capturados. Isso ocorre porque os dados do evento da loja são gerados no lado do cliente. Para continuar capturando e enviando dados do evento da loja, habilite novamente a coleção de eventos para [!DNL Product Recommendations]. Consulte [configuração geral](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/config/general/general#data-services) para saber mais.
+Se você for um cliente da área de saúde e tiver instalado a [extensão HIPAA do Data Services](../data-connection/hipaa-readiness.md#installation), que faz parte da [conexão de dados](../data-connection/overview.md), os dados do evento de vitrine usados por [!DNL Product Recommendations] não serão mais capturados. Isso ocorre porque os dados do evento da loja são gerados no lado do cliente. Para continuar capturando e enviando dados do evento da loja, habilite novamente a coleção de eventos para [!DNL Product Recommendations]. Consulte [configuração geral](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services) para saber mais.
 
 ## Tipos de dados e eventos
 
@@ -31,7 +31,7 @@ Há dois tipos de dados usados nas Recomendações de produto:
 - **Comportamento** - Dados do envolvimento de um comprador no seu site, como exibições de produtos, itens adicionados ao carrinho e compras.
 - **Catálogo** - Metadados do produto, como nome, preço, disponibilidade etc.
 
-Quando você instala o módulo `magento/product-recommendations`, o Adobe Sensei agrega os dados comportamentais e de catálogo, criando Recomendações de Produto para cada tipo de recomendação. O serviço de Recomendações de Produto implanta essas recomendações na vitrine eletrônica em um widget que contém os _itens_ de produto recomendados.
+Quando você instala o módulo `magento/product-recommendations`, a IA do Adobe agrega os dados comportamentais e de catálogo, criando Recomendações de Produto para cada tipo de recomendação. O serviço de Recomendações de Produto implanta essas recomendações na vitrine eletrônica em um widget que contém os _itens_ de produto recomendados.
 
 Alguns tipos de recomendações usam dados comportamentais de seus compradores para treinar modelos de aprendizado de máquina para criar recomendações personalizadas. Outros tipos de recomendações usam apenas dados de catálogo e não usam dados comportamentais. Se você quiser começar rapidamente a usar o Product Recommendations em seu site, poderá usar os seguintes tipos de recomendações somente de catálogo:
 
@@ -42,7 +42,7 @@ Alguns tipos de recomendações usam dados comportamentais de seus compradores p
 
 Quando você pode começar a usar tipos de recomendação que usam dados comportamentais? Depende. Isso é conhecido como o problema _Cold Start_.
 
-O problema _Cold Start_ refere-se ao tempo que um modelo leva para ser treinado e se tornar efetivo. Para recomendações de produtos, isso significa aguardar que o Adobe Sensei colete dados suficientes para treinar seus modelos de aprendizado de máquina antes de implantar unidades de recomendação em seu site. Quanto mais dados os modelos tiverem, mais precisas e úteis serão as recomendações. Como a coleta de dados ocorre em um site ativo, é melhor iniciar esse processo antecipadamente instalando e configurando o módulo `magento/production-recommendations`.
+O problema _Cold Start_ refere-se ao tempo que um modelo leva para ser treinado e se tornar efetivo. Para recomendações de produtos, isso significa aguardar que a IA do Adobe colete dados suficientes para treinar seus modelos de aprendizado de máquina antes de implantar unidades de recomendação em seu site. Quanto mais dados os modelos tiverem, mais precisas e úteis serão as recomendações. Como a coleta de dados ocorre em um site ativo, é melhor iniciar esse processo antecipadamente instalando e configurando o módulo `magento/production-recommendations`.
 
 A tabela a seguir fornece algumas orientações gerais sobre o tempo necessário para coletar dados suficientes para cada tipo de recomendação:
 
@@ -87,4 +87,4 @@ No caso de coleta de dados de entrada insuficiente, os seguintes tipos de recome
 
 >[!NOTE]
 >
->Se o [Modo de restrição de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=pt-BR) estiver habilitado, a Adobe Commerce não coletará dados comportamentais até que o comprador consente em usar cookies. Se o Modo de restrição de cookie estiver desativado, o Adobe Commerce coletará dados comportamentais por padrão.
+>Se o [Modo de restrição de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) estiver habilitado, a Adobe Commerce não coletará dados comportamentais até que o comprador consente em usar cookies. Se o Modo de restrição de cookie estiver desativado, o Adobe Commerce coletará dados comportamentais por padrão.
