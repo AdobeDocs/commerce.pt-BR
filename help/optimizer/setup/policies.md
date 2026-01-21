@@ -2,11 +2,11 @@
 title: Políticas
 description: Saiba como criar e gerenciar políticas no [!DNL Adobe Commerce Optimizer].
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 77f524f6-e283-44d2-9c79-9d40f686a7bf
-source-git-commit: 845d93e367c8e2495943afe8c7d5d0a4bde990c2
+source-git-commit: 4f238b002d1481126d4fec0a249b7f9ff437248e
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Nesta seção, você cria uma nova regra. A política pode ser **ESTÁTICA** ou 
    1. **Atributo** - Insira um atributo do catálogo. Por exemplo, &quot;part_category&quot;. Esse nome deve corresponder exatamente ao nome do atributo no catálogo.
    1. **Operador** - Escolha o operador. Por exemplo, **IN**. &#x200B;
    1. **Value Source** - Selecione **STATIC**. &#x200B;
-   1. **Valor** - Insira um valor da definição de atributo especificada anteriormente. Por exemplo, insira &quot;freios&quot; para criar um filtro para peças de freios. &#x200B;O valor deve corresponder exatamente ao nome do atributo.
+   1. **Valor** - Insira um valor da definição de atributo especificada anteriormente. Por exemplo, insira &quot;freios&quot; para criar um filtro para peças de freios.
    1. Para salvar o valor, pressione **Enter**.
 
       Se a política tiver sido projetada para filtrar por vários valores, insira cada valor separadamente.
