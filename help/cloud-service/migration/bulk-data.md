@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # ferramenta de migração de dados em massa
 
-A migração de dados em massa ferramenta segue uma arquitetura distribuída que permite a migração de dados seguros e eficientes dos ambientes PaaS para SaaS. Esta ferramenta ajuda os implementadores de soluções a migrar dados de um Adobe Systems existente Comércio no Cloud instância (PaaS) para [!DNL Adobe Commerce as a Cloud Service] o (SaaS). Para obter mais informações sobre o processo de migração, consulte a visão geral[ da ](./overview.md)migração.
+A migração de dados em massa ferramenta segue uma arquitetura distribuída que permite a migração de dados seguros e eficientes dos ambientes PaaS para SaaS. Esta ferramenta ajuda os implementadores de soluções a migrar dados de um Adobe Systems existente Comércio no Cloud instância (PaaS) para [!DNL Adobe Commerce as a Cloud Service] o (SaaS). Para obter mais informações sobre o processo de migração, consulte a visão geral[&#x200B; da &#x200B;](./overview.md)migração.
 
 >[!NOTE]
 >
