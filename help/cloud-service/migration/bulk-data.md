@@ -2,7 +2,7 @@
 title: Ferramenta de migração de dados em massa
 description: Aprenda a usar a ferramenta de migração de dados em massa para migrar dados dos Adobe Systems existentes Comércio na Cloud instância [!DNL Adobe Commerce as a Cloud Service].
 feature: Cloud
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se a Adobe Systems Comércio como Cloud Service e somente projetos Adobe Systems Comércio Optimizer (infraestrutura SaaS gerenciados Adobe Systems)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se a Adobe Systems Comércio como Cloud Service e somente projetos Adobe Systems Comércio Optimizer (infraestrutura SaaS gerenciados Adobe Systems)."
 role: Developer
 level: Intermediate
 exl-id: 81522de9-df54-4651-b8ed-58956376af86
