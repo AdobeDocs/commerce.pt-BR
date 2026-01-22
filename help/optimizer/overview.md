@@ -2,11 +2,11 @@
 title: O que é o Adobe Commerce Optimizer?
 description: Saiba mais sobre  [!DNL Adobe Commerce Optimizer]  e seus principais recursos.
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: 8cf3e66641cf4bbc6db1da1dec14f7aaa291d6fe
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Com [!DNL Adobe Commerce Optimizer], você pode:
 
 Assista ao vídeo a seguir para obter uma visão geral de alto nível do [!DNL Adobe Commerce Optimizer]:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450468?captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## Quem se beneficia mais de [!DNL Adobe Commerce Optimizer]?
 
@@ -84,6 +84,10 @@ Os principais recursos incluem:
 - **Métricas antes e depois** - Fornece insights em tempo real sobre o desempenho de suas iniciativas de comércio. Você pode visualizar os resultados antes e depois de KPIs específicos e avaliar o impacto das alterações e otimizar para obter melhores resultados. Você pode exportar os resultados em uma PDF.
 - **vitrine da Commerce com a tecnologia do Edge Delivery** - Com a entrega do Edge, você pode iniciar seu site rapidamente usando componentes de vitrine pré-criados com funcionalidade de comércio integrada — incluindo páginas de listagem de produtos, páginas de detalhes do produto, carrinho e check-out.
 - **Carrinho de terceiros e check-out** - Use a malha da API e o Construtor de aplicativos para integrar com sistemas de carrinho e check-out de terceiros.
+
+>[!NOTE]
+>
+>Para entender os limites e o licenciamento do sistema para os recursos do [!DNL Adobe Commerce Optimizer], consulte o tópico [Limites e limites](boundaries-limits.md).
 
 ## Arquitetura
 
