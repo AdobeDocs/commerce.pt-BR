@@ -5,10 +5,10 @@ feature: Storefront
 role: Developer
 level: Beginner
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
-source-git-commit: 6eda2197fde2e88292e58b2bb4fc4759f24da558
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+source-git-commit: 0cd9749574460374a8fe875f1eff54f2a4a8d614
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '250'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Para configurar seu [!DNL Adobe Commerce Storefront] com a tecnologia [!DNL Edge Delivery Services] para [!DNL Adobe Commerce as a Cloud Service] (SaaS), conclua as etapas a seguir.
 
-Para obter uma apresentação mais personalizável e detalhada, consulte a [documentação sobre vitrines](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=pt-BR).
+Para obter uma apresentação mais personalizável e detalhada, consulte a [documentação sobre vitrines](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
 
 1. Abra a [ferramenta do criador do site](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator).
 
@@ -44,7 +44,8 @@ Quando o processo for concluído, você poderá personalizar a vitrine eletrôni
 
 Consulte os seguintes artigos para obter mais informações:
 
-* Para saber mais sobre como gerenciar e exibir conteúdo e dados na loja, consulte [atualização de conteúdo da loja](./use-cases.md#update-storefront-content).
-* Para obter mais informações sobre recursos de experimentação contextual, consulte [experimentação contextual](./use-cases.md#contextual-experimentation).
-* Para obter mais informações sobre como usar a IA de geração para automatizar a geração de conteúdo de alta qualidade, consulte [Gerar variações](./use-cases.md#generate-variations).
-* Para saber mais sobre como atualizar o conteúdo do site e integrar com componentes de front-end e dados de back-end do Commerce, consulte [[!DNL Adobe Commerce Storefront documentation]](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR).
+* [Atualizando conteúdo da loja](./use-cases.md#update-storefront-content)—Gerencie e exiba conteúdo e dados na loja.
+* [Experimentação contextual](./use-cases.md#contextual-experimentation) — crie e gerencie experimentos em sua loja.
+* [Gerar variações](./use-cases.md#generate-variations) — Use a IA de geração para automatizar a geração de conteúdo de alta qualidade.
+* [Documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) — obtenha informações detalhadas sobre a atualização do conteúdo do site e a integração com componentes de front-end e dados de back-end do Commerce.
+* [Serviço de Configuração](https://www.aem.live/docs/config-service-setup)—Saiba mais sobre como migrar a configuração da loja do `config.json` para usar o Serviço de Configuração, que oferece suporte a casos de uso avançados, como configuração de resposta e sobreposições.

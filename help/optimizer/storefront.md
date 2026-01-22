@@ -2,11 +2,11 @@
 title: Configurar a loja
 description: Saiba como configurar sua  [!DNL Adobe Commerce Optimizer] loja.
 role: Developer
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
-source-git-commit: e46c55cba21501c6fa12db6c130493b99de0e4da
+source-git-commit: 0cd9749574460374a8fe875f1eff54f2a4a8d614
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1397'
 ht-degree: 0%
 
 ---
@@ -218,26 +218,28 @@ A funcionalidade de pesquisa ![Lista de verificação](/help/assets/icons/Smock_
 
 Se os problemas persistirem:
 
-* Revise a [documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR)
+* Revise a [documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/)
 * Verifique o [guia do desenvolvedor do Adobe Commerce Optimizer](https://developer.adobe.com/commerce/services/optimizer/)
-* Visite os [recursos de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/overview)
+* Visite os [recursos de Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)
 
 ## Próximas etapas
 
 Depois de configurar e verificar sua loja, você pode:
 
-1. **[Instalar o Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=pt-BR#install-and-configure-sidekick)** - Extensão do navegador para editar, visualizar e publicar conteúdo diretamente do seu site
+1. **[Instale a extensão de navegador Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#install-and-configure-sidekick)** para editar, visualizar e publicar conteúdo diretamente do seu site.
 
-2. **[Configurar um ambiente de desenvolvimento local](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=pt-BR#set-up-local-environment)** - Criar um ambiente local para personalizar o código e o conteúdo da vitrine
+2. **[Configurar um ambiente de desenvolvimento local](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment)** — Crie um ambiente local para personalizar o código e o conteúdo da vitrine.
 
 ### Aprender e explorar
 
-* **[Conclua o caso de uso completo](./use-case/admin-use-case.md)** - Saiba mais sobre a instalação de vitrine e o gerenciamento de catálogos usando o [!DNL Adobe Commerce Optimizer]
+* **[Conclua o caso de uso completo](./use-case/admin-use-case.md)**—Saiba mais sobre a configuração de vitrine e o gerenciamento de catálogos usando o [!DNL Adobe Commerce Optimizer].
 
-* **[Explorar a personalização de vitrine](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=pt-BR)** - Saiba mais sobre as opções avançadas de instalação e configuração
+* **[Explorar personalização de vitrine](https://experienceleague.adobe.com/developer/commerce/storefront/setup/)**—Saiba mais sobre opções avançadas de instalação e configuração.
 
-* **[Use os suplementos do Commerce para personalizar a experiência da vitrine eletrônica](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=pt-BR)**-Adicione componentes pré-construídos para aprimorar sua experiência com a vitrine eletrônica
+* **[Use os suplementos do Commerce para personalizar a experiência da vitrine eletrônica](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)**-Adicione componentes pré-compilados para aprimorar sua experiência com a vitrine eletrônica.
+
+* **Migrar para o Serviço de Configuração de Frente de Loja**—Depois de criar sua frente de loja inicial, você pode migrar a configuração para usar o Serviço de Configuração, que oferece suporte a casos de uso avançados, como configuração de resposta e sobreposições. Para obter detalhes, consulte a documentação do [Serviço de Configuração](https://www.aem.live/docs/config-service-setup) na Adobe Experience Manager.
 
 >[!MORELIKETHIS]
 >
-> Consulte a [documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR) para saber mais sobre a atualização do conteúdo do site e a integração com componentes de front-end e dados de back-end do Commerce.
+> Consulte a [documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) para saber mais sobre a atualização do conteúdo do site e a integração com componentes de front-end e dados de back-end do Commerce.
