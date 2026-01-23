@@ -3,7 +3,7 @@ title: Revisar logs e solucionar problemas
 description: Saiba como solucionar erros [!DNL data export] usando os logs de exportação de dados e exportação de saas.
 feature: Services
 exl-id: d022756f-6e75-4c2a-9601-31958698dc43
-source-git-commit: 22c74c12ddfccdb4e6c4e02c3a15557e1020d5ef
+source-git-commit: a1afed7b635a2b05c5c0e0d1c9bf4a07fc5eef31
 workflow-type: tm+mt
 source-wordcount: '1056'
 ht-degree: 0%
@@ -116,7 +116,7 @@ Se você armazenar logs do Adobe Commerce na New Relic, poderá adicionar regras
 
    - **Regra de análise**
 
-     `\[%{DATA:timestamp}\] report.%{DATA:logLevel} %{GREEDYDATA:feed:json}`
+     `\[%{DATA:timestamp}\] report.%{DATA:logLevel}: %{GREEDYDATA:feed:json}`
 
 Esse exemplo adiciona uma regra que permite consultar logs do New Relic por tipo de feed específico, operação e assim por diante.
 
@@ -129,7 +129,7 @@ Se os dados estiverem ausentes ou incorretos nos serviços da Commerce, verifiqu
 - O log de erros de Exportação de Dados (`commerce-data-export-errors.log`) captura erros que ocorrem durante a fase de coleta.
 - O log de erros de exportação SaaS (`saas-export-errors.log`) captura os erros que ocorrem durante a fase de transmissão.
 
-Se você vir erros não relacionados à configuração ou a extensões de terceiros, envie um [tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) com o máximo de informações possível.
+Se você vir erros não relacionados à configuração ou a extensões de terceiros, envie um [tíquete de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) com o máximo de informações possível.
 
 ### Resolver problemas de sincronização do catálogo {#resolvesync}
 
@@ -144,11 +144,11 @@ Quando você aciona uma ressincronização de dados, pode levar até uma hora pa
 
 #### A sincronização não está em execução
 
-Se a sincronização não estiver sendo executada de acordo com um agendamento ou se nada estiver sincronizado, consulte este artigo da [KnowledgeBase](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce).
+Se a sincronização não estiver sendo executada de acordo com um agendamento ou se nada estiver sincronizado, consulte este artigo da [KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce).
 
 #### Falha na sincronização
 
-Se a sincronização do catálogo tiver um status de **Falha**, envie um [tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Se a sincronização do catálogo tiver um status de **Falha**, envie um [tíquete de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 ## Logon estendido
 
