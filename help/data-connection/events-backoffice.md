@@ -4,9 +4,9 @@ description: Saiba quais dados cada evento de back office captura.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: 65cf8150-1a14-4d4c-aa0c-1545109e4fe7
-source-git-commit: 1750aee715946d3a871e021cbbee687f54d1ff09
+source-git-commit: 6ffa18a9f66b6be8cd40bda5aedc911b26fe0e1d
 workflow-type: tm+mt
-source-wordcount: '3618'
+source-wordcount: '3619'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 Veja a seguir uma lista dos eventos de back office do Commerce disponíveis quando você instala a extensão [!DNL Data Connection]. Os dados que esses eventos coletam são enviados para a Adobe Experience Platform. Você também pode criar [eventos personalizados](custom-events.md) para coletar dados adicionais não fornecidos imediatamente.
 
-Além dos dados coletados pelos eventos a seguir, você também obtém [outros dados](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html?lang=pt-BR) fornecidos pelo Adobe Experience Platform Web SDK.
+Além dos dados coletados pelos eventos a seguir, você também obtém [outros dados](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) fornecidos pelo Adobe Experience Platform Web SDK.
 
 Os eventos de back office contêm dados do lado do servidor. Estes dados incluem [status do pedido](#order-status) informações como se um pedido foi feito, cancelado, reembolsado, remetido ou concluído. Os dados do lado do servidor também incluem [informações sobre eventos de perfil do cliente](#customer-profile-events), como se uma conta foi criada, atualizada ou excluída.
 
 >[!NOTE]
 >
->Todos os eventos de back office incluem o campo [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=pt-BR), que inclui o endereço de email do comprador, quando disponível, e a ECID.
+>Todos os eventos de back office incluem o campo [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html), que inclui o endereço de email do comprador, quando disponível, e a ECID.
 
 ## Status do pedido
 
@@ -132,7 +132,7 @@ A tabela a seguir descreve os dados coletados para esse evento.
 
 | Descrição | Nome do evento XDM |
 |---|---|
-| Disparado quando um pedido é enviado. | `commerce.backofficeOrderItemsShipped` |
+| Disparado quando um item da ordem é entregue. | `commerce.backofficeOrderItemsShipped` |
 
 #### Dados coletados de orderItemsShipped
 
@@ -408,7 +408,7 @@ Os eventos de perfil capturados do lado do servidor incluem informações de con
 
 >[!NOTE]
 >
->Cada evento de perfil de cliente também inclui o campo [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html?lang=pt-BR), que inclui a ID de cliente da Commerce gerada pelo sistema como o identificador principal do perfil e uma ID de email usada como um identificador secundário. [Saiba](custom-identities.md) como criar atributos de identidade personalizados para aprimorar a identificação do perfil do cliente.
+>Cada evento de perfil de cliente também inclui o campo [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html), que inclui a ID de cliente da Commerce gerada pelo sistema como o identificador principal do perfil e uma ID de email usada como um identificador secundário. [Saiba](custom-identities.md) como criar atributos de identidade personalizados para aprimorar a identificação do perfil do cliente.
 
 ### accountCreated
 
