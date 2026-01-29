@@ -2,9 +2,9 @@
 title: Widget da página de listagem de produtos
 description: Habilitando e estilizando o  [!DNL Live Search Product Listing Page Widget]
 exl-id: 50ba8046-869a-4071-b3a3-a6392544c07b
-source-git-commit: 7684d5cded63f2b0805ee307dff77932607c47eb
+source-git-commit: c0a6f038d2528a67da6f1bb4f5e5bb140afc7dfc
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,14 @@ Quando o serviço [!DNL Live Search] é instalado, a funcionalidade de pesquisa 
 
 O widget PLP [!DNL Live Search] é habilitado por padrão para novas instalações.
 
-Se você estiver atualizando o [!DNL Live Search] e o widget PLP já tiver sido desativado, ele permanecerá assim. Para ativá-lo:
+Se você estiver atualizando o [!DNL Live Search] e o widget PLP já tiver sido desativado, ele permanecerá assim.
+
+>[!NOTE]
+>
+>Se você estiver migrando do Adaptador de Pesquisa obsoleto, consulte o [guia de migração](migrate-to-plp.md) para obter orientações detalhadas sobre cenários, pré-requisitos e instruções passo a passo.
+
+Para ativar o dispositivo PLP:
+
 1. No Administrador do Adobe Commerce, acesse Lojas → Configurações → Configuração.
 1. Na navegação à esquerda, clique em **[!UICONTROL Live Search]** > **[!UICONTROL Storefront Features]**.
 1. Clique na seção [!UICONTROL Storefront Features].

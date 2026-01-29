@@ -3,9 +3,9 @@ title: O que é  [!DNL Live Search]?
 description: O [!DNL Live Search] do Adobe Commerce fornece uma experiência de pesquisa rápida, relevante e intuitiva.
 recommendations: noCatalog
 exl-id: 15399216-6a96-4d0b-bbc1-293190cb9e14
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: c0a6f038d2528a67da6f1bb4f5e5bb140afc7dfc
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '938'
 ht-degree: 1%
 
 ---
@@ -35,13 +35,13 @@ O lado Adobe Commerce da arquitetura inclui hospedar a pesquisa *Admin*, sincron
 
 Com foco na velocidade, relevância e facilidade de uso, o [!DNL Live Search] é um divisor de águas para compradores e comerciantes. Assista ao vídeo a seguir e faça um rápido tour pelo [!DNL Live Search] na loja.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452574?captions=por_br&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418797?learn=on)
 
-Para ver um vídeo mais detalhado sobre o uso e a configuração do Live Search, consulte o tópico [Demonstração completa sobre [!DNL Live Search]](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration).
+Para ver um vídeo mais detalhado sobre o uso e a configuração do Live Search, consulte o tópico [Demonstração completa sobre [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration).
 
 ### Pesquisar enquanto digita
 
-[!DNL Live Search] responde com produtos sugeridos e uma imagem em miniatura dos principais resultados da pesquisa em um [popover](storefront-popover.md), à medida que os compradores digitam consultas na caixa [Pesquisa](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/search/search). A página [detalhes do produto](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/storefront/storefront) é exibida quando os compradores clicam em um produto sugerido ou em destaque. Um link _Exibir todos_ no rodapé do popover exibe a página de resultados da pesquisa.
+[!DNL Live Search] responde com produtos sugeridos e uma imagem em miniatura dos principais resultados da pesquisa em um [popover](storefront-popover.md), à medida que os compradores digitam consultas na caixa [Pesquisa](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search). A página [detalhes do produto](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) é exibida quando os compradores clicam em um produto sugerido ou em destaque. Um link _Exibir todos_ no rodapé do popover exibe a página de resultados da pesquisa.
 
 [!DNL Live Search] retorna resultados de &quot;pesquisa ao digitar&quot; para uma consulta de dois ou mais caracteres. Para uma correspondência parcial, o número máximo de caracteres por palavra é 20. O número de caracteres na consulta não é configurável. O popover inclui os campos `name`, `sku` e `category_ids`.
 
@@ -83,7 +83,7 @@ As [regras](rules.md) de merchandising moldam a experiência de compra com instr
 
 - [!DNL Live Search] [widget de popover](storefront-popover.md) é a caixa que é aberta no campo de pesquisa que contém os resultados da pesquisa.
 - O [widget Página de listagem de produtos](plp-styling.md) (PLP) fornece uma página de listagem de produtos pesquisável com facetas e suporte a sinônimos. O widget está instalado e ativado no Live Search 4.0.0+ e substitui o Adaptador de pesquisa.
-- (**Desaprovado**) O Adaptador de Pesquisa foi o precursor do widget PLP e foi instalado com o Live Search &lt; 4.0.0. Se você estiver usando uma versão do Live Search anterior à 4.0.0, a Commerce recomenda atualizar para receber os benefícios dos recursos do widget PLP e melhorias futuras. O Search Adapter será atualizado somente para resolver problemas de segurança.
+- (**Desaprovado**) O Adaptador de Pesquisa foi o precursor do widget PLP e foi instalado com o Live Search &lt; 4.0.0. Se você estiver usando uma versão do Live Search anterior à 4.0.0, a Commerce recomenda atualizar para receber os benefícios dos recursos do widget PLP e melhorias futuras. O Search Adapter será atualizado somente para resolver problemas de segurança. Consulte o [guia de migração](migrate-to-plp.md) para obter informações detalhadas sobre como migrar para o widget PLP.
 
 ## [!DNL Live Search] espaço de trabalho
 
@@ -97,4 +97,4 @@ O [!DNL Live Search] [espaço de trabalho](workspace.md) é a área no Administr
 
 Se você não enviar uma consulta de pesquisa para os dados do catálogo no ambiente de teste por 90 dias consecutivos, os dados do catálogo serão definidos para o modo de hibernação e nenhum dado será retornado para qualquer consulta de pesquisa. Os dados do catálogo em seu ambiente de produção não são afetados por essa política.
 
-Para reativar os dados do catálogo no ambiente de teste, [envie uma solicitação de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) com o título: &quot;Reativar [!DNL Live Search]&quot; e incluir as IDs de ambiente. Os dados do catálogo no ambiente de teste devem ser restaurados em algumas horas.
+Para reativar os dados do catálogo no ambiente de teste, [envie uma solicitação de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) com o título: &quot;Reativar [!DNL Live Search]&quot; e incluir as IDs de ambiente. Os dados do catálogo no ambiente de teste devem ser restaurados em algumas horas.
