@@ -319,7 +319,7 @@ Neste cenário, há um problema conhecido em que ativar o dispositivo PLP pode c
 
 **Opção 3: substituir o GTM pelo Adobe Analytics**
 
-- Considere migrar para o [Adobe Analytics](https://business.adobe.com/products/adobe-analytics.html), se aplicável.
+- Considere migrar para o [Adobe Analytics](https://business.adobe.com/br/products/adobe-analytics.html), se aplicável.
 - Entre em contato com o departamento de engenharia de clientes para obter orientação.
 
 **Com quem entrar em contato**: envie um tíquete de suporte para obter atualizações de compatibilidade do GTM ou assistência de engenharia do cliente.
@@ -444,7 +444,7 @@ O **Suporte da Adobe** pode ajudar com:
 - Implementações headless ou PWA
 - Rastreamento de evento personalizado
 
-Para contatar o Suporte da Adobe, consulte o [Guia do Usuário da Central de Ajuda](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Para contatar o Suporte da Adobe, consulte o [Guia do Usuário da Central de Ajuda](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
 
 ## Perguntas frequentes
 
