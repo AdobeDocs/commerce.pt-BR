@@ -4,9 +4,9 @@ description: As informações da versão mais recente do  [!DNL Data Export Exte
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
-source-git-commit: 029cbbf75a21ba68f9829d5755a40a610d34d479
+source-git-commit: eb55055653717cef4b6e568a36593177d821a743
 workflow-type: tm+mt
-source-wordcount: '1962'
+source-wordcount: '2012'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,11 @@ As atualizações incluem:
 
 ## Versão principal atual
 
+## Versão 103.4.18
+
+![Correção](../assets/fix.svg) Correção de um problema em que os lotes de itens podiam exceder o limite permitido durante as atualizações, causando `items_limit_exceeded` erros ao sincronizar dados com os [serviços da Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) ou a [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync). <!--MDEE-1264-->
+![Correção](../assets/fix.svg) Confiabilidade aprimorada das exportações de dados de produtos ao adicionar lógica para registrar itens com falha durante a coleção de opções de produtos agrupados. <!--CCSAAS-4458-->
+
 ## Versão 103.4.17   
 
 ![Correção](../assets/fix.svg) Atualizada a extensão de exportação de dados (`magento/module-data-exporter`) para remover a dependência `magento/module-analytics`, que não é mais necessária.<!--MDEE-1260--> 
@@ -41,7 +46,7 @@ As atualizações incluem:
 
 ## Versão 103.4.15
 
-![Novo](../assets/new.svg) adição de suporte à extensão Status de sincronização do feed de dados para monitorar e solucionar problemas de transferências de dados do Adobe Commerce para serviços conectados (Serviço de catálogo, Live Search e Recomendações de produto). Para obter detalhes sobre como instalar e usar essa extensão, consulte [Monitoramento do Status de Sincronização do Feed de Dados](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=pt-BR) no *Guia de Administração do Commerce*. <!--MDEE-954-->
+![Novo](../assets/new.svg) adição de suporte à extensão Status de sincronização do feed de dados para monitorar e solucionar problemas de transferências de dados do Adobe Commerce para serviços conectados (Serviço de catálogo, Live Search e Recomendações de produto). Para obter detalhes sobre como instalar e usar essa extensão, consulte [Monitoramento do Status de Sincronização do Feed de Dados](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) no *Guia de Administração do Commerce*. <!--MDEE-954-->
 
 ## Versão 103.4.14
 
@@ -58,7 +63,7 @@ As atualizações incluem:
 
 ## Versão 103.4.11
 
-![Novo](../assets/new.svg) [!BADGE Somente PaaS]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."}
+![Novo](../assets/new.svg) [!BADGE Somente PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."}
 Foi adicionado suporte para atributos de produto adicionais para incluir classe de imposto, conjunto de atributos e dados de inventário das configurações de produto da Commerce no feed de produto. Os clientes que quiserem incluir esses atributos em feeds de exportação de produtos devem adicionar o módulo Atributos de produto extras aos seus projetos do Adobe Commerce. Consulte [Adicionar classe de imposto, conjunto de atributos e atributos de inventário](add-tax-attribute-set-inventory-attributes.md).<!--MDEE-1135-->
 ![Correção](../assets/fix.svg) resolveu um problema que causava a sincronização incorreta de atualizações de produtos excluídos se um erro ocorresse durante um índice de produto completo. Agora, todas as exclusões de produtos são sincronizadas corretamente, mesmo que ocorra um erro durante o processo de indexação. <!--MDEE-1144-->
 
