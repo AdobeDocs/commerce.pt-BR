@@ -23,7 +23,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>A Integração do AEM Assets v1.2.13 adiciona a <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match">Configuração do Adobe I/O Workspace</a> para configuração de correspondência personalizada. Você pode carregar o App Builder <code class="language-plaintext highlighter-rouge">workspace.json</code> para validação automática e extração de credenciais ou configurar manualmente. Consulte as <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/release-notes">notas de versão</a> para v1.2.13 e o guia de <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match">correspondência personalizada</a> atualizado.</p>
+      <td><p>A Integração do AEM Assets v1.2.13 adiciona a <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aem-assets-integration/synchronize/custom-match">Configuração do Adobe I/O Workspace</a> para configuração de correspondência personalizada. Você pode carregar o App Builder <code class="language-plaintext highlighter-rouge">workspace.json</code> para validação automática e extração de credenciais ou configurar manualmente. Consulte as <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aem-assets-integration/release-notes">notas de versão</a> para v1.2.13 e o guia de <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aem-assets-integration/synchronize/custom-match">correspondência personalizada</a> atualizado.</p>
 </td>
       <td>
         Atualização importante
@@ -45,7 +45,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição das notas de versão para <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Exportação de dados SaaS do Adobe Commerce versão 103.4.19</a>.</p>
+      <td><p>Adição das notas de versão para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/saas-data-export/release-notes">Exportação de dados SaaS do Adobe Commerce versão 103.4.19</a>.</p>
 </td>
       <td>
         Técnico
@@ -67,7 +67,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Atualização das <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes">notas de versão do Adobe Commerce as a Cloud Service</a> da versão de fevereiro de 2026 da Sandbox.</p>
+      <td><p>Atualização das <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/release-notes">notas de versão do Adobe Commerce as a Cloud Service</a> da versão de fevereiro de 2026 da Sandbox.</p>
 </td>
       <td>
         Atualização importante
@@ -89,7 +89,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição das notas de versão para <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Exportação de dados SaaS do Adobe Commerce versão 103.4.18</a>.</p>
+      <td><p>Adição das notas de versão para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/saas-data-export/release-notes">Exportação de dados SaaS do Adobe Commerce versão 103.4.18</a>.</p>
 </td>
       <td>
         Técnico
@@ -111,7 +111,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Documentação sobre como os clientes do Commerce podem monitorar e solucionar problemas de exportações de feed de dados na página de status da Sincronização de feed no Administrador do Commerce. Consulte <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-synchronization#view-and-manage-the-synchronization-process">Exibir e gerenciar o processo de sincronização</a> no Guia de Exportação de Dados.</p>
+      <td><p>Documentação sobre como os clientes do Commerce podem monitorar e solucionar problemas de exportações de feed de dados na página de status da Sincronização de feed no Administrador do Commerce. Consulte <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/saas-data-export/data-synchronization#view-and-manage-the-synchronization-process">Exibir e gerenciar o processo de sincronização</a> no Guia de Exportação de Dados.</p>
 </td>
       <td>
         Técnico
@@ -133,7 +133,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Foram adicionadas mais informações à <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/feature-comparison">página de comparação de recursos</a>, incluindo a nova infraestrutura, recursos operacionais e informações do marketplace.</p>
+      <td><p>Foram adicionadas mais informações à <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/feature-comparison">página de comparação de recursos</a>, incluindo a nova infraestrutura, recursos operacionais e informações do marketplace.</p>
 </td>
       <td>
         Feedback
@@ -155,7 +155,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adicionado o guia <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-storefront/migrate-to-plp">Migração do Adaptador de Pesquisa para o Widget PLP</a>, com cenários de migração detalhados, procedimentos passo a passo, orientação baseada em função e solução de problemas para clientes que estão fazendo a transição do Adaptador de Pesquisa obsoleto.</p>
+      <td><p>Adicionado o guia <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/live-search/live-search-storefront/migrate-to-plp">Migração do Adaptador de Pesquisa para o Widget PLP</a>, com cenários de migração detalhados, procedimentos passo a passo, orientação baseada em função e solução de problemas para clientes que estão fazendo a transição do Adaptador de Pesquisa obsoleto.</p>
 </td>
       <td>
         Feedback, atualização importante, novo tópico
@@ -177,7 +177,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Atualização dos guias de configuração da loja do <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/storefront">Adobe Commerce Optimizer</a> e do <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/storefront">Adobe Commerce as a Cloud Service</a> para Incluir informações sobre a migração da configuração da loja do Commerce para que o Edge Delivery Services use o Serviço de Configuração em vez do arquivo <code class="language-plaintext highlighter-rouge">config.json</code> no repositório padrão da loja. A Adobe recomenda usar o Serviço de configuração para gerenciar a configuração de vitrines implantadas no Edge Delivery Services.</p>
+      <td><p>Atualização dos guias de configuração da loja do <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/storefront">Adobe Commerce Optimizer</a> e do <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/storefront">Adobe Commerce as a Cloud Service</a> para Incluir informações sobre a migração da configuração da loja do Commerce para que o Edge Delivery Services use o Serviço de Configuração em vez do arquivo <code class="language-plaintext highlighter-rouge">config.json</code> no repositório padrão da loja. A Adobe recomenda usar o Serviço de configuração para gerenciar a configuração de vitrines implantadas no Edge Delivery Services.</p>
 </td>
       <td>
         Feedback, técnico
@@ -243,7 +243,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Atualização das <a href="https://experienceleague.adobe.com/en/docs/commerce/cloud-service/release-notes#latest">notas de versão</a> do Adobe Commerce as a Cloud Service.</p>
+      <td><p>Atualização das <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/release-notes#latest">notas de versão</a> do Adobe Commerce as a Cloud Service.</p>
 </td>
       <td>
         Atualização importante
@@ -265,7 +265,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Atualização do tópico <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits">Limites e limites</a> do Adobe Commerce Optimizer para descrever limites de licença e limites do sistema, adicionar descrições de limite e incluir orientação para o planejamento de capacidade e prevenção de problemas de desempenho.</p>
+      <td><p>Atualização do tópico <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/boundaries-limits">Limites e limites</a> do Adobe Commerce Optimizer para descrever limites de licença e limites do sistema, adicionar descrições de limite e incluir orientação para o planejamento de capacidade e prevenção de problemas de desempenho.</p>
 </td>
       <td>
         Feedback, técnico
@@ -287,7 +287,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição das notas de versão para <a href="https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS Data Export versão 103.4.16 e 103.4.17</a> e <a href="https://experienceleague.adobe.com/en/docs/commerce/price-indexer/catalog-adapter/release-notes">Catalog Adapter versão 1.10.0</a>.</p>
+      <td><p>Adição das notas de versão para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/saas-data-export/release-notes">Adobe Commerce SaaS Data Export versão 103.4.16 e 103.4.17</a> e <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/price-indexer/catalog-adapter/release-notes">Catalog Adapter versão 1.10.0</a>.</p>
 </td>
       <td>
         Técnico
@@ -309,7 +309,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Atualização do <a href="https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/configure-aem#install-the-commerce-assets-package">tópico sobre configuração do AEM</a> na documentação de Integração do AEM Assets.</p>
+      <td><p>Atualização do <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aem-assets-integration/get-started/configure-aem#install-the-commerce-assets-package">tópico sobre configuração do AEM</a> na documentação de Integração do AEM Assets.</p>
 </td>
       <td>
         Atualização importante
@@ -331,7 +331,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição de novos tópicos:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/manage-results/opportunities">Oportunidades</a> para documentar recomendações de otimização de site alimentadas por IA por meio da integração com o Adobe Sites Optimizer, incluindo fluxos de trabalho de detecção e correção automáticas para melhorar o SEO, os metadados e a qualidade dos dados do produto.<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer">Camadas do catálogo</a> para explicar como modificar dados do produto sem alterar dados de origem, incluindo o gerenciamento de prioridade de camada e a integração com recursos de correção automática do Sites Optimizer.</p>
+      <td><p>Adição de novos tópicos:<br />- <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/manage-results/opportunities">Oportunidades</a> para documentar recomendações de otimização de site alimentadas por IA por meio da integração com o Adobe Sites Optimizer, incluindo fluxos de trabalho de detecção e correção automáticas para melhorar o SEO, os metadados e a qualidade dos dados do produto.<br />- <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/setup/catalog-layer">Camadas do catálogo</a> para explicar como modificar dados do produto sem alterar dados de origem, incluindo o gerenciamento de prioridade de camada e a integração com recursos de correção automática do Sites Optimizer.</p>
 </td>
       <td>
         Atualização importante, novo tópico
