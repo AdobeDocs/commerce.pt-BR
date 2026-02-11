@@ -3,9 +3,9 @@ title: Opções de pagamento
 description: Defina as opções de pagamento para personalizar os métodos disponíveis para seus clientes de loja.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 999407f00b118441abe39209a15f587ec73fa75d
+source-git-commit: 007674c3b81b95af4c0ec2688a4a98e19ec04d08
 workflow-type: tm+mt
-source-wordcount: '1350'
+source-wordcount: '1470'
 ht-degree: 0%
 
 ---
@@ -135,6 +135,16 @@ Saiba como desabilitar ou habilitar as mensagens de [!DNL Pay Later] atualizando
 
 ![Pagar Mensagens Posteriores](assets/pay-later-messaging.png){width="500" zoomable="yes"}
 
+### Retornos de chamada de envio do lado do servidor para botões de pagamento do PayPal
+
+Os métodos de pagamento PayPal, Pagar Mais Tarde e Venmo usam um [retorno de chamada de envio do lado do servidor](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/) que permite que o PayPal se comunique diretamente com sua instância do Commerce para recuperar as opções de envio e calcular os totais em tempo real.
+
+Essa abordagem do lado do servidor permite que o [!DNL Payment Services] ignore a janela pop-up de confirmação de pedido, fornecendo uma experiência de compra mais rápida e simplificada. Como os custos e impostos de envio são calculados dinamicamente por meio de retornos de chamada, o comprador vê os totais precisos diretamente na página de revisão do PayPal ou Venmo.
+
+>[!NOTE]
+>
+>O ponto de extremidade de retorno de chamada deve estar disponível publicamente e responder em 5 segundos. Se o tempo de resposta exceder esse limite, o PayPal exibirá uma mensagem de erro na janela pop-up. Consulte [Testar em ambientes de desenvolvimento local](test-validate.md#test-on-local-development-environments) para obter informações sobre como testar esses métodos de pagamento localmente.
+
 ### Usar somente botões de pagamento do PayPal
 
 Para colocar rapidamente sua loja em modo de produção, você pode configurar _somente_ botões de pagamento do PayPal (Venmo, PayPal e assim por diante).—em vez de também usar a opção de pagamento com cartão de crédito PayPal.
@@ -156,7 +166,7 @@ Para **capturar pagamentos com seu provedor de cartão de crédito existente _e_
 1. Certifique-se de que seu repositório esteja [no modo de produção](configure-admin.md#enable-payment-services).
 1. [Configure os botões de pagamento do PayPal desejados](configure-admin.md#payment-buttons).
 1. Desative _a opção_ na seção **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)**._[!UICONTROL Payment buttons]_
-1. Desative _a opção_ na seção **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** e use sua _[!UICONTROL Credit card fields]_&#x200B;conta de provedor de cartão de crédito existente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=pt-BR#payments)
+1. Desative _a opção_ na seção **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** e use sua _[!UICONTROL Credit card fields]_conta de provedor de cartão de crédito existente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)
 
 ## Opções de check-out
 
