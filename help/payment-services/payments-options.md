@@ -166,7 +166,7 @@ Para **capturar pagamentos com seu provedor de cartão de crédito existente _e_
 1. Certifique-se de que seu repositório esteja [no modo de produção](configure-admin.md#enable-payment-services).
 1. [Configure os botões de pagamento do PayPal desejados](configure-admin.md#payment-buttons).
 1. Desative _a opção_ na seção **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)**._[!UICONTROL Payment buttons]_
-1. Desative _a opção_ na seção **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** e use sua _[!UICONTROL Credit card fields]_conta de provedor de cartão de crédito existente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)
+1. Desative _a opção_ na seção **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** e use sua _[!UICONTROL Credit card fields]_&#x200B;conta de provedor de cartão de crédito existente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)
 
 ## Opções de check-out
 
