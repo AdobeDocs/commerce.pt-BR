@@ -99,7 +99,7 @@ _3 de novembro de 2025_
 - Controlar substituições em nível de campo com máscaras de camada
 - Suporte a camadas de conteúdo premium, sazonais e otimizadas para dispositivos móveis
 
-  As camadas são recuperadas usando a consulta `products` existente, são aplicadas no lado do servidor a partir de cabeçalhos de solicitação e não exigem alterações de esquema. Consulte [Camada do catálogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer) no _Guia do Adobe Commerce Optimizer_.
+  As camadas são recuperadas usando a consulta `products` existente, são aplicadas no lado do servidor a partir de cabeçalhos de solicitação e não exigem alterações de esquema. Consulte [Camada do catálogo](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/setup/catalog-layer) no _Guia do Adobe Commerce Optimizer_.
 
 ![Correção](../assets/fix.svg) Os produtos agrupados agora podem ser consultados quando o pai não tem preços; os produtos filho retornam suas próprias funções de visibilidade.<!--DATA-6779-->
 
@@ -210,7 +210,7 @@ _15 de julho de 2025_
 
 _20 de junho de 2025_
 
-![Nova](../assets/new.svg) **Configuração do catálogo de preços hierárquico** — Intervalos de preços precisos para o catálogo de preços pai-filho. Os cálculos respeitam a hierarquia e as regras herdadas; reduz os erros de precificação quando vários catálogos de preços são vinculados. Somente Adobe Commerce Optimizer. Consulte [Catálogos de Preços](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks).
+![Nova](../assets/new.svg) **Configuração do catálogo de preços hierárquico** — Intervalos de preços precisos para o catálogo de preços pai-filho. Os cálculos respeitam a hierarquia e as regras herdadas; reduz os erros de precificação quando vários catálogos de preços são vinculados. Somente Adobe Commerce Optimizer. Consulte [Catálogos de Preços](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/setup/pricebooks).
 
 ![Novo](../assets/new.svg) **Chaves que não diferenciam maiúsculas de minúsculas** — As pesquisas de chave em consultas agora não diferenciam maiúsculas de minúsculas, reduzindo os erros de maiúsculas e minúsculas. <!--DATA-6494, DCAT-2495-->
 
@@ -339,7 +339,7 @@ _23 de maio de 2024_
 
 ![Correção](../assets/fix.svg) <!--DATA-5033-->O sinalizador `InStock` para valores de opção agora respeita o status `enabled` de escopo da variante de produto.
 
-![Correção](../assets/fix.svg) <!--DATA-5888-->Suporte adicionado para preços de produtos com até 16 dígitos e 4 casas decimais. Ressincronize a partir do [painel de Gerenciamento de Dados](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) ou da [CLI](../landing/catalog-sync.md#command-line-interface) para aplicar as atualizações.
+![Correção](../assets/fix.svg) <!--DATA-5888-->Suporte adicionado para preços de produtos com até 16 dígitos e 4 casas decimais. Ressincronize a partir do [painel de Gerenciamento de Dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) ou da [CLI](../landing/catalog-sync.md#command-line-interface) para aplicar as atualizações.
 
 #### Limitações conhecidas
 
@@ -373,7 +373,7 @@ _22 de fevereiro de 2024_
 
 [!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
-![Novo](../assets/new.svg) O [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) agora está disponível para fluxos de dados (Product Recommendations, Live Search, Catalog Service). Requer `catalog-service` metapackage v3.1.0+.
+![Novo](../assets/new.svg) O [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=pt-BR) agora está disponível para fluxos de dados (Product Recommendations, Live Search, Catalog Service). Requer `catalog-service` metapackage v3.1.0+.
 
 ### versão v1.16
 
