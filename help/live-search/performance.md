@@ -19,7 +19,7 @@ O espaço de trabalho *Desempenho* fornece o insight nos termos de pesquisa que 
 
 ![Desempenho](assets/performance-unique-searches.png)
 
-Você também pode consultar o [Painel de gerenciamento de dados](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) para obter mais dados sobre a sincronização de dados.
+Você também pode consultar o [Painel de gerenciamento de dados](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=pt-BR) para obter mais dados sobre a sincronização de dados.
 
 >[!NOTE]
 >
