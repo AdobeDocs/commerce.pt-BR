@@ -1,25 +1,19 @@
 ---
-title: Pré-requisitos do tutorial da extensão de classificações
+title: Pré-requisitos do tutorial
 description: Saiba mais sobre os pré-requisitos do laboratório de extensões de classificações.
 feature: App Builder, Cloud
 role: Developer
 level: Intermediate
-hide: true
-hidefromtoc: true
-source-git-commit: 4ca909c2f8f95fbc404ce6a745d769958b2c01f4
+source-git-commit: 68e34cecbc1b16194ccc2e0296c2d66f37855b7c
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
 
-# Pré-requisitos do tutorial da extensão de classificações (Beta)
+# Pré-requisitos do tutorial
 
->[!NOTE]
->
->A ferramenta de IA usada neste tutorial está atualmente no Beta e pode incluir bugs ou outros problemas.
-
-Esta página lista os pré-requisitos e as etapas de configuração para os tutoriais do [!DNL Adobe Commerce as a Cloud Service], como o [tutorial da extensão de classificações](./ratings-extension.md).
+Esta página lista os pré-requisitos e as etapas de configuração para os tutoriais do [!DNL Adobe Commerce as a Cloud Service], como o [tutorial de extensão de classificações](./ratings-extension.md) e o [tutorial de extensão do método de envio](./shipping-method-extension.md).
 
 ## Pré-requisitos do Adobe Commerce as a Cloud Service
 
@@ -108,16 +102,27 @@ Esta página lista os pré-requisitos e as etapas de configuração para os tuto
 
    ![Terminal mostrando a seleção do projeto e do espaço de trabalho da organização da CLI do Adobe I/O](../assets/cli-configuration.png){width="600" zoomable="yes"}
 
-### Clonar o kit inicial de integração
+### Clonar os kits iniciais
 
-Clonar o repositório do kit inicial de integração do Commerce e preparar seu projeto:
+Clonar um dos seguintes repositórios do Commerce starter kit para a extensão que você está criando e preparar seu projeto:
+
+Kit inicial de integração:
 
 ```bash
 git clone https://github.com/adobe/commerce-integration-starter-kit.git extension
 cd extension
 ```
 
-![Saída de terminal mostrando o comando git clone do kit inicial de integração do Commerce](../assets/clone-starter-kit.png){width="600" zoomable="yes"}
+Kit inicial de check-out:
+
+```bash
+git clone https://github.com/adobe/commerce-checkout-starter-kit.git extension
+cd extension
+```
+
+>[!BEGINTABS]
+
+>[!TAB Kit de início de integração]
 
 ### Criar um arquivo .env
 
@@ -189,9 +194,26 @@ aio app use workspace.json -m
 
 ![Terminal mostrando conexão de espaço de trabalho bem-sucedida com o comando de uso do aplicativo aio](../assets/connect-workspace.png){width="600" zoomable="yes"}
 
+>[!TAB Kit inicial de check-out]
+
+### Conectar o espaço de trabalho local ao espaço de trabalho remoto
+
+Vincule o projeto local ao espaço de trabalho remoto. Na raiz do projeto (a pasta `extension`), execute:
+
+```bash
+aio app use --merge
+```
+
+Quando solicitado, escolha a opção que usa a organização, o projeto e o espaço de trabalho selecionados ao configurar a CLI do Adobe I/O. Isso grava a configuração do espaço de trabalho no aplicativo para que a implantação e o desenvolvimento local usem esse espaço de trabalho.
+
+![Terminal mostrando conexão de espaço de trabalho bem-sucedida com o comando de uso do aplicativo aio](../assets/connect-workspace.png){width="600" zoomable="yes"}
+
+>[!ENDTABS]
+
 ### Instalar ferramentas de IA de extensibilidade
 
-Atualize o arquivo de regras de Cursor e a configuração de MCP para incluir o pacote `commerce-extensibility-tools`.
+Este processo cria a configuração de MCP (`.<agent>/mcp.json`), o diretório de habilidades (`.<agent>/skills/`) e adiciona `AGENTS.md` à raiz do projeto. Você deverá escolher um kit inicial, um agente de codificação e um gerenciador de pacotes.
+
 
 1. Configure as ferramentas de desenvolvimento assistido por IA na pasta `extension` usando os seguintes comandos:
 
@@ -204,6 +226,15 @@ Atualize o arquivo de regras de Cursor e a configuração de MCP para incluir o 
    ```
 
    ![Terminal mostrando a saída do comando de instalação das ferramentas de extensibilidade de IA](../assets/install-ai-tools.png){width="600" zoomable="yes"}
+
+1. Depois que a configuração for concluída, reinicie o agente de codificação para permitir que ele carregue as novas ferramentas e habilidades do MCP. As ferramentas do Commerce App Builder agora estão disponíveis em seu ambiente.
+
+   >[!NOTE]
+   >
+   >Se você vir um aviso de que nenhuma habilidade foi encontrada para o kit inicial, algo deu errado, geralmente porque a configuração foi executada em uma pasta diferente do local onde o kit inicial foi clonado. Execute `aio commerce extensibility tools-setup` na pasta `extension` (a raiz do projeto do kit inicial) e selecione o kit inicial apropriado quando solicitado.
+
+   ![Terminal mostrando a configuração das ferramentas de extensibilidade de IA com o kit de início de check-out selecionado](../assets/tools-setup-checkout.png){width="600" zoomable="yes"}
+
 <!--
 ## Storefront prerequisites
 
