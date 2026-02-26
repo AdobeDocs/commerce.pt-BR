@@ -31,7 +31,7 @@ Os itens de linha são habilitados por padrão para [!DNL Payment Services]. Par
 
 1. Expanda a seção _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
 
-1. Na seção _[!UICONTROL Payment Services]_, expanda a seção_[!UICONTROL Line Items]_.
+1. Na seção _[!UICONTROL Payment Services]_, expanda a seção&#x200B;_[!UICONTROL Line Items]_.
 
 1. Para **[!UICONTROL Line Items Enabled]**, selecione `Yes` para habilitar (padrão) ou `No` para desabilitar itens de linha.
 
