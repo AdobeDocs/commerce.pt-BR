@@ -3,9 +3,9 @@ title: Opções de pagamento
 description: Defina as opções de pagamento para personalizar os métodos disponíveis para seus clientes de loja.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 007674c3b81b95af4c0ec2688a4a98e19ec04d08
+source-git-commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
 workflow-type: tm+mt
-source-wordcount: '1470'
+source-wordcount: '1728'
 ht-degree: 0%
 
 ---
@@ -166,7 +166,44 @@ Para **capturar pagamentos com seu provedor de cartão de crédito existente _e_
 1. Certifique-se de que seu repositório esteja [no modo de produção](configure-admin.md#enable-payment-services).
 1. [Configure os botões de pagamento do PayPal desejados](configure-admin.md#payment-buttons).
 1. Desative _a opção_ na seção **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#payment-buttons)**._[!UICONTROL Payment buttons]_
-1. Desative _a opção_ na seção **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** e use sua _[!UICONTROL Credit card fields]_&#x200B;conta de provedor de cartão de crédito existente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=pt-BR#payments)
+1. Desative _a opção_ na seção **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** e use sua _[!UICONTROL Credit card fields]_conta de provedor de cartão de crédito existente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)
+
+## Métodos de pagamento locais
+
+Os métodos de pagamento locais (LPMs) oferecem suporte a métodos de pagamento locais e específicos da região, como transferências bancárias e soluções de pagamento localizadas, juntamente com as opções existentes baseadas em cartão. Os comerciantes podem ativar ou desativar LPMs disponíveis diretamente na configuração do Commerce. Os LPMs expandem os recursos de pagamento da Adobe, dão suporte às necessidades do mercado europeu, melhoram a localização do checkout e ajudam a aumentar a conversão, a adoção pelos comerciantes e a satisfação dos compradores.
+
+Os LPMs disponíveis incluem:
+
+| Método de pagamento | Países | Moeda |
+|----------------|-----------|----------|
+| Bancontact | Bélgica | EUR |
+| BLIK | Polônia | PLN |
+| eps | Áustria | EUR |
+| iDEAL | Holanda | EUR |
+| MyBank | Itália | EUR |
+| Przelewy24 | Polônia | EUR, PLN |
+
+Os LPMs são exibidos aos clientes com base no endereço de faturamento e na moeda base do site. Um método de pagamento é exibido somente quando ambas as condições correspondem aos requisitos do método de pagamento.
+
+Consulte [Configuração de métodos de pagamento locais](configure-admin.md#local-payment-methods) para obter mais informações.
+
+## Botões de check-out expresso
+
+Para incentivar uma experiência de finalização mais rápida, as opções de pagamento expresso estão disponíveis no início do fluxo de finalização. Os clientes podem concluir a compra usando PayPal, PayPal Pay Later, Venmo, Apple Pay ou Google Pay.
+
+Uma vez ativados, os botões de finalização expressa são exibidos no início do processo de finalização, fornecendo um caminho mais rápido de compra para os clientes que preferem métodos de pagamento de carteira digital.
+
+Para ativar os botões de finalização expressa, configure cada método de pagamento individualmente:
+
+* **PayPal e pagar mais tarde**: habilitar **[!UICONTROL Show buttons at start of checkout]** nas configurações de [botões de pagamento do PayPal](configure-admin.md#paypal-payment-buttons).
+
+* **Pagamento do Apple**: habilitar **[!UICONTROL Show Apple Pay at start of checkout]** nas configurações de [Pagamento do Apple](configure-admin.md#apple-pay).
+
+* **Pagamento do Google**: habilitar **[!UICONTROL Show Google Pay at start of checkout]** nas configurações de [Pagamento do Google](configure-admin.md#google-pay).
+
+>[!NOTE]
+>
+>A disponibilidade do método de pagamento depende da localização do comprador. Para testes de sandbox, use a configuração [País do comprador](sandbox.md#buyers-country) para simular regiões diferentes. Por exemplo, Venmo está disponível somente nos EUA. Pagar mais tarde está disponível nos EUA e no Reino Unido.
 
 ## Opções de check-out
 

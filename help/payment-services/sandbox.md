@@ -3,9 +3,9 @@ title: Configurar o teste de sandbox
 description: Use uma conta de sandbox do PayPal para usar  [!DNL Payment Services]  no modo de teste.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
+source-git-commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Para concluir a integração da sandbox:
       Se você criou uma conta de sandbox do PayPal durante o processo de integração do PayPal com sandbox, deverá [redefinir sua sandbox de integração](#reset-your-sandbox-account), pois, ou não poderá verificar seu email.
 
    1. Selecione **[!UICONTROL Business]** como o Tipo de Conta e clique em **[!UICONTROL Create]**.
-   1. Na seção _[!UICONTROL Sandbox Accounts]_, clique nos três pontos na coluna&#x200B;_[!UICONTROL Manage accounts]_ para a conta de sandbox que você criou.
+   1. Na seção _[!UICONTROL Sandbox Accounts]_, clique nos três pontos na coluna_[!UICONTROL Manage accounts]_ para a conta de sandbox que você criou.
    1. Clique em **[!UICONTROL View/edit account]**.
 
       ![PayPal - Exibir/editar conta de sandbox](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}
@@ -79,6 +79,32 @@ Este recurso é `off` por padrão. Ao ativá-lo, os administradores de loja pode
 >[!IMPORTANT]
 >
 >Essa configuração não se aplica a outros fluxos de check-out.
+
+## País do comprador
+
+Na produção, o PayPal usa a geolocalização do comprador para determinar quais métodos de pagamento estão disponíveis nos fluxos de finalização e expresso. Como o modo de sandbox não oferece suporte à geolocalização, use a configuração **País do comprador** para simular a localização do comprador e controlar quais métodos de pagamento são renderizados.
+
+Esta configuração é útil para testar métodos de pagamento específicos da região, como Venmo (somente EUA), Pagar Mais Tarde (EUA e Reino Unido) ou [Métodos de Pagamento Locais](payments-options.md#local-payment-methods) (Europa), sem precisar de uma VPN.
+
+Para configurar o país do Comprador:
+
+1. Na barra lateral _Admin_, navegue até **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
+
+1. No painel esquerdo, expanda **[!UICONTROL Sales]** e selecione **[!UICONTROL Payment Methods]**.
+
+1. Expanda a seção _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
+
+1. Na seção _[!UICONTROL Payment Services]_, expanda a seção_[!UICONTROL General Configuration]_.
+
+1. Defina **[!UICONTROL Method]** como `Sandbox`.
+
+1. Selecione o país desejado na lista suspensa **[!UICONTROL Buyer's country]**.
+
+1. Clique em **[!UICONTROL Save Config]** para salvar suas alterações.
+
+>[!NOTE]
+>
+>A configuração **[!UICONTROL Buyer's country]** aparece somente quando o método está definido como `Sandbox`. Isso não afeta os ambientes de produção.
 
 ## Teste em ambiente de sandbox
 

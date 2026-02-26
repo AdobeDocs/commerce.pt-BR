@@ -4,9 +4,9 @@ description: Saiba mais sobre os itens de linha do  [!DNL Payment Services]  e c
 feature: Payments, Paas, Saas
 role: User
 exl-id: f690ff94-f83d-4525-9d52-1dea25a71060
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,29 @@ Os itens de linha para [!DNL Payment Services] são os itens incluídos em um pe
 
 Essas informações são úteis para o atendimento ao cliente, gerenciamento de pedidos e faturamento adequado.
 
-Este recurso é habilitado por padrão para [!DNL Payment Services]. Para exibir itens de linha:
+## Configurar itens de linha
+
+Os itens de linha são habilitados por padrão para [!DNL Payment Services]. Para configurar:
+
+1. Na barra lateral _Admin_, navegue até **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
+
+1. Vá para **[!UICONTROL Sales]** e selecione **[!UICONTROL Payment Methods]**.
+
+1. Expanda a seção _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
+
+1. Na seção _[!UICONTROL Payment Services]_, expanda a seção_[!UICONTROL Line Items]_.
+
+1. Para **[!UICONTROL Line Items Enabled]**, selecione `Yes` para habilitar (padrão) ou `No` para desabilitar itens de linha.
+
+1. Clique em **[!UICONTROL Save Config]** para salvar suas alterações.
+
+>[!IMPORTANT]
+>
+> Se você tiver extensões de terceiros que adicionam taxas personalizadas (como taxas de manuseio) a seus pedidos, talvez seja necessário desativar os itens de linha. [!DNL Payment Services] calcula os itens de linha com base nos componentes de ordem padrão da Commerce (itens, impostos, remessa e descontos). As taxas de terceiros que não são reconhecidas por [!DNL Payment Services] podem causar uma incompatibilidade entre o total do item de linha e o total do pedido, o que pode impedir a conclusão do check-out.
+
+## Exibir itens de linha
+
+Para exibir itens de linha:
 
 1. Navegue até seu [painel de comerciantes do PayPal](https://www.paypal.com/merchant/){target=_blank}.
 
@@ -127,7 +149,7 @@ Consulte a [documentação do desenvolvedor do PayPal sobre os itens de linha](h
 
 ## Gerenciar itens de linha
 
-O Adobe Commerce [calcula o imposto com base no valor total de cada linha](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}, o que pode causar problemas de arredondamento se várias quantidades do mesmo item forem solicitadas ou se preços com imposto incluído forem exibidos no catálogo. Nesses casos, a quantidade total pode ser dividida em duas linhas, mas a quantidade será igual ao total de itens solicitados.
+O Adobe Commerce [calcula o imposto com base no valor total de cada linha](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/taxes#warning-messages){target=_blank}, o que pode causar problemas de arredondamento se várias quantidades do mesmo item forem solicitadas ou se preços com imposto incluído forem exibidos no catálogo. Nesses casos, a quantidade total pode ser dividida em duas linhas, mas a quantidade será igual ao total de itens solicitados.
 
 > Exemplo de itens de linha com problemas de arredondamento na exibição do painel do comerciante
 
