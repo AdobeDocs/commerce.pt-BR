@@ -2,11 +2,11 @@
 title: O que é o Adobe Commerce Optimizer?
 description: Saiba mais sobre  [!DNL Adobe Commerce Optimizer]  e seus principais recursos.
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 8cf3e66641cf4bbc6db1da1dec14f7aaa291d6fe
+source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Com [!DNL Adobe Commerce Optimizer], você pode:
 
 Assista ao vídeo a seguir para obter uma visão geral de alto nível do [!DNL Adobe Commerce Optimizer]:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450468?captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## Quem se beneficia mais de [!DNL Adobe Commerce Optimizer]?
 
@@ -33,7 +33,7 @@ Assista ao vídeo a seguir para obter uma visão geral de alto nível do [!DNL A
 
 - Comerciantes que desejam manter seu sistema de comércio de back-end existente e transformar apenas as experiências da loja.
 - Empresas em que um sistema de terceiros gerencia o ciclo de vida do carrinho e do checkout.
-- Clientes do AEM que buscam uma maneira simples de gerenciar seu catálogo de produtos em um mecanismo de comércio de terceiros.
+- [Clientes do AEM](setup/product-visuals.md) que buscam uma forma simples de gerenciar seu catálogo de produtos de um mecanismo de comércio de terceiros.
 
 ## Tour rápido
 
@@ -69,6 +69,7 @@ Crie experiências personalizadas para seus compradores por meio da descoberta d
 Defina as visualizações e políticas do catálogo. O catálogo não só contém os dados do produto, como também ajuda a definir a estrutura de negócios. Além disso, você pode obter insights valiosos sobre a disponibilidade de dados de produtos para sua loja, garantindo que eles possam ser exibidos imediatamente aos seus compradores.
 
 - **Exibições de catálogo** - Ajudam a definir sua estrutura de varejo em grupos funcionais significativos. Por exemplo, revendedores para a indústria automobilística, subsidiárias para conglomerados multimarca ou locais de fabricação para fornecedores.
+- **Camadas do catálogo** - Modifique os dados do produto sem alterar os dados de origem. Ao usar o AEM Assets para imagens de produtos, a camada AEM-Assets é aplicada por meio de [Visuais de Produto](setup/product-visuals.md). Consulte [Camadas do catálogo](setup/catalog-layer.md) para obter detalhes.
 - **Políticas** - Filtros de acesso a dados alojados em exibições de catálogo. As políticas ajudam a garantir que o conteúdo correto seja enviado ao destino certo. Por exemplo, lojas físicas, mercados, pipelines de anúncios (Google, Facebook, Instagram) em pontos de venda.
 - **Sincronização de Dados** - Exibe uma visão geral do status de sincronização dos dados do produto transferidos de sua fonte de dados (PIM, ERP, etc.) para [!DNL Adobe Commerce Optimizer]. Os dados desse produto são exibidos nas guias **[!UICONTROL Catalog Service]**, **[!UICONTROL Search]** e **[!UICONTROL Recommendations]**.
 - **Eventos** - Exibe os dados do evento da loja que habilita a Descoberta de Produtos e o Recommendations. A página **Eventos** permite que o comerciante verifique se implementou os eventos de vitrine corretamente e se os eventos estão sendo capturados com êxito. Os comerciantes podem usar esta página para identificar possíveis problemas e tomar medidas para resolvê-los.

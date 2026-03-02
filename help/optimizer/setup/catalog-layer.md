@@ -3,10 +3,10 @@ title: Camada de catálogo
 description: Saiba como as camadas de catálogo permitem modificar dados do produto sem alterar os dados de origem originais, para que você possa personalizar com segurança e reverter alterações a qualquer momento.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
-source-git-commit: 4a904527af172a5e35b87410135d55484d07ad84
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1514'
 ht-degree: 0%
 
 ---
@@ -27,8 +27,8 @@ Quando um cliente visualiza sua loja, o sistema combina os dados do catálogo ba
 
 1. **Tratamento de campo**—Tipos de campo diferentes são processados de forma diferente:
 
-   - **Substituir campos** — Campos de texto como nome, descrição e metatítulos são substituídos pelos valores definidos na camada, com a camada de prioridade mais alta tendo precedência.
-   - **Mesclar campos** — Campos de matriz como imagens, links e atributos são combinados de várias camadas, fornecendo uma resposta unificada.
+   * **Substituir campos** — Campos de texto como nome, descrição e metatítulos são substituídos pelos valores definidos na camada, com a camada de prioridade mais alta tendo precedência.
+   * **Mesclar campos** — Campos de matriz como imagens, links e atributos são combinados de várias camadas, fornecendo uma resposta unificada.
 
 1. **Resolução de prioridade** — O campo de ordem determina qual camada tem prioridade. Quando várias camadas modificam o mesmo campo, a camada com o número de ordem mais baixo tem prioridade mais alta (por exemplo, a ordem 1 é a mais alta).
 
@@ -36,11 +36,50 @@ Quando um cliente visualiza sua loja, o sistema combina os dados do catálogo ba
 
 As camadas de catálogo geralmente são usadas para:
 
-- **Otimização de SEO**—Substitua os metatítulos e descrições do produto com base nas recomendações de IA do [Sites Optimizer](../manage-results/opportunities.md).
-- **Campanhas sazonais** — Atualize temporariamente nomes de produtos, descrições ou imagens para promoções sem alterar os dados de origem.
-- **Personalização regional**—Exiba informações de produtos diferentes com base na localização geográfica ou no idioma.
-- **Teste A/B**—Teste diferentes apresentações de produtos para otimizar as taxas de conversão.
-- **Gerenciamento de várias marcas** — Personalize atributos de produto para diferentes exibições do catálogo de marcas.
+* **Otimização de SEO**—Substitua os metatítulos e descrições do produto com base nas recomendações de IA do [Sites Optimizer](../manage-results/opportunities.md).
+* **Campanhas sazonais** — Atualize temporariamente nomes de produtos, descrições ou imagens para promoções sem alterar os dados de origem.
+* **Personalização regional**—Exiba informações de produtos diferentes com base na localização geográfica ou no idioma.
+* **Teste A/B**—Teste diferentes apresentações de produtos para otimizar as taxas de conversão.
+* **Gerenciamento de várias marcas** — Personalize atributos de produto para diferentes exibições do catálogo de marcas.
+* **Visualizações de Produto**—Aplique imagens de produto do AEM Assets como uma camada sobre o catálogo base.
+
+## Camada AEM-Assets
+
+Ao habilitar o [Product Visuals](product-visuals.md), a Integração do AEM Assets cria e gerencia automaticamente uma camada de catálogo dedicada exclusivamente ao conteúdo do AEM Assets. O nome da camada padrão é `AEM-Assets`, no entanto, você pode especificar um nome personalizado durante a [integração na integração com o AEM Assets](../../aem-assets-integration/get-started/configure-aco.md).
+
+Essa camada contém imagens de produtos sincronizadas do AEM Assets. Como outras camadas de catálogo, ele é preenchido por meio da [API de Camadas de Produto](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank}. O Serviço de integração do Assets transforma os metadados de ativos do AEM e os URLs de entrega no formato da API e envia os dados automaticamente quando os ativos são aprovados no AEM Assets.
+
+A integração oferece suporte a uma origem por locatário (uma localidade + uma camada).
+
+>[!CAUTION]
+>
+> Atribua a camada AEM-Assets à visualização do catálogo. Se a camada não for atribuída, os dados da imagem do produto poderão ser substituídos inesperadamente.
+
+### Como a camada AEM-Assets funciona
+
+1. **Criação automática**: a camada é criada quando a Integração do AEM Assets é configurada para sua instância [!DNL Commerce Optimizer].
+
+1. **Sincronização de imagem**: quando os ativos são aprovados no AEM Assets, o Serviço de Integração da Assets transforma os dados de ativos e atualiza a camada `AEM-Assets` por meio da API de Camadas de Produto.
+
+1. **Atribuição de camada**: atribua a camada `AEM-Assets` às exibições de catálogo nas quais você deseja que as imagens do AEM Assets apareçam.
+
+### Atribuir a camada AEM-Assets a uma exibição de catálogo
+
+Para exibir imagens do AEM Assets em sua loja:
+
+1. Navegue até _Configuração da loja_ e clique em **[!UICONTROL Catalog views]**.
+
+1. Selecione a exibição de catálogo na qual deseja aplicar a camada.
+
+1. Na seção de camadas do catálogo, localize a camada **AEM-Assets**.
+
+1. Ative a camada para ativá-la para esta exibição de catálogo.
+
+1. Clique em **[!UICONTROL Save]** para aplicar as alterações.
+
+Depois de atribuídas, as APIs da loja (Serviço de catálogo, Live Search, Recomendações de produto e API do GraphQL da loja) retornam imagens base de catálogo e imagens AEM Assets para produtos.
+
+Para obter mais informações sobre como configurar as Visualizações de Produto, consulte [Visualizações de Produto com o AEM Assets](product-visuals.md).
 
 ## Adicionar uma camada de catálogo por meio da assimilação de dados
 
@@ -52,8 +91,8 @@ As camadas de catálogo geralmente são usadas para:
 
 **Pré-requisitos:**
 
-- Credenciais da API com permissão para acessar o serviço de assimilação de dados
-- SKUs do produto que já existem no catálogo base
+* Credenciais da API com permissão para acessar o serviço de assimilação de dados
+* SKUs do produto que já existem no catálogo base
 
 **Etapas:**
 
@@ -63,7 +102,7 @@ As camadas de catálogo geralmente são usadas para:
 
 1. Verifique se a camada foi assimilada com êxito verificando a configuração de exibição do catálogo.
 
-Para obter especificações detalhadas de API e exemplos de carga, consulte [Camadas de produto](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers) na documentação do desenvolvedor.
+Para obter especificações detalhadas de API e exemplos de carga, consulte [Camadas de produto](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank} na documentação do desenvolvedor.
 
 ## Adicionar uma camada de catálogo manualmente na interface
 
@@ -91,10 +130,10 @@ A interface de exibição de catálogo permite criar e gerenciar manualmente cam
 
 1. Configure as propriedades da camada:
 
-   - **Nome da camada** — Digite um nome descritivo para identificar a finalidade da camada.
-   - **Produtos**—Selecione os produtos aos quais esta camada se aplica.
-   - **Atributos** — Escolha quais atributos de produto modificar (nome, descrição, imagens, metatags e assim por diante).
-   - **Valores** — Insira os novos valores para cada atributo selecionado.
+   * **Nome da camada** — Digite um nome descritivo para identificar a finalidade da camada.
+   * **Produtos**—Selecione os produtos aos quais esta camada se aplica.
+   * **Atributos** — Escolha quais atributos de produto modificar (nome, descrição, imagens, metatags e assim por diante).
+   * **Valores** — Insira os novos valores para cada atributo selecionado.
 
 1. Clique em **Salvar** para criar a camada.
 
@@ -134,14 +173,14 @@ Antes de ativar camadas ou alterar prioridades, é possível visualizar como ela
 
 1. Clique no botão de ativação para ativar ou desativar a camada.
 
-   - **Ativo** — A camada é aplicada aos dados do produto.
-   - **Inativo** — A camada é preservada, mas não aplicada aos dados do produto.
+   * **Ativo** — A camada é aplicada aos dados do produto.
+   * **Inativo** — A camada é preservada, mas não aplicada aos dados do produto.
 
 1. A alteração entrará em vigor imediatamente na loja.
 
 **Para excluir uma camada:**
 
-Use a API de assimilação de dados para [excluir uma camada de catálogo](https://developer.adobe.com/commerce/services/reference/rest/#operation/deleteProductLayers).
+Use a API de assimilação de dados para [excluir uma camada de catálogo](https://developer.adobe.com/commerce/services/reference/rest/#operation/deleteProductLayers){target=_blank}.
 
 ## Gerenciar prioridades de camada
 
@@ -149,11 +188,11 @@ A ordem em que as camadas são aplicadas determina quais valores aparecem na loj
 
 **Noções básicas sobre a ordem de prioridade:**
 
-- A cada camada é atribuído um número de ordem (1, 2, 3 e assim por diante)
-- A ordem 1 tem a prioridade mais alta e substitui todas as outras camadas
-- Quando várias camadas modificam o mesmo campo, a camada com o número de ordem mais baixo tem prioridade
-- A prioridade se aplica somente a campos de substituição (nome, descrição, metatags)
-- Campos de mesclagem (imagens, links, atributos) combinam dados de todas as camadas
+* A cada camada é atribuído um número de ordem (1, 2, 3 e assim por diante)
+* A ordem 1 tem a prioridade mais alta e substitui todas as outras camadas
+* Quando várias camadas modificam o mesmo campo, a camada com o número de ordem mais baixo tem prioridade
+* A prioridade se aplica somente a campos de substituição (nome, descrição, metatags)
+* Campos de mesclagem (imagens, links, atributos) combinam dados de todas as camadas
 
 **Para reordenar as prioridades de camada:**
 
@@ -177,19 +216,20 @@ A ordem em que as camadas são aplicadas determina quais valores aparecem na loj
 
 Siga estas recomendações ao trabalhar com camadas de catálogo:
 
-- **Use nomes descritivos** — Nomeie camadas claramente para indicar sua finalidade (por exemplo, &quot;Campanha de Natal 2025&quot; ou &quot;Otimização de SEO - Páginas de Produto&quot;).
+* **Use nomes descritivos** — Nomeie camadas claramente para indicar sua finalidade (por exemplo, &quot;Campanha de Natal 2025&quot; ou &quot;Otimização de SEO - Páginas de Produto&quot;).
 
-- **Limitar camadas**—Embora o sistema suporte várias camadas, o uso de muitas pode afetar o desempenho. Consolidar camadas quando possível.
+* **Limitar camadas**—Embora o sistema suporte várias camadas, o uso de muitas pode afetar o desempenho. Consolidar camadas quando possível.
 
 <!--- **Test before activating**—Always preview layer effects before activating them on your live storefront. !!!REMOVE IF PREVIEW NOT AVAILABLE FOR GA!!!-->
 
-- **Lógica de prioridade do documento**—Acompanhe quais camadas devem ter precedência para evitar substituições não intencionais.
+* **Lógica de prioridade do documento**—Acompanhe quais camadas devem ter precedência para evitar substituições não intencionais.
 
-- **Revisar camadas do Sites Optimizer**—Ao usar a correção automática do Sites Optimizer, o sistema cria camadas com a prioridade mais alta. Lembre-se de adicionar camadas manuais que podem substituir as recomendações de IA. Saiba mais sobre como usar o [Sites Optimizer](../manage-results/opportunities.md).
+* **Revisar camadas do Sites Optimizer**—Ao usar a correção automática do Sites Optimizer, o sistema cria camadas com a prioridade mais alta. Lembre-se de adicionar camadas manuais que podem substituir as recomendações de IA. Saiba mais sobre como usar o [Sites Optimizer](../manage-results/opportunities.md).
 
-- **Monitorar desempenho** — Se você observar carregamentos lentos de páginas de produtos, revise sua configuração de camada e considere a consolidação de camadas.
+* **Monitorar desempenho** — Se você observar carregamentos lentos de páginas de produtos, revise sua configuração de camada e considere a consolidação de camadas.
 
 ## Veja mais aqui
 
-- [Exibições de catálogo](catalog-view.md) - Configure exibições de catálogo para diferentes vitrines
-- [Oportunidades](../manage-results/opportunities.md) - Saiba mais sobre a otimização baseada em IA usando camadas de catálogo
+* [Exibições de catálogo](catalog-view.md) - Configure exibições de catálogo para diferentes vitrines
+* [Visuais de Produtos](product-visuals.md) - Use o AEM Assets para imagens de produtos
+* [Oportunidades](../manage-results/opportunities.md) - Saiba mais sobre a otimização baseada em IA usando camadas de catálogo
