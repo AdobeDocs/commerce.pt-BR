@@ -3,9 +3,9 @@ title: Práticas recomendadas do [!DNL Live Search]
 description: Conheça as práticas recomendadas para implementar o [!DNL Live Search] em sua loja.
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
-source-git-commit: f966a3f6f59c28e9f394d5eb7e41aaef1a992fec
+source-git-commit: c3d431a6536c3c5528b9aee45f03b0b94b4ea64e
 workflow-type: tm+mt
-source-wordcount: '2201'
+source-wordcount: '2892'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Há vários fatores principais que determinam a relevância e a eficácia dos re
 - Dados de produtos bem estruturados garantem que os algoritmos de pesquisa possam corresponder de forma eficaz os produtos às consultas. Dados de produtos de baixa qualidade resultam em resultados de pesquisa relevantes insuficientes. Para afetar diretamente o sucesso de sua estratégia de merchandising:
    - Configure os atributos corretos como pesquisáveis com seu peso correspondente.
    - Verifique se os dados nesses atributos são relevantes.
-- Uma experiência de pesquisa bem projetada cria confiança com os clientes e inspira confiança de que encontrarão o que precisam.
+- Uma experiência de pesquisa bem projetada cria confiança com os clientes e inspira confiança de que eles podem encontrar o que precisam.
 - As regras de pesquisa são críticas, pois podem elevar a visibilidade de determinados produtos com base em popularidade, novos concorrentes, critérios promocionais ou qualquer outra estratégia de merchandising para atender aos requisitos da sua empresa.
 - A navegação facetada permite que os compradores refinem sua pesquisa e obtenham resultados relevantes rapidamente.
 
@@ -124,21 +124,92 @@ Saiba mais sobre regras de pesquisa:
    - [Editar, exibir, excluir](rules-manage.md)
 - Coleção de dados
    - [[!DNL Live Search] eventos](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)
-   - [Coletor de Eventos da Adobe Commerce](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/)
+   - [Coletor de Eventos da Adobe Commerce](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework/)
    - [Eventos do GitHub Commerce](https://github.com/adobe/commerce-events/tree/main/examples) 
 
-### Aproveitar os metadados do produto
+### Aproveitar metadados do produto
 
-Verifique se atributos de produto precisos e detalhados estão [configurados como pesquisáveis](workspace.md#set-attributes-as-searchable). Observe que os atributos SKU, nome e categoria podem ser pesquisados por padrão e não podem ser excluídos da pesquisa. Para obter melhores resultados, não use espaços nas SKUs.
+Verifique se atributos de produto precisos e detalhados estão [configurados como pesquisáveis](workspace.md#set-attributes-as-searchable). Observe que os atributos SKU, nome e categoria podem ser pesquisados por padrão e não podem ser excluídos da pesquisa. Para obter melhores resultados, não use espaços nas SKUs.
+
+Escolher quais atributos tornar pesquisáveis tem um grande impacto na qualidade da pesquisa. Tornar muitos atributos pesquisáveis pode reduzir a relevância e causar correspondências inesperadas, mesmo que aumente o número de resultados retornados. Esta seção explica como selecionar atributos pesquisáveis deliberadamente para equilibrar a cobertura e a relevância.
+
+**Atributos pesquisáveis recomendados:**
+
+- **Nome do produto** - Alta intenção, descreve diretamente o produto.
+- **Descrição principal** - Detalhes concisos do produto que os compradores esperam corresponder.
+- **Marca** - os compradores frequentemente pesquisam por marca.
+- **Número/estilo do modelo** - Identificadores específicos com intenção clara.
+- **Principais recursos** - Características importantes de distinção (por exemplo, &quot;impermeável&quot;, &quot;sem fio&quot;).
+- **Material/Tecido** - Para categorias de moda e móveis.
+
+**Evite tornar esses atributos pesquisáveis:**
+
+- **Descrições ou especificações longas** - texto em excesso cria ruído e correspondências inesperadas.
+- **Caminhos de categorias** - Pode causar resultados irrelevantes devido a termos de taxonomia amplos.
+- **Códigos SKU internos com caracteres mistos** - Cria falsos positivos em correspondências parciais.
+- **Campos administrativos** - Notas internas ou códigos de depósito não relevantes para compradores.
+- **Marcas de formatação ou conteúdo do HTML** - O conteúdo técnico não melhora a relevância.
+
+#### Problemas comuns causados por atributos pesquisáveis incorretos
+
+Tornar pesquisáveis os atributos errados pode frustrar os compradores e criar escalonamentos de suporte.
+
+| Exemplo | Cenário | Recomendação |
+|---------|----------|----------------|
+| **Efeitos colaterais de contenção e preenchimento automático** | Um comerciante torna pesquisáveis longas descrições de produtos. Um comprador pesquisa por &quot;pode&quot; (procurando contêineres). Devido à origem e à correspondência parcial, aparecem produtos com &quot;pode&quot; como parte de palavras maiores em suas descrições, como &quot;americano&quot;, &quot;cobertura&quot; ou &quot;tela&quot;. Produtos não relacionados à superfície de intenção do comprador, e eles perdem a confiança na pesquisa. | Reduza campos pesquisáveis a atributos de alta intenção, como nome do produto e descrição principal. Valide os termos de pesquisa principais para identificar correspondências problemáticas. Use as regras de merchandising de pesquisa ou redirecionamentos para lidar com casos de borda conhecidos específicos. |
+| **A classificação por popularidade aumenta a correspondência ruidosa** | Um comerciante define a classificação como &quot;Mais comprados&quot; e inclui caminhos de categoria e descrições longas como atributos pesquisáveis. Um comprador procura por uma &quot;bolsa de laptop&quot;. A ampla correspondência retorna bolsas de notebook, acessórios para notebook, bolsas para outros propósitos e os próprios notebooks. Como os notebooks são comprados com mais frequência do que as bolsas de laptop, eles estão no topo da lista. O comprador percebe a classificação como incorreta, mesmo que o sistema esteja funcionando como configurado. | Remova atributos pesquisáveis e ruidosos, como caminhos de categoria. Quando o conjunto de correspondências for mais preciso, aplique as estratégias de classificação baseadas em popularidade. Monitore a análise de pesquisa para identificar consultas em que esse padrão ocorre. |
+| **O caminho da categoria cria falsos positivos** | Um comerciante torna o caminho completo da categoria pesquisável (por exemplo, &quot;Casa > Cozinha > Equipamentos > Pequenos Equipamentos&quot;). Um comprador procura por &quot;escritório doméstico&quot;. Os produtos da categoria &quot;Página inicial&quot; correspondem mesmo se forem itens de cozinha, pois a categoria &quot;Página inicial&quot; existe no caminho da categoria. Aparelhos de cozinha, decoração de casa e outros produtos não relacionados aparecem nos resultados, diluindo relevância. | Não torne os caminhos de categoria pesquisáveis; use facetas para permitir que os compradores filtrem por categoria. Se a filtragem de categoria for essencial para sua estratégia de pesquisa, implemente-a por meio de regras de merchandising em vez de atributos pesquisáveis. |
+
+#### Pesar os atributos pesquisáveis adequadamente
 
 Para aumentar a relevância da pesquisa, atribua um peso a cada atributo pesquisável. Atributos com um peso maior devem aparecer mais altos nos resultados da pesquisa. A classificação por relevância é afetada por vários critérios, como peso da pesquisa. Isso significa que, às vezes, os atributos com menor peso de pesquisa ainda podem ter mais relevância do que os atributos com maior peso de pesquisa. Outros critérios podem incluir o número de correspondências em qualquer atributo, a posição do termo de pesquisa encontrado e a estrutura geral do texto antes e depois de um termo de pesquisa.
 
+**Prioridades de peso:**
+
+- **Maior peso (9-10):** Nome do produto, marca
+- **Peso do Medium (6-8):** Número do modelo, descrição principal, recursos principais
+- **Peso mais baixo (3-5):** Descrições secundárias, materiais, especificações
+
 Verifique se cada produto tem conteúdo relevante em cada atributo pesquisável. Não é recomendável definir um atributo como pesquisável se ele tiver grandes quantidades de conteúdo, o que pode reduzir a relevância dos resultados da pesquisa.
+
+#### Solução de problemas
+
+Se os resultados da pesquisa forem aleatórios ou irrelevantes, use esta lista de verificação antes de escalonar como um defeito do produto:
+
+1. **Revisar configuração de atributo pesquisável:**
+
+   - Lista todos os atributos atualmente definidos como pesquisáveis.
+   - Identifique atributos amplos ou ruidosos (descrições longas, caminhos de categoria, campos administrativos).
+   - Remova o status pesquisável dos atributos que não representam a intenção do comprador.
+
+1. **Validar correspondências de consulta em relação aos atributos principais:**
+
+   - Teste as consultas de pesquisa mais comuns.
+   - Verifique se os resultados correspondem principalmente ao nome e à marca do produto, em vez de texto tangencial.
+   - Verifique se os resultados inesperados compartilham apenas correspondências fracas no conteúdo de forma longa.
+
+1. **Testar com e sem campos ruidosos:**
+
+   - Remova temporariamente o status pesquisável dos campos de caminho de categoria e descrição longa.
+   - Execute novamente consultas problemáticas para ver se a relevância melhora.
+   - Se os resultados melhorarem, ajuste a configuração permanentemente.
+
+1. **Usar regras de merchandising para exceções:**
+
+   - Para consultas conhecidas específicas que precisam de tratamento especial, crie regras de pesquisa direcionadas.
+   - Não tente resolver casos de borda tornando mais atributos pesquisáveis.
+   - Use redirecionamentos para pesquisas de nomes de marca ou erros ortográficos comuns.
+
+1. **Monitorar e iterar:**
+
+   - Use o [Espaço de trabalho de desempenho](performance.md) para rastrear taxa de resultados zero e taxas de click-through.
+   - Revise as principais consultas de pesquisa semanalmente para identificar novos padrões.
+   - Ajuste atributos e pesos pesquisáveis com base em dados, não em suposições.
 
 Saiba mais sobre atributos de produto para pesquisa:
 
 - [Definir atributos como pesquisáveis](workspace.md#set-attributes-as-searchable)
-- [Atribuir peso aos atributos](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Atribuir peso aos atributos](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Monitorar resultados da pesquisa
 

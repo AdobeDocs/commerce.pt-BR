@@ -4,10 +4,10 @@ description: Saiba como integrar sua instância do Adobe Commerce ou Magento Ope
 feature: Services, Saas
 role: Admin, User
 exl-id: 1aa6ba8b-be39-496e-b83d-a4a7db9f5dd8
-badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
-source-git-commit: 17bca82c7d84a86fe1cba16af02a07c4fa0d2af9
+badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
+source-git-commit: a1e7da7e4c49967e2975dfa133e246490bcff732
 workflow-type: tm+mt
-source-wordcount: '1505'
+source-wordcount: '1563'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ As seções a seguir discutem cada um desses elementos com mais detalhes.
 
 ## Credenciais {#apikey}
 
-As chaves de API de sandbox e produção são geradas a partir da conta [!DNL Commerce] do [proprietário da licença](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/start/onboarding). A conta do Commerce é identificada por um identificador exclusivo [!DNL Commerce] (MageID). O proprietário da licença da organização do comerciante pode gerar chaves de API para serviços como Recomendações de produto ou Live Search, desde que a conta esteja em bom estado.
+As chaves de API de sandbox e produção são geradas a partir da conta [!DNL Commerce] do [proprietário da licença](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding). A conta do Commerce é identificada por um identificador exclusivo [!DNL Commerce] (MageID). O proprietário da licença da organização do comerciante pode gerar chaves de API para serviços como Recomendações de produto ou Live Search, desde que a conta esteja em bom estado.
 
 As chaves podem ser compartilhadas com base no &quot;conhecimento necessário&quot; com o integrador de sistemas ou a equipe de desenvolvimento que gerencia projetos e ambientes em nome do titular da licença. Os desenvolvedores aos quais o proprietário da licença concedeu [!DNL Shared Access] não podem gerar as chaves em nome do proprietário da licença, mesmo que a organização do comerciante esteja presente na lista suspensa [!DNL Switch Accounts] em sua conta.
 
@@ -76,11 +76,11 @@ O proprietário da licença normalmente é o contato principal na conta da Adobe
 
 [!DNL Commerce] instâncias devem ser configuradas com um projeto SaaS e um espaço de dados SaaS para que [!DNL Commerce Services] possa enviar os dados para o local correto. Um projeto SaaS agrupa todos os espaços de dados SaaS. Os espaços de dados SaaS são usados para coletar e armazenar dados que permitem que o [!DNL Commerce Services] funcione. Alguns desses dados podem ser exportados da instância [!DNL Commerce] e outros podem ser coletados do comportamento do comprador na loja. Esses dados são mantidos para proteger o armazenamento na nuvem.
 
-Para [!DNL Product Recommendations], o espaço de dados SaaS contém dados de catálogo e comportamentais. Você pode apontar uma instância [!DNL Commerce] para um espaço de dados SaaS ao [selecioná-la](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/config/services/saas) na configuração [!DNL Commerce].
+Para [!DNL Product Recommendations] e [!DNL Live Search], o espaço de dados SaaS contém dados de catálogo e comportamentais. Você pode apontar uma instância [!DNL Commerce] para um espaço de dados SaaS ao [selecioná-la](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) na configuração [!DNL Commerce].
 
 >[!WARNING]
 >
-> Use seu **espaço de dados SaaS de produção** somente com sua instalação de produção [!DNL Commerce]. Usá-lo em ambientes de não produção pode misturar testes e dados em tempo real (por exemplo, URLs de preparo ou dados de catálogo de teste). Se isso acontecer, [envie uma solicitação de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/overview) para solicitar limpeza de dados.
+> Use seu **espaço de dados SaaS de produção** somente com sua instalação de produção [!DNL Commerce]. Usá-lo em ambientes de não produção pode misturar testes e dados em tempo real (por exemplo, URLs de preparo ou dados de catálogo de teste). Se isso acontecer, [envie uma solicitação de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) para solicitar limpeza de dados.
 
 Se não conseguir encontrar campos de configuração do Live Search em Admin, verifique se você inseriu o par de chaves de API correto para o espaço de dados selecionado (espaços de dados de produção usam chaves de produção; o teste de espaços de dados usa chaves de sandbox). Se você configurar chaves incorretas, os serviços SaaS, como o Live Search, não estarão disponíveis nesse ambiente do Adobe Commerce.
 
@@ -92,6 +92,8 @@ Se não conseguir encontrar campos de configuração do Live Search em Admin, ve
 
 Antes de excluir uma chave de API, gere e armazene com segurança uma chave de substituição. Atualize todas as integrações para usar a nova chave e confirme se os serviços dependentes estão funcionando como esperado.
 
+Se você não vir os campos de configuração **[!DNL Live Search]** no Painel de administração, confirme se inseriu a chave de API SaaS correta para esse ambiente. Use a chave SaaS de produção para o espaço de dados de produção e a chave de preparação para o espaço de dados de preparação. Se uma chave errada for configurada, os serviços SaaS (incluindo **[!DNL Live Search]**) não estarão disponíveis em seu ambiente Adobe Commerce.
+
 Na chave de API a ser removida, clique em **[!UICONTROL Delete]**. Quando solicitado, confirme a operação para remover permanentemente a chave.
 
 ### Provisionamento de espaço de dados SaaS
@@ -100,15 +102,15 @@ Todos os comerciantes do Adobe Commerce podem acessar um espaço de dados de pro
 
 Você pode usar os espaços de dados de teste em ambientes de não produção, mas evitar usar o mesmo espaço de dados em vários ambientes ao mesmo tempo. Se quiser mover um espaço de dados de teste para um ambiente diferente, execute uma limpeza de dados antes de selecioná-lo e configurá-lo no novo ambiente.
 
-Para projetos da Adobe Commerce Cloud Pro com vários ambientes de preparo, você pode solicitar espaços de dados de teste adicionais para cada ambiente de preparo [enviando uma solicitação de suporte](https://experienceleague.adobe.com/home?lang=pt-BR&support-tab=home#support). No entanto, se você tiver apenas um ambiente de preparo e exigir espaços de dados de teste adicionais, terá as seguintes opções:
+Para projetos da Adobe Commerce Cloud Pro com vários ambientes de preparo, você pode solicitar espaços de dados de teste adicionais para cada ambiente de preparo [enviando uma solicitação de suporte](https://experienceleague.adobe.com/home?support-tab=home#support). No entanto, se você tiver apenas um ambiente de preparo e exigir espaços de dados de teste adicionais, terá as seguintes opções:
 
 - Entre em contato com a equipe de Sucesso do cliente ou com o Gerente de sucesso do cliente designado para solicitar um ambiente de preparo adicional.
 
-- [Envie uma solicitação de suporte](https://experienceleague.adobe.com/home?lang=pt-BR&support-tab=home#support) para solicitar o espaço de dados de teste adicional e indicar a justificativa comercial para o espaço de dados extra. Esta solicitação está sujeita a aprovação.
+- [Envie uma solicitação de suporte](https://experienceleague.adobe.com/home?support-tab=home#support) para solicitar o espaço de dados de teste adicional e indicar a justificativa comercial para o espaço de dados extra. Esta solicitação está sujeita a aprovação.
 
-Os clientes do Magento Open Source que usam os Serviços de pagamento da Adobe também podem solicitar um espaço de dados adicional. Entre em contato com a equipe de Pagamentos para obter aprovação prévia dos espaços de dados adicionais antes de enviar uma [Solicitação de suporte](https://experienceleague.adobe.com/home?lang=pt-BR&support-tab=home#support) para solicitar o espaço de dados de teste.
+Os clientes do Magento Open Source que usam os Serviços de pagamento da Adobe também podem solicitar um espaço de dados adicional. Entre em contato com a equipe de Pagamentos para obter aprovação prévia dos espaços de dados adicionais antes de enviar uma [Solicitação de suporte](https://experienceleague.adobe.com/home?support-tab=home#support) para solicitar o espaço de dados de teste.
 
-Os clientes que possuem vários projetos na nuvem ou instalações locais (live/production) também podem solicitar espaços de dados adicionais de produção e teste para cada projeto ou instância por [enviar uma solicitação de suporte](https://experienceleague.adobe.com/home?lang=pt-BR&support-tab=home#support).
+Os clientes que possuem vários projetos na nuvem ou instalações locais (live/production) também podem solicitar espaços de dados adicionais de produção e teste para cada projeto ou instância por [enviar uma solicitação de suporte](https://experienceleague.adobe.com/home?support-tab=home#support).
 
 ### Selecionar ou criar um projeto SaaS {#createsaasenv}
 
@@ -118,7 +120,7 @@ Para selecionar ou criar um projeto SaaS, solicite as [!DNL Commerce] chaves de 
 
    Se você não vir a seção **[!UICONTROL Commerce Services Connector]**, instale os módulos [!DNL Commerce] do [[!DNL Commerce] serviço](#availableservices) desejado e verifique se o pacote `magento/module-services-id` está instalado.
 
-1. Nas seções _[!UICONTROL Sandbox API Keys]_&#x200B;e_[!UICONTROL Production API Keys]_, cole seus valores de chave.
+1. Nas seções _[!UICONTROL Sandbox API Keys]_e_[!UICONTROL Production API Keys]_, cole seus valores de chave.
 
    - As chaves privadas devem incluir `-----BEGIN PRIVATE KEY-----` no início da chave e `-----END PRIVATE KEY-----` no final da chave.
    - Se você não tiver uma cópia das chaves reais, peça ao proprietário da licença para conectá-las e, em seguida, conecte os valores à configuração.
@@ -135,7 +137,7 @@ Para selecionar ou criar um projeto SaaS, solicite as [!DNL Commerce] chaves de 
 
 1. Selecione o **Espaço de Dados** a ser usado para a configuração atual do seu repositório [!DNL Commerce].
 
-   Se você tiver instâncias separadas para integrar com os Serviços Commerce, [envie um tíquete de Suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) para solicitar um novo projeto SaaS para cada instância adicional. Depois que o Suporte criar o projeto SaaS, configure a integração para a instância usando as mesmas chaves de API e selecionando o novo projeto SaaS para o espaço de dados.
+   Se você tiver instâncias separadas para integrar com os Serviços Commerce, [envie um tíquete de Suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) para solicitar um novo projeto SaaS para cada instância adicional. Depois que o Suporte criar o projeto SaaS, configure a integração para a instância usando as mesmas chaves de API e selecionando o novo projeto SaaS para o espaço de dados.
 
 >[!WARNING]
 >
@@ -149,4 +151,4 @@ Para conectar sua instância do Adobe Commerce à Adobe Experience Platform, fa�
 
 ## Exportação de dados SaaS
 
-Quando a instância do [!DNL Commerce] é conectada com êxito ao [!DNL Commerce Services], o processo de exportação de dados SaaS exporta os dados do Commerce do servidor [!DNL Commerce] para o [!DNL Commerce SaaS Services] para que ele possa ser sincronizado com os Commerce Services conectados. No Administrador, você pode verificar o status da sincronização usando o [painel de Gerenciamento de Dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard). Para obter detalhes, consulte o [Guia de Exportação de Dados SaaS](../data-export/overview.md).
+Quando a instância do [!DNL Commerce] é conectada com êxito ao [!DNL Commerce Services], o processo de exportação de dados SaaS exporta os dados do Commerce do servidor [!DNL Commerce] para o [!DNL Commerce SaaS Services] para que ele possa ser sincronizado com os Commerce Services conectados. No Administrador, você pode verificar o status da sincronização usando o [painel de Gerenciamento de Dados](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard). Para obter detalhes, consulte o [Guia de Exportação de Dados SaaS](../data-export/overview.md).
