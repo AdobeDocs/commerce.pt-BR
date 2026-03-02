@@ -39,7 +39,7 @@ Antes de configurar a integração, verifique se você tem:
 
 ## Integração
 
-Para integrar a Integração do AEM Assets com o [!DNL Commerce Optimizer], você deve [Criar um tíquete de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Para integrar a Integração do AEM Assets com o [!DNL Commerce Optimizer], você deve [Criar um tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 O Suporte da Adobe usa as informações no tíquete para registrar o locatário no Serviço de integração da Assets e configurar a integração.
 
@@ -115,7 +115,7 @@ O ativo deve estar em um status **aprovado** para que a sincronização de dados
 
 >[!CAUTION]
 >
-> Atribua a camada `AEM-Assets` à sua [exibição de catálogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view). Se a camada não for atribuída, os dados da imagem do produto poderão ser substituídos inesperadamente.
+> Atribua a camada `AEM-Assets` à sua [exibição de catálogo](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/setup/catalog-view). Se a camada não for atribuída, os dados da imagem do produto poderão ser substituídos inesperadamente.
 
 ## Sincronização
 
