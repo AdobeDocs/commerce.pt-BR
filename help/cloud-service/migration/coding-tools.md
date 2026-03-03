@@ -2,12 +2,12 @@
 title: Ferramentas de desenvolvedor de codificação de IA para o Adobe Commerce App Builder
 description: Saiba como usar as ferramentas de IA para criar aplicativos do Commerce App Builder.
 feature: App Builder, Cloud
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 role: Developer
 level: Intermediate
-source-git-commit: 4e3f593ead4b0e32bdf474498421b20475dcbe52
+source-git-commit: 2c851da1dc521f5309031fc091be88f9ca39cd8f
 workflow-type: tm+mt
-source-wordcount: '2470'
+source-wordcount: '2438'
 ht-degree: 0%
 
 ---
@@ -56,10 +56,6 @@ Isso atualizará as ferramentas para a versão mais recente.
 * [Git](https://github.com/git-guides/install-git): para clonagem de repositório e controle de versão
 
 ## Instalação
-
->[!NOTE]
->
->Se você quiser instalar apenas o serviço de documentação RAG e não todo o pacote de ferramentas de codificação de IA, consulte [serviço de documentação RAG](./doc-rag.md).
 
 1. Instale globalmente a [Adobe I/O CLI](https://github.com/adobe/aio-cli) mais recente:
 
@@ -179,8 +175,6 @@ aio auth login
 >[!NOTE]
 >
 >Alguns recursos do servidor MCP funcionarão sem fazer logon, mas o serviço RAG (Retrieval-Augmented Generation) não funcionará. O serviço RAG fornece ao agente de codificação de IA acesso em tempo real ao conjunto completo de documentações do Adobe Commerce, permitindo que ele responda a perguntas e gere código com base nas práticas atuais de desenvolvimento, APIs e padrões de arquitetura do Commerce.
->
->Para instalar o serviço RAG de forma independente, consulte [Documentação do serviço RAG](./doc-rag.md).
 
 ### Cursor
 
@@ -340,7 +334,7 @@ Consulte os seguintes recursos para começar:
 * [Kit de início de integração](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
 * [Kit inicial de check-out](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 * [modelos do kit inicial do Adobe Commerce](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [modelos iniciais do Adobe I/O Events](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [modelos iniciais do Adobe I/O Events](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
 * [aplicativos de exemplo do App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Por que você deve usar esses recursos
