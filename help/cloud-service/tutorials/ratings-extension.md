@@ -1,12 +1,15 @@
 ---
 title: Tutorial da extensão de classificações
 description: Saiba como criar uma extensão de classificações de produto para o Adobe Commerce as a Cloud Service usando o App Builder e ferramentas de desenvolvimento assistido por IA.
+solution: Commerce
 feature: App Builder, Cloud
+feature-set: Commerce
 role: Developer
 level: Intermediate
-source-git-commit: fb3595284761e9478c819150c27d06631de67e18
+type: Tutorial
+source-git-commit: 33ba97fd6766c9d11baea74170a7119d72e06379
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '1701'
 ht-degree: 0%
 
 ---
@@ -50,15 +53,15 @@ Esta seção orienta você no desenvolvimento de uma extensão de classificaçõ
    >Ao trabalhar com ferramentas de desenvolvimento assistidas por IA, espere variações naturais no código e nas respostas geradas pelo agente.
    >Se encontrar problemas com o código, você sempre poderá pedir ao agente para ajudá-lo a depurá-lo.
 
-1. Se você tiver alguma documentação adicionada ao contexto do cursor, desative-a:
+1. Desative qualquer documentação no contexto do cursor:
 
-   - Navegue até [!UICONTROL **Cursor**] > [!UICONTROL **Configurações**] > [!UICONTROL **Configurações do cursor**] > [!UICONTROL **Indexação e documentos**] e exclua toda a documentação listada.
+   * Navegue até **[!UICONTROL Cursor]** > **[!UICONTROL Settings]** > **[!UICONTROL Cursor Settings]** > **[!UICONTROL Indexing & Docs]** e exclua qualquer documentação listada.
 
    ![Configurações de documentação e indexação do cursor com a lista de documentação vazia](../assets/disable-documentation.png){width="600" zoomable="yes"}
 
 1. Gerar código para uma extensão de classificações de produto:
-   - Na janela de chat Cursor, selecione o modo [!UICONTROL **Agente**].
-   - Digite o seguinte prompt:
+   * Na janela Cursor chat, selecione o modo **[!UICONTROL Agent]**.
+   * Digite o seguinte prompt:
 
    ```shell-session
    Implement an Adobe Commerce as a Cloud Service extension to handle Product Ratings.
@@ -103,7 +106,9 @@ Esta seção orienta você no desenvolvimento de uma extensão de classificaçõ
 1. Revise o arquivo `requirements.md` e verifique o plano.
 
    Se tudo estiver correto, instrua o agente a migrar para a **Fase 2 - Planejamento de Arquitetura**.
+
 1. Revise o plano de arquitetura.
+
 1. Instrua o agente a prosseguir com a geração de código.
 
    O agente gera o código necessário e fornece um resumo detalhado com as próximas etapas.
@@ -114,7 +119,9 @@ Esta seção orienta você no desenvolvimento de uma extensão de classificaçõ
 
    ![O agente de IA fornece as próximas etapas para teste e implantação](../assets/next-steps.png){width="600" zoomable="yes"}
 
-### Teste local
+### Testar a extensão localmente
+
+As etapas a seguir abordam como verificar se a extensão funciona antes de implantá-la.
 
 1. Peça ao agente para ajudá-lo a testar o código localmente.
 
@@ -129,6 +136,8 @@ Esta seção orienta você no desenvolvimento de uma extensão de classificaçõ
    ![Terminal mostrando resultados de teste de API local com êxito com cURL](../assets/local-testing-1.png){width="600" zoomable="yes"}
 
 ### Implantar a extensão
+
+Implante a extensão para [!DNL Adobe I/O Runtime] usando o agente.
 
 1. Depois de verificar o código gerado, implante a extensão usando o seguinte prompt:
 
@@ -146,9 +155,9 @@ Esta seção orienta você no desenvolvimento de uma extensão de classificaçõ
 
    ![Processo de compilação e implantação da verificação do kit de ferramentas MCP](../assets/deployment-process.png){width="600" zoomable="yes"}
 
-### Pós-implantação
+### Verificar a implantação
 
-Você pode testar a API antes de integrá-la à loja. O agente deve fornecer o local da nova ação e uma estratégia de teste.
+Teste a API antes de integrá-la à loja. O agente deve fornecer o local da nova ação e uma estratégia de teste.
 
 ![Estratégia de teste de agente de IA com URL de ação implantada e comandos de teste](../assets/testing-strategy.png){width="600" zoomable="yes"}
 
@@ -171,139 +180,193 @@ Create a service contract for the ratings api that I can pass on to the storefro
 ![O agente de IA está criando o arquivo de contrato de serviço para integração com a loja](../assets/create-contract.png){width="600" zoomable="yes"}
 
 ![Arquivo de markdown do contrato de API de classificações com detalhes de resposta e ponto de extremidade](../assets/contract.png){width="600" zoomable="yes"}
-<!-- 
-Return to the terminal and run the following command in the `extension` folder to copy the file to the `storefront` folder:
+
+Retorne ao terminal e execute o seguinte comando na pasta `extension` para copiar o arquivo de contrato para a pasta `storefront`:
 
 ```bash
 cp RATINGS_API_CONTRACT.md ../storefront
-``` -->
+```
 
-### Próximas etapas
+## Conectar à loja
 
-Agora que você tem o contrato de API de classificação, pode começar a criar a parte da loja (front-end) da extensão de classificação.
-
-<!-- 
-## Connect to the storefront
-
-This section teaches you how to implement real storefront features and communicate effectively with AI agents when working with [!DNL Adobe Commerce] dropins and [!DNL Edge Delivery Services].
+Esta seção orienta você na implementação da parte da loja da extensão de classificações usando o [!DNL Edge Delivery Services] e as ferramentas de desenvolvimento assistido por IA.
 
 >[!NOTE]
 >
->The prompts provided are starting points. Although you can use them without modification, consider having a natural conversation with the agent.
+>Os prompts fornecidos são pontos de partida. Embora você possa usá-los sem modificação, considere ter uma conversa natural com o agente.
 >
->When working with AI-assisted development tools, there are always natural variations in the code and responses generated by the agent.
+>Ao trabalhar com ferramentas de desenvolvimento assistido por IA, há sempre variações naturais no código e nas respostas geradas pelo agente.
 >
->If you encounter any issues with your code, ask the agent to help you debug it.
+>Se encontrar algum problema com seu código, peça ao agente para ajudá-lo a depurá-lo.
 
-### Ratings stars and review count implementation
+### Pré-requisitos da loja
 
-1. Navigate to the `storefront` folder:
+Antes de iniciar a integração da loja, verifique se você tem o seguinte:
+
+* Um projeto de vitrine conectado à sua instância [!DNL Commerce]
+* Ferramentas de IA da vitrine do Commerce [instaladas usando a CLI](./tutorial-prerequisites.md#install-the-storefront-ai-tools)
+
+### Configurar o espaço de trabalho da loja
+
+Prepare o ambiente da loja local para desenvolvimento.
+
+1. Navegue até a pasta `storefront`:
 
    ```bash
    cd storefront
    ```
 
-1. Open the storefront folder in a new Cursor window.
+1. Abra a pasta de vitrine em uma nova janela Cursor.
 
-    Alternatively, if you have the [Cursor CLI](https://cursor.com/docs/configuration/shell#installing-cli-commands) installed, open the window by using the following command in your terminal:
+   Como alternativa, se você tiver a [CLI do Cursor](https://cursor.com/docs/configuration/shell#installing-cli-commands) instalada, abra a janela usando o seguinte comando no terminal:
 
    ```bash
    cursor .
    ```
 
-1. Start the local development server:
+1. Iniciar o servidor de desenvolvimento local:
 
    ```bash
    npm run start
    ```
 
-1. In a browser, navigate to the Apparel page:
+1. Em um navegador, navegue até uma página de produto:
 
    ```shell-session
-   http://localhost:3000/apparel
+   http://localhost:3000/products/llama-plush-shortie/adb336
    ```
 
-1. Observe the boilerplate storefront UI layout and note the lack of visual product ratings.
+1. Observe a página de detalhes do produto (PDP) da vitrine padronizada e observe a falta de classificações visuais do produto.
 
-1. Use the following prompt with your agent:
+### Integrar a API de classificações
+
+Use o agente para integrar a API de classificações na página de detalhes do produto da loja.
+
+1. Use o seguinte prompt com seu agente:
 
    ```shell-session
-   Implement product ratings in the storefront.
-
-   Add a 5-star rating display with a review count underneath each product name on the product list page, product details page, and product recommendations.
-
-   Use the dropin slot system where available.
-
-   Use @RATINGS_API_CONTRACT.md to understand how to use the ratings API.
+   Integrate the ratings API into the PDP to show star ratings and a review count for products. Here's the service contract: @RATINGS_API_CONTRACT.md
    ```
 
-1. Observe the changes in the codebase, and watch the Apparel page for updates.
+1. O agente avalia a complexidade da tarefa e invoca um fluxo de trabalho em fases. Durante a **Fase 1 (Coleta de Requisitos)**, o agente cria um documento de requisitos e faz perguntas esclarecedoras como:
 
-   You should see the following changes in your development environment and browser:
+   * Onde as classificações devem aparecer no PDP?
+   * Deve ser um novo bloco autônomo ou uma personalização de slot dentro do componente PDP existente suspenso?
+   * Qual deve ser o fallback se a API não estiver disponível ou não retornar dados?
+   * As classificações também devem aparecer na PLP (lista de produtos) ou somente no PDP?
+   * Existem especificações ou modelos de design?
 
-   * A product rating "component" is automatically created.
-   * The component is integrated into product-details, product-list-page, and product-recommendations blocks using [dropin slots](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=pt-BR).
-   * Stars display with proper fill proportions based on mock rating values.
+   Responda a essas perguntas com base nos requisitos do projeto. O agente atualiza o documento de requisitos e marca a fase como concluída.
 
-![Product Ratings Implementation](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}
+1. Durante a **Fase 2 (Planejamento de Arquitetura)**, o agente pesquisa a documentação e a base de código antes de propor uma arquitetura. Espere que o agente:
 
-## Tutorial recap
+   * Pesquise na documentação do [!DNL Commerce] os contêineres de entrada suspensa de PDP, slots e cargas de evento.
+   * Procure código existente relacionado a PDP no diretório `blocks` e na pasta `scripts/initializers/`.
+   * Explore definições de TypeScript para contêineres disponíveis e formas de contexto de slot.
 
-Here is a summary of the topics covered in this tutorial:
+   O agente apresenta opções de arquitetura como:
 
-* **Feature implementation**: How to describe new functionality to an AI agent.
-* **Iterative changes**: Making quick modifications to existing code.
-* **Complex UI components**: Building interactive features with visual references.
-* **Dropin integration**: Working with [!DNL Adobe Commerce] dropin containers and slots.
-* **Component reusability**: Creating shared components used across multiple blocks.
+   * **Opção A:** Personalize um slot PDP existente para inserir classificações próximas ao título do produto — um toque mais leve e fácil de atualizar.
+   * **Opção B:** Crie um novo bloco `product-ratings` autônomo que obtenha da API independentemente — mais flexível e dissociado.
+   * **Opção C:** Crie um novo bloco que também escute eventos de entrega PDP para o SKU do produto — uma abordagem híbrida.
 
-## Next steps
+   O plano também inclui detalhes sobre a integração da API, considerações de desempenho (carregamento lento, armazenamento em cache), segurança (limpeza de entrada) e uma abordagem de teste.
 
-For further experimentation with this tutorial, use the following suggestions to further customize your ratings extension, or create your own modifications:
+   Revise o plano de arquitetura e instrua o agente a continuar.
 
-### Change the star colors
+1. Durante a **Fase 3 (Abordagem de implementação)**, o agente solicita que você escolha entre:
 
-Use the following prompt to your agent:
+   * **Opção A:** Examine um plano de implementação detalhado antes da geração de código (veja primeiro todos os arquivos, padrões e estrutura de código).
+   * **Opção B:** Prossiga diretamente para a geração de código.
+
+   Selecione a abordagem de sua preferência.
+
+1. Durante a **Fase 4 (Implementação)**, o agente gera código com base na arquitetura escolhida. Dependendo da abordagem, o agente usa várias habilidades especializadas:
+
+   * **Modelagem de conteúdo:** Se um novo bloco for necessário, o agente criará uma estrutura de conteúdo amigável para o autor, como uma tabela de configuração com a URL do ponto de extremidade da API.
+   * **Desenvolvimento de bloco:** o agente cria arquivos de bloco seguindo [!DNL Edge Delivery Services] convenções, incluindo funções de decoração de JavaScript, estilos CSS com escopo, rótulos ARIA para acessibilidade, carregamento e tratamento de estado de erro.
+   * **Personalização de inclusão:** se a arquitetura usar personalização de slots, o agente importará o contêiner correto, usará um slot verificado próximo ao título do produto e se inscreverá nos eventos de dados do produto para a SKU atual.
+
+   Observe o código que está sendo gerado e faça perguntas ou redirecione o agente, conforme necessário. O agente produz um resumo de prontidão de produção quando a geração do código é concluída.
+
+1. Durante a **Fase 4.5 (Teste)**, o agente se oferece para testar a implementação. Se você aceitar, o agente:
+
+   * Cria uma página de teste local com os scripts e estilos adequados.
+   * Inicia um servidor de desenvolvimento.
+   * Executa verificação baseada em navegador para renderização visual, interatividade, comportamento responsivo, acessibilidade e desempenho.
+   * Gera um relatório de teste estruturado com os resultados.
+
+   Siga o procedimento no navegador para confirmar o comportamento e relatar qualquer problema.
+
+1. Observe as alterações na base de código e observe as atualizações na página do produto.
+
+   Você deve ver as seguintes alterações no ambiente de desenvolvimento e no navegador:
+
+   * Um componente de classificação de produto é criado automaticamente.
+   * O componente é integrado ao PDP usando [slots internos](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots) ou como um bloco autônomo, dependendo da arquitetura escolhida.
+   * As estrelas são exibidas com proporções de preenchimento apropriadas com base nos valores de classificação da sua API.
+
+   ![Página de detalhes do produto mostrando classificações de estrelas integradas abaixo do título do produto](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}
+
+## Resumo do tutorial
+
+Este é um resumo dos tópicos abordados neste tutorial:
+
+* **Desenvolvimento de extensão** Aprendendo a descrever novas funcionalidades para um agente de IA e gerar uma API REST funcional usando [!DNL App Builder].
+* **Implantação e teste locais:** Teste da API localmente e implantação com o kit de ferramentas MCP.
+* **Contratos de serviço:** criando contratos de API que conectam extensões de back-end e implementações de vitrine.
+* **Integração de vitrine em fases:** Trabalhando com requisitos, arquitetura e implementação usando habilidades assistidas por IA.
+* **Integração de aceitação:** Trabalhando com [!DNL Adobe Commerce] contêineres e slots de aceitação.
+* **Reusabilidade de componente:** criação de componentes compartilhados usados em vários blocos.
+
+## Próximas etapas
+
+Use as seguintes sugestões para personalizar sua extensão de classificações ou criar suas próprias modificações:
+
+### Alterar as cores das estrelas
+
+Use o seguinte prompt com seu agente:
 
 ```shell-session
 Change the star fill color to red.
 ```
 
-**Expected outcome:**
+**Resultado esperado:**
 
-The stars are changed to red.
+As estrelas mudam para vermelho.
 
-![Red Star Colors](../assets/red-star-colors.png){width="600" zoomable="yes"}
+![Classificações de produto exibidas com cor de preenchimento com estrela vermelha](../assets/red-star-colors.png){width="600" zoomable="yes"}
 
-### Add rating distribution modal
+### Adicionar um modal de distribuição de classificação
 
-The following steps show how the agent handles complex UI features with visual references.
+As etapas a seguir mostram como o agente lida com recursos complexos da interface do usuário com referências visuais.
 
-1. **Before starting:** Save the following mock image and paste it into the chat with your storefront agent.
+1. **Antes de iniciar:** Salve a imagem de modelo a seguir e cole-a no chat com o agente da loja.
 
-   ![Rating Distribution Mockup](../assets/rating-distribution-mockup.png){width="600" zoomable="yes"}
+   ![Modelo mostrando o detalhamento da distribuição de classificação por nível de estrela](../assets/rating-distribution-mockup.png){width="600" zoomable="yes"}
 
-1. Follow these steps to create the ratings distribution modal using the reference image as a guide:
+1. Siga estas etapas para criar o modal de distribuição de classificações usando a imagem de referência como guia:
 
-   * Update the API to return additional data representing the ratings distribution.
-   * Update the API Contract.
-   * Update the contact in the storefront codebase.
-   * Ask the storefront agent to use the reference image and updated API Contract to add the ratings distribution to the PDP page.
+   * Atualize a API para retornar dados adicionais que representem a distribuição de classificações.
+   * Atualize o contrato de API.
+   * Atualize o contrato na base de código de vitrine.
+   * Peça ao agente da loja que use a imagem de referência e o contrato de API atualizado para adicionar a distribuição de classificações à página PDP.
 
-1. Observe the following changes in the codebase, and watch the Apparel page for updates:
+1. Observe as seguintes alterações na base de código e observe as atualizações na página do produto:
 
-   * How the agent interprets the visual mockup
-   * Whether it uses appropriate HTML structure for accessibility
-   * How it handles the positioning and interaction states
+   * Como o agente interpreta o modelo visual
+   * Se ela usa a estrutura apropriada do HTML para acessibilidade
+   * Como ele lida com os estados de posicionamento e interação
 
-#### Troubleshooting
+#### Solução de problemas no modal de distribuição
 
-* If the modal does not appear, check the browser console for errors.
-* If positioning is off, ask the agent to fix it using the following format:
+Se o modal não se comportar conforme esperado, tente o seguinte:
 
-   ```shell-session
-   adjust the modal position to be...
-   ```
+* Se o modal não for exibido, verifique se há erros no console do navegador.
+* Se o posicionamento estiver desativado, peça ao agente para corrigi-lo usando o seguinte formato:
 
-![Rating Distribution Modal](../assets/rating-distribution-modal.png){width="600" zoomable="yes"}
- -->
+  ```shell-session
+  adjust the modal position to be...
+  ```
+
+![Modal exibindo distribuição de classificação detalhada com barras de divisão em nível de estrela](../assets/rating-distribution-modal.png){width="600" zoomable="yes"}
