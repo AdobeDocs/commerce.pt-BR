@@ -1,7 +1,7 @@
 ---
 title: Criar e gerenciar recomendações
 description: Saiba como criar e gerenciar recomendações.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
 source-git-commit: 3d748e83e07a16e58c0c55f12a6c0ad40bbfdead
 workflow-type: tm+mt
@@ -97,7 +97,7 @@ Depois de criar uma recomendação, é necessário recuperar a ID para implement
 
 1. Na seção **ID de Recomendação**, copie a ID.
 
-1. Use esta ID para configurar o [menu suspenso de recomendação](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/) na sua vitrine da Edge Delivery Services.
+1. Use esta ID para configurar o [menu suspenso de recomendação](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/?lang=pt-BR) na sua vitrine da Edge Delivery Services.
 
 ## Gerenciar recomendações existentes
 
