@@ -1,18 +1,18 @@
 ---
 title: Tipos de Recomendação
 description: Saiba mais sobre as recomendações que você pode implantar em várias páginas do site.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: f1c4e0ef-a8fe-452d-9870-6d6964b4335d
-source-git-commit: 6fed7dd049019918646a9b871147c2d6ae27ed36
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1611'
+source-wordcount: '1605'
 ht-degree: 0%
 
 ---
 
 # Tipos de Recomendação
 
-O Adobe Commerce Optimizer fornece um grande conjunto de recomendações que você pode implantar em várias páginas do site. Todos os tipos de recomendações são orientados por dados. Eles são alimentados por dados comportamentais, dados de atributos de produto e métricas. Para facilitar a referência, os tipos de recomendação são agrupados da seguinte maneira:
+O [!DNL Adobe Commerce Optimizer] fornece um grande conjunto de recomendações que você pode implantar em várias páginas do site. Todos os tipos de recomendações são orientados por dados. Eles são alimentados por dados comportamentais, dados de atributos de produto e métricas. Para facilitar a referência, os tipos de recomendação são agrupados da seguinte maneira:
 
 - [Personalizado](#personalized)
 - [Vendas cruzadas e vendas adicionais](#crossup)

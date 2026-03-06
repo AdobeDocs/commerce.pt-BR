@@ -1,11 +1,11 @@
 ---
 title: Criar e gerenciar regras
 description: Saiba como criar e gerenciar regras de merchandising.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: bd54ff7afb0b6a5d78098225a8f98f81f96a7923
+source-git-commit: 9cb231055df45bbfcff3303c6e1c257c883cb852
 workflow-type: tm+mt
-source-wordcount: '2146'
+source-wordcount: '2219'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,13 @@ Para criar uma regra, a primeira etapa é usar o editor de regras para definir a
 ## Criar uma regra
 
 1. No painel à esquerda, vá para _Merchandising_ > **Regras de comercialização**.
-1. Clique em **Criar regra** para iniciar o editor de regras.
+1. (Opcional) Use a lista suspensa **Exibição de catálogo** para selecionar a exibição de catálogo à qual a regra deve se aplicar. O escopo da regra criada é o da exibição selecionada (ou de todas as exibições de catálogo se **Todas as exibições** estiver selecionado). Consulte [Selecionar exibição de catálogo](workspace.md#select-catalog-view) para saber como funciona o escopo de exibição de catálogo.
+
+   >[!IMPORTANT]
+   >
+   >No momento, esse recurso está na versão beta.
+
+1. Clique em **[!UICONTROL Create rule]** para iniciar o editor de regras.
 
 ![Criar regra](../../assets/create-rule.png)
 
@@ -165,7 +171,7 @@ Ou eventos podem ser definidos manualmente:
 
 ## Editar, exibir e excluir regras
 
-Siga estas instruções para atualizar as propriedades das regras existentes.
+Siga estas instruções para atualizar as propriedades das regras existentes. Não é possível alterar a exibição de catálogo (escopo) de uma regra após sua criação; o escopo é definido quando você cria a regra. Consulte [Selecionar exibição de catálogo](workspace.md#select-catalog-view).
 
 ### Editar regra
 

@@ -1,11 +1,11 @@
 ---
 title: Usuário e Identity Management
 description: Saiba como criar e gerenciar usuários e atribuir funções de usuário para  [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 9ab2118d-b7e3-4e2e-adac-8f3950fe1824
-source-git-commit: 423d6f3fb544fb33b8e4e689fdfbbb3cf5b700f3
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '774'
 ht-degree: 0%
 
 ---
@@ -18,10 +18,10 @@ Para habilitar o acesso a [!DNL Adobe Commerce Optimizer], adicione usuários do
 
 - **Usuário**— Os usuários têm acesso à interface do usuário [!DNL Adobe Commerce Optimizer] para exibir e gerenciar exibições de catálogo e regras de merchandising, além de acompanhar métricas de desempenho.
 
-- [**Desenvolvedor**](https://helpx.adobe.com/br/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"}— Os desenvolvedores têm permissões de usuário e acesso à Adobe Developer Console. Isso significa que eles podem criar projetos e configurar credenciais para usar ferramentas de desenvolvedor, como as APIs e SDKs do [!DNL Adobe Commerce Optimizer], juntamente com ferramentas de extensibilidade do Adobe, como o App Builder e a API Mesh.
+- [**Desenvolvedor**](https://helpx.adobe.com/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"}— Os desenvolvedores têm permissões de usuário e acesso à Adobe Developer Console. Isso significa que eles podem criar projetos e configurar credenciais para usar ferramentas de desenvolvedor, como as APIs e SDKs do [!DNL Adobe Commerce Optimizer], juntamente com ferramentas de extensibilidade do Adobe, como o App Builder e a API Mesh.
 
 - **Administrador** - Há três tipos diferentes de funções administrativas:
-   - [Administradores do sistema](https://helpx.adobe.com/br/enterprise/using/admin-roles.html){target="_blank"} - O administrador do sistema tem acesso a todos os produtos e perfis de produtos na organização por meio da Adobe Admin Console.
+   - [Administradores do sistema](https://helpx.adobe.com/enterprise/using/admin-roles.html){target="_blank"} - O administrador do sistema tem acesso a todos os produtos e perfis de produtos na organização por meio da Adobe Admin Console.
    - [Administradores de produtos](#add-a-product-admin) - Os administradores de produtos podem [gerenciar usuários, funções e permissões do produto](#add-users-and-admins) no [!DNL Adobe Admin Console].
    - [Administradores de perfil de produto](#add-users-developers-and-product-profile-admins) - Os administradores de perfil de produto podem gerenciar usuários para o produto no [!DNL Adobe Admin Console].
 
@@ -33,7 +33,7 @@ Para habilitar o acesso a [!DNL Adobe Commerce Optimizer], adicione usuários do
 >
 >Atribua a [Função de usuário](#add-users) aos administradores de produtos antes de adicioná-los como administradores de produtos. A função Usuário é necessária para permissões básicas do Commerce.
 
-Há duas maneiras diferentes de adicionar usuários administradores de produtos ao Adobe Commerce Optimizer com base em quando sua organização foi provisionada. Em organizações de acesso antecipado, cada usuário com a função de administrador de produto recebe permissão para gerenciar todas as instâncias na organização. Em organizações de Disponibilidade geral (GA) provisionadas após 13 de outubro de 2025, você pode atribuir um usuário como administrador de produto para instâncias específicas. Quando o usuário administrador do produto faz logon, ele pode ver apenas as instâncias que tem permissão para gerenciar.
+Há duas maneiras diferentes de adicionar usuários administradores de produtos ao [!DNL Adobe Commerce Optimizer] com base em quando sua organização foi provisionada. Em organizações de acesso antecipado, cada usuário com a função de administrador de produto recebe permissão para gerenciar todas as instâncias na organização. Em organizações de Disponibilidade geral (GA) provisionadas após 13 de outubro de 2025, você pode atribuir um usuário como administrador de produto para instâncias específicas. Quando o usuário administrador do produto faz logon, ele pode ver apenas as instâncias que tem permissão para gerenciar.
 
 >[!TAB GA (Provisionado após 13 de outubro de 2025)]
 
@@ -85,7 +85,7 @@ As instruções a seguir fornecem informações sobre como adicionar usuários a
 
 >[!NOTE]
 >
->Somente administradores de produtos e administradores de sistemas podem adicionar usuários e desenvolvedores ao produto do Adobe Commerce Optimizer.
+>Somente administradores de produtos e administradores de sistemas podem adicionar usuários e desenvolvedores ao produto [!DNL Adobe Commerce Optimizer].
 
 >[!BEGINTABS]
 
@@ -145,8 +145,8 @@ Para adicionar desenvolvedores e administradores de perfil de produto, repita o 
 
 É possível adicionar vários usuários com mais eficiência usando um dos seguintes métodos:
 
-- Use o recurso **Adicionar usuários por CSV** na Adobe Admin Console para executar um [upload CSV em massa](https://helpx.adobe.com/br/enterprise/using/bulk-upload-users.html){target="_blank"}.
-- Adicione vários usuários a uma função criando um [grupo de usuários](https://helpx.adobe.com/br/enterprise/using/user-groups.html){target="_blank"}. Em seguida, adicione os produtos apropriados ao grupo de usuários.
+- Use o recurso **Adicionar usuários por CSV** na Adobe Admin Console para executar um [upload CSV em massa](https://helpx.adobe.com/enterprise/using/bulk-upload-users.html){target="_blank"}.
+- Adicione vários usuários a uma função criando um [grupo de usuários](https://helpx.adobe.com/enterprise/using/user-groups.html){target="_blank"}. Em seguida, adicione os produtos apropriados ao grupo de usuários.
 
 ## Gerenciamento de identidade e configuração de logon único
 

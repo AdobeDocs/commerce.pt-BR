@@ -3,11 +3,11 @@ title: Sincronização de dados
 description: Revise os dados do catálogo que estão sendo sincronizados da sua fonte de dados do Commerce para  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: c0f4664c-6afc-4762-856b-5e26a865d3a2
-source-git-commit: e2c3c8a225b2c56985ba48c7efc9ae2c2d059b2e
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -30,9 +30,9 @@ A página **Sincronização de Dados** contém os seguintes campos:
 | [!DNL Catalog Service] | Exibe a última atualização de sincronização, o total de produtos recebidos, um campo de pesquisa e uma tabela dos produtos sincronizados para [!DNL Catalog Service]. |
 | Descoberta de produto | Exibe a última atualização de sincronização, o total de produtos recebidos, um campo de pesquisa e uma tabela dos produtos sincronizados para Pesquisa. |
 | Recommendations | Exibe a última atualização de sincronização, o total de produtos recebidos, um campo de pesquisa e uma tabela dos produtos sincronizados para o Recommendations. |
-| Produtos recebidos nas últimas 3 horas | Exibe o número de produtos que foram transferidos da origem do catálogo para o Adobe Commerce Optimizer nas últimas três horas. Se você fizer atualizações pouco frequentes no catálogo, esse valor será frequentemente zero. |
-| Total de produtos no catálogo | Reflete o número total de produtos de catálogo disponíveis para o Adobe Commerce Optimizer. |
-| Produtos sincronizados | Fornece detalhes sobre os produtos sincronizados com o Adobe Commerce Optimizer. Por padrão, essa tabela é classificada por &quot;Última atualização&quot;. Para localizar um produto específico, use o campo **[!UICONTROL Search by Name or SKU]**. |
+| Produtos recebidos nas últimas 3 horas | Exibe o número de produtos que foram transferidos da origem do catálogo para [!DNL Adobe Commerce Optimizer] nas últimas três horas. Se você fizer atualizações pouco frequentes no catálogo, esse valor será frequentemente zero. |
+| Total de produtos no catálogo | Reflete o número total de produtos de catálogo disponíveis para [!DNL Adobe Commerce Optimizer]. |
+| Produtos sincronizados | Fornece detalhes sobre os produtos sincronizados com o [!DNL Adobe Commerce Optimizer]. Por padrão, essa tabela é classificada por &quot;Última atualização&quot;. Para localizar um produto específico, use o campo **[!UICONTROL Search by Name or SKU]**. |
 
 ## Lista de produtos sincronizados
 

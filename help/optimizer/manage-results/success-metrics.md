@@ -1,11 +1,11 @@
 ---
 title: Métricas de sucesso
 description: Métricas de sucesso fornecem o insight para as métricas principais de desempenho da sua loja  [!DNL Adobe Commerce Optimizer] .
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 7202a531-fec3-4698-89b9-6bdbcc37015e
-source-git-commit: 4e85d70dc1b099a5b40a807a76ca589aa9a28f07
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '2599'
+source-wordcount: '2594'
 ht-degree: 0%
 
 ---
@@ -149,7 +149,7 @@ Total Revenue = Sum of (Product Base Price × Quantity) for all completed orders
 
 - Todas as ordens concluídas durante o intervalo de datas selecionado.
 - Preços base do produto multiplicados pelas quantidades compradas.
-- Receita de todos os canais de vendas rastreada pela Commerce Optimizer.
+- Receita de todos os canais de vendas rastreada por [!DNL Adobe Commerce Optimizer].
 
 **Observações importantes:**
 

@@ -1,12 +1,12 @@
 ---
-title: O que é o Adobe Commerce Optimizer?
+title: O que é  [!DNL Adobe Commerce Optimizer]?
 description: Saiba mais sobre  [!DNL Adobe Commerce Optimizer]  e seus principais recursos.
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: bf1d88ef7daec25872678bb27bce0bb7c97fd296
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Com [!DNL Adobe Commerce Optimizer], você pode:
 
 Assista ao vídeo a seguir para obter uma visão geral de alto nível do [!DNL Adobe Commerce Optimizer]:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450468?captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## Quem se beneficia mais de [!DNL Adobe Commerce Optimizer]?
 

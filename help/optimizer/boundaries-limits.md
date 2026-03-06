@@ -2,11 +2,11 @@
 title: Limites e limites
 description: Compreender [!DNL Adobe Commerce Optimizer] limites e limites para planejar a capacidade e evitar problemas de desempenho.
 role: Admin, Developer
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
-source-git-commit: 4f238b002d1481126d4fec0a249b7f9ff437248e
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1320'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Sua utilização deve permanecer dentro desses limites. Excedê-los pode causar 
 
 Os limites de licença podem ser aumentados adquirindo os pacotes de licença descritos na seção [Limites de licença e limites do sistema](#license-limits-and-system-boundaries) ou negociando o licenciamento personalizado para casos de uso exclusivos. Entre em contato com seu representante de conta da Adobe para discutir suas necessidades.
 
-Em caso de dúvidas sobre os limites do sistema, contate o [Suporte da Adobe](https://experienceleague.adobe.com/home?lang=pt-BR#support).
+Em caso de dúvidas sobre os limites do sistema, contate o [Suporte da Adobe](https://experienceleague.adobe.com/home?lang=en#support).
 
 ## Evitar problemas de desempenho
 
@@ -84,12 +84,12 @@ As tabelas a seguir resumem os limites de licença e os limites do sistema por �
 
 >[!NOTE]
 >
->**Usuários Avançados** podem acessar o Adobe Express diretamente ou no Adobe Commerce Optimizer. **Usuários do Collaborator** podem acessar o aplicativo Adobe Express diretamente. O uso é regido pelos [Termos de Licenciamento Específicos do Produto do Adobe Express Firefly](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeExpressWFirefly-WW-2025v1.pdf).
+>**Usuários Avançados** podem acessar o Adobe Express diretamente ou no [!DNL Adobe Commerce Optimizer]. **Usuários do Collaborator** podem acessar o aplicativo Adobe Express diretamente. O uso é regido pelos [Termos de Licenciamento Específicos do Produto do Adobe Express Firefly](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeExpressWFirefly-WW-2025v1.pdf).
 
 
 >[!BEGINSHADEBOX &quot;Calcular uso do Dynamic Media&quot;]
 
-O uso do Dynamic Media rastreia as solicitações de API que entram nos componentes Visuais do produto no Adobe Commerce Optimizer para facilitar uma das seguintes ações:
+O uso do Dynamic Media rastreia solicitações de API que entram nos componentes Visuais do Produto em [!DNL Adobe Commerce Optimizer] para facilitar uma das seguintes ações:
 
 - **A entrega de imagem consome uma operação de mídia dinâmica** para cada ocorrência do seguinte:
    - **transformação básica de imagem** de um ativo digital, por exemplo, redimensionamento, escala, conversão de formato, compactação ou operações de recorte.
@@ -124,7 +124,7 @@ A alocação básica dos recursos de vitrine de catálogos é determinada com ba
 
 >[!NOTE]
 >
->A geração de imagem exige uma licença do Adobe Firefly provisionada para a mesma organização IMS que o Adobe Commerce Optimizer.
+>A geração de imagem requer uma licença do Adobe Firefly provisionada para a mesma organização IMS que [!DNL Adobe Commerce Optimizer].
 
 
 ### Descoberta de produto
@@ -137,7 +137,7 @@ A alocação básica dos recursos de vitrine de catálogos é determinada com ba
 | Atributos classificáveis | O número de características do produto que podem ser configuradas para determinar a ordem dos valores de resultado de pesquisa | 50 | Não |
 | Profundidade da paginação de pesquisa | O número máximo de produtos acessíveis por paginação (por exemplo, página 100 × 100 produtos/página) | 10 K | Não |
 | Facetas | O número de atributos de produto filtráveis (como Marca, Cor, Tamanho, Preço) que podem ser configurados para ajudar os compradores a refinar os resultados da pesquisa e procurar categorias | 100<p>Deve ser um atributo filtrável</p> | Não |
-| Opções por faceta | O número de valores de atributos de produto filtráveis (como &quot;Vermelho&quot;, &quot;Azul&quot; para Cor; &quot;Pequeno&quot;, &quot;Medium&quot; para Tamanho) que os compradores podem selecionar em uma lista | 100 | Sim<p>Pode aumentar por meio de solicitação de suporte</p> |
+| Opções por faceta | O número de valores de atributos de produto filtráveis (como &quot;Vermelho&quot;, &quot;Azul&quot; para Cor; &quot;Pequeno&quot;, &quot;Medium&quot; para Tamanho) que os compradores podem selecionar em uma lista | 1000 | Não |
 
 {style="table-layout:auto"}
 
@@ -156,7 +156,7 @@ Os recursos a seguir estão disponíveis para recomendações de produtos. Algun
 
 | **Recurso** | **Descrição** | **Alocação base** | **Expansível?** | **Notas** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | Capacidade para criar extensões e integrações nativas em nuvem | Com base no nível de GMV<p>Alocação mínima: 1 pacote/ano</p> | Sim<p>Adicionar pacotes adicionais</p> | Para obter os limites definidos por pacote, consulte:<ul><li>[Descrição de produto do App Builder](https://helpx.adobe.com/br/legal/product-descriptions/adobe-developer-app-builder.html) para limites definidos por pacote.</li><li>[Limitações e configurações do sistema](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) nos *Guias do App Builder Runtime*.</li><li>[Requisitos de armazenamento do App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | Capacidade para criar extensões e integrações nativas em nuvem | Com base no nível de GMV<p>Alocação mínima: 1 pacote/ano</p> | Sim<p>Adicionar pacotes adicionais</p> | Para obter os limites definidos por pacote, consulte:<ul><li>[Descrição de produto do App Builder](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html) para limites definidos por pacote.</li><li>[Limitações e configurações do sistema](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) nos *Guias do App Builder Runtime*.</li><li>[Requisitos de armazenamento do App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
@@ -164,7 +164,7 @@ Os recursos a seguir estão disponíveis para recomendações de produtos. Algun
 
 Ask your Adobe representative for a list of available packages to determine which most closely matches your project
 
-To accurately size your Adobe Commerce Optimizer solution, follow these steps:
+To accurately size your [!DNL Adobe Commerce Optimizer] solution, follow these steps:
 
 1. Review the available packages, and start with a package that most closely matches your requirements.
 1. Review the capabilities and metrics to ensure they align with your business requirements.

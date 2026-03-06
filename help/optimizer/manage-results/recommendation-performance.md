@@ -1,11 +1,11 @@
 ---
 title: Desempenho do Recommendations
 description: A página de desempenho do Recommendations fornece informações sobre o desempenho das recomendações de produtos do insight.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 1b77e2ea-412b-4c78-9d38-390bd8fda87e
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: 9cb231055df45bbfcff3303c6e1c257c883cb852
 workflow-type: tm+mt
-source-wordcount: '647'
+source-wordcount: '953'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,15 @@ A página Desempenho do Recommendations exibe uma lista de recomendações confi
 
 ## Exibir um relatório
 
-1. Escolha a **origem do catálogo**, como `en-US` onde as recomendações se aplicam.
+1. Escolha a **Exibição de catálogo**, como *Todas as exibições* às quais as recomendações se aplicam.
+
+   Saiba mais sobre [exibições de catálogo](#select-catalog-view) em recomendações.
 
 1. Clique em **[!UICONTROL Date Range]** e selecione um dos seguintes intervalos:
 
    ![Intervalo de datas das recomendações](../assets/rec-perf-date-range.png)
 
-   A tabela de recomendações é atualizada para exibir as métricas desse intervalo de datas.
+   A tabela de recomendações é atualizada para exibir métricas para esse intervalo de datas e exibição de catálogo.
 
 ## Personalizar tabela
 
@@ -60,6 +62,7 @@ Saiba como [criar uma recomendação nova ou gerenciar uma existente](../merchan
 | ![Intervalo de datas](../assets/rec-perf-date-range.png) | Determina o intervalo de tempo usado para cálculos de métricas. |
 | ![Seletor de coluna](../assets/icon-show-hide-columns.png) | Determina as colunas que aparecem na tabela Recommendations. |
 | Criar recomendação | Abre a página [Criar Nova Recomendação](../merchandising/recommendations/create.md). |
+| [Exibição de catálogo](#select-catalog-view) | Selecione a exibição de catálogo para filtrar a tabela e mostrar apenas as recomendações que se aplicam à exibição de catálogo selecionada. Esta seleção também é usada como exibição de catálogo quando você [cria](../merchandising/recommendations/create.md) uma nova recomendação. As opções são *Todas as exibições* ou uma [exibição de catálogo](../setup/catalog-view.md) específica. |
 
 ## Descrições da coluna
 
@@ -80,3 +83,34 @@ Saiba como [criar uma recomendação nova ou gerenciar uma existente](../merchan
 | Visibilidade | A porcentagem de unidades de recomendação que se registram na exibição. |
 | CTR | (Taxa de click-through) A porcentagem de impressões de unidade para a recomendação que registra um clique. O CTR conta todas as impressões, mesmo se a unidade não entrar na visualização do comprador. Se a unidade de recomendação não for visualizada, é improvável clicar nela. No entanto, essas impressões inéditas contam para a pontuação do CTR e reduzem a porcentagem geral de CTR. |
 | vCTR | (Taxa de click-through de visualização) mede os cliques com base apenas em impressões visualizáveis (recomendações que realmente apareceram na parte visível da tela do comprador), fornecendo um indicador mais preciso do envolvimento do comprador. |
+
+## Selecionar exibição do catálogo
+
+>[!IMPORTANT]
+>
+>No momento, esse recurso está na versão beta.
+
+O seletor **[!UICONTROL Catalog view]** na página **Recommendations** faz duas coisas:
+
+1. **Filtra a tabela** - Mostra somente recomendações (e suas métricas) que se aplicam à exibição do catálogo selecionado.
+1. **Define o escopo para novas recomendações** - Quando você [cria](../merchandising/recommendations/create.md) uma recomendação, a exibição de catálogo selecionada é usada como o escopo da unidade. As opções são *Todas as exibições* ou uma [exibição de catálogo](../setup/catalog-view.md) específica.
+
+   - **Todas as exibições** - A recomendação se aplica a todas as exibições de catálogo (a disponibilidade do produto ainda é filtrada por exibição).
+   - **Exibição de catálogo** - A recomendação se aplica somente à exibição de catálogo selecionada (por exemplo, uma vitrine, idioma ou marca).
+
+Especificando uma exibição de catálogo para cada recomendação, você pode:
+
+- Configure recomendações para todas as exibições de catálogo (global) ou para uma exibição de catálogo.
+- Visualize e filtre produtos por exibição de catálogo na página de recomendação [criar](../merchandising/recommendations/create.md).
+- Mostrar apenas os produtos disponíveis em cada vitrine.
+- Exibir métricas e comportamento da loja por exibição de catálogo.
+
+### Como a exibição de catálogo filtra produtos
+
+A disponibilidade do produto é imposta por exibição de catálogo, mesmo para unidades de recomendação na seleção **Todas as exibições**. Isso funciona além de qualquer [filtro de inclusão ou exclusão](../merchandising/recommendations/filters.md) definido na unidade de recomendação.
+
+**Exemplo: recomendação com filtros de inclusão na seleção Todas as exibições**
+
+- **Todas as exibições** recomendadas incluem SKUs: SKU_ABC, SKU_CDE, SKU_XYZ.
+- **Exibição de catálogo: Kingsbluff** não pode vender SKU_ABC ou SKU_CDE. **Exibido:** SKU_XYZ mais quaisquer outras SKUs válidas para Kingsbluff.
+- **Exibição de catálogo: a Arkbridge** não pode vender nenhuma das SKUs incluídas. **Mostrado:** somente SKUs permitidas pela Arkbridge. Se não houver nenhuma disponível, a unidade de recomendação não aparecerá nessa vitrine.

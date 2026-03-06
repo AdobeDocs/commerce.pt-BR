@@ -2,10 +2,11 @@
 title: Responsabilidade compartilhada
 description: Saiba mais sobre as responsabilidades de segurança de cada parte envolvida em seu projeto [!DNL Adobe Commerce Optimizer] do.
 role: Admin, Architect, Leader
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
-source-git-commit: 7c407bfc2becfb0ba6babe5958bcb790c178f406
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+exl-id: 9e09790f-832d-43ab-b2df-6389ad52b43d
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '271'
 ht-degree: 0%
 
 ---
@@ -43,12 +44,12 @@ As tabelas de resumo a seguir usam o modelo RACI para mostrar as responsabilidad
 | Suporte à CDN de back-end | RA |  |
 | Obter um provedor de DNS de back-end | RA | |
 | Provisionamento dos ambientes de produção e sandbox | A | R |
-| Acesso ao Dynamics for Adobe Commerce Optimizer | R | C |
+| Acessando o Dynamics para [!DNL Adobe Commerce Optimizer] | R | C |
 | Resolvendo problemas de segurança do cliente de back-end | RA | I |
 | Resolvendo problemas de segurança da CDN de back-end | RA | |
 | Auxiliar a Adobe na pesquisa de segurança (verificações/auditorias) | RA | |
 | Executando verificações ASV de PCI | RA | I |
-| Remediando verificações de PCI da infraestrutura Adobe Commerce Optimizer | R | |
+| Remediando verificações de PCI de infraestrutura [!DNL Adobe Commerce Optimizer] | R | |
 | Gerenciamento de segredos de SO e plataforma | RA | |
 | Monitorar logs de segurança de back-end | RA | |
 | Controle do suporte e do acesso do cliente | A | R |
@@ -56,5 +57,5 @@ As tabelas de resumo a seguir usam o modelo RACI para mostrar as responsabilidad
 | Teste e documentação anuais do plano de recuperação de desastres | RA | |
 | Depuração e isolamento de problemas | R | R |
 | Suporte oportuno ao processo de depuração e isolamento de problemas | R | R |
-| Instalação de atualizações e patches no Adobe Commerce Optimizer | RA | I |
-| Qualidade do aplicativo principal do Adobe Commerce Optimizer | RA | |
+| Instalando atualizações e patches em [!DNL Adobe Commerce Optimizer] | RA | I |
+| Qualidade do Aplicativo [!DNL Adobe Commerce Optimizer] Principal | RA | |

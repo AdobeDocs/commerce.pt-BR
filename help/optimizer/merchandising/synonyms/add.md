@@ -1,25 +1,25 @@
 ---
 title: Criar e gerenciar sinônimos
 description: Saiba como criar e gerenciar sinônimos para  [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: d2982a0b-e7df-44e6-b3c9-9b4328635d38
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '584'
 ht-degree: 0%
 
 ---
 
 # Criar sinônimos
 
-Aumente o engajamento do cliente adicionando sua própria lista com curadoria de sinônimos do [!DNL Adobe Commerce Optimizer]. Você pode adicionar até 200 sinônimos por loja.
+Aumente o engajamento do cliente adicionando sua própria lista com curadoria de sinônimos do [!DNL Adobe Commerce Optimizer]. Você pode adicionar até 200 sinônimos por origem de catálogo.
 
 ![Sinônimo Workspace](../../assets/synonym-workspace.png)
 
 ## Etapa 1: adicionar um sinônimo
 
 1. No painel esquerdo, vá para _Merchandising_ > **Synonyms**.
-1. Clique no botão **[!UICONTROL Add synonyms]**.
+1. Clique no botão **[!UICONTROL Create synonyms]**.
 
 ## Etapa 2: definir o sinônimo por tipo
 
@@ -27,31 +27,25 @@ Siga as instruções para o [tipo de sinônimo](type.md) que você deseja criar.
 
 ### Sinônimo de bidirecional
 
-1. Aceite a opção padrão **Bidirecional**.
-
-   ![Adicionar sinônimo bidirecional](../../assets/synonym-add-two-way.png)
-
 1. Digite o termo ou frase **Palavra-chave** que deve ser correspondida.
 1. Insira os termos de **Expansão** que você deseja adicionar como sinônimos para a palavra-chave. Separe vários termos com uma vírgula.
 Neste exemplo, a palavra-chave a ser correspondida é &quot;calças&quot; e o conjunto de termos de expansão é &quot;calças, calças&quot;.
 
-   ![Exemplo de sinônimo bidirecional](../../assets/synonym-add-two-way-example.png)
+   ![Sinônimo bidirecional](../../assets/synonym-add-two-way.png)
 
 1. Quando terminar, clique em **Salvar**.
 
    O conjunto de sinônimos aparece na lista com uma seta bidirecional entre cada termo, o que significa que os termos são intercambiáveis.
 
-   ![Sinônimo bidirecional](../../assets/synonym-two-way.png)
+   ![Exemplo de sinônimo bidirecional](../../assets/synonym-add-two-way-example.png)
 
 ### Sinônimo unidirecional
 
 1. Clique no tipo de sinônimo **Unidirecional**.
 
-   ![Adicionar sinônimo unidirecional](../../assets/synonym-add-one-way.png)
-
 1. Insira os termos da **Palavra-chave** e da **Expansão**. Separe vários termos com uma vírgula.
 
-   ![Exemplo de sinônimo unidirecional](../../assets/synonym-add-one-way-example.png)
+   ![Sinônimo unidirecional](../../assets/synonym-add-one-way.png)
 
    Neste exemplo, a palavra-chave é &quot;calças&quot; e os termos de expansão unidirecional &quot;capris, peddle-pushers&quot; são um subconjunto de &quot;calças&quot;, mas com um significado específico.
 
@@ -59,7 +53,7 @@ Neste exemplo, a palavra-chave a ser correspondida é &quot;calças&quot; e o co
 
    O conjunto de sinônimos aparece na lista com uma seta unidirecional apontando dos termos de expansão para a palavra-chave para indicar que os termos são subconjuntos da palavra-chave. Um sinal de mais separa cada termo de expansão.
 
-   ![Sinônimo unidirecional](../../assets/synonym-one-way.png)
+   ![Exemplo de sinônimo unidirecional](../../assets/synonym-add-one-way-example.png)
 
 ## Etapa 3: publicar alterações
 

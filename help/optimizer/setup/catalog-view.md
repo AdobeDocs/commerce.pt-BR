@@ -3,11 +3,11 @@ title: Exibição de catálogo
 description: Saiba o que são exibições de catálogo e como criá-las para organizar o catálogo de produtos por estrutura de negócios, políticas e preços.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
-source-git-commit: 769aafeb261d978623e68c466888924c92632883
+source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1350'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Exibições de catálogo para serviços de merchandising
 
-As visualizações de catálogo são a base dos Serviços de merchandising da Adobe Commerce Optimizer, permitindo que você organize seu catálogo de produtos por estrutura de negócios, políticas e preços. Esse modelo de dados flexível oferece suporte a várias marcas, unidades de negócios e cenários em vários idiomas, mantendo a eficiência operacional.
+As exibições de catálogo são a base dos Serviços de Merchandising do [!DNL Adobe Commerce Optimizer], permitindo que você organize o catálogo de produtos por estrutura de negócios, políticas e preços. Esse modelo de dados flexível oferece suporte a várias marcas, unidades de negócios e cenários em vários idiomas, mantendo a eficiência operacional.
 
 ## O que são Exibições de catálogo?
 
@@ -31,6 +31,16 @@ Considere as exibições de catálogo como diferentes &quot;lentes&quot; pelas q
 - A exibição do catálogo do revendedor pode mostrar somente os produtos disponíveis para esse revendedor específico
 - Uma exibição de catálogo regional pode mostrar produtos e preços específicos de uma área geográfica
 - A exibição do catálogo de marcas pode mostrar apenas produtos de uma marca específica
+
+### Exibição de catálogo versus origem de catálogo
+
+A seguir, é explicada a diferença entre uma exibição de catálogo e uma origem de catálogo:
+
+- **Exibição de catálogo** - Uma exibição configurada do catálogo para uma necessidade comercial específica. Ao criar uma exibição de catálogo, você seleciona qual origem (ou localidade) de catálogo usar, adiciona [políticas](policies.md) para filtrar quais produtos estão visíveis e vincula [catálogos de preços](pricebooks.md) para controlar preços. Uma única fonte de catálogo pode potencializar várias exibições de catálogo (por exemplo, uma fonte `en-US` com exibições de catálogo separadas para marcas ou regiões diferentes). Pense em uma exibição de catálogo como *como* você expõe esses dados para uma vitrine, canal ou público-alvo.
+
+- **Origem do catálogo** - O contexto de dados subjacente que fornece informações sobre o produto. Uma origem de catálogo normalmente é uma localidade (por exemplo, `en-US`, `fr-CA`) ou um sistema externo, como um PIM ou ERP. [!DNL Adobe Commerce Optimizer] assimila dados de produtos de uma ou mais fontes de catálogo em um catálogo base unificado. Pense em uma fonte de catálogo como *de onde* os dados brutos do catálogo vêm.
+
+Em resumo, a **origem do catálogo** é o contexto de dados do qual você obtém; enquanto a **exibição do catálogo** é o contexto filtrado, precificado e organizado que você apresenta aos compradores ou canais.
 
 ## Criar uma exibição de catálogo
 
@@ -66,6 +76,14 @@ Antes de criar uma visualização de catálogo, verifique se você tem:
 A página Exibições de catálogo é atualizada para exibir a nova exibição de catálogo.&#x200B;
 
 Após concluir essas etapas, a exibição do catálogo agora está configurada para exibir produtos e preços com base nas fontes e políticas selecionadas.
+
+### Especificar exibições de catálogo para recomendações e regras de descoberta de produtos
+
+>[!IMPORTANT]
+>
+>No momento, esse recurso está na versão beta.
+
+Você pode especificar uma exibição de catálogo ao [criar unidades de recomendação](../merchandising/recommendations/create.md) ou [regras de merchandising](../merchandising/rules/add.md).
 
 ## Camadas do catálogo
 
