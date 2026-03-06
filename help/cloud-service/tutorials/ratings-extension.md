@@ -303,7 +303,7 @@ Use o agente para integrar a API de classificações na página de detalhes do p
    Você deve ver as seguintes alterações no ambiente de desenvolvimento e no navegador:
 
    * Um componente de classificação de produto é criado automaticamente.
-   * O componente é integrado ao PDP usando [slots internos](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots) ou como um bloco autônomo, dependendo da arquitetura escolhida.
+   * O componente é integrado ao PDP usando [slots internos](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots?lang=pt-BR) ou como um bloco autônomo, dependendo da arquitetura escolhida.
    * As estrelas são exibidas com proporções de preenchimento apropriadas com base nos valores de classificação da sua API.
 
    ![Página de detalhes do produto mostrando classificações de estrelas integradas abaixo do título do produto](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}

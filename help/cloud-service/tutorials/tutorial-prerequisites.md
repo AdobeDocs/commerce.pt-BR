@@ -273,7 +273,7 @@ Os itens a seguir são necessários para concluir a seção [vitrine](./ratings-
 
 * [Google Chrome](https://www.google.com/chrome/) - Necessário para testar a vitrine
 
-* Um projeto de vitrine conectado à sua instância [!DNL Commerce]. Se você não tiver um projeto de vitrine eletrônica, siga as etapas em [Criar uma vitrine eletrônica](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}, incluindo a seção [Vincular repositório aos dados de comércio](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#link-repo-to-commerce-data){target="_blank"}.
+* Um projeto de vitrine conectado à sua instância [!DNL Commerce]. Se você não tiver um projeto de vitrine eletrônica, siga as etapas em [Criar uma vitrine eletrônica](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=pt-BR){target="_blank"}, incluindo a seção [Vincular repositório aos dados de comércio](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=pt-BR#link-repo-to-commerce-data){target="_blank"}.
 
 ### Clonar o repositório da loja
 
