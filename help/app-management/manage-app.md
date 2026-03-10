@@ -30,7 +30,7 @@ Antes de associar um aplicativo, verifique se você tem o seguinte:
 
 Assista a este vídeo para saber como associar um aplicativo a uma instância do Commerce e definir as configurações.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478944)
+>[!VIDEO](https://video.tv.adobe.com/v/3478960?captions=por_br)
 
 ## Associar um aplicativo
 
