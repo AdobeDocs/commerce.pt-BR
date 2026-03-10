@@ -33,6 +33,6 @@ ht-degree: 10%
 - Esquemas {#schemas}
    - [Esquema do GraphQL](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
    - [Esquema da API REST](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
-- [Tutoriais em vídeo](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
+- [Tutoriais em vídeo](https://experienceleague.adobe.com/pt-br/playlists/accs-getting-started-product-overview){target="_blank"}
 - [Notas de versão](release-notes.md)
-- [Retornar à Página Inicial dos Serviços Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Retornar à Página Inicial dos Serviços Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/home)
