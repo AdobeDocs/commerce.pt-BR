@@ -17,4 +17,4 @@ ht-degree: 7%
 - Gerencie seu aplicativo {#manage-app}
    - [Gerencie seu aplicativo](manage-app.md)
    - [Solução de problemas](troubleshooting.md)
-- [Retornar à Página Inicial dos Serviços Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Retornar à Página Inicial dos Serviços Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/home)
