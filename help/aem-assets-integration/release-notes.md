@@ -60,7 +60,7 @@ _13 de fevereiro de 2026_
 
 _10 de fevereiro de 2026_
 
-[!BADGE Versões ]{type=Informative tooltip="Compatível"} do Adobe Commerce 2.4.5 e posteriores com suporte.
+[!BADGE Versões &#x200B;]{type=Informative tooltip="Compatível"} do Adobe Commerce 2.4.5 e posteriores com suporte.
 
 ![Novo problema](../assets/new.svg)<!-- Issue ACCS-171 --> Adicionou um campo **[!UICONTROL Adobe I/O Workspace Configuration]** que simplifica a configuração de [correspondência personalizada](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/synchronize/custom-match){target=_blank}. Os comerciantes agora podem carregar o arquivo `workspace.json` do App Builder para preencher automaticamente as credenciais do OAuth e os pontos de extremidade da ação de tempo de execução.
 
@@ -112,7 +112,7 @@ _24 de outubro de 2025_
 
 _22 de outubro de 2025_
 
-[!BADGE Versões ]{type=Informative tooltip="Compatível"} do Adobe Commerce 2.4.5 e posteriores com suporte.
+[!BADGE Versões &#x200B;]{type=Informative tooltip="Compatível"} do Adobe Commerce 2.4.5 e posteriores com suporte.
 
 ![Problema corrigido](../assets/fix.svg)<!-- Issue ACAP-1161 --> Correção de um problema em que a atualização da posição de um mapeamento de imagem existente no administrador do Adobe Commerce resultava em um erro de tipo PHP.
 
@@ -146,7 +146,7 @@ _18 de setembro de 2025_
 
 _7 de agosto de 2025_
 
-[!BADGE Versões ]{type=Informative tooltip="Compatível"} do Adobe Commerce 2.4.5 e posteriores com suporte.
+[!BADGE Versões &#x200B;]{type=Informative tooltip="Compatível"} do Adobe Commerce 2.4.5 e posteriores com suporte.
 
 ![Novo problema](../assets/new.svg)<!-- Issue ACAP-1018 --> Agora, os comerciantes podem escolher a origem dos ativos de imagem e mídia selecionando um [Proprietário da Visualização](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization){target=_blank} ao configurar a integração de ativos pelo administrador.
 
@@ -174,7 +174,7 @@ _23 de abril, 2025_
 
 _12 de março de 2025_
 
-[!BADGE Versões ]{type=Informative tooltip="Compatível"} do Adobe Commerce 2.4.5 e posteriores com suporte.
+[!BADGE Versões &#x200B;]{type=Informative tooltip="Compatível"} do Adobe Commerce 2.4.5 e posteriores com suporte.
 
 ![Novo problema](../assets/new.svg)<!-- Issue ACAP-xx --> Agora, a [ID do cliente IMS do seletor de ativos](https://experienceleague.adobe.com/en/docs/commerce/aem-assets-integration/get-started/setup-synchronization) é exigida pelo Seletor de ativos para habilitar o mapeamento de imagens AEM Assets com categorias de produtos e conteúdo gerado pelo Page Builder.
 
