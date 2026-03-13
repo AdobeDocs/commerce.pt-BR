@@ -3,9 +3,9 @@ title: Correspondência automática padrão
 description: Saiba como a regra de correspondência automática padrão permite a sincronização perfeita entre o Adobe Commerce e a integração do AEM Assets, garantindo que os ativos sejam vinculados automaticamente às entidades de merchandising corretas.
 feature: CMS, Media, Integration
 exl-id: 8a18639b-f508-456e-8d22-18e3e0fdd515
-source-git-commit: d426c7878f7a66fe1047673be7c5bf65ae1949a7
+source-git-commit: a0eaaf0de53962b37c7b52f3e7e13aac4c62e372
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,10 @@ A integração do AEM Assets para Commerce fornece um mecanismo de correspondên
 
 Quando a regra de correspondência do **[!UICONTROL Match by product SKU]** é configurada no Administrador do Commerce, os arquivos de ativos do Commerce são sincronizados automaticamente do AEM Assets para o projeto do Commerce com base nos metadados de ativos configurados para cada arquivo. Você configura os metadados na guia **Commerce** do AEM no ambiente **autor do AEM Assets**:
 
+1. Abra a instância do autor do AEM Assets (o URL é provisionado para o projeto na mesma organização IMS que o Adobe Commerce).
+
+1. Na tela de navegação principal, clique em **Assets** para acessar a interface do Gerenciamento de Ativos Digitais (DAM).
+
 1. No AEM Assets, atualize os metadados da imagem para adicionar a associação do Adobe Commerce definindo o campo `Eligible for Commerce` como `Yes`.
 
    ![Exemplo de metadados](../assets/metadata-commerce-yes.png){width="600" zoomable="yes"}
@@ -42,7 +46,7 @@ Quando a regra de correspondência do **[!UICONTROL Match by product SKU]** é c
    >
    > Se um ativo for usado para vários produtos, configure os metadados para cada SKU associada.
 
-1. Na guia `Basic`, defina o valor padrão do campo _[!UICONTROL Review Status]_&#x200B;como `approved`.
+1. Na guia `Basic`, defina o valor padrão do campo _[!UICONTROL Review Status]_como `approved`.
 
    ![Exemplo de metadados](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 

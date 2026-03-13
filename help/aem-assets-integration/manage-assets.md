@@ -3,9 +3,9 @@ title: Gerenciar ativos
 description: Use a integração do AEM Assets para Commerce a fim de gerenciar ativos de mídia para sua loja.
 feature: CMS, Media
 exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
-source-git-commit: 5dd290a4e10bdbd1f6c96b67ab6c9ba1598705dc
+source-git-commit: a0eaaf0de53962b37c7b52f3e7e13aac4c62e372
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,13 @@ Você poderá gerenciar os seguintes tipos de mídia depois que a integração d
 * Imagens de conteúdo
 * Vídeos de produtos
 * Imagens de categoria
+
+**Atualizando imagens do produto?**
+
+As imagens do produto são vinculadas por meio de regras correspondentes:
+
+* Para saber como adicionar ou atualizar ativos de produto no AEM Assets (metadados, vinculação de SKU, aprovação), consulte [Correspondência automática padrão](synchronize/default-match.md).
+* Para imagens de categoria ou conteúdo do Page Builder, consulte [Seleção manual de ativos](synchronize/asset-selector-integration.md).
 
 ## Imagens do produto
 
@@ -41,13 +48,20 @@ As imagens do produto são extraídas automaticamente do AEM Assets com base nas
    >
    > Uma mensagem indica que a integração está habilitada, tornando-a uma seção **somente leitura**, pois o gerenciamento de imagens é centralizado no DAM.
 
+   Para configurar ativos do produto (vincular imagens a SKUs), abra a instância do autor do AEM Assets e clique em **Assets** no modo de exibição principal. Consulte [Correspondência automática padrão](synchronize/default-match.md) para obter as etapas de configuração de metadados.
+
 ### Gerenciar imagens do produto no AEM Assets
 
 Para gerenciar imagens relacionadas ao produto, todas as alterações devem ser feitas diretamente no **AEM Assets**. Esse processo é totalmente automatizado, garantindo que todas as alterações sejam sincronizadas com o Adobe Commerce sem a necessidade de intervenção manual.
 
+Para saber como vincular ativos a produtos no AEM Assets (incluindo configuração e aprovação de metadados), consulte os seguintes tópicos:
+
+* [Correspondência automática padrão](synchronize/default-match.md)
+* [Correspondência automática personalizada](synchronize/custom-match.md).
+
 ### SLAs de sincronização
 
-Verifique o [SLA de Sincronização](get-started/setup-synchronization.md#synchronization-sla)para obter mais informações sobre este tópico.
+Para obter informações sobre o tempo de sincronização, consulte o tópico [SLA de Sincronização](get-started/setup-synchronization.md#synchronization-sla).
 
 ## Imagens de conteúdo
 
@@ -79,7 +93,7 @@ A associação com a imagem selecionada será armazenada no Adobe Commerce como 
 
 >[!TIP]
 >
-> [DA.live (Criação de Documentos)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/?lang=pt-BR#dalive-document-authoring){target=_blank} também fornece um seletor de Ativos para enriquecer dados.
+> [DA.live (Criação de Documentos)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/#dalive-document-authoring){target=_blank} também fornece um seletor de Ativos para enriquecer dados.
 
 ## Vídeos de produtos
 
@@ -119,7 +133,7 @@ Essa integração garante que os comerciantes possam gerenciar facilmente os ví
 
 ### SLAs de sincronização
 
-Verifique o [SLA de Sincronização](get-started/setup-synchronization.md#synchronization-sla)para obter mais informações sobre este tópico.
+Para obter informações sobre o tempo de sincronização, consulte o tópico [SLA de Sincronização](get-started/setup-synchronization.md#synchronization-sla).
 
 ## Imagens de categoria
 
@@ -149,14 +163,16 @@ Após configurar o [Seletor de ativos do AEM](synchronize/asset-selector-integra
 
 1. Clique em **[!UICONTROL Save]** e continue.
 
-   Para obter mais informações sobre como criar uma categoria, consulte [Concluir o conteúdo da categoria](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) no **Guia de Gerenciamento do Catálogo do Commerce**.
+   Para obter mais informações sobre como criar uma categoria, consulte [Concluir o conteúdo da categoria](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) no **Guia de Gerenciamento do Catálogo do Commerce**.
 
 ## Atualizar um ativo
 
 Depois de atualizar e aprovar um ativo no AEM Assets, as atualizações são automaticamente enviadas para a Adobe Commerce usando o recurso de correspondência automatizada. Esse processo é acionado mediante aprovação de ativos. Para garantir que todas as alterações finais e atualizações de metadados sejam incluídas, reprocesse o ativo antes de aprová-lo.
 
-Para obter detalhes, consulte a seguinte documentação do AEM Assets.
+Para que o fluxo de trabalho do lado da Commerce vincule ativos a produtos por meio de metadados, consulte o tópico [Correspondência automática padrão](synchronize/default-match.md).
 
-* [Reprocessando ativos digitais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+Para obter os procedimentos do AEM Assets, consulte a seguinte documentação:
 
-* [Aprovar um ativo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
+* [Reprocessando ativos digitais](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+
+* [Aprovar um ativo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
