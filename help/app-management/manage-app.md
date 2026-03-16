@@ -2,7 +2,7 @@
 title: Gerencie seu aplicativo
 description: Associe, configure e desassocie aplicativos do App Builder com sua instância do Commerce.
 feature: App Builder, Extensibility, Integration
-source-git-commit: ab635fecb7b82294bd4a4fd045ed71931e9d265d
+source-git-commit: 4a5174d074a020f6199ed121e0289939612bc5c2
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Um Gerenciador de aplicativos associa um aplicativo do App Builder à instância do Commerce. Os formulários de configuração são renderizados dinamicamente com base no esquema do aplicativo, portanto, não é necessário desenvolvimento personalizado da interface do administrador. O App Manager define as configurações por meio de formulários gerados automaticamente pelo Commerce.
 
-![Gerenciamento de aplicativos](assets/app-management-ui.png){width="500" zoomable="yes"}
+![Gerenciamento de aplicativos](assets/app-management-view.png){width="500" zoomable="yes"}
 
 ## Pré-requisitos
 
@@ -30,7 +30,7 @@ Antes de associar um aplicativo, verifique se você tem o seguinte:
 
 Assista a este vídeo para saber como associar um aplicativo a uma instância do Commerce e definir as configurações.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478960?captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3478944)
 
 ## Associar um aplicativo
 
