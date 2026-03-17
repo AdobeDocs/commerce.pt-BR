@@ -3,9 +3,9 @@ title: Gerenciar ativos
 description: Use a integração do AEM Assets para Commerce a fim de gerenciar ativos de mídia para sua loja.
 feature: CMS, Media
 exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
-source-git-commit: a0eaaf0de53962b37c7b52f3e7e13aac4c62e372
+source-git-commit: 0fd98bf86555c914f7a5b1e177c31c37764dbf84
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1001'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ A Adobe Commerce fornece o Page Builder como um **sistema de gerenciamento de co
 
 ### Utilização do Seletor de ativos AEM no Page Builder
 
-[!BADGE Somente PaaS]{type=Informative tooltip="Aplicável a projetos do Adobe Commerce na nuvem somente (infraestrutura do PaaS gerenciada pela Adobe)."} Para usar o **Seletor de ativos do AEM** para imagens incorporadas:
+[!BADGE Somente PaaS]{type=Informative tooltip="Aplicável a projetos do Adobe Commerce na nuvem somente (infraestrutura do PaaS gerenciada pela Adobe)."} Para usar o **Seletor de ativos do AEM** para imagens incorporadas, verifique se os usuários têm as [permissões e a autenticação IMS](get-started/permissions.md) necessárias.
 
 1. Navegue até qualquer seção no **Administrador do Adobe Commerce** que ofereça suporte ao `content enrichment` usando o **Page Builder**.
 
@@ -93,7 +93,7 @@ A associação com a imagem selecionada será armazenada no Adobe Commerce como 
 
 >[!TIP]
 >
-> [DA.live (Criação de Documentos)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/?lang=pt-BR#dalive-document-authoring){target=_blank} também fornece um seletor de Ativos para enriquecer dados.
+> [DA.live (Criação de Documentos)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/#dalive-document-authoring){target=_blank} também fornece um seletor de Ativos para enriquecer dados.
 
 ## Vídeos de produtos
 
@@ -141,7 +141,7 @@ O Adobe Commerce permite que os comerciantes associem imagens a categorias de pr
 
 ### Usar o Seletor de ativos AEM para imagens de categoria
 
-Após configurar o [Seletor de ativos do AEM](synchronize/asset-selector-integration.md), você pode usá-lo para adicionar ativos ao conteúdo de categorias do catálogo.
+Após configurar o [Seletor de ativos do AEM](synchronize/asset-selector-integration.md) e garantir que os usuários tenham as [permissões e a autenticação IMS](get-started/permissions.md) necessárias, você poderá usá-lo para adicionar ativos ao conteúdo de categorias do catálogo.
 
 1. Na barra lateral _Admin_, navegue até **[!UICONTROL Catalog]** > **[!UICONTROL Categories]**.
 
@@ -163,7 +163,7 @@ Após configurar o [Seletor de ativos do AEM](synchronize/asset-selector-integra
 
 1. Clique em **[!UICONTROL Save]** e continue.
 
-   Para obter mais informações sobre como criar uma categoria, consulte [Concluir o conteúdo da categoria](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) no **Guia de Gerenciamento do Catálogo do Commerce**.
+   Para obter mais informações sobre como criar uma categoria, consulte [Concluir o conteúdo da categoria](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) no **Guia de Gerenciamento do Catálogo do Commerce**.
 
 ## Atualizar um ativo
 
@@ -173,6 +173,6 @@ Para que o fluxo de trabalho do lado da Commerce vincule ativos a produtos por m
 
 Para obter os procedimentos do AEM Assets, consulte a seguinte documentação:
 
-* [Reprocessando ativos digitais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+* [Reprocessando ativos digitais](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
 
-* [Aprovar um ativo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
+* [Aprovar um ativo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)

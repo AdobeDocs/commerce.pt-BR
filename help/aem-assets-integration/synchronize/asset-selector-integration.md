@@ -3,9 +3,9 @@ title: Seleção manual de ativos
 description: Descubra como o Seletor de ativos da AEM integrado ao Administrador do Commerce ajuda os profissionais de marketing e merchandisers a adicionar imagens facilmente do AEM Assets ao Adobe Commerce, simplificando o gerenciamento de ativos.
 feature: CMS, Media, Integration
 exl-id: 3c1f906f-3ec3-4eac-a47e-b21792767359
-source-git-commit: a0eaaf0de53962b37c7b52f3e7e13aac4c62e372
+source-git-commit: 0fd98bf86555c914f7a5b1e177c31c37764dbf84
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
@@ -14,17 +14,17 @@ ht-degree: 0%
 
 O **Seletor de ativos do AEM** permite que profissionais de marketing e merchandisers adicionem imagens facilmente do AEM Assets à Adobe Commerce, simplificando o processo de gerenciamento de ativos. Este método garante a consistência e a conformidade da marca, limitando a seleção de ativos àqueles revisados e aprovados no [!DNL DAM (Digital Asset Management system)].
 
-O **Seletor de ativos do AEM** está disponível quando a ID do cliente IMS para o projeto do AEM Assets é configurada no Administrador do Commerce. Consulte [Configurar o Seletor de ativos do AEM](#configure-the-aem-asset-selector-in-adobe-commerce).
+O **Seletor de ativos do AEM** está disponível quando a ID de cliente IMS do projeto do AEM Assets é configurada no Administrador do Commerce e os usuários têm as [permissões e a autenticação IMS necessárias](../get-started/permissions.md). Consulte [Configurar o Seletor de ativos do AEM](#configure-the-aem-asset-selector-in-adobe-commerce).
 
 Quando a integração do **Seletor de ativos do AEM** é configurada, os profissionais de marketing e merchandisers podem:
 
 * Gerencie imagens de categoria facilmente, garantindo que elas se alinhem às diretrizes de marca e campanha.
 * [!BADGE Somente PaaS]{type=Informative tooltip="Aplicável a projetos do Adobe Commerce na nuvem somente (infraestrutura do PaaS gerenciada pela Adobe)."} atribua ativos diretamente no Page Builder para conteúdo visualmente rico.
-* [!BADGE Somente SaaS]{type=Positive url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."} Atribua o Assets diretamente na Commerce Storefront habilitada pela Edge Delivery Services para conteúdo visualmente enriquecido.
+* [!BADGE Somente SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."} Atribua o Assets diretamente na Commerce Storefront habilitada pela Edge Delivery Services para conteúdo visualmente enriquecido.
 
 >[!NOTE]
 >
-> O Seletor de ativos do AEM é um componente de front-end do AEM Assets para integrar o AEM Assets com aplicativos de criação. Para obter mais informações sobre este componente, consulte o [Seletor de ativos de microfront-end](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank} no *Guia do Usuário do AEM as a Cloud Service*.
+> O Seletor de ativos do AEM é um componente de front-end do AEM Assets para integrar o AEM Assets com aplicativos de criação. Para obter mais informações sobre este componente, consulte o [Seletor de ativos de microfront-end](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/asset-selector/overview-asset-selector){target=_blank} no *Guia do Usuário do AEM as a Cloud Service*.
 
 ## Principais benefícios
 
@@ -44,7 +44,7 @@ A incorporação do Seletor de ativos do AEM no Painel de administração do Ado
 
 1. No Administrador do Commerce, navegue até **[!UICONTROL Store]** > Configuração > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
-1. Preencha o campo **[!UICONTROL IMS Client ID]**.
+1. Preencha o campo **[!UICONTROL IMS Client ID]**. Para obter as permissões necessárias e como obter essa ID, consulte [Permissões de usuário e IMS](../get-started/permissions.md).
 
 1. **Salve** a configuração.
 
