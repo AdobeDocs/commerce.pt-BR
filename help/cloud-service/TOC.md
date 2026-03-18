@@ -3,10 +3,10 @@ user-guide-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: Este guia fornece instruções detalhadas para usar o  [!DNL Adobe Commerce as a Cloud Service].
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-source-git-commit: e15af3dc45e2acebf8f069d56c7d1a01f8757285
+source-git-commit: 48fa526c2d6529cb482c8fe52bffe27c21693cb1
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 10%
+source-wordcount: '81'
+ht-degree: 8%
 
 ---
 
@@ -28,11 +28,14 @@ ht-degree: 10%
    - [Serviço de documentação RAG](migration/doc-rag.md)
 - Tutorials {#tutorials}
    - [Pré-requisitos do tutorial](tutorials/tutorial-prerequisites.md)
+   - [Tutorial da extensão de estimativas de entrega](tutorials/delivery-estimates-extension.md)
+   - [Tutorial de extensão de notificação no Stock](tutorials/in-stock-notification-extension.md)
+   - [Tutorial da extensão de análises do produto](tutorials/product-reviews-extension.md)
    - [Tutorial da extensão de classificações](tutorials/ratings-extension.md)
    - [Tutorial de extensão do método de envio](tutorials/shipping-method-extension.md)
 - Esquemas {#schemas}
    - [Esquema do GraphQL](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
    - [Esquema da API REST](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
-- [Tutoriais em vídeo](https://experienceleague.adobe.com/pt-br/playlists/accs-getting-started-product-overview){target="_blank"}
+- [Tutoriais em vídeo](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
 - [Notas de versão](release-notes.md)
-- [Retornar à Página Inicial dos Serviços Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/home)
+- [Retornar à Página Inicial dos Serviços Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
