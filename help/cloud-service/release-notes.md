@@ -5,11 +5,11 @@ feature-set: Commerce
 feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: cf06dec6-8d6b-413e-9977-df88373c188e
-source-git-commit: e429c0730b4312b1389709d3afbbd64d96a244c5
+source-git-commit: 160180d9d779514f6faee3c7de46531ebf191c7d
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '2105'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,143 @@ As notas de versão a seguir contêm atualizações para [!DNL Adobe Commerce as
 
 >[!NOTE]
 >
->Se você estiver usando o Adobe Commerce no local ou o Adobe Commerce na infraestrutura em nuvem, consulte as [notas de versão do Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/overview).
+>Se você estiver usando o Adobe Commerce no local ou o Adobe Commerce na infraestrutura em nuvem, consulte as [notas de versão do Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
-## Março de 2026 {#latest}
+## Março de 2026 - lançamento #2 {#latest}
 
-<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
+[!BADGE Sandbox]{type=Caution tooltip="Os itens listados estão disponíveis atualmente apenas em ambientes de sandbox. A Adobe disponibiliza novas versões em ambientes de sandbox primeiro para fornecer tempo para testar alterações futuras antes que a versão esteja disponível em ambientes de produção."}
+
+Os itens a seguir estão disponíveis atualmente em ambientes de sandbox do [!DNL Adobe Commerce as a Cloud Service] e serão lançados para ambientes de produção em 24 de março de 2026.
+
+>[!BEGINSHADEBOX]
+
+### Fazer logon como cliente usando códigos únicos
+
+Agora os administradores podem gerar [códigos únicos](./login-as-customer.md) para representação do cliente por meio da [!DNL Commerce Admin] e da API REST. O código único pode ser trocado por um token de acesso do cliente por meio das mutações do GraphQL `generateCustomerToken` ou `exchangeOtpForCustomerToken`, permitindo fluxos de &quot;Logon como Cliente&quot; sem senha para cenários de compras com auxílio do vendedor. <!-- ACCS-404 -->
+
+### Gerenciar contas de cartão-presente por meio da REST API
+
+[Contas de cartão-presente](./gift-card-account-api.md) agora podem ser criadas, atualizadas, excluídas e consultadas por meio da API REST. Além disso, o suporte à importação em massa de JSON está disponível por meio do endpoint `/V1/import/json`, permitindo integrações de terceiros para sincronizar programaticamente cartões-presente. <!-- ACCS-476 -->
+
+### Acionar emails transacionais por meio da API REST
+
+Um novo ponto de extremidade da API REST (`POST /V1/custom-email/send`) permite [acionar emails transacionais](./email-triggering.md) sob demanda especificando uma ID de modelo de email, email de destinatário e variáveis de modelo. A API é compatível com matrizes aninhadas como variáveis de modelo para conteúdo de email complexo. <!-- ACCS-325, ACCS-481 -->
+
+### Assine o webhook get-rates de envio fora de processo
+
+O webhook `plugin.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates` agora está disponível na lista de Webhooks de Administração em [!DNL Adobe Commerce as a Cloud Service]. Use-o para implementar [métodos de envio personalizados](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases/#shipping-methods). <!-- ACCS-478 -->
+
+### Fazer upload de PDFs e outros arquivos por meio de atributos de produto
+
+Um novo &quot;arquivo&quot; [Tipo de Entrada de Atributo](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) permite criar conjuntos de atributos onde você pode carregar arquivos, como PDFs, para produtos individuais. Você pode configurar as extensões de arquivo permitidas e o tamanho máximo de arquivo navegando até [!UICONTROL **Lojas**] > [!UICONTROL **Configuração**] > [!UICONTROL _Catálogo_] > [!UICONTROL **Atributos de Arquivo de Produto**]. <!-- ACCS-535, ACCS-565 -->
+
+### Configurar atributos personalizados da empresa
+
+Agora, os administradores podem gerenciar atributos personalizados da empresa na página Empresa - Editar na [!DNL Commerce Admin]. Os atributos personalizados podem ser configurados, salvos e validados na interface do usuário do Administrador para [!DNL Adobe Commerce as a Cloud Service].
+
+Para configurar atributos personalizados da empresa, navegue até [!UICONTROL **Clientes**] > [!UICONTROL **Empresas**] e selecione uma empresa para abrir a página de edição. Em seguida, selecione a guia [!UICONTROL **Atributos personalizados**] para adicionar novos atributos.
+<!-- ACCS-294 -->
+
+### Assinar alertas de preço e estoque por meio do GraphQL
+
+Agora as vitrines EDS funcionam com [alertas de preço e estoque](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/product-alerts/alert-setup). <!-- ACCS-334 -->
+
+Além disso, há várias novas mutações do GraphQL para assinar e cancelar a assinatura de alertas de preço e estoque:
+
++++Novas mutações do GraphQL
+
+```graphql
+mutation {
+  subscribeProductAlertStock(input: { sku: "ADB111" }) {
+    success
+    message
+  }
+}
+```
+
+```graphql
+mutation {
+  unsubscribeProductAlertStock(input: { sku: "ADB111" }) {
+    success
+    message
+  }
+}
+```
+
+```graphql
+mutation {
+  unsubscribeProductAlertStockAll {
+    success
+    message
+  }
+}
+```
+
+```graphql
+mutation {
+  subscribeProductAlertPrice(input: { sku: "ADB112" }) {
+    success
+    message
+  }
+}
+```
+
+```graphql
+mutation {
+  unsubscribeProductAlertPrice(input: { sku: "ADB115" }) {
+    success
+    message
+  }
+}
+```
+
+```graphql
+mutation {
+  unsubscribeProductAlertPriceAll {
+    success
+    message
+  }
+}
+```
+
++++
+
+### Melhorias e correções de erros
+
+Os seguintes aprimoramentos, otimizações e correções de erros selecionados estão incluídos nesta versão:
+
+* A função da empresa [!UICONTROL Sales] > [!UICONTROL View Orders] agora funciona conforme esperado. <!-- ACCS-604 -->
+
+* O atributo de extensão do cliente `last_login_at` agora está disponível por meio da REST API, permitindo que as integrações recuperem a data de logon mais recente para cada cliente. <!-- ACCS-555 -->
+
+* Correção de um problema com as sugestões do formulário de integração [!DNL AEM Assets]. <!-- ACCS-209 -->
+
+* Correção de um problema em que as ações de atribuição e cancelamento de atribuição em massa da empresa na grade Catálogo compartilhado podiam causar um erro. <!-- CCSAAS-4614 -->
+
+* Correção de um problema em que os preços do carrinho personalizado eram substituídos quando o mesmo produto era adicionado ao carrinho novamente com uma quantidade ou preço personalizado diferente. <!-- ACCS-529 -->
+
+* Os UIDs de item de lista de requisição agora são consistentes com os UIDs de item de carrinho e lista de desejos. <!-- ACCS-349 -->
+
+* Correção do tempo limite da página de edição do produto que poderia ocorrer com catálogos compartilhados grandes. <!-- CCSAAS-4657 -->
+
+* Os pontos de extremidade da API REST do GET `/V1/directory/countries` e do GET `/V1/directory/countries/:countryId` foram habilitados novamente para integrações de administrador, permitindo que os clientes pesquisem dados válidos de país e região. <!-- ACCS-518 -->
+
+* Correção de um problema de tempo limite que poderia ocorrer na API REST quando um usuário tem um catálogo compartilhado grande. <!-- ACCS-4657 -->
+
+* Correção de um problema em que as empresas B2B bloqueadas ainda podiam adicionar produtos ao carrinho. <!-- ACCS-552 -->
+
+* Se você tiver uma grande quantidade de dados nas grades do Cliente ou da Empresa, os botões de exportação não estarão mais disponíveis para evitar erros. <!-- ACCS-320 -->
+
+* Correção de um problema em que os tamanhos de arquivo anexados não eram exibidos corretamente. <!-- ACCS-566 -->
+
+* Correção de um problema com a criação e exclusão dos tipos de atributos &quot;Arquivo&quot; no [!DNL Commerce Admin]. <!-- ACCS-605, ACCS-606 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+
+## Março de 2026 - lançamento #1
 
 [!BADGE Produção]{type=Neutral tooltip="Os itens listados estão disponíveis atualmente em Ambientes de produção."}
 
@@ -46,15 +178,15 @@ O [!DNL Commerce Admin] agora inclui um item de menu vinculado ao [Gerenciamento
 
 ### Solicitar alteração de limite de criação de entidade
 
-O limite de sites, lojas e visualizações de loja era anteriormente limitado a 50. Agora você pode enviar uma [solicitação de suporte](https://experienceleague.adobe.com/home?lang=pt-BR&support-tab=home#support) para modificar esses limites, se necessário. <!-- ACCS-398 -->
+O limite de sites, lojas e visualizações de loja era anteriormente limitado a 50. Agora você pode enviar uma [solicitação de suporte](https://experienceleague.adobe.com/home?support-tab=home#support) para modificar esses limites, se necessário. <!-- ACCS-398 -->
 
 ### Personalizar mensagens de autenticação da loja com códigos de erro estruturados
 
-A [`generateCustomerToken` mutação do GraphQL &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/){target="_blank"} agora retorna códigos de erro digitados junto com mensagens de erro, permitindo que as vitrines exibam mensagens de interface do usuário específicas por motivo de falha. Os códigos de erro disponíveis são: `CUSTOMER_MISSING_EMAIL`, `CUSTOMER_MISSING_PASSWORD`, `CUSTOMER_SIGN_IN_INCORRECT_OR_LOCKED`, `CUSTOMER_ACCOUNT_NOT_CONFIRMED` e `CUSTOMER_GENERIC_ERROR`. <!-- ACCS-301 -->
+A [`generateCustomerToken` mutação do GraphQL ](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/){target="_blank"} agora retorna códigos de erro digitados junto com mensagens de erro, permitindo que as vitrines exibam mensagens de interface do usuário específicas por motivo de falha. Os códigos de erro disponíveis são: `CUSTOMER_MISSING_EMAIL`, `CUSTOMER_MISSING_PASSWORD`, `CUSTOMER_SIGN_IN_INCORRECT_OR_LOCKED`, `CUSTOMER_ACCOUNT_NOT_CONFIRMED` e `CUSTOMER_GENERIC_ERROR`. <!-- ACCS-301 -->
 
 ### Enviar lembretes de email automatizados para inatividade do carrinho e da lista de desejos
 
-O [módulo de Lembrete de Email](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/marketing/communications/email-reminders/email-reminder-rules) (`Magento_Reminder`) agora está ativo no [!DNL Adobe Commerce as a Cloud Service], permitindo que os comerciantes criem regras automatizadas de lembrete que acionam emails para clientes com base na inatividade do carrinho e da lista de desejos. <!-- CCSAAS-4597 -->
+O [módulo de Lembrete de Email](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/communications/email-reminders/email-reminder-rules) (`Magento_Reminder`) agora está ativo no [!DNL Adobe Commerce as a Cloud Service], permitindo que os comerciantes criem regras automatizadas de lembrete que acionam emails para clientes com base na inatividade do carrinho e da lista de desejos. <!-- CCSAAS-4597 -->
 
 ### Assinar o webhook de eventos de exclusão de categoria
 
@@ -62,7 +194,7 @@ O webhook `observer.catalog_category_delete_before` agora está disponível em [
 
 ### Rastrear pedidos de convidados feitos com um email registrado
 
-Uma nova configuração opcional de nível de loja permite que os clientes [rastreiem pedidos de convidados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-guest#allow-guest-order-access-for-registered-emails) feitos por eles, caso o pedido tenha sido feito usando um endereço de email que corresponda a uma conta de cliente registrada. <!-- ACCS-289 -->
+Uma nova configuração opcional de nível de loja permite que os clientes [rastreiem pedidos de convidados](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-guest#allow-guest-order-access-for-registered-emails) feitos por eles, caso o pedido tenha sido feito usando um endereço de email que corresponda a uma conta de cliente registrada. <!-- ACCS-289 -->
 
 ### Melhorias e correções de erros
 
@@ -120,15 +252,15 @@ Os seguintes aprimoramentos foram feitos no [!DNL Commerce Admin]:
 
 * [cargas de webhook de envio](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-use-cases/#payload) fora de processo aprimoradas para incluir atributos personalizados de endereço de envio. Essa alteração permite que os comerciantes implementem métodos de envio personalizados. <!-- ACCS-235 -->
 
-* Acesso adicionado aos relatórios de Administração, incluindo relatórios de [Clientes](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/reporting/customer-reports), [Marketing](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/reporting/marketing-reports), [Produtos](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/reporting/product-reports) e [Vendas](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/reporting/sales-reports). <!-- CCSAAS-3085 -->
+* Acesso adicionado aos relatórios de Administração, incluindo relatórios de [Clientes](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/customer-reports), [Marketing](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/marketing-reports), [Produtos](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/product-reports) e [Vendas](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/sales-reports). <!-- CCSAAS-3085 -->
 
 >[!NOTE]
 >
->Os relatórios não disponíveis em [!DNL Adobe Commerce as a Cloud Service] são rotulados como somente PaaS ([!BADGE PaaS somente]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."}).
+>Os relatórios não disponíveis em [!DNL Adobe Commerce as a Cloud Service] são rotulados como somente PaaS ([!BADGE PaaS somente]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."}).
 
 ### Capturar valores de fatura personalizados por meio da API REST
 
-A API de fatura agora oferece suporte a [valores de captura personalizados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts) usando atributos de extensão. <!-- ACCS-186, ACCS-197, ACCS-143 -->
+A API de fatura agora oferece suporte a [valores de captura personalizados](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts) usando atributos de extensão. <!-- ACCS-186, ACCS-197, ACCS-143 -->
 
 >[!NOTE]
 >
@@ -168,28 +300,28 @@ Os itens a seguir foram lançados para os ambientes de Produção do [!DNL Adobe
 
 As seguintes alterações foram feitas aos componentes de devolução direta B2B:
 
-* [!DNL Commerce Storefront on Edge Delivery Services] agora inclui [componentes B2B](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/?lang=pt-BR). Os seguintes menus suspensos B2B agora estão disponíveis:
+* [!DNL Commerce Storefront on Edge Delivery Services] agora inclui [componentes B2B](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/). Os seguintes menus suspensos B2B agora estão disponíveis:
 
-   * **[Gerenciamento da empresa](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/?lang=pt-BR)** - Habilita o gerenciamento de perfis da empresa e permissões com base em funções para vitrines da Adobe Commerce.
-   * **[Alternador de empresa](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/?lang=pt-BR)** - Fornece um componente de interface do usuário para que os usuários alternem entre várias empresas às quais estão associados.
-   * **[Ordens de compra](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/?lang=pt-BR)** - Gerencia fluxos de trabalho de ordem de compra, regras de aprovação e histórico de ordens de compra para transações B2B.
-   * **[Gerenciamento de cotações](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/?lang=pt-BR)** - Habilita cotações negociáveis para clientes B2B com fluxos de trabalho de solicitação de cotação, negociação e aprovação.
-   * **[Listas de requisições](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/?lang=pt-BR)** - Fornece ferramentas para criar e gerenciar listas de requisições para compras repetidas e pedidos em massa.
+   * **[Gerenciamento da empresa](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/)** - Habilita o gerenciamento de perfis da empresa e permissões com base em funções para vitrines da Adobe Commerce.
+   * **[Alternador de empresa](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/)** - Fornece um componente de interface do usuário para que os usuários alternem entre várias empresas às quais estão associados.
+   * **[Ordens de compra](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/)** - Gerencia fluxos de trabalho de ordem de compra, regras de aprovação e histórico de ordens de compra para transações B2B.
+   * **[Gerenciamento de cotações](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/)** - Habilita cotações negociáveis para clientes B2B com fluxos de trabalho de solicitação de cotação, negociação e aprovação.
+   * **[Listas de requisições](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/)** - Fornece ferramentas para criar e gerenciar listas de requisições para compras repetidas e pedidos em massa.
 
 * Lançado o pacote de compatibilidade da vitrine B2B. Este pacote aprimora o esquema do GraphQL B2B [!DNL Adobe Commerce] para ajudar a melhorar o desenvolvimento em sistemas B2B.
 
 <!-- 
-* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/?lang=pt-BR). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/developer/commerce/storefront/merchants/b2b-commerce-blocks/).
+* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/developer/commerce/storefront/merchants/b2b-commerce-blocks/).
 
-* Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility-b2b/?lang=pt-BR). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. -->
+* Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility-b2b/). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. -->
 
 ### Links clicáveis para rastreadores de envio externos
 
-Transforme os números de rastreamento de remessa incluídos nos emails do comprador de texto sem formatação em links clicáveis ao [habilitar as URLs de Rastreamento Personalizado](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/delivery/shipping-settings#shipment-tracking-urls). Este recurso é suportado para USPS, UPS, FedEx e DHL. <!-- See PR #716 in commerce-admin -->
+Transforme os números de rastreamento de remessa incluídos nos emails do comprador de texto sem formatação em links clicáveis ao [habilitar as URLs de Rastreamento Personalizado](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/shipping-settings#shipment-tracking-urls). Este recurso é suportado para USPS, UPS, FedEx e DHL. <!-- See PR #716 in commerce-admin -->
 
 ### Suporte corporativo ao Google reCAPTCHA
 
-[!DNL Adobe Commerce as a Cloud Service] vitrines agora oferecem suporte a [reCAPTCHA Enterprise](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/security/captcha/security-google-recaptcha-enterprise). Esse recurso oferece proteção avançada de bot usando análise de risco adaptável e aprendizado de máquina para distinguir com precisão os usuários humanos dos bots automatizados. Ele fortalece a segurança do site, previne atividades fraudulentas e reduz o spam e o abuso para manter uma experiência de compra confiável. <!-- CCSAAS-4242 -->
+[!DNL Adobe Commerce as a Cloud Service] vitrines agora oferecem suporte a [reCAPTCHA Enterprise](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha-enterprise). Esse recurso oferece proteção avançada de bot usando análise de risco adaptável e aprendizado de máquina para distinguir com precisão os usuários humanos dos bots automatizados. Ele fortalece a segurança do site, previne atividades fraudulentas e reduz o spam e o abuso para manter uma experiência de compra confiável. <!-- CCSAAS-4242 -->
 
 ### Acesso de administrador específico à instância
 
@@ -205,7 +337,7 @@ Ao usar o [!DNL App Builder], você pode obter maior visibilidade da instância 
 
 ### Camada de preços para regras de preço de catálogo
 
-Agora você pode combinar descontos de preço em camadas com descontos de regra de catálogo usando [regras de preço de catálogo](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/products/pricing/product-price-tier#enable-tier-pricing-for-catalog-price-rules). Esse aprimoramento permite criar estratégias de preços mais dinâmicas e competitivas, recompensando compras em massa e aplicando descontos promocionais ao mesmo tempo. O resultado é maior flexibilidade para atrair clientes, aumentar o valor do pedido e gerar conversões.<!-- See PR #708 in commerce-admin -->
+Agora você pode combinar descontos de preço em camadas com descontos de regra de catálogo usando [regras de preço de catálogo](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier#enable-tier-pricing-for-catalog-price-rules). Esse aprimoramento permite criar estratégias de preços mais dinâmicas e competitivas, recompensando compras em massa e aplicando descontos promocionais ao mesmo tempo. O resultado é maior flexibilidade para atrair clientes, aumentar o valor do pedido e gerar conversões.<!-- See PR #708 in commerce-admin -->
 
 ### Melhorias e correções de erros
 
@@ -245,6 +377,6 @@ Os seguintes aprimoramentos, otimizações e correções de erros selecionados f
 
 #### Atributos de ordem personalizados
 
-* Os usuários administradores agora podem exibir e editar [atributos de pedido personalizados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes) diretamente nas telas Exibir, Editar e Criar Pedido no painel Administrador. Esse aprimoramento melhora o gerenciamento de dados de pedidos personalizados criados via GraphQL. <!-- CEXT-5044 -->
+* Os usuários administradores agora podem exibir e editar [atributos de pedido personalizados](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-processing#custom-order-attributes) diretamente nas telas Exibir, Editar e Criar Pedido no painel Administrador. Esse aprimoramento melhora o gerenciamento de dados de pedidos personalizados criados via GraphQL. <!-- CEXT-5044 -->
 
 >[!ENDSHADEBOX]
