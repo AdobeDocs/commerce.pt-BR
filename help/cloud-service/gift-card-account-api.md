@@ -3,7 +3,7 @@ title: Pontos de Extremidade REST da Conta de Cartão-presente
 description: Saiba como usar APIs REST de conta de cartão-presente para criar, atualizar, excluir e consultar contas de cartão-presente de forma programática no  [!DNL Adobe Commerce as a Cloud Service].
 role: Admin, Developer
 level: Experienced
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 source-git-commit: 160180d9d779514f6faee3c7de46531ebf191c7d
 workflow-type: tm+mt
 source-wordcount: '807'
