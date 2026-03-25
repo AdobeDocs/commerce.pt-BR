@@ -66,7 +66,7 @@ A visualização [!DNL App Management] é exibida. Aqui, você pode associar, co
 
 ## Instalação de aplicativos do App Builder
 
-Se você precisar instalar um aplicativo do App Builder da Adobe Exchange (por exemplo, um aplicativo de integração ou marketplace pré-criado), consulte [Instalar aplicativos do App Builder da Adobe Exchange](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"} para obter instruções passo a passo.
+Se você precisar instalar um aplicativo do App Builder da Adobe Exchange (por exemplo, um aplicativo de integração ou marketplace pré-criado), consulte [Instalar aplicativos do App Builder da Adobe Exchange](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/adobe-developer-app-builder/install-app-builder-app){target="_blank"} para obter instruções passo a passo.
 
 Depois que um aplicativo for instalado e implantado, use o [!DNL App Management] para [associá-lo à sua instância do Commerce](manage-app.md#associate-an-app) e definir suas configurações.
 
@@ -74,7 +74,7 @@ Depois que um aplicativo for instalado e implantado, use o [!DNL App Management]
 
 Alguns aplicativos do App Builder usam [webhooks do Adobe Commerce](https://developer.adobe.com/commerce/extensibility/webhooks/) para que o Commerce possa chamar seu aplicativo por HTTP quando determinados eventos ocorrerem (por exemplo, depois que um produto for salvo). Os pontos de extremidade e a lógica de assinatura do Webhook são definidos pelo **desenvolvedor de aplicativos** quando o aplicativo é criado e implantado; os administradores de loja não configuram webhooks separadamente no Gerenciamento de Aplicativos.
 
-Depois de [associar o aplicativo](https://experienceleague.adobe.com/en/docs/commerce/app-management/manage-app/manage-app) à sua instância do Commerce e concluir as instruções de configuração do aplicativo, o comportamento de webhook segue a implementação do aplicativo.
+Depois de [associar o aplicativo](https://experienceleague.adobe.com/pt-br/docs/commerce/app-management/manage-app/manage-app) à sua instância do Commerce e concluir as instruções de configuração do aplicativo, o comportamento de webhook segue a implementação do aplicativo.
 
 Se [!DNL App Management] não puder acionar o ponto de extremidade de validação do aplicativo (por exemplo, a URL está inacessível ou a resposta não atende aos requisitos), você poderá ver um erro semelhante ao seguinte no painel [!DNL App Management]:
 
