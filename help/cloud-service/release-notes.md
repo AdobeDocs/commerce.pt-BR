@@ -226,7 +226,7 @@ O limite de sites, lojas e visualizações de loja era anteriormente limitado a 
 
 ### Personalizar mensagens de autenticação da loja com códigos de erro estruturados
 
-A [`generateCustomerToken` mutação do GraphQL ](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/){target="_blank"} agora retorna códigos de erro digitados junto com mensagens de erro, permitindo que as vitrines exibam mensagens de interface do usuário específicas por motivo de falha. Os códigos de erro disponíveis são: `CUSTOMER_MISSING_EMAIL`, `CUSTOMER_MISSING_PASSWORD`, `CUSTOMER_SIGN_IN_INCORRECT_OR_LOCKED`, `CUSTOMER_ACCOUNT_NOT_CONFIRMED` e `CUSTOMER_GENERIC_ERROR`. <!-- ACCS-301 -->
+A [`generateCustomerToken` mutação do GraphQL &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/){target="_blank"} agora retorna códigos de erro digitados junto com mensagens de erro, permitindo que as vitrines exibam mensagens de interface do usuário específicas por motivo de falha. Os códigos de erro disponíveis são: `CUSTOMER_MISSING_EMAIL`, `CUSTOMER_MISSING_PASSWORD`, `CUSTOMER_SIGN_IN_INCORRECT_OR_LOCKED`, `CUSTOMER_ACCOUNT_NOT_CONFIRMED` e `CUSTOMER_GENERIC_ERROR`. <!-- ACCS-301 -->
 
 ### Enviar lembretes de email automatizados para inatividade do carrinho e da lista de desejos
 
