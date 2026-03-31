@@ -2,9 +2,9 @@
 title: Sincronizar feeds usando a CLI do Commerce
 description: Saiba como usar os comandos da interface de linha de comando para gerenciar feeds e processos do  [!DNL data export extension] para serviços SaaS do Adobe Commerce.
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
-source-git-commit: c6725fc524e9d239ccc0f16701e92ad5d2fc7729
+source-git-commit: a05f716200fbf2af74b8488ae66053a56e7037a0
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ O comando `saas:resync` no pacote `magento/saas-export` permite gerenciar a sinc
 A Adobe não recomenda usar o comando `saas:resync` regularmente. Os cenários típicos para usar o comando são:
 
 - Sincronização inicial
-- Sincronizar dados com um novo espaço de dados após alterar a [ID do Espaço de Dados SaaS](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/config/services/saas)
+- Sincronizar dados com um novo espaço de dados após alterar a [ID do Espaço de Dados SaaS](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)
 - Solução de problemas
 
 Monitorar operações de sincronização no arquivo `var/log/saas-export.log`.
@@ -85,9 +85,9 @@ Limpe a tabela indexadora de feed antes de reindexar e enviar dados para o SaaS.
 
 Se usada com a opção `--dry-run`, a operação executará uma operação de ressincronização de simulação para todos os itens.
 
->[!IMPORTANT]
+>[!WARNING]
 >
->Use somente após a limpeza do ambiente ou com a opção `--dry-run`. Se usada em outros casos, a operação de limpeza pode causar perda de dados e problemas de sincronização de dados.
+>O uso do comando resync com a opção `cleanup-feed` limpa o estado de exportação do feed local e pode levar à sincronização incompleta. Por exemplo, as exclusões de entidade no Adobe Commerce podem não ser refletidas nos Serviços Commerce conectados, ou entidades obsoletas podem permanecer nos índices remotos dos Serviços Commerce mesmo que tenham sido excluídas ou atualizadas no Adobe Commerce. Use essa opção somente para recriações completas de ambiente, como após uma limpeza de espaço de dados SaaS.
 
 **Exemplo:**
 
