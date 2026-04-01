@@ -1,11 +1,13 @@
 ---
 title: Configurar o teste de sandbox
-description: Use uma conta de sandbox do PayPal para usar  [!DNL Payment Services]  no modo de teste.
+description: Use uma conta de sandbox do PayPal e a integração do administrador para executar o  [!DNL Payment Services]  no modo de teste antes dos pagamentos ao vivo (Adobe Commerce na nuvem, no local e SaaS).
+role: Admin, User
+level: Intermediate
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 6727102c54e0ac81df289ecd66ec61156662b8b9
+source-git-commit: 2c6c812fd25feecfe5133d6623a1c814003d579c
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '756'
 ht-degree: 0%
 
 ---
@@ -29,7 +31,7 @@ Para concluir a integração da sandbox:
       Se você criou uma conta de sandbox do PayPal durante o processo de integração do PayPal com sandbox, deverá [redefinir sua sandbox de integração](#reset-your-sandbox-account), pois, ou não poderá verificar seu email.
 
    1. Selecione **[!UICONTROL Business]** como o Tipo de Conta e clique em **[!UICONTROL Create]**.
-   1. Na seção _[!UICONTROL Sandbox Accounts]_, clique nos três pontos na coluna&#x200B;_[!UICONTROL Manage accounts]_ para a conta de sandbox que você criou.
+   1. Na seção _[!UICONTROL Sandbox Accounts]_, clique nos três pontos na coluna_[!UICONTROL Manage accounts]_ para a conta de sandbox que você criou.
    1. Clique em **[!UICONTROL View/edit account]**.
 
       ![PayPal - Exibir/editar conta de sandbox](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}
@@ -94,7 +96,7 @@ Para configurar o país do Comprador:
 
 1. Expanda a seção _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
 
-1. Na seção _[!UICONTROL Payment Services]_, expanda a seção&#x200B;_[!UICONTROL General Configuration]_.
+1. Na seção _[!UICONTROL Payment Services]_, expanda a seção_[!UICONTROL General Configuration]_.
 
 1. Defina **[!UICONTROL Method]** como `Sandbox`.
 

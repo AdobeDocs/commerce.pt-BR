@@ -1,12 +1,12 @@
 ---
 title: Relatórios
-description: Use o relatório de Transações para obter visibilidade sobre taxas de autorização de transações e tendências de transações.
+description: Use o  [!DNL Payment Services] Relatório de transações no Administrador para revisar taxas de autorização, resultados de transação, códigos de resposta e tendências no Adobe Commerce em implantações de nuvem, locais e SaaS.
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 4482c1f93a424c73497b88c707d0ab93a694c957
+source-git-commit: 2c6c812fd25feecfe5133d6623a1c814003d579c
 workflow-type: tm+mt
-source-wordcount: '1270'
+source-wordcount: '1328'
 ht-degree: 0%
 
 ---
@@ -27,15 +27,27 @@ Você pode fazer download do relatório de Transações em um formato de arquivo
 
 >[!NOTE]
 >
->Você não pode exibir relatórios financeiros se não tiver [o modo Online integrado e ativado](production.md#enable-live-payments) para [!DNL Payment Services].
+> Você não pode exibir relatórios financeiros se não tiver [o modo Online integrado e ativado](production.md#enable-live-payments) para [!DNL Payment Services].
 
 ## Exibição do relatório de transações
 
 A visualização do relatório Transações está disponível na visualização Transações dos Serviços de pagamento. Inclui todas as informações disponíveis sobre transações para sua(s) loja(s).
 
-Na barra lateral _Admin_, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**&#x200B;para ver a exibição detalhada do relatório de Transações em tabela.
+Na barra lateral _Admin_, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**para ver a exibição detalhada do relatório de Transações em tabela. De **[!UICONTROL Home]**, você também pode escolher **[!UICONTROL View Report]**em **[!UICONTROL Transactions]**em [!DNL Adobe Commerce as a Cloud Service] e [!DNL Adobe Commerce Optimizer].
+
+>[!BEGINTABS]
+
+>[!TAB Adobe Commerce na nuvem e no local]
 
 ![Exibição do relatório de transações](assets/transactions-report-view.png){width="800" zoomable="yes"}
+
+>[!TAB Adobe Commerce as a Cloud Service e Commerce Optimizer]
+
+Os mesmos recursos de relatório se aplicam a implantações SaaS. As navegações estruturais são exibidas **[!UICONTROL Home]** > **[!UICONTROL Transactions]**, e a grade inclui colunas como **[!UICONTROL Order ID]**, **[!UICONTROL PayPal Transaction ID]**, **[!UICONTROL Customer ID]**, **[!UICONTROL Transaction Date]**, **[!UICONTROL Payment Method]**, **[!UICONTROL Payment Detail]**, **[!UICONTROL Card Last Four]**, **[!UICONTROL Result]** e **[!UICONTROL Response Code]**.
+
+![Exibição do relatório de transações no SaaS](assets/transactions-report-view-saas.png){width="800" zoomable="yes"}
+
+>[!ENDTABS]
 
 É possível configurar essa visualização, de acordo com as seções neste tópico, para apresentar melhor os dados que você deseja ver.
 
@@ -55,12 +67,12 @@ Na exibição de relatório Transações, você pode selecionar a fonte de dados
 
 ![Seleção de fontes de dados](assets/datasource.png){width="300" zoomable="yes"}
 
-Se _[!UICONTROL Live]_&#x200B;for a fonte de dados selecionada, você poderá ver as informações do relatório de suas lojas que usam [!DNL Payment Services] no modo de produção. Se&#x200B;_[!UICONTROL Sandbox]_ for a fonte de dados selecionada, você poderá ver as informações do relatório para o modo sandbox.
+Se _[!UICONTROL Live]_for a fonte de dados selecionada, você poderá ver as informações do relatório de suas lojas que usam [!DNL Payment Services] no modo de produção. Se_[!UICONTROL Sandbox]_ for a fonte de dados selecionada, você poderá ver as informações do relatório para o modo sandbox.
 
 As seleções de fonte de dados funcionam da seguinte maneira:
 
-* Se você não tiver armazenamentos que usem [!DNL Payment Services] no modo de produção, a seleção da fonte de dados assumirá _[!UICONTROL Sandbox]_&#x200B;como padrão.
-* Se você tiver armazenamentos (um ou vários) que usam [!DNL Payment Services] no modo de produção, a seleção da fonte de dados assumirá _[!UICONTROL Live]_&#x200B;como padrão.
+* Se você não tiver armazenamentos que usem [!DNL Payment Services] no modo de produção, a seleção da fonte de dados assumirá _[!UICONTROL Sandbox]_como padrão.
+* Se você tiver armazenamentos (um ou vários) que usam [!DNL Payment Services] no modo de produção, a seleção da fonte de dados assumirá _[!UICONTROL Live]_como padrão.
 * As exportações de relatórios sempre seguem a seleção da fonte de dados.
 
 Para selecionar a fonte de dados para seu relatório [!UICONTROL Transactions]:
@@ -85,14 +97,14 @@ Na exibição do relatório Transações, você pode filtrar os resultados de st
 
 1. Na barra lateral _Admin_, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
 1. Clique no seletor **[!UICONTROL Filter]**.
-1. Alternar as opções _[!UICONTROL Transaction Result]_&#x200B;para ver os resultados do relatório somente para as transações de ordem selecionadas.
-1. Alterne as opções _[!UICONTROL Payment Method]_&#x200B;para ver os resultados do relatório para o tipo de pagamento usado para a transação.
-1. Alterne as opções _[!UICONTROL Payment Detail]_&#x200B;para ver informações adicionais sobre o tipo de pagamento usado, quando disponíveis.
+1. Alternar as opções _[!UICONTROL Transaction Result]_para ver os resultados do relatório somente para as transações de ordem selecionadas.
+1. Alterne as opções _[!UICONTROL Payment Method]_para ver os resultados do relatório para o tipo de pagamento usado para a transação.
+1. Alterne as opções _[!UICONTROL Payment Detail]_para ver informações adicionais sobre o tipo de pagamento usado, quando disponíveis.
 1. Insira um _Valor Mínimo do Pedido_ ou _Valor Máximo do Pedido_ para ver os resultados do relatório dentro desse intervalo de valor do pedido.
-1. Digite um _[!UICONTROL Order ID]_&#x200B;para procurar uma transação específica.
-1. Apresente o _[!UICONTROL Card Last Four]_&#x200B;para procurar um cartão de crédito ou débito específico.
-1. Insira um _[!UICONTROL Customer ID]_&#x200B;para mostrar todas as transações de um cliente específico.
-1. Insira o _[!UICONTROL Customer Email]_&#x200B;para filtrar transações para esse email.
+1. Digite um _[!UICONTROL Order ID]_para procurar uma transação específica.
+1. Apresente o _[!UICONTROL Card Last Four]_para procurar um cartão de crédito ou débito específico.
+1. Insira um _[!UICONTROL Customer ID]_para mostrar todas as transações de um cliente específico.
+1. Insira o _[!UICONTROL Customer Email]_para filtrar transações para esse email.
 1. Clique em **[!UICONTROL Hide filters]** para ocultar o filtro.
 
 ### Mostrar e ocultar colunas
@@ -107,7 +119,7 @@ O relatório de Transações mostra todas as colunas de informações disponíve
 
 ### Atualizar dados do relatório
 
-A exibição do relatório de Transações mostra um carimbo de data/hora _[!UICONTROL Last updated]_&#x200B;que mostra a última vez que as informações do relatório foram atualizadas. Por padrão, os dados do relatório de Transações são atualizados automaticamente a cada três horas.
+A exibição do relatório de Transações mostra um carimbo de data/hora _[!UICONTROL Last updated]_que mostra a última vez que as informações do relatório foram atualizadas. Por padrão, os dados do relatório de Transações são atualizados automaticamente a cada três horas.
 
 Você também pode forçar manualmente uma atualização dos dados do relatório para ver as informações mais atualizadas do relatório.
 
@@ -132,9 +144,9 @@ Os relatórios de transações incluem as seguintes informações.
 
 | Coluna | Descrição |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | ID da ordem Commerce (contém apenas valores para transações bem-sucedidas e está vazia para transações rejeitadas)<br> <br>Para ver as [informações do pedido](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} relacionadas, clique na ID. |
+| [!UICONTROL Order ID] | ID da ordem Commerce (contém apenas valores para transações bem-sucedidas e está vazia para transações rejeitadas)<br> <br>Para ver as [informações do pedido](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} relacionadas, clique na ID. |
 | [!UICONTROL PayPal Transaction ID] | A ID da transação fornecida pelo provedor de serviço de pagamento; contém apenas valores para transações bem-sucedidas e contém um traço para transações rejeitadas. Você pode clicar nessa ID para acessar a página de detalhes da transação do PayPal. |
-| [!UICONTROL Customer ID] | ID de cliente Commerce de um pedido<br> <br>Consulte o tópico [informações do cliente](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} para obter mais informações. |
+| [!UICONTROL Customer ID] | ID de cliente Commerce de um pedido<br> <br>Consulte o tópico [informações do cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} para obter mais informações. |
 | [!UICONTROL Transaction Date] | Carimbo de data e hora da transação |
 | [!UICONTROL Payment Method] | Tipo de pagamento usado para a transação com informações sobre a marca e o tipo de cartão. Consulte [tipos de cartão](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) para obter mais informações; disponível para Payment Services versões 1.6.0 e mais recentes |
 | [!UICONTROL Payment Detail] | Fornece informações adicionais sobre o tipo de pagamento usado para a transação, quando disponível. |
