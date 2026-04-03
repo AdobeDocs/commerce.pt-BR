@@ -23,7 +23,7 @@ Essas notas de versão descrevem todas as versões do [!DNL Adobe Commerce Optim
 
 _2 de abril de 2026_
 
-![Novo](../assets/new.svg) **Adição de suporte ao feed de Categorias no comando `saas:resync` **-Agora é possível atualizar e exibir facilmente os dados de categoria mais recentes usando o comando da CLI `saas:resync`:
+![Novo](../assets/new.svg) **Adição de suporte ao feed de Categorias no comando `saas:resync` &#x200B;**-Agora é possível atualizar e exibir facilmente os dados de categoria mais recentes usando o comando da CLI `saas:resync`:
 
 ```terminal
 bin/magento saas:resync --feed=categories
