@@ -2,11 +2,11 @@
 title: Configurar a loja
 description: Saiba como configurar sua  [!DNL Adobe Commerce Optimizer] loja.
 role: Developer
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
-source-git-commit: c41134938f7408d062899ecaf3f63d37e1bdbca3
+source-git-commit: b6f7286f223c6253ab9edbead63a4bc4a9baddfe
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1420'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ A ferramenta Criador de sites cria um projeto completo da loja com os seguintes 
 * **Site**: página de aterrissagem de vitrines com conteúdo padrão
 * **Código**: repositório com arquivos de origem padronizados
 * **Conteúdo**: ambiente de Autor de Documentos com arquivos de conteúdo do site
-* **Configuração do Commerce**: [configuração da vitrine do Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=pt-BR){target="_blank"} para configuração específica da instância
+* **Configuração do Commerce**: [configuração da vitrine do Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/){target="_blank"} para configuração específica da instância
 
 ### Etapa 1: gerar o projeto
 
@@ -200,8 +200,8 @@ Use as orientações a seguir para verificar problemas comuns:
 |-------|----------|----------|
 | **Falha na instalação da Sincronização de Código** | Não é possível concluir a configuração da Sincronização de código | <ul><li>Verifique se você tem acesso de administrador à sua organização do GitHub.</li><li>Tente usar um repositório pessoal em vez de uma organização.</li><li>Verifique as permissões do GitHub e tente novamente.</li></ul> |
 | **Site não carregando** | 404 ou erros de conexão | <ul><li>Verifique o formato da URL do site: `https://main--{SITE}--{ORG}.aem.live`</li><li>Verifique se o aplicativo de sincronização de código foi instalado corretamente.</li><li>Certifique-se de que o repositório seja público ou configurado corretamente.</li></ul> |
-| **Nenhum dado de produto exibido** | As páginas de produto mostram espaços reservados ou erros | <ul><li>Verifique seus valores de configuração em `config.json`</li><li>Na instância [!DNL Adobe Commerce Optimizer], verifique a página Sincronização de Dados para saber se os produtos de exemplo foram carregados. Se nenhum produto estiver disponível, recarregue os dados de amostra ou adicione um produto usando a [API de assimilação de dados](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api/#make-your-first-request). Espere alguns minutos para que as alterações de configuração se propaguem.</li><li>Tente recuperar os detalhes do produto usando a [consulta de produtos](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#return-product-details) do Serviço de Merchandising, usando os mesmos cabeçalhos configurados na [configuração da vitrine da Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=pt-BR){target="_blank"}. Se você puder recuperar os dados, isso provavelmente será um problema com a configuração de exibição de catálogo ou um erro de índice.</li></ul> |
-| **A pesquisa não retorna resultados** | Página de resultados de pesquisa vazia | <ul><li>Verifique se você pode recuperar os resultados da pesquisa de produtos usando a [consulta productSearch](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#product-search) dos Serviços de merchandising, usando os mesmos cabeçalhos configurados na [configuração da vitrine da Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=pt-BR){target="_blank"}. Se você puder recuperar os dados, isso provavelmente será um problema com a configuração de exibição de catálogo ou um erro de índice.</li><li>Confirme se a ID de exibição de catálogo na [configuração da vitrine do Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=pt-BR){target="_blank"} corresponde à ID de exibição de catálogo em [!DNL Adobe Commerce Optimizer].</li><li>Em [!DNL Adobe Commerce Optimizer], verifique a configuração das políticas, localidade e catálogos de preços que você usou na configuração do cabeçalho da loja.</li><li>Verifique se as [configurações de metadados do atributo](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) estão definidas corretamente para pesquisa.</li></ul> |
+| **Nenhum dado de produto exibido** | As páginas de produto mostram espaços reservados ou erros | <ul><li>Verifique seus valores de configuração em `config.json`</li><li>Na instância [!DNL Adobe Commerce Optimizer], verifique a página Sincronização de Dados para saber se os produtos de exemplo foram carregados. Se nenhum produto estiver disponível, recarregue os dados de amostra ou adicione um produto usando a [API de assimilação de dados](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/using-the-api/#make-your-first-request){target="_blank"}. Espere alguns minutos para que as alterações de configuração se propaguem.</li><li>Tente recuperar os detalhes do produto usando a [consulta de produtos](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#return-product-details){target="_blank"} do Serviço de Merchandising, usando os mesmos cabeçalhos configurados no arquivo `config.json`. Se você puder recuperar os dados, isso provavelmente será um problema com a configuração de exibição de catálogo ou um erro de índice.</li></ul> |
+| **A pesquisa não retorna resultados** | Página de resultados de pesquisa vazia | <ul><li>Verifique se você pode recuperar os resultados da pesquisa de produtos usando a [consulta productSearch](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases/#product-search){target="_blank"} dos Serviços de merchandising usando os mesmos cabeçalhos configurados no arquivo `config.json`. Se você puder recuperar os dados, isso provavelmente será um problema com a configuração de exibição de catálogo ou um erro de índice.</li><li>Confirme se a ID de exibição de catálogo no arquivo `config.json` corresponde à ID de exibição de catálogo em [!DNL Adobe Commerce Optimizer].</li><li>No Adobe Commerce Optimizer, verifique a configuração das políticas, o local e os catálogos de preços usados na configuração do cabeçalho da loja.</li><li>Verifique se as [configurações de metadados do atributo](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata){target="_blank"} estão definidas corretamente para pesquisa.</li></ul> |
 
 ### Lista de verificação de validação
 
@@ -218,28 +218,25 @@ A funcionalidade de pesquisa ![Lista de verificação](/help/assets/icons/Smock_
 
 Se os problemas persistirem:
 
-* Revise a [documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR)
-* Verifique o [[!DNL Adobe Commerce Optimizer] guia do desenvolvedor](https://developer.adobe.com/commerce/services/optimizer/)
-* Visite os [recursos de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/overview)
+* Revise a [documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/){target="_blank"}
+* Verifique o [guia do desenvolvedor do Adobe Commerce Optimizer](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
+* Visite os [recursos de Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview){target="_blank"}
 
 ## Próximas etapas
 
-Depois de configurar e verificar sua loja, você pode:
-
-1. **[Instale a extensão de navegador Sidekick](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=pt-BR#install-and-configure-sidekick)** para editar, visualizar e publicar conteúdo diretamente do seu site.
-
-2. **[Configurar um ambiente de desenvolvimento local](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=pt-BR#set-up-local-environment)** — Crie um ambiente local para personalizar o código e o conteúdo da vitrine.
+* **[Configurar um ambiente de desenvolvimento local](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#set-up-local-environment){target="_blank"}** — Crie um ambiente local para personalizar o código e o conteúdo da vitrine.
+* **[Habilitar o Editor Universal](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/quick-start/universal-editor/){target="_blank"}**-O Editor Universal permite editar o conteúdo da vitrine no contexto da página renderizada. O conteúdo é então salvo em seu projeto de Criação de documentos (DA.live), onde você pode usar a maioria dos aplicativos de orquestração de conteúdo, como localização, publicação em massa, Instantâneos e muito mais.
 
 ### Aprender e explorar
 
 * **[Conclua o caso de uso completo](./use-case/admin-use-case.md)**—Saiba mais sobre a configuração de vitrine e o gerenciamento de catálogos usando o [!DNL Adobe Commerce Optimizer].
 
-* **[Explorar personalização de vitrine](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=pt-BR)**—Saiba mais sobre opções avançadas de instalação e configuração.
+* **[Explorar personalização de vitrine](https://experienceleague.adobe.com/developer/commerce/storefront/setup/){target="_blank"}**—Saiba mais sobre opções avançadas de instalação e configuração.
 
-* **[Use os suplementos do Commerce para personalizar a experiência da vitrine eletrônica](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=pt-BR)**-Adicione componentes pré-compilados para aprimorar sua experiência com a vitrine eletrônica.
+* **[Use os suplementos do Commerce para personalizar a experiência da vitrine eletrônica](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/){target="_blank"}**-Adicione componentes pré-compilados para aprimorar sua experiência com a vitrine eletrônica.
 
-* **Migrar para o Serviço de Configuração de Frente de Loja**—Depois de criar sua frente de loja inicial, você pode migrar a configuração para usar o Serviço de Configuração, que oferece suporte a casos de uso avançados, como configuração de resposta e sobreposições. Para obter detalhes, consulte a documentação do [Serviço de Configuração](https://www.aem.live/docs/config-service-setup) na Adobe Experience Manager.
+* **Migrar para o Serviço de Configuração de Frente de Loja**—Depois de criar sua frente de loja inicial, você pode migrar a configuração para usar o Serviço de Configuração, que oferece suporte a casos de uso avançados, como configuração de resposta e sobreposições. Para obter detalhes, consulte a documentação do [Serviço de Configuração](https://www.aem.live/docs/config-service-setup){target="_blank"} na Adobe Experience Manager.
 
 >[!MORELIKETHIS]
 >
-> Consulte a [documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR) para saber mais sobre a atualização do conteúdo do site e a integração com componentes de front-end e dados de back-end do Commerce.
+> Consulte a [documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/){target="_blank"} para saber mais sobre a atualização do conteúdo do site e a integração com componentes de front-end e dados de back-end do Commerce.
