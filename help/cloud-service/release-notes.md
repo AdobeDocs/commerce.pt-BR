@@ -42,7 +42,7 @@ Um novo `numeric` [tipo de entrada de atributo de produto](https://experiencelea
 
 ### Consultar a configuração do reCAPTCHA para vários formulários em uma solicitação do GraphQL
 
-A consulta [`recaptchaFormConfigs` ](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/recaptcha-form-configs/) pode retornar detalhes de configuração para vários tipos de formulário em uma única solicitação. <!-- ACCS-628 -->
+A consulta [`recaptchaFormConfigs` &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/recaptcha-form-configs/) pode retornar detalhes de configuração para vários tipos de formulário em uma única solicitação. <!-- ACCS-628 -->
 
 ### Exibir todas as ordens da empresa com uma nova permissão B2B
 
@@ -226,7 +226,7 @@ O limite de sites, lojas e visualizações de loja era anteriormente limitado a 
 
 ### Personalizar mensagens de autenticação da loja com códigos de erro estruturados
 
-A [`generateCustomerToken` mutação do GraphQL ](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/){target="_blank"} agora retorna códigos de erro digitados junto com mensagens de erro, permitindo que as vitrines exibam mensagens de interface do usuário específicas por motivo de falha. Os códigos de erro disponíveis são: `CUSTOMER_MISSING_EMAIL`, `CUSTOMER_MISSING_PASSWORD`, `CUSTOMER_SIGN_IN_INCORRECT_OR_LOCKED`, `CUSTOMER_ACCOUNT_NOT_CONFIRMED` e `CUSTOMER_GENERIC_ERROR`. <!-- ACCS-301 -->
+A [`generateCustomerToken` mutação do GraphQL &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/){target="_blank"} agora retorna códigos de erro digitados junto com mensagens de erro, permitindo que as vitrines exibam mensagens de interface do usuário específicas por motivo de falha. Os códigos de erro disponíveis são: `CUSTOMER_MISSING_EMAIL`, `CUSTOMER_MISSING_PASSWORD`, `CUSTOMER_SIGN_IN_INCORRECT_OR_LOCKED`, `CUSTOMER_ACCOUNT_NOT_CONFIRMED` e `CUSTOMER_GENERIC_ERROR`. <!-- ACCS-301 -->
 
 ### Enviar lembretes de email automatizados para inatividade do carrinho e da lista de desejos
 
