@@ -89,7 +89,7 @@ Em ambos os casos, a URL deve estar acessível publicamente e a extensão e o ta
 
 ## Recuperar arquivos por meio do GraphQL
 
-Em [!DNL Adobe Commerce as a Cloud Service], o ponto de extremidade [ do ](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/){target="_blank"}GraphQL do Serviço de Catálogo fornece dados do produto. Os atributos de arquivo aparecem no campo `attributes` em `ProductView`, com o `value` contendo a URL pública completa para o arquivo:
+Em [!DNL Adobe Commerce as a Cloud Service], o ponto de extremidade [&#x200B; do &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/){target="_blank"}GraphQL do Serviço de Catálogo fornece dados do produto. Os atributos de arquivo aparecem no campo `attributes` em `ProductView`, com o `value` contendo a URL pública completa para o arquivo:
 
 ```graphql
 {
