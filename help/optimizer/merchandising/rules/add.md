@@ -1,7 +1,7 @@
 ---
 title: Criar e gerenciar regras
 description: Saiba como criar e gerenciar regras de merchandising para páginas de pesquisa, listas de produtos padrão e de categoria.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
 source-git-commit: 0d1ebaddada8be82645164368ebfbb6dd0a569cd
 workflow-type: tm+mt
@@ -21,7 +21,7 @@ Para criar uma regra, abra o editor de regras, escolha um **tipo de regra** (con
 
    >[!IMPORTANT]
    >
-   >As exibições de catálogo estão atualmente em [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Os participantes do Beta precisarão recriar quaisquer regras de merchandising existentes para aproveitar o novo escopo de exibição do catálogo.
+   >As exibições de catálogo estão atualmente em [beta](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Os participantes do Beta precisarão recriar quaisquer regras de merchandising existentes para aproveitar o novo escopo de exibição do catálogo.
 
 1. Clique em **[!UICONTROL Create rule]** para iniciar o editor de regras.
 
