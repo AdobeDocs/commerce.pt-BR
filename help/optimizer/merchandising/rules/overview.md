@@ -1,34 +1,45 @@
 ---
 title: Regras de merchandising
-description: As regras de merchandising do [!DNL Adobe Commerce Optimizer] combinam lógica e ações para moldar a experiência de compra.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+description: As regras de merchandising do [!DNL Adobe Commerce Optimizer] combinam lógica com ações para moldar resultados de pesquisa, listas de produtos padrão e páginas de categoria.
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: f2a9b5e8-d23d-4855-b424-ca6b40e057df
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+source-git-commit: 8abc0593c166a2dd861cfb78674918de1d0744de
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
 
 # Regras de merchandising
 
-As regras de merchandising se referem a um conjunto de regras que combinam lógica e ações para moldar a experiência de pesquisa de um comprador em sua loja. Você pode usar regras de merchandising para impulsionar, enterrar, fixar ou ocultar produtos a fim de calibrar os resultados da pesquisa em tempo real para apoiar suas metas comerciais.
+As regras de merchandising combinam lógica com ações para moldar como os produtos aparecem nos **resultados de pesquisa**, em **listas de produtos padrão** (**todas as listas de produtos**) e em **páginas de categoria** ([regras de categoria](#category-rules) estão na versão beta). Você pode impulsionar, enterrar, fixar ou ocultar produtos e aplicar a **classificação inteligente** para que as listas reflitam suas metas comerciais.
 
-Cada regra tem três componentes principais:
+Cada **regra de pesquisa** tem três componentes principais:
 
-- Condições - as condições que acionam uma ação.
-- Eventos - As ações que ocorrem quando as condições são atendidas.
-- Detalhes - O nome da regra e o intervalo de tempo e a descrição opcionais.
+- **Condições** - Requisitos baseados em consultas que disparam uma ação quando a pesquisa do comprador é correspondente.
+- **Eventos** - As ações que ocorrem quando as condições são atendidas (classificação manual e eventos relacionados).
+- **Detalhes** - O nome da regra e o intervalo de tempo e a descrição opcionais.
 
-É possível combinar várias condições e ações e agendar uma regra para ficar ativa por um período. Você também pode definir uma regra padrão que é aplicada mesmo quando nenhum termo de pesquisa é definido.
+**As regras de categoria** usam **seleção de categoria** em vez das condições de consulta de pesquisa; a classificação inteligente e a classificação manual funcionam da mesma forma que para pesquisa, com diferenças chamadas em [Criar e Gerenciar Regras](add.md).
+
+É possível combinar várias condições e ações para regras de pesquisa e agendar qualquer regra para ficar ativa por um período. Você também pode definir uma **regra padrão** (**Todas as listas de produtos**) que se aplique quando não houver mais regras de pesquisa ou categoria específicas.
+
+## Regras de categoria {#category-rules}
+
+>[!IMPORTANT]
+>
+>As regras de categoria estão na versão beta.
+
+As **Regras de categoria** controlam o pedido de produto em **páginas de categoria**. Selecione uma ou mais categorias e aplique classificação inteligente (por exemplo, mais visualizada, tendência) e ações manuais, como fixar, aumentar e atenuar. Elas não usam as condições de consulta de pesquisa. Para obter etapas de configuração, tipos de regras e como a classificação se aplica à categoria e à pesquisa, consulte [Criar e Gerenciar Regras](add.md).
 
 ## Requisitos
 
-Uma regra de pesquisa simples pode ter uma única condição e um único evento, enquanto uma regra complexa pode ter até dez condições que acionam até 25 eventos.
+Uma **regra de pesquisa** simples pode ter uma única condição e um único evento, enquanto uma regra complexa pode ter até dez condições que acionam até 25 eventos. **As regras de categoria** seguem os mesmos limites de evento para classificação manual; elas não usam condições de consulta.
+
 As regras podem ter:
 
-- Até dez condições
-- Até 25 eventos
+- Até dez **condições** (somente regras de pesquisa)
+- Até 25 **eventos**
 
 O texto da consulta pode conter:
 
@@ -50,9 +61,11 @@ Ao compor uma regra complexa, pode ser útil anotá-la com recuo para descrever 
 
 ## Regra padrão
 
-Você pode definir uma regra padrão que é aplicada quando nenhum termo de pesquisa é fornecido, ou nenhuma outra regra de pesquisa pode ser aplicada. Se você definir a regra padrão como &quot;Mais comprados&quot;, todas as consultas assumirão como padrão esse tipo de classificação, a menos que sejam supercedidas por um termo de pesquisa mais específico. Nenhum termo de pesquisa pode ser definido para a regra padrão.
+Você pode definir uma regra padrão (**Todas as listagens de produtos**) que se aplica quando nenhum termo de pesquisa é fornecido ou nenhuma outra regra de pesquisa pode ser aplicada. Se você definir a regra padrão como &quot;Mais comprados&quot;, as consultas assumirão como padrão esse tipo de classificação, a menos que sejam substituídas por um termo de pesquisa mais específico. Nenhum termo de pesquisa pode ser definido para a regra padrão. **As regras de categoria** são separadas: elas se aplicam apenas às categorias selecionadas e não substituem a regra de listagem padrão.
 
 ## Ordem de precedência com várias regras
+
+O seguinte se aplica às **regras de pesquisa** e como elas interagem para uma determinada pesquisa. **Regras de categoria** se aplicam por categoria. Consulte [Criar e Gerenciar Regras](add.md#category-rules) para saber como elas se encaixam com as regras padrão e de pesquisa.
 
 Somente uma regra de pesquisa é aplicada a um termo de pesquisa de cada vez.
 Se várias regras forem consideradas aplicáveis a uma frase de pesquisa, todas elas serão aplicadas. Se houver uma colisão entre duas regras —`rule 1` que aumenta o sku1, mas `rule 2` oculta o mesmo SKU — então a regra aplicada mais recentemente (`rule 2`) tem prioridade.

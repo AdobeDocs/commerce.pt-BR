@@ -2,11 +2,11 @@
 title: Visão geral de merchandising
 description: Saiba mais sobre os recursos de merchandising do  [!DNL Adobe Commerce Optimizer].
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: cc0f280c-3934-47ca-b5dc-d83023d8e2be
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+source-git-commit: 8abc0593c166a2dd861cfb78674918de1d0744de
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ A Descoberta de produtos equipe os merchandisers com ferramentas poderosas para 
 
 Com a descoberta de produtos, você pode:
 
-* **Configure [facetas](./facets/overview.md), [regras de merchandising](./rules/overview.md) e [sinônimos](./synonyms/overview.md)** para orientar os compradores para os produtos mais relevantes com o mínimo de atrito.
+* **Configure [aspectos](./facets/overview.md), [regras de categoria e pesquisa de merchandising](./rules/overview.md) e [sinônimos](./synonyms/overview.md)** para orientar os compradores para os produtos mais relevantes com o mínimo de atrito.
 * **Crie experiências de pesquisa intuitivas e orientadas a metas** que refletem sua estratégia de merchandising e prioridades sazonais.
 * **Use facetas dinâmicas orientadas por IA e a reclassificação de resultados** para adaptar os resultados da pesquisa em tempo real com base no comportamento do comprador, aumentando o engajamento e as vendas.
 * **Garanta que os itens promocionais e de alta prioridade apareçam efetivamente** para alinhar os resultados da pesquisa com as metas comerciais.
