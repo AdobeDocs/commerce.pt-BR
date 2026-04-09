@@ -163,7 +163,7 @@ Confirme o fluxo de trabalho de criação e os componentes da loja.
 ▢ O conteúdo é publicado usando o ciclo visualizar → publicar.
 ▢ Controle de qualidade de conteúdo e design concluído no domínio `.aem.live`.
 ▢ Um favicon está configurado e é distribuído corretamente pelo site.
-▢ da.live e os visuais de produto usam [credenciais dedicadas ](https://docs.da.live/administrators/guides/permissions) configuradas.
+▢ da.live e os visuais de produto usam [credenciais dedicadas &#x200B;](https://docs.da.live/administrators/guides/permissions) configuradas.
 ▢ Os drop-ins (carrinho, check-out, PDP, PLP, autenticação, conta) foram [personalizados](../storefront.md) e testados.
 A marca da Loja ▢ reflete os tokens de design CSS, tipografia e cores.
 
