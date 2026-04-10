@@ -3,7 +3,7 @@ title: Notas de versão
 description: As informações da versão mais recente de  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 source-git-commit: d0967674d05018f13dc6c8a562005d65d44e42ab
 workflow-type: tm+mt
@@ -36,7 +36,7 @@ O [!DNL Adobe Commerce Optimizer] funciona com as versões mais recentes da inte
 
 | Extensibilidade | Loja |
 | --- | --- |
-| [integração do AEM Assets](../aem-assets-integration/release-notes.md)<br>[conector do Commerce Optimizer](../aco-connector/release-notes.md) | [Informações sobre a versão da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[changelog da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
+| [integração do AEM Assets](../aem-assets-integration/release-notes.md)<br>[conector do Commerce Optimizer](../aco-connector/release-notes.md) | [Informações sobre a versão da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=pt-BR)<br>[changelog da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=pt-BR) |
 
 >[!ENDSHADEBOX]
 
@@ -54,7 +54,7 @@ O [!DNL Adobe Commerce Optimizer] funciona com as versões mais recentes da inte
 
 | Extensibilidade | Loja |
 | --- | --- |
-| [integração do AEM Assets](../aem-assets-integration/release-notes.md)<br>[conector do Commerce Optimizer](../aco-connector/release-notes.md) | [Informações sobre a versão da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[changelog da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
+| [integração do AEM Assets](../aem-assets-integration/release-notes.md)<br>[conector do Commerce Optimizer](../aco-connector/release-notes.md) | [Informações sobre a versão da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=pt-BR)<br>[changelog da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=pt-BR) |
 
 >[!ENDSHADEBOX]
 
@@ -78,7 +78,7 @@ O [!DNL Adobe Commerce Optimizer] funciona com as versões mais recentes da inte
 
 | Extensibilidade | Loja |
 | --- | --- |
-| [integração do AEM Assets](../aem-assets-integration/release-notes.md)<br>[conector do Commerce Optimizer](../aco-connector/release-notes.md) | [Informações sobre a versão da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[changelog da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
+| [integração do AEM Assets](../aem-assets-integration/release-notes.md)<br>[conector do Commerce Optimizer](../aco-connector/release-notes.md) | [Informações sobre a versão da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=pt-BR)<br>[changelog da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=pt-BR) |
 
 >[!ENDSHADEBOX]
 
@@ -117,7 +117,7 @@ O [!DNL Adobe Commerce Optimizer] funciona com as versões mais recentes da inte
 
 | Extensibilidade | Loja |
 | --- | --- |
-| [integração do AEM Assets](../aem-assets-integration/release-notes.md)<br>[conector do Commerce Optimizer](../aco-connector/release-notes.md) | [Informações sobre a versão da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[changelog da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
+| [integração do AEM Assets](../aem-assets-integration/release-notes.md)<br>[conector do Commerce Optimizer](../aco-connector/release-notes.md) | [Informações sobre a versão da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=pt-BR)<br>[changelog da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=pt-BR) |
 
 >[!ENDSHADEBOX]
 
@@ -144,6 +144,6 @@ O [!DNL Adobe Commerce Optimizer] funciona com as versões mais recentes da inte
 
 | Extensibilidade | Loja |
 | --- | --- |
-| [integração do AEM Assets](../aem-assets-integration/release-notes.md)<br>[conector do Commerce Optimizer](../aco-connector/release-notes.md) | [Informações sobre a versão da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[changelog da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
+| [integração do AEM Assets](../aem-assets-integration/release-notes.md)<br>[conector do Commerce Optimizer](../aco-connector/release-notes.md) | [Informações sobre a versão da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=pt-BR)<br>[changelog da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=pt-BR) |
 
 >[!ENDSHADEBOX]
