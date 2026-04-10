@@ -3,18 +3,123 @@ title: Notas de versão
 description: As informações da versão mais recente de  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+source-git-commit: d0967674d05018f13dc6c8a562005d65d44e42ab
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 4%
+source-wordcount: '666'
+ht-degree: 0%
 
 ---
 
 # Notas de versão
 
 As notas de versão a seguir contêm atualizações para [!DNL Adobe Commerce Optimizer].
+
+## Abril de 2026
+
+**Data de lançamento**: 7 de abril de 2026
+
+>[!BEGINSHADEBOX]
+
+### Regras de catálogo
+
+As regras de merchandising agora incluem [regras de categoria](./merchandising/rules/add.md), para que você possa direcionar uma ou mais categorias e controlar a ordem do produto nas páginas de categoria usando a mesma classificação inteligente e as mesmas ações manuais (fixar, impulsionar, enterrar) da pesquisa.
+
+### Filtro de preço
+
+Os filtros de recomendação agora oferecem suporte a um [filtro de preço](./merchandising/recommendations/filters.md#price) que você pode usar para definir um intervalo de preço mínimo e máximo para produtos.
+
+### Notas de versão adicionais
+
+O [!DNL Adobe Commerce Optimizer] funciona com as versões mais recentes da integração do AEM Assets, o conector do Commerce Optimizer e o [!DNL Adobe Commerce Storefront]. Use os links a seguir para exibir as notas de versão de cada área:
+
+| Extensibilidade | Loja |
+| --- | --- |
+| [integração do AEM Assets](../aem-assets-integration/release-notes.md)<br>[conector do Commerce Optimizer](../aco-connector/release-notes.md) | [Informações sobre a versão da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[changelog da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
+
+>[!ENDSHADEBOX]
+
+## Fevereiro de 2026
+
+**Data de lançamento**: 19 de fevereiro de 2026
+
+>[!BEGINSHADEBOX]
+
+Adição da capacidade de especificar uma exibição de catálogo ao [criar unidades de recomendação](./merchandising/recommendations/create.md) ou [regras de merchandising](./merchandising/rules/add.md).
+
+### Notas de versão adicionais
+
+O [!DNL Adobe Commerce Optimizer] funciona com as versões mais recentes da integração do AEM Assets, o conector do Commerce Optimizer e o [!DNL Adobe Commerce Storefront]. Use os links a seguir para exibir as notas de versão de cada área:
+
+| Extensibilidade | Loja |
+| --- | --- |
+| [integração do AEM Assets](../aem-assets-integration/release-notes.md)<br>[conector do Commerce Optimizer](../aco-connector/release-notes.md) | [Informações sobre a versão da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[changelog da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
+
+>[!ENDSHADEBOX]
+
+## Dezembro de 2025
+
+**Data de lançamento**: 10 de dezembro de 2025
+
+>[!BEGINSHADEBOX]
+
+### Oportunidades
+
+As recomendações de otimização de site baseadas em IA agora estão disponíveis por meio da [integração com o Adobe Sites Optimizer](./manage-results/opportunities.md). Esse recurso ajuda os comerciantes a identificar e solucionar problemas que afetam o desempenho do site de comércio por meio da detecção automatizada e de recomendações inteligentes.
+
+### Camadas do catálogo
+
+Adicionadas [camadas de catálogo](./setup/catalog-layer.md) para que você possa modificar os dados do produto sem alterar os dados de origem, incluindo o gerenciamento de prioridade de camada e a integração com os recursos de correção automática do Adobe Sites Optimizer.
+
+### Notas de versão adicionais
+
+O [!DNL Adobe Commerce Optimizer] funciona com as versões mais recentes da integração do AEM Assets, o conector do Commerce Optimizer e o [!DNL Adobe Commerce Storefront]. Use os links a seguir para exibir as notas de versão de cada área:
+
+| Extensibilidade | Loja |
+| --- | --- |
+| [integração do AEM Assets](../aem-assets-integration/release-notes.md)<br>[conector do Commerce Optimizer](../aco-connector/release-notes.md) | [Informações sobre a versão da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[changelog da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
+
+>[!ENDSHADEBOX]
+
+## Outubro de 2025
+
+**Data de lançamento**: 14 de outubro de 2025
+
+>[!BEGINSHADEBOX]
+
+### Commerce Optimizer Salesforce Commerce Connector
+
+O [!DNL Commerce Optimizer Salesforce Commerce Connector] é um novo kit inicial de integração do App Builder que permite aos administradores e desenvolvedores do Commerce conectar facilmente os dados de catálogo do Salesforce B2C Commerce com o [!DNL Commerce Optimizer].<!--COMOPT-536-->
+
+**Para Administradores:**
+
+* As atualizações de catálogo no Salesforce (produtos, preços, metadados, catálogos de preços) são sincronizadas automaticamente com o Commerce Optimizer — não é necessária nenhuma intervenção manual.
+* A integração funciona independentemente do Adobe Commerce, reduzindo a complexidade e os possíveis pontos de falha.
+* Os administradores podem confiar em atualizações programadas regularmente para garantir dados precisos do catálogo no Commerce Optimizer, melhorando o merchandising e as recomendações de produtos.
+
+**Para Desenvolvedores:**
+
+* O kit inicial fornece uma estrutura simplificada e extensível para assimilar dados de catálogo do Salesforce nos serviços de merchandising do SaaS.
+* Implementações de referência, documentação de design e exemplos de código estão disponíveis para acelerar integrações personalizadas ou solução de problemas.<!--COMOPT-536-->
+
+### Pesquisa em camadas
+
+* Versão do GA para os seguintes recursos de pesquisa avançada: pesquisa em camadas usando `startsWith` e `contains`. [Saiba mais](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#layered-search-and-expansion-of-search-types).
+
+### APIs de categorias
+
+Uma nova API REST de categorias agora está disponível, permitindo que administradores e desenvolvedores criem, atualizem e gerenciem programaticamente várias árvores de categorias para navegação e agrupamento de produtos. A API é compatível com configurações globais e específicas de canal e foi projetada para alta escalabilidade, suportando até 10.000 árvores de categoria e 500 categorias por árvore. Para obter detalhes, consulte [Categorias](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#categories) no _Guia do Desenvolvedor de Serviços de Merchandising_.<!--DCAT-2649-->
+
+### Notas de versão adicionais
+
+O [!DNL Adobe Commerce Optimizer] funciona com as versões mais recentes da integração do AEM Assets, o conector do Commerce Optimizer e o [!DNL Adobe Commerce Storefront]. Use os links a seguir para exibir as notas de versão de cada área:
+
+| Extensibilidade | Loja |
+| --- | --- |
+| [integração do AEM Assets](../aem-assets-integration/release-notes.md)<br>[conector do Commerce Optimizer](../aco-connector/release-notes.md) | [Informações sobre a versão da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[changelog da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
+
+>[!ENDSHADEBOX]
 
 ## Agosto de 2025
 
@@ -32,5 +137,13 @@ Os URLs de produção de base da região da União Europeia são:
 * REST e GraphQL: `https://eu1.api.commerce.adobe.com`
 
 ![criar instância](./assets/create-instance.png){width="600" align="center" zoomable="yes"}
+
+### Notas de versão adicionais
+
+O [!DNL Adobe Commerce Optimizer] funciona com as versões mais recentes da integração do AEM Assets, o conector do Commerce Optimizer e o [!DNL Adobe Commerce Storefront]. Use os links a seguir para exibir as notas de versão de cada área:
+
+| Extensibilidade | Loja |
+| --- | --- |
+| [integração do AEM Assets](../aem-assets-integration/release-notes.md)<br>[conector do Commerce Optimizer](../aco-connector/release-notes.md) | [Informações sobre a versão da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/)<br>[changelog da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/) |
 
 >[!ENDSHADEBOX]
