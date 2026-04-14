@@ -139,7 +139,7 @@ Quando o aplicativo estiver aberto, alterne facilmente entre ambientes como sand
 
 Exiba os detalhes da instância clicando no ícone de informações ao lado do nome da instância.
 
-Painel de detalhes da instância ![[!DNL Adobe Commerce Optimizer] mostrando pontos de extremidade e ID da instância ](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
+Painel de detalhes da instância ![[!DNL Adobe Commerce Optimizer] mostrando pontos de extremidade e ID da instância &#x200B;](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
 
 Observe as seguintes informações principais:
 
