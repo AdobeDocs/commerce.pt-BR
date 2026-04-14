@@ -3,16 +3,16 @@ title: Correspondência automática personalizada
 description: Saiba como a correspondência automática personalizada é particularmente útil para comerciantes com lógica de correspondência complexa ou que dependem de um sistema de terceiros que não pode preencher metadados no AEM Assets.
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
-source-git-commit: 6e8d266aeaec4d47b82b0779dfc3786ccaa7d83a
+source-git-commit: cd7a332dd09840aabcc0efae081ba0a713506897
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
 
 # Correspondência automática personalizada
 
-Se a estratégia de correspondência automática padrão (**correspondência automática OOTB**) não estiver alinhada aos seus requisitos de negócios específicos, selecione a opção de correspondência personalizada. Esta opção oferece suporte ao uso do [Adobe Developer App Builder](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) para desenvolver um aplicativo de correspondência personalizado que lida com lógica de correspondência complexa ou com ativos provenientes de um sistema de terceiros que não pode preencher metadados no AEM Assets.
+Se a estratégia de correspondência automática padrão (**correspondência automática OOTB**) não estiver alinhada aos seus requisitos de negócios específicos, selecione a opção de correspondência personalizada. Esta opção oferece suporte ao uso do [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) para desenvolver um aplicativo de correspondência personalizado que lida com lógica de correspondência complexa ou com ativos provenientes de um sistema de terceiros que não pode preencher metadados no AEM Assets.
 
 ## Configurar correspondência automática personalizada
 
@@ -114,7 +114,7 @@ Você pode baixar o arquivo `workspace.json` da [Adobe Developer Console](https:
 
 ## Pontos de extremidade da API do correspondedor personalizado
 
-Ao criar um aplicativo de correspondência personalizado usando o [App Builder](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, o aplicativo deve expor os seguintes pontos de extremidade:
+Ao criar um aplicativo de correspondência personalizado usando o [App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, o aplicativo deve expor os seguintes pontos de extremidade:
 
 * Ponto de extremidade **Ativo App Builder para URL do produto**
 * Ponto de extremidade **Produto App Builder para URL do ativo**
@@ -171,7 +171,7 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/asset-to-
 | Parâmetro | Tipo de dados | Descrição |
 | --- | --- | --- |
 | `assetId` | String | Representa a ID de ativo atualizada. |
-| `eventData` | String | Retorna a carga de dados associada à ID do ativo. |
+| `eventData` | Objeto | Carga do evento associada ao ativo (por exemplo, metadados de ativos lidos pela correspondência de `eventData.assetMetadata`). |
 
 **Resposta**
 
@@ -246,8 +246,8 @@ POST https://your-app-builder-url/api/v1/web/app-builder-external-rule/product-t
 
 | Parâmetro | Tipo de dados | Descrição |
 | --- | --- | --- |
-| `productSKU` | String | Representa o SKU do produto atualizado. |
-| `eventData` | String | Retorna a carga de dados associada ao SKU do produto. |
+| `productSku` | String | Representa o SKU do produto atualizado. |
+| `eventData` | Objeto | A carga útil do evento associada ao produto (por exemplo, os campos que sua correspondência usa do evento de entrada). |
 
 **Resposta**
 
@@ -283,7 +283,7 @@ O parâmetro `asset_matches` contém os seguintes atributos:
 | Atributo | Tipo de dados | Descrição |
 | --- | --- | --- |
 | `asset_id` | String | A ID do ativo. |
-| `asset_roles` | Matriz | Funções do ativo. Usa [funções de ativos do Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) com suporte, como `thumbnail`, `image`, `small_image` e `swatch_image`. |
+| `asset_roles` | Matriz | Funções do ativo. Usa [funções de ativos do Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) com suporte, como `thumbnail`, `image`, `small_image` e `swatch_image`. |
 | `asset_format` | String | O formato do ativo. Os valores possíveis são `image` e `video`. |
 | `asset_position` | Número | A posição do ativo na galeria de produtos. |
 
