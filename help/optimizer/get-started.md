@@ -3,11 +3,11 @@ title: Introdução
 description: Saiba como começar a usar o  [!DNL Adobe Commerce Optimizer].
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+source-git-commit: aac6efa53d7a8b2907fcbe8d3b97cc38e7178aa5
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1060'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Os desenvolvedores lidam com a implementação técnica e a integração de dado
 | Tarefa | Descrição | Link |
 |---|---|---|
 | **Acessar o Developer Console** | Criar projetos e gerar credenciais | [Developer Console](https://developer.adobe.com/developer-console/docs/guides/getting-started) |
-| **Assimilar Dados do Catálogo** | Importar dados do produto de sistemas existentes | [API de assimilação de dados](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/) |
+| **Assimilar Dados do Catálogo** | Importar dados do produto de sistemas existentes | Para assimilar dados diretamente na Adobe Commerce Optimizer, consulte [API de assimilação de dados](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/){target="_blank"}.<br><br>Para assimilar dados do Commerce em ambientes na nuvem ou locais ou outros sistemas de terceiros, consulte o tópico [Integrações](./integrations/integrations-overview.md){target="_blank"}. |
 | **Configurar a vitrine eletrônica** | Configurar vitrine do Edge Delivery Services | [Instalação da Storefront](./storefront.md) |
 
 ### Tarefas do merchandiser
@@ -139,7 +139,7 @@ Quando o aplicativo estiver aberto, alterne facilmente entre ambientes como sand
 
 Exiba os detalhes da instância clicando no ícone de informações ao lado do nome da instância.
 
-Painel de detalhes da instância ![[!DNL Adobe Commerce Optimizer] mostrando pontos de extremidade e ID da instância &#x200B;](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
+Painel de detalhes da instância ![[!DNL Adobe Commerce Optimizer] mostrando pontos de extremidade e ID da instância ](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
 
 Observe as seguintes informações principais:
 
@@ -217,6 +217,6 @@ Após concluir a instalação:
 ### Obter ajuda
 
 - **Recursos do desenvolvedor**: [Documentação do desenvolvedor](https://developer.adobe.com/commerce/services/optimizer/)
-- **Recursos da vitrine**: [documentação da vitrine da Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR)
-- **Tutoriais**: [Tutoriais do Commerce Optimizer](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
-- **Suporte**: [recursos de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/overview)
+- **Recursos da vitrine**: [documentação da vitrine da Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/)
+- **Tutoriais**: [Tutoriais do Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-commerce-optimizer/overview)
+- **Suporte**: [recursos de Suporte da Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview)

@@ -4,10 +4,10 @@ user-guide-description: Documentação e recursos de  [!DNL Adobe Commerce Optim
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 67e254242d93c6f05d4c204cbc39e50116605c6b
+source-git-commit: fccfd5b75419e2f04537a48098591b53220725a5
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 11%
+source-wordcount: '108'
+ht-degree: 12%
 
 ---
 
@@ -15,6 +15,7 @@ ht-degree: 11%
 
 - [O que é  [!DNL Adobe Commerce Optimizer]?](overview.md)
 - [Introdução](get-started.md)
+- [Integrações](./integrations/integrations-overview.md)
 - [Gerenciamento de usuários e identidades](user-management.md)
 - [Responsabilidade compartilhada](shared-responsibility.md)
 - [Limites e limites](boundaries-limits.md)
@@ -48,10 +49,10 @@ ht-degree: 11%
       - [Tipos](./merchandising/synonyms/type.md)
       - [Práticas recomendadas](./merchandising/synonyms/best-practice.md)
 - Configuração da loja {#setup}
-   - [Exibições do catálogo](./setup/catalog-view.md)
+   - [Exibições de catálogo](./setup/catalog-view.md)
    - [Camadas do catálogo](./setup/catalog-layer.md)
    - [Políticas](./setup/policies.md)
-   - [Catálogos de Preços](./setup/pricebooks.md)
+   - [Catálogos de preços](./setup/pricebooks.md)
    - [Visuais do produto](./setup/product-visuals.md)
    - [Sincronização de dados](./setup/data-sync.md)
    - Eventos {#events}
