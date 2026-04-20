@@ -106,7 +106,7 @@ Detectar quando uma transação de captura pendente entra em um status `Complete
 
 Para garantir que esse processo funcione conforme o esperado, os comerciantes devem configurar um novo trabalho cron. Quando o job estiver configurado para ser executado automaticamente, nenhuma outra intervenção será esperada do comerciante.
 
-Consulte [Configurar trabalhos cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html). Depois de configurado, o novo trabalho é executado a cada 30 minutos para buscar atualizações para pedidos com status `Payment Review`.
+Consulte [Configurar trabalhos cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=pt-BR). Depois de configurado, o novo trabalho é executado a cada 30 minutos para buscar atualizações para pedidos com status `Payment Review`.
 
 Os comerciantes podem verificar o status de pagamento atualizado por meio da exibição do relatório Status de pagamento da ordem.
 
@@ -114,11 +114,11 @@ Os comerciantes podem verificar o status de pagamento atualizado por meio da exi
 
 [!DNL Payment Services] usa dados de pedidos e os combina com dados de pagamentos agregados de outras fontes (incluindo o PayPal) para fornecer relatórios significativos e altamente úteis.
 
-Os dados do pedido são exportados e mantidos no serviço de pagamento. Quando você [altera ou adiciona status de pedido](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status) ou [edita uma exibição de loja](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view), [loja](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/store-details#store-information) ou o nome do site, esses dados são combinados com dados de pagamento e o relatório de status de pagamento de Pedido é preenchido com as informações combinadas.
+Os dados do pedido são exportados e mantidos no serviço de pagamento. Quando você [altera ou adiciona status de pedido](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status) ou [edita uma exibição de loja](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view), [loja](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/setup/store-details#store-information) ou o nome do site, esses dados são combinados com dados de pagamento e o relatório de status de pagamento de Pedido é preenchido com as informações combinadas.
 
 Há duas etapas neste processo:
 
-1. O índice foi alterado nos dados de `ON SAVE` (sempre que as informações de pedido ou de armazenamento são alteradas) ou `BY SCHEDULE` (em um cronograma cron pré-configurado), dependendo de como ele está configurado no [Gerenciamento de Índice](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) no Administrador.
+1. O índice foi alterado nos dados de `ON SAVE` (sempre que as informações de pedido ou de armazenamento são alteradas) ou `BY SCHEDULE` (em um cronograma cron pré-configurado), dependendo de como ele está configurado no [Gerenciamento de Índice](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/index-management) no Administrador.
 
    Por padrão, a indexação de dados ocorre `ON SAVE`, o que significa que sempre que algo for alterado na ordem, no status do pedido, na exibição do armazenamento, no armazenamento ou no site, o processo de reindexação ocorrerá imediatamente.
 
@@ -134,7 +134,7 @@ Os únicos dados exportados e agrupados para fins de relatório são os dados us
 
 Embora a reindexação ocorra por padrão no modo `ON SAVE`, é recomendável indexar no modo `BY SCHEDULE`. O índice `BY SCHEDULE` é executado em um cronograma cron de um minuto, e quaisquer dados alterados são exibidos no relatório de status do pedido dentro de dois minutos após qualquer alteração de dados. Essa reindexação programada ajuda a reduzir qualquer esforço na loja, especialmente se você tiver um grande volume de pedidos recebidos, pois isso acontece em um cronograma (não conforme cada pedido é feito).
 
-Você pode alterar o modo do índice—`ON SAVE` ou `BY SCHEDULE`—[no Administrador](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
+Você pode alterar o modo do índice—`ON SAVE` ou `BY SCHEDULE`—[no Administrador](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 
 Para saber como configurar a exportação de dados, consulte [Configuração da linha de comando](configure-cli.md#configure-data-export).
 
@@ -245,10 +245,10 @@ Os relatórios de status do pagamento da ordem incluem as informações a seguir
 
 | Coluna | Descrição |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | ID do pedido Commerce<br> <br>Para ver as [informações do pedido](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} relacionadas, clique na ID. |
+| [!UICONTROL Order ID] | ID do pedido Commerce<br> <br>Para ver as [informações do pedido](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} relacionadas, clique na ID. |
 | [!UICONTROL Order Date] | Carimbo de data e hora do pedido |
 | [!UICONTROL Authorized Date] | Data/carimbo de data/hora da autorização de pagamento |
-| [!UICONTROL Order Status] | Status atual do pedido [Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} |
+| [!UICONTROL Order Status] | Status atual do pedido [Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} |
 | [!UICONTROL Invoiced] | Status da fatura do pedido—*[!UICONTROL No]*, *[!UICONTROL Partial]* ou *[!UICONTROL Yes]* |
 | [!UICONTROL Shipped] | Status de remessa do pedido—*[!UICONTROL No]*, *[!UICONTROL Partial]* ou *[!UICONTROL Yes]* |
 | [!UICONTROL Order Amt] | Valor total geral do pedido |

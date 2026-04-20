@@ -1,7 +1,7 @@
 ---
 title: Criar e gerenciar recomendações
 description: Saiba como criar e gerenciar recomendações.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
 source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
@@ -25,7 +25,7 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
 
    >[!IMPORTANT]
    >
-   >Este recurso está atualmente em [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Os participantes do Beta precisarão recriar quaisquer unidades de recomendação existentes para aproveitar o novo escopo de exibição do catálogo.
+   >Este recurso está atualmente em [beta](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Os participantes do Beta precisarão recriar quaisquer unidades de recomendação existentes para aproveitar o novo escopo de exibição do catálogo.
 
 1. Clique em **Criar recomendação**.
 
@@ -97,7 +97,7 @@ Depois de criar uma recomendação, é necessário recuperar a ID para implement
 
 1. Na seção **ID de Recomendação**, copie a ID.
 
-1. Use esta ID para configurar o [menu suspenso de recomendação](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/) na sua vitrine da Edge Delivery Services.
+1. Use esta ID para configurar o [menu suspenso de recomendação](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/?lang=pt-BR) na sua vitrine da Edge Delivery Services.
 
 ## Gerenciar recomendações existentes
 
