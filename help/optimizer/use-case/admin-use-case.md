@@ -3,9 +3,9 @@ title: Caso de uso completo do administrador de vitrine e catálogo
 description: Saiba como usar o [!DNL Adobe Commerce Optimizer] para gerenciar seu catálogo usando exibições e políticas de catálogo e como configurar sua loja com base na configuração do catálogo.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
-source-git-commit: 9cb231055df45bbfcff3303c6e1c257c883cb852
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '2161'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Nesse caso de uso, você está trabalhando com:
 
 >[!NOTE]
 >
-> Saiba mais sobre os arquivos de configuração da loja revisando o [Tópico de introdução](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=pt-BR) na documentação da Adobe Commerce Storefront.
+> Saiba mais sobre os arquivos de configuração da loja revisando o [Tópico de introdução](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) na documentação da Adobe Commerce Storefront.
 
 ### ‌Principais pontos
 
@@ -110,7 +110,7 @@ Em última análise, Carvelo tem dois objetivos principais:
 
 ## &#x200B;1. Acessar a instância [!DNL Adobe Commerce Optimizer]
 
-Navegue até o URL do aplicativo do Commerce Optimizer que é pré-configurado com os dados de amostra. Você pode encontrar o URL no Commerce Cloud Manager nos detalhes da instância do seu projeto do Commerce Optimizer ou obtê-lo do administrador do sistema. (Consulte [Acessar uma instância](../get-started.md#access-an-instance).)
+Navegue até o URL do aplicativo do Commerce Optimizer que é pré-configurado com os dados de amostra. Você pode encontrar o URL no Commerce Cloud Manager nos detalhes da instância do seu projeto do Commerce Optimizer ou obtê-lo do administrador do sistema. (Consulte [Acessar uma instância](../get-started.md#access-the-adobe-commerce-optimizer-application).)
 
 Ao iniciar o [!DNL Adobe Commerce Optimizer], você verá o seguinte:
 
@@ -157,7 +157,7 @@ Usando o [!DNL Adobe Commerce Optimizer], o gerente de comércio irá:
 1. Crie uma nova política chamada *Categorias de peças do Celport* para o Celport vender somente peças de freio e suspensão.
 1. Crie uma nova visualização de catálogo para a loja Celport.
 
-   Esta exibição de catálogo usa sua política recém-criada *Categorias de partes do Celport* e as *Marcas da East Coast Inc* existentes para garantir que o Celport possa vender somente as marcas Bolt e Cruz como parte do contrato com a East Coast Inc. A exibição de catálogo do Celport usa o catálogo de preços `east_coast_inc` para dar suporte a cronogramas de preços de produtos que se alinham aos contratos de licenciamento de marca.
+   Esta exibição de catálogo usa sua política recém-criada *Categorias de partes do Celport* e as *Marcas da East Coast Inc* existentes para garantir que a Celport possa vender somente as marcas Bolt e Cruz como parte do contrato com a East Coast Inc. A exibição do catálogo do Celport usa o catálogo de preços `east_coast_inc` para oferecer suporte a agendamentos de preços de produtos que se alinham aos contratos de licenciamento de marca.
 1. Atualize a configuração da loja de comércio para usar os dados da visualização do catálogo do Celport que você criou.
 
 No final desta seção, a Celport estará pronta para vender os produtos da Carvelo.
@@ -257,7 +257,7 @@ Depois de criar a visualização de catálogo do Celport e as políticas associa
 
 ## &#x200B;3. Atualize sua loja
 
-A parte final deste tutorial envolve a atualização da loja que [você já criou](#prerequisite) para entregar dados ao novo catálogo do Celport. Nesta seção, você substitui a ID de visualização do catálogo no arquivo de configuração da loja pela ID de visualização do catálogo do Celport.
+A parte final deste tutorial envolve a atualização da loja que [você já criou](#prerequisites) para entregar dados ao novo catálogo do Celport. Nesta seção, você substitui a ID de visualização do catálogo no arquivo de configuração da loja pela ID de visualização do catálogo do Celport.
 
 1. No ambiente de desenvolvimento local, abra a pasta onde você clonou o repositório GitHub com os arquivos de configuração padrão da loja.
 
@@ -447,4 +447,4 @@ Para continuar aprendendo sobre [!DNL Adobe Commerce Optimizer]:
 - Saiba mais sobre [configurações avançadas de política](../setup/policies.md)
 - Configurar [exibições adicionais do catálogo](../setup/catalog-view.md) para outras concessionárias
 - Revise a [documentação da API](https://developer.adobe.com/commerce/services/optimizer/) para obter gerenciamento programático de catálogos
-- Saiba como configurar componentes integrados para a sua loja do Edge Delivery Services para criar experiências personalizadas de vitrine para descobertas de produtos, recomendações e outros recursos da loja. Consulte a [documentação da Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=pt-BR)
+- Saiba como configurar componentes integrados para a sua loja do Edge Delivery Services para criar experiências personalizadas de vitrine para descobertas de produtos, recomendações e outros recursos da loja. Consulte a [documentação da Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)

@@ -2,7 +2,7 @@
 title: Adicionar regras
 description: Saiba como criar regras de merchandising de pesquisa.
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
-source-git-commit: 085eb0fa1a278701cc889d219db7e8571327a632
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '2067'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Para criar uma regra, a primeira etapa é usar o editor de regras para definir a
 ## Adicionar uma regra
 
 1. No Administrador, vá para **Marketing** > SEO e pesquisa > **[!DNL Live Search]**.
-1. Defina o **Escopo** para identificar a [exibição de repositório](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=pt-BR#scope-settings) onde a regra se aplica.
+1. Defina o **Escopo** para identificar a [exibição de repositório](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) onde a regra se aplica.
 1. Clique no espaço de trabalho **Pesquisar Merchandising**.
 1. Clique em **Adicionar regra** para iniciar o editor de regras.
 
@@ -53,7 +53,7 @@ As condições são os requisitos para acionar um evento. Uma regra pode ter at�
 1. Para testar outras consultas, altere o texto da consulta na caixa de pesquisa *Testar sua regra* e pressione **Retornar**.
 Inicialmente, o painel de teste renderiza a consulta na caixa de pesquisa Condições. Mas agora ele está renderizando a consulta a partir da caixa de query de teste. O painel de teste renderiza apenas uma consulta por vez.
 1. Se você gostar do resultado, atualize o texto na caixa de pesquisa *Condições*. Em seguida, clique em qualquer lugar na página para atualizar os resultados no painel de teste.
-1. Para criar uma regra simples com uma condição, vá para a Etapa 3: [Adicionar eventos](#events).
+1. Para criar uma regra simples com uma condição, vá para a Etapa 3: [Adicionar eventos](#manual-ranking).
 
 ### Várias condições
 

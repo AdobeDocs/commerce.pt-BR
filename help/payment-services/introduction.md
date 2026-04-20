@@ -4,13 +4,13 @@ description: Saiba como instalar e usar o [!DNL Payment Services] como uma solu�
 role: User
 level: Intermediate
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+exl-id: 191467ab-4c5e-4df1-b423-7a470a4910ea
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 0%
 
 ---
-
 
 # Introdução ao [!DNL Payment Services]
 
@@ -52,4 +52,4 @@ A demanda é alta por uma experiência Commerce de qualidade, e um processo de p
 
 >[!NOTE]
 >
-> Alguns dos recursos mencionados aqui podem ainda não estar disponíveis em seu mercado. Consulte [Compatibilidade](compatibility.md) para obter mais informações.
+> Alguns dos recursos mencionados aqui podem ainda não estar disponíveis em seu mercado. Consulte [Compatibilidade](compatibility.md#standard-vs-advanced-payment-services-experience) para obter mais informações.

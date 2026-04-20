@@ -2,8 +2,8 @@
 title: Adobe Commerce Optimizer Connector
 description: Saiba como conectar seus dados da nuvem do Commerce ou do projeto local à Adobe Commerce Optimizer
 feature: Personalization, Integration, Configuration
-badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
-source-git-commit: 11bb5df2488a017065db44504f35612fe54e284c
+badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 0%
@@ -36,7 +36,7 @@ O Conector permite vários workflows principais:
 
 * **Exportar dados do catálogo do Commerce para[!DNL Adobe Commerce Optimizer]**—os dados do catálogo de preços e preços são exportados no nível do site e do grupo de clientes. Os dados de atributos do produto e do produto são exportados no nível `store view`. Por padrão, a sincronização de dados do catálogo é habilitada para todos os escopos do Commerce (sites e exibições de loja).
 
-  Para habilitar esse fluxo de trabalho, instale a extensão PHP `adobe-commerce/commerce-data-export-aco-adapter`, revise a configuração do exportador e habilite a integração entre o Commerce e o Commerce Optimizer com o Administrador do Commerce. Para obter instruções detalhadas, consulte [Introdução](#get-started).
+  Para habilitar esse fluxo de trabalho, instale a extensão PHP `adobe-commerce/commerce-data-export-aco-adapter`, revise a configuração do exportador e habilite a integração entre o Commerce e o Commerce Optimizer com o Administrador do Commerce. Para obter instruções detalhadas, consulte [Introdução](get-started.md).
 
 * **Mapear o site da Commerce e armazenar dados para exportação para[!DNL Adobe Commerce Optimizer]**
 

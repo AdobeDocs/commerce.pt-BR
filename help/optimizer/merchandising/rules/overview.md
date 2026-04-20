@@ -1,9 +1,9 @@
 ---
 title: Regras de merchandising
 description: As regras de merchandising do [!DNL Adobe Commerce Optimizer] combinam lógica com ações para moldar resultados de pesquisa, listas de produtos padrão e páginas de categoria.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: f2a9b5e8-d23d-4855-b424-ca6b40e057df
-source-git-commit: 8abc0593c166a2dd861cfb78674918de1d0744de
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 0%
@@ -65,7 +65,7 @@ Você pode definir uma regra padrão (**Todas as listagens de produtos**) que se
 
 ## Ordem de precedência com várias regras
 
-O seguinte se aplica às **regras de pesquisa** e como elas interagem para uma determinada pesquisa. **Regras de categoria** se aplicam por categoria. Consulte [Criar e Gerenciar Regras](add.md#category-rules) para saber como elas se encaixam com as regras padrão e de pesquisa.
+O seguinte se aplica às **regras de pesquisa** e como elas interagem para uma determinada pesquisa. **Regras de categoria** se aplicam por categoria. Consulte [Criar e Gerenciar Regras](add.md) para saber como elas se encaixam com as regras padrão e de pesquisa.
 
 Somente uma regra de pesquisa é aplicada a um termo de pesquisa de cada vez.
 Se várias regras forem consideradas aplicáveis a uma frase de pesquisa, todas elas serão aplicadas. Se houver uma colisão entre duas regras —`rule 1` que aumenta o sku1, mas `rule 2` oculta o mesmo SKU — então a regra aplicada mais recentemente (`rule 2`) tem prioridade.

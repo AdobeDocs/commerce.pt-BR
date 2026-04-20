@@ -1,9 +1,9 @@
 ---
 title: Criar e gerenciar recomendações
 description: Saiba como criar e gerenciar recomendações.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
-source-git-commit: a0863a0d54c5c26b1ae207fd36777e0c515caaf0
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '1564'
 ht-degree: 0%
@@ -19,13 +19,13 @@ _Unidade de recomendação_
 
 Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [coletar dados](../../manage-results/recommendation-performance.md) para medir impressões, exibições, cliques e assim por diante. A tabela Recomendações exibe as métricas de cada unidade de recomendação para ajudá-lo a tomar decisões de negócios informadas.
 
-1. Na barra lateral _[!DNL Adobe Commerce Optimizer]_, vá para_ Merchandising _>**Recommendations**&#x200B;para exibir o espaço de trabalho_ Recommendations _.
+1. Na barra lateral _[!DNL Adobe Commerce Optimizer]_, vá para_ Merchandising _>**Recommendations**para exibir o espaço de trabalho_ Recommendations _.
 
 1. No campo **Exibição de catálogo**, selecione a exibição de catálogo na qual deseja que a recomendação fique disponível. Saiba mais sobre [como usar exibições de catálogo para recomendações](../../manage-results/recommendation-performance.md#select-catalog-view).
 
    >[!IMPORTANT]
    >
-   >Este recurso está atualmente em [beta](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Os participantes do Beta precisarão recriar quaisquer unidades de recomendação existentes para aproveitar o novo escopo de exibição do catálogo.
+   >Este recurso está atualmente em [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Os participantes do Beta precisarão recriar quaisquer unidades de recomendação existentes para aproveitar o novo escopo de exibição do catálogo.
 
 1. Clique em **Criar recomendação**.
 
@@ -97,7 +97,7 @@ Depois de criar uma recomendação, é necessário recuperar a ID para implement
 
 1. Na seção **ID de Recomendação**, copie a ID.
 
-1. Use esta ID para configurar o [menu suspenso de recomendação](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/?lang=pt-BR) na sua vitrine da Edge Delivery Services.
+1. Use esta ID para configurar o [menu suspenso de recomendação](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/) na sua vitrine da Edge Delivery Services.
 
 ## Gerenciar recomendações existentes
 
@@ -136,16 +136,16 @@ Como resultado dessas variáveis, o percentual do indicador de disponibilidade p
 
 Os indicadores de prontidão são calculados com base em dois fatores:
 
-- Tamanho suficiente do conjunto de resultados: há resultados suficientes sendo retornados na maioria dos cenários para evitar o uso de [recomendações de backup](../../setup/events/overview.md#backuprecs)?
+- Tamanho suficiente do conjunto de resultados: há resultados suficientes sendo retornados na maioria dos cenários para evitar o uso de [recomendações de backup](../../setup/events/overview.md#backup-recommendations)?
 - Variedade suficiente do conjunto de resultados: os produtos retornados representam uma variedade de produtos do catálogo? O objetivo com esse fator é evitar que uma minoria de produtos seja os únicos itens recomendados no site.
 
 Com base nos fatores acima, um valor de disponibilidade é calculado e exibido da seguinte maneira:
 
 - 75% ou mais significa que as recomendações sugeridas para esse tipo de recomendação são altamente relevantes.
 - Pelo menos 50% significa que as recomendações sugeridas para esse tipo de recomendação são menos relevantes.
-- Menos de 50% significa que as recomendações sugeridas para esse tipo de recomendação podem não ser relevantes. Neste caso, [recomendações de backup](../../setup/events/overview.md#backuprecs) são usadas.
+- Menos de 50% significa que as recomendações sugeridas para esse tipo de recomendação podem não ser relevantes. Neste caso, [recomendações de backup](../../setup/events/overview.md#backup-recommendations) são usadas.
 
-Saiba mais sobre [por que os indicadores de disponibilidade podem estar baixos](#what-to-do-if-the-readiness-indicator-percent-is-low).
+Saiba mais sobre [por que os indicadores de disponibilidade podem estar baixos](#what-to-do-if-the-readiness-indicator-is-low).
 
 ### Baseado em estática
 
@@ -192,7 +192,7 @@ O indicador de prontidão para tipos de recomendação que dependem dos dados do
 
 #### O que fazer se o indicador de disponibilidade estiver baixo
 
-Uma baixa porcentagem de prontidão indica que não há muitos produtos do catálogo elegíveis para serem incluídos nas recomendações para esse tipo de recomendação. Isso significa que há uma alta probabilidade de [recomendações de backup](../../setup/events/overview.md#backuprecs) serem retornadas se você implantar esse tipo de recomendação mesmo assim.
+Uma baixa porcentagem de prontidão indica que não há muitos produtos do catálogo elegíveis para serem incluídos nas recomendações para esse tipo de recomendação. Isso significa que há uma alta probabilidade de [recomendações de backup](../../setup/events/overview.md#backup-recommendations) serem retornadas se você implantar esse tipo de recomendação mesmo assim.
 
 >[!IMPORTANT]
 >

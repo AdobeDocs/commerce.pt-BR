@@ -4,7 +4,7 @@ description: Saiba como adicionar atributos de pedido personalizados aos dados d
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: dcd0b9e7-8d36-4bde-b226-ac19e83f00e4
-source-git-commit: 5b1387e18e059c938aca600cc31951a3f5289e7e
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 2%
@@ -349,7 +349,7 @@ ComponentRegistrar::register(
 
 Para garantir que os novos atributos de pedido personalizados possam ser assimilados pelo esquema [!DNL Commerce] no Experience Platform, é necessário estender o esquema para incluir esses campos personalizados.
 
-Para saber como estender um esquema XDM existente para incluir esses campos personalizados, consulte o artigo [Criar e editar esquemas na interface](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) na documentação da Experience Platform. O campo ID do locatário é gerado dinamicamente; no entanto, a estrutura do campo deve se parecer com o exemplo fornecido na documentação do Experience Platform.
+Para saber como estender um esquema XDM existente para incluir esses campos personalizados, consulte o artigo [Criar e editar esquemas na interface](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) na documentação da Experience Platform. O campo ID do locatário é gerado dinamicamente; no entanto, a estrutura do campo deve se parecer com o exemplo fornecido na documentação do Experience Platform.
 
 >[!IMPORTANT]
 >
@@ -372,5 +372,5 @@ Exiba a guia [Personalização de Dados](connect-data.md#data-customization) no 
 Se você vir a mensagem `No custom order attributes found.` na guia **[!UICONTROL Data Customization]**, confirme o seguinte:
 
 1. Você concluiu os pré-requisitos para habilitar a [extensão do Conector de Dados](overview.md#prerequisites).
-1. Você configurou [atributos de pedido personalizados](#add-custom-order-attributes).
+1. Você configurou [atributos de pedido personalizados](#add-custom-attributes-to-orders).
 1. Pelo menos um evento de pedido foi gerado.

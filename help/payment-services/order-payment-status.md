@@ -5,7 +5,7 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders, Paas, Saas
-source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 0%
@@ -71,7 +71,7 @@ A visualização de dados do status do pagamento do pedido inclui as seguintes i
 
 A visualização do relatório Status do pagamento do pedido está disponível na visualização Início dos Serviços de pagamento. Ele inclui status detalhados — pagamento, faturado, enviado, reembolso, contestação e muito mais — para todas as transações.
 
-Na barra lateral _Admin_, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**&#x200B;para ver a exibição detalhada do relatório de status de pagamento de pedido.
+Na barra lateral _Admin_, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**para ver a exibição detalhada do relatório de status de pagamento de pedido.
 
 ![Transações de status de pagamento de pedido no Administrador](assets/orders-report-data.png){width="800" zoomable="yes"}
 
@@ -106,7 +106,7 @@ Detectar quando uma transação de captura pendente entra em um status `Complete
 
 Para garantir que esse processo funcione conforme o esperado, os comerciantes devem configurar um novo trabalho cron. Quando o job estiver configurado para ser executado automaticamente, nenhuma outra intervenção será esperada do comerciante.
 
-Consulte [Configurar trabalhos cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=pt-BR). Depois de configurado, o novo trabalho é executado a cada 30 minutos para buscar atualizações para pedidos com status `Payment Review`.
+Consulte [Configurar trabalhos cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html). Depois de configurado, o novo trabalho é executado a cada 30 minutos para buscar atualizações para pedidos com status `Payment Review`.
 
 Os comerciantes podem verificar o status de pagamento atualizado por meio da exibição do relatório Status de pagamento da ordem.
 
@@ -114,11 +114,11 @@ Os comerciantes podem verificar o status de pagamento atualizado por meio da exi
 
 [!DNL Payment Services] usa dados de pedidos e os combina com dados de pagamentos agregados de outras fontes (incluindo o PayPal) para fornecer relatórios significativos e altamente úteis.
 
-Os dados do pedido são exportados e mantidos no serviço de pagamento. Quando você [altera ou adiciona status de pedido](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status) ou [edita uma exibição de loja](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view), [loja](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/setup/store-details#store-information) ou o nome do site, esses dados são combinados com dados de pagamento e o relatório de status de pagamento de Pedido é preenchido com as informações combinadas.
+Os dados do pedido são exportados e mantidos no serviço de pagamento. Quando você [altera ou adiciona status de pedido](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status) ou [edita uma exibição de loja](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view), [loja](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/store-details#store-information) ou o nome do site, esses dados são combinados com dados de pagamento e o relatório de status de pagamento de Pedido é preenchido com as informações combinadas.
 
 Há duas etapas neste processo:
 
-1. O índice foi alterado nos dados de `ON SAVE` (sempre que as informações de pedido ou de armazenamento são alteradas) ou `BY SCHEDULE` (em um cronograma cron pré-configurado), dependendo de como ele está configurado no [Gerenciamento de Índice](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/index-management) no Administrador.
+1. O índice foi alterado nos dados de `ON SAVE` (sempre que as informações de pedido ou de armazenamento são alteradas) ou `BY SCHEDULE` (em um cronograma cron pré-configurado), dependendo de como ele está configurado no [Gerenciamento de Índice](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) no Administrador.
 
    Por padrão, a indexação de dados ocorre `ON SAVE`, o que significa que sempre que algo for alterado na ordem, no status do pedido, na exibição do armazenamento, no armazenamento ou no site, o processo de reindexação ocorrerá imediatamente.
 
@@ -134,7 +134,7 @@ Os únicos dados exportados e agrupados para fins de relatório são os dados us
 
 Embora a reindexação ocorra por padrão no modo `ON SAVE`, é recomendável indexar no modo `BY SCHEDULE`. O índice `BY SCHEDULE` é executado em um cronograma cron de um minuto, e quaisquer dados alterados são exibidos no relatório de status do pedido dentro de dois minutos após qualquer alteração de dados. Essa reindexação programada ajuda a reduzir qualquer esforço na loja, especialmente se você tiver um grande volume de pedidos recebidos, pois isso acontece em um cronograma (não conforme cada pedido é feito).
 
-Você pode alterar o modo do índice—`ON SAVE` ou `BY SCHEDULE`—[no Administrador](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
+Você pode alterar o modo do índice—`ON SAVE` ou `BY SCHEDULE`—[no Administrador](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 
 Para saber como configurar a exportação de dados, consulte [Configuração da linha de comando](configure-cli.md#configure-data-export).
 
@@ -144,18 +144,18 @@ Na exibição do relatório Status de pagamento de pedido, é possível selecion
 
 ![Seleção de fontes de dados](assets/datasource.png){width="300" zoomable="yes"}
 
-Se _[!UICONTROL Live]_&#x200B;for a fonte de dados selecionada, você poderá ver as informações do relatório de suas lojas que usam [!DNL Payment Services] no modo de produção. Se&#x200B;_[!UICONTROL Sandbox]_ for a fonte de dados selecionada, você poderá ver informações do relatório para o modo sandbox.
+Se _[!UICONTROL Live]_for a fonte de dados selecionada, você poderá ver as informações do relatório de suas lojas que usam [!DNL Payment Services] no modo de produção. Se_[!UICONTROL Sandbox]_ for a fonte de dados selecionada, você poderá ver informações do relatório para o modo sandbox.
 
 As seleções de fonte de dados funcionam da seguinte maneira:
 
-* Se você não tiver armazenamentos que usem [!DNL Payment Services] no modo Online, a seleção da fonte de dados assumirá _[!UICONTROL Sandbox]_&#x200B;como padrão.
-* Se você tiver armazenamentos (um ou vários) que usam [!DNL Payment Services] no modo Online, a seleção da fonte de dados assumirá _[!UICONTROL Live]_&#x200B;como padrão.
+* Se você não tiver armazenamentos que usem [!DNL Payment Services] no modo Online, a seleção da fonte de dados assumirá _[!UICONTROL Sandbox]_como padrão.
+* Se você tiver armazenamentos (um ou vários) que usam [!DNL Payment Services] no modo Online, a seleção da fonte de dados assumirá _[!UICONTROL Live]_como padrão.
 * As exportações de relatórios sempre seguem a seleção da fonte de dados.
 
 Para selecionar a fonte de dados para seu relatório [!UICONTROL Order Payment Status]:
 
 1. Na barra lateral _Admin_, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]**.
-1. Clique no filtro seletor _[!UICONTROL Data source]_&#x200B;e selecione **[!UICONTROL Live]**&#x200B;ou **[!UICONTROL Sandbox]**.
+1. Clique no filtro seletor _[!UICONTROL Data source]_e selecione **[!UICONTROL Live]**ou **[!UICONTROL Sandbox]**.
 
    Os resultados do relatório são gerados novamente com base na fonte de dados selecionada.
 
@@ -175,7 +175,7 @@ Na exibição do relatório Status de pagamento da ordem, você pode filtrar os 
 1. Na barra lateral _Admin_, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Clique no seletor **[!UICONTROL Filter]**.
 1. Alterne as opções de _Status de Pagamento_ para ver os resultados do relatório somente para os status de pagamento de ordem selecionados.
-1. Exibir resultados do relatório dentro de um intervalo de valores de ordem inserindo um _[!UICONTROL Min Order Amount]_&#x200B;ou _[!UICONTROL Max Order Amount_].
+1. Exibir resultados do relatório dentro de um intervalo de valores de ordem inserindo um _[!UICONTROL Min Order Amount]_ou _[!UICONTROL Max Order Amount_].
 1. Clique em **[!UICONTROL Hide filters]** para ocultar o filtro.
 
 ### Mostrar e ocultar colunas
@@ -208,7 +208,7 @@ A coluna Status da restituição mostra o status atual de qualquer restituição
 
 ### Atualizar dados do relatório
 
-A exibição do relatório Status do pagamento da ordem mostra um carimbo de data/hora de _[!UICONTROL Last updated]_&#x200B;que mostra a última vez que as informações do relatório foram atualizadas. Por padrão, os dados do relatório de status de pagamento da ordem são atualizados automaticamente a cada três horas.
+A exibição do relatório Status do pagamento da ordem mostra um carimbo de data/hora de _[!UICONTROL Last updated]_que mostra a última vez que as informações do relatório foram atualizadas. Por padrão, os dados do relatório de status de pagamento da ordem são atualizados automaticamente a cada três horas.
 
 Você também pode forçar manualmente uma atualização dos dados do relatório Status de pagamento da ordem para ver as informações mais atualizadas do relatório.
 
@@ -223,7 +223,7 @@ Você pode visualizar todas as contestações nos pedidos da sua loja e navegar 
 
 1. Na barra lateral _Admin_, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Navegue até **[!UICONTROL Disputes column]**.
-1. Exiba todas as contestações de uma ordem específica e consulte [o status da contestação](#order-payment-status-information).
+1. Exiba todas as contestações de uma ordem específica e consulte [o status da contestação](#statuses-information).
 1. Revise os detalhes da contestação no [Centro de Resolução do PayPal](https://www.paypal.com/us/cshelp/article/what-is-the-resolution-center-help246) clicando no link da ID de contestação que começa com _PP-D-_.
 1. Tomar as medidas apropriadas para a disputa, conforme necessário.
 
@@ -234,7 +234,7 @@ Você pode visualizar todas as contestações nos pedidos da sua loja e navegar 
 É possível baixar um arquivo .csv com todos os status visíveis na grade de exibição do status do Order payment, seja visualizando os status padrão de 30 dias ou um período personalizado.
 
 1. Na barra lateral _Admin_, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
-1. Se você quiser ver os status de um período diferente dos últimos 30 dias, [personalize o período de intervalo de datas para seus status](#customize-dates-timeframe).
+1. Se você quiser ver os status de um período diferente dos últimos 30 dias, [personalize o período de intervalo de datas para seus status](#customize-order-dates-timeframe).
 1. Clique no ícone _Download_ (![ícone de download](assets/icon-download.png){width="20" zoomable="yes"}).
 
 Os status do seu pedido de pagamento são baixados em um formato .csv.
@@ -245,10 +245,10 @@ Os relatórios de status do pagamento da ordem incluem as informações a seguir
 
 | Coluna | Descrição |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | ID do pedido Commerce<br> <br>Para ver as [informações do pedido](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} relacionadas, clique na ID. |
+| [!UICONTROL Order ID] | ID do pedido Commerce<br> <br>Para ver as [informações do pedido](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders){target="_blank"} relacionadas, clique na ID. |
 | [!UICONTROL Order Date] | Carimbo de data e hora do pedido |
 | [!UICONTROL Authorized Date] | Data/carimbo de data/hora da autorização de pagamento |
-| [!UICONTROL Order Status] | Status atual do pedido [Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} |
+| [!UICONTROL Order Status] | Status atual do pedido [Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status){target="_blank"} |
 | [!UICONTROL Invoiced] | Status da fatura do pedido—*[!UICONTROL No]*, *[!UICONTROL Partial]* ou *[!UICONTROL Yes]* |
 | [!UICONTROL Shipped] | Status de remessa do pedido—*[!UICONTROL No]*, *[!UICONTROL Partial]* ou *[!UICONTROL Yes]* |
 | [!UICONTROL Order Amt] | Valor total geral do pedido |

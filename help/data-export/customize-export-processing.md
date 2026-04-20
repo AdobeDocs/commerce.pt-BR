@@ -3,7 +3,7 @@ title: Melhore o desempenho da exportação de dados SaaS
 description: Saiba como melhorar o desempenho da exportação de dados SaaS para Serviços da Commerce usando um modo de exportação de dados de vários threads.
 role: Admin, Developer
 exl-id: 7151118c-5e30-44d0-b515-5801a73e44ec
-source-git-commit: 9b28da0bf861a266e9d679ba59470f46d9a89c1c
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Lembre-se de que um planejamento criterioso, incluindo a estimativa do volume de
 
 ## Configurar multi-threading
 
-O modo de vários threads tem suporte para todos os [métodos de sincronização](data-synchronization.md#synchronization-process)—sincronização completa, sincronização parcial e sincronização de itens com falha. Para configurar multi-threading, especifique o número de threads e o tamanho do lote a serem usados durante a sincronização.
+O modo de vários threads tem suporte para todos os [métodos de sincronização](data-synchronization.md#view-and-manage-the-synchronization-process)—sincronização completa, sincronização parcial e sincronização de itens com falha. Para configurar multi-threading, especifique o número de threads e o tamanho do lote a serem usados durante a sincronização.
 
 - `thread-count` é o número de threads ativados para processar entidades. O padrão `thread-count` é `1`.
 - `batch-size` é o número de entidades processadas em uma iteração. O padrão `batch-size` são `100` registros para todos os feeds, exceto o feed de preço. Para o feed de preço, o valor padrão é `500` registros.
@@ -64,7 +64,7 @@ As opções especificadas na linha de comando substituem a configuração de exp
 
 Para processar todas as operações de exportação de dados usando multi-threading, os integradores de sistema ou desenvolvedores podem modificar o número de threads e o tamanho do lote para cada feed na configuração do aplicativo do Commerce.
 
-Essas alterações podem ser aplicadas adicionando valores personalizados à [seção do sistema](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) do arquivo de configuração, `app/etc/config.php`.
+Essas alterações podem ser aplicadas adicionando valores personalizados à [seção do sistema](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) do arquivo de configuração, `app/etc/config.php`.
 
 **Exemplo: configuração de multithreading para produtos e preços**
 

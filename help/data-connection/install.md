@@ -3,7 +3,8 @@ title: Instalar [!DNL Data Connection]
 description: Saiba como instalar, atualizar e desinstalar a extensão  [!DNL Data Connection]  do Adobe Commerce.
 role: Admin, Developer
 feature: Install
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 853ef2d1-85cb-41a8-9b07-887a758ed401
+source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 # Instalar [!DNL Data Connection]
 
-Antes de instalar a extensão, [revise os pré-requisitos](overview.md#prereqs).
+Antes de instalar a extensão, [revise os pré-requisitos](overview.md#prerequisites).
 
 ## Instalar a extensão
 
@@ -76,7 +77,7 @@ Finalize a instalação com base no tipo de implantação: Adobe Commerce na inf
 
 #### Na infraestrutura em nuvem
 
-Na infraestrutura do Adobe Commerce na nuvem, habilite a variável global `ENABLE_EVENTING` em `.magento.env.yaml`. [Saiba mais](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html?lang=pt-BR#enable_eventing).
+Na infraestrutura do Adobe Commerce na nuvem, habilite a variável global `ENABLE_EVENTING` em `.magento.env.yaml`. [Saiba mais](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html#enable_eventing).
 
 ```bash
 stage:
@@ -164,4 +165,4 @@ Para atualizar para uma versão principal, como de 2.0.0 para 3.0.0, edite o arq
 
 ## Desinstalar a extensão [!DNL Data Connection] {#uninstall}
 
-Para desinstalar a extensão [!DNL Data Connection], consulte [desinstalar módulos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html?lang=pt-BR).
+Para desinstalar a extensão [!DNL Data Connection], consulte [desinstalar módulos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).
