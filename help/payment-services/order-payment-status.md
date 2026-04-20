@@ -71,7 +71,7 @@ A visualização de dados do status do pagamento do pedido inclui as seguintes i
 
 A visualização do relatório Status do pagamento do pedido está disponível na visualização Início dos Serviços de pagamento. Ele inclui status detalhados — pagamento, faturado, enviado, reembolso, contestação e muito mais — para todas as transações.
 
-Na barra lateral _Admin_, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**para ver a exibição detalhada do relatório de status de pagamento de pedido.
+Na barra lateral _Admin_, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**&#x200B;para ver a exibição detalhada do relatório de status de pagamento de pedido.
 
 ![Transações de status de pagamento de pedido no Administrador](assets/orders-report-data.png){width="800" zoomable="yes"}
 
@@ -144,18 +144,18 @@ Na exibição do relatório Status de pagamento de pedido, é possível selecion
 
 ![Seleção de fontes de dados](assets/datasource.png){width="300" zoomable="yes"}
 
-Se _[!UICONTROL Live]_for a fonte de dados selecionada, você poderá ver as informações do relatório de suas lojas que usam [!DNL Payment Services] no modo de produção. Se_[!UICONTROL Sandbox]_ for a fonte de dados selecionada, você poderá ver informações do relatório para o modo sandbox.
+Se _[!UICONTROL Live]_&#x200B;for a fonte de dados selecionada, você poderá ver as informações do relatório de suas lojas que usam [!DNL Payment Services] no modo de produção. Se&#x200B;_[!UICONTROL Sandbox]_ for a fonte de dados selecionada, você poderá ver informações do relatório para o modo sandbox.
 
 As seleções de fonte de dados funcionam da seguinte maneira:
 
-* Se você não tiver armazenamentos que usem [!DNL Payment Services] no modo Online, a seleção da fonte de dados assumirá _[!UICONTROL Sandbox]_como padrão.
-* Se você tiver armazenamentos (um ou vários) que usam [!DNL Payment Services] no modo Online, a seleção da fonte de dados assumirá _[!UICONTROL Live]_como padrão.
+* Se você não tiver armazenamentos que usem [!DNL Payment Services] no modo Online, a seleção da fonte de dados assumirá _[!UICONTROL Sandbox]_&#x200B;como padrão.
+* Se você tiver armazenamentos (um ou vários) que usam [!DNL Payment Services] no modo Online, a seleção da fonte de dados assumirá _[!UICONTROL Live]_&#x200B;como padrão.
 * As exportações de relatórios sempre seguem a seleção da fonte de dados.
 
 Para selecionar a fonte de dados para seu relatório [!UICONTROL Order Payment Status]:
 
 1. Na barra lateral _Admin_, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]**.
-1. Clique no filtro seletor _[!UICONTROL Data source]_e selecione **[!UICONTROL Live]**ou **[!UICONTROL Sandbox]**.
+1. Clique no filtro seletor _[!UICONTROL Data source]_&#x200B;e selecione **[!UICONTROL Live]**&#x200B;ou **[!UICONTROL Sandbox]**.
 
    Os resultados do relatório são gerados novamente com base na fonte de dados selecionada.
 
@@ -175,7 +175,7 @@ Na exibição do relatório Status de pagamento da ordem, você pode filtrar os 
 1. Na barra lateral _Admin_, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Clique no seletor **[!UICONTROL Filter]**.
 1. Alterne as opções de _Status de Pagamento_ para ver os resultados do relatório somente para os status de pagamento de ordem selecionados.
-1. Exibir resultados do relatório dentro de um intervalo de valores de ordem inserindo um _[!UICONTROL Min Order Amount]_ou _[!UICONTROL Max Order Amount_].
+1. Exibir resultados do relatório dentro de um intervalo de valores de ordem inserindo um _[!UICONTROL Min Order Amount]_&#x200B;ou _[!UICONTROL Max Order Amount_].
 1. Clique em **[!UICONTROL Hide filters]** para ocultar o filtro.
 
 ### Mostrar e ocultar colunas
@@ -208,7 +208,7 @@ A coluna Status da restituição mostra o status atual de qualquer restituição
 
 ### Atualizar dados do relatório
 
-A exibição do relatório Status do pagamento da ordem mostra um carimbo de data/hora de _[!UICONTROL Last updated]_que mostra a última vez que as informações do relatório foram atualizadas. Por padrão, os dados do relatório de status de pagamento da ordem são atualizados automaticamente a cada três horas.
+A exibição do relatório Status do pagamento da ordem mostra um carimbo de data/hora de _[!UICONTROL Last updated]_&#x200B;que mostra a última vez que as informações do relatório foram atualizadas. Por padrão, os dados do relatório de status de pagamento da ordem são atualizados automaticamente a cada três horas.
 
 Você também pode forçar manualmente uma atualização dos dados do relatório Status de pagamento da ordem para ver as informações mais atualizadas do relatório.
 

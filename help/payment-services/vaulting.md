@@ -74,7 +74,7 @@ Você só poderá usar cartões com cofre no Administrador se o cliente tiver um
 Para criar um pedido no Administrador para um cliente usando seu cartão de crédito com cofre:
 
 1. [Criar um pedido e adicionar produtos](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
-1. Em _[!UICONTROL Payment & Shipping Information]_, selecione **[!UICONTROL Stored Cards]**como método de pagamento.
+1. Em _[!UICONTROL Payment & Shipping Information]_, selecione **[!UICONTROL Stored Cards]**&#x200B;como método de pagamento.
 1. Selecione o método de pagamento com cartão de crédito com cofre desejado.
 1. Após concluir quaisquer outras etapas necessárias para o pedido, [envie-o](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
 

@@ -19,7 +19,7 @@ _Unidade de recomendação_
 
 Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [coletar dados](../../manage-results/recommendation-performance.md) para medir impressões, exibições, cliques e assim por diante. A tabela Recomendações exibe as métricas de cada unidade de recomendação para ajudá-lo a tomar decisões de negócios informadas.
 
-1. Na barra lateral _[!DNL Adobe Commerce Optimizer]_, vá para_ Merchandising _>**Recommendations**para exibir o espaço de trabalho_ Recommendations _.
+1. Na barra lateral _[!DNL Adobe Commerce Optimizer]_, vá para_ Merchandising _>**Recommendations**&#x200B;para exibir o espaço de trabalho_ Recommendations _.
 
 1. No campo **Exibição de catálogo**, selecione a exibição de catálogo na qual deseja que a recomendação fique disponível. Saiba mais sobre [como usar exibições de catálogo para recomendações](../../manage-results/recommendation-performance.md#select-catalog-view).
 

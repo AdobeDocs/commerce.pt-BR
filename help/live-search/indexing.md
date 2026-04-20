@@ -21,7 +21,7 @@ As propriedades do atributo de produto (metadados) determinam:
 
 O escopo dos metadados do atributo é `website/store/store view`.
 
-A API [!DNL Live Search] permite que um cliente classifique por qualquer atributo de produto que tenha a [ ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) `Use in Search`propriedade de vitrine definida como `Yes` no Administrador do Adobe Commerce. Quando habilitado, `Search Weight` pode ser definido para o atributo.
+A API [!DNL Live Search] permite que um cliente classifique por qualquer atributo de produto que tenha a [&#x200B; &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) `Use in Search`propriedade de vitrine definida como `Yes` no Administrador do Adobe Commerce. Quando habilitado, `Search Weight` pode ser definido para o atributo.
 
 [!DNL Live Search] não indexa produtos excluídos ou produtos definidos como `Not Visible Individually`.
 
@@ -94,7 +94,7 @@ A API [!DNL Live Search] permite que um cliente classifique por qualquer atribut
 
 Os metadados do índice são armazenados no pipeline de indexação e podem ser acessados pelo serviço de pesquisa.
 
-![[!DNL Live Search] diagrama da API de metadados do índice ](assets/index-metadata-api.svg)
+![[!DNL Live Search] diagrama da API de metadados do índice &#x200B;](assets/index-metadata-api.svg)
 
 ### Fluxo de trabalho de atributo classificável
 
