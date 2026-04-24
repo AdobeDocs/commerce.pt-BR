@@ -110,7 +110,7 @@ Certifique-se de que os produtos secundários dos produtos configuráveis tenham
 
 ### Aproveitar os metadados do produto
 
-Verifique se os atributos [ precisos e detalhados do produto estão configurados como pesquisáveis e se têm um peso atribuído](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata). Observe que os atributos SKU, nome e categoria podem ser pesquisados por padrão e não podem ser excluídos da pesquisa. Para obter melhores resultados, não use espaços nas SKUs.
+Verifique se os atributos [&#x200B; precisos e detalhados do produto estão configurados como pesquisáveis e se têm um peso atribuído](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata). Observe que os atributos SKU, nome e categoria podem ser pesquisados por padrão e não podem ser excluídos da pesquisa. Para obter melhores resultados, não use espaços nas SKUs.
 
 Para aumentar a relevância da pesquisa, atribua um peso a cada atributo pesquisável. Atributos com um peso maior devem aparecer mais altos nos resultados da pesquisa. A classificação por relevância é afetada por vários critérios, como peso da pesquisa. Isso significa que, às vezes, os atributos com menor peso de pesquisa ainda podem ter mais relevância do que os atributos com maior peso de pesquisa. Outros critérios podem incluir o número de correspondências em qualquer atributo, a posição do termo de pesquisa encontrado e a estrutura geral do texto antes e depois de um termo de pesquisa.
 
