@@ -4,9 +4,9 @@ description: Saiba como usar os dados do evento  [!DNL Commerce]  para criar um 
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 0e9d286b-c459-44db-bbf8-2cb46e21739d
-source-git-commit: a3e19940e2a3d8a240bb17703cfdd9903df311aa
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1132'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Antes de começar, verifique se:
 - Você [instalou](install.md) e [configurou](connect-data.md) a extensão [!DNL Data Connection] em [!DNL Commerce].
 - Você [confirmou](connect-data.md#confirm-that-event-data-is-collected) que os dados do evento [!DNL Commerce] estão chegando à borda do Experience Platform.
 
-### &#x200B;1. Criar um público-alvo
+### &#x200B;1. Criar um público
 
 Um público-alvo é um conjunto de clientes que compartilham comportamento ou características semelhantes. Neste exercício, você cria um público-alvo que qualifica as pessoas interessadas em um produto específico da sua loja.
 
@@ -79,9 +79,9 @@ Use esses dados do evento para especificar que o público-alvo inclui indivíduo
 
    ![Regra de Compilação](assets/build-rule.png)
 
-   O espaço de trabalho do **Construtor de segmentos** é onde você define as regras e condições do seu público-alvo.&#x200B; Essas regras e condições se baseiam nos dados de evento e perfil da loja da Commerce e definem os critérios que determinam se um usuário se qualifica para o público-alvo. Por exemplo, você pode criar uma regra que inclua usuários que visualizaram um produto específico ou usuários que fizeram uma compra em um determinado período. Saiba mais sobre o [Construtor de segmentos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/segmentation/ui/segment-builder) e as regras e condições.
+   &#x200B; O espaço de trabalho do **Construtor de segmentos** é onde você define as regras e condições do seu público-alvo. Essas regras e condições são baseadas nos dados do evento e do perfil do seu armazenamento do Commerce e definem os critérios que determinam se um usuário se qualifica para o público-alvo. Por exemplo, você pode criar uma regra que inclua usuários que visualizaram um produto específico ou usuários que fizeram uma compra em um determinado período. Saiba mais sobre o [Construtor de segmentos](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder) e as regras e condições.
 
-1. Selecione a guia [Eventos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/segmentation/ui/segment-builder#events).
+1. Selecione a guia [Eventos](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder#events).
 
    ![Guia Eventos](assets/audience-events-tab.png)
 
@@ -109,7 +109,7 @@ Você disponibiliza um público-alvo no [!DNL Commerce] ativando-o para o destin
 
 >[!IMPORTANT]
 >
->Se você ainda não definiu [!DNL Commerce] como um destino disponível para receber dados, consulte o tópico [Adobe [!DNL Commerce] Conexão](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/catalog/personalization/adobe-commerce).
+>Se você ainda não definiu [!DNL Commerce] como um destino disponível para receber dados, consulte o tópico [Adobe [!DNL Commerce] Conexão](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/adobe-commerce).
 
 1. Na guia **Detalhes** do público-alvo, clique em **Ativar para destino**.
 
@@ -117,9 +117,9 @@ Você disponibiliza um público-alvo no [!DNL Commerce] ativando-o para o destin
 
 1. Conclua o processo de ativação clicando em **[!UICONTROL Finish]**.
 
-## &#x200B;3. Exibir o público-alvo no Painel de públicos-alvo
+## &#x200B;3. Exibir o público no Painel de públicos-alvo
 
-No [!DNL Commerce], você pode exibir todos os [públicos-alvo ativos](https://experienceleague.adobe.com/pt-br/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations) que podem ser personalizados para sua instância do [!DNL Commerce] usando o painel **Públicos-alvo do Real-Time CDP**.
+No [!DNL Commerce], você pode exibir todos os [públicos-alvo ativos](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activate-edge-personalization-destinations) que podem ser personalizados para sua instância do [!DNL Commerce] usando o painel **Públicos-alvo do Real-Time CDP**.
 
 Para acessar o painel **Públicos-alvo do Real-Time CDP**, vá para a barra lateral _Admin_ e, em seguida, vá para **[!UICONTROL Customers]** > **[!UICONTROL Real-time CDP Audience]**.
 
@@ -132,9 +132,9 @@ No painel, procure pelo público-alvo criado. Observe que ela não está sendo u
 Esta seção mostra como criar uma regra de preço de carrinho com base no novo público-alvo.
 
 1. Confirme se o novo público-alvo é exibido no painel **Públicos-alvo da Real-Time CDP**.
-1. [Criar uma regra de preço de carrinho](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create).
-1. [Defina a condição](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#use-real-time-cdp-audiences-to-set-a-condition) da regra de preço do carrinho usando seu novo público-alvo.
-1. [Defina a ação](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#step-3-define-the-actions) que você deseja que ocorra quando o produto for adicionado ao carrinho.
+1. [Criar uma regra de preço de carrinho](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create).
+1. [Defina a condição](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#use-real-time-cdp-audiences-to-set-a-condition) da regra de preço do carrinho usando seu novo público-alvo.
+1. [Defina a ação](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#step-3-define-the-actions) que você deseja que ocorra quando o produto for adicionado ao carrinho.
 1. Continue a configurar a regra de preço do carrinho.
 1. Acesse a visualização do cliente da instância da sandbox.
 1. Adicione o produto no qual você baseou o público-alvo do ao carrinho. Observe que a regra de preço do carrinho está ativada.

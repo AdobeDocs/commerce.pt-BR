@@ -4,10 +4,10 @@ user-guide-description: Este guia fornece instruções detalhadas sobre como usa
 hide: true
 role: Admin
 feature: Services, Price Indexer
-source-git-commit: d5f1589ececaa4f9ba64b0feb76acfb314720cb7
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '33'
-ht-degree: 9%
+source-wordcount: '39'
+ht-degree: 7%
 
 ---
 
@@ -17,4 +17,4 @@ ht-degree: 9%
 - Adaptador do catálogo {#catalog-adapter}
    - [Visão geral](catalog-adapter.md)
    - [Notas de versão](release-notes.md)
-- [Retornar à Página Inicial dos Serviços Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=pt-BR)
+- [Retornar à página inicial dos Serviços da Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)

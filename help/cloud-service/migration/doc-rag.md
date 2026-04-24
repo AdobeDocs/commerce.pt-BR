@@ -1,13 +1,13 @@
 ---
 title: Serviço de documentação RAG
 description: Saiba como usar o serviço de pesquisa de documentação habilitado para IA para desenvolvimento em Adobe Commerce.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 6c7055be007d75ff4cf3673da9938d9d79779aef
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '1027'
 ht-degree: 0%
 
 ---
@@ -30,9 +30,9 @@ A tabela a seguir descreve qual documentação está atualmente indexada pelo se
 
 | Categoria | Índice | Conteúdo incluído | Palavras-chave |
 |-------|---------|---------|------------------------|
-| [Vitrine](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR) | commerce-storefront-docs | Edge Delivery Services, drop-ins, componentes de vitrine | loja, drop-in, EDS, lista de produtos, check-out |
+| [Vitrine](https://experienceleague.adobe.com/developer/commerce/storefront/) | commerce-storefront-docs | Edge Delivery Services, drop-ins, componentes de vitrine | loja, drop-in, EDS, lista de produtos, check-out |
 | [Extensibilidade](https://developer.adobe.com/commerce/extensibility/) | commerce-extensibility-docs | Webhooks, eventos, extensões, integrações | webhook, evento, extensão, malha de API, GraphQL |
-| [Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/overview) | commerce-core-docs | Commerce principal (catálogo, clientes, pedidos) | catálogo, produto, cliente, ordem, estoque |
+| [Commerce](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) | commerce-core-docs | Commerce principal (catálogo, clientes, pedidos) | catálogo, produto, cliente, ordem, estoque |
 | [App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder, ações em tempo de execução, extensões da interface do usuário | app builder, ação de tempo de execução, React Spectrum |
 
 Para obter mais informações sobre a seleção de índice, consulte [Seleção automática de índice](#automatic-index-selection-recommended) e [Seleção explícita de índice](#explicit-index-selection).
@@ -127,7 +127,7 @@ Antes de instalar, verifique se você tem:
 
 ## Uso
 
-Depois de instalado, você pode chamar os índices [automaticamente](#automatic-index-selection-recommended) ou [explicitamente](#explicit-index-selection). Você também pode usar o comando [`/search-commerce-docs` &#x200B;](#command-based-search).
+Depois de instalado, você pode chamar os índices [automaticamente](#automatic-index-selection-recommended) ou [explicitamente](#explicit-index-selection). Você também pode usar o comando [`/search-commerce-docs` ](#command-based-search).
 
 >[!NOTE]
 >
@@ -293,7 +293,7 @@ No Windows, use barras `/` ou barras invertidas com escape `\\`:
 
 ## Recursos adicionais
 
-* [documentação para desenvolvedores do Adobe Commerce](https://developer.adobe.com/commerce/docs/){target="_blank"}
+* [Documentação do desenvolvedor do Adobe Commerce](https://developer.adobe.com/commerce/docs/){target="_blank"}
 * [Documentação do App Builder](https://developer.adobe.com/app-builder/docs/){target="_blank"}
-* [Protocolo de Contexto de Modelo](https://modelcontextprotocol.io/){target="_blank"}
-* [IDE de cursor](https://cursor.sh/docs){target="_blank"}
+* [Protocolo de contexto do modelo](https://modelcontextprotocol.io/){target="_blank"}
+* [IDE do cursor](https://cursor.sh/docs){target="_blank"}

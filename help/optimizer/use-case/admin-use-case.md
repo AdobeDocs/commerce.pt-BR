@@ -3,11 +3,11 @@ title: Caso de uso completo do administrador de vitrine e catálogo
 description: Saiba como usar o [!DNL Adobe Commerce Optimizer] para gerenciar seu catálogo usando exibições e políticas de catálogo e como configurar sua loja com base na configuração do catálogo.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '2161'
+source-wordcount: '2205'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Nesse caso de uso, você está trabalhando com:
 
 >[!NOTE]
 >
-> Saiba mais sobre os arquivos de configuração da loja revisando o [Tópico de introdução](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=pt-BR) na documentação da Adobe Commerce Storefront.
+> Saiba mais sobre os arquivos de configuração da loja revisando o [Tópico de introdução](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/) na documentação da Adobe Commerce Storefront.
 
 ### ‌Principais pontos
 
@@ -255,7 +255,7 @@ Crie uma nova exibição de catálogo para o revendedor *Celport* e vincule as s
 
 Depois de criar a visualização de catálogo do Celport e as políticas associadas, o próximo passo é configurar a loja para usar seu novo catálogo do Celport.
 
-## &#x200B;3. Atualize sua loja
+## &#x200B;3. Atualizar a vitrine
 
 A parte final deste tutorial envolve a atualização da loja que [você já criou](#prerequisites) para entregar dados ao novo catálogo do Celport. Nesta seção, você substitui a ID de visualização do catálogo no arquivo de configuração da loja pela ID de visualização do catálogo do Celport.
 
@@ -293,6 +293,8 @@ A parte final deste tutorial envolve a atualização da loja que [você já crio
       }
    }
    ```
+
+   +++
 
    Observe que o cabeçalho de exibição de catálogo inclui os seguintes valores:
 
@@ -447,4 +449,4 @@ Para continuar aprendendo sobre [!DNL Adobe Commerce Optimizer]:
 - Saiba mais sobre [configurações avançadas de política](../setup/policies.md)
 - Configurar [exibições adicionais do catálogo](../setup/catalog-view.md) para outras concessionárias
 - Revise a [documentação da API](https://developer.adobe.com/commerce/services/optimizer/) para obter gerenciamento programático de catálogos
-- Saiba como configurar componentes integrados para a sua loja do Edge Delivery Services para criar experiências personalizadas de vitrine para descobertas de produtos, recomendações e outros recursos da loja. Consulte a [documentação da Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=pt-BR)
+- Saiba como configurar componentes integrados para a sua loja do Edge Delivery Services para criar experiências personalizadas de vitrine para descobertas de produtos, recomendações e outros recursos da loja. Consulte a [documentação da Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/)

@@ -9,9 +9,9 @@ level: Intermediate
 type: Tutorial
 hide: true
 hidefromtoc: true
-source-git-commit: ce8882b8af21198a7bc57bc58124e8a2d1491a50
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '2599'
+source-wordcount: '2693'
 ht-degree: 0%
 
 ---
@@ -53,8 +53,8 @@ Se qualquer um dos comandos anteriores não retornar os resultados esperados, co
 
 Além disso, verifique o seguinte:
 
-- Você tem uma instância [!DNL Adobe Commerce as a Cloud Service] com dados de produto. Consulte [Instâncias do Commerce Cloud Service](https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/overview){target="_blank"}.
-- Você tem um projeto de vitrine conectado à sua instância [!DNL Commerce]. Se você não tiver uma, siga as etapas em [Criar uma vitrine](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=pt-BR){target="_blank"}.
+- Você tem uma instância [!DNL Adobe Commerce as a Cloud Service] com dados de produto. Consulte [Instâncias do Commerce Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"}.
+- Você tem um projeto de vitrine conectado à sua instância [!DNL Commerce]. Se você não tiver uma, siga as etapas em [Criar uma vitrine](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}.
 - A CLI do `aem` está instalada:
 
   ```bash

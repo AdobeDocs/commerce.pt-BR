@@ -2,11 +2,11 @@
 title: Limites e limites
 description: Compreender [!DNL Adobe Commerce Optimizer] limites e limites para planejar a capacidade e evitar problemas de desempenho.
 role: Admin, Developer
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
-source-git-commit: 42a877f5bad8bda93ec39b8ad633f6ad0ba6b4a5
+source-git-commit: ba445bf33ec9334c853245fce125af12cd244367
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1378'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Sua utilização deve permanecer dentro desses limites. Excedê-los pode causar 
 
 Os limites de licença podem ser aumentados adquirindo os pacotes de licença descritos na seção [Limites de licença e limites do sistema](#license-limits-and-system-boundaries) ou negociando o licenciamento personalizado para casos de uso exclusivos. Entre em contato com seu representante de conta da Adobe para discutir suas necessidades.
 
-Em caso de dúvidas sobre os limites do sistema, contate o [Suporte da Adobe](https://experienceleague.adobe.com/home?lang=pt-BR#support).
+Em caso de dúvidas sobre os limites do sistema, contate o [Suporte da Adobe](https://experienceleague.adobe.com/home?lang=en#support).
 
 ## Evitar problemas de desempenho
 
@@ -84,7 +84,7 @@ As tabelas a seguir resumem os limites de licença e os limites do sistema por �
 
 >[!NOTE]
 >
->**Usuários Avançados** podem acessar o Adobe Express diretamente ou no [!DNL Adobe Commerce Optimizer]. **Usuários do Collaborator** podem acessar o aplicativo Adobe Express diretamente. O uso é regido pelos [Termos de Licenciamento Específicos do Produto do Adobe Express Firefly](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeExpressWFirefly-WW-2025v1.pdf).
+>**Usuários Avançados** podem acessar o Adobe Express diretamente ou no [!DNL Adobe Commerce Optimizer]. **Usuários do Collaborator** podem acessar o aplicativo Adobe Express diretamente. O uso é regido pelos [Termos de Licenciamento Específicos do Produto do Adobe Express](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeExpressWFirefly-WW-2025v1.pdf).
 
 
 >[!BEGINSHADEBOX &quot;Calcular uso do Dynamic Media&quot;]
@@ -156,11 +156,12 @@ Os recursos a seguir estão disponíveis para recomendações de produtos. Algun
 
 | **Recurso** | **Descrição** | **Alocação base** | **Expansível?** | **Notas** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | Capacidade para criar extensões e integrações nativas em nuvem | Com base no nível de GMV<p>Alocação mínima: 1 pacote/ano</p> | Sim<p>Adicionar pacotes adicionais</p> | Para obter os limites definidos por pacote, consulte:<ul><li>[Descrição de produto do App Builder](https://helpx.adobe.com/br/legal/product-descriptions/adobe-developer-app-builder.html) para limites definidos por pacote.</li><li>[Limitações e configurações do sistema](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) nos *Guias do App Builder Runtime*.</li><li>[Requisitos de armazenamento do App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | Capacidade para criar extensões e integrações nativas em nuvem | Com base no nível de GMV<p>Alocação mínima: 1 pacote/ano</p> | Sim<p>Adicionar pacotes adicionais</p> | Para obter os limites definidos por pacote, consulte:<ul><li>[Descrição de produto do App Builder](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html) para limites definidos por pacote.</li><li>[Limitações e configurações do sistema](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) nos *Guias do App Builder Runtime*.</li><li>[Requisitos de armazenamento do App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
-<!--## How to size your solution
+<!--
+## How to size your solution
 
 Ask your Adobe representative for a list of available packages to determine which most closely matches your project
 
@@ -192,4 +193,5 @@ This approach ensures your solution is accurately sized for your business needs.
 1. **GenAI or Media Needs**
 
    * Need: +10M dynamic media ops/month
-   * Add-On: 10 × dynamic media packs (1M each) -->
+   * Add-On: 10 × dynamic media packs (1M each) 
+-->
