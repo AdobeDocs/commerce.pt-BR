@@ -4,7 +4,7 @@ description: Saiba mais sobre as ferramentas de observabilidade e os recursos de
 feature: Cloud, Integration
 role: Admin, Developer
 level: Intermediate
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 source-git-commit: 3c10ecdea3d06295013c9c6e2d6869afd750a0b9
 workflow-type: tm+mt
 source-wordcount: '607'
@@ -74,11 +74,11 @@ O [registro em log da API Mesh](https://developer.adobe.com/graphql-mesh-gateway
 
 ### Monitoramento de CDN e usuário real
 
-[Coleta de dados de RUM (Monitoramento de Usuário Real) de Proxy](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/content-delivery-network/#proxy-rum-through-the-origin-to-avoid-a-tls-handshake) por meio da sua origem CDN para eliminar um handshake de TLS extra e melhorar a medição de desempenho de front-end.
+[Coleta de dados de RUM (Monitoramento de Usuário Real) de Proxy](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/content-delivery-network/?lang=pt-BR#proxy-rum-through-the-origin-to-avoid-a-tls-handshake) por meio da sua origem CDN para eliminar um handshake de TLS extra e melhorar a medição de desempenho de front-end.
 
 ## Vídeos de observação
 
 Os vídeos a seguir fornecem uma visão geral de alto nível das ofertas de observação em [!DNL Adobe Commerce as a Cloud Service]:
 
-* [Vídeos de observabilidade do App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/observability/overview){target="_blank"}
-* [Vídeos da API Mesh](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/api-mesh/getting-started-api-mesh){target="_blank"}
+* [Vídeos de observabilidade do App Builder](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/observability/overview){target="_blank"}
+* [Vídeos da API Mesh](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/extensibility/api-mesh/getting-started-api-mesh){target="_blank"}
