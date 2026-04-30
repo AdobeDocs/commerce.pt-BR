@@ -3,9 +3,9 @@ title: '[!DNL Commerce Storefront Catalog Service Release Notes]'
 description: As informações da versão mais recente do  [!DNL Catalog Service] para Adobe Commerce.
 feature: Services, Catalog Service, Release Notes
 exl-id: 74f2e46a-5592-4857-a6d7-b95b85d8b4cc
-source-git-commit: eb7e3e86426abb71b8b5e6d17936d26cb088edb3
+source-git-commit: a3002e93b121c16892d3106e09a0ad55cb99845e
 workflow-type: tm+mt
-source-wordcount: '2472'
+source-wordcount: '2809'
 ht-degree: 0%
 
 ---
@@ -26,12 +26,19 @@ Essas notas de versão abordam as atualizações mais recentes do serviço de ca
 As atualizações são categorizadas por tipo:
 
 ![Novos](../assets/new.svg) Novos recursos
-![Correção](../assets/fix.svg) correções e melhorias
+![Correção](../assets/fix.svg) Correções e melhorias
 ![Bug](../assets/bug.svg) Problemas conhecidos
 
 O suporte é fornecido para a versão mais recente. As notas de versão para versões mais antigas estão incluídas para referência.
 
 ## Serviço de Catálogo da Loja
+
+### versão v1.52
+
+_29 de abril de 2026_
+
+![Novo](../assets/new.svg) Limite imposto de no máximo 100 SKUs por solicitação para Adobe Commerce Optimizer e Adobe Commerce as a Cloud Service
+clientes de acordo com [limites e limites documentados](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits). <!--DATA-7156-->
 
 ### versão v1.51
 
@@ -45,7 +52,7 @@ Esta consulta está disponível somente para clientes que usam os Serviços de m
 
 _7 de abril, 2026_
 
-![Novo](../assets/new.svg) A consulta `categoryTree](https://developer-stage.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree)` agora tem o parâmetro de entrada de família como opcional. Isso permite uma recuperação de categoria mais flexível, permitindo o acesso via slug sem depender de um parâmetro de família específico. Esta consulta está disponível somente para [Adobe Commerce Optimizer Merchandising Services](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/categories-storefront-implementation/).
+![Novo](../assets/new.svg) A consulta [categoryTree](https://developer-stage.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) agora tem o parâmetro de entrada de família como opcional. Isso permite uma recuperação de categoria mais flexível, permitindo o acesso via slug sem depender de um parâmetro de família específico. Esta consulta está disponível somente para [Adobe Commerce Optimizer Merchandising Services](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/categories-storefront-implementation/).
 
 ### versão v1.48
 
@@ -69,7 +76,7 @@ _11 de dezembro de 2025_
 
 _17 de novembro de 2025_
 
-![Novo](../assets/new.svg) **Filtragem de Atributo por Nome**-A consulta do GraphQL `productSearch` agora oferece suporte à filtragem de atributos de produto com o campo `names`. <!--DATA-6831--> Com este filtro, você pode:
+![Novo](../assets/new.svg) **Filtragem de Atributo por Nome**-A consulta do GraphQL `productSearch` agora oferece suporte à filtragem de atributos de produto com o campo `names`. <!--DATA-6831--> Com esse filtro, é possível:
 
 - Reduzir o tamanho do payload de resposta solicitando apenas atributos específicos
 - Combine com o filtro `roles` existente para restringir por função de visibilidade e nome de atributo
@@ -125,7 +132,7 @@ _3 de novembro de 2025_
 - Controlar substituições em nível de campo com máscaras de camada
 - Suporte a camadas de conteúdo premium, sazonais e otimizadas para dispositivos móveis
 
-  As camadas são recuperadas usando a consulta `products` existente, são aplicadas no lado do servidor a partir de cabeçalhos de solicitação e não exigem alterações de esquema. Consulte [Camada do catálogo](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/setup/catalog-layer) no _Guia do Adobe Commerce Optimizer_.
+  As camadas são recuperadas usando a consulta `products` existente, são aplicadas no lado do servidor a partir de cabeçalhos de solicitação e não exigem alterações de esquema. Consulte [Camada do catálogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-layer) no _Guia do Adobe Commerce Optimizer_.
 
 ![Correção](../assets/fix.svg) Os produtos agrupados agora podem ser consultados quando o pai não tem preços; os produtos filho retornam suas próprias funções de visibilidade.<!--DATA-6779-->
 
@@ -236,7 +243,7 @@ _15 de julho de 2025_
 
 _20 de junho de 2025_
 
-![Nova](../assets/new.svg) **Configuração do catálogo de preços hierárquico** — Intervalos de preços precisos para o catálogo de preços pai-filho. Os cálculos respeitam a hierarquia e as regras herdadas; reduz os erros de precificação quando vários catálogos de preços são vinculados. Somente Adobe Commerce Optimizer. Consulte [Catálogos de Preços](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/setup/pricebooks).
+![Nova](../assets/new.svg) **Configuração do catálogo de preços hierárquico** — Intervalos de preços precisos para o catálogo de preços pai-filho. Os cálculos respeitam a hierarquia e as regras herdadas; reduz os erros de precificação quando vários catálogos de preços são vinculados. Somente Adobe Commerce Optimizer. Consulte [Catálogos de Preços](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks).
 
 ![Novo](../assets/new.svg) **Chaves que não diferenciam maiúsculas de minúsculas** — As pesquisas de chave em consultas agora não diferenciam maiúsculas de minúsculas, reduzindo os erros de maiúsculas e minúsculas. <!--DATA-6494, DCAT-2495-->
 
@@ -365,7 +372,7 @@ _23 de maio de 2024_
 
 ![Correção](../assets/fix.svg) <!--DATA-5033-->O sinalizador `InStock` para valores de opção agora respeita o status `enabled` de escopo da variante de produto.
 
-![Correção](../assets/fix.svg) <!--DATA-5888-->Suporte adicionado para preços de produtos com até 16 dígitos e 4 casas decimais. Ressincronize a partir do [painel de Gerenciamento de Dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) ou da [CLI](../data-export/data-export-cli-commands.md) para aplicar as atualizações.
+![Correção](../assets/fix.svg) <!--DATA-5888-->Suporte adicionado para preços de produtos com até 16 dígitos e 4 casas decimais. Ressincronize a partir do [painel de Gerenciamento de Dados](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) ou da [CLI](../data-export/data-export-cli-commands.md) para aplicar as atualizações.
 
 #### Limitações conhecidas
 
@@ -399,7 +406,7 @@ _22 de fevereiro de 2024_
 
 [!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
-![Novo](../assets/new.svg) O [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=pt-BR) agora está disponível para fluxos de dados (Product Recommendations, Live Search, Catalog Service). Requer `catalog-service` metapackage v3.1.0+.
+![Novo](../assets/new.svg) O [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) agora está disponível para fluxos de dados (Product Recommendations, Live Search, Catalog Service). Requer `catalog-service` metapackage v3.1.0+.
 
 ### versão v1.16
 
@@ -611,10 +618,10 @@ _25 de março de 2026_
 - Para projetos implantados no **Adobe Commerce na nuvem, no local ou Adobe Commerce as a Cloud Service, consulte a seguinte documentação:
 
    - [Guia do Serviço de catálogo](overview.md)
-   - [Referência da API GraphQL do Serviço de Catálogo](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)
+   - [Referência da API do GraphQL do Serviço de catálogo](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/)
    - [Guia de administração do Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/)
    - [Guia do Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/)
-   - [Guia do Adobe Commerce na Nuvem](https://experienceleague.adobe.com/en/docs/commerce-cloud/)
+   - [Guia do Adobe Commerce na nuvem](https://experienceleague.adobe.com/en/docs/commerce-cloud/)
 
 - Para projetos que usam o **Adobe Commerce Optimizer** ou o **Adobe Commerce Optimizer Connector**, consulte a seguinte documentação:
 
