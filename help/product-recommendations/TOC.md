@@ -3,17 +3,17 @@ user-guide-title: Guia do [!DNL Product Recommendations]
 user-guide-description: Este guia fornece instruções detalhadas para usar o  [!DNL Product Recommendations] da Adobe Commerce.
 role: Admin
 feature: Services, Recommendations
-source-git-commit: 1b10163c39d9f309afd24aa2e808a57e069258f8
+source-git-commit: 2b1186d83718347149516de469c31cdfeaa72b4a
 workflow-type: tm+mt
-source-wordcount: '59'
-ht-degree: 11%
+source-wordcount: '64'
+ht-degree: 10%
 
 ---
 
 # [!DNL Product Recommendations] para Commerce {#product-recommendations}
 
 - [Visão geral do Guia](guide-overview.md)
-- [Introdução a  [!DNL Product Recommendations]](overview.md)
+- [O que são  [!DNL Product Recommendations]?](overview.md)
 - [Notas de versão](release-notes.md)
 - [Limites e limites](boundaries-limits.md)
 - Introdução {#getting-started}
@@ -36,4 +36,4 @@ ht-degree: 11%
    - [Coletar dados](events.md)
    - [Personalizar](customize.md)
    - [Lidar com restrições de cookies](setting-cookie.md)
-- [Retornar à Página Inicial dos Serviços Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=pt-BR)
+- [Retornar à página inicial dos Serviços da Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
