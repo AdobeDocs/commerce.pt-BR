@@ -3,9 +3,9 @@ user-guide-title: Guia do [!DNL Data Export] para serviços SaaS
 user-guide-description: Este guia fornece instruções detalhadas para usar a extensão  [!DNL Data Export]  para serviços SaaS do Adobe Commerce.
 role: Admin
 feature: Services
-source-git-commit: 6abfeca68ab67fb11493f78440e09408479e1535
+source-git-commit: 843316ddbaae26d14a0bd72af24369f1ec1164c9
 workflow-type: tm+mt
-source-wordcount: '82'
+source-wordcount: '93'
 ht-degree: 4%
 
 ---
@@ -18,11 +18,13 @@ ht-degree: 4%
    - [Estimar o volume de dados e o tempo de transmissão](estimate-data-volume-sync-time.md)
    - [Melhorar o desempenho das exportações](customize-export-processing.md)
 - [Sincronizar feeds usando a CLI do Commerce](data-export-cli-commands.md)
-- [Revisar logs e solucionar problemas](troubleshooting-logging.md)
+- [Logs e solução de problemas]{#logs-troubleshooting}
+   - [Revisar logs e solucionar problemas](troubleshooting-logging.md)
+   - [Referência de códigos de log](log-codes-reference.md)
 - [Gerenciar a extensão de exportação de dados SaaS](manage-extension.md)
 - Extensibilidade {#extensibility}
    - [Expandir e personalizar feeds de exportação de dados SaaS](extensibility-and-customizations.md)
    - [Adicionar atributo de produto dinamicamente](add-attribute-dynamically.md)
    - [Adicionar classe de imposto, conjunto de atributos e metadados de inventário](add-tax-attribute-set-inventory-attributes.md)
 - [Notas de versão](release-notes.md)
-- [Retornar à Página Inicial dos Serviços Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=pt-BR)
+- [Retornar à página inicial dos Serviços da Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
