@@ -1,5 +1,5 @@
 ---
-title: Referência de códigos de log da [!Data Export]
+title: Referência de códigos de log da [ !Data Export]
 description: Lista de referência para códigos, mensagens e níveis de gravidade do log de exportação de dados para solucionar problemas de sincronização e decidir quando uma ressincronização parcial ou completa é necessária.
 feature: Services
 exl-id: c1341863-1ec4-4d67-8ff2-821ef0a61f33
