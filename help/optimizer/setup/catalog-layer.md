@@ -3,10 +3,10 @@ title: Camada de catálogo
 description: Saiba como as camadas de catálogo permitem modificar dados do produto sem alterar os dados de origem originais, para que você possa personalizar com segurança e reverter alterações a qualquer momento.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+source-git-commit: 00f5aaa4d08e686195096b3fee0dcca2d2ac56d8
 workflow-type: tm+mt
-source-wordcount: '1511'
+source-wordcount: '1555'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Quando um cliente visualiza sua loja, o sistema combina os dados do catálogo ba
    * **Substituir campos** — Campos de texto como nome, descrição e metatítulos são substituídos pelos valores definidos na camada, com a camada de prioridade mais alta tendo precedência.
    * **Mesclar campos** — Campos de matriz como imagens, links e atributos são combinados de várias camadas, fornecendo uma resposta unificada.
 
-1. **Resolução de prioridade** — O campo de ordem determina qual camada tem prioridade. Quando várias camadas modificam o mesmo campo, a camada com o número de ordem mais baixo tem prioridade mais alta (por exemplo, a ordem 1 é a mais alta).
+1. **Resolução de prioridade** — O campo de ordem determina qual camada tem prioridade. Quando várias camadas modificam o mesmo campo, a camada com o número de ordem mais alto tem prioridade mais alta (por exemplo, a ordem 10 é a mais alta).
 
 ## Casos de uso da camada de catálogo
 
@@ -114,7 +114,7 @@ A interface de exibição de catálogo permite criar e gerenciar manualmente cam
 
 >[!NOTE]
 >
->Se uma camada do Sites Optimizer não existir na visualização de catálogo, o recurso de correção automática no Sites Optimizer criará uma camada automaticamente e a atribuirá à ordem 1 (prioridade mais alta). Se você excluir essa camada, ela será recriada na próxima vez que o recurso de correção automática no Sites Optimizer for executado e mudará as camadas existentes para números de ordem mais baixos. Se a camada do Sites Optimizer já existir com um número de pedido diferente, o recurso de correção automática não alterará sua prioridade.
+>Se uma camada do Sites Optimizer não existir na visualização de catálogo, o recurso de correção automática no Sites Optimizer criará automaticamente uma camada e a atribuirá à prioridade mais alta (número mais alto). Se você excluir essa camada, ela será recriada na próxima vez que o recurso de correção automática no Sites Optimizer for executado e mudará as camadas existentes para números de ordem mais baixos. Se a camada do Sites Optimizer já existir com um número de pedido diferente, o recurso de correção automática não alterará sua prioridade.
 
 >[!TIP]
 >
@@ -189,8 +189,8 @@ A ordem em que as camadas são aplicadas determina quais valores aparecem na loj
 **Noções básicas sobre a ordem de prioridade:**
 
 * A cada camada é atribuído um número de ordem (1, 2, 3 e assim por diante)
-* A ordem 1 tem a prioridade mais alta e substitui todas as outras camadas
-* Quando várias camadas modificam o mesmo campo, a camada com o número de ordem mais baixo tem prioridade
+* Números mais altos indicam maior prioridade e substituem todas as outras camadas
+* Quando várias camadas modificam o mesmo campo, a camada com o número de ordem mais alto tem prioridade
 * A prioridade se aplica somente a campos de substituição (nome, descrição, metatags)
 * Campos de mesclagem (imagens, links, atributos) combinam dados de todas as camadas
 

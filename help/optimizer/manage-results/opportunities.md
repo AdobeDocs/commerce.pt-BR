@@ -1,10 +1,10 @@
 ---
 title: Oportunidades
 description: Identifique oportunidades para impulsionar o tráfego, o envolvimento e as conversões por meio da integração com o Adobe Sites Optimizer para melhorias inteligentes no site orientadas por dados.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a  [!DNL Adobe Commerce Optimizer] projetos (infraestrutura SaaS gerenciada pela Adobe)."
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a  [!DNL Adobe Commerce Optimizer] projetos (infraestrutura SaaS gerenciada pela Adobe)."
+source-git-commit: 00f5aaa4d08e686195096b3fee0dcca2d2ac56d8
 workflow-type: tm+mt
-source-wordcount: '1342'
+source-wordcount: '1445'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ A página **Oportunidades** ajuda a identificar e implementar otimizações para
 
 ## O que são oportunidades?
 
-[Oportunidades](https://experienceleague.adobe.com/pt-br/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) são recomendações alimentadas por IA que ajudam os comerciantes a identificar e resolver problemas que afetam o desempenho do site de comércio. Estas recomendações são viabilizadas pelo [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/pt-br/docs/experience-manager-sites-optimizer/content/home), um serviço na nuvem que analisa e melhora o desempenho do site.
+[Oportunidades](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) são recomendações alimentadas por IA que ajudam os comerciantes a identificar e resolver problemas que afetam o desempenho do site de comércio. Estas recomendações são viabilizadas pelo [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home), um serviço na nuvem que analisa e melhora o desempenho do site.
 
 ## Principais recursos
 
@@ -128,7 +128,7 @@ Siga estas etapas para implementar uma otimização sugerida pela IA:
 
    - Cria uma nova camada de catálogo para o produto (caso ainda não exista uma).
    - Atualiza o atributo relevante (como metatítulo, descrição ou H1) com base na recomendação do AI.
-   - Atribui a nova camada como a prioridade mais alta (ordem 1) na exibição de catálogo.
+   - Atribui a nova camada como a prioridade mais alta (número mais alto) na exibição de catálogo.
    - Valida a alteração por meio do serviço de vitrine do catálogo.
 
 1. Monitore o status da implantação. O sistema atualiza o status da sugestão automaticamente quando a validação é concluída.
@@ -146,7 +146,7 @@ Siga estas etapas para implementar uma otimização sugerida pela IA:
 
 ### Como as camadas de catálogo funcionam com a correção automática
 
-Se uma camada do Adobe Sites Optimizer não existir na visualização de catálogo, a correção automática criará uma camada e a atribuirá à ordem 1 (prioridade mais alta). Se você excluir essa camada, ela será recriada na próxima vez que a correção automática for executada e as camadas existentes serão deslocadas para números de ordem mais baixos. Se a camada do Adobe Sites Optimizer já existir em um número de pedido diferente, a correção automática não alterará sua prioridade. Se quiser manter uma camada de correção automática, mas não usá-la imediatamente, desative-a. Saiba mais sobre como gerenciar [camadas de catálogo](../setup/catalog-layer.md#activate-deactivate-or-delete-layers).
+Se uma camada do Adobe Sites Optimizer não existir na visualização de catálogo, a correção automática criará uma camada automaticamente e a atribuirá como a prioridade mais alta (número mais alto). Se você excluir essa camada, ela será recriada na próxima vez que a correção automática for executada e as camadas existentes serão deslocadas para números de ordem mais baixos. Se a camada do Adobe Sites Optimizer já existir em um número de pedido diferente, a correção automática não alterará sua prioridade. Se quiser manter uma camada de correção automática, mas não usá-la imediatamente, desative-a. Saiba mais sobre como gerenciar [camadas de catálogo](../setup/catalog-layer.md#activate-deactivate-or-delete-layers).
 
 ![Camadas do catálogo](../assets/catalog-layers.png)
 
@@ -166,9 +166,9 @@ Se uma otimização não parecer ser aplicada na loja:
 
 1. Verifique o indicador de status na guia **Otimizado (Concluído)**.
 1. Se você vir um ícone de aviso, verifique as configurações de prioridade da camada de catálogo.
-1. Verifique se a camada de otimização está definida como ordem 1 (prioridade mais alta) na exibição do catálogo.
+1. Verifique se a camada de otimização está definida como a prioridade mais alta (número mais alto) na exibição do catálogo.
 1. Confirme se a sincronização de dados do catálogo está ativa e atualizada.
-1. Permita que as alterações se propaguem. Mesmo com uma camada configurada corretamente na ordem 1, as alterações podem demorar para aparecer na loja, de modo semelhante ao atraso na publicação de novos produtos.
+1. Permita que as alterações se propaguem. Mesmo com uma camada configurada corretamente no número de pedido mais alto, as alterações podem demorar para aparecer na loja, de modo semelhante ao atraso na publicação de novos produtos.
 
 ## Como o Sites Optimizer e as métricas de sucesso funcionam juntos
 
@@ -176,7 +176,7 @@ As métricas de sucesso monitoram os principais indicadores de desempenho, como 
 
 ## Saiba mais sobre o Sites Optimizer
 
-Para obter informações detalhadas sobre os recursos do Sites Optimizer, consulte a [documentação do Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/pt-br/docs/experience-manager-sites-optimizer/content/home).
+Para obter informações detalhadas sobre os recursos do Sites Optimizer, consulte a [documentação do Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home).
 
 Recursos adicionais:
 
