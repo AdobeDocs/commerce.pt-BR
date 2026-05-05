@@ -5,7 +5,7 @@ feature: Cloud, Security
 role: Admin, Developer, Leader
 level: Intermediate
 exl-id: 424fe5cd-5d54-425d-97ce-024476d18dde
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 source-git-commit: 4c8f897e35f889b43004e5bb99e830f23aad4357
 workflow-type: tm+mt
 source-wordcount: '340'
