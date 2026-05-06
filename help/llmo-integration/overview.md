@@ -3,7 +3,7 @@ title: Integrar [!DNL Adobe Commerce] com [!DNL Adobe LLM Optimizer]
 description: Conecte [!DNL Adobe Commerce] a [!DNL Adobe LLM Optimizer] para monitorar sinais de catálogo em LLMs e implantar otimizações de catálogo aprovadas.
 role: Admin, User, Leader
 recommendations: noCatalog
-badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
+badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
 source-git-commit: 47348a44ff7c5f890c10594f44cae6e771be046f
 workflow-type: tm+mt
 source-wordcount: '902'

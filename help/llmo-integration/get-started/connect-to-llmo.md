@@ -3,7 +3,7 @@ title: Conectar [!DNL Adobe Commerce] a [!DNL Adobe LLM Optimizer]
 description: Habilite os serviços Commerce necessários, configure a conexão do LLM Optimizer, valide o acesso ao catálogo e confirme a disponibilidade do locatário antes de revisar oportunidades ou implantar atualizações.
 role: Admin, User
 recommendations: noCatalog
-badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
+badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
 source-git-commit: 47348a44ff7c5f890c10594f44cae6e771be046f
 workflow-type: tm+mt
 source-wordcount: '543'
@@ -21,7 +21,7 @@ Este artigo explica como conectar seu catálogo do [!DNL Adobe Commerce] dispon�
 
 >[!NOTE]
 >
->Este artigo se concentra no lado do Commerce da integração. Para obter informações gerais sobre o LLM Optimizer, consulte a [documentação do produto LLM Optimizer](https://experienceleague.adobe.com/en/docs/llm-optimizer/using/home).
+>Este artigo se concentra no lado do Commerce da integração. Para obter informações gerais sobre o LLM Optimizer, consulte a [documentação do produto LLM Optimizer](https://experienceleague.adobe.com/pt-br/docs/llm-optimizer/using/home).
 
 ## Habilitar os serviços Commerce necessários {#enable-commerce-services}
 
