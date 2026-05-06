@@ -2,9 +2,9 @@
 title: Notas de versão do [!DNL Adobe Commerce Optimizer Connector]
 description: As informações da versão mais recente do  [!DNL Adobe Commerce Optimizer Connector] para Adobe Commerce.
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 205fca38b379f94027a965b58826ffd922577f61
+source-git-commit: e0f7b9b860f8dce18b357d479cbc021f32970c18
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -14,16 +14,23 @@ ht-degree: 0%
 Essas notas de versão descrevem todas as versões do [!DNL Adobe Commerce Optimizer Connector] e incluem:
 
 ![Novos](../assets/new.svg) Novos recursos
-![Problema corrigido](../assets/fix.svg) Correções e melhorias
+![Correção de um problema](../assets/fix.svg) Correções e melhorias
 ![Problema conhecido](../assets/bug.svg) Problemas conhecidos
 
 ## Versões de 2026
+
+### Versão 1.0.13
+
+_6 de maio de 2026_
+
+![Correção](../assets/fix.svg) **Instruções aprimoradas sobre a configuração do conector**-Atualização da página de configuração do Commerce Optimizer no Commerce Admin para vincular ao _Guia do Adobe Commerce Connector_. <!--COMOPT-1922-->
+![Correção](../assets/fix.svg) **Aprimoramento de metadados do conector** - O Conector ACO agora inclui sua versão instalada no cabeçalho de metadados. Essa melhoria permite que as equipes identifiquem rapidamente qual versão do conector está em uso durante a solução de problemas ou os compromissos de suporte.<!--MDEE-1323-->
 
 ### Versão 1.0.12
 
 _2 de abril de 2026_
 
-![Novo](../assets/new.svg) **Adição de suporte ao feed de Categorias no comando `saas:resync` &#x200B;**-Agora é possível atualizar e exibir facilmente os dados de categoria mais recentes usando o comando da CLI `saas:resync`:
+![Novo](../assets/new.svg) **Adição de suporte ao feed de Categorias no comando `saas:resync` **-Agora é possível atualizar e exibir facilmente os dados de categoria mais recentes usando o comando da CLI `saas:resync`:
 
 ```terminal
 bin/magento saas:resync --feed=categories
