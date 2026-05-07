@@ -64,7 +64,7 @@ Use esta abordagem quando você não encaminhar a solicitação pelo [Widget PLP
 Para manter os produtos indisponíveis no conjunto de resultados, mas sempre após os produtos em estoque ao classificar por relevância, o Adobe pode ativar um sinalizador de recurso interno para seu ambiente.
 
 - Este sinalizador de recurso não está exposto na interface do usuário do Administrador [!DNL Live Search].
-- Para solicitar, [entre em contato com o Suporte da Adobe](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide){target="_blank"} e consulte o recurso para mover produtos indisponíveis para o final dos resultados da pesquisa.
+- Para solicitar, [entre em contato com o Suporte da Adobe](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide){target="_blank"} e consulte o recurso para mover produtos indisponíveis para o final dos resultados da pesquisa.
 
 >[!NOTE]
 >
@@ -87,4 +87,4 @@ Para ocultar ou priorizar produtos indisponíveis no catálogo, use a configura�
 >[!MORELIKETHIS]
 >
 > - [Pesquisar regras de merchandising](rules.md)
-> - [Configurar as opções globais do Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/configuration)
+> - [Configurar as opções globais do Inventory management](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/inventory/configuration/configuration)
