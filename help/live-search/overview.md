@@ -3,9 +3,9 @@ title: O que é  [!DNL Live Search]?
 description: O [!DNL Live Search] do Adobe Commerce fornece uma experiência de pesquisa rápida, relevante e intuitiva.
 recommendations: noCatalog
 exl-id: 15399216-6a96-4d0b-bbc1-293190cb9e14
-source-git-commit: 1ae6b0f6786375ca4e7bb7620e164008a08f8965
+source-git-commit: 3c6ca2398cf80649e2dbe127b1835b0a057d3534
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '1180'
 ht-degree: 1%
 
 ---
@@ -35,13 +35,13 @@ O lado Adobe Commerce da arquitetura inclui hospedar a pesquisa *Admin*, sincron
 
 Com foco na velocidade, relevância e facilidade de uso, o [!DNL Live Search] é um divisor de águas para compradores e comerciantes. Assista ao vídeo a seguir e faça um rápido tour pelo [!DNL Live Search] na loja.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452574?captions=por_br&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418797?learn=on)
 
-Para ver um vídeo mais detalhado sobre o uso e a configuração do Live Search, consulte o tópico [Demonstração completa sobre [!DNL Live Search]](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration).
+Para ver um vídeo mais detalhado sobre o uso e a configuração do Live Search, consulte o tópico [Demonstração completa sobre [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration).
 
 ### Pesquisar enquanto digita
 
-[!DNL Live Search] responde com produtos sugeridos e uma imagem em miniatura dos principais resultados da pesquisa em um [popover](storefront-popover.md), à medida que os compradores digitam consultas na caixa [Pesquisa](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/search/search). A página [detalhes do produto](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/storefront/storefront) é exibida quando os compradores clicam em um produto sugerido ou em destaque. Um link _Exibir todos_ no rodapé do popover exibe a página de resultados da pesquisa.
+[!DNL Live Search] responde com produtos sugeridos e uma imagem em miniatura dos principais resultados da pesquisa em um [popover](storefront-popover.md), à medida que os compradores digitam consultas na caixa [Pesquisa](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search). A página [detalhes do produto](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) é exibida quando os compradores clicam em um produto sugerido ou em destaque. Um link _Exibir todos_ no rodapé do popover exibe a página de resultados da pesquisa.
 
 [!DNL Live Search] retorna resultados de &quot;pesquisa ao digitar&quot; para uma consulta de dois ou mais caracteres. Para uma correspondência parcial, o número máximo de caracteres por palavra é 20. O número de caracteres na consulta não é configurável. O popover inclui os campos `name`, `sku` e `category_ids`.
 
@@ -64,6 +64,15 @@ Quando uma pesquisa é feita, o [!DNL Live Search] executa uma pesquisa não dif
 | Substituição | Substituição de um caractere por outro. | &quot;cart&quot; -> &quot;cast&quot; |
 
 Além da lógica de pesquisa difusa, transposições também são contabilizadas, ou seja, onde dois caracteres adjacentes em uma palavra são trocados, por exemplo, &quot;o&quot; em vez de &quot;o&quot;. Observe que esses limites de edição são por palavra e não pela frase como um todo.
+
+### Filtros versus facetas
+
+[!DNL Live Search] pode filtrar os resultados por qualquer atributo que esteja indexado como filtrável. Uma faceta é simplesmente um atributo filtrável que foi configurado para ser exibido como um filtro voltado para o comprador na loja (por exemplo, Marca, Cor, Preço).
+
+Alguns campos internos — como `inStock` — são filtráveis, mas não fatíveis:
+
+- Eles podem ser usados em filtros de API (por exemplo, para ocultar produtos indisponíveis).
+- Eles não aparecem na caixa de diálogo [!UICONTROL Add Facet] e não podem ser exibidos como facetas voltadas para o comprador.
 
 ### Pesquisa filtrada com facetas
 
@@ -99,10 +108,10 @@ Se você não enviar uma consulta de pesquisa para os dados do catálogo no ambi
 
 ### Ambiente de teste inativo
 
-Para reativar os dados do catálogo no ambiente de teste, [envie uma solicitação de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) com o título: &quot;Reativar [!DNL Live Search]&quot; e incluir as IDs de ambiente. Os dados do catálogo no ambiente de teste devem ser restaurados em algumas horas.
+Para reativar os dados do catálogo no ambiente de teste, [envie uma solicitação de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) com o título: &quot;Reativar [!DNL Live Search]&quot; e incluir as IDs de ambiente. Os dados do catálogo no ambiente de teste devem ser restaurados em algumas horas.
 
 ### Catálogo vazio
 
 Se o ambiente tiver um catálogo vazio 45 dias após a criação, os dados do catálogo serão definidos para o modo de hibernação e nenhum dado será retornado para nenhuma consulta de pesquisa. Isso inclui ambientes de produção e teste.
 
-Para reativar os dados do catálogo em seu ambiente, [envie uma solicitação de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) com o título: &quot;Reativar [!DNL Live Search]&quot; e inclua as IDs de ambiente. Os dados do catálogo em seu ambiente devem ser restaurados em algumas horas.
+Para reativar os dados do catálogo em seu ambiente, [envie uma solicitação de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) com o título: &quot;Reativar [!DNL Live Search]&quot; e inclua as IDs de ambiente. Os dados do catálogo em seu ambiente devem ser restaurados em algumas horas.
