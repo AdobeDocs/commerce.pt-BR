@@ -5,7 +5,7 @@ role: Admin, Leader, User
 feature: Integration, Personalization, Services, Saas
 recommendations: noDisplay
 badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
-source-git-commit: c9cd8ca208a22d4166b2271aa11a9e9acd871d3f
+source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 13%
@@ -17,7 +17,7 @@ ht-degree: 13%
 - [Visão geral](home.md)
 - Informações da versão {#release-information}
    - [Notas de versão](/help/landing/release-notes-all.md)
-- [Soluções do produto](product-solutions.md)
+- {hide-from-toc}[Soluções do produto](product-solutions.md)
 - Serviços da Commerce {#commerce-services}
    - [[!DNL AEM Assets Integration]](https://experienceleague.adobe.com/pt-br/docs/commerce/aem-assets-integration/overview)
    - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html?lang=pt-BR)
@@ -28,7 +28,7 @@ ht-degree: 13%
    - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html?lang=pt-BR)
    - [[!DNL App Management]](https://experienceleague.adobe.com/pt-br/docs/commerce/app-management/overview)
    - [Conector de serviços](/help/landing/saas.md)
-   - [Integrar [!DNL Adobe Commerce] com [!DNL Adobe LLM Optimizer]](https://experienceleague.adobe.com/docs/commerce/llmo-integration/overview.html)
+   - [Integrar [!DNL Adobe Commerce] com [!DNL Adobe LLM Optimizer]](https://experienceleague.adobe.com/docs/commerce/llmo-integration/overview.html?lang=pt-BR)
 - Ferramentas de dados {#data-services}
    - [Exportação de dados SaaS](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html?lang=pt-BR)
    - [Indexação de preços SaaS](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html?lang=pt-BR)
