@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4b38ce9b1585fa7414e323b08bf8d09d6da46a6c
+source-git-commit: feb450ecd425d7e3ce7f8e354aeb294bb7d5d1ce
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1333'
 ht-degree: 1%
 
 ---
@@ -503,58 +503,6 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
         Novo tópico
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ab635fecb7b82294bd4a4fd045ed71931e9d265d">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 6 de março de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Adição da integração da loja ao <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/tutorials/ratings-extension">Tutorial de classificações</a>.</p>
-</td>
-      <td>
-        Atualização importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.pt-BR/pull/15">pull request</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 3 de março de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Publicação da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aco-optimizer-connector/overview">documentação do Adobe Commerce Optimizer Connector v1.0.9</a> para o lançamento de disponibilidade geral.</p>
-</td>
-      <td>
-        Atualização importante, novo tópico, técnico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/216958e287993d1a212fb59fdaa8e2ba3e931b97">confirmar</a></td>
-    </tr>
-    <tr>
-      <td><p>Atualização das <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/release-notes">notas de versão</a> do Adobe Commerce as a Cloud Service com a versão mais recente da Sandbox.</p>
-</td>
-      <td>
-        Atualização importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6fc1fbd8b70459e6473b48fdc4bb6fc75f6dc559">confirmar</a></td>
     </tr>
   </tbody>
 </table>
