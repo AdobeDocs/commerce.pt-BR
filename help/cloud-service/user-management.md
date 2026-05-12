@@ -6,9 +6,21 @@ role: Admin
 level: Intermediate
 exl-id: 9bc80fe6-6dfd-4bb3-8dc5-d5efd8a8d90c
 badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
-source-git-commit: cdb15907871faec9a94b2671a44ac2d6ce8f51c5
+TQID: https://experienceleague.adobe.com/8cIklZrl3rmXMD4Hf6oTU5bBuseh3ianLw2IMujps-E
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 118e2865ce9d4903b9a82254e0f56fc76c9fdadf
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: 1822
 ht-degree: 0%
 
 ---
@@ -41,10 +53,15 @@ As seguintes funções estão disponíveis para [!DNL Adobe Commerce as a Cloud 
 
 * [**Desenvolvedores**](https://helpx.adobe.com/br/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} — Os desenvolvedores têm permissões de usuário e são adicionados à instância do Commerce como um usuário desenvolvedor. Eles podem usar os [[!DNL Admin UI SDK]](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}, [configurar eventos](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"} e [criar webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}.
 
-* Administradores - Há três tipos diferentes de administradores:
+* Administradores - Há diferentes tipos de funções administrativas:
    * [Administradores do sistema](https://helpx.adobe.com/br/enterprise/using/admin-roles.html){target="_blank"} - O administrador do sistema tem acesso a todos os produtos e perfis de produtos na organização por meio da Admin Console.
    * [Administradores de produtos](#add-a-product-admin) - Os administradores de produtos podem [gerenciar usuários, funções e permissões do produto](#add-users) no [!DNL Adobe Admin Console] e [gerenciar usuários no Administrador do Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}.
    * [Administradores de perfil de produto](#add-developers-and-product-profile-admins) - Os administradores de perfil de produto não têm acesso ao Administrador do Adobe Commerce, mas podem gerenciar usuários para o produto no [!DNL Adobe Admin Console].
+   * Administradores de suporte - Os administradores de suporte podem criar e gerenciar tíquetes de suporte.
+
+>[!NOTE]
+>
+>Se quiser que um usuário tenha a capacidade de criar tíquetes de suporte, ele deverá receber a função de **Administrador de suporte** na Admin Console.
 
 Para obter informações detalhadas sobre as permissões concedidas a cada função dentro do Adobe Commerce, consulte [recursos de função](#role-resources).
 
@@ -293,7 +310,7 @@ Depois de adicionar um usuário ao [!DNL AEM Assets], ele pode acessar a interfa
 1. [Adicionar usuários ao perfil de produto](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-manager/content/requirements/users-and-roles){target="_blank"}.
 
 * [Configurar [!DNL AEM Assets] para oferecer suporte aos metadados do Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce/aem-assets-integration/get-started/configure-aem)
-* [Integrar [!DNL AEM Assets] ao Commerce para sincronização de ativos](https://experienceleague.adobe.com/pt-br/docs/commerce/aem-assets-integration/get-started/setup-synchronization)
+* [Integrar o  [!DNL AEM Assets]  ao Commerce para sincronização de ativos](https://experienceleague.adobe.com/pt-br/docs/commerce/aem-assets-integration/get-started/setup-synchronization)
 
 {{aem-assets-instance-mapping}}
 
