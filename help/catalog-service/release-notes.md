@@ -72,7 +72,7 @@ O suporte é fornecido para a versão mais recente. As notas de versão para ver
 <!--v1.52-->
 
 ![Novo](../assets/new.svg) Limite imposto de no máximo 100 SKUs por solicitação para Adobe Commerce Optimizer e Adobe Commerce as a Cloud Service
-clientes de acordo com [limites e limites documentados](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits). <!--DATA-7156-->
+clientes de acordo com [limites e limites documentados](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/boundaries-limits). <!--DATA-7156-->
 
 **Data de lançamento**: 17 de abril de 2026
 <!--v1.51-->
@@ -256,7 +256,7 @@ Aplicável a:
 **Data de lançamento**: 20 de junho de 2025
 <!-- v1.37 -->
 
-![Nova](../assets/new.svg) **Configuração do catálogo de preços hierárquico** — Intervalos de preços precisos para o catálogo de preços pai-filho. Os cálculos respeitam a hierarquia e as regras herdadas; reduz os erros de precificação quando vários catálogos de preços são vinculados. Somente Adobe Commerce Optimizer. Consulte [Catálogos de Preços](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/pricebooks).
+![Nova](../assets/new.svg) **Configuração do catálogo de preços hierárquico** — Intervalos de preços precisos para o catálogo de preços pai-filho. Os cálculos respeitam a hierarquia e as regras herdadas; reduz os erros de precificação quando vários catálogos de preços são vinculados. Somente Adobe Commerce Optimizer. Consulte [Catálogos de Preços](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/setup/pricebooks).
 
 ![Novo](../assets/new.svg) **Chaves que não diferenciam maiúsculas de minúsculas** — As pesquisas de chave em consultas agora não diferenciam maiúsculas de minúsculas, reduzindo os erros de maiúsculas e minúsculas. <!--DATA-6494, DCAT-2495-->
 
@@ -393,7 +393,7 @@ O ![novo](../assets/new.svg) esquema do GraphQL agora inclui `lastModifiedAt` na
 
 <!--DATA-5033-->
 
-![Correção](../assets/fix.svg) Suporte adicionado para preços de produtos com até 16 dígitos e 4 casas decimais. Ressincronize a partir do [painel de Gerenciamento de Dados](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) ou da [CLI](../data-export/data-export-cli-commands.md) para aplicar as atualizações.
+![Correção](../assets/fix.svg) Suporte adicionado para preços de produtos com até 16 dígitos e 4 casas decimais. Ressincronize a partir do [painel de Gerenciamento de Dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) ou da [CLI](../data-export/data-export-cli-commands.md) para aplicar as atualizações.
 <!--DATA-5033-->
 
 #### Limitações conhecidas
@@ -430,7 +430,7 @@ Para obter detalhes e exemplos, consulte [Serviço de Catálogo e API Mesh](mesh
 
 [!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
-![Novo](../assets/new.svg) O [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html) agora está disponível para fluxos de dados (Product Recommendations, Live Search, Catalog Service). Requer `catalog-service` metapackage v3.1.0+.
+![Novo](../assets/new.svg) O [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard.html?lang=pt-BR) agora está disponível para fluxos de dados (Product Recommendations, Live Search, Catalog Service). Requer `catalog-service` metapackage v3.1.0+.
 
 **Data de lançamento**: 13 de fevereiro de 2024
 <!-- v1.16 -->
