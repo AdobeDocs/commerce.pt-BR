@@ -1,7 +1,7 @@
 ---
-source-git-commit: feb450ecd425d7e3ce7f8e354aeb294bb7d5d1ce
+source-git-commit: c435c7751fca8c46077cbab3534bd9f47cd03b2b
 workflow-type: tm+mt
-source-wordcount: '1333'
+source-wordcount: '1144'
 ht-degree: 1%
 
 ---
@@ -429,80 +429,6 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
         Novo tópico
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/0fd98bf86555c914f7a5b1e177c31c37764dbf84">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 12 de março de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Atualização do <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aem-assets-integration/manage-assets">Gerenciar ativos de mídia do Commerce</a> e da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aem-assets-integration/synchronize/default-match">Correspondência automática padrão</a> com orientações de navegação mais claras para usuários que configuram ativos de produtos no AEM Assets.</p>
-</td>
-      <td>
-        Técnico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a0eaaf0de53962b37c7b52f3e7e13aac4c62e372">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 11 de março de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Atualização das <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aem-assets-integration/release-notes">notas de versão da Integração do AEM Assets</a> com v1.3.4: suporte para Adobe Commerce 2.4.9-beta1 e PHP 8.5 e preenchimento automático do mapeamento de domínio na interface de usuário de configuração.</p>
-</td>
-      <td>
-        Técnico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/85579e3f2f8fc49f46f9201f31908602ee5d3259">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 10 de março de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Atualização das <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/release-notes">notas de versão</a> do Adobe Commerce as a Cloud Service com a versão mais recente para ambientes de produção.</p>
-</td>
-      <td>
-        Atualização importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/dd9b660729f7c8616347d3222fdfb3b83a774e56">confirmar</a></td>
-    </tr>
-    <tr>
-      <td><p>Adição do novo guia de documentação do <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/app-management/overview">Gerenciamento de aplicativos</a> para apresentar o Gerenciamento de aplicativos e como associar, configurar e gerenciar aplicativos do App Builder com sua instância do Commerce.</p>
-</td>
-      <td>
-        Novo tópico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ab635fecb7b82294bd4a4fd045ed71931e9d265d">confirmar</a></td>
     </tr>
   </tbody>
 </table>
