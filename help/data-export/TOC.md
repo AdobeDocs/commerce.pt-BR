@@ -1,9 +1,10 @@
 ---
 user-guide-title: Guia do [!DNL Data Export] para serviços SaaS
+breadcrumb-title: '[!DNL Data Export]'
 user-guide-description: Este guia fornece instruções detalhadas para usar a extensão  [!DNL Data Export]  para serviços SaaS do Adobe Commerce.
 role: Admin
 feature: Services
-source-git-commit: 15e11d76532fa98dc6a432480ab1110a0fbcd781
+source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
 workflow-type: tm+mt
 source-wordcount: '93'
 ht-degree: 4%
@@ -27,4 +28,4 @@ ht-degree: 4%
    - [Adicionar atributo de produto dinamicamente](add-attribute-dynamically.md)
    - [Adicionar classe de imposto, conjunto de atributos e metadados de inventário](add-tax-attribute-set-inventory-attributes.md)
 - [Notas de versão](release-notes.md)
-- [Retornar à página inicial dos Serviços da Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=pt-BR)
+- [Retornar à página inicial dos Serviços da Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
