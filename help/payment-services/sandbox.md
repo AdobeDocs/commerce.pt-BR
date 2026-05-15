@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 2c6c812fd25feecfe5133d6623a1c814003d579c
+source-git-commit: 5312d23f050d9007132f7f14b17caf13ab52c7df
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Quando a integração da sandbox do PayPal for aprovada, você deverá ver uma n
 
 ### Redefinir sua conta de sandbox
 
-Se você criou uma conta de sandbox do PayPal durante o processo de integração do PayPal com sandbox, deve redefinir sua sandbox de integração porque, ou não, pode verificar seu email.
+Se você criou uma conta de sandbox do PayPal durante o processo de integração do PayPal com sandbox, é necessário redefinir sua sandbox de integração porque não é possível verificar seu email.
 
 Para redefinir sua conta de sandbox:
 
