@@ -7,9 +7,29 @@ role: Admin, Developer, User, Leader
 level: Beginner
 badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: cf06dec6-8d6b-413e-9977-df88373c188e
-source-git-commit: c0d09ccb32b1efbe926196863c38b1c0a7f95dd7
+TQID: https://experienceleague.adobe.com/MmwdYWe5Et9m0BvtrVYNK2jiJ3fZBnUe2K6xMdIbMUk
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: 4288998fdae56112dc9ddcebfc42b85b9f5d8c00
 workflow-type: tm+mt
-source-wordcount: '3633'
+source-wordcount: 4032
 ht-degree: 0%
 
 ---
@@ -22,11 +42,51 @@ As notas de versão a seguir contêm atualizações para [!DNL Adobe Commerce as
 >
 >Se você estiver usando o Adobe Commerce no local ou o Adobe Commerce na infraestrutura em nuvem, consulte as [notas de versão do Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/overview).
 
-## Maio de 2026 - versão #1 {#latest}
+## Maio de 2026 - versão #2 {#latest}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+[!BADGE Sandbox]{type=Caution tooltip="Os itens listados estão disponíveis atualmente apenas em ambientes de sandbox. A Adobe disponibiliza novas versões em ambientes de sandbox primeiro para fornecer tempo para testar alterações futuras antes que a versão esteja disponível em ambientes de produção."}
+
+Os itens a seguir serão lançados para ambientes de Produção em 21 de maio de 2026.
+
+>[!BEGINSHADEBOX]
+
+### Rastrear remessas usando transportadoras padrão e personalizadas
+
+O rastreamento de pedidos agora é confiável para transportadoras padrão e personalizadas no [!DNL Commerce Admin], ajudando os comerciantes a fornecerem experiências consistentes de rastreamento pós-compra. Anteriormente, selecionar uma operadora, como UPS ou FedEx, e aplicar uma ID de rastreamento poderia impedir a exibição do link de rastreamento. Nenhuma ação do comerciante é necessária para restaurar esse comportamento. O suporte para link de rastreamento também está disponível para [operadoras personalizadas](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/shipping-reference/) criadas com o [!DNL App Builder Integration Starter Kit]. <!-- ACCS-891 -->
+
+### Exibir tipos de entrada de atributo na grade Atributos do Produto
+
+Uma nova coluna [!UICONTROL **Tipo de Atributo**] agora está visível na grade de Atributos de Produto em ([!UICONTROL **Lojas**] > _[!UICONTROL Attributes]_>[!UICONTROL **Produto**]), que exibe o tipo de entrada (como campo de texto, lista suspensa ou sim/não) para cada atributo de produto, incluindo os tipos contribuídos por extensões. Isso facilita a identificação e o gerenciamento de atributos ao trabalhar com conjuntos de atributos grandes. <!-- ACCS-925 -->
+
+### Melhorias e correções de erros
+
+Os seguintes aprimoramentos, otimizações e correções de erros selecionados estão incluídos nesta versão:
+
+* Correção de um problema em que o ponto de extremidade REST do POST `V1/async/custom-email/send` retornava um erro de validação `UnstructuredArray`. O ponto de extremidade assíncrono agora funciona de forma consistente com o ponto de extremidade POST `V1/custom-email/send` síncrono. <!-- ACCS-921 -->
+
+* Correção de um problema em que os atributos serializáveis personalizados em entidades como Empresa eram limpos involuntariamente ao atualizar a entidade por meio do REST sem incluir os atributos personalizados na carga. Os atributos personalizados agora são preservados quando não fornecidos. <!-- ACCS-946 -->
+
+* Correção de um erro &quot;o consumidor não está autorizado&quot; que poderia impedir logons do GraphQL convidado quando o cabeçalho `X-Adobe-Company` estava presente na solicitação. <!-- ACCS-949 -->
+
+* Correção de um problema em que a edição ou exclusão de uma empresa no [!DNL Commerce Admin] poderia falhar com um erro &quot;Nenhuma entidade&quot; após atribuir um cliente à empresa por meio do ponto de extremidade REST `V1/customers/companies` do PUT. <!-- ACCS-856 -->
+
+* Solução de um problema com status de grade de ordens de venda obsoletas. <!-- CCSAAS-4915 -->
+
+* Correção de um problema no [!DNL Commerce Admin] em que os arquivos anexados como amostras e links em produtos baixáveis retornavam um erro `404` quando acessados na página de edição do produto. <!-- CCSAAS-4394 -->
+
+* Correção de um erro &quot;Undefined array key &#39;simple_sku&#39;&quot; que poderia ocorrer ao criar uma remessa de um pedido que continha produtos configuráveis. <!-- CCSAAS-4877 -->
+
+* A consulta do GraphQL `guestOrderByToken` agora retorna uma mensagem de erro mais informativa quando chamada com um token malformado, em vez de um erro de servidor interno. <!-- CCSAAS-4921 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## Maio de 2026 - versão #1
 
 [!BADGE Produção]{type=Neutral tooltip="Os itens listados estão disponíveis atualmente em Ambientes de produção."}
-
-<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
 Os itens a seguir foram lançados para ambientes de Produção em 7 de maio de 2026.
 
