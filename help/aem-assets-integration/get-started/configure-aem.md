@@ -3,10 +3,21 @@ title: Configurar o projeto do AEM Assets para suportar metadados do Commerce
 description: Habilite a sincronização perfeita de ativos entre o Adobe Commerce e o AEM Assets adicionando os metadados necessários para a integração.
 feature: CMS, Media, Integration
 exl-id: a5d2cbab-5ea1-446b-8ab2-2c638128a40c
-source-git-commit: ac880333814d9d9a45e658e2a637cd9634dbfb1f
+TQID: https://experienceleague.adobe.com/QPlM-eeRjJ0gwmpGO4SSYR4PLtL97O-NeozWorDWtv0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: da3860b0-d637-47df-bef0-273751180266
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 5dc61e0351e338c4d184d7d882decff49b13a12b
 workflow-type: tm+mt
-source-wordcount: '1213'
-ht-degree: 0%
+source-wordcount: 1708
+ht-degree: 1%
 
 ---
 
@@ -16,13 +27,13 @@ Ao usar o AEM Assets como um sistema de gerenciamento de ativos digitais (DAM) p
 
 Conclua as seguintes etapas para configurar o projeto do AEM Assets com o código do pacote e os metadados necessários para gerenciar ativos do Commerce no ambiente de criação do AEM:
 
-1. [Saiba mais sobre o &#x200B;](#aem-commerce-assets-commerce-package-contents)
+1. [Saiba mais sobre o conteúdo do pacote `assets-commerce`](#aem-commerce-assets-commerce-package-contents)
 
 1. [Conclua as etapas de instalação para configurar o projeto do AEM Assets para ser compatível com os metadados do Commerce](#step-1-install-the-assets-commerce-package)
 
 ## Conteúdo do pacote de comércio de ativos do AEM Commerce
 
-A Adobe fornece um código de pacote do AEM Commerce `assets-commerce` para adicionar namespace Commerce e recursos de esquema de metadados à configuração de ambiente do Experience Manager Assets as a Cloud Service.
+A Adobe fornece um código de pacote do AEM Commerce `assets-commerce` para adicionar recursos de Namespace e Esquema de Metadados do Commerce à configuração de ambiente do Experience Manager Assets as a Cloud Service.
 
 Esse código de pacote adiciona os seguintes recursos ao ambiente de criação do AEM Assets:
 
@@ -36,6 +47,8 @@ Esse código de pacote adiciona os seguintes recursos ao ambiente de criação d
 
    * Um tipo de metadados personalizado `commerce:roles` e `commerce:positions` atributos para mostrar como o ativo é visualizado no Commerce.
 
+   * Metadados de vários campos (_[!UICONTROL Alt texts]_) de texto alternativo para que os editores possam inserir texto alternativo digitado pelo código de exibição da loja do Commerce. Isso não altera a forma como as imagens do produto são atribuídas ou o escopo é definido no catálogo. Consulte [Texto alternativo nos metadados do AEM Assets](#localized-alt-text-in-aem-assets-metadata).
+
 * Um formulário de esquema de metadados com uma guia Commerce que inclui os campos `Eligible for Commerce` e `Product Data` para marcar ativos do Commerce. O formulário também fornece opções para mostrar ou ocultar os campos `roles` e `position` da interface do AEM Assets.
 
   ![Guia Commerce para o formulário de esquema de metadados do AEM Assets](../assets/assets-configure-metadata-schema-form-editor.png){width="600" zoomable="yes"}
@@ -45,6 +58,33 @@ Esse código de pacote adiciona os seguintes recursos ao ambiente de criação d
 >[!NOTE]
 >
 > Consulte a página [readme](https://github.com/ankumalh/assets-commerce) para obter mais informações sobre o **código do pacote do AEM Commerce**.
+
+## Texto alternativo em metadados do AEM Assets
+
+O multicampo _[!UICONTROL Alt texts]_&#x200B;está disponível no editor de metadados de ativos da AEM Assets, na guia **[!UICONTROL Commerce]**, ao editar uma imagem qualificada.
+
+>[!IMPORTANT]
+>
+> O comportamento de exibição por loja se aplica somente ao texto alternativo. A integração do AEM Assets não sincroniza imagens de produtos diferentes por exibição da loja do Adobe Commerce. As imagens de produto do AEM continuam a ser sincronizadas com o Commerce com o mesmo comportamento de atribuição de galeria de antes desta versão.
+
+O multicampo contém uma linha por exibição de loja do Commerce. Cada linha tem duas entradas:
+
+* **[!UICONTROL Store View Code]** — O identificador de exibição de armazenamento (por exemplo `default` ou `en_US`).
+
+* **[!UICONTROL Alt Text]** — Texto alternativo para a exibição de armazenamento, limitado a 255 caracteres.
+
+Selecione **[!UICONTROL Add]** para adicionar mais linhas para exibições de armazenamento adicionais. Para remover uma linha, selecione o ícone **[!UICONTROL Delete]** nessa linha para removê-la.
+
+![Múltiplos campos de textos alternativos com entradas de Código de Exibição de Loja e Texto Alternativo](../assets/commerce-metadata-alt-texts-multifield.png){width="600" zoomable="yes"}
+
+Ao salvar, a validação do lado do cliente bloqueia o envio se qualquer linha tiver um _[!UICONTROL Store View Code]_&#x200B;vazio ou se duas linhas usarem o mesmo código de exibição de armazenamento (não diferencia maiúsculas de minúsculas).
+
+Entradas de texto alternativo são mantidas nos metadados de ativos JCR como duas propriedades `String[]` alinhadas por índice:
+
+* `commerce:altTextStoreViews`: Armazenar código de exibição para cada linha.
+* `commerce:altTextValues`: texto alternativo correspondente no mesmo índice de cada entrada em `commerce:altTextStoreViews`.
+
+Quando esses ativos são sincronizados com o Adobe Commerce, o texto alternativo de exibição por loja é gravado na galeria de mídia do produto para os códigos de exibição da loja correspondentes. O mapeamento de imagem subjacente não foi alterado.
 
 ## Pré-requisitos
 

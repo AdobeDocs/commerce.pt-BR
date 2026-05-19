@@ -3,9 +3,9 @@ title: Notas de versão da Integração do AEM Assets
 description: Revise as notas de versão para obter informações sobre todas as versões da Integração do AEM Assets.
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: cd7a332dd09840aabcc0efae081ba0a713506897
+source-git-commit: 5dc61e0351e338c4d184d7d882decff49b13a12b
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '1198'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 Essas notas de versão descrevem todas as versões da integração do AEM Assets e incluem:
 
 ![Novos](../assets/new.svg) Novos recursos
-![Problema corrigido](../assets/fix.svg) Correções e melhorias
+![Correção de um problema](../assets/fix.svg) Correções e melhorias
 ![Problema conhecido](../assets/bug.svg) Problemas conhecidos
 
 Para alterações e correções de recursos lançadas fora da versão normal do recurso, revise as seções _Atualizações do serviço hospedado_.
@@ -37,6 +37,14 @@ _11 de fevereiro de 2025_
 ![Novo problema](../assets/new.svg) Agora, os comerciantes podem sincronizar imagens para produtos e categorias.
 
 +++
+
+## v1.3.6
+
+_14 de maio de 2026_
+
+[!BADGE Com Suporte]{type=Informative tooltip="Compatível"} no Adobe Commerce versão 2.4.5 e posteriores.
+
+![Novo problema](../assets/new.svg)<!-- Issue ACAP-1268 --> Quando imagens ou ativos são importados do AEM para uma galeria de mídia do produto Commerce, o texto alternativo agora é transportado como parte da sincronização. O texto alternativo pode ser definido por exibição de loja no AEM Assets. Consulte [Texto alternativo nos metadados do AEM Assets](configure-aem.md#alt-text-in-aem-assets-metadata){target=_blank}.
 
 ## v1.3.5
 
