@@ -3,9 +3,12 @@ title: Widgets da vitrine
 description: Saiba mais sobre o popover da loja e os widgets da página de listagem de produtos.
 exl-id: 6768d819-cf4d-4114-81a4-f7f9e91266f9
 TQID: https://experienceleague.adobe.com/dS4o-wu81wkjZqCG-u2wwwSCgppCRF3AZAXXHoCZPWM
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 source-git-commit: null
 workflow-type: tm+mt
 source-wordcount: 193

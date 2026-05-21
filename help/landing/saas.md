@@ -6,11 +6,21 @@ role: Admin, User
 exl-id: 1aa6ba8b-be39-496e-b83d-a4a7db9f5dd8
 badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
 TQID: https://experienceleague.adobe.com/pWbJSCrV9CcdJXNTkuXyCxh73eUA7nYt1okexwtK7II
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2: id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2:
+  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: null
 workflow-type: tm+mt
 source-wordcount: 1662
@@ -126,7 +136,7 @@ Para selecionar ou criar um projeto SaaS, solicite as [!DNL Commerce] chaves de 
 
    Se você não vir a seção **[!UICONTROL Commerce Services Connector]**, instale os módulos [!DNL Commerce] do [[!DNL Commerce] serviço](#availableservices) desejado e verifique se o pacote `magento/module-services-id` está instalado.
 
-1. Nas seções _[!UICONTROL Sandbox API Keys]_e_[!UICONTROL Production API Keys]_, cole seus valores de chave.
+1. Nas seções _[!UICONTROL Sandbox API Keys]_&#x200B;e_[!UICONTROL Production API Keys]_, cole seus valores de chave.
 
    - As chaves privadas devem incluir `-----BEGIN PRIVATE KEY-----` no início da chave e `-----END PRIVATE KEY-----` no final da chave.
    - Se você não tiver uma cópia das chaves reais, peça ao proprietário da licença para conectá-las e, em seguida, conecte os valores à configuração.
