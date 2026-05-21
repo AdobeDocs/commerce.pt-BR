@@ -1,9 +1,17 @@
 ---
 title: Gerenciar regras de merchandising de pesquisa
 description: Saiba como gerenciar as regras de merchandising de pesquisa existentes.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: f831e77c-95e3-4d55-bc33-1a1247db22f8
+TQID: https://experienceleague.adobe.com/zXda40dPXU4loN41pLfHO76Q3D1LFLfn34ob0QsGWNY
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: 205
 ht-degree: 0%
 
 ---
@@ -32,5 +40,5 @@ Essa opção fornece uma maneira rápida de ver todos os parâmetros de regra, e
 
 ## Excluir regra
 
-1. No espaço de trabalho *Regras*, localize a regra na grade que você deseja editar e clique em **Mais** opções...
+1. No espaço de trabalho *Regras*, localize a regra na grade que você deseja editar e clique em **Mais** (...) opções.
 1. Clique em **Excluir**.

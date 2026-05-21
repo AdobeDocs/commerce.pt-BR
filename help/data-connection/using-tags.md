@@ -3,9 +3,23 @@ title: Coletar dados do Commerce usando tags do Adobe Experience Platform
 description: Saiba como coletar dados do Commerce usando tags da Adobe Experience Platform.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: dab333e8-5f71-4f3e-9660-6363b0e230c8
+TQID: https://experienceleague.adobe.com/7HNafiIenZfLrAhILPMwuUzRDzBVuClvDchJBGEg6bs
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '2563'
+source-wordcount: 2655
 ht-degree: 0%
 
 ---
@@ -14,8 +28,8 @@ ht-degree: 0%
 
 Embora você possa usar a extensão [!DNL Data Connection] para publicar e assinar eventos de vitrine eletrônica, alguns comerciantes já podem estar usando uma solução de coleção de dados, como as [marcas Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html?lang=pt-BR). Para esses comerciantes, o Adobe Commerce fornece uma opção somente de publicação na extensão [!DNL Data Connection] que usa o Adobe Commerce Event SDK.
 
-![[!DNL Data Connection] Fluxo de Dados de Extensão](assets/tags-data-flow.png)
-Fluxo de Dados de Extensão _[!DNL Data Connection]com Marcas_
+Fluxo de Dados de Extensão ![[!DNL Data Connection]](assets/tags-data-flow.png)
+Fluxo de Dados de Extensão _[!DNL Data Connection]com Tags_
 
 Neste tópico, você aprenderá a mapear os valores de evento da loja fornecidos pela extensão [!DNL Data Connection] para a solução de tags da Adobe Experience Platform que você já está usando.
 
@@ -57,7 +71,7 @@ Como a coleta de dados usando tags é diferente do uso do Adobe Commerce Event S
 
 Ao atualizar os elementos de dados e as regras nas tags do Adobe Experience Platform com dados do evento específicos da Adobe Commerce, há algumas etapas comuns que você deve seguir.
 
-Por exemplo, vamos adicionar o evento `signOut` do Adobe Commerce às tags da Adobe Experience Platform. As etapas descritas abaixo, exceto os valores específicos que você definiu, descrevem como adicionar [elementos de dados](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html?lang=pt-BR#data-element) e [regras](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html?lang=pt-BR#create-a-rule), que se aplicam a todos os eventos do Adobe Commerce que você está adicionando às marcas.
+Por exemplo, vamos adicionar o evento `signOut` do Adobe Commerce às tags da Adobe Experience Platform. As etapas descritas abaixo, exceto os valores específicos que você definiu, descrevem como adicionar [elementos de dados](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#data-element) e [regras](https://experienceleague.adobe.com/docs/experience-platform/collection/e2e.html#create-a-rule), que se aplicam a todos os eventos do Adobe Commerce que você está adicionando às marcas.
 
 1. Criar um elemento de dados:
 
@@ -116,20 +130,20 @@ Repita as etapas acima nas tags para cada um dos eventos do Adobe Commerce descr
 
 Para cada um dos eventos a seguir, mapeie os eventos do Adobe Commerce para o XDM seguindo as etapas acima.
 
-- [&quot;signOut&quot;](#signout)
-- [&quot;signIn&quot;](#signin)
-- [&quot;createAccount&quot;](#createaccount)
+- [`signOut`](#signout)
+- [`signIn`](#signin)
+- [`createAccount`](#createaccount)
 - [`editAccount`](#editaccount)
-- [&quot;pageView&quot;](#pageview)
-- [&quot;productView&quot;](#productview)
-- [&quot;searchRequestSent&quot;](#searchrequestsent)
-- [&quot;searchResponseReceived&quot;](#searchresponsereceived)
-- [&quot;addToCart&quot;](#addtocart)
-- [&quot;openCart&quot;](#opencart)
-- [&quot;viewCart&quot;](#viewcart)
-- [&quot;removeFromCart&quot;](#removefromcart)
-- [&quot;initiateCheckout&quot;](#initiatecheckout)
-- [&quot;placeOrder&quot;](#placeorder)
+- [`pageView`](#pageview)
+- [`productView`](#productview)
+- [`searchRequestSent`](#searchrequestsent)
+- [`searchResponseReceived`](#searchresponsereceived)
+- [`addToCart`](#addtocart)
+- [`openCart`](#opencart)
+- [`viewCart`](#viewcart)
+- [`removeFromCart`](#removefromcart)
+- [`initiateCheckout`](#initiatecheckout)
+- [`placeOrder`](#placeorder)
 
 ### signOut
 
@@ -726,7 +740,7 @@ Crie os seguintes elementos de dados:
    - **Tipo de Elemento de Dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `productContext.pricing.regularPrice`
 
-1. Produto  preço:
+1. Preço do produto:
 
    - **Nome**: `product price`
    - **Extensão**: `Core`
@@ -969,7 +983,7 @@ Crie os seguintes elementos de dados:
    - **Tipo de Elemento de Dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `productContext.pricing.regularPrice`
 
-1. Produto  preço:
+1. Preço do produto:
 
    - **Nome**: `product price`
    - **Extensão**: `Core`

@@ -1,9 +1,18 @@
 ---
 title: Personalizar
 description: Saiba como personalizar as recomendações de produto.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: b59932e1-748a-432d-b65b-13cf1c287fb2
+TQID: https://experienceleague.adobe.com/-49Lqkuhnrn5GCQtHLO-9gr1nHwMjEQeEVDRR4cDk5Y
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: 645
 ht-degree: 0%
 
 ---
@@ -18,7 +27,7 @@ Para obter mais informações sobre a modificação de arquivos de modelo, consu
 
 Se você modificar o arquivo `recommendations.html`, deverá preservar as seguintes marcas no arquivo para garantir que o Adobe Commerce possa coletar métricas de recomendação da sua loja:
 
-| Tag | Uso |
+| Tag | Usar |
 |---|---|
 | `<div data-bind="attr : {'data-unit-id' : unitId }"...</div>` | Coleta eventos de exibição. |
 | `<a data-bind="attr : {'data-sku' : sku, 'data-unit-id'}"...</a>` | Coleta eventos de clique. <br/>**Observação:** se você adicionar marcas de âncora, será necessário incluir esses atributos. |

@@ -3,9 +3,18 @@ title: Correspondência automática padrão
 description: Saiba como a regra de correspondência automática padrão permite a sincronização perfeita entre o Adobe Commerce e a integração do AEM Assets, garantindo que os ativos sejam vinculados automaticamente às entidades de merchandising corretas.
 feature: CMS, Media, Integration
 exl-id: 8a18639b-f508-456e-8d22-18e3e0fdd515
-source-git-commit: a0eaaf0de53962b37c7b52f3e7e13aac4c62e372
+TQID: https://experienceleague.adobe.com/z7vpuhsVJnKohiU-bKNrcGnoIQ5WAwcwiccYlvawN0U
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: 317
 ht-degree: 0%
 
 ---

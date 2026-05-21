@@ -4,9 +4,17 @@ description: Conheça as práticas recomendadas para implementar aspectos na sua
 role: Admin, Developer
 badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: b9da6853-c846-4267-8dee-17abc034ead0
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+TQID: https://experienceleague.adobe.com/B2Um9FH-XvhgzfMrCltjw83rY9xm5DDOQVrbCVig99U
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: 367
 ht-degree: 0%
 
 ---

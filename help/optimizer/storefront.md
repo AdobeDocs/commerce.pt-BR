@@ -4,9 +4,25 @@ description: Saiba como configurar sua  [!DNL Adobe Commerce Optimizer] loja.
 role: Developer
 badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 2b4c9e98-a30c-4a33-b356-556de5bd721a
-source-git-commit: b6f7286f223c6253ab9edbead63a4bc4a9baddfe
+TQID: https://experienceleague.adobe.com/Jcj-3qVJPXr-t0X8-Y9GVziGj57ksUdWDhCO6pt-94A
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2:
+  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: 1562
 ht-degree: 0%
 
 ---
@@ -208,10 +224,10 @@ Use as orientações a seguir para verificar problemas comuns:
 Antes de prosseguir para as próximas etapas, verifique se a vitrine eletrônica está funcionando corretamente verificando o seguinte:
 
 ![Lista de verificação](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Os valores de configuração correspondem às suas configurações de instância<br>
-![Lista de verificação](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Carregamentos de página inicial da Storefront sem erros<br>
+![Lista de verificação](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) A página inicial da Storefront é carregada sem erros<br>
 ![Lista de verificação](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Pelo menos uma página de detalhes do produto exibe informações completas<br>
-A funcionalidade de pesquisa ![Lista de verificação](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) retorna resultados relevantes<br>
-![Lista de verificação](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) As imagens do produto estão carregando corretamente<br>
+A funcionalidade de pesquisa ![Lista de Verificação](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) retorna resultados relevantes<br>
+![Lista de verificação](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Imagens de produtos estão carregando corretamente<br>
 ![Lista de verificação](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Os valores de configuração correspondem às suas configurações de instância<br>
 
 ### Obter ajuda

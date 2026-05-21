@@ -4,9 +4,20 @@ description: Saiba como instalar a extensão AEM Assets Integration for Adobe Co
 feature: CMS, Media
 badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
 exl-id: c0fb59e1-daf8-4f48-a7a7-b48e8782dfad
-source-git-commit: d46526db56dad08a8f865664c92d1214bbf063d8
+TQID: https://experienceleague.adobe.com/z4WBMzUa6Jn8EjUH1e5oojV4I3bTDZJylwtQ7LZ4wPE
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '1460'
+source-wordcount: 1675
 ht-degree: 0%
 
 ---
@@ -152,8 +163,8 @@ A Integração do AEM Assets usa o serviço do Adobe I/O Events para enviar dado
 Antes de configurar o Adobe I/O Events, verifique a configuração do trabalho RabbitMQ e cron para seu projeto do Commerce:
 
 - Certifique-se de que o RabbitMQ esteja ativado e ouvindo eventos.
-   - [Instalação do RabbitMQ para Adobe Commerce no local](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq)
-   - [Instalação do RabbitMQ para Adobe Commerce na infraestrutura em nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq)
+   - [Configuração do RabbitMQ para Adobe Commerce no local](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq)
+   - [Configuração do RabbitMQ para Adobe Commerce na infraestrutura em nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq)
    - Verifique se os [trabalhos cron estão habilitados](https://developer.adobe.com/commerce/extensibility/events/configure-commerce/#check-cron-and-message-queue-configuration). Os trabalhos do Cron são necessários para comunicação e fluxos de trabalho para a integração do AEM Assets.
 
 >[!NOTE]

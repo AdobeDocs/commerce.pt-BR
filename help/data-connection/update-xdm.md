@@ -4,9 +4,19 @@ description: Saiba como criar um esquema, conjunto de dados e sequência de dado
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: c933a1bc-3d6f-4f80-944f-8c3e212aaeb6
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+TQID: https://experienceleague.adobe.com/8u3lSBPoreIZuu107QbR7FNvVx6Lw3TJsKUU6LCQ1Gs
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: 1019
 ht-degree: 0%
 
 ---
@@ -71,9 +81,9 @@ Para incluir as informações do perfil do comprador, consulte [dados do evento 
 
 Os dados do evento de perfil de série temporal são gerados a partir dos seguintes eventos:
 
-- [&quot;accountCreated&quot;](events-backoffice.md#accountcreated)
-- [&quot;accountUpdated&quot;](events-backoffice.md#accountupdated)
-- [&quot;accountDeleted&quot;](events-backoffice.md#accountdeleted)
+- [`accountCreated`](events-backoffice.md#accountcreated)
+- [`accountUpdated`](events-backoffice.md#accountupdated)
+- [`accountDeleted`](events-backoffice.md#accountdeleted)
 
 Se quiser assimilar os dados do evento de perfil do cliente na Experience Platform, atualize o esquema existente do Commerce e use o mesmo fluxo de dados já configurado, ou crie um fluxo de dados e um esquema específicos do perfil. Essa decisão se baseia na governança de dados da sua empresa. As próximas duas seções o guiarão em ambos os casos.
 

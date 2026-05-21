@@ -4,9 +4,22 @@ description: Acelere sua loja do Adobe Commerce com o [!DNL Catalog Service]  - 
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: 525e3ff0-efa6-48c7-9111-d0b00f42957a
-source-git-commit: 8bdd41f2ee774f214c4be1fb5ae51c6e2a2fe053
+TQID: https://experienceleague.adobe.com/CEbJ8-hkc0AGQ4RnRNMDXA6mMijvhPGAfsxyC4eT39Y
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '1353'
+source-wordcount: 1398
 ht-degree: 0%
 
 ---
@@ -71,10 +84,10 @@ O diagrama a seguir ilustra as diferenças de arquitetura entre o sistema GraphQ
 
 ### Como os sistemas funcionam
 
-**Sistema GraphQL Principal (Abordagem Tradicional):**
+**Sistema GraphQL principal (abordagem tradicional):**
 O aplicativo web progressivo (PWA) envia solicitações diretamente para o aplicativo Commerce, que processa cada solicitação por meio de vários subsistemas antes de retornar uma resposta. Essa viagem de ida e volta em várias etapas pode causar tempos lentos de carregamento da página, resultando potencialmente em taxas de conversão mais baixas.
 
-**Serviço de Catálogo (Abordagem Otimizada):**
+**Serviço de Catálogo (abordagem otimizada):**
 O Serviço de catálogo atua como um Gateway de serviços de vitrine que acessa um banco de dados dedicado e otimizado contendo detalhes do produto, atributos, variantes, preços e categorias. O serviço mantém a sincronização com o Adobe Commerce por meio da indexação automatizada, ignorando o ciclo tradicional de solicitação-resposta para reduzir drasticamente a latência.
 
 Os sistemas GraphQL principais e de serviço não se comunicam diretamente entre si. Você acessa cada sistema de um URL diferente e as chamadas do exigem informações de cabeçalho diferentes. Os dois sistemas GraphQL foram projetados para serem usados juntos. O sistema GraphQL [!DNL Catalog Service] aumenta o sistema principal para agilizar as experiências da loja de produtos.

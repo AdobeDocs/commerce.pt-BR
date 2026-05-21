@@ -2,9 +2,18 @@
 title: Integração
 description: Saiba mais sobre os requisitos e as plataformas compatíveis do  [!DNL Product Recommendations].
 exl-id: 7b8a1117-b6d5-4e5d-bb97-09f76a024cbd
-source-git-commit: 8f421bd4421b9599ad52aa68c5caaee6592ccb43
+TQID: https://experienceleague.adobe.com/FLrOFe-Lwe7i3dOwCISflVGEv2MIkXmmE-NqTvpaY-0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: 418
 ht-degree: 0%
 
 ---
@@ -13,7 +22,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->**O Product Recommendations não é um serviço pronto para HIPAA.** Não habilite ou use as Recomendações de Produto em nenhuma implementação do Adobe Commerce que use a oferta pronta para HIPAA ou que processe informações de integridade protegidas (PHI) de outra forma. O Product Recommendations faz parte dos serviços SaaS da Commerce, atualmente classificados como prontos para não-HIPAA.
+>**O Product Recommendations não é um serviço pronto para HIPAA.** Não ative ou use as Recomendações de produto em nenhuma implementação do Adobe Commerce que use a oferta pronta para HIPAA ou que processe de outra forma as PHIs (Protected Health Information, informações protegidas de saúde). O Product Recommendations faz parte dos serviços SaaS da Commerce, atualmente classificados como prontos para não-HIPAA.
 >
 >Para obter detalhes sobre quais recursos do Adobe Commerce estão prontos para HIPAA e quais serviços não devem ser usados com PHI, consulte [Preparação para HIPAA no Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) e [Operações](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services).
 

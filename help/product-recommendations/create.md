@@ -2,9 +2,20 @@
 title: Criar nova recomendação
 description: Saiba como criar uma unidade de recomendação de produto.
 exl-id: 1d5f83c4-1613-4236-9d98-d455f45a47da
-source-git-commit: 41eae72cbd01f0e0f2c4a6cf028a2a11c79921ad
+TQID: https://experienceleague.adobe.com/K3cKFg-m22bUzlupyhsHgDVxaJka7xhOvFnOt8wDdII
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '1505'
+source-wordcount: 1573
 ht-degree: 0%
 
 ---
@@ -45,7 +56,7 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
    * Detalhes do produto
    * Carrinho
    * Confirmação
-   * [Construtor de páginas](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [Page Builder](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/page-builder/add-content/recommendations)
 
    É possível criar até 50 unidades de recomendação ativas para cada tipo de página. O tipo de página fica esmaecido quando o limite é atingido.
 

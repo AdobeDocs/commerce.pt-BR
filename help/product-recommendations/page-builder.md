@@ -3,9 +3,14 @@ title: Integração do [!DNL Page Builder]
 description: Saiba como usar  [!DNL Product Recommendations]  unidades no Page Builder.
 feature: Services, Recommendations, Page Builder
 exl-id: 001e8e1d-3590-4b44-b5f8-dd8b9b61f370
-source-git-commit: 3821893c3df01e2e36ab0142616e52c1c92b4d51
+TQID: https://experienceleague.adobe.com/APLw7ZIBIcts0RtPNHWYElEa-QDsQzSxg0fPsuZ2CVc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: 259
 ht-degree: 0%
 
 ---

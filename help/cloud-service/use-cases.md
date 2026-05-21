@@ -6,9 +6,25 @@ role: User, Leader
 level: Beginner
 exl-id: fe961c6d-8bd2-4144-b73b-a3d216a46670
 badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
-source-git-commit: 3fe22d47b6fd6cf1077cbd4644ffad08f55826ca
+TQID: https://experienceleague.adobe.com/4L-M8vsEkT6uuafrOISankRaarQ-OVHDWLXwoVLaUZQ
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2:
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: 1464
 ht-degree: 0%
 
 ---
@@ -26,7 +42,7 @@ Antes de tentar qualquer um desses casos de uso, conclua os seguintes pré-requi
 1. [Crie sua instância do Cloud Service](./getting-started.md#create-an-instance) usando estas opções:
    1. Selecione [!UICONTROL **Sandbox**] na lista suspensa [!UICONTROL **Ambiente**].
    1. Selecione [!UICONTROL **Adobe Store**] na lista suspensa [!UICONTROL **Dados de teste**].
-1. [Faça logon em sua [!DNL Adobe Experience Cloud] conta](https://experience.adobe.com)
+1. [Faça logon em sua conta [!DNL Adobe Experience Cloud] do](https://experience.adobe.com)
 1. [Configure sua vitrine do Cloud Service](./storefront.md) usando estas opções:
    1. Selecione [!UICONTROL `adobe-commerce/adobe-demo-store`] para o modelo.
    1. Selecione [!UICONTROL **Escolher uma instância disponível (Mesh -> SaaS)**] para o método de conexão.
@@ -212,7 +228,7 @@ Considere um cenário em que você deseja modificar rapidamente o plano de fundo
 
    ![guia Commerce no painel de propriedades do ativo](./assets/commerce-tab.png){width="600" zoomable="yes"}
 
-1. Verifique se [!UICONTROL **Ele existe no Adobe Commerce?O campo**] está definido como [!UICONTROL **Sim**].
+1. Verificar se o [!UICONTROL **Existe no Adobe Commerce?**] o campo está definido como [!UICONTROL **Sim**].
 
 1. Clique em [!UICONTROL **Adicionar**] e insira o SKU do produto ao qual você deseja adicionar o ativo.
 

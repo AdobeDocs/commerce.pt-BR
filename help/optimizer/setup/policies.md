@@ -4,9 +4,18 @@ description: Saiba como criar e gerenciar políticas no [!DNL Adobe Commerce Opt
 recommendations: noCatalog
 badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 77f524f6-e283-44d2-9c79-9d40f686a7bf
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+TQID: https://experienceleague.adobe.com/hUwBKWEcFOlkC2WOwBtDDitnj-nu-kixJ9WuencZIe4
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2:
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: 917
 ht-degree: 0%
 
 ---
