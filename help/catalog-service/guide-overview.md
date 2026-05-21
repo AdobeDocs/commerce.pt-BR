@@ -4,16 +4,11 @@ description: O [!DNL Catalog Service for Adobe Commerce] fornece uma maneira mai
 recommendations: noCatalog
 exl-id: 1a83bbc5-8901-49c0-8d8f-daec415edf70
 TQID: https://experienceleague.adobe.com/HnFtCC2mLVAvjHUB1ak9bbXKhgT6bMvSbKV76WM-Yz4
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: null
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 253
 ht-degree: 9%
@@ -35,15 +30,15 @@ Este guia destina-se aos administradores do Adobe [!DNL Commerce]. Inclui inform
 
 | Guia | Descrição |
 |------ | ----------- |
-| [Guia do Usuário do Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce.html?lang=pt-BR) | Documentação voltada para o comerciante do Adobe Commerce e da Magento Open Source |
+| [Guia do Usuário do Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce.html) | Documentação voltada para o comerciante do Adobe Commerce e da Magento Open Source |
 | [Guia do desenvolvedor do Adobe Commerce 2.4](https://developer.adobe.com/commerce/docs) | Documentação voltada para o desenvolvedor usada para criar e personalizar o Adobe Commerce ou o Magento Open Source |
 
 ## Suporte
 
-O [processo de integração](https://experienceleague.adobe.com/docs/commerce/catalog-service/installation.html?lang=pt-BR) foi projetado para orientá-lo pelas etapas necessárias para configurar e habilitar a funcionalidade [!DNL Catalog Service].
+O [processo de integração](https://experienceleague.adobe.com/docs/commerce/catalog-service/installation.html) foi projetado para orientá-lo pelas etapas necessárias para configurar e habilitar a funcionalidade [!DNL Catalog Service].
 
 Se você precisar de informações ou tiver dúvidas que não são abordadas neste guia, use os seguintes recursos:
 
-* [Central de ajuda](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=pt-BR) para artigos de solução de problemas.
-* [Tíquetes de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) - Envie um tíquete para receber ajuda adicional.
+* [Central de ajuda](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) para artigos de solução de problemas.
+* [Tíquetes de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - Envie um tíquete para receber ajuda adicional.
 * Junte-se à equipe de engenharia da Adobe Commerce e aos usuários de serviços da loja SaaS no canal público do Slack [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) para estar atualizado.

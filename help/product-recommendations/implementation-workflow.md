@@ -3,20 +3,11 @@ title: Fluxo de trabalho de implementação
 description: Saiba mais sobre as etapas para implementar o [!DNL Product Recommendations] com êxito em sua loja.
 exl-id: 4a784d04-8be6-473f-afb3-264af06c850a
 TQID: https://experienceleague.adobe.com/-nvORlxBNwoCcZb6s-OvaX8TtIh28Q-fjeUxsDXpe9E
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: null
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 563
 ht-degree: 0%
@@ -43,7 +34,7 @@ Quando você instala o `magento/product-recommendations module`, o Adobe AI agre
 
    A implantação de [!DNL Product Recommendations] requer duas [fontes de dados](type.md) principais: catálogo e comportamental. Como a produção é o único ambiente em que as ações dos compradores são capturadas e analisadas, inicie a coleta de dados sobre a produção o mais rápido possível. [Saiba](events.md) como a Adobe AI treina modelos de aprendizado de máquina que resultam em recomendações de melhor qualidade. Como benefício adicional, ao começar a coletar dados comportamentais na produção, você pode [buscar recomendações](staging-environment.md#fetch-recommendations-from-production-environment-recommended) com base nesses dados de produção enquanto opera em ambientes de não produção. Em seguida, você pode testar e experimentar com diferentes recomendações que são computadas com base nos dados reais do comprador coletados na produção.
 
-   Para implantar a coleção de dados na produção, você deve [instalar e configurar](install-configure.md) o módulo [!DNL Product Recommendations] fornecendo uma [chave de API](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=pt-BR).
+   Para implantar a coleção de dados na produção, você deve [instalar e configurar](install-configure.md) o módulo [!DNL Product Recommendations] fornecendo uma [chave de API](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html).
 
    >[!TIP]
    >
@@ -57,7 +48,7 @@ Quando você instala o `magento/product-recommendations module`, o Adobe AI agre
    >
    > Personalizando o modelo, você pode especificar sua folha de estilos, substituir onde uma unidade de recomendação aparece em uma página e assim por diante.
 
-   Consulte [Personalizar](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/customize.html?lang=pt-BR) na documentação do desenvolvedor para saber como concluir esta etapa.
+   Consulte [Personalizar](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/customize.html) na documentação do desenvolvedor para saber como concluir esta etapa.
 
 1. **Testar recomendações em seu ambiente de não produção**
 

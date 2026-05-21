@@ -4,15 +4,11 @@ description: Saiba como a correspondência automática personalizada é particul
 feature: CMS, Media, Integration
 exl-id: e7d5fec0-7ec3-45d1-8be3-1beede86c87d
 TQID: https://experienceleague.adobe.com/RHRfW99iShMpajrEC8BhvoMEfQ-ABdipWTCdK-KaVH4
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: null
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 603
 ht-degree: 0%
@@ -21,7 +17,7 @@ ht-degree: 0%
 
 # Correspondência automática personalizada
 
-Se a estratégia de correspondência automática padrão (**correspondência automática OOTB**) não estiver alinhada aos seus requisitos de negócios específicos, selecione a opção de correspondência personalizada. Esta opção oferece suporte ao uso do [Adobe Developer App Builder](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) para desenvolver um aplicativo de correspondência personalizado que lida com lógica de correspondência complexa ou com ativos provenientes de um sistema de terceiros que não pode preencher metadados no AEM Assets.
+Se a estratégia de correspondência automática padrão (**correspondência automática OOTB**) não estiver alinhada aos seus requisitos de negócios específicos, selecione a opção de correspondência personalizada. Esta opção oferece suporte ao uso do [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder) para desenvolver um aplicativo de correspondência personalizado que lida com lógica de correspondência complexa ou com ativos provenientes de um sistema de terceiros que não pode preencher metadados no AEM Assets.
 
 ## Configurar correspondência automática personalizada
 
@@ -123,7 +119,7 @@ Você pode baixar o arquivo `workspace.json` da [Adobe Developer Console](https:
 
 ## Pontos de extremidade da API do correspondedor personalizado
 
-Ao criar um aplicativo de correspondência personalizado usando o [App Builder](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, o aplicativo deve expor os seguintes pontos de extremidade:
+Ao criar um aplicativo de correspondência personalizado usando o [App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, o aplicativo deve expor os seguintes pontos de extremidade:
 
 * Ponto de extremidade **Ativo App Builder para URL do produto**
 * Ponto de extremidade **Produto App Builder para URL do ativo**
@@ -292,7 +288,7 @@ O parâmetro `asset_matches` contém os seguintes atributos:
 | Atributo | Tipo de dados | Descrição |
 | --- | --- | --- |
 | `asset_id` | String | A ID do ativo. |
-| `asset_roles` | Matriz | Funções do ativo. Usa [funções de ativos do Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) com suporte, como `thumbnail`, `image`, `small_image` e `swatch_image`. |
+| `asset_roles` | Matriz | Funções do ativo. Usa [funções de ativos do Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) com suporte, como `thumbnail`, `image`, `small_image` e `swatch_image`. |
 | `asset_format` | String | O formato do ativo. Os valores possíveis são `image` e `video`. |
 | `asset_position` | Número | A posição do ativo na galeria de produtos. |
 

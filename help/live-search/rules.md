@@ -3,13 +3,10 @@ title: Pesquisar merchandising
 description: As regras de merchandising do [!DNL Live Search] combinam lógica e ações para moldar a experiência de compra.
 exl-id: 9894bf2b-8556-4057-aa23-ebdcb1599914
 TQID: https://experienceleague.adobe.com/WP92dt45BJo8-pJDaWY-9ocDd4GdJVWcOqzVLfjnEkI
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: null
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 695
 ht-degree: 0%
@@ -82,4 +79,4 @@ A solicitação feita no Administrador funciona de forma um pouco diferente. Ao 
 ## Merchandising de categoria e atribuições de produto de categoria
 
 [!DNL Live Search] permite que você filtre por Categorias. Consulte [Merchandising de categoria](category-merch.md) para obter mais informações.
-No entanto, no Adobe Commerce, você pode criar uma categoria virtual com [Atribuições de produto de categoria](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html?lang=pt-BR). Esse tipo de categoria é criado no tempo de execução e não existe no banco de dados de categorias. Portanto, [!DNL Live Search] não pode ler ou usar este tipo de categoria.
+No entanto, no Adobe Commerce, você pode criar uma categoria virtual com [Atribuições de produto de categoria](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). Esse tipo de categoria é criado no tempo de execução e não existe no banco de dados de categorias. Portanto, [!DNL Live Search] não pode ler ou usar este tipo de categoria.

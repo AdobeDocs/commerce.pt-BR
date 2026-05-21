@@ -3,15 +3,11 @@ title: Gerenciar facetas
 description: Saiba como gerenciar  [!DNL Live Search]  facetas existentes.
 exl-id: 5062bb1f-ce6f-4244-a1df-65ae1ce868b9
 TQID: https://experienceleague.adobe.com/KWh5KwVRNJO3XLiG9xbqhBsGkt99BgY0hPnPbxDd8vY
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: null
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 481
 ht-degree: 0%
@@ -45,7 +41,7 @@ Consulte [Configurações](settings.md) para configurar intervalos e agrupamento
 
 1. Para editar o rótulo da faceta, siga um destes procedimentos:
 
-   * Para uma loja [!DNL Commerce], edite o [rótulo do atributo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=pt-BR).
+   * Para uma loja [!DNL Commerce], edite o [rótulo do atributo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html).
    * Para uma implementação headless, clique no valor na primeira coluna e edite o texto conforme necessário.
 
    ![Editar rótulo](assets/facet-edit-label.png)

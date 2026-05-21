@@ -4,14 +4,10 @@ description: Saiba como melhorar o desempenho da exportação de dados SaaS para
 role: Admin, Developer
 exl-id: 7151118c-5e30-44d0-b515-5801a73e44ec
 TQID: https://experienceleague.adobe.com/k-gizR-v-zQjQiN5IZm1Mv87J6j9eMsxH8vl-K1Co2M
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: null
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 669
 ht-degree: 0%
@@ -72,7 +68,7 @@ As opções especificadas na linha de comando substituem a configuração de exp
 
 Para processar todas as operações de exportação de dados usando multi-threading, os integradores de sistema ou desenvolvedores podem modificar o número de threads e o tamanho do lote para cada feed na configuração do aplicativo do Commerce.
 
-Essas alterações podem ser aplicadas adicionando valores personalizados à [seção do sistema](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) do arquivo de configuração, `app/etc/config.php`.
+Essas alterações podem ser aplicadas adicionando valores personalizados à [seção do sistema](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) do arquivo de configuração, `app/etc/config.php`.
 
 **Exemplo: configuração de multithreading para produtos e preços**
 

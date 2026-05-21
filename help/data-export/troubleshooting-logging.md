@@ -4,17 +4,11 @@ description: Saiba como solucionar erros [!DNL data export] usando os logs de ex
 feature: Services
 exl-id: d022756f-6e75-4c2a-9601-31958698dc43
 TQID: https://experienceleague.adobe.com/PkV4L0RpfA-jeja0Fd6JCDriE6wwjd25Qou0JhG5o8E
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: null
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
 workflow-type: tm+mt
 source-wordcount: 1155
 ht-degree: 0%
@@ -27,7 +21,7 @@ A extensão [!DNL data export] fornece logs para rastrear processos de sincroniz
 
 >[!NOTE]
 >
->Você também pode acompanhar a integridade e o desempenho dos feeds de exportação de dados para dados de produto e categoria no [painel Status de sincronização do feed de dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) em Administrador.
+>Você também pode acompanhar a integridade e o desempenho dos feeds de exportação de dados para dados de produto e categoria no [painel Status de sincronização do feed de dados](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) em Administrador.
 
 ## Logs
 
@@ -144,7 +138,7 @@ Se os dados estiverem ausentes ou incorretos nos serviços da Commerce, verifiqu
 - O log de erros de Exportação de Dados (`commerce-data-export-errors.log`) captura erros que ocorrem durante a fase de coleta.
 - O log de erros de exportação SaaS (`saas-export-errors.log`) captura os erros que ocorrem durante a fase de transmissão.
 
-Se você vir erros não relacionados à configuração ou a extensões de terceiros, envie um [tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) com o máximo de informações possível.
+Se você vir erros não relacionados à configuração ou a extensões de terceiros, envie um [tíquete de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) com o máximo de informações possível.
 
 ### Resolver problemas de sincronização do catálogo {#resolvesync}
 
@@ -159,11 +153,11 @@ Quando você aciona uma ressincronização de dados, pode levar até uma hora pa
 
 #### A sincronização não está em execução
 
-Se a sincronização não estiver sendo executada de acordo com um agendamento ou se nada estiver sincronizado, consulte este artigo da [KnowledgeBase](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce).
+Se a sincronização não estiver sendo executada de acordo com um agendamento ou se nada estiver sincronizado, consulte este artigo da [KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce).
 
 #### Falha na sincronização
 
-Se a sincronização do catálogo tiver um status de **Falha**, envie um [tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Se a sincronização do catálogo tiver um status de **Falha**, envie um [tíquete de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 ## Logon estendido
 
