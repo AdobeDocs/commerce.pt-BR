@@ -5,16 +5,21 @@ feature: Paas, Saas
 recommendations: noDisplay, noCatalog
 hide: true
 exl-id: 5ba1fa65-391f-4af7-8c40-d8314ec9d3e5
-source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
+TQID: https://experienceleague.adobe.com/oZhTlFfL9a27vwbBhbSVS2NYptl13DDkYJZcuV0cM5U
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: 576
 ht-degree: 0%
 
 ---
 
 # Soluções de produtos da Adobe Commerce
 
-A Adobe oferece várias soluções para atender aos requisitos de seu negócio de comércio eletrônico. A documentação do Adobe Commerce no site [Experience League](https://experienceleague.adobe.com/pt-br/docs/commerce) e [Adobe Developer](https://developer.adobe.com/commerce/docs/) fornece aos clientes recursos de autoatendimento que oferecem suporte a todas as soluções. No entanto, navegar por um volume tão grande de conteúdo pode ser desafiador sem orientação.
+A Adobe oferece várias soluções para atender aos requisitos de seu negócio de comércio eletrônico. A documentação do Adobe Commerce no site [Experience League](https://experienceleague.adobe.com/en/docs/commerce) e [Adobe Developer](https://developer.adobe.com/commerce/docs/) fornece aos clientes recursos de autoatendimento que oferecem suporte a todas as soluções. No entanto, navegar por um volume tão grande de conteúdo pode ser desafiador sem orientação.
 
 >[!NOTE]
 >
@@ -44,7 +49,7 @@ Esta medalha identifica somente a documentação dos projetos do [Adobe Commerce
 
 #### [!BADGE Somente PaaS]{type=Informative tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."}
 
-Este selo identifica a documentação relacionada ao [Adobe Commerce na nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/overview) e somente projetos locais. Os projetos do Adobe Commerce na nuvem são hospedados em uma solução de plataforma como serviço (PaaS) totalmente gerenciada e nativa em nuvem com todos os recursos principais da Adobe Commerce em um ambiente pré-provisionado. Os projetos locais são hospedados em infraestrutura gerenciada pelo cliente.
+Este selo identifica a documentação relacionada ao [Adobe Commerce na nuvem](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) e somente projetos locais. Os projetos do Adobe Commerce na nuvem são hospedados em uma solução de plataforma como serviço (PaaS) totalmente gerenciada e nativa em nuvem com todos os recursos principais da Adobe Commerce em um ambiente pré-provisionado. Os projetos locais são hospedados em infraestrutura gerenciada pelo cliente.
 
 >[!NOTE]
 >

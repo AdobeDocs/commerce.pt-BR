@@ -3,10 +3,15 @@ title: Tipos de dados do Commerce
 description: Saiba mais sobre os tipos de dados que você pode coletar e enviar para a Experience Platform.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 6354963c-f27f-4e69-9ecb-acb4befb7c2a
+TQID: https://experienceleague.adobe.com/LXMqOhHAZpUHaCeeU5ioKKXVrkLftospQEPDd9H-MD8
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 0%
+source-wordcount: 339
+ht-degree: 2%
 
 ---
 
@@ -14,7 +19,7 @@ ht-degree: 0%
 
 A [extensão de Conexão de Dados](overview.md) conecta seus dados do Commerce à Experience Platform. Os dados destinados ao uso na Experience Platform estão agrupados em dois tipos de comportamento: dados de série temporal, que pertencem à classe **Evento de experiência**, e dados de registro, que pertencem à classe **Perfil individual**.
 
-Saiba mais sobre [comportamento dos dados](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=pt-BR#data-behaviors) e [classes](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=pt-BR#class) no Experience Platform.
+Saiba mais sobre [comportamento dos dados](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#data-behaviors) e [classes](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#class) no Experience Platform.
 
 ## Dados de série temporal
 

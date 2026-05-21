@@ -2,9 +2,12 @@
 title: Tipos de sinônimos
 description: Sinônimos unidirecionais e bidirecionais [!DNL Live Search]  expandem a definição de palavras-chave.
 exl-id: f5522428-c7cc-4627-a09b-d9148918c127
-source-git-commit: 81bde302463a70e41318b494565694929703dff9
+TQID: https://experienceleague.adobe.com/n0ON02CVlSTTOdRCPFRGVIVPWbGRltq4B0INC-U3ldo
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: 617
 ht-degree: 0%
 
 ---
@@ -55,4 +58,4 @@ Se nenhum sinônimo for criado e um comprador procurar por **tabela de cozinha**
 
 Depois de criar um sinônimo, o comportamento de pesquisa muda para procurar a frase exata **tabela de cozinha**. Isso pode reduzir o número de resultados, pois somente os produtos com a frase exata serão exibidos.
 
-Se quiser que os termos sejam pesquisados separadamente como antes, você pode [criar um tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide). Se houver demanda suficiente, a Commerce considerará adicionar essa funcionalidade ao produto em uma versão futura.
+Se quiser que os termos sejam pesquisados separadamente como antes, você pode [criar um tíquete de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide). Se houver demanda suficiente, a Commerce considerará adicionar essa funcionalidade ao produto em uma versão futura.

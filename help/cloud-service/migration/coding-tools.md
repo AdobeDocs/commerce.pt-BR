@@ -2,12 +2,18 @@
 title: Ferramentas de desenvolvedor de codificação de IA para o Adobe Commerce App Builder
 description: Saiba como usar as ferramentas de IA para criar aplicativos do Commerce App Builder.
 feature: App Builder, Cloud
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 role: Developer
 level: Intermediate
-source-git-commit: 2c851da1dc521f5309031fc091be88f9ca39cd8f
+TQID: https://experienceleague.adobe.com/ZbqP1MO-QrqAtocvmgFStqaluqQdzMm4LXlY3o4o3xY
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '2438'
+source-wordcount: 2634
 ht-degree: 0%
 
 ---
@@ -44,12 +50,12 @@ Isso atualizará as ferramentas para a versão mais recente.
 * Qualquer agente de codificação que suporte [habilidades de agente](https://agentskills.io/home#adoption), como:
 
    * [Cursor](https://cursor.com/download)
-   * [Código Claude](https://www.claude.com/product/claude-code)
+   * [código Claude](https://www.claude.com/product/claude-code)
    * [GitHub Copilot](https://github.com/features/copilot)
    * [Windsurf](https://windsurf.com)
    * [CLI do Gemini](https://github.com/google-gemini/gemini-cli)
    * [OpenAI Codex](https://openai.com/index/introducing-codex/)
-   * [Linha](https://cline.bot)
+   * [Cline](https://cline.bot)
 
 * [Node.js](https://nodejs.org/en/download): versão LTS
 * Gerenciador de Pacotes: [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) ou [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
@@ -65,9 +71,9 @@ Isso atualizará as ferramentas para a versão mais recente.
 
 1. Instale os seguintes plug-ins:
 
-   * [Adobe I/O CLI Commerce](https://github.com/adobe-commerce/aio-cli-plugin-commerce)
+   * [ADOBE I/O CLI COMMERCE](https://github.com/adobe-commerce/aio-cli-plugin-commerce)
    * [Adobe I/O CLI Runtime](https://github.com/adobe/aio-cli-plugin-runtime)
-   * [CLI DO App Builder](https://github.com/adobe/aio-cli-plugin-app-dev)
+   * [CLI do App Builder](https://github.com/adobe/aio-cli-plugin-app-dev)
 
    ```bash
    aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
@@ -293,7 +299,7 @@ Ao conversar com seu agente de codificação, você deve selecionar o modo **Pla
 O método para selecionar o modo **Plano** varia de acordo com o agente que você está usando. Consulte a documentação do agente para obter instruções. Por exemplo:
 
 * [Cursor](https://cursor.com/docs/agent/modes)
-* [Código Claude](https://code.claude.com/docs/en/common-workflows#when-to-use-plan-mode)
+* [código Claude](https://code.claude.com/docs/en/common-workflows#when-to-use-plan-mode)
 * [CLI do Gemini](https://geminicli.com/docs/cli/plan-mode/)
 
 ### Lista de verificação
@@ -331,11 +337,11 @@ Isso também permite que você aproveite os modelos do Adobe e crie com base em 
 
 Consulte os seguintes recursos para começar:
 
-* [Kit de início de integração](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
-* [Kit inicial de check-out](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
+* [Kit de início da integração](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/create-integration)
+* [Checkout do kit inicial](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 * [modelos do kit inicial do Adobe Commerce](https://github.com/adobe/adobe-commerce-samples/tree/main/starter-kit)
-* [modelos iniciais do Adobe I/O Events](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
-* [aplicativos de exemplo do App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
+* [Modelos iniciais do Adobe I/O Events](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/adobe-developer-app-builder/io-events/getting-started-io-events)
+* [aplicativos de amostra do App Builder](https://developer.adobe.com/app-builder/docs/resources/sample_apps)
 
 #### Por que você deve usar esses recursos
 

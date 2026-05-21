@@ -3,9 +3,15 @@ title: Gerenciar ativos
 description: Use a integração do AEM Assets para Commerce a fim de gerenciar ativos de mídia para sua loja.
 feature: CMS, Media
 exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
-source-git-commit: 0fd98bf86555c914f7a5b1e177c31c37764dbf84
+TQID: https://experienceleague.adobe.com/y-207fJaMiLZbQW7bzv2WCzFItckGDnyKUm6Q0tqMw8
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c18ed297-2187-4aec-affb-9d9654eca6fcid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+subfeature_v2: id: e91a50b1-0b31-436e-9033-00e4776e94cb
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: da3860b0-d637-47df-bef0-273751180266
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: 1072
 ht-degree: 0%
 
 ---
@@ -93,7 +99,7 @@ A associação com a imagem selecionada será armazenada no Adobe Commerce como 
 
 >[!TIP]
 >
-> [DA.live (Criação de Documentos)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/?lang=pt-BR#dalive-document-authoring){target=_blank} também fornece um seletor de Ativos para enriquecer dados.
+> [DA.live (Criação de Documentos)](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/storefront-builder/#dalive-document-authoring){target=_blank} também fornece um seletor de Ativos para enriquecer dados.
 
 ## Vídeos de produtos
 
@@ -163,7 +169,7 @@ Após configurar o [Seletor de ativos do AEM](synchronize/asset-selector-integra
 
 1. Clique em **[!UICONTROL Save]** e continue.
 
-   Para obter mais informações sobre como criar uma categoria, consulte [Concluir o conteúdo da categoria](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) no **Guia de Gerenciamento do Catálogo do Commerce**.
+   Para obter mais informações sobre como criar uma categoria, consulte [Concluir o conteúdo da categoria](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/create/category-create#step-3-complete-the-category-content) no **Guia de Gerenciamento do Catálogo do Commerce**.
 
 ## Atualizar um ativo
 
@@ -173,6 +179,6 @@ Para que o fluxo de trabalho do lado da Commerce vincule ativos a produtos por m
 
 Para obter os procedimentos do AEM Assets, consulte a seguinte documentação:
 
-* [Reprocessando ativos digitais](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
+* [Reprocessamento de ativos digitais](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing)
 
-* [Aprovar um ativo](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)
+* [Aprovar um ativo](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/approve-assets)

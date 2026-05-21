@@ -5,9 +5,12 @@ feature: Services, Release Notes
 recommendations: noCatalog
 roles: Admin, Developer
 exl-id: d4dd0288-8853-43fe-9103-1aead8d3b56e
-source-git-commit: 47419e7e19611dc4a045c195f259e2126ab77372
+TQID: https://experienceleague.adobe.com/btPlBYpdRdf-gMfqSv2px6iMfiI3FfXJSN40j61HXOU
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: 193
 ht-degree: 0%
 
 ---
@@ -19,7 +22,7 @@ Essas notas de versão descrevem as versões mais recentes da extensão [!DNL Ca
 As atualizações incluem:
 
 ![Novos](../assets/new.svg) Novos recursos
-![Correção](../assets/fix.svg) correções e melhorias
+![Correção](../assets/fix.svg) Correções e melhorias
 ![Bug](../assets/bug.svg) Problemas conhecidos
 
 

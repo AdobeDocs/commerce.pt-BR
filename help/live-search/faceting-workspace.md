@@ -1,9 +1,15 @@
 ---
 title: Faceting Workspace
 description: Saiba mais sobre o  [!DNL Live Search] espaço de trabalho facetado.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 7108e41b-44a7-4943-b20f-6ee544d099e9
+TQID: https://experienceleague.adobe.com/LsVM4inUqk2EozfVN--FH1Ukggt8A8QBIQXW-SmnxZs
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: 229
 ht-degree: 0%
 
 ---
@@ -16,7 +22,7 @@ O espaço de trabalho *Faceting* lista todas as facetas disponíveis no momento 
 
 ## Definir o escopo
 
-Se a instalação do Adobe Commerce incluir vários modos de exibição de armazenamento, defina o **Escopo** como [modo de exibição de armazenamento](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=pt-BR#scope-settings) ao qual as configurações das facetas se aplicam.
+Se a instalação do Adobe Commerce incluir vários modos de exibição de armazenamento, defina o **Escopo** como [modo de exibição de armazenamento](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) ao qual as configurações das facetas se aplicam.
 
 ## Filtrar a lista
 

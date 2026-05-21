@@ -1,9 +1,13 @@
 ---
 title: Pesquisar Workspace de merchandising
 description: Saiba mais sobre o espaço de trabalho de Merchandising de pesquisa.
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 8cf581b5-cf83-48aa-86ab-39dea8da2ee5
+TQID: https://experienceleague.adobe.com/FB1DxWHgpPtH5J-TiH4XU8SYmP3x8dEobWQsSrQXG4c
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: 586
 ht-degree: 1%
 
 ---
@@ -22,7 +26,7 @@ O espaço de trabalho *Merchandising de Pesquisa* lista a seleção atual de reg
 
 ## Definir o escopo
 
-Se a instalação do Adobe Commerce incluir vários modos de exibição de armazenamento, defina o **Escopo** como [modo de exibição de armazenamento](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=pt-BR#scope-settings) ao qual as regras se aplicam.
+Se a instalação do Adobe Commerce incluir vários modos de exibição de armazenamento, defina o **Escopo** como [modo de exibição de armazenamento](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) ao qual as regras se aplicam.
 
 ## Mostrar/ocultar colunas
 
@@ -74,7 +78,7 @@ Você pode executar qualquer um dos seguintes procedimentos a partir do painel E
 |--- |--- |
 | Nome | O nome da regra. |
 | Última atualização | A data em que a regra foi atualizada pela última vez. |
-| Data de início | A data de início de uma regra agendada. |
+| Data inicial | A data de início de uma regra agendada. |
 | Data final | A data final de uma regra agendada. |
 | Status | O status codificado por cores indica o estado atual da regra. Use o controle Status acima da grade para filtrar regras por status. Valores:<br />Todos os status - Exibe todas as regras independentemente do status.<br />Ativo (azul) - Exibe apenas as regras ativas.<br />Agendado (Laranja) - exibe somente as regras agendadas.<br />Inativo (cinza) - exibe somente regras inativas. |
 

@@ -2,9 +2,14 @@
 title: Headless
 description: Saiba como integrar o [!DNL Product Recommendations] em uma loja headless.
 exl-id: c40dac31-f87e-402a-ba50-e8aa4c1d66aa
-source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
+TQID: https://experienceleague.adobe.com/J3qXs-SWuDCz7pQwzGm0VcOOFoU1QM2M4qwsTxxPwE8
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: 372
 ht-degree: 0%
 
 ---
@@ -15,7 +20,7 @@ Você pode integrar o [!DNL Product Recommendations] em uma loja headless usando
 
 Os integradores personalizados e headless devem consultar essas instruções do Luma e do PWA como uma implementação sugerida. Há muitas maneiras de implementar as Recomendações de produto em soluções headless e esta documentação não aborda todos os cenários. Os integradores devem cobrir o evento, o design e o teste de suas implementações.
 
-[!DNL Product Recommendations] requer [dados comportamentais e de catálogo](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html?lang=pt-BR) para operar. O processo de sincronização de dados de catálogo permanece inalterado em uma implementação headless, mas são necessárias alterações para a coleta de dados comportamentais.
+[!DNL Product Recommendations] requer [dados comportamentais e de catálogo](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html) para operar. O processo de sincronização de dados de catálogo permanece inalterado em uma implementação headless, mas são necessárias alterações para a coleta de dados comportamentais.
 
 >[!NOTE]
 >
@@ -23,7 +28,7 @@ Os integradores personalizados e headless devem consultar essas instruções do 
 
 Para integrar o [!DNL Product Recommendations] em uma loja headless, você deve:
 
-1. Envie dados comportamentais para a IA do Adobe para analisar e calcular os resultados das recomendações de produtos. Você também pode enviar dados adicionais para habilitar a recomendação do produto [relatórios de métricas](workspace.md).
+1. Envie dados comportamentais ao Adobe AI para analisar e calcular os resultados das Recomendações de produto. Você também pode enviar dados adicionais para habilitar a recomendação do produto [relatórios de métricas](workspace.md).
 
 1. Buscar resultados de recomendações de produtos e renderizar esses resultados na página.
 
@@ -50,7 +55,7 @@ Você pode executar essas duas ações usando os SDKs disponíveis, conforme des
    | `rec-click` | unidade de recomendação |
    | `rec-add-to-cart-click` | unidade de recomendação (se um botão &quot;Adicionar ao carrinho&quot; estiver presente no template de recomendações) |
 
-1. Quando os eventos forem acionados, use o [Coletor de Eventos da Adobe Commerce Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) para manipular os eventos e enviá-los para a IA do Adobe.
+1. Quando os eventos forem acionados, use o [Coletor de Eventos da Adobe Commerce Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) para manipular os eventos e enviá-los para a Adobe AI.
 
 1. Depois que os dados comportamentais forem coletados, você poderá [criar](create.md) [!DNL Product Recommendations] no Administrador.
 

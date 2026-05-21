@@ -1,11 +1,16 @@
 ---
 title: Criar e gerenciar regras
 description: Saiba como criar e gerenciar regras de merchandising para páginas de pesquisa, listas de produtos padrão e de categoria.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
-source-git-commit: 0d1ebaddada8be82645164368ebfbb6dd0a569cd
+TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '2714'
+source-wordcount: 2760
 ht-degree: 0%
 
 ---
@@ -21,7 +26,7 @@ Para criar uma regra, abra o editor de regras, escolha um **tipo de regra** (con
 
    >[!IMPORTANT]
    >
-   >As exibições de catálogo estão atualmente em [beta](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Os participantes do Beta precisarão recriar quaisquer regras de merchandising existentes para aproveitar o novo escopo de exibição do catálogo.
+   >As exibições de catálogo estão atualmente em [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Os participantes do Beta precisarão recriar quaisquer regras de merchandising existentes para aproveitar o novo escopo de exibição do catálogo.
 
 1. Clique em **[!UICONTROL Create rule]** para iniciar o editor de regras.
 
@@ -226,7 +231,7 @@ Esta opção fornece uma maneira rápida de ver todos os parâmetros de regra, e
 
 ### Excluir regra
 
-1. No espaço de trabalho *Regras*, localize a regra na grade que você deseja editar e clique em **Mais** opções...
+1. No espaço de trabalho *Regras*, localize a regra na grade que você deseja editar e clique em **Mais** (...) opções.
 1. Clique em **Excluir**.
 
 ## Descrições dos campos {#field-descriptions}

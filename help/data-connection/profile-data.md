@@ -3,9 +3,14 @@ title: Atualizar esquema de registro de perfil para assimilação de dados do Co
 description: Saiba como criar um esquema, conjunto de dados e sequência de dados para coletar e enviar dados de registro de perfil do Commerce para a Experience Platform.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+exl-id: 25741837-f423-4204-8520-80b7cd9d44bd
+TQID: https://experienceleague.adobe.com/I8bptw1tNdzXfCC6hFtn7fuz-BIiALXG4g6lLhga6ec
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: 340
 ht-degree: 0%
 
 ---
@@ -14,24 +19,24 @@ ht-degree: 0%
 
 Quando os compradores criam um perfil no site do Commerce, um registro de perfil é criado e os dados são capturados. Você deve criar um esquema e um conjunto de dados específicos para esse registro de perfil antes de poder transmitir esses dados de perfil para a Experience Platform.
 
-1. [Crie](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/ui/resources/schemas) um esquema e defina a classe como **Perfil Individual**.
+1. [Crie](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas) um esquema e defina a classe como **Perfil Individual**.
 
-1. [Adicione](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/ui/resources/schemas) os seguintes grupos de campos específicos de perfil:
+1. [Adicione](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas) os seguintes grupos de campos específicos de perfil:
 
    - identityMap
    - Detalhes demográficos
    - Detalhes de contato pessoal
    - Detalhes da conta do usuário
 
-1. [Habilitar](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/ui/resources/schemas) o esquema para o Perfil.
+1. [Habilitar](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas) o esquema para o Perfil.
 
    Quando um esquema é ativado para o Perfil, qualquer conjunto de dados criado a partir desse esquema participa do Real-Time CDP, que mescla dados de fontes diferentes para criar uma visualização completa de cada cliente.
 
-1. [Crie um conjunto de dados](https://experienceleague.adobe.com/pt-br/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform) com base no esquema que você criou ou atualizou.
+1. [Crie um conjunto de dados](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform) com base no esquema que você criou ou atualizou.
 
    Um conjunto de dados é uma construção de armazenamento e gerenciamento para uma coleção de dados, normalmente uma tabela que contém um esquema (colunas) e campos (linhas). Os conjuntos de dados também contêm metadados que descrevem vários aspectos dos dados armazenados.
 
-1. Crie um [namespace personalizado](https://experienceleague.adobe.com/pt-br/docs/experience-platform/identity/features/namespaces#create-namespaces) no Experience Platform com os seguintes valores:
+1. Crie um [namespace personalizado](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/namespaces#create-namespaces) no Experience Platform com os seguintes valores:
 
    - **Nome para Exibição**: _ID de Cliente da Commerce_
    - **Símbolo de Identidade**: _CustomerId_

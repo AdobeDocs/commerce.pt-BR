@@ -2,16 +2,21 @@
 title: Configurações
 description: Saiba como alterar a fonte de seus dados do  [!DNL Product Recommendations]  e como habilitar recomendações visuais.
 exl-id: fe37624d-c53e-40cd-b182-10f62cba74c0
-source-git-commit: 458f34c45406db871ec61ff408aa624f163b6ee0
+TQID: https://experienceleague.adobe.com/GJ8h9mX-3vlH1AUxk7FyM0-7rZTt40SGmdwfEMlvLvE
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: 477
 ht-degree: 0%
 
 ---
 
 # Configurações
 
-Quando você [configura um espaço de dados SaaS](../landing/saas.md#saas-configuration) para o Recommendations, o espaço de dados SaaS coleta dados de catálogo e armazena dados comportamentais de frente. A [IA do Adobe](https://business.adobe.com/br/ai.html) analisa esses dados e calcula as associações de produtos usadas para fornecer Recomendações de Produtos.
+Quando você [configura um espaço de dados SaaS](../landing/saas.md#saas-configuration) para o Recommendations, o espaço de dados SaaS coleta dados de catálogo e armazena dados comportamentais de frente. O [Adobe AI](https://business.adobe.com/ai.html) analisa esses dados e calcula as associações de produtos usadas para fornecer Recomendações de Produtos.
 
 Ambientes de não produção para teste ou preparo geralmente não têm a quantidade ou a qualidade dos dados comportamentais da loja para atender às recomendações realistas do produto. O comportamento real do comprador em escala pode ser capturado somente em um ambiente de produção. Para resolver esse problema, o Adobe Commerce permite usar as recomendações de produto do ambiente de produção com outros espaços de dados SaaS que não sejam de produção. A utilização de dados reais da loja em um ambiente de não produção permite visualizar as recomendações que seus compradores veem e experimentar com diferentes tipos de recomendações e locais de posicionamento. As recomendações de um espaço de dados SaaS diferente podem ser visualizadas pelos compradores, mas não clicadas.
 

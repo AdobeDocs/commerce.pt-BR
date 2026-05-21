@@ -3,9 +3,13 @@ title: '[!DNL Manage the Data Export extension]'
 description: Saiba como atualizar a extensão  [!DNL Data Export]  e remover ou desabilitar serviços de exportação de dados que não são necessários.
 role: Admin, Developer
 exl-id: 94702995-d272-47b9-9560-198eee3250a6
-source-git-commit: ea722d5e427e5bf536b9f2d2322f0dabb2981c77
+TQID: https://experienceleague.adobe.com/ghrA-YFR7hurQgEnjS8PdxR7Zcx-ayLTuyBfhbCC-KI
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: null
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: 256
 ht-degree: 0%
 
 ---
@@ -39,4 +43,4 @@ Você pode atualizar qualquer um dos módulos de exportação de dados de comér
    composer require magento/module-data-exporter:103.0.4 --with-all-dependencies
    ```
 
-Se a instância do Commerce for implantada na infraestrutura em nuvem, atualize a extensão do diretório do projeto em nuvem. Consulte [Atualizar uma extensão](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) no _Guia de Infraestrutura do Adobe Commerce on Cloud_.
+Se a instância do Commerce for implantada na infraestrutura em nuvem, atualize a extensão do diretório do projeto em nuvem. Consulte [Atualizar uma extensão](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) no _Guia de Infraestrutura do Adobe Commerce on Cloud_.
