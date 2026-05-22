@@ -4,10 +4,16 @@ description: Saiba como sincronizar ativos entre o Adobe Commerce e o AEM Assets
 feature: CMS, Media, Integration
 exl-id: a5d2cbab-5ea1-446b-8ab2-2c638128a40c
 TQID: https://experienceleague.adobe.com/QPlM-eeRjJ0gwmpGO4SSYR4PLtL97O-NeozWorDWtv0
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: da3860b0-d637-47df-bef0-273751180266id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: da3860b0-d637-47df-bef0-273751180266
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 5b2babd2aed812d6679c2614e10e052dd5196f76
 workflow-type: tm+mt
 source-wordcount: 1717
@@ -55,7 +61,7 @@ Esse código de pacote adiciona os seguintes recursos ao ambiente de criação d
 
 ## Texto alternativo em metadados do AEM Assets
 
-O multicampo _[!UICONTROL Alt texts]_está disponível no editor de metadados de ativos da AEM Assets, na guia **[!UICONTROL Commerce]**, ao editar uma imagem qualificada.
+O multicampo _[!UICONTROL Alt texts]_&#x200B;está disponível no editor de metadados de ativos da AEM Assets, na guia **[!UICONTROL Commerce]**, ao editar uma imagem qualificada.
 
 >[!IMPORTANT]
 >
@@ -71,7 +77,7 @@ Selecione **[!UICONTROL Add]** para adicionar mais linhas para exibições de ar
 
 ![Múltiplos campos de textos alternativos com entradas de Código de Exibição de Loja e Texto Alternativo](../assets/commerce-metadata-alt-texts-multifield.png){width="600" zoomable="yes"}
 
-Ao salvar, a validação do lado do cliente bloqueia o envio se qualquer linha tiver um _[!UICONTROL Store View Code]_vazio ou se duas linhas usarem o mesmo código de exibição de armazenamento (não diferencia maiúsculas de minúsculas).
+Ao salvar, a validação do lado do cliente bloqueia o envio se qualquer linha tiver um _[!UICONTROL Store View Code]_&#x200B;vazio ou se duas linhas usarem o mesmo código de exibição de armazenamento (não diferencia maiúsculas de minúsculas).
 
 Entradas de texto alternativo são mantidas nos metadados de ativos JCR como duas propriedades `String[]` alinhadas por índice:
 
@@ -227,7 +233,7 @@ O componente da interface de dados do produto é adicionado automaticamente com 
      ./jcr:content/metadata/commerce:isCommerce
      ```
 
-1. Opcional. Para sincronizar automaticamente ativos aprovados do Commerce à medida que forem carregados no ambiente AEM Assets, defina o valor padrão do campo _[!UICONTROL Review Status]_na guia `Basic` como `approved`.
+1. Opcional. Para sincronizar automaticamente ativos aprovados do Commerce à medida que forem carregados no ambiente AEM Assets, defina o valor padrão do campo _[!UICONTROL Review Status]_&#x200B;na guia `Basic` como `approved`.
 
 1. Salve a atualização.
 
