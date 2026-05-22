@@ -4,20 +4,12 @@ description: Conheça as práticas recomendadas para implementar o [!DNL Live Se
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
 TQID: https://experienceleague.adobe.com/X9zgHooEzDJe-zzmLLXHdVVVFUHVX4be47dOUaJyUXU
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 86b218d78731585dca4e8829fb886010ef27a2d5
 workflow-type: tm+mt
-source-wordcount: 2966
+source-wordcount: 3008
 ht-degree: 0%
 
 ---
@@ -124,6 +116,7 @@ Para otimizar sua taxa de conversão e receita, você deve implementar regras de
 - Destaque os produtos que estão à venda ou que fazem parte de promoções especiais.
 - Defina regras de pesquisa durante os períodos de promoção ou de vendas automaticamente usando o intervalo de datas durante o período de promoção.
 - Sempre use o painel &quot;Testar a regra&quot; para visualizar como sua estratégia de classificação inteligente afeta os resultados reais da pesquisa para consultas diferentes.
+- Ao habilitar a classificação inteligente, ajuste o **[Aumento de classificação inteligente](rules-add.md#intelligent-ranking-boost)** no editor de regras para equilibrar sinais de estilo de popularidade com relevância textual e verificar resultados para consultas de destino em **Testar sua regra**. O aumento de classificação inteligente não está disponível para a estratégia **Nenhuma**.
 - Personalize os resultados da pesquisa com base no comportamento individual do comprador usando [classificação inteligente](rules-add.md#intelligent-ranking), como &quot;recomendado para você&quot;, &quot;mais visto&quot; e assim por diante. Para adaptar o comportamento do comprador, você deve garantir que o evento seja implementado corretamente. Para os comerciantes da Luma, o evento está disponível e pronto para uso. Para implementações headless ou personalizadas, você deve [implementar um evento](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) com base nas suas necessidades específicas.
 
 Saiba mais sobre regras de pesquisa:
@@ -221,7 +214,7 @@ Se os resultados da pesquisa forem aleatórios ou irrelevantes, use esta lista d
 Saiba mais sobre atributos de produto para pesquisa:
 
 - [Definir atributos como pesquisáveis](workspace.md#set-attributes-as-searchable)
-- [Atribuir peso aos atributos](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Atribuir peso aos atributos](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Monitorar resultados da pesquisa
 

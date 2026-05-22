@@ -2,19 +2,15 @@
 title: Práticas recomendadas das regras de merchandising
 description: Saiba mais sobre as práticas recomendadas para implementar regras de merchandising para páginas de pesquisa, listagens padrão e categoria.
 role: Admin, Developer
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: cc8d0879-c253-4ad4-8e7d-e066dff9112d
 TQID: https://experienceleague.adobe.com/DrdrBBXeMyqQr16h1LrlSoet3F6ihn57LBmPFBUXmTs
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 841e772971e7ec18d37fa8ba137b27b8950fc569
 workflow-type: tm+mt
-source-wordcount: 360
+source-wordcount: 404
 ht-degree: 0%
 
 ---
@@ -34,6 +30,7 @@ Para otimizar a conversão e a receita, implemente **regras de pesquisa** efetiv
 - Destaque os produtos que estão à venda ou que fazem parte de promoções especiais.
 - Defina regras de pesquisa durante os períodos de promoção ou de vendas automaticamente usando o intervalo de datas durante o período de promoção.
 - Personalize os resultados da pesquisa com base no comportamento individual do comprador usando [classificação inteligente](add.md#intelligent-ranking), como &quot;recomendado para você&quot;, &quot;mais visto&quot; e assim por diante.
+- Quando uma estratégia inteligente diferente de **Nenhuma** for selecionada, ajuste o **[Aumento inteligente de classificação](add.md#intelligent-ranking-boost)** por regra e valide em **Testar sua regra** antes de publicar.
 - Sempre use o painel &quot;Testar a regra&quot; para visualizar como sua estratégia de classificação inteligente afeta os resultados reais da pesquisa para consultas diferentes.
 
 ## Dicas para regras de categoria
@@ -43,6 +40,6 @@ Para otimizar a conversão e a receita, implemente **regras de pesquisa** efetiv
 >As regras de categoria estão na versão beta.
 
 - Use as [regras de categoria](add.md#rule-types) em **páginas de categoria** de tráfego alto ou margem alta, em que a ordem com curadoria é importante tanto quanto a pesquisa, por exemplo, coleções sazonais ou departamentos em destaque.
-- Alinhe a **classificação inteligente** (por exemplo, tendência, mais visualizada) com a forma como os compradores navegam nessa categoria; as páginas de categoria não usam o texto de consulta de pesquisa da mesma forma que as regras de pesquisa. Consulte [Classificação inteligente](add.md#intelligent-ranking).
+- Alinhe a **classificação inteligente** (por exemplo, tendência, mais visualizada) com a forma como os compradores navegam nessa categoria; as páginas de categoria não usam o texto de consulta de pesquisa da mesma forma que as regras de pesquisa. Consulte [Classificação inteligente](add.md#intelligent-ranking). Para métodos inteligentes diferentes de **Nenhum**, use **[Aumento inteligente de classificação](add.md#intelligent-ranking-boost)** e pré-visualização de categoria para ajustar a intensidade comportamental para essa regra de categoria.
 - Aplique o **pin**, **boost** e **bury** de forma consistente com o plano de campanha; lembre-se de que as posições manuais geralmente se aplicam somente quando o comprador usa a **classificação padrão** para a lista. Consulte [Classificação manual](add.md#manual-ranking).
 - Visualize no fluxo de regras da **categoria** no editor e valide na loja após a publicação, a mesma disciplina usada para o painel &quot;Testar sua regra&quot; na pesquisa.
