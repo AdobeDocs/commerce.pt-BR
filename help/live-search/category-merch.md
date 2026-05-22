@@ -13,9 +13,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 86b218d78731585dca4e8829fb886010ef27a2d5
 workflow-type: tm+mt
-source-wordcount: 1131
+source-wordcount: 1171
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ O recurso é acessado no Administrador em **Marketing** > SEO e pesquisa > **[!D
 >
 >O Merchandising por categoria está disponível com [!DNL Live Search] [3.0.0 ou superior](release-notes.md). Se você vir o espaço de trabalho Categoria de merchandising, mas ele não estiver preenchido com dados, atualize o módulo [!DNL Live Search].
 
-![Merchandising de categoria](assets/category_workspace.png)
+![Espaço de trabalho de merchandising da categoria](assets/category_workspace.png)
 
 A exibição de Merchandising por categoria mostra regras de categoria definidas, com colunas para:
 
@@ -60,6 +60,9 @@ Os métodos de classificação inteligente são:
 * Recomendado para você: com base no comportamento anterior e atual de cada comprador no local, o classifica os produtos de acordo com a probabilidade de o comprador interagir com cada um.
 * Tendências: classifica os produtos por retomadas recentes de popularidade com base nas visualizações.
 * Nenhum: classifica os produtos de acordo com sua ordem padrão.
+
+
+Para qualquer método de classificação inteligente, com exceção de **Nenhum**, você pode definir **[!UICONTROL Intelligent Ranking Boost]** no editor de regras para ajustar como os sinais de forte comportamento afetam a ordem do produto. Para obter detalhes sobre padrões, limites, comportamento de visualização e como o aumento se compara à **Classificação manual**, consulte [Aumento inteligente de classificação](rules-add.md#intelligent-ranking-boost).
 
 **A classificação manual** permite que os usuários substituam a ordem de classificação automática de produtos definindo regras manuais de fixação, reforço, enterramento e ocultação.
 
@@ -104,7 +107,7 @@ Para criar uma regra de categoria:
    ![Selecione uma categoria](assets/category_select.png)
 
 1. Na exibição _Adicionar regra de categoria_, selecione o método de classificação inteligente que deseja aplicar à categoria.
-A página Visualização de categoria mostra os resultados reais da classificação selecionada, usando os dados do Live Search.
+A Página de Visualização de Categoria mostra os resultados reais da classificação selecionada, usando os dados do [!DNL Live Search].
 1. Clique em **Salvar e publicar** para salvar a regra.
 
 ![Selecione o método de classificação inteligente](assets/category_ranking.png)
