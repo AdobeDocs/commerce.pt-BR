@@ -4,7 +4,7 @@ description: Informações de versão mensais do  [!DNL Adobe Commerce Optimizer
 feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 TQID: https://experienceleague.adobe.com/apcpxN0AOniRcHDCa5MMAVWysxRO5mTcudXXXjET-Lo
 product_v2:
@@ -74,7 +74,7 @@ _29 de abril de 2026_
 
 <!--v1.52 release-->
 
-**Solicitação em lote necessária** — a API do GraphQL agora impõe um máximo de 100 SKUs por solicitação ao recuperar dados de catálogo. Consulte [limites documentados](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery).
+**Solicitação em lote necessária** — a API do GraphQL agora impõe um máximo de 100 SKUs por solicitação ao recuperar dados de catálogo. Consulte [limites documentados](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/boundaries-limits#product-discovery).
 
 <!--DATA-7156-->
 
