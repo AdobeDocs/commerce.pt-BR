@@ -97,7 +97,7 @@ Leia esta seção **antes** e escolha um nome de camada de catálogo no tíquete
 
 ## Integração
 
-Para integrar a Integração do AEM Assets com o [!DNL Commerce Optimizer], você deve [Criar um tíquete de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Para integrar a Integração do AEM Assets com o [!DNL Commerce Optimizer], você deve [Criar um tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 O Suporte da Adobe usa as informações no tíquete para registrar o locatário no Serviço de integração da Assets e configurar a integração.
 
@@ -123,7 +123,7 @@ Quando a integração estiver concluída:
    * Eventos do AEM Assets (ativo aprovado, atualizado, removido)
    * [!DNL Commerce Optimizer] eventos de catálogo (produto criado, atualizado)
 
-Configure sua [visualização de catálogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) para que as vitrines e APIs apresentem dados de imagem orientados pela AEM:
+Configure sua [visualização de catálogo](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/setup/catalog-view) para que as vitrines e APIs apresentem dados de imagem orientados pela AEM:
 
 * **Origem do catálogo (localidade)** — Selecione a mesma localidade especificada no seu tíquete de suporte (por exemplo, **`en-US`**). A integração registra um local por locatário; uma incompatibilidade impede que imagens sincronizadas apareçam na exibição de catálogo desejada.
 * **Camada do catálogo** — Atribua a camada **`AEM-Assets`** (ou o nome de camada personalizado do tíquete) a essa exibição do catálogo.
