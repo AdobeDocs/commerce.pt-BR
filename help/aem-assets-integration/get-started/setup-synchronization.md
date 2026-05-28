@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: a6a91fbd6cc6907d070998f67eb0b9c8171dda23
 workflow-type: tm+mt
-source-wordcount: 904
+source-wordcount: 948
 ht-degree: 2%
 
 ---
@@ -63,11 +63,13 @@ Antes de configurar a Integração do AEM Assets, verifique se você concluiu as
 
 1. Selecione o ambiente AEM Assets **[!UICONTROL Program ID]** e **[!UICONTROL Environment ID]** nos menus suspensos.
 
-   Os menus suspensos são preenchidos automaticamente com base na sessão IMS do usuário. Para usar este recurso, verifique se você tem as [permissões de usuário e o IMS](permissions.md#user-permissions-and-ims) corretos.
+   Os seletores são exibidos quando o usuário administrador do Commerce satisfaz as [permissões de usuário e o IMS](permissions.md#user-permissions-and-ims) para a experiência: as integrações do **Adobe Commerce as a Cloud Service**, **Adobe Commerce Optimizer** e **Adobe Commerce na infraestrutura da nuvem** podem preencher esses campos automaticamente a partir da sua sessão vinculada ao IMS, em vez de depender de IDs coladas.
 
-   Se os menus suspensos não estiverem disponíveis, você poderá inserir as IDs manualmente na URL do AEM Cloud Manager: `https://author-p[Program ID]-e[EnvironmentID].adobeaemcloud.com/`
+   Se os seletores não estiverem disponíveis, copie **[!UICONTROL Program ID]** e **[!UICONTROL Environment ID]** do AEM Cloud Manager ou derive-os da URL do autor: `https://author-<ProgramID>-<EnvironmentID>.adobeaemcloud.com/` (substitua os espaços reservados pelos seus identificadores).
 
-   Edite os valores de configuração removendo a seleção de *[!UICONTROL Use system value]*.
+   Limpe **[!UICONTROL Use system value]** para qualquer um dos campos antes de colar ou selecione novos valores manualmente.
+
+   ![Formulário de integração do AEM Assets com seletores de ID de programa e ID de ambiente](../assets/aem-assets-view.png){width="600" zoomable="yes"}
 
 1. [!BADGE Somente PaaS]{type=Informative tooltip="Aplicável a projetos do Adobe Commerce na nuvem somente (infraestrutura do PaaS gerenciada pela Adobe)."} Selecione o [[!UICONTROL Commerce integration]](configure-commerce.md#add-the-integration-to-the-commerce-environment) para solicitações de autenticação entre o Commerce e o serviço de correspondência de ativos.
 
