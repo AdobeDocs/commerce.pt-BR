@@ -2,9 +2,9 @@
 title: Configurar o AEM Assets para o Commerce Optimizer
 description: Saiba como configurar a Integração do AEM Assets para  [!DNL Adobe Commerce Optimizer].
 feature: CMS, Media, Configuration, Integration
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: 42f0e0cb72c6429eb6f08f1922c4171195a78d2b
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1460'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 A integração do AEM Assets para [!DNL Adobe Commerce Optimizer] permite que os comerciantes usem o AEM Assets como a solução de gerenciamento de ativos digitais centralizada para imagens de produtos. Este guia aborda a configuração específica para [!DNL Commerce Optimizer].
 
 Ao contrário do Adobe Commerce (PaaS) ou Adobe Commerce as a Cloud Service (ACCS), o [!DNL Commerce Optimizer] não tem uma interface de configuração de administrador. Para habilitar a integração, crie um tíquete de suporte com seus detalhes do [!DNL Adobe Commerce Optimizer] e do AEM Assets. O Suporte da Adobe configura a integração e registra seu locatário no Serviço de integração da Assets.
+
+**Prepare o AEM Assets antes de enviar o tíquete.** O registro do locatário presume que o lado do AEM é utilizável para o Commerce. Por exemplo, após implantar o pacote `assets-commerce` do AEM Commerce, os metadados e eventos funcionam conforme explicado. **Abrir um tíquete antes da configuração do AEM pode atrasar a integração.**
 
 O diagrama a seguir é uma visão geral da sincronização de produtos entre o [!DNL Adobe Commerce Optimizer] e a integração do AEM Assets.
 
@@ -35,13 +37,71 @@ Antes de configurar a integração, verifique se você tem:
 * Uma instância [!DNL Adobe Commerce Optimizer] ativa com direito a Visuais de Produto ou qualquer licença do AEM Assets com Dynamic Media.
 * Acesso a um ambiente do AEM Assets as a Cloud Service.
 * O [!DNL Commerce Optimizer] e o AEM Assets na mesma Organização do Adobe IMS.
-* Dynamic Media com OpenAPI ativada no ambiente do AEM Assets.
+* Dynamic Media com OpenAPI habilitado no seu ambiente do AEM Assets (consulte [Configurar o projeto do AEM Assets](configure-aem.md#prerequisites) para ver as etapas de habilitação).
+
+## Configurar o AEM Assets primeiro
+
+Conclua as etapas do AEM Assets **antes** para [abrir um tíquete de suporte](#onboarding) para registro de locatário. O padrão de instalação corresponde ao Adobe Commerce as a Cloud Service — consulte [Configurar o projeto do AEM Assets para oferecer suporte aos metadados do Commerce](configure-aem.md).
+
+### Etapa 1: implantar o pacote do AEM Commerce
+
+Instale e implante o pacote `assets-commerce` em seu projeto do AEM para que os esquemas de metadados, os eventos e a interface do usuário do Commerce estejam disponíveis.
+
+Conclua o procedimento completo em [Instalar o `assets-commerce` pacote](configure-aem.md#step-1-install-the-assets-commerce-package). Antes de abrir um tíquete de suporte, siga estas etapas:
+
+1. Clonar o repositório Git do Cloud Manager e copiar o [código do repositório Commerce do AEM Assets](https://github.com/ankumalh/assets-commerce) no projeto.
+
+1. Em todos os arquivos `filter.xml` e `pom.xml` do seu projeto, substitua todas as ocorrências de &lt;my-app> pelo nome do seu aplicativo.
+
+1. Confirme, envie, execute o pipeline de implantação e valide se a guia **[!UICONTROL Commerce]** aparece nas propriedades do ativo.
+
+Consulte [Instalar o pacote `assets-commerce`](configure-aem.md#step-1-install-the-assets-commerce-package) para obter capturas de tela, etapas do pipeline e soluções de problemas do Cloud Manager se a guia **[!UICONTROL Commerce]** estiver ausente.
+
+### Etapa 2: Habilitar o Dynamic Media com OpenAPI
+
+O Dynamic Media com recursos OpenAPI deve estar ativado em seu ambiente do AEM Assets. Os caminhos de autoatendimento (por exemplo, Cloud Manager para Visuais de Produto) e as rotas de Suporte da Adobe são descritos em [Configurar o projeto do AEM Assets](configure-aem.md#prerequisites).
+
+### Etapa 3: Aplicar metadados do Commerce e aprovar ativos
+
+Adicione metadados do Commerce às imagens do produto no AEM Assets. Para obter definições de campo, consulte [conteúdo do pacote do AEM Commerce](configure-aem.md#aem-commerce-assets-commerce-package-contents).
+
+O ativo deve estar em um status **aprovado** para que a sincronização de dados seja acionada. Salvar metadados sozinho não aciona o evento.
+
+### Etapa 4: opcional — configurar um perfil de metadados do Commerce
+
+Se você optar por usar perfis de metadados do AEM para simplificar a criação, configure-os **depois** que o pacote for implantado e sua equipe entender os campos obrigatórios do Commerce — mesmo padrão opcional que **Configurar o projeto do AEM Assets**.
+
+Consulte [Configurar um perfil de metadados](configure-aem.md#step-2-optional-configure-a-metadata-profile).
+
+## Limitação
+
+A integração do [!DNL Commerce Optimizer] tem as seguintes limitações:
+
+### Restrições relacionadas à camada
+
+Leia esta seção **antes** e escolha um nome de camada de catálogo no tíquete de suporte. Escolher ou compartilhar camadas sem esse contexto é uma causa frequente de casos de suporte evitáveis.
+
+**Use uma camada dedicada para o conteúdo do AEM Assets.** Cargas enviadas do AEM Assets preenchem um catálogo do Commerce Optimizer **layer**. Valores nessa camada **substituem** atributos de catálogo base onde os campos são fornecidos. Quando a integração omite um campo na carga, os valores correspondentes nessa camada podem ser substituídos por valores vazios. O compartilhamento de uma camada com fluxos de trabalho não relacionados do Commerce, ou a reutilização de uma camada que já armazena dados de produtos que não são da AEM e da Assets, pode causar **perda involuntária de dados** ou substituições confusas. Planeje a opção de camada **antes** de abrir o tíquete de suporte e reserve esse nome de camada (por exemplo, o **`AEM-Assets`** padrão) principalmente para a sincronização de imagem de produto orientada pela AEM.
+
+>[!IMPORTANT]
+>
+>A integração oferece suporte a **uma origem de catálogo por locatário**: uma única localidade e **uma camada nomeada**. No momento, não há suporte para a configuração de várias camadas ou localidades AEM-Assets para o mesmo locatário.
+
+### Outras restrições
+
+* **Somente imagens**: a integração não oferece suporte a vídeo ou outros tipos de mídia neste estágio.
+* **Nenhuma imagem de categoria**: a sincronização de imagem de categoria não está disponível. Imagens de categoria do AEM Assets para o Seletor de Assets (inserção da interface do usuário) não são compatíveis.
+* **Nenhuma distinção entre vários sites**: a integração não trata de vários sites; uma imagem associada a um produto é mostrada da mesma forma em todos os canais e políticas.
+* **Posição/ordem da imagem**: não há suporte para a posição e a ordem da imagem.
+* **O produto deve existir**: se o produto não existir em [!DNL Commerce Optimizer], a camada não será criada para esse mapeamento de ativos do produto.
 
 ## Integração
 
-Para integrar a Integração do AEM Assets com o [!DNL Commerce Optimizer], você deve [Criar um tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
+Para integrar a Integração do AEM Assets com o [!DNL Commerce Optimizer], você deve [Criar um tíquete de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
 
 O Suporte da Adobe usa as informações no tíquete para registrar o locatário no Serviço de integração da Assets e configurar a integração.
+
+Verifique se você concluiu [Configurar AEM Assets primeiro](#configure-aem-assets-first) antes de enviar o tíquete.
 
 Inclua as seguintes informações no tíquete de suporte:
 
@@ -49,71 +109,26 @@ Inclua as seguintes informações no tíquete de suporte:
 * **ID do Programa AEM**.
 * **ID de Ambiente AEM**.
 * **Regra de correspondência**: corresponder por SKU ou [correspondência externa (App Builder)](../synchronize/custom-match.md){target=_blank}.
-* **Camada**: o nome da camada de catálogo com o qual registrar o locatário. Especifique um nome personalizado, se necessário. Caso contrário, o padrão `AEM-Assets` será usado.
-* **Localidade**: a localidade de origem do catálogo na qual registrar o locatário (por exemplo, `en-US`).
-
->[!IMPORTANT]
->
-> A integração oferece suporte a uma origem por locatário, que é a combinação de uma localidade e uma camada.
+* **Camada**: o nome da camada do catálogo com o qual registrar o locatário (consulte **Restrições relacionadas à camada**). Especifique um nome personalizado somente se for intencional; caso contrário, o padrão **`AEM-Assets`** será usado.
+* **Localidade**: a localidade de origem do catálogo na qual registrar o locatário (por exemplo, `en-US`). Deve corresponder à localidade utilizada na visualização do catálogo e nos dados do catálogo de produtos.
 
 Depois que o Suporte da Adobe processar seu tíquete, a integração será configurada e seu locatário será registrado no Serviço de integração da Assets.
 
 Quando a integração estiver concluída:
 
-1. **Registro com o Assets Integration Service**: seu locatário do [!DNL Commerce Optimizer] está registrado com o Assets Integration Service usando a ID de Locatário do [!DNL Adobe Commerce Optimizer], a ID do Programa AEM, a ID de Ambiente AEM e o locatário.
+1. **Registro com o Assets Integration Service**: seu locatário do [!DNL Commerce Optimizer] está registrado com o Assets Integration Service usando sua ID de Locatário do [!DNL Adobe Commerce Optimizer], ID do Programa AEM, ID do Ambiente AEM, regra de correspondência, localidade e nome da camada fornecidos no tíquete.
 
 1. **Assinatura de evento**: o Serviço de Integração da Assets assina:
 
    * Eventos do AEM Assets (ativo aprovado, atualizado, removido)
    * [!DNL Commerce Optimizer] eventos de catálogo (produto criado, atualizado)
 
-### Limitação
+Configure sua [visualização de catálogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) para que as vitrines e APIs apresentem dados de imagem orientados pela AEM:
 
-A integração do [!DNL Commerce Optimizer] tem as seguintes limitações:
+* **Origem do catálogo (localidade)** — Selecione a mesma localidade especificada no seu tíquete de suporte (por exemplo, **`en-US`**). A integração registra um local por locatário; uma incompatibilidade impede que imagens sincronizadas apareçam na exibição de catálogo desejada.
+* **Camada do catálogo** — Atribua a camada **`AEM-Assets`** (ou o nome de camada personalizado do tíquete) a essa exibição do catálogo.
 
-* **Camada única por comerciante** — A Integração do AEM Assets oferece suporte a uma camada AEM-Assets por comerciante (uma origem por locatário). No momento, não há suporte para a configuração de várias camadas por comerciante.
-* **Somente imagens**—A integração não oferece suporte a vídeo ou outros tipos de mídia.
-* **Nenhuma imagem de categoria**—A sincronização de imagem de categoria não está disponível. Imagens de categoria do AEM Assets para o Seletor de Assets (inserção da interface do usuário) não são compatíveis.
-* **Nenhuma distinção entre vários sites**—A integração não trata de vários sites; uma imagem associada a um produto é mostrada da mesma forma em todos os canais e políticas.
-* **Posição/ordem da imagem**—A posição e a ordem da imagem não são suportadas.
-* **O produto deve existir**—Se o produto não existir em [!DNL Commerce Optimizer], a camada não será criada para esse mapeamento de ativos do produto.
-* **Substituição de campo de camada** — Os valores em uma camada substituem o catálogo base. Se um campo não for enviado na carga da camada, ele poderá ser substituído por um valor vazio. Use uma camada dedicada para conteúdo do AEM Assets; a reutilização de uma camada existente para outros fins pode resultar em perda não intencional de dados.
-
-### Configurar o AEM Assets
-
-O processo de instalação e configuração do AEM Assets para [!DNL Commerce Optimizer] é o mesmo do Adobe Commerce as a Cloud Service. Consulte [Configurar o projeto do AEM Assets para oferecer suporte aos metadados do Commerce](configure-aem.md) para obter as etapas completas.
-
-Verifique se o ambiente do AEM Assets está pronto:
-
-1. **Configuração do AEM Assets**: configurar o perfil de metadados do Commerce. Consulte [Configurar um perfil de metadados](configure-aem.md#step-2-optional-configure-a-metadata-profile).
-
-1. **Habilitação do Dynamic Media**: verifique se o Dynamic Media com recursos OpenAPI está habilitado no seu ambiente do AEM Assets.
-
-## Configurar AEM Assets
-
-Para habilitar a sincronização de ativos de produtos, configure o ambiente do AEM Assets.
-
-### Etapa 1: Habilitar o Dynamic Media com OpenAPI
-
-O Dynamic Media com OpenAPI deve estar ativado no ambiente do AEM Assets. As Visualizações de produto e as novas licenças do AEM Assets permitem que você as ative de maneira automatizada por meio do Cloud Manager. Licenças mais antigas da AEM Assets exigem o Suporte da Adobe para serem ativadas. Consulte [Configurar o projeto do AEM Assets](configure-aem.md#prerequisites) para ver as etapas de habilitação.
-
-### Etapa 2: Opcional. Configurar perfil de metadados do Commerce
-
-Configure o perfil de metadados no AEM Assets para armazenar metadados específicos do Commerce.
-
-Consulte [Configurar um perfil de metadados](configure-aem.md#step-2-optional-configure-a-metadata-profile) para obter instruções detalhadas.
-
-### Etapa 3: Aplicar metadados a ativos
-
-Adicione metadados do Commerce às imagens do produto no AEM Assets.
-
-Consulte o [conteúdo do pacote do AEM Commerce](configure-aem.md#aem-commerce-assets-commerce-package-contents) para definições de campo e [Configurar um perfil de metadados](configure-aem.md#step-2-optional-configure-a-metadata-profile) para as etapas de instalação.
-
-O ativo deve estar em um status **aprovado** para que a sincronização de dados seja acionada. Salvar metadados sozinho não aciona o evento.
-
->[!CAUTION]
->
-> Atribua a camada `AEM-Assets` à sua [exibição de catálogo](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/setup/catalog-view). Se a camada não for atribuída, os dados da imagem do produto poderão ser substituídos inesperadamente.
+Se a localidade ou camada não for atribuída corretamente, os dados da imagem podem **não aparecer** ou podem se comportar inesperadamente, mesmo que a sincronização tenha êxito no upstream.
 
 ## Sincronização
 
