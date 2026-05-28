@@ -17,9 +17,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 6a3bacace012153f6b8f7c87192d19bf349a2446
 workflow-type: tm+mt
-source-wordcount: 756
+source-wordcount: 729
 ht-degree: 0%
 
 ---
@@ -52,8 +52,7 @@ As seções a seguir descrevem essas etapas em detalhes.
 
 A disponibilidade da ferramenta de migração de dados em massa é a seguinte:
 
-- **T1 2026** (ainda não disponível) - Após a versão inicial da ferramenta de migração de dados em massa, você poderá acessá-la enviando um tíquete de suporte.
-- **T1 2026** (ainda não disponível) - Após o lançamento público da ferramenta de migração de dados em massa, ela estará acessível nesta página.
+Essa ferramenta está disponível atualmente por meio de contratos de engenharia implantados. Se você estiver interessado em usar essa ferramenta, entre em contato com o representante da Adobe.
 
 ## Criar ambiente de destino
 
