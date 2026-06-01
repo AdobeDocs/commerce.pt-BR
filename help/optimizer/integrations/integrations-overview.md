@@ -5,11 +5,11 @@ solution: Commerce
 feature: Integration, Catalog Management
 role: Developer, Admin
 level: Beginner
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a  [!DNL Adobe Commerce Optimizer] projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a  [!DNL Adobe Commerce Optimizer] projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 8f3a2c1b-9d4e-5f6a-bc7d-1e2f3a4b5c6d
-source-git-commit: d8cd6f543353e1b11f3aa14b3b97b02155d23809
+source-git-commit: a404c2ff7cec5e72ce65d3670330b1f3f3c4702d
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ ht-degree: 0%
 # [!DNL Adobe Commerce Optimizer] integrações
 
 O [!DNL Adobe Commerce Optimizer] inclui integrações que permitem sincronizar dados do Adobe Commerce na nuvem ou no local, gerenciar ativos, melhorar as experiências da loja e conectar sistemas externos. As seções abaixo descrevem como cada integração funciona com o [!DNL Adobe Commerce Optimizer]. Siga os links para instalação, configuração e uso diário.
+
+{{aco-integration-environment-alignment}}
 
 ## Adobe Commerce Optimizer Connector {#aco-connector}
 
@@ -31,7 +33,7 @@ O Adobe Commerce Optimizer Connector é a ponte que sincroniza os dados de catá
 As Visualizações de produto permitem gerenciar imagens de produtos por meio do Adobe Experience Manager (AEM) Assets. Configure o AEM Assets para Commerce Optimizer para ativar Visualizações de produto. Após concluir a configuração, você usa o AEM Assets como a solução centralizada de gerenciamento de ativos digitais para as imagens de seus produtos, com fluxos de trabalho automatizados de revisão e gerenciamento de ativos que mantêm as imagens sincronizadas com seu catálogo Commerce Optimizer. A integração corresponde ativos a produtos por SKU. As atualizações fluem pelos serviços de integração da Adobe, para que as vitrines reflitam a mídia mais recente sem recarregamentos manuais.
 
 - [Visuais de produto com o AEM Assets](../setup/product-visuals.md)
-- [Configurar AEM Assets para Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md){target="_blank"}
+- [Configurar o AEM Assets para o Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md){target="_blank"}
 
 ## Adobe Experience Manager Sites Optimizer {#aem-sites-optimizer}
 
