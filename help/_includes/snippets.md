@@ -1,11 +1,18 @@
 ---
-source-git-commit: aaefe284749df25953c2581f000af2989bcc8fb2
+source-git-commit: edc47115830f5ca7ec1e485de1ddf9939de2586d
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
 # Commerce snippets
+
+
+## Alinhamento do ambiente de integração do ACO {#aco-integration-environment-alignment}
+
+>[!IMPORTANT]
+>
+>Sempre conecte instâncias do sandbox Otimizer a ambientes de não produção e instâncias de produção a ambientes de produção. Ambientes incompatíveis causam dados de catálogo inconsistentes, resultados de pesquisa e recomendações.
 
 
 ## Serviços de merchandising para o Otimizer {#aco-merchandising-services}

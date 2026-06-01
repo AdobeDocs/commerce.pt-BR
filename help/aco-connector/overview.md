@@ -21,9 +21,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: be4140fb3305b354e8a11463131182a3b571d2f2
 workflow-type: tm+mt
-source-wordcount: 1233
+source-wordcount: 1177
 ht-degree: 0%
 
 ---
@@ -60,12 +60,6 @@ Nesta arquitetura:
 - O conector exporta feeds de catálogo, preço e categoria
 - O Commerce Optimizer assimila e normaliza os dados do feed em Origens de Catálogo, Catálogos de preços e Exibições de catálogo
 - As vitrines (vitrines do Commerce no Edge Delivery ou compilações headless personalizadas) chamam APIs do Commerce Optimizer GraphQL para detecção e recomendações e chamam a Commerce ou outra plataforma de terceiros conectada para operações de carrinho e finalização
-
-## Como o conector funciona com o Adobe Commerce {#how-it-works}
-
-- O Commerce Optimizer assimila e normaliza os dados do feed em Origens de Catálogo, Catálogos de preços e Exibições de catálogo.
-
-- As vitrines (vitrines do Commerce no Edge Delivery ou builds headless personalizados) chamam as APIs do Commerce Optimizer GraphQL para detecção e recomendações e chamam a Commerce ou outra plataforma de terceiros conectada para operações de carrinho e finalização.
 
 ## Como o conector funciona com o Adobe Commerce
 
