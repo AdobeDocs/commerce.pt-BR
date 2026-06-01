@@ -27,9 +27,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 4288998fdae56112dc9ddcebfc42b85b9f5d8c00
+source-git-commit: be8fbcd77dc56b2193eee20d7a06a315ac1abb9f
 workflow-type: tm+mt
-source-wordcount: 4032
+source-wordcount: 4189
 ht-degree: 0%
 
 ---
@@ -42,15 +42,19 @@ As notas de versão a seguir contêm atualizações para [!DNL Adobe Commerce as
 >
 >Se você estiver usando o Adobe Commerce no local ou o Adobe Commerce na infraestrutura em nuvem, consulte as [notas de versão do Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/overview).
 
-## Maio de 2026 - versão #2 {#latest}
+## Junho de 2026 - versão #1 {#latest}
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
 [!BADGE Sandbox]{type=Caution tooltip="Os itens listados estão disponíveis atualmente apenas em ambientes de sandbox. A Adobe disponibiliza novas versões em ambientes de sandbox primeiro para fornecer tempo para testar alterações futuras antes que a versão esteja disponível em ambientes de produção."}
 
-Os itens a seguir serão lançados para ambientes de Produção em 21 de maio de 2026.
+Os itens a seguir serão lançados para ambientes de Produção em 4 de junho de 2026.
 
 >[!BEGINSHADEBOX]
+
+### Adicionar e editar códigos de cupom personalizados no Administrador
+
+Os comerciantes agora podem criar e editar códigos de cupom personalizados diretamente do [!DNL Commerce Admin] nas regras manuais de preço do carrinho. Um novo botão [!UICONTROL **Adicionar cupom personalizado**] está disponível na seção [!UICONTROL **Gerenciar códigos de cupom**] ao editar uma regra de preço de carrinho. <!-- CCSAAS-4508 -->
 
 ### Rastrear remessas usando transportadoras padrão e personalizadas
 
@@ -59,6 +63,14 @@ O rastreamento de pedidos agora é confiável para transportadoras padrão e per
 ### Exibir tipos de entrada de atributo na grade Atributos do Produto
 
 Uma nova coluna [!UICONTROL **Tipo de Atributo**] agora está visível na grade de Atributos de Produto em ([!UICONTROL **Lojas**] > _[!UICONTROL Attributes]_>[!UICONTROL **Produto**]), que exibe o tipo de entrada (como campo de texto, lista suspensa ou sim/não) para cada atributo de produto, incluindo os tipos contribuídos por extensões. Isso facilita a identificação e o gerenciamento de atributos ao trabalhar com conjuntos de atributos grandes. <!-- ACCS-925 -->
+
+### Personalizar o cabeçalho Responder para emails personalizados
+
+Agora os comerciantes podem configurar o cabeçalho [!UICONTROL **Responder para**] usado pelo ponto de extremidade [POST /rest/V1/custom-email/send](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/), para que as respostas dos clientes possam ser encaminhadas a um endereço diferente do remetente. <!-- ACCS-1037 -->
+
+### Exibir preços de camada na página de edição do produto em grandes ambientes de catálogo compartilhado
+
+Os comerciantes com um grande número de catálogos compartilhados agora podem acessar a guia somente leitura [!UICONTROL **Preços da Camada**] na página de edição do produto no [!DNL Commerce Admin]. <!-- CCSAAS-4922 -->
 
 ### Melhorias e correções de erros
 
@@ -79,6 +91,10 @@ Os seguintes aprimoramentos, otimizações e correções de erros selecionados e
 * Correção de um erro &quot;Undefined array key &#39;simple_sku&#39;&quot; que poderia ocorrer ao criar uma remessa de um pedido que continha produtos configuráveis. <!-- CCSAAS-4877 -->
 
 * A consulta do GraphQL `guestOrderByToken` agora retorna uma mensagem de erro mais informativa quando chamada com um token malformado, em vez de um erro de servidor interno. <!-- CCSAAS-4921 -->
+
+* A consulta do GraphQL `customer` agora retorna uma mensagem de erro mais informativa quando os pedidos do cliente não podem ser carregados. <!-- ACCS-867 -->
+
+* O ponto de extremidade REST GET `V1/customers/{customerId}` agora retorna o campo de configuração `assistance_allowed`. <!-- USF-4132 -->
 
 {{accs-release}}
 
@@ -355,7 +371,7 @@ Os seguintes aprimoramentos, otimizações e correções de erros selecionados e
 
 * Correção do tempo limite da página de edição do produto que poderia ocorrer com catálogos compartilhados grandes. <!-- CCSAAS-4657 -->
 
-* Os pontos de extremidade da API REST do GET `/V1/directory/countries` e do GET `/V1/directory/countries/:countryId` foram habilitados novamente para integrações de administrador, permitindo que os clientes pesquisem dados válidos de país e região. <!-- ACCS-518 -->
+* Os pontos de extremidade da API REST GET `/V1/directory/countries` e GET `/V1/directory/countries/:countryId` foram habilitados novamente para integrações de administrador, permitindo que os clientes pesquisem dados válidos de país e região. <!-- ACCS-518 -->
 
 * Correção de um problema de tempo limite que poderia ocorrer na API REST quando um usuário tem um catálogo compartilhado grande. <!-- ACCS-4657 -->
 
