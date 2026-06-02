@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 63f363c970a8a147cb6f564a52a41818023451c4
+source-git-commit: 29b54d68ec20d000f4cc1ffe8080c5919457ff8c
 workflow-type: tm+mt
-source-wordcount: 1104
+source-wordcount: 1191
 ht-degree: 0%
 
 ---
@@ -42,11 +42,24 @@ As [Regras de merchandising](./merchandising/rules/add.md#intelligent-ranking-bo
 
 ### Atualizações da API
 
+_28 de maio de 2026_
+
+<!-- v1.2 -->
+
+![Correção](../assets/fix.svg) **Árvores de navegação completas**—As categorias descendentes marcadas agora são incluídas corretamente nas árvores `navigation` filtradas por família quando existe um nó intermediário não marcado no caminho. Essa correção garante que os compradores vejam todas as categorias relevantes na navegação, facilitando a navegação e a descoberta de itens.
+<!--DATA-7183-->
+
+![Correção](../assets/fix.svg) **Tratamento de espaçador vazio em `categoryTree` solicitações**—Correção de um problema em que a consulta [`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) retornava um erro de servidor interno quando o argumento `slugs` incluía uma cadeia de caracteres vazia. Valores de espaçador vazios agora são ignorados, de modo que as frentes de loja e as integrações continuam a resolver dados de categoria sem solicitações com falha.
+<!--DATA-7184-->
+
+![Corrigir](../assets/fix.svg) **`searchCategory`solicitações retornam resultados em ordem alfabética, que não diferenciam maiúsculas de minúsculas**—A consulta `searchCategory` agora classifica os resultados de pesquisa em ordem alfabética, sem diferenciação entre maiúsculas e minúsculas, garantindo uma ordem consistente e previsível. As categorias com prefixos mais curtos aparecem primeiro quando os nomes são idênticos.
+<!--COMOPT-2142-->
+
 _4 de maio de 2026_
 
 <!--v1.53-->
 
-Os preços dos produtos da loja agora exibem o código monetário correto (por exemplo, USD) para todos os tipos de produtos. Anteriormente, alguns produtos exibiam `NONE` em vez da moeda esperada, resultando em preços ausentes.
+**Exibição de moeda correta**—Os preços de produtos da vitrine agora exibem o código de moeda correto (por exemplo, USD) para todos os tipos de produtos. Anteriormente, alguns produtos exibiam `NONE` em vez da moeda esperada, resultando em preços ausentes.
 
 <!--DATA-7115-->
 
