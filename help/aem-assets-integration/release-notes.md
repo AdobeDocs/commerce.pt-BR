@@ -3,9 +3,9 @@ title: Notas de versão da Integração do AEM Assets
 description: Revise as notas de versão para obter informações sobre todas as versões da Integração do AEM Assets.
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: 5dc61e0351e338c4d184d7d882decff49b13a12b
+source-git-commit: cf623b835d5590b32f1425c4aab25efa52b50498
 workflow-type: tm+mt
-source-wordcount: '1198'
+source-wordcount: '1243'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,14 @@ _11 de fevereiro de 2025_
 ![Novo problema](../assets/new.svg) Agora, os comerciantes podem sincronizar imagens para produtos e categorias.
 
 +++
+
+## v1.3.7
+
+_2 de junho de 2026_
+
+[!BADGE Com Suporte]{type=Informative tooltip="Compatível"} no Adobe Commerce versão 2.4.5 e posteriores.
+
+![Novo problema](../assets/new.svg)<!-- Issue ACAP-1246 --> O administrador do Commerce inclui uma lista [!UICONTROL Sync Status] centrada em ativos para pesquisar, filtrar, classificar e revisar o AEM Assets sincronizado por atributos de ativos em vez de associações de produtos. Consulte [Exibir o status de sincronização do AEM Assets](get-started/sync-status.md){target=_blank}.
 
 ## v1.3.6
 
