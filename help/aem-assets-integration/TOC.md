@@ -31,4 +31,4 @@ ht-degree: 3%
    - [Correspondência automática personalizada](synchronize/custom-match.md)
    - [Seleção manual de ativos](synchronize/asset-selector-integration.md)
 - [Gerenciar ativos de mídia do Commerce](manage-assets.md)
-- [Retornar à página inicial dos Serviços da Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Retornar à página inicial dos Serviços da Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/home)
