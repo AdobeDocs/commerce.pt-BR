@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 8f424228d96072636ac24a2d50dd58e5c8d655da
+source-git-commit: d35a3ad39c504c5c6eb1073737babae252a3127d
 workflow-type: tm+mt
-source-wordcount: 2868
+source-wordcount: 2818
 ht-degree: 0%
 
 ---
@@ -40,6 +40,14 @@ As atualizações incluem:
 >A extensão de exportação de dados SaaS é uma coleção de módulos instalados automaticamente com o Live Search, o Product Recommendations e o Catalog Service. Você pode verificar a versão instalada em seu sistema usando o Composer. Em alguns casos, você pode querer atualizar a extensão de exportação de dados no seu sistema para coletar correções ou novos recursos sem atualizar a versão do Serviço do Commerce.
 
 ## Versões de 2026
+
+### Versão 103.4.26
+
+_2 de junho de 2026_
+
+![Correção](../assets/fix.svg) **Atualizações de feed de produto após alterações de moeda** - Quando você altera as configurações de moeda da loja, os produtos afetados agora são enfileirados para exportação novamente, portanto o Live Search, o Serviço de Catálogo, as Recomendações de Produto e outros serviços conectados da Commerce exibem os preços atualizados. <!--MDEE-1376-->
+
+![Correção](../assets/fix.svg) **As categorias secundárias refletem o status pai desabilitado**-Quando você desabilita uma categoria de nível superior, as categorias secundárias agora são exportadas como inativas, portanto, os serviços conectados da Commerce não tratam os produtos dessas categorias como detectáveis. <!--MDEE-1369-->
 
 ### Versão 103.4.25
 
@@ -74,7 +82,7 @@ _20 de abril de 2026_
 
 ![Correção](../assets/fix.svg) **Erros SQL Resolvidos ao Excluir Atributos EAV Estáticos**-O plug-in ProductAttributeDelete não gera mais erros SQL ao excluir atributos EAV estáticos, garantindo um gerenciamento de atributos mais suave e confiabilidade aprimorada do sistema. <!--MDEE-1336-->
 ![Correção](../assets/fix.svg) **Exportação de caminho de categoria fixo após movimentações de categoria**- Garante que o feed de categorias atualize corretamente o `url_path` quando uma categoria é movida para um pai diferente, evitando caminhos de categoria ausentes ou obsoletos nos serviços Commerce conectados.<!--MDEE-1331-->
-![Correção](../assets/fix.svg) **Atualizações aprimoradas de categorias agendadas para produtos relacionados**. As atualizações agendadas de URLs de categorias agora afetam apenas as categorias desejadas, preservando a integridade dos dados e evitando alterações não intencionais em produtos relacionados. Agora, as alterações agendadas no URL da categoria são refletidas corretamente nos dados exportados, mantendo a navegação da loja e os serviços vinculados alinhados com seu catálogo atual.
+![Correção](../assets/fix.svg) **As atualizações de categoria agendadas aprimoradas para produtos relacionados**. As atualizações agendadas para URLs de categoria agora afetam apenas as categorias desejadas, preservando a integridade dos dados e evitando alterações não intencionais em produtos relacionados. Agora, as alterações agendadas no URL da categoria são refletidas corretamente nos dados exportados, mantendo a navegação da loja e os serviços vinculados alinhados com seu catálogo atual.
 <!--MDEE-1321-->
 
 ### Versão 103.4.22
