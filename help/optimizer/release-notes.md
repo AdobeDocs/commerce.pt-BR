@@ -4,21 +4,15 @@ description: Informações de versão mensais do  [!DNL Adobe Commerce Optimizer
 feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 TQID: https://experienceleague.adobe.com/apcpxN0AOniRcHDCa5MMAVWysxRO5mTcudXXXjET-Lo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 63f363c970a8a147cb6f564a52a41818023451c4
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 29b54d68ec20d000f4cc1ffe8080c5919457ff8c
 workflow-type: tm+mt
-source-wordcount: 1104
+source-wordcount: 1191
 ht-degree: 0%
 
 ---
@@ -42,11 +36,24 @@ As [Regras de merchandising](./merchandising/rules/add.md#intelligent-ranking-bo
 
 ### Atualizações da API
 
+_28 de maio de 2026_
+
+<!-- v1.2 -->
+
+![Correção](../assets/fix.svg) **Árvores de navegação completas**—As categorias descendentes marcadas agora são incluídas corretamente nas árvores `navigation` filtradas por família quando existe um nó intermediário não marcado no caminho. Essa correção garante que os compradores vejam todas as categorias relevantes na navegação, facilitando a navegação e a descoberta de itens.
+<!--DATA-7183-->
+
+![Correção](../assets/fix.svg) **Tratamento de espaçador vazio em `categoryTree` solicitações**—Correção de um problema em que a consulta [`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) retornava um erro de servidor interno quando o argumento `slugs` incluía uma cadeia de caracteres vazia. Valores de espaçador vazios agora são ignorados, de modo que as frentes de loja e as integrações continuam a resolver dados de categoria sem solicitações com falha.
+<!--DATA-7184-->
+
+![Corrigir](../assets/fix.svg) **`searchCategory`solicitações retornam resultados em ordem alfabética, que não diferenciam maiúsculas de minúsculas**—A consulta `searchCategory` agora classifica os resultados de pesquisa em ordem alfabética, sem diferenciação entre maiúsculas e minúsculas, garantindo uma ordem consistente e previsível. As categorias com prefixos mais curtos aparecem primeiro quando os nomes são idênticos.
+<!--COMOPT-2142-->
+
 _4 de maio de 2026_
 
 <!--v1.53-->
 
-Os preços dos produtos da loja agora exibem o código monetário correto (por exemplo, USD) para todos os tipos de produtos. Anteriormente, alguns produtos exibiam `NONE` em vez da moeda esperada, resultando em preços ausentes.
+**Exibição de moeda correta**—Os preços de produtos da vitrine agora exibem o código de moeda correto (por exemplo, USD) para todos os tipos de produtos. Anteriormente, alguns produtos exibiam `NONE` em vez da moeda esperada, resultando em preços ausentes.
 
 <!--DATA-7115-->
 
@@ -74,7 +81,7 @@ _29 de abril de 2026_
 
 <!--v1.52 release-->
 
-**Solicitação em lote necessária** — a API do GraphQL agora impõe um máximo de 100 SKUs por solicitação ao recuperar dados de catálogo. Consulte [limites documentados](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/boundaries-limits#product-discovery).
+**Solicitação em lote necessária** — a API do GraphQL agora impõe um máximo de 100 SKUs por solicitação ao recuperar dados de catálogo. Consulte [limites documentados](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery).
 
 <!--DATA-7156-->
 
