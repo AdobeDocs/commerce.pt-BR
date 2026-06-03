@@ -27,9 +27,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: be8fbcd77dc56b2193eee20d7a06a315ac1abb9f
+source-git-commit: 9e4bf260a145815f97a69251005309edb480ae11
 workflow-type: tm+mt
-source-wordcount: 4189
+source-wordcount: 4182
 ht-degree: 0%
 
 ---
@@ -44,17 +44,17 @@ As notas de versão a seguir contêm atualizações para [!DNL Adobe Commerce as
 
 ## Junho de 2026 - versão #1 {#latest}
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Produção]{type=Neutral tooltip="Os itens listados estão disponíveis atualmente em Ambientes de produção."}
 
-[!BADGE Sandbox]{type=Caution tooltip="Os itens listados estão disponíveis atualmente apenas em ambientes de sandbox. A Adobe disponibiliza novas versões em ambientes de sandbox primeiro para fornecer tempo para testar alterações futuras antes que a versão esteja disponível em ambientes de produção."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-Os itens a seguir serão lançados para ambientes de Produção em 4 de junho de 2026.
+Os itens a seguir foram lançados para ambientes de Produção em 4 de junho de 2026.
 
 >[!BEGINSHADEBOX]
 
 ### Adicionar e editar códigos de cupom personalizados no Administrador
 
-Os comerciantes agora podem criar e editar códigos de cupom personalizados diretamente do [!DNL Commerce Admin] nas regras manuais de preço do carrinho. Um novo botão [!UICONTROL **Adicionar cupom personalizado**] está disponível na seção [!UICONTROL **Gerenciar códigos de cupom**] ao editar uma regra de preço de carrinho. <!-- CCSAAS-4508 -->
+Os comerciantes agora podem [criar e editar códigos de cupom personalizados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon#method-3-custom-coupon-codes) diretamente de [!DNL Commerce Admin] nas regras manuais de preços do carrinho. Um novo botão [!UICONTROL **Adicionar cupom personalizado**] está disponível na seção [!UICONTROL **Gerenciar códigos de cupom**] ao editar uma regra de preço de carrinho. <!-- CCSAAS-4508 -->
 
 ### Rastrear remessas usando transportadoras padrão e personalizadas
 
@@ -82,7 +82,7 @@ Os seguintes aprimoramentos, otimizações e correções de erros selecionados e
 
 * Correção de um erro &quot;o consumidor não está autorizado&quot; que poderia impedir logons do GraphQL convidado quando o cabeçalho `X-Adobe-Company` estava presente na solicitação. <!-- ACCS-949 -->
 
-* Correção de um problema em que a edição ou exclusão de uma empresa no [!DNL Commerce Admin] poderia falhar com um erro &quot;Nenhuma entidade&quot; após atribuir um cliente à empresa por meio do ponto de extremidade REST `V1/customers/companies` do PUT. <!-- ACCS-856 -->
+* Correção de um problema em que a edição ou exclusão de uma empresa no [!DNL Commerce Admin] poderia falhar com um erro &quot;Nenhuma entidade&quot; após atribuir um cliente à empresa por meio do ponto de extremidade REST PUT `V1/customers/companies`. <!-- ACCS-856 -->
 
 * Solução de um problema com status de grade de ordens de venda obsoletas. <!-- CCSAAS-4915 -->
 
