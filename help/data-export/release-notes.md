@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: d35a3ad39c504c5c6eb1073737babae252a3127d
+source-git-commit: f472cadb124207b04b158b410b7fe1db8f5a9f7d
 workflow-type: tm+mt
-source-wordcount: 2818
+source-wordcount: 2855
 ht-degree: 0%
 
 ---
@@ -40,6 +40,13 @@ As atualizações incluem:
 >A extensão de exportação de dados SaaS é uma coleção de módulos instalados automaticamente com o Live Search, o Product Recommendations e o Catalog Service. Você pode verificar a versão instalada em seu sistema usando o Composer. Em alguns casos, você pode querer atualizar a extensão de exportação de dados no seu sistema para coletar correções ou novos recursos sem atualizar a versão do Serviço do Commerce.
 
 ## Versões de 2026
+
+### Versão 103.4.27
+
+_4 de junho de 2026_
+
+![Correção](../assets/fix.svg) **Os produtos do pacote permanecem visíveis após as atualizações simultâneas do catálogo**-Correção de um problema em que os produtos do pacote não apareciam na loja quando os produtos configuráveis e do pacote eram atualizados ao mesmo tempo. Depois de atualizar o `magento/module-data-exporter` para a versão 103.4.27, o feed de produtos é automaticamente agendado para ressincronização, a fim de corrigir as inconsistências de dados de pacote existentes no [!DNL Catalog Service], [!DNL Live Search] e outros serviços conectados da Commerce.
+<!--MDEE-1379-->
 
 ### Versão 103.4.26
 
