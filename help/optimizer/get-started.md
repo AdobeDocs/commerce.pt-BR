@@ -6,11 +6,22 @@ recommendations: noCatalog
 badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: de57d93d-e156-45c1-86aa-de29a8c34bd2
 TQID: https://experienceleague.adobe.com/1dcKMjOut1GtiOevvGJECsaU7URFmYg-mQ-m9wi7n4Y
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2: id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: dba482e5-29a8-4127-afa2-c4b913512ef8id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2:
+  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: dba482e5-29a8-4127-afa2-c4b913512ef8
+  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
 workflow-type: tm+mt
 source-wordcount: 1349
@@ -163,11 +174,11 @@ Depois que o aplicativo for aberto, alterne facilmente entre ambientes como sand
 
 Exiba os detalhes da instância clicando no ícone de informações ao lado do nome da instância.
 
-Painel de detalhes da instância ![[!DNL Adobe Commerce Optimizer] mostrando pontos de extremidade e ID da instância ](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
+Painel de detalhes da instância ![[!DNL Adobe Commerce Optimizer] mostrando pontos de extremidade e ID da instância &#x200B;](./assets/aco-instance-details.png){width="60%" zoomable="yes"}
 
 Observe as seguintes informações principais:
 
-- **Ponto de extremidade do GraphQL** O ponto de extremidade do GraphQL usa o ponto de extremidade da sua loja para consultar dados de catálogo e merchandising dessa instância usando a [API de serviço de merchandising](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/){target=&quot;_blank}
+- **Ponto de extremidade do GraphQL** O ponto de extremidade do GraphQL usa o ponto de extremidade da sua loja para consultar dados de catálogo e merchandising dessa instância usando a [API de serviço de merchandising](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/){target=_blank}
 - **Ponto de extremidade do catálogo** Ponto de extremidade da API REST que você usa para assimilar produtos e preços na Adobe Commerce Optimizer do seu sistema PIM ou de comércio. Consulte a [API de assimilação de dados](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/)
 - **URL do Commerce Optimizer** Abre a interface do administrador do [Adobe Commerce Optimizer Studio](overview.md) para configurar e gerenciar exibições de catálogo, políticas e merchandising.
 - **ID da Instância**: identificador exclusivo (ID do locatário) para esta instância do Adobe Commerce Optimizer, usado por vitrines, APIs e ferramentas para se conectar ao ambiente correto.
