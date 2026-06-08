@@ -5,9 +5,9 @@ user-guide-description: Documentação e recursos de  [!DNL Adobe Commerce Optim
 role: Admin, Leader, User
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: 12783fe12fad940b95dfed05c1b86657e63c725c
+source-git-commit: 8b93be7e618c7a93803e62eabb1cd38ebe8b45ba
 workflow-type: tm+mt
-source-wordcount: '114'
+source-wordcount: '116'
 ht-degree: 12%
 
 ---
@@ -56,6 +56,7 @@ ht-degree: 12%
    - [Catálogos de preços](./setup/pricebooks.md)
    - [Visuais do produto](./setup/product-visuals.md)
    - [Sincronização de dados](./setup/data-sync.md)
+   - [Pesquisa semântica](./setup/semantic-search.md)
    - Eventos {#events}
       - [Visão geral](./setup/events/overview.md)
 - [Loja](storefront.md)

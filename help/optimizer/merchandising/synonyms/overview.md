@@ -12,9 +12,9 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
 workflow-type: tm+mt
-source-wordcount: 101
+source-wordcount: 158
 ht-degree: 0%
 
 ---
@@ -22,3 +22,5 @@ ht-degree: 0%
 # Sinônimos
 
 Os sinônimos expandem a consulta de pesquisa para incluir palavras que os compradores podem usar que diferem daquelas no catálogo. Você não quer perder uma venda porque alguém está procurando um &quot;sofá&quot;, enquanto seu produto está listado como um &quot;sofá&quot;. Você pode capturar uma ampla variedade de termos de pesquisa inserindo todas as palavras possíveis que os clientes podem usar para encontrar seus produtos.
+
+A [Pesquisa semântica](../../setup/semantic-search.md) está habilitada por padrão e também pode corresponder a termos e linguagem natural semelhantes, entendendo o significado em vez do texto exato. A pesquisa semântica pode reduzir a necessidade de alguns sinônimos gerais (por exemplo, &quot;sofá&quot; e &quot;sofá&quot;); você ainda pode querer sinônimos para termos específicos da marca ou altamente técnicos. Você pode usar sinônimos e pesquisa semântica juntos.

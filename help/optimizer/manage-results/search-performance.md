@@ -15,9 +15,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
 workflow-type: tm+mt
-source-wordcount: 1863
+source-wordcount: 1905
 ht-degree: 0%
 
 ---
@@ -64,6 +64,7 @@ A seção a seguir fornece estratégias que você pode usar para aprimorar a fun
 Há vários fatores principais que determinam a relevância e a eficácia dos resultados da pesquisa:
 
 - Dados de produtos bem estruturados garantem que os algoritmos de pesquisa possam corresponder de forma eficaz os produtos às consultas. Dados de produtos de baixa qualidade levam a resultados de pesquisa menos relevantes. Para afetar diretamente o sucesso de sua estratégia de merchandising:
+   - Configure a [pesquisa semântica](../setup/semantic-search.md) para correspondência em linguagem natural e baseada em intenção.
    - Configure os [atributos corretos como pesquisáveis](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) com seu peso correspondente.
    - Verifique se os dados nesses atributos são relevantes.
 - Uma experiência de pesquisa bem projetada cria confiança com os clientes e inspira confiança de que encontrarão o que precisam.
@@ -92,6 +93,7 @@ Para otimizar os resultados da pesquisa com o [!DNL Adobe Commerce Optimizer], m
 
   Para reduzir a taxa de resultados zero, é possível:
 
+   - Confirme se a [pesquisa semântica](../setup/semantic-search.md) está habilitada na guia **[Pesquisa avançada](../settings.md#advanced-search)**, em Configurações. A pesquisa semântica é habilitada por padrão para [!DNL Adobe Commerce Optimizer] clientes; nenhuma alteração na loja ou no desenvolvedor é necessária. Atualização de resultados após a conclusão da indexação.
    - Ofereça termos de pesquisa alternativos ou relacionados, como [sinônimos](../merchandising/synonyms/overview.md), quando nenhuma correspondência exata for encontrada.
    - Revise regularmente consultas com zero resultados para identificar padrões e fazer os ajustes necessários no catálogo de produtos e nas configurações de pesquisa.
 

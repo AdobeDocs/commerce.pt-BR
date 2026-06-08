@@ -18,9 +18,9 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
 workflow-type: tm+mt
-source-wordcount: 264
+source-wordcount: 237
 ht-degree: 0%
 
 ---
@@ -35,10 +35,8 @@ A Descoberta de produtos equipe os merchandisers com ferramentas poderosas para 
 
 Com a descoberta de produtos, você pode:
 
+* **Use a [pesquisa semântica](../setup/semantic-search.md)** — Habilitada por padrão em [Configurações](../settings.md#advanced-search) para melhorar a relevância para consultas de linguagem natural e baseadas em intenção. Nenhuma configuração de atributo ou alteração de vitrine eletrônica é necessária.
 * **Configure [aspectos](./facets/overview.md), [regras de categoria e pesquisa de merchandising](./rules/overview.md) e [sinônimos](./synonyms/overview.md)** para orientar os compradores para os produtos mais relevantes com o mínimo de atrito.
-* **Crie experiências de pesquisa intuitivas e orientadas a metas** que refletem sua estratégia de merchandising e prioridades sazonais.
-* **Use facetas dinâmicas orientadas por IA e a reclassificação de resultados** para adaptar os resultados da pesquisa em tempo real com base no comportamento do comprador, aumentando o engajamento e as vendas.
-* **Garanta que os itens promocionais e de alta prioridade apareçam efetivamente** para alinhar os resultados da pesquisa com as metas comerciais.
 
 ## Recommendations
 
