@@ -3,7 +3,7 @@ title: Pesquisa semântica
 description: Habilitar a pesquisa semântica de IA em  [!DNL Adobe Commerce Optimizer]  em Configurações. Nenhuma configuração de atributo ou alteração de vitrine eletrônica é necessária.
 role: Admin, User
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
 workflow-type: tm+mt
 source-wordcount: '792'
