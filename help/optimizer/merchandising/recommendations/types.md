@@ -1,25 +1,16 @@
 ---
 title: Tipos de Recomendação
 description: Saiba mais sobre as recomendações que você pode implantar em várias páginas do site.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: f1c4e0ef-a8fe-452d-9870-6d6964b4335d
 TQID: https://experienceleague.adobe.com/GRGSFrVMS8gSjkpvnirUZQR4qaxGMBMrMeu2t21Yk6Y
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: beb7a3c1-66ab-4786-b879-7621375b3c40id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 8b93be7e618c7a93803e62eabb1cd38ebe8b45ba
 workflow-type: tm+mt
-source-wordcount: 1638
+source-wordcount: 1643
 ht-degree: 0%
 
 ---
@@ -107,7 +98,7 @@ Esses tipos de recomendações recomendam produtos que são os mais populares ou
 | Mais visualizados | Recomenda produtos que foram mais visualizados ao contar o número de sessões em que uma ação de visualização ocorreu nos últimos sete dias.<br/><br/>**Onde usado:**<br/>- Página inicial<br/>- Categoria<br/>- Detalhes do produto<br/>- Carrinho<br/>- Confirmação <br/><br/>**Rótulos sugeridos:**<br/>- Mais popular<br/>- Tendências<br/>- Popular no momento<br/>- Popular no momento<br/>- Produtos populares inspirados neste produto (PDP)<br/>- Mais vendidos |
 | Mais comprados | Recomenda os produtos comprados com mais frequência pelos compradores nos últimos sete dias.<br/><br/>**Onde usado:**<br/>- Página inicial<br/>- Categoria<br/>- Detalhes do produto<br/>- Carrinho<br/>- Confirmação <br/><br/>**Rótulos sugeridos:**<br/> - Mais popular<br/>- Tendências<br/>- Popular no momento<br/>- Popular no momento<br/>- Produtos populares inspirados neste produto (PDP)<br/>- Mais vendidos |
 | Mais adicionados ao carrinho | Recomenda os produtos adicionados com mais frequência aos carrinhos pelos compradores nos últimos sete dias. Esse tipo de recomendação pode ser usado em todas as páginas.<br/><br/>**Onde usado:**<br/>- Página inicial<br/>- Categoria<br/>- Detalhes do produto<br/>- Carrinho<br/>- Confirmação <br/><br/>**Rótulos sugeridos:**<br/> - Mais popular<br/>- Tendências<br/>- Popular no momento<br/>- Popular no momento<br/>- Produtos populares inspirados neste produto (PDP)<br/>- Mais vendidos |
-| Tendências | Recomenda produtos com base na popularidade recente de um produto em seu site.<br/><br/>A Adobe AI agrega dados de navegação e compra em todo o site para determinar e classificar quais produtos são os mais populares entre seus compradores. Como a análise de tendências analisa o impulso recente do produto, ela é um tipo de recomendação eficiente para catálogos que têm um alto faturamento. Se o catálogo for mais estático, talvez não seja tão útil, a menos que os padrões de compra do público-alvo sejam altamente variáveis.<br/><br/>Quando usado na home page, a seção Tendências recomenda produtos que são populares recentemente em todo o site. As tendências não exibem produtos que são consistentemente populares, mas sim aqueles que se tornaram populares recentemente. Por exemplo, se você tiver uma campanha de marketing por email promovendo determinados produtos, o aumento de popularidade gerado pelo email aumenta a probabilidade de os produtos promovidos serem classificados como de tendência.<br/><br/>**Onde usado:**<br/>- Página inicial<br/>- Categoria<br/>- Detalhes do produto<br/>- Carrinho<br/>- Confirmação <br/><br/>**Rótulos sugeridos:**<br/>- Tendências<br/>- Tendências agora<br/>- Tendências recentes<br/>- Produtos importantes<br/>- Tendências relacionadas aos produtos (PDP) |
+| Tendências | Recomenda produtos com base na popularidade recente de um produto em seu site nos últimos sete dias.<br/><br/>A Adobe AI agrega dados de navegação e compra em todo o site para determinar e classificar quais produtos são os mais populares entre seus compradores. Como a análise de tendências analisa o impulso recente do produto, ela é um tipo de recomendação eficiente para catálogos que têm um alto faturamento. Se o catálogo for mais estático, talvez não seja tão útil, a menos que os padrões de compra do público-alvo sejam altamente variáveis.<br/><br/>Quando usado na home page, a seção Tendências recomenda produtos que são populares recentemente em todo o site. As tendências não exibem produtos que são consistentemente populares, mas sim aqueles que se tornaram populares recentemente. Por exemplo, se você tiver uma campanha de marketing por email promovendo determinados produtos, o aumento de popularidade gerado pelo email aumenta a probabilidade de os produtos promovidos serem classificados como de tendência.<br/><br/>**Onde usado:**<br/>- Página inicial<br/>- Categoria<br/>- Detalhes do produto<br/>- Carrinho<br/>- Confirmação <br/><br/>**Rótulos sugeridos:**<br/>- Tendências<br/>- Tendências agora<br/>- Tendências recentes<br/>- Produtos importantes<br/>- Tendências relacionadas aos produtos (PDP) |
 
 ## Alto desempenho {#highperf}
 
