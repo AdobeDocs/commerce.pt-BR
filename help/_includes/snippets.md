@@ -1,14 +1,14 @@
 ---
-source-git-commit: edc47115830f5ca7ec1e485de1ddf9939de2586d
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
 # Commerce snippets
 
 
-## Alinhamento do ambiente de integração do ACO {#aco-integration-environment-alignment}
+## Alinhamento do ambiente de integração do Adobe Commerce Optimizer {#aco-integration-environment-alignment}
 
 >[!IMPORTANT]
 >
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Para soluções da Commerce que usam o Adobe Commerce Optimizer ou o conector do Adobe Commerce Optimizer, use a [API do GraphQL de serviços de merchandising](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api/) em vez da API do GraphQL de serviços de catálogo.
+>Para soluções da Commerce que usam o Adobe Commerce Optimizer ou o Adobe Commerce Optimizer Connector, use a [API do GraphQL de Serviços de Merchandising](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/using-the-api/) em vez da API do GraphQL de Serviços de Catálogo.
 
 ## Verificação da Sincronização de Dados para o Otimizador {#aco-data-sync-verification}
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 >
 >Se você instalou o [Adobe Commerce Optimizer Connector](../aco-connector/overview.md) para exportar dados do catálogo para o Adobe Commerce Optimizer, use a [página Status de sincronização do feed de dados](../optimizer/setup/data-sync.md) no Commerce Optimizer Studio para verificar os dados sincronizados com êxito para o Adobe Commerce Optimizer em vez do Painel de Gerenciamento de Dados.
 
-## Nota de introdução do ACO para atualizações de API {#aco-api-updates-and-dropins}
+## Nota suspensa do Adobe Commerce Optimizer para atualizações de API {#aco-api-updates-and-dropins}
 
 >[!NOTE]
 >

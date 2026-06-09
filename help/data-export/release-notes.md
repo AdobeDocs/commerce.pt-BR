@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: f472cadb124207b04b158b410b7fe1db8f5a9f7d
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
-source-wordcount: 2855
+source-wordcount: 2857
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ _13 de abril, 2026_
 - Correção de um problema em que os produtos excluídos não eram removidos corretamente dos serviços conectados da Commerce se o serviço de exportação não estivesse disponível durante a exclusão. As operações de nova tentativa e ressincronização agora garantem que os produtos excluídos sejam refletidos corretamente no SaaS. <!--MDEE-1319-->
 - As entidades de catálogo (produtos e categorias) agora podem ser exportadas para serviços conectados do Commerce mesmo se os valores de atributo estiverem ausentes na exibição da loja do administrador. Isso melhora a compatibilidade com extensões de terceiros e reduz os erros de exportação devido à falta de valores padrão. <!--MDEE-1333-->
 
-![Correção](../assets/fix.svg) Resolveu um erro na página Status de Sincronização do Feed de Dados que poderia ocorrer quando os registros de feed continham dados inesperados ou ausentes. O sistema agora lida normalmente com esses casos, melhorando a estabilidade e evitando falhas. Se você estiver usando o Adobe Commerce Optimizer Connector para sincronizar dados do Adobe Commerce com o Adobe Commerce Optimizer, atualize para a versão 1.0.11[&#128279;](https://experienceleague.adobe.com/pt-br/docs/commerce/aco-optimizer-connector/release-notes) ou posterior do conector ACO para a correção.<!--MDEE-1327-->
+![Correção](../assets/fix.svg) Resolveu um erro na página Status de Sincronização do Feed de Dados que poderia ocorrer quando os registros de feed continham dados inesperados ou ausentes. O sistema agora lida normalmente com esses casos, melhorando a estabilidade e evitando falhas. Se você estiver usando o Adobe Commerce Optimizer Connector para sincronizar dados do Adobe Commerce com o Adobe Commerce Optimizer, atualize para o [Adobe Commerce Optimizer Connector versão 1.0.11](https://experienceleague.adobe.com/pt-br/docs/commerce/aco-optimizer-connector/release-notes) ou posterior para a correção.<!--MDEE-1327-->
 
 ### Versão 103.4.21
 

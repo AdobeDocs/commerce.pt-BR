@@ -4,9 +4,9 @@ description: Saiba como usar o AEM Assets para imagens de produtos no [!DNL Adob
 feature: CMS, Media, Configuration, Integration
 role: Admin, Developer
 badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
-source-git-commit: c7c21df464685783b5fae1c99d60ca91e0c334d2
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ A integração tem dois fluxos principais:
 
 * **Do AEM Assets**: quando um ativo é aprovado, rejeitado ou removido, o evento flui pelo Pipeline do Adobe para o Serviço de Integração do Assets. O serviço corresponde ativos a produtos usando um `match-by-SKU` ou uma estratégia de correspondência personalizada e, em seguida, envia os mapeamentos de `product-asset` para o [!DNL Commerce Optimizer], onde eles são armazenados como camadas de produto.
 
-* **Do ACO**: quando um produto é atualizado no [!DNL Commerce Optimizer], o evento flui pelo Pipeline do Adobe para o Serviço de Integração da Assets. O serviço sincroniza todos os mapeamentos de ativos correspondentes ao ACO.
+* **De[!DNL Commerce Optimizer]**: quando um produto é atualizado no [!DNL Commerce Optimizer], o evento flui pelo Pipeline do Adobe para o Serviço de Integração da Assets. O serviço sincroniza todos os mapeamentos de ativos correspondentes de volta para [!DNL Commerce Optimizer].
 
 As imagens atualizadas estão disponíveis por meio das APIs da loja (Serviço de catálogo, Live Search, Recomendações de produto).
 

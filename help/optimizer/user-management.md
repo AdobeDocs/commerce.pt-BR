@@ -19,7 +19,7 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
 source-wordcount: 816
 ht-degree: 0%
@@ -69,7 +69,7 @@ Há duas maneiras diferentes de adicionar usuários administradores de produtos 
 
 1. Clique em **+** para adicionar produtos.
 
-1. Selecione a instância existente do Commerce Optimizer à qual adicionar o administrador. As instâncias do Commerce Optimizer usam o seguinte formato: `Adobe Commerce - <instance-name> - ACO - <environment-type> - <tenant-id>`.
+1. Selecione a instância existente do Commerce Optimizer à qual adicionar o administrador. As instâncias do Commerce Optimizer usam o seguinte formato: `Adobe Commerce - <instance-name> - Commerce Optimizer - <environment-type> - <tenant-id>`.
 
 1. Selecione o perfil de produto.
 
@@ -115,7 +115,7 @@ As instruções a seguir fornecem informações sobre como adicionar usuários a
 
 1. Selecione o produto [!UICONTROL **Adobe Commerce**].
 
-1. Selecione o produto Commerce Cloud Manager se quiser adicionar o usuário à interface do Cloud Manager, onde ele pode criar e gerenciar instâncias do Commerce Optimizer, ou selecione a instância do Commerce Optimizer existente à qual adicionar o usuário. As instâncias do Commerce Optimizer usam o seguinte formato: `Adobe Commerce - <instance-name> - ACO - <environment-type> - <tenant-id>`.
+1. Selecione o produto Commerce Cloud Manager se quiser adicionar o usuário à interface do Cloud Manager, onde ele pode criar e gerenciar instâncias do Commerce Optimizer, ou selecione a instância do Commerce Optimizer existente à qual adicionar o usuário. As instâncias do Commerce Optimizer usam o seguinte formato: `Adobe Commerce - <instance-name> - Commerce Optimizer - <environment-type> - <tenant-id>`.
 
 1. Selecione a guia [!UICONTROL **Usuários**] e clique em [!UICONTROL **Adicionar usuários**].
 

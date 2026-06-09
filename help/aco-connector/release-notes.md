@@ -2,9 +2,9 @@
 title: Notas de versão do [!DNL Adobe Commerce Optimizer Connector]
 description: As informações da versão mais recente do  [!DNL Adobe Commerce Optimizer Connector] para Adobe Commerce.
 feature: Services, Catalog Service, Release Notes
-source-git-commit: e0f7b9b860f8dce18b357d479cbc021f32970c18
+source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Essas notas de versão descrevem todas as versões do [!DNL Adobe Commerce Optim
 _6 de maio de 2026_
 
 ![Correção](../assets/fix.svg) **Instruções aprimoradas sobre a configuração do conector**-Atualização da página de configuração do Commerce Optimizer no Commerce Admin para vincular ao _Guia do Adobe Commerce Connector_. <!--COMOPT-1922-->
-![Correção](../assets/fix.svg) **Aprimoramento de metadados do conector** - O Conector ACO agora inclui sua versão instalada no cabeçalho de metadados. Essa melhoria permite que as equipes identifiquem rapidamente qual versão do conector está em uso durante a solução de problemas ou os compromissos de suporte.<!--MDEE-1323-->
+![Correção](../assets/fix.svg) **Aprimoramento de metadados do conector**-O Adobe Commerce Optimizer Connector agora inclui sua versão instalada no cabeçalho de metadados. Essa melhoria permite que as equipes identifiquem rapidamente qual versão do conector está em uso durante a solução de problemas ou os compromissos de suporte.<!--MDEE-1323-->
 
 ### Versão 1.0.12
 
