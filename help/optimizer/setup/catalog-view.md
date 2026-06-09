@@ -3,25 +3,16 @@ title: Exibição de catálogo
 description: Saiba o que são exibições de catálogo e como criá-las para organizar o catálogo de produtos por estrutura de negócios, políticas e preços.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
 TQID: https://experienceleague.adobe.com/Jmze0Pq3kSNMIXqkkML-hmmlZnv-XKgeEgRB8Q8NZ6s
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 4d08de7974c79dc6fe20366e0164f6078e83be5f
 workflow-type: tm+mt
-source-wordcount: 1384
+source-wordcount: 1216
 ht-degree: 0%
 
 ---
@@ -37,23 +28,13 @@ As exibições de catálogo definem como o catálogo de produtos é organizado e
 - **Quais produtos são visíveis** com base na estrutura comercial (marcas, regiões, revendedores)
 - **Que preços são mostrados** por meio de catálogos de preços vinculados
 - **Como os produtos são filtrados** usando políticas (atributos como marca, modelo, categoria)
-- **Que fonte de catálogo é usada** com base em atributos como localidade
+- **Que [origem do catálogo](catalog-source.md) é usada** com base em atributos como localidade
 
 Considere as exibições de catálogo como diferentes &quot;lentes&quot; pelas quais os clientes veem seu catálogo. Por exemplo:
 
 - A exibição do catálogo do revendedor pode mostrar somente os produtos disponíveis para esse revendedor específico
 - Uma exibição de catálogo regional pode mostrar produtos e preços específicos de uma área geográfica
 - A exibição do catálogo de marcas pode mostrar apenas produtos de uma marca específica
-
-### Exibição de catálogo versus origem de catálogo
-
-A seguir, é explicada a diferença entre uma exibição de catálogo e uma origem de catálogo:
-
-- **Exibição de catálogo** - Uma exibição configurada do catálogo para uma necessidade comercial específica. Ao criar uma exibição de catálogo, você seleciona qual origem (ou localidade) de catálogo usar, adiciona [políticas](policies.md) para filtrar quais produtos estão visíveis e vincula [catálogos de preços](pricebooks.md) para controlar preços. Uma única fonte de catálogo pode potencializar várias exibições de catálogo (por exemplo, uma fonte `en-US` com exibições de catálogo separadas para marcas ou regiões diferentes). Pense em uma exibição de catálogo como *como* você expõe esses dados para uma vitrine, canal ou público-alvo.
-
-- **Origem do catálogo** - O contexto de dados subjacente que fornece informações sobre o produto. Uma origem de catálogo normalmente é uma localidade (por exemplo, `en-US`, `fr-CA`) ou um sistema externo, como um PIM ou ERP. [!DNL Adobe Commerce Optimizer] assimila dados de produtos de uma ou mais fontes de catálogo em um catálogo base unificado. Pense em uma fonte de catálogo como *de onde* os dados brutos do catálogo vêm.
-
-Em resumo, a **origem do catálogo** é o contexto de dados do qual você obtém; enquanto a **exibição do catálogo** é o contexto filtrado, precificado e organizado que você apresenta aos compradores ou canais.
 
 ## Criar uma exibição de catálogo
 
@@ -74,7 +55,7 @@ Antes de criar uma visualização de catálogo, verifique se você tem:
 1. Configure os detalhes de exibição do catálogo:
 
    - **Nome** — Digite o nome da exibição do catálogo, por exemplo `Celport`. &#x200B;
-   - **Origens do catálogo** — Selecione a origem do catálogo (localidade), por exemplo `en-US`.
+   - **Origens do catálogo** — Selecione a [origem do catálogo](catalog-source.md), por exemplo `en-US`.
    - **Camadas do catálogo**-Revise as camadas e a prioridade assimiladas.
    - **Políticas** — use o menu suspenso para selecionar as políticas relevantes. Por exemplo, &quot;Marca&quot;, &quot;Modelo&quot;. &#x200B;Verifique se você já [criou uma política](policies.md).
 
@@ -217,6 +198,7 @@ Os dados de catálogo filtrados são entregues para vários destinos, incluindo 
 
 ## Veja mais aqui
 
+- [Fontes do catálogo](catalog-source.md) - Defina o escopo autoritativo de produtos, atributos e categorias para comportamento de pesquisa, filtro e classificação
 - [Camadas do catálogo](catalog-layer.md) - Saiba como modificar dados do produto sem alterar a origem original
 - [Políticas](policies.md) - Criar políticas para filtrar produtos nas exibições de catálogo
 - [Catálogos de preços](pricebooks.md) - Gerenciar estruturas de preços para diferentes segmentos de clientes
