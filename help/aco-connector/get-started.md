@@ -151,7 +151,7 @@ Salve os seguintes valores da página de credenciais:
 
 ### Obter detalhes da instância [!DNL Adobe Commerce Optimizer]
 
-Obtenha a _ID do locatário_ do campo _[!DNL Instance Id]_na [[!DNL Instance details] página](../optimizer/get-started.md#manage-instances) da instância [!DNL Adobe Commerce Optimizer] ou da URL usada para acessar a instância. Por exemplo, em `https://experience.adobe.com/#/@<your organization>/in:<tenant ID>/commerce-optimizer-studio/home`.
+Obtenha a _ID do locatário_ do campo _[!DNL Instance Id]_&#x200B;na [[!DNL Instance details] página](../optimizer/get-started.md#manage-instances) da instância [!DNL Adobe Commerce Optimizer] ou da URL usada para acessar a instância. Por exemplo, em `https://experience.adobe.com/#/@<your organization>/in:<tenant ID>/commerce-optimizer-studio/home`.
 
 1. No Administrador do Commerce, selecione **[!UICONTROL Adobe Commerce Optimizer]** para exibir a página de configuração com instruções.
 
