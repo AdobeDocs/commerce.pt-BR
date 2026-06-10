@@ -8,9 +8,13 @@ role: Developer
 level: Intermediate
 type: Tutorial
 hide: true
-source-git-commit: 3ebee6c984a8f848e9094968be9faa667fc83250
+TQID: 'https://experienceleague.adobe.com/vsy2xSV-3oVjPNc0JUzsunl3ooiWjWrWo1poXHB1TgY'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
-source-wordcount: '2533'
+source-wordcount: 2533
 ht-degree: 0%
 
 ---
@@ -21,7 +25,7 @@ Este tutorial o orienta por meio da criação de uma extensão que permite aos c
 
 Você constrói duas partes:
 
-- **Extensão do App Builder** — uma API REST com operações GET e POST para criar e exibir análises de produtos e conteúdo de perguntas e respostas com validação, paginação e persistência em `aio-lib-state`.
+- **Extensão do App Builder** — Uma API REST com operações GET e POST para criar e exibir análises de produtos e conteúdo de perguntas e respostas com validação, paginação e persistência em `aio-lib-state`.
 - **Integração com a Loja** — Um bloco de revisão de produto no PDP que exibe revisões e perguntas e respostas, com formulários para os compradores enviarem revisões, perguntas e respostas.
 
 >[!NOTE]
@@ -52,8 +56,8 @@ Se qualquer um dos comandos anteriores não retornar os resultados esperados, co
 
 Além disso, verifique o seguinte:
 
-- Você tem uma instância [!DNL Adobe Commerce as a Cloud Service] com dados de produto. Consulte [Instâncias do Commerce Cloud Service](https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/overview){target="_blank"}.
-- Você tem um projeto de vitrine conectado à sua instância [!DNL Commerce]. Se você não tiver uma, siga as etapas em [Criar uma vitrine](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=pt-BR){target="_blank"}.
+- Você tem uma instância [!DNL Adobe Commerce as a Cloud Service] com dados de produto. Consulte [Instâncias do Commerce Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview){target="_blank"}.
+- Você tem um projeto de vitrine conectado à sua instância [!DNL Commerce]. Se você não tiver uma, siga as etapas em [Criar uma vitrine](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}.
 - A CLI do `aem` está instalada:
 
   ```bash
@@ -135,7 +139,7 @@ O agente retorna com uma série de perguntas que precisa responder antes de come
 1. **API REST — host e consumidores** — a API REST CRUD deve fazer parte deste aplicativo App Builder (ações da Web no Adobe I/O Runtime) para o qual as chamadas de vitrine? Quem o chamará (loja EDS, loja personalizada/headless ou ambas)? Você precisa do CORS, acesso público (não autenticado) ou os chamadores usarão chaves de API ou OAuth?
 1. **Modelo de dados** — O que uma &quot;revisão&quot; ou &quot;pergunta&quot; representa? Identificador do cliente (somente email ou também ID do cliente)? Identificador de produto (somente SKU ou SKU + exibição de loja)? O mesmo cliente pode enviar várias revisões para o mesmo SKU?
 1. **Persistência** — `aio-lib-state` é o local certo para persistir revisões e perguntas e respostas ou você tem um armazenamento externo? O design deve assumir vários locatários ou um único locatário?
-1. **Semântica de paginação** — Para o Q&amp;A GET, o `limit` se aplica somente a perguntas (com respostas aninhadas) ou à contagem total de perguntas mais respostas?
+1. **Semântica de paginação** — Para perguntas e respostas do GET, o `limit` se aplica somente a perguntas (com respostas aninhadas) ou à contagem total de perguntas mais respostas?
 
 **Exemplo de respostas:**
 
@@ -235,7 +239,7 @@ Crie um arquivo de dados fictício e use o curl para preencher previamente a API
      -d '{"sku":"ADB153","type":"answer","questionId":"<QUESTION-UUID>","content":"Yes, it comes in blue and red.","user":"seller@example.com"}'
    ```
 
-1. Verifique os dados com solicitações do GET:
+1. Verifique os dados com solicitações GET:
 
    ```bash
    curl -s "$API_URL/reviews-get?sku=ADB153"
@@ -438,7 +442,7 @@ Use as seguintes dicas se encontrar problemas durante o tutorial.
 | Sintoma | Causa | Correção |
 |---------|-------|-----|
 | GET ou POST retorna 500 &quot;Não é possível encontrar o módulo&quot; | As ações de análise de produtos usam `require("../../utils")` ou `require("../../constants")`, que escapam ao pacote. Esses arquivos não são incluídos quando o pacote é implantado. | Tornar o pacote de análises do produto independente. Adicione `actions/product-reviews/lib/constants.js` e `actions/product-reviews/lib/utils.js`, e atualize todas as quatro ações para exigir de `../lib/...` em vez de `../../`. |
-| O GET retorna 500 com &quot;a chave deve corresponder ao padrão&quot; | As chaves de estado usam dois pontos (por exemplo, `reviews:ADB153`). `aio-lib-state` permite somente `[a-zA-Z0-9-_.]`. | Alterar prefixos de `reviews:` e `qa:` para `reviews.` e `qa.`. Adicione um auxiliar `stateKey(prefix, sku)` que limpa o SKU (substitua caracteres inválidos por `_`). |
+| GET retorna 500 com &quot;chave deve corresponder ao padrão&quot; | As chaves de estado usam dois pontos (por exemplo, `reviews:ADB153`). `aio-lib-state` permite somente `[a-zA-Z0-9-_.]`. | Alterar prefixos de `reviews:` e `qa:` para `reviews.` e `qa.`. Adicione um auxiliar `stateKey(prefix, sku)` que limpa o SKU (substitua caracteres inválidos por `_`). |
 | POST retorna 500 com &quot;o valor deve ser string&quot; | `aio-lib-state` aceita somente valores de sequência de caracteres. O código passa matrizes ou objetos para `state.put()`. | Serializar com `JSON.stringify()` ao gravar e `JSON.parse()` ao ler. Atualize todas as quatro ações. |
 
 {style="table-layout:auto"}
