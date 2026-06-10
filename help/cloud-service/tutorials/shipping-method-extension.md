@@ -4,9 +4,20 @@ description: Saiba como criar uma extensão de método de envio configurável pa
 feature: App Builder, Cloud
 role: Developer
 level: Intermediate
-source-git-commit: e55bc4db196d3d973b981bb2484be950dcd6b7c3
+TQID: 'https://experienceleague.adobe.com/vU71zRP-KEPdrmTW-M1mwkv-FFa0oHOcUJcG4afFo2s'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: 1893
 ht-degree: 0%
 
 ---
@@ -181,7 +192,7 @@ Esta seção orienta você no desenvolvimento de uma extensão do método de env
 1. Revise o arquivo `requirements.md` (ou equivalente) e verifique o plano. Se tudo estiver correto, instrua o agente a migrar para o planejamento de arquitetura (ou **Fase 2**). Confirme que:
 
    - Uma ação **shipping-methods** (ou equivalente) lida com o webhook do Commerce e chama a API de taxas externas.
-   - Uma ação **shipping-config** (ou equivalente) é compatível com o GET (configuração de leitura, chave de API mascarada) e SET (salvar URL do serviço, chave de API, endereço do warehouse), com a configuração armazenada com segurança, por exemplo, em Estado de Tempo de Execução.
+   - Uma ação **shipping-config** (ou equivalente) dá suporte a GET (configuração de leitura, chave de API mascarada) e SET (salvar URL de serviço, chave de API, endereço de depósito), com a configuração armazenada com segurança, por exemplo, em Estado de Tempo de Execução.
    - A interface do Administrador inclui uma guia **Envio de Mock** (ou semelhante) com campos para URL de Serviço, chave de API (senha/mascarada) e endereço do warehouse.
 
    ![Arquivo de requisitos criado pelo agente de IA com detalhes de implementação da extensão de envio](../assets/requirements-file-shipping.png){width="600" zoomable="yes"}
