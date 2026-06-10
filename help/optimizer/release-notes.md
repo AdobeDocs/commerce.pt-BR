@@ -4,21 +4,15 @@ description: Informações de versão mensais do  [!DNL Adobe Commerce Optimizer
 feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 TQID: https://experienceleague.adobe.com/apcpxN0AOniRcHDCa5MMAVWysxRO5mTcudXXXjET-Lo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 29b54d68ec20d000f4cc1ffe8080c5919457ff8c
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: bd4c59c451d7b08de7dc6ef00da2556fb9a6696f
 workflow-type: tm+mt
-source-wordcount: 1191
+source-wordcount: 1319
 ht-degree: 0%
 
 ---
@@ -31,6 +25,22 @@ As notas de versão a seguir contêm atualizações para [!DNL Adobe Commerce Op
 * Atualizações da [API REST de assimilação de dados](https://developer.adobe.com/commerce/services/reference/rest/) e da [API GraphQL para recuperação de dados de catálogo da loja](https://developer.adobe.com/commerce/services/reference/graphql/).
 
   {{aco-api-updates-and-dropins}}
+
+## Junho de 2026
+
+>[!BEGINSHADEBOX]
+
+### Pesquisa semântica
+
+[!DNL Adobe Commerce Optimizer] agora oferece suporte à **[pesquisa semântica]** na guia [**Pesquisa avançada**](./settings.md#advanced-search) em **[!UICONTROL Settings]**. A pesquisa semântica usa a IA para corresponder produtos por significado e contexto ao lado da pesquisa por palavra-chave, reduzindo as páginas de pesquisa vazias para consultas em linguagem natural. Ela é ativada por padrão para catálogos em inglês qualificados. Opcionalmente, você pode ajustar **[!UICONTROL Semantic boost]**, **[!UICONTROL Similarity threshold]** e **[!UICONTROL Fuzzy search]** na mesma guia. Nenhuma configuração de atributo ou alteração de vitrine eletrônica é necessária. [Saiba mais](./setup/semantic-search.md).
+
+### Filtros de preço de recomendação (beta)
+
+As unidades de recomendação do produto agora oferecem suporte a [**filtros de preço**](./merchandising/recommendations/filters.md#price) na etapa **[!UICONTROL Filter products]**. Inclua ou exclua candidatos usando intervalos mínimos e máximos de **estáticos** ou regras de **dinâmicas** na página de detalhes do produto que comparam os produtos recomendados com o **preço calculado final** do produto exibido atualmente na tabela de preços ativa da loja. As regras de preço filtram o conjunto de candidatos. Eles não reclassificam os produtos. [Saiba mais](./merchandising/recommendations/filters.md#price).
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
 
 ## Maio de 2026
 
@@ -87,7 +97,7 @@ _29 de abril de 2026_
 
 <!--v1.52 release-->
 
-**Solicitação em lote necessária** — a API do GraphQL agora impõe um máximo de 100 SKUs por solicitação ao recuperar dados de catálogo. Consulte [limites documentados](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/boundaries-limits#product-discovery).
+**Solicitação em lote necessária** — a API do GraphQL agora impõe um máximo de 100 SKUs por solicitação ao recuperar dados de catálogo. Consulte [limites documentados](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery).
 
 <!--DATA-7156-->
 
