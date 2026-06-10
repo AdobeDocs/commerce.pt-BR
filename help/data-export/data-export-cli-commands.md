@@ -11,9 +11,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2a09ef51939649a12b72c45cbb8b0dc0d0a4c8ad
 workflow-type: tm+mt
-source-wordcount: 583
+source-wordcount: 605
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 0%
 # Sincronizar feeds usando a CLI do Commerce
 
 O comando `saas:resync` no pacote `magento/saas-export` permite gerenciar a sincronização de dados para serviços SaaS do Adobe Commerce.
+
+>[!NOTE]
+>
+>O comando `saas:resync` também se aplica aos feeds [!DNL Adobe Commerce Optimizer Connector], como `products`, `categories` e `priceBooks`. Consulte [Feeds com suporte](../aco-connector/reference/connector-reference.md#supported-feeds) para obter a lista completa de feeds de conector e nomes de indexador.
 
 A Adobe não recomenda usar o comando `saas:resync` regularmente. Os cenários típicos para usar o comando são:
 

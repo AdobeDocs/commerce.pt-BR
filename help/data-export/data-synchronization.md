@@ -18,9 +18,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2a09ef51939649a12b72c45cbb8b0dc0d0a4c8ad
 workflow-type: tm+mt
-source-wordcount: 1037
+source-wordcount: 1104
 ht-degree: 0%
 
 ---
@@ -41,6 +41,10 @@ Os principais componentes do fluxo de exportação de dados SaaS incluem:
 - Módulos de exportação de dados SaaS que coletam os dados para feeds do Adobe Commerce, montam itens de feed, aguardam atualizações e persistem o status do feed.
 - Módulos de exportação SaaS que exportam dados, configuram o roteamento e publicam os feeds para serviços conectados.
 - O Serviço do Adobe Commerce gerencia o processo de assimilação de dados para validar feeds recebidos e atualizações persistentes nos serviços conectados.
+
+>[!NOTE]
+>
+>Para [!DNL Adobe Commerce Optimizer Connector] implantações, [!DNL SaaS Data Export] manipula a detecção de alteração de entidade e o assembly de feed. O conector mapeia os feeds para o formato [!DNL Catalog Data Ingestion API] e os envia para [!DNL Adobe Commerce Optimizer]. Consulte [Pipeline de sincronização do conector](../aco-connector/connector-sync-pipeline.md) para controle de escopo, envio e tratamento de erros.
 
 >[!NOTE]
 >
@@ -79,6 +83,8 @@ O processo de exportação de dados usa os seguintes trabalhos cron para automat
 
 Esses trabalhos são executados a cada minuto.
 
+Os mesmos trabalhos cron de sincronização parcial são executados para feeds [!DNL Adobe Commerce Optimizer Connector]. Para envio específico do conector e tratamento de erros, consulte [Pipeline de sincronização do conector](../aco-connector/connector-sync-pipeline.md).
+
 Para que a sincronização parcial funcione, o aplicativo Commerce requer a seguinte configuração:
 
 - [O agendamento de tarefas é habilitado através de trabalhos cron](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=pt-BR)
@@ -106,7 +112,7 @@ A maioria das atividades de sincronização é processada automaticamente com ba
 
 >[!NOTE]
 >
->O painel Gerenciamento de dados só estará disponível se você tiver o Live Search, o Product Recommendations ou o Serviço de catálogo instalado. O painel Status de sincronização do feed de dados estará disponível se você tiver esses serviços ou se o [Adobe Commerce Optimizer Connector](../aco-connector/overview.md) estiver instalado.
+>O painel Gerenciamento de dados só estará disponível se você tiver o Live Search, o Product Recommendations ou o Serviço de catálogo instalado. O painel Status de sincronização do feed de dados estará disponível se você tiver esses serviços ou se o [Adobe Commerce Optimizer Connector](../aco-connector/overview.md) estiver instalado. Para conhecer o comportamento do pipeline do conector do Otimizer, incluindo erros de controle de escopo e envio, consulte [Pipeline de sincronização do conector](../aco-connector/connector-sync-pipeline.md).
 
 ### Verificar a configuração do aplicativo do Commerce
 
