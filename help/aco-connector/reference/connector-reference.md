@@ -2,7 +2,7 @@
 title: '[!DNL Adobe Commerce Optimizer Connector] Módulos e Pontos de Extremidade de Feed'
 description: Saiba mais sobre  [!DNL Adobe Commerce Optimizer Connector] módulos, pontos de extremidade da API de feed de catálogo, limites de lote e caminhos de configuração core_config_data para  [!DNL Adobe Commerce].
 feature: Integration, Configuration
-badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
+badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
 autotag-review: '2026-06-09T15:48:19.494Z'
 TQID: 'https://experienceleague.adobe.com/UM6Y-xoQpUDzWpaMe1GRPp4XoAtHBLBsHw388kumN8g'
 product_v2:

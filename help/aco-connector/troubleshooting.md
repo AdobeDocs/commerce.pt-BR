@@ -3,7 +3,7 @@ title: Solucionar problemas do(a) [!DNL Adobe Commerce Optimizer Connector]
 description: Saiba como solucionar problemas de [!DNL Adobe Commerce Optimizer Connector] credencial, sincronização de catálogo e exportação de escopo de integrações do  [!DNL Adobe Commerce] PaaS.
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
+badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
 autotag-review: '2026-06-09T19:00:00.000Z'
 TQID: 'https://experienceleague.adobe.com/ei86QuJ3nQ2d-6NRoAeJslgDxjGlZRejD-Nx-6SAVdc'
 product_v2:
@@ -59,4 +59,4 @@ Se o problema afetar apenas uma origem de catálogo específica (código de exib
 
 ## Diagnóstico [!DNL SaaS Data Export]
 
-Para obter os diagnósticos de nível inferior do [!DNL SaaS Data Export], incluindo locais de log e comandos de ressincronização de feed, consulte o [[!DNL SaaS Data Export] guia de solução de problemas](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/logs-troubleshooting/troubleshooting-logging){target="_blank"}.
+Para obter os diagnósticos de nível inferior do [!DNL SaaS Data Export], incluindo locais de log e comandos de ressincronização de feed, consulte o [[!DNL SaaS Data Export] guia de solução de problemas](https://experienceleague.adobe.com/pt-br/docs/commerce/saas-data-export/logs-troubleshooting/troubleshooting-logging){target="_blank"}.
