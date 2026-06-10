@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 29b54d68ec20d000f4cc1ffe8080c5919457ff8c
+source-git-commit: bd4c59c451d7b08de7dc6ef00da2556fb9a6696f
 workflow-type: tm+mt
-source-wordcount: 1191
+source-wordcount: 1319
 ht-degree: 0%
 
 ---
@@ -31,6 +31,22 @@ As notas de versão a seguir contêm atualizações para [!DNL Adobe Commerce Op
 * Atualizações da [API REST de assimilação de dados](https://developer.adobe.com/commerce/services/reference/rest/) e da [API GraphQL para recuperação de dados de catálogo da loja](https://developer.adobe.com/commerce/services/reference/graphql/).
 
   {{aco-api-updates-and-dropins}}
+
+## Junho de 2026
+
+>[!BEGINSHADEBOX]
+
+### Pesquisa semântica
+
+[!DNL Adobe Commerce Optimizer] agora oferece suporte à **[pesquisa semântica]** na guia [**Pesquisa avançada**](./settings.md#advanced-search) em **[!UICONTROL Settings]**. A pesquisa semântica usa a IA para corresponder produtos por significado e contexto ao lado da pesquisa por palavra-chave, reduzindo as páginas de pesquisa vazias para consultas em linguagem natural. Ela é ativada por padrão para catálogos em inglês qualificados. Opcionalmente, você pode ajustar **[!UICONTROL Semantic boost]**, **[!UICONTROL Similarity threshold]** e **[!UICONTROL Fuzzy search]** na mesma guia. Nenhuma configuração de atributo ou alteração de vitrine eletrônica é necessária. [Saiba mais](./setup/semantic-search.md).
+
+### Filtros de preço de recomendação (beta)
+
+As unidades de recomendação do produto agora oferecem suporte a [**filtros de preço**](./merchandising/recommendations/filters.md#price) na etapa **[!UICONTROL Filter products]**. Inclua ou exclua candidatos usando intervalos mínimos e máximos de **estáticos** ou regras de **dinâmicas** na página de detalhes do produto que comparam os produtos recomendados com o **preço calculado final** do produto exibido atualmente na tabela de preços ativa da loja. As regras de preço filtram o conjunto de candidatos. Eles não reclassificam os produtos. [Saiba mais](./merchandising/recommendations/filters.md#price).
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
 
 ## Maio de 2026
 
