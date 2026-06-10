@@ -4,10 +4,21 @@ description: As informações da versão mais recente do  [!DNL Live Search] Ado
 feature: Services, Search, Release Notes
 exl-id: 099cf79c-968c-4381-b66d-7f6141ad2db3
 TQID: https://experienceleague.adobe.com/yqNae8Xsc51q4Zn-WXJ3y48cNnzUDTkDncv-RppkIlI
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 source-git-commit: 4377f9dc2b7e4c8f358d00b50187c8cbf091e19e
 workflow-type: tm+mt
 source-wordcount: 2168
@@ -469,19 +480,19 @@ As instalações existentes do [!DNL Live Search] devem ser atualizadas para o [
 
 [!BADGE Com suporte]{type="Informative" tooltip="Compatível"} Adobe Commerce versões 2.4.x e mais recentes
 
-O painel de relatórios ![Novo](../assets/new.svg)[Desempenho](performance.md) fornece à insight termos de pesquisa que os compradores usam.
+O painel de relatórios ![Novo](../assets/new.svg) [Desempenho](performance.md) fornece à insight termos de pesquisa que os compradores usam.
 ![Novo](../assets/new.svg) [!DNL Live Search] [O Storefront Events SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) fornece acesso a uma camada de dados comum com métricas e serviços de assinatura e publicação de eventos.
 ![Correção](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) tem uma nova classe `active` para o contêiner `.search-autocomplete` que controla a visibilidade.
 ![Correção](../assets/fix.svg) Na loja, o link do rodapé [Termos de Pesquisa](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) é removido e seu cache é desabilitado para instalações do [!DNL Live Search].
 O ![Bug](../assets/bug.svg) Patch para o Adaptador de Pesquisa processa produtos duplicados.
-![Bug](../assets/bug.svg) [!DNL Live Search] dá suporte a [locais de estoque (físico) de {single-source](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage) com vários [estoques](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage) (virtuais). Agora, não há suporte para várias fontes de inventário.
+![Bug](../assets/bug.svg) [!DNL Live Search] dá suporte a [locais de estoque (físico) de &lbrace;single-source](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage) com vários [estoques](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage) (virtuais). Agora, não há suporte para várias fontes de inventário.
 
 ### [!DNL Live Search] 1.2.0
 
 [!BADGE Com suporte]{type="Informative" tooltip="Compatível"} Adobe Commerce versões 2.4.x e mais recentes
 
 ![Novo](../assets/new.svg) [[!DNL Storefront popover]](storefront-popover.md) exibe os produtos sugeridos e as imagens em miniatura dos principais resultados da pesquisa à medida que os compradores digitam as consultas na caixa Pesquisa.
-A nova sessão ![Commerce *Admin* do ](../assets/new.svg) permanece aberta durante longos períodos de inatividade do teclado
+A nova sessão ![Commerce *Admin* do &#x200B;](../assets/new.svg) permanece aberta durante longos períodos de inatividade do teclado
 ![Novo](../assets/new.svg) [!DNL Live Search] é habilitado automaticamente após a integração
 ![Correção](../assets/fix.svg) O tempo de indexação inicial é de menos de uma hora
 ![Correção](../assets/fix.svg) Atualizações incrementais do produto quase em tempo real (após instalação e instalação)
