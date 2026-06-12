@@ -4,9 +4,17 @@ description: Saiba como o  [!DNL Live Search] prioriza correspondências exatas 
 role: Admin, Developer
 recommendations: noCatalog
 hide: true
-source-git-commit: f7ea996f3adcd3beb2a9c064ce57d251f49ae5b3
+autotag-review: '2026-06-12T19:48:33.569Z'
+TQID: 'https://experienceleague.adobe.com/v4T99FG9mFhlgbb-xDqR-C1tVvCmHDry5lxhSDaKg-4'
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+subfeature_v2: id: faf75e43-5608-48b8-8169-3f8a9b8a5caf
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: d378ca77-2da1-4f39-ad92-1917fe974a38
+topic_v2: id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: da5950c0f2071f48f163dd02f6c38953804ae152
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: 914
 ht-degree: 0%
 
 ---
@@ -15,7 +23,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->O seguinte recurso está em [beta privado](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/beta).
+>O seguinte recurso está em [beta privado](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).
 
 [!DNL Live Search] classifica os resultados para que os compradores vejam primeiro os produtos mais relevantes. O serviço oferece o maior impulso aos produtos cujo texto de catálogo **corresponde melhor** ao que o comprador digita, favorece correspondências em que os termos de consulta aparecem juntos de maneira significativa e, finalmente, inclui correspondências mais amplas (incluindo comportamento que oferece suporte à correspondência de estilo de preenchimento automático).
 
@@ -66,7 +74,7 @@ A relevância não é determinada pela correspondência de frases isoladamente. 
 - Aumentar com base na frase **exata / próxima** correspondente
 - Impulsionar quando **todos os termos da consulta** aparecem no campo **igual**
 - **Classificação inteligente** (quando habilitada), que mescla relevância textual com sinais comportamentais — consulte [Como funciona a pontuação de classificação inteligente](rules-add.md#how-intelligent-ranking-scoring-works)
-- **[Pesquise peso](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/search/search-results)** em cada atributo e outros fatores de relevância textual (por exemplo, a frequência com que os termos ocorrem e o comprimento do nome ou da descrição). No Administrador [!DNL Adobe Commerce], configure **Usar na Pesquisa** e **Pesar na Pesquisa** para atributos de produto.
+- **[Pesquise peso](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)** em cada atributo e outros fatores de relevância textual (por exemplo, a frequência com que os termos ocorrem e o comprimento do nome ou da descrição). No Administrador [!DNL Adobe Commerce], configure **Usar na Pesquisa** e **Pesar na Pesquisa** para atributos de produto.
 - **[Pesquisar regras de merchandising](rules.md)**, como fixar, impulsionar e enterrar
 
 Como esses sinais interagem, um produto que corresponde somente no nível mais amplo pode, às vezes, ser classificado acima de uma correspondência de frase mais estreita, por exemplo, quando **pesos de pesquisa** ou frequência de termo em um campo de alto peso superam uma correspondência de frase mais fraca em outro lugar.
