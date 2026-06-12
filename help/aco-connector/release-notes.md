@@ -3,23 +3,14 @@ title: Notas de versão do [!DNL Adobe Commerce Optimizer Connector]
 description: Saiba mais sobre as  [!DNL Adobe Commerce Optimizer Connector] notas de versão, incluindo novos recursos, correções de erros e problemas conhecidos para sincronização e exportação de catálogos.
 feature: Release Notes
 TQID: 'https://experienceleague.adobe.com/6NeLAfThvIWIyV4Y6OWtL8V9mC7lPy7UH-Zli8E-WEk'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
-  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
-subfeature_v2:
-  - id: dad884f1-e840-49a1-970e-2f965bdbc410
-  - id: a40ebd6b-b542-4432-a730-1803ef74518d
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 6d4493db5e0714577a8800007cc6d2c552578fa4
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: f08fa0de-a550-4acd-b570-f81cf1d03aafid: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+subfeature_v2: id: dad884f1-e840-49a1-970e-2f965bdbc410id: a40ebd6b-b542-4432-a730-1803ef74518d
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: af45543a52d1c88149574dc22cdef37af01404c8
 workflow-type: tm+mt
-source-wordcount: 267
+source-wordcount: 353
 ht-degree: 0%
 
 ---
@@ -33,6 +24,18 @@ Essas notas de versão descrevem todas as versões do [!DNL Adobe Commerce Optim
 ![Problema conhecido](../assets/bug.svg) Problemas conhecidos
 
 ## Versões de 2026
+
+### Versão 1.0.14
+
+_11 de junho de 2026_
+
+![Correção](../assets/fix.svg) **Compatibilidade com o PHP 8.5** - O [!DNL Adobe Commerce Optimizer Connector] agora oferece suporte ao PHP 8.5, para que você possa atualizar o ambiente [!DNL Adobe Commerce] sem interromper a funcionalidade do conector ou a sincronização do catálogo. <!--MDEE-1388-->
+
+![Correção](../assets/fix.svg) **Atualização de catálogos de preços após alterações de moeda** - Os preços atualizados são refletidos automaticamente no Adobe Commerce Optimizer após alterações de moeda. <!--MDEE-1384-->
+
+![Correção](../assets/fix.svg) **A navegação respeita categorias pai desabilitadas ou ocultas** - Os produtos de hierarquias de categorias desabilitadas ou ocultas não aparecem mais inesperadamente em experiências de navegação.<!--MDEE-1385-->
+
+![Correção](../assets/fix.svg) **URLs de categoria consistentes após atualizações de preparo** - Os links de categoria e a navegação permanecem precisos após a aplicação das atualizações de preparo. <!--MDEE-1395-->
 
 ### Versão 1.0.13
 
