@@ -3,7 +3,7 @@ title: Pesquisar correspondência e classificação
 description: Saiba como o  [!DNL Adobe Commerce Optimizer] prioriza correspondências exatas e próximas, correspondências de mesmo campo e correspondências entre campos e como a classificação interage com pesos de pesquisa, classificação inteligente e regras de merchandising.
 role: Admin, Leader, User
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 hide: true
 autotag-review: '2026-06-12T19:49:25.241Z'
 TQID: 'https://experienceleague.adobe.com/GBfssL1pTVx4FKjsi45mDsTx2XyCr0aViexH3OpPjVo'
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->O seguinte recurso está em [beta privado](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).
+>O seguinte recurso está em [beta privado](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/beta).
 
 [!DNL Adobe Commerce Optimizer] classifica os resultados para que os compradores vejam primeiro os produtos mais relevantes. O serviço oferece o maior impulso aos produtos cujo texto de catálogo **corresponde melhor** ao que o comprador digita, favorece correspondências em que os termos de consulta aparecem juntos de maneira significativa e, finalmente, inclui correspondências mais amplas (incluindo comportamento que oferece suporte à correspondência de estilo de preenchimento automático).
 
@@ -82,7 +82,7 @@ A relevância não é determinada pela correspondência de frases isoladamente. 
 - Aumentar com base na frase **exata / próxima** correspondente
 - Impulsionar quando **todos os termos da consulta** aparecem no campo **igual**
 - **Classificação inteligente** (quando habilitada), que mescla relevância textual com sinais comportamentais — consulte [Como funciona a pontuação de classificação inteligente](./merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)
-- **[Pesquise peso](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)** em cada atributo e outros fatores de relevância textual (por exemplo, a frequência com que os termos ocorrem e o comprimento do nome ou da descrição). Em *Configurações*, configure quais atributos participam da pesquisa por palavra-chave e seus **[pesos da pesquisa por palavra-chave](./settings.md)** relativos.
+- **[Pesquise peso](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/search/search-results)** em cada atributo e outros fatores de relevância textual (por exemplo, a frequência com que os termos ocorrem e o comprimento do nome ou da descrição). Em *Configurações*, configure quais atributos participam da pesquisa por palavra-chave e seus **[pesos da pesquisa por palavra-chave](./settings.md)** relativos.
 - **[Regras de merchandising](./merchandising/rules/overview.md)**, como fixar, aumentar e atenuar
 
 Como esses sinais interagem, um produto que corresponde somente no nível mais amplo pode, às vezes, ser classificado acima de uma correspondência de frase mais estreita, por exemplo, quando **pesos de pesquisa** ou frequência de termo em um campo de alto peso superam uma correspondência de frase mais fraca em outro lugar.
