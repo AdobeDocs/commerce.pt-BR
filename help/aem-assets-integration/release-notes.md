@@ -3,9 +3,9 @@ title: Notas de versão da Integração do AEM Assets
 description: Revise as notas de versão para obter informações sobre todas as versões da Integração do AEM Assets.
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: cf623b835d5590b32f1425c4aab25efa52b50498
+source-git-commit: e055a3d44eda7e7f082a884c316ad437ea9ac15e
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,24 @@ _11 de fevereiro de 2025_
 ![Novo problema](../assets/new.svg) Agora, os comerciantes podem sincronizar imagens para produtos e categorias.
 
 +++
+
+## v1.4.1
+
+_15 de junho de 2026_
+
+[!BADGE Com Suporte]{type=Informative tooltip="Compatível"} no Adobe Commerce versão 2.4.5 e posteriores.
+
+![Correção de um problema](../assets/fix.svg) em que o cabeçalho da seção **[!UICONTROL OBSERVABILITY]** não estava presente no menu Admin **[!UICONTROL System]** quando a integração com o AEM Assets estava habilitada, deixando o link **[!UICONTROL Subscription List]** exibido sem seu cabeçalho. <!--ACAP-1302 -->
+
+![Correção de um problema](../assets/fix.svg): correção de um problema em que salvar a configuração de integração do AEM Assets exibia um aviso de PHP bruto em vez de uma mensagem clara em instâncias nas quais a API de abertura do Dynamic Media não está habilitada. Uma mensagem de erro clara e genérica é exibida. <!-- ACAP-1298 -->
+
+## v1.4.0
+
+_12 de junho de 2026_
+
+[!BADGE Com Suporte]{type=Informative tooltip="Compatível"} no Adobe Commerce versão 2.4.5 e posteriores.
+
+![Novo problema](../assets/new.svg)<!-- Issue ACAP-1101 --> Melhoria na estabilidade geral e no desempenho do processamento de eventos por meio de chamadas de atualização de ativos em lote.
 
 ## v1.3.7
 
