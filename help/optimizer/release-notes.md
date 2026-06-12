@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: bd4c59c451d7b08de7dc6ef00da2556fb9a6696f
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 1319
+source-wordcount: 1316
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ As unidades de recomendação do produto agora oferecem suporte a [**filtros de 
 
 ### Aumento inteligente de classificação
 
-As [Regras de merchandising](./merchandising/rules/add.md#intelligent-ranking-boost) para pesquisa, listas de produtos padrão e [páginas de categoria](./merchandising/rules/add.md#rule-types) (beta) agora incluem **[!UICONTROL Intelligent Ranking Boost]**. Você pode ajustar a intensidade com que estratégias como **Mais visualizados** ou **Tendências** influenciam a ordem do produto em relação à relevância textual nos sinais de pesquisa e comportamento em listagens de categorias. A visualização da regra reflete sua configuração. O aumento é aplicado no momento da consulta, de modo que não é necessário sincronizar novamente o catálogo ao alterá-lo.
+As [Regras de merchandising](./merchandising/rules/add.md#intelligent-ranking-boost) para pesquisa, listas de produtos padrão e [páginas de categoria](./merchandising/rules/add.md#rule-types) agora incluem **[!UICONTROL Intelligent Ranking Boost]**. Você pode ajustar a intensidade com que estratégias como **Mais visualizados** ou **Tendências** influenciam a ordem do produto em relação à relevância textual nos sinais de pesquisa e comportamento em listagens de categorias. A visualização da regra reflete sua configuração. O aumento é aplicado no momento da consulta, de modo que não é necessário sincronizar novamente o catálogo ao alterá-lo.
 
 ### Atualizações da API
 
@@ -89,7 +89,7 @@ _4 de maio de 2026_
 
 >[!BEGINSHADEBOX]
 
-### Regras de catálogo (beta)
+### Regras de catálogo
 
 [Regras de categoria](./merchandising/rules/add.md) estendem as regras de merchandising para que você possa direcionar categorias e controlar a ordem dos produtos nas páginas de categoria com a mesma classificação e as mesmas ações (fixar, aumentar, enterrar) da pesquisa.
 
@@ -145,7 +145,7 @@ Os pacotes dinâmicos agora retornam uma faixa de preço calculada. <!--DATA-701
 
 >[!BEGINSHADEBOX]
 
-### Exibição de catálogo de regras e recomendações de merchandising (beta)
+### Exibição de catálogo para regras e recomendações de merchandising
 
 Agora você pode especificar uma exibição de catálogo ao [criar unidades de recomendação](./merchandising/recommendations/create.md) ou [regras de merchandising](./merchandising/rules/add.md).
 

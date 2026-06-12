@@ -12,16 +12,16 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 841e772971e7ec18d37fa8ba137b27b8950fc569
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 404
+source-wordcount: 398
 ht-degree: 0%
 
 ---
 
 # Práticas recomendadas das regras de merchandising
 
-Para otimizar a conversão e a receita, implemente **regras de pesquisa** efetivas, uma **regra de listagem padrão** forte e **[regras de categoria](add.md#rule-types)** (beta). Ajuste classificações usando dados de vendas, estoque, promoções e [classificação inteligente](add.md#intelligent-ranking).
+Para otimizar a conversão e a receita, implemente **regras de pesquisa** efetivas, uma **regra de listagem padrão** forte e **[regras de categoria](add.md#rule-types)**. Ajuste classificações usando dados de vendas, estoque, promoções e [classificação inteligente](add.md#intelligent-ranking).
 
 É crucial estabelecer uma **regra padrão** bem-pensada. Sua [regra padrão](overview.md#default-rule) determina como os resultados da pesquisa são classificados inicialmente quando nenhuma regra de pesquisa mais específica se aplica, o que melhora a probabilidade de descoberta e compra. Analise-o regularmente para que ele acompanhe as necessidades e campanhas do comprador.
 
@@ -38,10 +38,6 @@ Para otimizar a conversão e a receita, implemente **regras de pesquisa** efetiv
 - Sempre use o painel &quot;Testar a regra&quot; para visualizar como sua estratégia de classificação inteligente afeta os resultados reais da pesquisa para consultas diferentes.
 
 ## Dicas para regras de categoria
-
->[!IMPORTANT]
->
->As regras de categoria estão na versão beta.
 
 - Use as [regras de categoria](add.md#rule-types) em **páginas de categoria** de tráfego alto ou margem alta, em que a ordem com curadoria é importante tanto quanto a pesquisa, por exemplo, coleções sazonais ou departamentos em destaque.
 - Alinhe a **classificação inteligente** (por exemplo, tendência, mais visualizada) com a forma como os compradores navegam nessa categoria; as páginas de categoria não usam o texto de consulta de pesquisa da mesma forma que as regras de pesquisa. Consulte [Classificação inteligente](add.md#intelligent-ranking). Para métodos inteligentes diferentes de **Nenhum**, use **[Aumento inteligente de classificação](add.md#intelligent-ranking-boost)** e pré-visualização de categoria para ajustar a intensidade comportamental para essa regra de categoria.

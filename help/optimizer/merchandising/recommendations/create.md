@@ -16,9 +16,9 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 1615
+source-wordcount: 1573
 ht-degree: 0%
 
 ---
@@ -35,10 +35,6 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
 1. Na barra lateral _[!DNL Adobe Commerce Optimizer]_, vá para_ Merchandising _>**Recommendations**&#x200B;para exibir o espaço de trabalho_ Recommendations _.
 
 1. No campo **Exibição de catálogo**, selecione a exibição de catálogo na qual deseja que a recomendação fique disponível. Saiba mais sobre [como usar exibições de catálogo para recomendações](../../manage-results/recommendation-performance.md#select-catalog-view).
-
-   >[!IMPORTANT]
-   >
-   >Este recurso está atualmente em [beta](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/beta#merchandising-rules-globally-and-per-catalog-view-public-beta). Os participantes do Beta precisarão recriar quaisquer unidades de recomendação existentes para aproveitar o novo escopo de exibição do catálogo.
 
 1. Clique em **Criar recomendação**.
 

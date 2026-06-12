@@ -12,10 +12,10 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 969
-ht-degree: 0%
+source-wordcount: 963
+ht-degree: 1%
 
 ---
 
@@ -100,10 +100,6 @@ O painel de detalhes mostra o nome da regra, o status, as condições e os event
 | Ativado | Um controle que altera o status da regra. Opções: Ativado / Desativado |
 
 ## Selecionar exibição do catálogo
-
->[!IMPORTANT]
->
->No momento, esse recurso está na versão beta.
 
 O seletor **[!UICONTROL Catalog view]** na página Regras de merchandising faz duas coisas:
 

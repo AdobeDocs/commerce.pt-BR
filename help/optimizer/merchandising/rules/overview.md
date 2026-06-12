@@ -14,16 +14,16 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 838
+source-wordcount: 760
 ht-degree: 0%
 
 ---
 
 # Regras de merchandising
 
-As regras de merchandising combinam lógica com ações para moldar como os produtos aparecem nos **resultados de pesquisa**, em **listas de produtos padrão** (**todas as listas de produtos**) e em **páginas de categoria** ([regras de categoria](#category-rules) estão na versão beta). Você pode impulsionar, enterrar, fixar ou ocultar produtos e aplicar a **classificação inteligente** para que as listas reflitam suas metas comerciais.
+As regras de merchandising combinam lógica e ações para moldar como os produtos aparecem nos **resultados de pesquisa**, em **listas de produtos padrão** (**todas as listas de produtos**) e em **páginas de categoria**. Você pode impulsionar, enterrar, fixar ou ocultar produtos e aplicar a **classificação inteligente** para que as listas reflitam suas metas comerciais.
 
 Cada **regra de pesquisa** tem três componentes principais:
 
@@ -36,10 +36,6 @@ Cada **regra de pesquisa** tem três componentes principais:
 É possível combinar várias condições e ações para regras de pesquisa e agendar qualquer regra para ficar ativa por um período. Você também pode definir uma **regra padrão** (**Todas as listas de produtos**) que se aplique quando não houver mais regras de pesquisa ou categoria específicas.
 
 ## Regras de categoria {#category-rules}
-
->[!IMPORTANT]
->
->As regras de categoria estão na versão beta.
 
 As **Regras de categoria** controlam o pedido de produto em **páginas de categoria**. Selecione uma ou mais categorias e aplique classificação inteligente (por exemplo, mais visualizada, tendência) e ações manuais, como fixar, aumentar e atenuar. Elas não usam as condições de consulta de pesquisa. Para obter etapas de configuração, tipos de regras e como a classificação se aplica à categoria e à pesquisa, consulte [Criar e Gerenciar Regras](add.md).
 

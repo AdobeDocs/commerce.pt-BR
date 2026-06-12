@@ -19,9 +19,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 4d08de7974c79dc6fe20366e0164f6078e83be5f
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 1216
+source-wordcount: 1210
 ht-degree: 0%
 
 ---
@@ -81,10 +81,6 @@ A página Exibições de catálogo é atualizada para exibir a nova exibição d
 Após concluir essas etapas, a exibição do catálogo agora está configurada para exibir produtos e preços com base nas fontes e políticas selecionadas.
 
 ### Especificar exibições de catálogo para recomendações e regras de descoberta de produtos
-
->[!IMPORTANT]
->
->No momento, esse recurso está na versão beta.
 
 Você pode especificar uma exibição de catálogo ao [criar unidades de recomendação](../merchandising/recommendations/create.md) ou [regras de merchandising](../merchandising/rules/add.md).
 
