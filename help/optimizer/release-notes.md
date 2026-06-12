@@ -4,21 +4,15 @@ description: Informações de versão mensais do  [!DNL Adobe Commerce Optimizer
 feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 TQID: https://experienceleague.adobe.com/apcpxN0AOniRcHDCa5MMAVWysxRO5mTcudXXXjET-Lo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: bd4c59c451d7b08de7dc6ef00da2556fb9a6696f
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
 workflow-type: tm+mt
-source-wordcount: 1319
+source-wordcount: 1316
 ht-degree: 0%
 
 ---
@@ -54,7 +48,7 @@ As unidades de recomendação do produto agora oferecem suporte a [**filtros de 
 
 ### Aumento inteligente de classificação
 
-As [Regras de merchandising](./merchandising/rules/add.md#intelligent-ranking-boost) para pesquisa, listas de produtos padrão e [páginas de categoria](./merchandising/rules/add.md#rule-types) (beta) agora incluem **[!UICONTROL Intelligent Ranking Boost]**. Você pode ajustar a intensidade com que estratégias como **Mais visualizados** ou **Tendências** influenciam a ordem do produto em relação à relevância textual nos sinais de pesquisa e comportamento em listagens de categorias. A visualização da regra reflete sua configuração. O aumento é aplicado no momento da consulta, de modo que não é necessário sincronizar novamente o catálogo ao alterá-lo.
+As [Regras de merchandising](./merchandising/rules/add.md#intelligent-ranking-boost) para pesquisa, listas de produtos padrão e [páginas de categoria](./merchandising/rules/add.md#rule-types) agora incluem **[!UICONTROL Intelligent Ranking Boost]**. Você pode ajustar a intensidade com que estratégias como **Mais visualizados** ou **Tendências** influenciam a ordem do produto em relação à relevância textual nos sinais de pesquisa e comportamento em listagens de categorias. A visualização da regra reflete sua configuração. O aumento é aplicado no momento da consulta, de modo que não é necessário sincronizar novamente o catálogo ao alterá-lo.
 
 ### Atualizações da API
 
@@ -89,7 +83,7 @@ _4 de maio de 2026_
 
 >[!BEGINSHADEBOX]
 
-### Regras de catálogo (beta)
+### Regras de catálogo
 
 [Regras de categoria](./merchandising/rules/add.md) estendem as regras de merchandising para que você possa direcionar categorias e controlar a ordem dos produtos nas páginas de categoria com a mesma classificação e as mesmas ações (fixar, aumentar, enterrar) da pesquisa.
 
@@ -103,7 +97,7 @@ _29 de abril de 2026_
 
 <!--v1.52 release-->
 
-**Solicitação em lote necessária** — a API do GraphQL agora impõe um máximo de 100 SKUs por solicitação ao recuperar dados de catálogo. Consulte [limites documentados](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/boundaries-limits#product-discovery).
+**Solicitação em lote necessária** — a API do GraphQL agora impõe um máximo de 100 SKUs por solicitação ao recuperar dados de catálogo. Consulte [limites documentados](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery).
 
 <!--DATA-7156-->
 
@@ -145,7 +139,7 @@ Os pacotes dinâmicos agora retornam uma faixa de preço calculada. <!--DATA-701
 
 >[!BEGINSHADEBOX]
 
-### Exibição de catálogo de regras e recomendações de merchandising (beta)
+### Exibição de catálogo para regras e recomendações de merchandising
 
 Agora você pode especificar uma exibição de catálogo ao [criar unidades de recomendação](./merchandising/recommendations/create.md) ou [regras de merchandising](./merchandising/rules/add.md).
 
