@@ -3,10 +3,15 @@ title: Indexação
 description: Saiba como o  [!DNL Live Search] indexa propriedades de atributos de produto.
 exl-id: 01cbbf56-2e12-4ad0-a56d-de0fe13df50f
 TQID: https://experienceleague.adobe.com/8STop-AunMGpKCLgjQaywtpPRNHF-l7sobRnh82QOXI
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
 source-git-commit: f7ea996f3adcd3beb2a9c064ce57d251f49ae5b3
 workflow-type: tm+mt
 source-wordcount: 812
@@ -26,7 +31,7 @@ As propriedades do atributo de produto (metadados) determinam:
 
 O escopo dos metadados do atributo é `website/store/store view`.
 
-A API [!DNL Live Search] permite que um cliente classifique por qualquer atributo de produto que tenha a `Use in Search` ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) [propriedade de vitrine definida como `Yes` no Administrador do Adobe Commerce. Quando habilitado, `Search Weight` pode ser definido para o atributo.
+A API [!DNL Live Search] permite que um cliente classifique por qualquer atributo de produto que tenha a `Use in Search` [&#128279;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) propriedade de vitrine definida como `Yes` no Administrador do Adobe Commerce. Quando habilitado, `Search Weight` pode ser definido para o atributo.
 
 [!DNL Live Search] não indexa produtos excluídos ou produtos definidos como `Not Visible Individually`.
 
@@ -101,7 +106,7 @@ A API [!DNL Live Search] permite que um cliente classifique por qualquer atribut
 
 Os metadados do índice são armazenados no pipeline de indexação e podem ser acessados pelo serviço de pesquisa.
 
-![[!DNL Live Search] diagrama da API de metadados do índice ](assets/index-metadata-api.svg)
+![[!DNL Live Search] diagrama da API de metadados do índice &#x200B;](assets/index-metadata-api.svg)
 
 ### Fluxo de trabalho de atributo classificável
 
