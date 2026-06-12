@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->O seguinte recurso está em [beta privado](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).
+>O seguinte recurso está em [beta privado](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/beta).
 
 [!DNL Live Search] classifica os resultados para que os compradores vejam primeiro os produtos mais relevantes. O serviço oferece o maior impulso aos produtos cujo texto de catálogo **corresponde melhor** ao que o comprador digita, favorece correspondências em que os termos de consulta aparecem juntos de maneira significativa e, finalmente, inclui correspondências mais amplas (incluindo comportamento que oferece suporte à correspondência de estilo de preenchimento automático).
 
@@ -66,7 +66,7 @@ A relevância não é determinada pela correspondência de frases isoladamente. 
 - Aumentar com base na frase **exata / próxima** correspondente
 - Impulsionar quando **todos os termos da consulta** aparecem no campo **igual**
 - **Classificação inteligente** (quando habilitada), que mescla relevância textual com sinais comportamentais — consulte [Como funciona a pontuação de classificação inteligente](rules-add.md#how-intelligent-ranking-scoring-works)
-- **[Pesquise peso](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)** em cada atributo e outros fatores de relevância textual (por exemplo, a frequência com que os termos ocorrem e o comprimento do nome ou da descrição). No Administrador [!DNL Adobe Commerce], configure **Usar na Pesquisa** e **Pesar na Pesquisa** para atributos de produto.
+- **[Pesquise peso](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/search/search-results)** em cada atributo e outros fatores de relevância textual (por exemplo, a frequência com que os termos ocorrem e o comprimento do nome ou da descrição). No Administrador [!DNL Adobe Commerce], configure **Usar na Pesquisa** e **Pesar na Pesquisa** para atributos de produto.
 - **[Pesquisar regras de merchandising](rules.md)**, como fixar, impulsionar e enterrar
 
 Como esses sinais interagem, um produto que corresponde somente no nível mais amplo pode, às vezes, ser classificado acima de uma correspondência de frase mais estreita, por exemplo, quando **pesos de pesquisa** ou frequência de termo em um campo de alto peso superam uma correspondência de frase mais fraca em outro lugar.
