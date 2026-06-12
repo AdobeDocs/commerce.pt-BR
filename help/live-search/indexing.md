@@ -12,9 +12,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: f7ea996f3adcd3beb2a9c064ce57d251f49ae5b3
 workflow-type: tm+mt
-source-wordcount: 787
+source-wordcount: 812
 ht-degree: 0%
 
 ---
@@ -46,6 +46,8 @@ O cliente chama o serviço de pesquisa da loja para recuperar (filtrável, class
 Para construir uma consulta dinâmica, o serviço de pesquisa precisa saber quais atributos podem ser pesquisados e seus [weight](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/search/search-results). [!DNL Live Search] respeita os pesos de pesquisa do Adobe Commerce (1-10, onde 10 é a prioridade mais alta). A lista de dados sincronizados e compartilhados com o serviço de catálogo pode ser encontrada no schema, que é definido em:
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
+
+Para entender como os atributos e pesos pesquisáveis interagem com a correspondência **exata**, **próxima**, de mesmo campo e entre campos no momento da consulta, consulte [Correspondência e classificação de pesquisa](search-relevance-matching.md).
 
 ![[!DNL Live Search] diagrama de pesquisa de cliente de indexação](assets/indexing-pipeline.svg)
 

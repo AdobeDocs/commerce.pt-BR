@@ -15,9 +15,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
+source-git-commit: b9b57bb7279354c9d5c2a7efc6e1ba14c1c36598
 workflow-type: tm+mt
-source-wordcount: 1905
+source-wordcount: 1936
 ht-degree: 0%
 
 ---
@@ -37,6 +37,10 @@ A página *Desempenho da pesquisa* fornece o insight para os termos de pesquisa 
 >[!IMPORTANT]
 >
 >Se você não vir nenhuma métrica de desempenho de pesquisa, verifique se os dados do evento de pesquisa estão sendo [coletados](../setup/events/overview.md).
+
+>[!NOTE]
+>
+>Para entender como a descoberta de produtos classifica **correspondências exatas e próximas**, correspondências de mesmo campo e correspondências mais amplas (e como isso interage com pesos de palavras-chave e regras de merchandising), consulte [Correspondência e classificação de pesquisa](../search-relevance-matching.md).
 
 ## Escolha a **Exibição de catálogo**
 

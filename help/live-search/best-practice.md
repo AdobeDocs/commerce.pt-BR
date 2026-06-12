@@ -15,9 +15,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 86b218d78731585dca4e8829fb886010ef27a2d5
+source-git-commit: f7ea996f3adcd3beb2a9c064ce57d251f49ae5b3
 workflow-type: tm+mt
-source-wordcount: 3008
+source-wordcount: 3006
 ht-degree: 0%
 
 ---
@@ -34,6 +34,8 @@ Há vários fatores principais que determinam a relevância e a eficácia dos re
 - Uma experiência de pesquisa bem projetada cria confiança com os clientes e inspira confiança de que eles podem encontrar o que precisam.
 - As regras de pesquisa são críticas, pois podem elevar a visibilidade de determinados produtos com base em popularidade, novos concorrentes, critérios promocionais ou qualquer outra estratégia de merchandising para atender aos requisitos da sua empresa.
 - A navegação facetada permite que os compradores refinem sua pesquisa e obtenham resultados relevantes rapidamente.
+
+Para entender como [!DNL Live Search] prioriza **correspondências exatas e próximas, correspondências de mesmo campo e correspondências entre campos**, e como esses fatores interagem com pesos e regras de pesquisa, consulte [Correspondência e classificação de pesquisa](search-relevance-matching.md).
 
 Para gerenciar o [!DNL Live Search], vá para **Marketing** > *SEO e Pesquisa* > **[!DNL Live Search]** no Administrador do Adobe [!DNL Commerce]. 
 
