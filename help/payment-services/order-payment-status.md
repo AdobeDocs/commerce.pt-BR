@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
 workflow-type: tm+mt
-source-wordcount: '2045'
+source-wordcount: '2188'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 # Relatório de Status do Pagamento do Pedido
 
 O [!DNL Payment Services] for [!DNL Adobe Commerce] e [!DNL Magento Open Source] oferece relatórios abrangentes para você ter uma visão clara das [transações](reporting.md), pedidos e pagamentos da sua loja.
+
+>[!NOTE]
+>
+>As exibições de status de Pedidos de pagamento abaixo estão disponíveis em [!DNL Payment Services] **[!UICONTROL Home]** no Adobe Commerce na nuvem e no local. Eles não são mostrados no painel [!DNL Payment Services] para [!DNL Adobe Commerce as a Cloud Service] ou [!DNL Adobe Commerce Optimizer]; consulte [[!DNL Payment Services] Página Inicial](payments-home.md).
 
 Há duas exibições disponíveis do relatório de status do pagamento da ordem para permitir que você exiba rapidamente o status do pagamento de suas ordens:
 
@@ -256,7 +260,7 @@ Os relatórios de status do pagamento da ordem incluem as informações a seguir
 | [!UICONTROL Pay Status] | Status do pagamento de um pedido específico |
 | [!UICONTROL Paid Amt] | Valor pago em um pedido |
 | [!UICONTROL Cur] | Tipo de moeda do valor pago em um pedido |
-| [!UICONTROL Refund Status] | Status de uma restituição em uma ordem (como informações de devoluções, RMAs e avisos de crédito)—   *[!UICONTROL Requires refund]*, *[!UICONTROL Refund requested]*, *[!UICONTROL Refunded]*, *[!UICONTROL Refund failed]* ou *[!UICONTROL Voided]* |
+| [!UICONTROL Refund Status] | Status de um reembolso em um pedido (como informações de devoluções, RMAs e avisos de crédito)— *[!UICONTROL Requires refund]*, *[!UICONTROL Refund requested]*, *[!UICONTROL Refunded]*, *[!UICONTROL Refund failed]* ou *[!UICONTROL Voided]* |
 | [!UICONTROL Refund Amount] | Total do valor reembolsado de um pedido |
 | [!UICONTROL Cur] | Tipo de moeda do valor reembolsado de um pedido |
 | [!UICONTROL Disputes] | Status de qualquer contestação em um pedido (informações de contestações e substituições de débito)—*[!UICONTROL Open]*, *[!UICONTROL Waiting for buyer response]*, *[!UICONTROL Waiting for seller response]*, *[!UICONTROL Under review]*, *[!UICONTROL Resolved]* ou *[!UICONTROL Other]* |

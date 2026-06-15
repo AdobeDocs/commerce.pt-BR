@@ -4,10 +4,10 @@ description: Após a instalação, você pode configurar [!DNL Payment Services]
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-feature: Payments, Checkout, Configuration
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+feature: Payments, Checkout, Configuration, Paas, Saas
+source-git-commit: 379345261bebe5bee9cdbcb6fd3b0ce6275df6ea
 workflow-type: tm+mt
-source-wordcount: '3209'
+source-wordcount: '3710'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,26 @@ Você pode habilitar [!DNL Payment Services] para sua loja e _[!UICONTROL Mercha
 | [!UICONTROL PayPal Merchant ID] | exibição de loja | Sua ID exclusiva de conta de comerciante do PayPal, gerada ao criar sua conta do PayPal. |
 | [!UICONTROL PayPal Merchant Status] | exibição de loja | Status da ID de Comerciante do PayPal. |
 | [!UICONTROL Soft Descriptor] | exibição de site ou loja | Adicione um descritor simples ao(s) site(s) e às visualizações da loja para adicionar informações às transações do cliente que definem marcas, lojas ou linhas de produtos. |
+
+## Conectar uma conta diferente do PayPal a um site
+
+Se você executar uma única instância do Commerce com **vários sites** (e exibições de loja), talvez precise de uma **conta de comerciante do PayPal** diferente para alguns sites. [!DNL Payment Services] permite concluir a integração com **escopo de site** do PayPal no Administrador depois que a instância é configurada e integrada no escopo **global** (padrão).
+
+Em versões anteriores, o mapeamento de conta do PayPal no nível do site normalmente exigia que você [contatasse o Suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#Solution) ou o representante da Adobe. Use a ação **[!UICONTROL Connect different account for website]** quando atender aos pré-requisitos abaixo.
+
+### Pré-requisitos (escopo global)
+
+O controle **[!UICONTROL Connect different account for website]** só está disponível e habilitado no escopo de **site** quando **todos** dos itens a seguir já são verdadeiros para a instância na configuração **padrão/global**:
+
+1. A instalação do [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas) foi concluída.
+
+1. [A sandbox e as chaves de API de produção](connect.md#configure-commerce-services) (públicas e privadas) estão salvas no Administrador.
+
+1. **[!UICONTROL Payment Services Sandbox ID]** e **[!UICONTROL Payment Services Production ID]** estão preenchidos na [Configuração geral](#general-configuration).
+
+1. Uma conta de comerciante do PayPal **global** está **conectada** e você **concluiu a integração do PayPal** para esse escopo padrão (os campos **[!UICONTROL PayPal Merchant ID]** e relacionados são preenchidos para o escopo global conforme descrito em [Configuração geral](#general-configuration)).
+
+   Se a integração global não for concluída, alterne o escopo de configuração para **[!UICONTROL Website]**, abra **[!UICONTROL Payment Services]** em **[!UICONTROL Payment Methods]** e o botão **[!UICONTROL Connect different account for website]** será **desabilitado**; conclua primeiro a configuração do conector e a integração do PayPal **global**.
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -168,7 +188,7 @@ Essas configurações opcionais se aplicam aos campos de entrada do cliente do c
 
 ## [!UICONTROL Apple Pay]
 
-Com o [!DNL Apple Pay], os comerciantes podem oferecer uma experiência de check-out segura, rápida e contínua no Safari, com suporte para até 99 domínios por conta de comerciante. O botão [!DNL Apple Pay] preenche automaticamente as informações de pagamento, contato e remessa do dispositivo iOS ou macOS do cliente, permitindo compras rápidas, com um toque, que podem ajudar a aumentar as taxas de conversão.
+Com o [!DNL Apple Pay], os comerciantes podem oferecer uma experiência de check-out segura, rápida e contínua, com suporte para até 99 domínios por conta de comerciante. No **Safari** (macOS e iOS), o botão [!DNL Apple Pay] preenche automaticamente as informações de pagamento, contato e remessa do dispositivo do cliente, tanto no início do check-out (expresso) quanto na página de check-out final. No **Chrome, Firefox ou Microsoft Edge**, o [!DNL Apple Pay] está disponível durante o **check-out expresso** e na **etapa final do check-out**; no desktop, um código QR e um **iPhone** (iOS 18 ou posterior) permitem que o comprador conclua o pagamento na folha de Pagamento do Apple. Certifique-se de que **[!UICONTROL Show Apple Pay on product detail page]** ou outros posicionamentos estejam habilitados no local em que você deseja o check-out expresso.
 
 >[!IMPORTANT]
 >
@@ -179,7 +199,7 @@ Consulte [Opções de pagamentos](payments-options.md#apple-pay-button) para obt
 1. Na barra lateral _Admin_, vá para **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. No painel esquerdo, expanda **[!UICONTROL Sales]** e escolha **[!UICONTROL Payment Methods]**.
 1. Expanda a seção _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
-1. Na seção _[!UICONTROL Payment Services]_, expanda a seção&#x200B;_[!UICONTROL Apple Pay]_.
+1. Na seção _[!UICONTROL [!DNL Payment Services]]_, expanda a seção&#x200B;_[!UICONTROL Apple Pay]_.
 1. Para **[!UICONTROL Title]**, insira texto (se necessário) para alterar o nome do método de pagamento conforme mostrado durante o check-out.
 1. Para [definir a ação de pagamento](production.md#set-payment-services-as-payment-method), selecione **[!UICONTROL Authorize]** ou **[!UICONTROL Authorize and Capture]**.
 1. Especifique onde a opção [!DNL Apple Pay] está habilitada no Adobe Commerce selecionando `Yes` nas seguintes opções, conforme necessário:
@@ -215,7 +235,7 @@ Consulte [Opções de pagamentos](payments-options.md#google-pay-button) para ob
 1. Na barra lateral _Admin_, vá para **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. No painel esquerdo, expanda **[!UICONTROL Sales]** e escolha **[!UICONTROL Payment Methods]**.
 1. Expanda a seção _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
-1. Na seção _[!UICONTROL Payment Services]_, expanda a seção&#x200B;_[!UICONTROL Google Pay]_.
+1. Na seção _[!UICONTROL [!DNL Payment Services]]_, expanda a seção&#x200B;_[!UICONTROL Google Pay]_.
 1. (Opcional) Altere o nome do método de pagamento mostrado durante o check-out inserindo o novo nome no campo **[!UICONTROL Title]**.
 1. [Defina a ação de pagamento](production.md#set-payment-services-as-payment-method) selecionando **[!UICONTROL Authorize]** ou **[!UICONTROL Authorize and Capture]**.
 1. Especifique onde a opção [!DNL Google Pay] está habilitada no Adobe Commerce selecionando `Yes` nas seguintes opções, conforme necessário:
@@ -224,10 +244,11 @@ Consulte [Opções de pagamentos](payments-options.md#google-pay-button) para ob
    * **[!UICONTROL Show Google Pay on product detail page]**
    * **[!UICONTROL Show Google Pay in mini cart preview]**
    * **[!UICONTROL Show Google Pay on cart page]**
+1. Para escolher se os compradores verão uma página **Revisão de pagamento do Google** separada após a folha de pagamento de Pagamento do Google, defina **[!UICONTROL Skip Review]** como `Yes` ou `No`. Quando definido como `Yes`, os fluxos expressos com suporte mostram **métodos de envio na Folha de pagamento do Google** (retornos de chamada de envio do lado do cliente) e podem ser concluídos sem a etapa de revisão extra. Quando definido como `No`, os compradores podem confirmar o envio e os totais na página de revisão antes de pagar.
 1. Para habilitar **[!UICONTROL 3D Secure authentication]** (`Off` por padrão), escolha `Always` ou `When required`.
 1. Para habilitar o modo de depuração, selecione `Yes` para **[!UICONTROL Debug Mode]** (`No` o desabilita).
 1. Configure a aparência do botão _[!UICONTROL Google Pay]_&#x200B;selecionando **[!UICONTROL Button Color]**,**[!UICONTROL Button Type]**&#x200B;e **[!UICONTROL Button Style]**&#x200B;conforme necessário.
-1. Para definir a altura, usa o valor padrão para a altura definida em **[!UICONTROL Button Style]**.
+1. Para definir a altura, use o valor padrão para a altura definida em **[!UICONTROL Button Style]**.
 1. Para salvar as alterações, clique em **[!UICONTROL Save Config]**.
 1. Navegue até **[!UICONTROL System]** > **[!UICONTROL Cache Management]** e clique em **[!UICONTROL Flush Cache]** para atualizar todos os caches inválidos.
 
@@ -243,6 +264,7 @@ Consulte [Opções de pagamentos](payments-options.md#google-pay-button) para ob
 | [!UICONTROL Show Google Pay on product detail page] | exibição de loja | Habilite ou desabilite [!DNL Google Pay] na página de detalhes do produto. Opções: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show Google Pay in mini cart preview] | exibição de loja | Habilite ou desabilite [!DNL Google Pay] na pré-visualização do minicarrinho. Opções: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show Google Pay on cart page] | exibição de loja | Habilite ou desabilite [!DNL Google Pay] na página do carrinho. Opções: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Skip Review] | exibição de loja | Quando definido como `[!UICONTROL Yes]`, os fluxos expressos do [!DNL Google Pay] qualificados podem omitir a página de revisão separada após a folha de pagamento; os métodos de envio aparecem na folha de pagamento do Google. Quando definido como `[!UICONTROL No]`, os compradores prosseguem para a página de revisão para confirmar o envio e os totais. Opções: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL 3D Secure authentication] | exibição de loja | Habilite ou desabilite a [autenticação Segura 3D](security.md#3ds). Opções: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | site | Ative ou desative o Modo de depuração. Opções: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Button Color] | Exibição da loja | Defina a cor do botão [!DNL Google Pay]. Opções: `[!UICONTROL Default]` / `[!UICONTROL Black]` / `[!UICONTROL White]` |
@@ -422,7 +444,6 @@ No [!UICONTROL Payment Services], você pode usar várias contas do PayPal em **
 
 Consulte [Escopo de Site, Armazenamento e Exibição](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=pt-BR) para obter mais informações sobre a hierarquia de sites, lojas e exibições de loja.
 
-Consulte [Configuração de linha de comando](configure-cli.md#configure-scope-via-cli) para obter mais informações sobre a configuração de escopos para várias contas do PayPal via CLI.
+Para conectar uma **conta diferente do PayPal a um site individual** do Administrador após a conclusão da integração do **global** com o Commerce Services e o PayPal, use o **[!UICONTROL Connect different account for website]** no escopo **[!UICONTROL Website]**. Consulte [Conectar uma conta diferente do PayPal para um site](#connect-a-different-paypal-account-for-a-website).
 
-Seu representante de vendas pode criar um novo [escopo](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=pt-BR#scope-settings) para sua conta de comerciante e integrar o site adicional com o PayPal para que qualquer um dos botões do PayPal que você configura para aparecer apareça em seu site. Entre em contato com seu setor de Vendas
-representante para obter assistência com o uso de várias contas do PayPal para seus sites.
+Consulte [Configuração de linha de comando](configure-cli.md#configure-scope-via-cli) para obter mais informações sobre a configuração de escopos para várias contas do PayPal via CLI.

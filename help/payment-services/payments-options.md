@@ -1,11 +1,13 @@
 ---
 title: Opções de pagamento
 description: Defina as opções de pagamento para personalizar os métodos disponíveis para seus clientes de loja.
+role: Admin, User
+level: Intermediate
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: 379345261bebe5bee9cdbcb6fd3b0ce6275df6ea
 workflow-type: tm+mt
-source-wordcount: '1728'
+source-wordcount: '2326'
 ht-degree: 0%
 
 ---
@@ -63,17 +65,38 @@ Consulte o tópico [Fastlane by PayPal](https://www.paypal.com/us/fastlane){targ
 
 ### Botão [!DNL Apple Pay]
 
-Com o [!DNL Apple Pay], os comerciantes podem fornecer uma experiência de check-out segura e simplificada no Safari (para até 99 domínios por conta de comerciante), o que pode aumentar as conversões. Os detalhes armazenados de pagamento, contato e envio do botão [!DNL Apple Pay] são preenchidos automaticamente com base nos dispositivos iOS ou macOS dos clientes, permitindo uma experiência de finalização rápida com apenas um toque.
+Com o [!DNL Apple Pay], os comerciantes podem fornecer uma experiência de check-out segura e simplificada (para até 99 domínios por conta de comerciante), o que pode aumentar as conversões.
+
+* **Safari (macOS e iOS)** — o botão [!DNL Apple Pay] preenche automaticamente os detalhes armazenados de pagamento, contato e envio diretamente do dispositivo Apple do cliente, tanto no início do check-out (expresso) quanto na página final do check-out.
+* **Chrome, Firefox e Microsoft Edge** — os compradores podem usar [!DNL Apple Pay] durante o **check-out expresso** e na **etapa final do check-out**. No desktop, um **código QR** é exibido para que o comprador conclua o pagamento na folha de Pagamento do Apple em um **iPhone** (iOS 18 ou posterior) usando o aplicativo Câmera para abrir o fluxo da carteira.
+
+Consulte [Novidades na Carteira e [!DNL Apple Pay]](https://developer.apple.com/videos/play/wwdc2024/10108/?time=35){target=_blank} (Apple Developer, WWDC24) para obter a visão geral da Apple sobre esse fluxo.
 
 ![Botão Pagar do Apple no minicart](assets/applepay-button.png){width="500" zoomable="yes"}
 
 Quando ativado, o botão [!DNL Apple Pay] fica visível na página do produto, no minicarrinho, no carrinho de compras e nas exibições de check-out. Você pode configurar [!DNL Apple Pay] na configuração de armazenamento ou na Página Inicial da extensão.
 
+Os clientes podem **aplicar ou remover um único código de regra de preço (cupom) de carrinho** durante o check-out expresso de [!DNL Apple Pay].
+
 >[!NOTE]
 >
->  O certificado de verificação de domínio Apple Pay já está incluído no código de Serviços de pagamento. Verifique se o caminho `/.well-known/apple-developer-merchantid-domain-association` retorna um código de resposta 200. Consulte a [documentação do desenvolvedor do PayPal sobre integração com o Apple Pay](https://developer.paypal.com/docs/checkout/apm/apple-pay/#download-and-host-sandbox-domain-association-file) para obter mais informações sobre o certificado **verificação de Domínio do PayPal do Apple**.
+> O certificado de verificação de domínio Apple Pay já está incluído no código [!DNL Payment Services]. Verifique se o caminho `/.well-known/apple-developer-merchantid-domain-association` retorna um código de resposta 200. Consulte a [documentação do desenvolvedor do PayPal sobre integração com o Apple Pay](https://developer.paypal.com/docs/checkout/apm/apple-pay/#download-and-host-sandbox-domain-association-file) para obter mais informações sobre o certificado **verificação de Domínio do PayPal do Apple**.
 
 Consulte [Configurações](configure-admin.md#apple-pay) para obter mais informações.
+
+#### Limitações para o [!DNL Apple Pay] express
+
+**Códigos promocionais na [!DNL Apple Pay] folha de pagamento**
+
+* Os códigos promocionais inseridos na folha de pagamento [!DNL Apple Pay] se aplicam somente ao fluxo expresso. Eles não são aplicados quando [!DNL Apple Pay] é selecionado na página de check-out padrão.
+* Somente **um** código promocional pode ser aplicado por [!DNL Apple Pay] folha de pagamento.
+* Não há página de revisão [!DNL Apple Pay]; o comprador conclui a compra diretamente da folha de pagamento.
+* Se o comprador fechar e reabrir a folha de pagamento [!DNL Apple Pay], o código promocional inserido anteriormente não será lembrado — somente o valor do desconto permanecerá refletido nos totais.
+
+**Navegadores que não sejam do Safari**
+
+* Os botões [!DNL Apple Pay] não são renderizados em dispositivos Android no fluxo de check-out expresso ou padrão.
+* Para **produtos virtuais**, a folha de pagamento [!DNL Apple Pay] ainda solicita um endereço de entrega. O endereço é usado como uma estimativa de melhor esforço do endereço de faturamento para calcular totais, pois a Apple não fornece o endereço de faturamento até que o comprador autorize o pagamento.
 
 ### Botão [!DNL Google Pay]
 
@@ -85,9 +108,28 @@ O [!DNL Google Pay] está disponível somente em determinados países ou regiõe
 
 Quando ativado, o botão [!DNL Google Pay] fica visível na página do produto, no minicarrinho, no carrinho de compras e nas exibições de check-out. Consulte [Configurações](configure-admin.md) para obter mais informações.
 
+O check-out do [!DNL Google Pay] **express** pode mostrar **métodos de envio na folha de pagamento do Google**, dar suporte a uma etapa **de revisão** opcional (configurar **[Ignorar revisão](configure-admin.md#google-pay)**) e incluir um campo **código promocional** durante o check-out.
+
 >[!NOTE]
 >
 > A API [!DNL Google Pay] só pode ser usada em sites em um contexto seguro. Consulte a documentação de [Solução de problemas](https://developers.google.com/pay/api/web/support/troubleshooting) para obter mais informações.
+
+#### Limitações para o [!DNL Google Pay] express
+
+**Envio na folha de pagamento**
+
+* O comportamento **envio na planilha** (chamada de retorno do envio no lado do cliente) só estará disponível quando **[!UICONTROL Skip Review]** estiver definido como `Yes` na [configuração de Pagamento do Google](configure-admin.md#google-pay).
+
+**Códigos promocionais na [!DNL Google Pay] folha de pagamento**
+
+* Os códigos promocionais inseridos na folha de pagamento [!DNL Google Pay] se aplicam somente ao fluxo expresso. Eles não são aplicados quando [!DNL Google Pay] é selecionado na página de check-out padrão.
+* Somente **um** código promocional pode ser aplicado por folha de pagamento [!DNL Google Pay], mesmo que a loja permita vários cupons por pedido. (Vários cupons permanecem suportados no carrinho padrão e na finalização.)
+* Os códigos promocionais não podem ser aplicados a produtos de cartão-presente.
+* O campo de código promocional **não tem suporte em dispositivos Android**.
+* Os códigos adicionados na folha de pagamento [!DNL Google Pay] só podem ser removidos da folha de pagamento, não da página do carrinho do Commerce.
+* No Adobe Commerce 2.4.4-2.4.6, a linha de desconto na folha de pagamento [!DNL Google Pay] pode não mostrar nenhum valor devido a uma limitação de plataforma.
+* No Adobe Commerce 2.4.7, o valor do desconto pode não aparecer na folha de pagamento [!DNL Google Pay] para alguns produtos (principalmente produtos baixáveis) devido a uma limitação de plataforma na resposta do GraphQL.
+* Se uma [regra de preço do carrinho](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart.html?lang=pt-BR) automática se aplicar (por exemplo, &quot;$50 de desconto quando se gasta mais de $200&quot;), ela será combinada com qualquer código que o comprador aplicar na folha de pagamento. Como resultado, os totais mostrados na folha de pagamento [!DNL Google Pay] podem ser diferentes do resumo do pedido.
 
 ### [!DNL PayPal Payment Buttons]
 
@@ -147,7 +189,7 @@ Essa abordagem do lado do servidor permite que o [!DNL Payment Services] ignore 
 
 ### Usar somente botões de pagamento do PayPal
 
-Para colocar rapidamente sua loja em modo de produção, você pode configurar _somente_ botões de pagamento do PayPal (Venmo, PayPal e assim por diante).—em vez de também usar a opção de pagamento com cartão de crédito PayPal.
+Para colocar sua loja em modo de produção rapidamente, você pode configurar _somente_ botões de pagamento do PayPal (Venmo, PayPal, etc.) — em vez de usar também a opção de pagamento com cartão de crédito do PayPal.
 
 Isso permite:
 
@@ -159,14 +201,14 @@ Para **capturar pagamentos com _somente_ botões de pagamento do PayPal (_não_ 
 
 1. Certifique-se de que seu repositório esteja [no modo de produção](configure-admin.md#general-configuration).
 1. [Configure os botões de pagamento do PayPal desejados](configure-admin.md#paypal-payment-buttons) em Configurações.
-1. Desative _a opção_ na seção **[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**._[!UICONTROL Payment buttons]_
+1. Desative _a opção **[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**&#x200B;na seção&#x200B;_[!UICONTROL Payment buttons]_._
 
 Para **capturar pagamentos com seu provedor de cartão de crédito existente _e_ botões de pagamento do PayPal**:
 
 1. Certifique-se de que seu repositório esteja [no modo de produção](configure-admin.md#general-configuration).
 1. [Configure os botões de pagamento do PayPal desejados](configure-admin.md#paypal-payment-buttons).
-1. Desative _a opção_ na seção **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**._[!UICONTROL Payment buttons]_
-1. Desative _a opção_ na seção **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)** e use sua _[!UICONTROL Credit card fields]_&#x200B;conta de provedor de cartão de crédito existente[.](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=pt-BR#payments)
+1. Desative _a opção **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**&#x200B;na seção&#x200B;_[!UICONTROL Payment buttons]_._
+1. Desative _a opção **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)**&#x200B;na seção&#x200B;_[!UICONTROL Credit card fields]_ e use sua [conta de provedor de cartão de crédito existente](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html?lang=pt-BR#payments)._
 
 ## Métodos de pagamento locais
 

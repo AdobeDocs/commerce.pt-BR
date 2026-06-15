@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: a0f9ddbf3d0f291855cb51fd70a782c48b8efc6c
+source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
 workflow-type: tm+mt
-source-wordcount: '1303'
+source-wordcount: '1373'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 # Relatório de pagamentos
 
 O [!DNL Payment Services] for [!DNL Adobe Commerce] e [!DNL Magento Open Source] oferece relatórios abrangentes para você ter uma visão clara das transações, ordens e pagamentos da sua loja.
+
+>[!NOTE]
+>
+>Os modos de exibição de Pagamentos abaixo estão disponíveis em [!DNL Payment Services] **[!UICONTROL Home]** no Adobe Commerce na nuvem e no local. Eles não são mostrados no painel [!DNL Payment Services] para [!DNL Adobe Commerce as a Cloud Service] ou [!DNL Adobe Commerce Optimizer]; consulte [[!DNL Payment Services] Página Inicial](payments-home.md).
 
 Há duas visualizações de relatórios de Pagamentos disponíveis para permitir que você veja informações detalhadas sobre todos os seus pagamentos:
 
@@ -185,19 +189,19 @@ Esses tipos de transação podem ser observados nas transações de pagamento.
 | ------------ | -------------------- |
 | [!UICONTROL PAYMENT] | Dinheiro movido entre um comprador e um vendedor para um pedido |
 | [!UICONTROL AUTH] | Transações de anulação de autorização e autorização |
-| [!UICONTROL BONUS] | — |
+| [!UICONTROL BONUS] | -- |
 | [!UICONTROL CHARGEBACK] | Transações de estorno de taxa de substituição de débito e de taxa de substituição de débito |
-| [!UICONTROL CORRECTION] | — |
-| [!UICONTROL CURRENCY_CONVERSION] | — |
-| [!UICONTROL DEPOSIT] | — |
-| [!UICONTROL DISBURSEMENT] | — |
-| [!UICONTROL DISPUTE] | — |
+| [!UICONTROL CORRECTION] | -- |
+| [!UICONTROL CURRENCY_CONVERSION] | -- |
+| [!UICONTROL DEPOSIT] | -- |
+| [!UICONTROL DISBURSEMENT] | -- |
+| [!UICONTROL DISPUTE] | -- |
 | [!UICONTROL FEES] | Transações de reversão de taxas, taxas de pagamento e tarifas do parceiro |
-| [!UICONTROL HOLD] | — |
-| [!UICONTROL HOLD_RELEASE] | — |
-| [!UICONTROL INCENTIVES] | — |
-| [!UICONTROL OTHERS] | — |
+| [!UICONTROL HOLD] | -- |
+| [!UICONTROL HOLD_RELEASE] | -- |
+| [!UICONTROL INCENTIVES] | -- |
+| [!UICONTROL OTHERS] | -- |
 | [!UICONTROL RECOUP] | Recuperações de contas bancárias ou de perdas |
-| [!UICONTROL REFUND] | — |
-| [!UICONTROL REVERSAL] | — |
-| [!UICONTROL WITHDRAWAL] | — |
+| [!UICONTROL REFUND] | -- |
+| [!UICONTROL REVERSAL] | -- |
+| [!UICONTROL WITHDRAWAL] | -- |

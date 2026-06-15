@@ -23,7 +23,7 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ecff841c8e88c3897358eaf91e54c732d1edcfe4
+source-git-commit: 69f39a6a62e05c86a0e2897d09079543b3d8830e
 workflow-type: tm+mt
 source-wordcount: 450
 ht-degree: 0%
@@ -64,3 +64,4 @@ Use as orientações a seguir ao decidir como estruturar suas fontes de catálog
 > * [Camadas do catálogo](catalog-layer.md) - Modificar a apresentação do produto sem alterar os dados de origem
 > * [Políticas](policies.md) - Criar filtros baseados em atributos para exibições de catálogo
 > * [Catálogos de preços](pricebooks.md) - Gerenciar estruturas de preços para diferentes segmentos de clientes
+

@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '483'
 ht-degree: 1%
 
 ---
@@ -37,6 +37,10 @@ Após a conclusão da integração (ou em uma instância já configurada), **[!U
 >[!ENDTABS]
 
 Neste modo de exibição de Página Inicial, você pode acessar a _Página Inicial_, _Aprender_ sobre o [!DNL Payment Services], configurar a extensão _Configurações_ ou obter a _Ajuda_. Use o **[!UICONTROL View Report]** (SaaS) ou os pontos de entrada **[!UICONTROL Orders]** e **[!UICONTROL Payouts]** (Adobe Commerce na nuvem e no local) para abrir os relatórios; consulte [Relatórios](reporting.md).
+
+>[!NOTE]
+>
+>Em [!DNL Adobe Commerce as a Cloud Service] e [!DNL Adobe Commerce Optimizer], o [!DNL Payment Services] **painel** expõe somente os relatórios **selecionados**: você obtém o relatório [Transações](reporting.md) de **[!UICONTROL Home]** (consulte a tabela SaaS abaixo). As áreas **[!UICONTROL Orders]** e **[!UICONTROL Payouts]** na Página Inicial, e seus gráficos e relatórios vinculados, aplicam-se ao Adobe Commerce somente na nuvem e no local ([PaaS](#home)). Para obter uma visão geral dos relatórios de fluxo de caixa entre implantações, consulte [Relatórios financeiros](financial-reporting.md).
 
 ## Início
 
