@@ -201,14 +201,14 @@ Para **capturar pagamentos com _somente_ botões de pagamento do PayPal (_não_ 
 
 1. Certifique-se de que seu repositório esteja [no modo de produção](configure-admin.md#general-configuration).
 1. [Configure os botões de pagamento do PayPal desejados](configure-admin.md#paypal-payment-buttons) em Configurações.
-1. Desative _a opção **[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**na seção_[!UICONTROL Payment buttons]_._
+1. Desative _a opção **[[!UICONTROL Show PayPal Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**&#x200B;na seção&#x200B;_[!UICONTROL Payment buttons]_._
 
 Para **capturar pagamentos com seu provedor de cartão de crédito existente _e_ botões de pagamento do PayPal**:
 
 1. Certifique-se de que seu repositório esteja [no modo de produção](configure-admin.md#general-configuration).
 1. [Configure os botões de pagamento do PayPal desejados](configure-admin.md#paypal-payment-buttons).
-1. Desative _a opção **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**na seção_[!UICONTROL Payment buttons]_._
-1. Desative _a opção **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)**na seção_[!UICONTROL Credit card fields]_ e use sua [conta de provedor de cartão de crédito existente](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)._
+1. Desative _a opção **[[!UICONTROL PayPal Show Credit and Debit card button]](configure-admin.md#paypal-payment-buttons)**&#x200B;na seção&#x200B;_[!UICONTROL Payment buttons]_._
+1. Desative _a opção **[[!UICONTROL Show on checkout page]](configure-admin.md#credit-card-fields)**&#x200B;na seção&#x200B;_[!UICONTROL Credit card fields]_ e use sua [conta de provedor de cartão de crédito existente](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments)._
 
 ## Métodos de pagamento locais
 
