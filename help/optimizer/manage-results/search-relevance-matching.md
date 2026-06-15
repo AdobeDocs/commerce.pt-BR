@@ -20,7 +20,7 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: da5950c0f2071f48f163dd02f6c38953804ae152
+source-git-commit: 717ecbc9c6aa41f8a504579de8ce55f514cc4307
 workflow-type: tm+mt
 source-wordcount: 946
 ht-degree: 0%
@@ -71,7 +71,7 @@ Para uma frase de pesquisa como `Brauseschlauch chrom`:
 - **Todas as palavras no mesmo campo** — Procura por **brauseschlauch** e **chrom** no atributo pesquisável **same**, ainda sem decomposição (por exemplo, ambos em **name**).
 - **Palavras em diferentes campos** — Decompõe **Brauseschlauch** em **brause** e **schlauch**. Esses tokens devem aparecer no campo **same** (não necessariamente como uma frase adjacente). **chrom** pode corresponder em um campo **different** (por exemplo, **brause** e **schlauch** em **name**, **chrom** em **color**).
 
-Defina **Idioma** como **Alemão** na guia [Idioma](./settings.md#language) em [Configurações](./settings.md) para que as regras de decomposição sejam aplicadas. Valide consultas alemãs de alto valor em uma loja de preparo antes de habilitar as alterações na produção.
+Defina **Idioma** como **Alemão** na guia [Idioma](../settings.md#language) em [Configurações](../settings.md) para que as regras de decomposição sejam aplicadas. Valide consultas alemãs de alto valor em uma loja de preparo antes de habilitar as alterações na produção.
 
 A decomposição se baseia em regras e pode adicionar casos de borda nesta camada. Se uma subpalavra estiver ausente no dicionário, a geração de tokens poderá estar incompleta e retornar correspondências mais amplas do que o esperado; por exemplo, **gas** ausentes de **gaszähler** poderão emitir apenas **zahl** ou **stat** ausentes do **termostato**. O lematizador também pode produzir raízes inesperadas (por exemplo, **schrauber** resultante de **schraub** ou **schelle** a **schell**). O Adobe atualiza o dicionário e as substituições da raiz para casos conhecidos à medida que problemas são identificados.
 
@@ -81,9 +81,9 @@ A relevância não é determinada pela correspondência de frases isoladamente. 
 
 - Aumentar com base na frase **exata / próxima** correspondente
 - Impulsionar quando **todos os termos da consulta** aparecem no campo **igual**
-- **Classificação inteligente** (quando habilitada), que mescla relevância textual com sinais comportamentais — consulte [Como funciona a pontuação de classificação inteligente](./merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)
-- **[Pesquise peso](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/search/search-results)** em cada atributo e outros fatores de relevância textual (por exemplo, a frequência com que os termos ocorrem e o comprimento do nome ou da descrição). Em *Configurações*, configure quais atributos participam da pesquisa por palavra-chave e seus **[pesos da pesquisa por palavra-chave](./settings.md)** relativos.
-- **[Regras de merchandising](./merchandising/rules/overview.md)**, como fixar, aumentar e atenuar
+- **Classificação inteligente** (quando habilitada), que mescla relevância textual com sinais comportamentais — consulte [Como funciona a pontuação de classificação inteligente](../merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)
+- **[Pesquise peso](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/search/search-results)** em cada atributo e outros fatores de relevância textual (por exemplo, a frequência com que os termos ocorrem e o comprimento do nome ou da descrição). Em *Configurações*, configure quais atributos participam da pesquisa por palavra-chave e seus **[pesos da pesquisa por palavra-chave](../settings.md)** relativos.
+- **[Regras de merchandising](../merchandising/rules/overview.md)**, como fixar, aumentar e atenuar
 
 Como esses sinais interagem, um produto que corresponde somente no nível mais amplo pode, às vezes, ser classificado acima de uma correspondência de frase mais estreita, por exemplo, quando **pesos de pesquisa** ou frequência de termo em um campo de alto peso superam uma correspondência de frase mais fraca em outro lugar.
 
@@ -97,8 +97,8 @@ Atributos configurados com o **peso mínimo de pesquisa** (peso **1**) e **não*
 
 ## Tópicos relacionados
 
-- [Configurações](./settings.md)
-- [Desempenho da pesquisa](./manage-results/search-performance.md)
-- [Visão geral das regras de merchandising](./merchandising/rules/overview.md)
-- [Adicionar regras de pesquisa](./merchandising/rules/add.md)
-- [Visão geral dos sinônimos](./merchandising/synonyms/overview.md)
+- [Configurações](../settings.md)
+- [Desempenho da pesquisa](search-performance.md)
+- [Visão geral das regras de merchandising](../merchandising/rules/overview.md)
+- [Adicionar regras de pesquisa](../merchandising/rules/add.md)
+- [Visão geral dos sinônimos](../merchandising/synonyms/overview.md)
