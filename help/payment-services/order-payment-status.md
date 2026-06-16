@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders, Paas, Saas
-source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
+source-git-commit: 09630af055b4d59f37fba2d3c398042161a7afa0
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2254'
 ht-degree: 0%
 
 ---
@@ -108,9 +108,22 @@ Durante o check-out do cliente ou quando um administrador cria uma fatura para u
 
 Detectar quando uma transação de captura pendente entra em um status `Completed` para que os comerciantes possam retomar o processamento do pedido afetado.
 
-Para garantir que esse processo funcione conforme o esperado, os comerciantes devem configurar um novo trabalho cron. Quando o job estiver configurado para ser executado automaticamente, nenhuma outra intervenção será esperada do comerciante.
+>[!NOTE]
+>
+>O monitoramento assíncrono está desabilitado por padrão. Quando desabilitadas, as ordens com uma transação de captura `Pending` não são movidas automaticamente para `Payment Review`. Para habilitar esse comportamento, ative o monitoramento assíncrono seguindo as etapas abaixo.
 
-Consulte [Configurar trabalhos cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=pt-BR). Depois de configurado, o novo trabalho é executado a cada 30 minutos para buscar atualizações para pedidos com status `Payment Review`.
+Habilitar monitoramento assíncrono: [!BADGE Somente PaaS]{type=Informative tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."}
+
+1. Habilite a configuração `async_status_updates`. Como essa configuração não está disponível no Admin, habilite-a na linha de comando:
+
+   ```bash
+   bin/magento config:set payment/payment_services/async_status_updates 1
+   ```
+
+1. Habilite e agende o trabalho cron `sync_order_payment_status` para que as atualizações de status sejam buscadas automaticamente. Consulte [Configurar trabalhos cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html?lang=pt-BR).
+
+Quando a configuração e o trabalho cron estiverem habilitados, o trabalho cron será executado a cada 10 minutos para buscar atualizações para pedidos no status `Payment Review`. Após a configuração, nenhuma ação adicional do comerciante é necessária em operação normal.
+
 
 Os comerciantes podem verificar o status de pagamento atualizado por meio da exibição do relatório Status de pagamento da ordem.
 
