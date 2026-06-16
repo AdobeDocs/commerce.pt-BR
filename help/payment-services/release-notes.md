@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 29747e38a2800997c251f24f70b6356aada9fab9
+source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
 workflow-type: tm+mt
-source-wordcount: '5401'
+source-wordcount: '5400'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Essas notas de versão descrevem alterações e correções de recursos que ocor
 
 _8 de junho de 2026_
 
-![Novo problema](../assets/new.svg)<!-- Issue PAY-6510 --> Para [!DNL Adobe Commerce as a Cloud Service], a interface do painel [!DNL Payment Services] no [!DNL Commerce Admin] permite que os comerciantes abram o [Relatório de transações](reporting.md#transactions-report-view) diretamente do painel. Este painel SaaS expõe somente relatórios **selecionados** (não todos os relatórios ou pontos de entrada da Página inicial disponíveis no Adobe Commerce na nuvem e no local); consulte [[!DNL Payment Services] Página inicial](payments-home.md). Para obter as notas de versão e o tempo do ACCS, consulte [Exibir o relatório de Transações de Serviços de Pagamento](../cloud-service/release-notes.md#view-the-payment-services-transactions-report).
+![Novo problema](../assets/new.svg)<!-- Issue PAY-6510 --> Para [!DNL Adobe Commerce as a Cloud Service], a interface do painel [!DNL Payment Services] no [!DNL Commerce Admin] permite que os comerciantes abram o [Relatório de transações](reporting.md#transactions-report-view) diretamente do painel. Este painel SaaS expõe somente relatórios **selecionados** (não todos os relatórios ou pontos de entrada da Página inicial disponíveis no Adobe Commerce na nuvem e no local); consulte [[!DNL Payment Services] Página inicial](payments-home.md). Para obter as notas de versão e o tempo de execução de [!DNL Adobe Commerce as a Cloud Service], consulte [Exibir o relatório de Transações de Serviços de Pagamento](../cloud-service/release-notes.md#view-the-payment-services-transactions-report).
 
 _21 de janeiro de 2026_
 
