@@ -5,19 +5,12 @@ feature: Cloud, Migration
 role: Developer, Admin
 level: Intermediate
 TQID: 'https://experienceleague.adobe.com/-OrsBVtHRcEV5EzgHzzP0JVf0aQWfSO2Fu1R5F5jtAw'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 62f30cb267191c76f77d077b9ea07022c9cc9abe
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c32adafa-ed01-4b31-997e-2413013911b0id: cc250cf1-34eb-4863-80d0-d170d45ea067id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: fcbf661a05f5d7ff33a885e3f86dbb3a551d09df
 workflow-type: tm+mt
-source-wordcount: 2365
+source-wordcount: 2505
 ht-degree: 0%
 
 ---
@@ -25,17 +18,17 @@ ht-degree: 0%
 
 # Avaliação da migração
 
->[!TIP]
+>[!IMPORTANT]
 >
->Entre em contato com o gerente de conta da solução para solicitar uma avaliação de migração da instância existente.
+> A Avaliação de Migração só está disponível ao migrar projetos [!DNL Adobe Commerce on Cloud Infrastructure] ou [!DNL Adobe Commerce on-premises] para [!DNL Adobe Commerce as a Cloud Service].
 
 Uma avaliação de migração do Commerce é uma análise automatizada da implementação existente do Adobe Commerce. As ferramentas da Adobe verificam sua base de códigos Commerce e produzem um relatório estruturado que faz o inventário de tudo o que foi construído, personalizado ou modificado. O relatório indica como as personalizações feitas na sua base de código afetam sua migração para o [!DNL Adobe Commerce as a Cloud Service].
 
 O relatório é fornecido como um arquivo HTML que pode ser aberto em qualquer navegador. Não é necessário acesso ao ambiente de produção, exceto compartilhar inicialmente a base de código do projeto.
 
->[!IMPORTANT]
+>[!TIP]
 >
-> A Avaliação de Migração só está disponível ao migrar projetos [!DNL Adobe Commerce on Cloud Infrastructure] ou [!DNL Adobe Commerce on-premises] para [!DNL Adobe Commerce as a Cloud Service].
+>Entre em contato com o gerente de conta da solução para solicitar uma avaliação de migração da instância existente.
 
 **A avaliação fornece:**
 
@@ -68,6 +61,8 @@ A seção Complexidade de migração contém a classificação de avaliação da
 
 **Pontuação de complexidade e complexidade da migração**
 
+![Seção Complexidade de Migração mostrando pontuação ponderada, fatores de risco principais e métricas principais](../assets/assessment-migration-complexity.png){width="600" zoomable="yes"}
+
 A Pontuação de complexidade pesa cada entrada de acordo com a dificuldade de migração. A pontuação é mapeada para uma classificação de complexidade de migração usando limites fixos:
 
 | Classificação | Intervalo de pontuação | Abordagem de migração típica |
@@ -78,6 +73,8 @@ A Pontuação de complexidade pesa cada entrada de acordo com a dificuldade de m
 
 **Taxa de Módulo Personalizada**
 
+![Linha de métricas de Taxa de Módulo Personalizada mostrando o percentual de módulo personalizado, módulos de terceiros, contagem de temas personalizados, ganchos críticos, total de arquivos e tamanho de base de código PHP](../assets/assessment-custom-module-ratio.png){width="600" zoomable="yes"}
+
 A porcentagem de seus módulos que foram criados especificamente para a sua implementação. Uma taxa maior significa que mais códigos personalizados devem ser auditados e migrados. A taxa média de módulos personalizados do cliente é de aproximadamente 62%.
 
 >[!TIP]
@@ -86,13 +83,19 @@ A porcentagem de seus módulos que foram criados especificamente para a sua impl
 
 **Detalhamento do Tipo de Arquivo**
 
+![Tabela de Detalhamento de Tipo de Arquivo listando extensões de arquivo com contagens de arquivos e linhas de código](../assets/assessment-file-type-breakdown.png){width="600" zoomable="yes"}
+
 Uma lista do número de arquivos na base de código, organizada por tipo.
 
 **Módulos de maior impacto**
 
+![Lista de Módulos de Impacto Mais Alto mostrando nomes de módulo, descrições, classificações de impacto e contagens de ganchos](../assets/assessment-highest-impact-modules.png){width="600" zoomable="yes"}
+
 Uma lista com curadoria dos módulos específicos da sua loja que exigem mais atenção da migração. Esses módulos geralmente são módulos que interagem com checkout, pagamentos ou gerenciamento de pedidos. Cada módulo de alto impacto precisa de seu próprio plano de migração. Essa lista é o melhor ponto de partida para conversas com sua equipe técnica.
 
 ### Complexidade da loja
+
+![Seção Complexidade da Loja mostrando namespaces de tema personalizados, contagem total de blocos, arquivos XML de layout, substituições de identificadores principais e sinais acionáveis](../assets/assessment-storefront-complexity.png){width="600" zoomable="yes"}
 
 A seção Complexidade da loja mostra o esforço necessário para migrar a camada de apresentação de front-end da loja. Esse fluxo de trabalho é um fluxo de trabalho distinto da migração de código de back-end, abordado por desenvolvedores de front-end e que geralmente requer conversas de planejamento separadas.
 
@@ -110,8 +113,9 @@ A seção Complexidade da loja mostra o esforço necessário para migrar a camad
 | 100-300 | Medium - planejar uma onda de front-end estruturada |
 | Mais de 300 | Alto - priorize como um fluxo de trabalho dedicado |
 
-
 ### Drivers de migração
+
+![Seção de Drivers de Migração mostrando os cartões Personalização de Espaço, Plug-ins e Observadores e Preferências de Classe com classificações de esforço](../assets/assessment-migration-drivers.png){width="600" zoomable="yes"}
 
 A seção Drivers de migração exibe os principais fatores que determinam sua classificação de complexidade.
 
@@ -127,6 +131,8 @@ Cada driver é exibido com um esforço Alto, Medium ou Baixo. Aborde primeiro os
 
 ### Modelo de dados
 
+![Seção de modelo de dados mostrando contagens de tabelas personalizadas, modificações da tabela principal e atributos críticos de EAV](../assets/assessment-data-model.png){width="600" zoomable="yes"}
+
 A seção Modelo de Dados exibe uma contagem de tabelas personalizadas, modificações nas tabelas do banco de dados principal [!DNL Adobe Commerce] e atributos Entity-Attribute-Value (EAV) críticos.
 
 As modificações na tabela principal são a categoria mais difícil de migrar, pois criam dependências em uma versão de esquema da plataforma específica e têm um alto impacto na fórmula de Pontuação de complexidade.
@@ -136,6 +142,8 @@ As modificações na tabela principal são a categoria mais difícil de migrar, 
 >Se seu relatório listar mais de 15 modificações na tabela principal, planeje um fluxo de trabalho de migração de dados dedicado antes de determinar o escopo da migração do módulo de back-end.
 
 ## Detalhamento de personalização
+
+![Seção de Detalhamento de Personalização listando todas as categorias de personalização com contagens e indicadores de impacto](../assets/assessment-customization-breakdown.png){width="600" zoomable="yes"}
 
 A seção Detalhamento da personalização fornece métricas detalhadas em cada categoria de personalização na loja.
 
@@ -196,6 +204,8 @@ O campo [!UICONTROL Drop-in migration required] indica quais áreas de vitrine e
 >Se o **Check-out** estiver listado como um requisito de migração de check-in, planeje um fluxo de trabalho de check-out dedicado. Essa é a tarefa de migração de vitrine mais complexa e crítica para os negócios.
 
 ## Guia Relatórios do módulo
+
+![Guia Relatórios do módulo mostrando uma lista de módulos pesquisáveis com filtros de impacto e painel de análise detalhada do módulo](../assets/assessment-module-reports-tab.png){width="600" zoomable="yes"}
 
 A guia **[!UICONTROL Module Reports]** contém uma entrada dedicada para cada módulo personalizado em sua loja. Compartilhe essas informações com sua equipe técnica.
 
@@ -296,10 +306,10 @@ Manages custom shipping rate calculations based on customer account tier and ord
       - [Habilidades e prompts](https://developer.adobe.com/commerce/extensibility/developer-agent/skills-and-prompts)
       - [Casos de uso](https://developer.adobe.com/commerce/extensibility/developer-agent/use-cases)
    - [Visão geral do App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/)
-   - [App Builder para Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)
+   - [App Builder para Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder)
    - Starter kits
       - [Kit inicial de integração de back-end](https://developer.adobe.com/commerce/extensibility/starter-kit/integration/)
       - [Checkout do kit inicial](https://developer.adobe.com/commerce/extensibility/starter-kit/checkout/)
 - Desenvolvimento de vitrine
-   - [Visão geral](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR)
-   - [Habilidades de IA da loja](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/?lang=pt-BR)
+   - [Visão geral](https://experienceleague.adobe.com/developer/commerce/storefront/)
+   - [Habilidades de IA da loja](https://experienceleague.adobe.com/developer/commerce/storefront/boilerplate/ai-agent-skills/)
