@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
+source-git-commit: 776aa6f6d887c93686539897e936fe8d3898e462
 workflow-type: tm+mt
-source-wordcount: 4182
+source-wordcount: 4439
 ht-degree: 0%
 
 ---
@@ -47,7 +47,45 @@ As notas de versão a seguir contêm atualizações para [!DNL Adobe Commerce as
 >
 >Se você estiver usando o Adobe Commerce no local ou o Adobe Commerce na infraestrutura em nuvem, consulte as [notas de versão do Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/overview).
 
-## Junho de 2026 - versão #1 {#latest}
+## Junho de 2026 - versão #2 {#latest}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+[!BADGE Sandbox]{type=Caution tooltip="Os itens listados estão disponíveis atualmente apenas em ambientes de sandbox. A Adobe disponibiliza novas versões em ambientes de sandbox primeiro para fornecer tempo para testar alterações futuras antes que a versão esteja disponível em ambientes de produção."}
+
+Os itens a seguir estão disponíveis atualmente apenas em ambientes de sandbox e estão programados para serem transferidos para ambientes de produção em julho.
+
+>[!BEGINSHADEBOX]
+
+### Filtrar pedidos e faturas por empresa
+
+Os pontos de extremidade da API REST `GET /V1/orders` e `GET /V1/invoices` agora oferecem suporte à filtragem por `company_id` e `company_name`, permitindo que as integrações B2B recuperem pedidos ou faturas de uma empresa específica em uma única solicitação. <!-- ACCS-1111, CCSAAS-5076 -->
+
+### Exibir o histórico de modificação de pedidos no Administrador
+
+A página de detalhes do pedido [!DNL Commerce Admin] agora exibe a cadeia de modificação completa de um pedido que inclui o pedido original e todos os pedidos secundários criados por meio de edições subsequentes. Os comerciantes podem navegar entre pedidos, alternar a visibilidade de pedidos cancelados e acessar todas as faturas, remessas, avisos de crédito e comentários de pedidos associados na exibição em cadeia.<!-- ACCS-968 -->
+
+>[!NOTE]
+>
+>Para ativar esse recurso, entre em contato com o Gerente de sucesso do cliente da Adobe Commerce.
+
+### Exibir ativos sincronizados em [!DNL AEM Assets]
+
+A integração [!DNL AEM Assets] agora inclui uma página [!UICONTROL **Status de Sincronização**] ([!UICONTROL **Lojas**] > [!UICONTROL **AEM Assets**] > [!UICONTROL **Status de Sincronização**]) com uma exibição de lista centrada em ativos de todos os ativos sincronizados, incluindo filtragem, colunas classificáveis, como a data da última sincronização, e detalhes de erros para sincronizações com falha.<!-- ACAP-1246 -->
+
+### Melhorias e correções de erros
+
+Os seguintes aprimoramentos, otimizações e correções de erros selecionados estão incluídos nesta versão:
+
+* Agora, catálogos compartilhados grandes são mais fáceis de gerenciar no Admin, com tempos de carregamento melhorados e probabilidade reduzida de tempos limite. <!-- CCSAAS-4946, CCSAAS-4925, CCSAAS-1245, CCSAAS-1246 -->
+
+* Correção de uma falha na criação de remessa que ocorria ao criar remessas para pedidos que continham produtos configuráveis. <!-- ACCS-1095 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## Junho de 2026 - versão #1
 
 [!BADGE Produção]{type=Neutral tooltip="Os itens listados estão disponíveis atualmente em Ambientes de produção."}
 
@@ -533,7 +571,7 @@ As seguintes alterações foram feitas aos componentes de devolução direta B2B
 
    * **[Gerenciamento da empresa](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/?lang=pt-BR)** - Habilita o gerenciamento de perfis da empresa e permissões com base em funções para vitrines da Adobe Commerce.
    * **[Alternador de empresa](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/?lang=pt-BR)** - Fornece um componente de interface do usuário para que os usuários alternem entre várias empresas às quais estão associados.
-   * **[Ordens de compra](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/?lang=pt-BR)** - Gerencia fluxos de trabalho de ordem de compra, regras de aprovação e histórico de ordens de compra para transações B2B.
+   * **[Ordens de compra](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/)** - Gerencia fluxos de trabalho de ordem de compra, regras de aprovação e histórico de ordens de compra para transações B2B.
    * **[Gerenciamento de cotações](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/?lang=pt-BR)** - Habilita cotações negociáveis para clientes B2B com fluxos de trabalho de solicitação de cotação, negociação e aprovação.
    * **[Listas de requisições](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/?lang=pt-BR)** - Fornece ferramentas para criar e gerenciar listas de requisições para compras repetidas e pedidos em massa.
 
