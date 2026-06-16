@@ -3,9 +3,9 @@ title: Pesquisa semântica
 description: Habilitar a pesquisa semântica de IA para  [!DNL Live Search]  em Configurações. Nenhuma configuração de atributo ou alteração de vitrine eletrônica é necessária.
 role: Admin
 recommendations: noCatalog
-source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
+source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ O Adobe Commerce na nuvem e os comerciantes locais devem habilitar a pesquisa se
 
    Atualização dos resultados da pesquisa após a conclusão da indexação. Para um catálogo de médio porte, a indexação pode levar até meia hora. Para catálogos grandes com milhões de produtos, pode levar algumas horas.
 
-### Para clientes do ACCS
+### Para [!DNL Adobe Commerce as a Cloud Service] clientes
 
 [!DNL Adobe Commerce as a Cloud Service] clientes usam o mesmo espaço de trabalho de **Configurações** no Administrador [!DNL Live Search]. A pesquisa semântica é **habilitada por padrão** para catálogos em inglês qualificados. Confirme se **[!UICONTROL Semantic search]** está habilitado ou desabilite-o se não quiser correspondência semântica na loja.
 
