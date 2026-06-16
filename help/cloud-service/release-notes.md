@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 776aa6f6d887c93686539897e936fe8d3898e462
+source-git-commit: 469111676c7ac8bdf66f8f42bd26745ce7f88928
 workflow-type: tm+mt
-source-wordcount: 4439
+source-wordcount: 4489
 ht-degree: 0%
 
 ---
@@ -60,6 +60,10 @@ Os itens a seguir estão disponíveis atualmente apenas em ambientes de sandbox 
 ### Filtrar pedidos e faturas por empresa
 
 Os pontos de extremidade da API REST `GET /V1/orders` e `GET /V1/invoices` agora oferecem suporte à filtragem por `company_id` e `company_name`, permitindo que as integrações B2B recuperem pedidos ou faturas de uma empresa específica em uma única solicitação. <!-- ACCS-1111, CCSAAS-5076 -->
+
+### Listar modelos de email personalizados por meio da API
+
+O novo ponto de extremidade da API REST `GET /V1/custom-email/templates` retorna seus [modelos de email personalizados](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/), incluindo a ID, o código e o assunto de cada modelo. As integrações podem usar uma ID de modelo retornada com o ponto de extremidade `POST /V1/custom-email/send` em vez de pesquisar a ID manualmente. <!-- CCSAAS-5089 -->
 
 ### Exibir o histórico de modificação de pedidos no Administrador
 
@@ -125,7 +129,7 @@ Os seguintes aprimoramentos, otimizações e correções de erros selecionados e
 
 * Correção de um erro &quot;o consumidor não está autorizado&quot; que poderia impedir logons do GraphQL convidado quando o cabeçalho `X-Adobe-Company` estava presente na solicitação. <!-- ACCS-949 -->
 
-* Correção de um problema em que a edição ou exclusão de uma empresa no [!DNL Commerce Admin] poderia falhar com um erro &quot;Nenhuma entidade&quot; após atribuir um cliente à empresa por meio do ponto de extremidade REST `V1/customers/companies` do PUT. <!-- ACCS-856 -->
+* Correção de um problema em que a edição ou exclusão de uma empresa no [!DNL Commerce Admin] poderia falhar com um erro &quot;Nenhuma entidade&quot; após atribuir um cliente à empresa por meio do ponto de extremidade REST PUT `V1/customers/companies`. <!-- ACCS-856 -->
 
 * Solução de um problema com status de grade de ordens de venda obsoletas. <!-- CCSAAS-4915 -->
 
@@ -573,7 +577,7 @@ As seguintes alterações foram feitas aos componentes de devolução direta B2B
    * **[Alternador de empresa](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/?lang=pt-BR)** - Fornece um componente de interface do usuário para que os usuários alternem entre várias empresas às quais estão associados.
    * **[Ordens de compra](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/)** - Gerencia fluxos de trabalho de ordem de compra, regras de aprovação e histórico de ordens de compra para transações B2B.
    * **[Gerenciamento de cotações](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/?lang=pt-BR)** - Habilita cotações negociáveis para clientes B2B com fluxos de trabalho de solicitação de cotação, negociação e aprovação.
-   * **[Listas de requisições](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/?lang=pt-BR)** - Fornece ferramentas para criar e gerenciar listas de requisições para compras repetidas e pedidos em massa.
+   * **[Listas de requisições](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/)** - Fornece ferramentas para criar e gerenciar listas de requisições para compras repetidas e pedidos em massa.
 
 * Lançado o pacote de compatibilidade da vitrine B2B. Este pacote aprimora o esquema do GraphQL B2B [!DNL Adobe Commerce] para ajudar a melhorar o desenvolvimento em sistemas B2B.
 
