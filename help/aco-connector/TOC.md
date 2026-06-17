@@ -28,4 +28,4 @@ ht-degree: 6%
    - [Mapeamento de campos para feeds de conector](reference/field-mapping.md)
    - [Estimar o volume de dados e o tempo de sincronização](reference/estimate-data-volume-sync-time.md)
 - [Notas de versão](release-notes.md)
-- [Retornar à página inicial dos Serviços da Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Retornar à página inicial dos Serviços da Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=pt-BR)

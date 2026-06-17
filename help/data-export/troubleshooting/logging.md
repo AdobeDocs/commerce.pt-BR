@@ -31,7 +31,7 @@ A extensão [!DNL data export] fornece logs para rastrear processos de sincroniz
 
 >[!NOTE]
 >
->Você também pode acompanhar a integridade e o desempenho dos feeds de exportação de dados para dados de produto e categoria no [painel Status de sincronização do feed de dados](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) em Administrador.
+>Você também pode acompanhar a integridade e o desempenho dos feeds de exportação de dados para dados de produto e categoria no [painel Status de sincronização do feed de dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) em Administrador.
 
 ## Logs
 
@@ -148,7 +148,7 @@ Se os dados estiverem ausentes ou incorretos nos serviços da Commerce, verifiqu
 - O log de erros de Exportação de Dados (`commerce-data-export-errors.log`) captura erros que ocorrem durante a fase de coleta.
 - O log de erros de exportação SaaS (`saas-export-errors.log`) captura os erros que ocorrem durante a fase de transmissão.
 
-Se você vir erros não relacionados à configuração ou a extensões de terceiros, envie um [tíquete de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) com o máximo de informações possível.
+Se você vir erros não relacionados à configuração ou a extensões de terceiros, envie um [tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) com o máximo de informações possível.
 
 ### Resolver problemas de sincronização do catálogo {#resolvesync}
 

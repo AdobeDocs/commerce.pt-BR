@@ -3,7 +3,7 @@ title: Mapeamento de campos para  [!DNL Adobe Commerce Optimizer Connector] Feed
 description: Saiba mais sobre o  [!DNL Adobe Commerce Optimizer Connector] mapeamento de campos de  [!DNL Adobe Commerce] dados de catálogo para  [!DNL Adobe Commerce Optimizer] formatos de API de assimilação para todos os feeds.
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
+badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
 autotag-review: '2026-06-09T15:49:03.934Z'
 TQID: 'https://experienceleague.adobe.com/SOWOnguudhqzX-r66nGUqc-WKet5qq6GRV11ADx0Me4'
 product_v2:

@@ -2,7 +2,7 @@
 title: Integração da loja headless [!DNL Adobe Commerce Optimizer Connector]
 description: Saiba como integrar vitrines headless à  [!DNL Adobe Commerce Optimizer Connector] API do GraphQL, IDs da tabela de preços e codificação de pacotes de add-to-cart.
 feature: Storefront, Integration, GraphQL
-badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
+badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
 autotag-review: '2026-06-09T16:27:30.102Z'
 TQID: 'https://experienceleague.adobe.com/Orif1rROglTQ-3ZkRj5LMF90Y-AdpfTnOgPmJXQjYgc'
 product_v2:

@@ -35,4 +35,4 @@ ht-degree: 2%
    - [Gerenciar a extensão de exportação de dados SaaS](manage-extension.md)
    - [Sincronizar feeds usando a CLI do Commerce](data-export-cli-commands.md)
    - [Esquema de tabela de feed](reference/feed-table-reference.md)
-- [Retornar à página inicial dos Serviços da Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- [Retornar à página inicial dos Serviços da Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=pt-BR)

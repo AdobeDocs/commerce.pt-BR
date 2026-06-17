@@ -36,7 +36,7 @@ Para implantações do Adobe Commerce na nuvem, no local ou no Adobe Commerce as
 
 - **[Página Status da Sincronização do Feed de Dados](../optimizer/setup/data-sync.md)** — Verifique o status de exportação do feed para implantações conectadas a [!DNL Live Search], [!DNL Product Recommendations] ou [!DNL Catalog Service]. Este painel mostra o status de exportação de feed de cada feed, incluindo os erros encontrados. Uma exibição detalhada mostra o status de exportação do feed de itens de feed individuais.
 
-- **[Painel de Gerenciamento de Dados](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** — Os usuários administradores podem exibir e rastrear dados exportados e sincronizados com êxito com o Commerce Services conectado. Este painel mostra os dados do produto sincronizados com os Serviços da Commerce.
+- **[Painel de Gerenciamento de Dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** — Os usuários administradores podem exibir e rastrear dados exportados e sincronizados com êxito com o Commerce Services conectado. Este painel mostra os dados do produto sincronizados com os Serviços da Commerce.
 
 >[!NOTE]
 >
