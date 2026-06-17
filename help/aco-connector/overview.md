@@ -2,31 +2,17 @@
 title: '[!DNL Adobe Commerce Optimizer Connector]'
 description: Saiba mais sobre [!DNL Adobe Commerce Optimizer Connector] a sincronização de catálogo, pesquisa e entrega de vitrine entre [!DNL Adobe Commerce] e [!DNL Adobe Commerce Optimizer].
 feature: Integration, Storefront, Configuration
-badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
+badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
 autotag-review: '2026-06-09T19:00:00.000Z'
 TQID: 'https://experienceleague.adobe.com/-C-XP5YYxwyGrkvVR6CDd-FpDybqnlaKMmFPKOKUbFA'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
-subfeature_v2:
-  - id: ae62cf09-5996-4921-bda8-fbe67b62e470
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-  - id: dad884f1-e840-49a1-970e-2f965bdbc410
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 23e4f419628a7838357752ecef0c242f1dcdd4c4
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75id: c32adafa-ed01-4b31-997e-2413013911b0id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+subfeature_v2: id: ae62cf09-5996-4921-bda8-fbe67b62e470id: f8ddfd3b-6194-46e8-a176-0e918039be56id: dad884f1-e840-49a1-970e-2f965bdbc410
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: e0eb8757-182f-49f3-94a4-1587d16f5094id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 990
+source-wordcount: 1075
 ht-degree: 0%
 
 ---
@@ -49,7 +35,7 @@ O [!DNL Adobe Commerce] permanece como seu sistema de registro de produtos, pre�
 | **Retorno do valor mais rápido com[!DNL Adobe Commerce Optimizer]** | Ative Pesquisas com IA, recomendações e headless na sua implantação existente do [!DNL Adobe Commerce]. |
 | **Alinhado aos escopos do Commerce** | Mapeia automaticamente sites, exibições de loja e grupos de clientes em [!DNL Adobe Commerce Optimizer] construções de catálogo (Origens de Catálogo e Catálogos de Preços). |
 | **Visibilidade operacional** | Monitore a integridade do feed, os últimos horários de sincronização e o status por SKU a partir de uma exibição dedicada do [!UICONTROL Data Feed Sync Status]. |
-| **Caminho pronto para o futuro em direção a SaaS** | Fornece um caminho de modernização de baixo risco da PaaS para [!DNL Adobe Commerce as a Cloud Service] + [!DNL Adobe Commerce Optimizer], sem uma replataforma. |
+| **Caminho pronto para o futuro em direção a SaaS** | Fornece um caminho de migração em fases do Commerce na nuvem ou no local para [!DNL Adobe Commerce as a Cloud Service] + [!DNL Adobe Commerce Optimizer], sem replataforma. |
 
 ## Arquitetura do conector {#connector-architecture}
 
@@ -63,6 +49,8 @@ Nesta arquitetura:
 - O conector exporta feeds de catálogo, preço e categoria
 - [!DNL Adobe Commerce Optimizer] assimila e normaliza os dados de feed em Fontes de Catálogo, Catálogos de Preços e Exibições de Catálogo
 - As vitrines (vitrines do Commerce em [!DNL Edge Delivery Services] ou compilações headless personalizadas) chamam APIs do GraphQL [!DNL Adobe Commerce Optimizer] para descoberta e recomendações e chamam [!DNL Adobe Commerce] ou outra plataforma de terceiros conectada para operações de carrinho e check-out
+
+Criado em [[!DNL SaaS Data Export]](/help/data-export/overview.md), o conector mapeia os feeds coletados para o formato [!DNL Catalog Data Ingestion API] e processa a autenticação e o envio. Consulte [Pipeline de sincronização do conector](/help/aco-connector/connector-sync-pipeline.md) para obter informações sobre comportamento de sincronização, controle de escopo e tratamento de erros.
 
 ## Como o conector funciona com o [!DNL Adobe Commerce] {#how-the-connector-works-with-adobe-commerce}
 
@@ -102,6 +90,8 @@ Após a configuração inicial, o conector suporta:
 - **Sincronizações delta** para atualizações contínuas quando produtos ou preços mudam
 - **Ressincronizar comandos** para feeds direcionados
 
+Para obter comportamento de sincronização automatizada, agendamentos de cron e manipulação de erros, consulte [Pipeline de sincronização do conector](/help/aco-connector/connector-sync-pipeline.md). Antes de uma sincronização completa de catálogo ou atualização extensa, use [Estimar volume de dados e tempo de sincronização](/help/aco-connector/reference/estimate-data-volume-sync-time.md) para planejar o tempo e evitar a interrupção do site.
+
 Os seguintes feeds estão disponíveis para o [!DNL Adobe Commerce Optimizer Connector]:
 
 - `products` - dados de produtos
@@ -112,7 +102,8 @@ Os seguintes feeds estão disponíveis para o [!DNL Adobe Commerce Optimizer Con
 
 Para obter detalhes adicionais, consulte os seguintes tópicos:
 
-- Para operações de ressincronização de CLI [!DNL Adobe Commerce], consulte o [comando de ressincronização de CLI](/help/data-export/data-export-cli-commands.md#sync-using-cli-commands){target="_blank"}
+- Verifique a sincronização de dados do catálogo e ressincronize manualmente os feeds do conector: [Gerenciar sincronização](/help/aco-connector/data-sync-manage.md)
+- Para operações de ressincronização de CLI do [!DNL Adobe Commerce], consulte [Sincronizar feeds usando a CLI do Commerce](/help/data-export/data-export-cli-commands.md)
 - [[!DNL Adobe Commerce Optimizer Connector] módulos e pontos de extremidade de feed](/help/aco-connector/reference/connector-reference.md)
 - [Mapeamento de campos para feeds de conector](/help/aco-connector/reference/field-mapping.md)
 
@@ -122,7 +113,7 @@ Quando os dados do [!DNL Adobe Commerce] estiverem disponíveis no [!DNL Adobe C
 
 - **Modos de exibição e políticas do catálogo** — Defina subconjuntos específicos de região, marca ou cliente e regras de acesso do menu [!UICONTROL Store setup]
 - **Descoberta de produtos e recomendações** — Configure pesquisa, aspectos, regras de merchandising, sinônimos e unidades de recomendação no menu [!UICONTROL Merchandising]. O comportamento de pesquisa e recomendação é gerenciado em [!DNL Adobe Commerce Optimizer]; as configurações [!DNL Live Search] e [!DNL Product Recommendations] no Administrador [!DNL Adobe Commerce] não se aplicam mais a esses fluxos
-- **Conexões da loja** — lojas Point Commerce em [!DNL Edge Delivery Services] ou compilações headless de terceiros no [!DNL Adobe Commerce Optimizer] locatário correto, exibição de catálogo e pontos de extremidade de API de Merchandising. Para obter um exemplo de integração de terceiros, consulte o [Salesforce Commerce Connector for [!DNL Adobe Commerce Optimizer]](/help/optimizer/developer/salesforce-connector.md)
+- **Conexões da loja** — lojas Point Commerce em [!DNL Edge Delivery Services] ou compilações headless de terceiros no [!DNL Adobe Commerce Optimizer] locatário correto, exibição de catálogo e pontos de extremidade de API de Merchandising. Para integrações headless personalizadas, consulte [Integração headless de vitrine](/help/aco-connector/headless-storefront.md). Para obter um exemplo de integração de terceiros, consulte o [Salesforce Commerce Connector for [!DNL Adobe Commerce Optimizer]](/help/optimizer/developer/salesforce-connector.md)
 - **Check-out** — Mantenha o carrinho, o check-out, o gerenciamento de pedidos e as contas de clientes em [!DNL Adobe Commerce] ou em uma plataforma conectada de terceiros. Use [!DNL App Builder] e [!DNL API Mesh] para entrega do carrinho quando necessário
 
 Para obter uma orientação de configuração passo a passo, consulte [Introdução](/help/aco-connector/get-started.md) e as [[!DNL Adobe Commerce Optimizer] ferramentas de Merchandising](/help/optimizer/overview.md#quick-tour).
@@ -133,7 +124,7 @@ O conector foi projetado para comerciantes B2C com [!DNL Adobe Commerce] em nuve
 
 **Casos de uso comuns:**
 
-- **Modernizar somente a loja**
+- **Migração da vitrine eletrônica para o Edge Delivery**
 Mantenha seu back-end existente do [!DNL Adobe Commerce], mova o PLP/Search/PDP para [!DNL Edge Delivery Services] vitrines viabilizadas pelo [!DNL Adobe Commerce Optimizer]
 
 - **Dimensionando desempenho de catálogo e pesquisa**
@@ -144,7 +135,7 @@ Use o conector como uma etapa em direção a [!DNL Adobe Commerce as a Cloud Ser
 
 ## Responsabilidades e pré-requisitos de implementação {#responsibilities-prerequisites}
 
-[!DNL Adobe Commerce] é a fonte da verdade para produtos, preços e grupos de clientes. Faça alterações em [!DNL Adobe Commerce]; o conector as sincroniza com [!DNL Adobe Commerce Optimizer].
+[!DNL Adobe Commerce] é a fonte da verdade para produtos, preços e grupos de clientes. Faça alterações em [!DNL Adobe Commerce], e o conector as sincroniza com [!DNL Adobe Commerce Optimizer].
 
 **[!DNL Adobe Commerce Optimizer]é responsável por:**
 
@@ -162,11 +153,11 @@ Use o conector como uma etapa em direção a [!DNL Adobe Commerce as a Cloud Ser
 - Verifique se [!DNL Adobe Commerce] atende à versão mínima e aos requisitos de [!DNL Adobe Commerce Optimizer Connector]. Consulte [Introdução](/help/aco-connector/get-started.md#requirements-to-use-the-integration) para obter detalhes.
 - Verifique se você tem acesso à Organização IMS, uma instância [!DNL Adobe Commerce Optimizer] e as credenciais e os detalhes de região necessários.
 
-## Mais ajuda sobre este tópico {#more-help-on-this-topic}
-
-- Configure a integração e habilite os fluxos de trabalho principais: [Introdução ao [!DNL Adobe Commerce Optimizer Connector]](/help/aco-connector/get-started.md)
-- Saiba mais sobre os conceitos e a arquitetura do [!DNL Adobe Commerce Optimizer]: [O que é o [!DNL Adobe Commerce Optimizer]?](/help/optimizer/overview.md)
-- Entenda o mecanismo de sincronização, a inicialização e o tratamento de erros: [Pipeline de sincronização do conector](/help/aco-connector/connector-sync-pipeline.md)
-- Mapeamento de dados em nível de campo para todos os feeds: [Mapeamento de campo para feeds de conector](/help/aco-connector/reference/field-mapping.md)
-- Integre vitrines headless usando GraphQL e codificação de pacote: [Integração de vitrines headless](/help/aco-connector/headless-storefront.md)
-- Diagnosticar problemas de sincronização e configuração: [Solução de problemas](/help/aco-connector/troubleshooting.md)
+>[!MORELIKETHIS]
+>
+> - [Introdução ao [!DNL Adobe Commerce Optimizer Connector]](/help/aco-connector/get-started.md) — Configure a integração e habilite os fluxos de trabalho principais.
+> - [Pipeline de sincronização do conector](/help/aco-connector/connector-sync-pipeline.md) — Entenda o mecanismo de sincronização, a inicialização e a manipulação de erros.
+> - [Gerenciar sincronização](/help/aco-connector/data-sync-manage.md) — Verifique a sincronização de dados do catálogo e ressincronize os feeds manualmente.
+> - [Mapeamento de campos para feeds de conector](/help/aco-connector/reference/field-mapping.md) — Revise o mapeamento de dados em nível de campo para todos os feeds.
+> - [Cenários de solução de problemas](/help/aco-connector/troubleshooting/troubleshooting-scenarios.md) — Resolva erros de configuração ou resultados de sincronização inesperados.
+> - [Notas de versão](/help/aco-connector/release-notes.md) — Revise as atualizações de conectores e os problemas conhecidos.

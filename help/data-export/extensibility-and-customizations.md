@@ -1,22 +1,17 @@
 ---
 title: Estender e personalizar dados do feed de exportação de dados SaaS
 description: Saiba como estender e personalizar os dados do feed  [!DNL SaaS Data Export] .
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 694bd281-12c5-415c-a251-b4251e2edea7
 TQID: https://experienceleague.adobe.com/T71zNl7WOrqzEsz4H8A8arx--q6w1B0h33CF2Q0VI4A
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 542
+source-wordcount: 815
 ht-degree: 0%
 
 ---
@@ -25,7 +20,7 @@ ht-degree: 0%
 
 A extensão [!DNL Commerce Data Export] fornece uma maneira de exportar dados do aplicativo [!DNL Commerce] para os Serviços da Commerce, como o Live Search, o Serviço de Catálogo e as Recomendações de Produto. Se necessário, você pode estender e personalizar os dados do feed para incluir dados de atributo adicionais ou modificar os dados coletados.
 
-Depois de adicionar dados de atributo, ele pode ser acessado no [campo de atributos](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type) do esquema GraphQL para o serviço de vitrine.
+Depois de adicionar dados de atributo, ele pode ser acessado no [campo de atributos](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type) do esquema do GraphQL para serviços de vitrine.
 
 >[!NOTE]
 >
@@ -70,7 +65,7 @@ Você pode adicionar um atributo de produto do Commerce Admin ou programaticamen
 
 1. Adicione o atributo a um conjunto de atributos, conforme necessário.
 
-Consulte [Criar atributos de produto](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) no *Guia de Administração do Adobe Commerce*.
+Consulte [Criar atributos de produto](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) no *Guia de Administração do Adobe Commerce*.
 
 #### Criar o atributo de produto de forma programática
 
@@ -85,4 +80,99 @@ Para obter informações sobre como criar patches de dados, consulte [Desenvolve
 
 ### Adicionar o atributo de produto dinamicamente
 
-Para obter detalhes sobre como criar atributos de produto dinamicamente sem introduzir novos atributos EAV, consulte [Adicionar atributo dinamicamente](add-attribute-dynamically.md).
+Para obter detalhes sobre como criar atributos de produto dinamicamente sem introduzir novos atributos EAV, consulte [Adicionar atributos de produto dinamicamente](add-attribute-dynamically.md).
+
+## Visão geral do esquema de feed (`et_schema.xml`) {#feed-schema-overview}
+
+Cada estrutura de dados de feed é declarada em `etc/et_schema.xml` usando um DSL XML simples. O framework lê este arquivo para determinar quais campos coletar e quais classes de provedor PHP chamar.
+
+```xml
+<record name="Product">
+  <field name="sku" type="ID" />
+  <field name="name" type="String" />
+  <field name="attributes" type="Attribute" repeated="true"
+         provider="Magento\CatalogDataExporter\Model\Provider\Product\Attributes">
+    <using field="productId" />
+    <using field="storeViewCode" />
+  </field>
+</record>
+```
+
+Principais elementos:
+
+- `<record>` - define a entidade de feed
+- `<field>` - declara um campo de dados; o atributo `provider` aponta para uma classe PHP implementando `DataProcessorInterface` que busca os dados
+- `repeated="true"` - o campo é uma matriz de objetos
+- `<using>` - parâmetros de entrada passados do contexto de registro pai para o provedor
+
+>[!IMPORTANT]
+>
+>Adicionar um novo campo a `et_schema.xml` altera apenas o que [!DNL Adobe Commerce] coleta localmente. O serviço SaaS de recebimento também deve ser atualizado para aceitar e processar o novo campo antes que ele tenha qualquer efeito na loja.
+
+## Observar dados após o envio {#observe-data-after-submission}
+
+[!DNL SaaS Data Export] despacha o evento `data_sent_outside` após cada envio de lote bem-sucedido para um serviço SaaS. Use este evento para logs de auditoria, acionadores de webhook ou coleções de métricas.
+
+**Evento:** `data_sent_outside`
+
+**Dados disponíveis:**
+
+| Chave | Descrição |
+|---|---|
+| `timestamp` | Carimbo de data e hora Unix do envio |
+| `type` | Nome do feed (por exemplo, `products`, `prices`) |
+| `data` | A carga do feed enviada |
+
+**Exemplo de observador:**
+
+```php
+<?php
+namespace My\Module\Observer;
+
+use Magento\Framework\Event\Observer;
+use Magento\Framework\Event\ObserverInterface;
+
+class DataSentOutsideObserver implements ObserverInterface
+{
+    public function execute(Observer $observer): void
+    {
+        $feedName = $observer->getData('type');
+        $timestamp = $observer->getData('timestamp');
+        $data = $observer->getData('data');
+
+        // Custom logic: audit logging, webhook, metrics
+    }
+}
+```
+
+Registrar o observador em `etc/events.xml`:
+
+```xml
+<event name="data_sent_outside">
+    <observer name="my_module_data_sent_outside"
+              instance="My\Module\Observer\DataSentOutsideObserver" />
+</event>
+```
+
+Para obter informações gerais sobre eventos e observadores, consulte [Eventos e observadores](https://developer.adobe.com/commerce/php/development/components/events-and-observers){target="_blank"} na Documentação do desenvolvedor do Adobe Commerce.
+
+## Filtrar dados antes de enviar
+
+Use o ponto de extensão `Magento\SaaSCommon\Model\DataFilter` para redigir campos confidenciais ou ignorar entidades específicas antes que os dados sejam enviados ao serviço SaaS. Isso é útil para requisitos de conformidade, como GDPR ou PCI, em que determinados campos não devem sair da instância do Commerce.
+
+Implemente a interface e conecte-a por meio de uma preferência ID em `etc/di.xml`:
+
+```xml
+<preference for="Magento\SaaSCommon\Model\DataFilter"
+            type="My\Module\Model\MyDataFilter" />
+```
+
+>[!NOTE]
+>
+>A filtragem é aplicada após a coleta de dados. Se `PERSIST_EXPORTED_FEED=1` estiver definido, a tabela de feed armazenará a carga não filtrada antes da filtragem.
+
+>[!MORELIKETHIS]
+>
+> - [Adicionar atributo de produto dinamicamente](add-attribute-dynamically.md)
+> - [Adicionar classe de imposto, conjunto de atributos e metadados de estoque](add-tax-attribute-set-inventory-attributes.md)
+> - [Como a sincronização funciona](sync-overview.md)

@@ -1,22 +1,17 @@
 ---
 title: Estimar o volume de dados e o tempo de transmissão
 description: Saiba como estimar o volume de dados e o tempo de transmissão necessários para que a ferramenta [!DNL data export] sincronize dados de feed entre o Adobe Commerce e os serviços conectados.
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 787d05d6-fc2f-4f23-8ea7-ef54330e1f37
 TQID: https://experienceleague.adobe.com/nhVfGHgrsvqIjUcWfsVDcriEFwUhRQa9D-4xAU-cAnU
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 559
+source-wordcount: 585
 ht-degree: 0%
 
 ---
@@ -24,6 +19,10 @@ ht-degree: 0%
 # Estimar o volume de dados e o tempo de transmissão para a sincronização de dados
 
 A Adobe recomenda estimar o volume de dados e o tempo de sincronização antes de iniciar qualquer sincronização do feed de dados para garantir uma programação tranquila e evitar interrupções nas operações do site. Essa estimativa é importante ao planejar sincronizações iniciais ou atualizações de catálogos em larga escala, como alterações de preço em massa.
+
+>[!NOTE]
+>
+>Para implantações de [!DNL Adobe Commerce Optimizer Connector], revise os feeds e limites de lote específicos do conector nos [módulos do conector e pontos de extremidade de feed](../aco-connector/reference/connector-reference.md#supported-feeds).
 
 Por padrão, a ferramenta de exportação de dados processa dados no modo de thread único com um tamanho de lote padrão. Com a configuração padrão, não há paralelização do processo de envio do feed. Além disso, esse componente aceita solicitações por segundo (RPS), o que se traduz no seguinte:
 
@@ -57,3 +56,9 @@ Use os valores e as fórmulas na tabela a seguir para calcular o volume de dados
 | Permissões de categoria | Contagem de todas as Permissões de Categoria + 4 registros de fallback (CP): 10000 | CP = 10000 | 10000 / Tamanho de Lote (100) = 100 solicitações | (100 solicitações * 0,5 segundo por solicitação) / 60 = 0,8 minuto (50 segundos) |
 | Status do Estoque de Estoque | Produtos (P): 10000, Produtos de estoque atribuídos a (S): 5 (supondo que cada produto esteja atribuído a cada estoque) | P * S = 50000 | 50000 / Tamanho de Lote (100) = 500 solicitações | (500 solicitações * 0,5 segundo por solicitação) / 60 = 4,2 minutos |
 | Ordens de Venda | Todos os registros de ordem (incluindo NFFs, entregas e assim por diante) (SO): 10000 | SO = 10000 | 10000 / Tamanho de Lote (100) = 100 solicitações | (100 solicitações * 0,5 segundo por solicitação) / 60 = 0,8 minuto (50 segundos) |
+
+>[!MORELIKETHIS]
+>
+> - [Melhorar o desempenho da exportação de dados](customize-export-processing.md)
+> - [Gerenciar sincronização](data-sync-manage.md)
+> - [Como a sincronização funciona](sync-overview.md)
