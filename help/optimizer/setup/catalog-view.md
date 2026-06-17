@@ -1,6 +1,7 @@
 ---
 title: Exibição de catálogo
 description: Saiba o que são exibições de catálogo e como criá-las para organizar o catálogo de produtos por estrutura de negócios, políticas e preços.
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 recommendations: noCatalog
 badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
@@ -19,7 +20,7 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 1210
 ht-degree: 0%
@@ -37,7 +38,7 @@ As exibições de catálogo definem como o catálogo de produtos é organizado e
 - **Quais produtos são visíveis** com base na estrutura comercial (marcas, regiões, revendedores)
 - **Que preços são mostrados** por meio de catálogos de preços vinculados
 - **Como os produtos são filtrados** usando políticas (atributos como marca, modelo, categoria)
-- **Que [origem do catálogo](catalog-source.md) é usada** com base em atributos como localidade
+- **Que [origem do catálogo](catalog-sources.md) é usada** com base em atributos como localidade
 
 Considere as exibições de catálogo como diferentes &quot;lentes&quot; pelas quais os clientes veem seu catálogo. Por exemplo:
 
@@ -64,7 +65,7 @@ Antes de criar uma visualização de catálogo, verifique se você tem:
 1. Configure os detalhes de exibição do catálogo:
 
    - **Nome** — Digite o nome da exibição do catálogo, por exemplo `Celport`. &#x200B;
-   - **Origens do catálogo** — Selecione a [origem do catálogo](catalog-source.md), por exemplo `en-US`.
+   - **Origens do catálogo** — Selecione a [origem do catálogo](catalog-sources.md), por exemplo `en-US`.
    - **Camadas do catálogo**-Revise as camadas e a prioridade assimiladas.
    - **Políticas** — use o menu suspenso para selecionar as políticas relevantes. Por exemplo, &quot;Marca&quot;, &quot;Modelo&quot;. &#x200B;Verifique se você já [criou uma política](policies.md).
 
@@ -203,7 +204,7 @@ Os dados de catálogo filtrados são entregues para vários destinos, incluindo 
 
 ## Veja mais aqui
 
-- [Fontes do catálogo](catalog-source.md) - Defina o escopo autoritativo de produtos, atributos e categorias para comportamento de pesquisa, filtro e classificação
+- [Fontes do catálogo](catalog-sources.md) - Defina o escopo autoritativo de produtos, atributos e categorias para comportamento de pesquisa, filtro e classificação
 - [Camadas do catálogo](catalog-layer.md) - Saiba como modificar dados do produto sem alterar a origem original
 - [Políticas](policies.md) - Criar políticas para filtrar produtos nas exibições de catálogo
 - [Catálogos de preços](pricebooks.md) - Gerenciar estruturas de preços para diferentes segmentos de clientes

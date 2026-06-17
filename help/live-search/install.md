@@ -1,6 +1,7 @@
 ---
 title: Introdução ao  [!DNL Live Search]
 description: Saiba mais sobre os requisitos de sistema e as etapas de instalação do  [!DNL Live Search] na Adobe Commerce.
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 45b985f1-9afb-4a07-93e8-f2fe231c5400
 badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
@@ -24,9 +25,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 2934
+source-wordcount: 2883
 ht-degree: 0%
 
 ---
@@ -67,7 +68,7 @@ Este artigo destina-se ao desenvolvedor ou ao integrador de sistemas de sua equi
 >
 > **Disponibilidade para HIPAA**
 >
->Se você estiver usando o Adobe Commerce com a extensão pronta para HIPAA e o complemento de assistência médica, não processe nenhuma informação de saúde protegida (PHI) pelo LiveSearch> O Live Search não é um serviço pronto para HIPAA.
+>Se você estiver usando o Adobe Commerce com a extensão HIPAA-Ready e o complemento de Assistência Médica, não processe informações de saúde protegidas (PHI) por meio do LiveSearch> O Live Search não é um serviço pronto para HIPAA.
 >
 >Para obter detalhes, consulte [Disponibilidade do HIPAA no Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) e a orientação [Operações](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/compliance/hipaa-ready-service/operations), que lista o Live Search entre os serviços do Commerce que não são prontos para HIPAA.
 
@@ -238,7 +239,7 @@ Use o [Painel de Gerenciamento de Dados](https://experienceleague.adobe.com/pt-b
 
 ![Painel de gerenciamento de dados](assets/data-management-dashboard.png)
 
-Você também pode executar comandos de sincronização e solucionar problemas do processo de sincronização usando a [CLI do Commerce](../data-export/data-export-cli-commands.md#troubleshooting) e os logs de extensão de exportação de dados.
+Você também pode executar comandos de sincronização e solucionar problemas do processo de sincronização usando a [CLI do Commerce](../data-export/data-export-cli-commands.md) e os [logs de extensão de exportação de dados](../data-export/troubleshooting/logging.md).
 
 #### Futuras atualizações do produto
 

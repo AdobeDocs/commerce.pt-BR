@@ -6,9 +6,9 @@ role: Admin, Leader, User
 feature: Integration, Personalization, Services, Saas
 recommendations: noDisplay
 badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
-source-git-commit: 9f052a6d2d38163dbe431e082228fcf48ae24656
+source-git-commit: 3624bb934c25e04ae2f08b0d78ed4602df89d3eb
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '163'
 ht-degree: 12%
 
 ---
@@ -21,11 +21,12 @@ ht-degree: 12%
 - {hide-from-toc}[Soluções do produto](product-solutions.md)
 - Serviços da Commerce {#commerce-services}
    - [[!DNL AEM Assets Integration]](https://experienceleague.adobe.com/pt-br/docs/commerce/aem-assets-integration/overview)
-   - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html?lang=pt-BR)
+   - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html)
    - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce/product-recommendations/guide-overview.html?lang=pt-BR)
    - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce/catalog-service/guide-overview.html?lang=pt-BR)
-   - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce/payment-services/guide-overview.html?lang=pt-BR)
+   - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce/payment-services/guide-overview.html)
 - Serviços de integração {#integration-services}
+   - [[!DNL Adobe Commerce Optimizer Connector]](https://experienceleague.adobe.com/pt-br/docs/commerce/aco-optimizer-connector/overview)
    - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html?lang=pt-BR)
    - [[!DNL App Management]](https://experienceleague.adobe.com/pt-br/docs/commerce/app-management/overview)
    - [Conector de serviços](/help/landing/saas.md)

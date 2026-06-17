@@ -1,12 +1,16 @@
 ---
 title: Notas de versão do [!DNL SaaS Data Export Extension]
 description: As informações da versão mais recente do  [!DNL Data Export Extension] para Adobe Commerce.
+autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
 TQID: https://experienceleague.adobe.com/l3Z3-ncMTQ3j-4s6xL9X8ZYtlBHqzhBfMLc2jL4Kv6A
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
@@ -18,7 +22,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 69f39a6a62e05c86a0e2897d09079543b3d8830e
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
 source-wordcount: 2903
 ht-degree: 0%
@@ -72,7 +76,7 @@ _19 de maio de 2026_
 
 _5 de maio de 2026_
 
-![Corrigir](../assets/fix.svg) **Solução de problemas mais fácil a partir de logs de exportação**-Muitos erros e avisos relacionados à exportação agora incluem códigos de log consistentes. Esses códigos ajudam a rastrear problemas mais rapidamente ao trabalhar com suporte ou documentação. Para obter detalhes, consulte a Referência de códigos de log.
+![Corrigir](../assets/fix.svg) **Solução de problemas mais fácil a partir de logs de exportação**-Muitos erros e avisos relacionados à exportação agora incluem códigos de log consistentes. Esses códigos ajudam a rastrear problemas mais rapidamente ao trabalhar com suporte ou documentação. Para obter detalhes, consulte a [Referência de códigos de log](troubleshooting/log-codes-reference.md).
 <!--MDEE-1276-->
 
 ![Corrigir](../assets/fix.svg) **Ressincronização automática quando os rótulos de opção de atributo mudam**. A alteração dos rótulos de opção de atributo de produto para uma exibição da loja (incluindo atributos de seleção múltipla) agora enfileira os produtos afetados para exportação novamente, de modo que o Live Search, as Recomendações de Produto, o Serviço de Catálogo e outros serviços conectados da Commerce exibam os rótulos de faceta e filtro atualizados nas exibições do comprador. Anteriormente, as edições somente de rótulo podiam deixar catálogos SaaS mostrando texto obsoleto até que uma alteração mais ampla do produto acionasse uma sincronização.
@@ -161,7 +165,7 @@ _24 de novembro de 2025_
 
 _22 de outubro de 2025_
 
-![Novo](../assets/new.svg) adição de suporte à extensão Status de sincronização do feed de dados para monitorar e solucionar problemas de transferências de dados do Adobe Commerce para serviços conectados (Serviço de catálogo, Live Search e Recomendações de produto). Para obter detalhes sobre como instalar e usar essa extensão, consulte [Monitoramento do Status de Sincronização do Feed de Dados](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=pt-BR) no *Guia de Administração do Commerce*. <!--MDEE-954-->
+![Novo](../assets/new.svg) adição de suporte à extensão Status de sincronização do feed de dados para monitorar e solucionar problemas de transferências de dados do Adobe Commerce para serviços conectados (Serviço de catálogo, Live Search e Recomendações de produto). Para obter detalhes sobre como instalar e usar essa extensão, consulte [Monitoramento do Status de Sincronização do Feed de Dados](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html) no *Guia de Administração do Commerce*. <!--MDEE-954-->
 
 ### Versão 103.4.14
 

@@ -1,21 +1,35 @@
 ---
 title: Referência de códigos de log da [ !Data Export]
 description: Lista de referência para códigos, mensagens e níveis de gravidade do log de exportação de dados para solucionar problemas de sincronização e decidir quando uma ressincronização parcial ou completa é necessária.
+autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services
 exl-id: c1341863-1ec4-4d67-8ff2-821ef0a61f33
-source-git-commit: c3c0574667e49a2449858f992983df404b90fc07
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: ea4d7562942cdf1f827f9926dd3fb7278d084f37
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: 568
 ht-degree: 0%
 
 ---
-
 
 # Referência de códigos de log [!DNL Data Export]
 
 Esta página fornece uma referência para as mensagens de log da Exportação de Dados para ajudar a solucionar problemas de sincronização e determinar quando uma ressincronização parcial ou completa é necessária. Inclui apenas códigos de log críticos, de erro e de aviso emitidos pela extensão [!DNL Data Export].
 
-Consulte [Revisar logs e solucionar problemas](troubleshooting-logging.md) para obter informações sobre arquivos de log e orientações sobre solução de problemas.
+Consulte [Revisar logs e solucionar problemas](logging.md) para obter informações sobre arquivos de log e orientações sobre solução de problemas.
 
 ## Detalhes do código de log
 
@@ -35,7 +49,7 @@ Os códigos são atribuídos somente a mensagens de log de nível `error`, `warn
 
 Códigos de log relacionados a erros ou avisos que ocorrem ao coletar dados de entidades de origem, normalmente em provedores de dados.
 - As entidades afetadas podem ser processadas com dados parciais ou ignoradas totalmente se ocorrer um erro. Consulte a mensagem de log para obter detalhes.
-- Os avisos podem indicar integração incorreta com a extensão Exportação de dados por módulos de terceiros; no entanto, as operações de sincronização normalmente continuam.
+- Os avisos podem indicar uma integração incorreta com a extensão Exportação de dados por módulos de terceiros. No entanto, as operações de sincronização normalmente continuam.
 
 | Código de log | Nível | Mensagem | Caminho do arquivo |
 |----------|---------|------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
@@ -138,3 +152,9 @@ Códigos de log relacionados a erros durante o processo de indexação ou devido
 | CDE04-18 | aviso | `CDE04-18 Fixture generator: failed to filter indexer changelog tables from fixture SQL: {message}` | `commerce-data-export/CatalogDataExporter/Plugin/FilterChangeLogTable.php:43` |
 | CDE04-19 | aviso | `CDE04-19 The identifier for a feed item is empty. Sync is skipped for the entity.` | `commerce-data-export/DataExporter/Model/Indexer/FeedIndexProcessorCreateUpdate.php:439` |
 | CDE04-20 | aviso | `CDE04-20 Unexpected call: feed "{feed_name}" is not locked, trace: {stack_trace}` | `commerce-data-export/DataExporter/Model/Indexer/FeedIndexer.php:204` |
+
+>[!MORELIKETHIS]
+>
+> - [Revisar logs e solucionar problemas](logging.md)
+> - [Cenários de solução de problemas](troubleshooting-scenarios.md)
+> - [Esquema da tabela de feeds](../reference/feed-table-reference.md)

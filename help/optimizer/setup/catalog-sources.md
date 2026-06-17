@@ -1,5 +1,5 @@
 ---
-title: Origem do catálogo
+title: Origens do catálogo
 description: Saiba o que são as fontes de catálogo e como elas definem o escopo autoritativo de produtos, atributos e categorias para o comportamento de pesquisa, filtragem e classificação.
 role: Admin, Developer
 recommendations: noCatalog
@@ -23,20 +23,20 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 69f39a6a62e05c86a0e2897d09079543b3d8830e
+source-git-commit: 94ba07437d532d0d101c166f58114c2aa0bd4be4
 workflow-type: tm+mt
-source-wordcount: 450
+source-wordcount: 446
 ht-degree: 0%
 
 ---
 
-# Origem do catálogo
+# Origens do catálogo
 
-Uma origem de catálogo representa um escopo autoritativo de produtos, atributos e categorias. As fontes de catálogo normalmente mapeiam para limites de idioma, público-alvo ou sistema de origem e determinam o comportamento de pesquisa, filtro e classificação.
+As origens de catálogo representam escopos autoritativos de produtos, atributos e categorias. Normalmente, eles mapeiam para limites de idioma, público-alvo ou sistema de origem e determinam o comportamento de pesquisa, filtragem e classificação.
 
-## Origem do catálogo versus conceitos relacionados
+## Origens do catálogo versus conceitos relacionados
 
-Entender como uma fonte de catálogo se relaciona a outros conceitos do [!DNL Adobe Commerce Optimizer] ajuda a modelar os dados corretamente:
+Entender como as fontes de catálogo se relacionam com outros conceitos do [!DNL Adobe Commerce Optimizer] ajuda a modelar seus dados corretamente:
 
 * **Origem do catálogo** - O contexto de dados subjacente que fornece informações sobre o produto. Uma origem de catálogo normalmente é uma localidade (por exemplo, `en-US`, `fr-CA`) ou um sistema externo, como um PIM ou ERP. Produtos, atributos, metadados e categorias têm escopo por origem de catálogo. Pense em uma origem de catálogo como *de onde* os dados brutos do catálogo vêm e *como* eles afetam a descoberta de produtos (resultados de pesquisa, filtragem e comportamento de classificação).
 
@@ -46,7 +46,7 @@ Entender como uma fonte de catálogo se relaciona a outros conceitos do [!DNL Ad
 
 ## Regras e limitações
 
-* Uma origem de catálogo é criada ao assimilar um produto por meio da API de assimilação de dados. Consulte [Documentos do desenvolvedor - Assimilação de dados](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/) para obter mais informações.
+* Cada origem de catálogo é criada ao assimilar um produto por meio da API de assimilação de dados. Consulte [Documentos do desenvolvedor - Assimilação de dados](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/) para obter mais informações.
 * A exclusividade do produto é determinada pela SKU + origem do catálogo.
 * Os compradores não acessam diretamente as fontes do catálogo. Os dados do catálogo são expostos à loja através de [exibições do catálogo](catalog-view.md).
 
@@ -54,7 +54,7 @@ Entender como uma fonte de catálogo se relaciona a outros conceitos do [!DNL Ad
 
 Use as orientações a seguir ao decidir como estruturar suas fontes de catálogo:
 
-* Crie uma fonte de catálogo separada por idioma de catálogo diferente.
+* Crie uma fonte de catálogo separada para cada idioma do catálogo.
 * Use fontes de catálogo separadas quando as diferenças de produto e atributo afetarem o comportamento de pesquisa, filtragem ou classificação (por exemplo, capacidade de pesquisa, filtragem ou configuração de facetas diferentes para o mesmo atributo).
 * Use [camadas de catálogo](catalog-layer.md) quando as diferenças de produto e atributo afetarem somente a exibição da loja, não a descoberta de produtos.
 

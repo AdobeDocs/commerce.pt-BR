@@ -1,11 +1,15 @@
 ---
 title: '[!DNL SaaS Data Export Guide]'
 description: Saiba mais sobre como usar a extensão  [!DNL data export]  para serviços SaaS do Adobe Commerce que sincroniza dados entre o Adobe Commerce e os serviços Commerce conectados.
+autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 8a0067ba-90a4-48a6-8276-208d09abe6fc
 TQID: https://experienceleague.adobe.com/OHE1GBUEd8hHFPwFlO9fJa3Y0wK2xZ0HOYnwUn0-DSk
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
 feature_v2:
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
@@ -15,16 +19,16 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 69f39a6a62e05c86a0e2897d09079543b3d8830e
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 571
+source-wordcount: 402
 ht-degree: 0%
 
 ---
 
 # Guia do [!DNL SaaS Data Export]
 
-[!DNL SaaS data export] sincroniza dados entre uma instância do Adobe Commerce e o Commerce Services conectado. Ao adicionar o Live Search, as Recomendações de Produto, o Serviço de Catálogo ou o [!DNL Adobe Commerce Optimizer Connector] a uma instalação do Adobe Commerce, a extensão [!DNL Data export] é instalada automaticamente.
+[!DNL SaaS data export] sincroniza dados entre uma instância do Adobe Commerce e o Commerce Services conectado. Ao adicionar o Live Search, as Recomendações de Produto, o Serviço de Catálogo ou o [!DNL Adobe Commerce Optimizer Connector] a uma instalação do Adobe Commerce, a extensão [!DNL Data Export] é instalada automaticamente.
 
 >[!NOTE]
 >
@@ -37,29 +41,24 @@ A exportação de dados SaaS coleta e exporta vários tipos de dados, chamados d
 - O **feed de Ordem de Venda** agrega dados de pedidos, incluindo suas entidades relacionadas, como faturas, remessas, avisos de crédito e assim por diante.
 - O **feed de Inventário MultisSource** agrega dados sobre os itens de status do estoque do estoque.
 
-A exportação de dados SaaS é fornecida como uma extensão PHP. Ela é compatível com vários métodos para iniciar e gerenciar o processo de sincronização de dados.
+A exportação de dados SaaS é fornecida como uma extensão PHP que oferece suporte à sincronização automática e manual:
 
-- **Sincronização manual do Administrador ou da linha de comando**
+- **Sincronização automatizada** — Após a sincronização completa inicial quando você conecta um serviço do Commerce, os trabalhos do cron mantêm os serviços conectados atualizados usando a sincronização parcial e a repetição automática de itens com falha, sem nenhuma ação necessária do usuário Administrador ou do integrador de sistemas.
 
-   - O [painel de Gerenciamento de Dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard) no Administrador do Commerce fornece uma exibição gráfica do status de sincronização que mostra os dados do produto sincronizados com êxito com os commerce services. Você pode usar o painel para executar uma ressincronização completa (_sincronização completa_) de todos os feeds. No entanto, a Adobe recomenda apenas executar uma sincronização completa na primeira vez que você conecta o Adobe Commerce a um serviço do Commerce. Consulte [Processo de sincronização](data-synchronization.md).
+- **Sincronização manual**—Execute uma ressincronização completa ou ressincronize os feeds selecionados do Administrador do Commerce ou da [CLI do Commerce](data-export-cli-commands.md).
 
-     {{aco-data-sync-verification}}
+- **Monitoramento**—Rastreie a integridade, o status e a entrega do feed da página [!UICONTROL Data Feed Sync Status] e do painel de Gerenciamento de Dados no Administrador do Commerce. Consulte [Gerenciar sincronização](data-sync-manage.md) para ver as etapas de verificação e ressincronização.
 
-   - A página [Status de sincronização do feed de dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) fornece insights em tempo real sobre a integridade e o desempenho dos feeds de exportação de dados que transferem dados de produto e categoria do Commerce para serviços externos, como Recomendações de produto, Live Search e Serviço de catálogo ou Adobe Commerce Optimizer.
+Para conhecer o comportamento da sincronização, os modos e o diagrama do fluxo de exportação, consulte [Como a sincronização funciona](sync-overview.md).
 
-   - A [ferramenta de linha de comando do Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/cli/config-cli) (CLI) fornece comandos para sincronizar feeds específicos e inclui opções adicionais para personalizar o processamento do feed.
+A exportação de dados SaaS também fornece ferramentas para planejar e solucionar problemas do processo de sincronização:
 
-- **Sincronização automatizada com trabalhos cron**
+- **Agendamento e desempenho** — Estime o tempo de sincronização para agendar o processamento e evitar a interrupção do site, e personalize o processamento de exportação para melhorar o desempenho. Consulte [Estimar volume de dados e tempo de transmissão](estimate-data-volume-sync-time.md) e [Melhorar desempenho da exportação de dados](customize-export-processing.md).
 
-   - [Sincronização de dados parciais](data-synchronization.md#partial-sync) — Os trabalhos do Cron acionam uma sincronização de dados parcial quando um usuário administrador do Commerce atualiza uma entidade. O processo de exportação de dados envia apenas essas atualizações para os serviços conectados da Commerce. O processo de sincronização parcial é baseado no mecanismo MView e não requer nenhuma ação do usuário administrador ou do integrador de sistema.
+- **Rastreamento e solução de problemas**—Revise o status da sincronização e as cargas do feed usando os logs de exportação de dados e exportação de saas. Consulte [Revisar logs e solucionar problemas](troubleshooting/logging.md).
 
-   - [Nova tentativa automática para erros de sincronização](data-synchronization.md#retry-failed-items-sync)—Os trabalhos do Cron acionam uma nova tentativa automática do processo de sincronização quando ocorrem erros durante o processo de sincronização de dados.
-
-- **Exportar agendamento e desempenho**
-
-   - Desenvolvedores e integradores de sistemas podem estimar o tempo necessário para a exportação de dados SaaS sincronizar dados entre o Adobe Commerce e os serviços conectados. Essa estimativa pode ajudar a agendar o processamento da exportação de dados para evitar a interrupção do site. Consulte [Estimar volume de dados e tempo de transmissão](estimate-data-volume-sync-time.md).
-
-   - Nos casos em que a sincronização precisa ocorrer mais rapidamente, a exportação de dados do SaaS fornece opções de personalização para melhorar o desempenho do processamento da exportação. Consulte [Melhorar o desempenho da exportação de dados](customize-export-processing.md).
-
-- **Rastrear e solucionar problemas de atividades de exportação de dados**—Use os logs de exportação de dados e de exportação de saas para revisar o status da sincronização e as cargas do feed durante o processo de sincronização e indexação. Consulte [Logs e solução de problemas](troubleshooting-logging.md).
-
+>[!MORELIKETHIS]
+>
+> - [Estender e personalizar feeds de exportação de dados SaaS](extensibility-and-customizations.md) — Adicionar ou modificar dados de feed.
+> - [Cenários de solução de problemas](troubleshooting/troubleshooting-scenarios.md) — Diagnostique configurações incorretas e resultados de sincronização inesperados.
+> - [Notas de versão](release-notes.md) — Atualizações de extensão e problemas conhecidos.

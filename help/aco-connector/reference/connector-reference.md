@@ -7,6 +7,8 @@ autotag-review: '2026-06-09T15:48:19.494Z'
 TQID: 'https://experienceleague.adobe.com/UM6Y-xoQpUDzWpaMe1GRPp4XoAtHBLBsHw388kumN8g'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
   - id: c32adafa-ed01-4b31-997e-2413013911b0
@@ -18,9 +20,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 6d4493db5e0714577a8800007cc6d2c552578fa4
+source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
 workflow-type: tm+mt
-source-wordcount: 289
+source-wordcount: 296
 ht-degree: 1%
 
 ---
@@ -45,7 +47,7 @@ O conector inclui vários módulos do Magento que coletam dados de catálogo, ma
 
 ## Feeds suportados
 
-O conector envia vários tipos de feed para o [!DNL Commerce Optimizer] [!DNL Catalog Data Ingestion API]. A tabela abaixo lista cada feed com seu ponto de extremidade, limite de lote, nome do indexador e tabela de feed em [!DNL Adobe Commerce].
+O conector envia vários tipos de feed para o [!DNL Commerce Optimizer] [[!DNL Catalog Data Ingestion API]](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/){target="_blank"}. A tabela abaixo lista cada feed com seu ponto de extremidade, limite de lote, nome do indexador e tabela de feed em [!DNL Adobe Commerce].
 
 | Feed | Ponto de Extremidade de API [!DNL Commerce Optimizer] | Limite do lote | Nome do índice de CA | Tabela de feed |
 | ---- | ----------------------------------- | ----------- | ------------- | ---------- |
@@ -58,6 +60,7 @@ O conector envia vários tipos de feed para o [!DNL Commerce Optimizer] [!DNL Ca
 Os feeds `products`, `productAttributes`, `categories` e `prices` reutilizam dados coletados por [!DNL SaaS Data Export] indexadores. O conector gera o feed `priceBooks` do site e da configuração do grupo de clientes e não depende de um indexador [!DNL SaaS Data Export].
 
 Para obter detalhes de mapeamento em nível de campo para cada feed, consulte [Mapeamento de campo para [!DNL Commerce Optimizer Connector] feeds](field-mapping.md).
+Para estimar quanto tempo uma sincronização levará com base no tamanho do catálogo, consulte [Estimar volume de dados e tempo de sincronização](estimate-data-volume-sync-time.md).
 
 ## Caminhos de configuração
 
