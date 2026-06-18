@@ -1,24 +1,39 @@
 ---
-source-git-commit: cb69e11cd54a3ca1ab66543c4f28526a3cf1f9e1
+source-git-commit: b8f900c9541e78a76f3d3d1b41955bb2b4ad2d62
 workflow-type: tm+mt
-source-wordcount: '11'
-ht-degree: 0%
+source-wordcount: '21'
+ht-degree: 9%
 
 ---
-## Finalidade da solicitação de pull
+## Finalidade desta solicitação de pull
 
 Esta solicitação de pull (PR) ...
 
 ## Páginas afetadas
 
-<!-- It is a best practice to list the affected pages on experienceleague.adobe.com (URLs). Not necessary for large numbers of files. Including both production and staging/review URLs is most helpful. -->
+<!-- REQUIRED List the affected pages on experienceleague.adobe.com (URLs). Not necessary for large numbers of files. -->
 
-- ..
+- ...
 
+## Informações adicionais
+
+### Links para o código afetado
+
+<!--  OPTIONAL - REMOVE THIS SECTION IF NOT USED. If this pull request references a file in a Magento Open Source or Adobe Commerce codebase repository, add it here. -->
+
+- ...
 
 <!--
 If you are fixing a GitHub issue, using the GitHub keyword format (https://help.github.com/en/articles/closing-issues-using-keywords#closing-an-issue-in-a-different-repository) closes the issue when this pull request is merged. Example: `Fixes #1234`.
 
 `main` is the default branch. Merged pull requests to `main` go live on the site automatically. Any requested changes to content on the `main` branch must be related to the released product. Any content related to future releases should be merged to the corresponding `develop` branch.
 
+See Contribution guidelines (https://github.com/AdobeDocs/commerce.pt-BR/blob/main/contributing.md) for more information.
+-->
+
+### Destaques das novidades
+
+<!--  _OPTIONAL - REMOVE THIS SECTION IF NOT USED._
+
+If this pull request introduces changes that should be highlighted in the What's New section (https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/home#whats-new), see _What's New highlights_ in the Contribution guidelines (https://github.com/AdobeDocs/commerce.pt-BR/blob/main/contributing.md#whats-new-highlights).
 -->
