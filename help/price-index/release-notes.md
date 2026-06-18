@@ -6,13 +6,11 @@ recommendations: noCatalog
 roles: Admin, Developer
 exl-id: d4dd0288-8853-43fe-9103-1aead8d3b56e
 TQID: https://experienceleague.adobe.com/btPlBYpdRdf-gMfqSv2px6iMfiI3FfXJSN40j61HXOU
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: d5e10c1b3014d2b74c323d6a34e5f73a97d494ce
 workflow-type: tm+mt
-source-wordcount: 193
+source-wordcount: 218
 ht-degree: 0%
 
 ---
@@ -33,6 +31,12 @@ As atualizações incluem:
 >A [Extensão do Adaptador de Catálogo](catalog-adapter.md) desabilita a indexação de preços do Adobe Commerce. Se você o instalou, pode verificar a versão instalada em seu sistema usando o Composer. Em alguns casos, convém atualizar a extensão do adaptador de catálogo no sistema para obter correções ou novos recursos sem atualizar a versão do Commerce Service.
 
 ## Versão principal atual
+
+## Versão 1.0.11
+
+_18 de junho de 2026_
+
+![Correção](../assets/fix.svg) **Compatibilidade com o PHP 8.5** - O Adobe Commerce Catalog Adapter agora oferece suporte ao PHP 8.5 para compatibilidade com o Adobe Commerce versão 2.4.9+. <!--MDEE-1368-->
 
 ## Versão 1.0.10
 
