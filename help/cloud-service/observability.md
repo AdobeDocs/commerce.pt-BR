@@ -4,22 +4,13 @@ description: Saiba mais sobre as ferramentas de observabilidade e os recursos de
 feature: Cloud, Integration
 role: Admin, Developer
 level: Intermediate
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 autotag-review: '2026-06-09T15:41:54.613Z'
 TQID: 'https://experienceleague.adobe.com/jTPNVSy6cP8v-pV-3pyqgJX-PAzFFhOUf9SjQIMeBns'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-  - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: ef32511703a96b5f4db32d54229e9a7cbe961f12
+product_v2: id: de2e2e68-c5d7-4efe-be7b-27528698f06bid: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
 workflow-type: tm+mt
 source-wordcount: 607
 ht-degree: 0%
@@ -88,11 +79,11 @@ O [registro em log da API Mesh](https://developer.adobe.com/graphql-mesh-gateway
 
 ### Monitoramento de CDN e usuário real
 
-[Coleta de dados de RUM (Monitoramento de Usuário Real) de Proxy](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/content-delivery-network/?lang=pt-BR#proxy-rum-through-the-origin-to-avoid-a-tls-handshake) por meio da sua origem CDN para eliminar um handshake de TLS extra e melhorar a medição de desempenho de front-end.
+[Coleta de dados de RUM (Monitoramento de Usuário Real) de Proxy](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/content-delivery-network/#proxy-rum-through-the-origin-to-avoid-a-tls-handshake) por meio da sua origem CDN para eliminar um handshake de TLS extra e melhorar a medição de desempenho de front-end.
 
 ## Vídeos de observação
 
 Os vídeos a seguir fornecem uma visão geral de alto nível das ofertas de observação em [!DNL Adobe Commerce as a Cloud Service]:
 
-* [Vídeos de observabilidade do App Builder](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/observability/overview){target="_blank"}
-* [Vídeos da API Mesh](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/extensibility/api-mesh/getting-started-api-mesh){target="_blank"}
+* [Vídeos de observabilidade do App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/observability/overview){target="_blank"}
+* [Vídeos da API Mesh](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/api-mesh/getting-started-api-mesh){target="_blank"}
