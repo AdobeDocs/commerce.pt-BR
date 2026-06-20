@@ -116,7 +116,7 @@ Confirme se a loja lê a partir do endpoint correto do Adobe Commerce GraphQL.
 
 ### No Adobe Commerce
 
-▢ Pacotes de compatibilidade da Storefront estão [instalados](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/install/).
+▢ Pacotes de compatibilidade da Storefront estão [instalados](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/install/?lang=pt-BR).
 
 ### Na loja
 

@@ -21,10 +21,10 @@ ht-degree: 12%
 - {hide-from-toc}[Soluções do produto](product-solutions.md)
 - Serviços da Commerce {#commerce-services}
    - [[!DNL AEM Assets Integration]](https://experienceleague.adobe.com/pt-br/docs/commerce/aem-assets-integration/overview)
-   - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html)
+   - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html?lang=pt-BR)
    - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce/product-recommendations/guide-overview.html?lang=pt-BR)
    - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce/catalog-service/guide-overview.html?lang=pt-BR)
-   - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce/payment-services/guide-overview.html)
+   - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce/payment-services/guide-overview.html?lang=pt-BR)
 - Serviços de integração {#integration-services}
    - [[!DNL Adobe Commerce Optimizer Connector]](https://experienceleague.adobe.com/pt-br/docs/commerce/aco-optimizer-connector/overview)
    - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html?lang=pt-BR)
