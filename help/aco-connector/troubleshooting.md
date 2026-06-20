@@ -68,4 +68,4 @@ Para obter um catálogo de comportamentos específicos causados por uma configur
 
 ## Diagnóstico [!DNL SaaS Data Export]
 
-Para obter os diagnósticos de nível inferior do [!DNL SaaS Data Export], incluindo locais de log e comandos de ressincronização de feed, consulte o [[!DNL SaaS Data Export] guia de solução de problemas](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/troubleshooting/logging){target="_blank"}.
+Para obter os diagnósticos de nível inferior do [!DNL SaaS Data Export], incluindo locais de log e comandos de ressincronização de feed, consulte o [[!DNL SaaS Data Export] guia de solução de problemas](https://experienceleague.adobe.com/pt-br/docs/commerce/saas-data-export/troubleshooting/logging){target="_blank"}.
