@@ -5,10 +5,10 @@ user-guide-description: Este guia fornece instruções detalhadas sobre como usa
 role: Developer, Admin
 feature: Integration, Storefront, Configuration
 nudge: false
-source-git-commit: 83218416c513412f2ff6328aa8a23e915cbb8750
+source-git-commit: 98d604a71c2062a44070b207fc43b9d9b1c434fd
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 6%
+source-wordcount: '69'
+ht-degree: 5%
 
 ---
 
@@ -25,7 +25,8 @@ ht-degree: 6%
    - [Solução de problemas de cenários](troubleshooting/troubleshooting-scenarios.md)
 - Referência {#reference}
    - [Módulos de conector e endpoints de feed](reference/connector-reference.md)
+   - [Referência de esquema de tabela de feed](reference/feed-table-reference.md)
    - [Mapeamento de campos para feeds de conector](reference/field-mapping.md)
    - [Estimar o volume de dados e o tempo de sincronização](reference/estimate-data-volume-sync-time.md)
 - [Notas de versão](release-notes.md)
-- [Retornar à página inicial dos Serviços da Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=pt-BR)
+- [Retornar à página inicial dos Serviços da Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)

@@ -4,21 +4,13 @@ description: Saiba como usar comandos da CLI do Commerce para gerenciar feeds e 
 autotag-review: '2026-06-17T15:08:59.000Z'
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
 TQID: 'https://experienceleague.adobe.com/Vi8hMKOBjTPkSQp0t8DCkjZsJ8s3Q5GSbSXyX2gmWRo'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: cc250cf1-34eb-4863-80d0-d170d45ea067
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: ef1a9efc579d8d21c145e6981235489a2e4ea203
 workflow-type: tm+mt
-source-wordcount: 670
+source-wordcount: 728
 ht-degree: 0%
 
 ---
@@ -34,7 +26,7 @@ O comando `saas:resync` no pacote `magento/saas-export` permite gerenciar a sinc
 A Adobe não recomenda usar o comando `saas:resync` regularmente. Os cenários típicos para usar o comando são:
 
 - Sincronização inicial
-- Sincronizar dados com um novo espaço de dados após alterar a [ID do Espaço de Dados SaaS](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/config/services/saas)
+- Sincronizar dados com um novo espaço de dados após alterar a [ID do Espaço de Dados SaaS](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas)
 - Solução de problemas
 
 Monitorar operações de sincronização no arquivo `var/log/saas-export.log`.
@@ -96,6 +88,10 @@ Obrigatório. Especifica a entidade de feed a ser ressincronizada.
 >
 >Os módulos instalados determinam quais feeds você pode sincronizar novamente. Por exemplo, `productOverrides` exige [!DNL Adobe Commerce] na nuvem, no local ou Commerce as a Cloud Service, e `orders` exige o módulo de Ordens de Venda.
 
+>[!NOTE]
+>
+>O comando `saas:resync` transmite apenas itens novos, itens atualizados e itens cuja exportação falhou anteriormente. Os itens cujo hash de conteúdo não foi alterado desde a última exportação são ignorados.
+
 **Exemplo:**
 
 ```shell
@@ -107,6 +103,10 @@ bin/magento saas:resync --feed products
 Ressincronizar parcialmente entidades específicas por suas IDs. Suporta os feeds `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants` e `categoryPermissions`.
 
 Por padrão, ao usar a opção `--by-ids`, você especifica valores usando valores de SKU do produto. Para usar IDs de produto, adicione a opção `--id-type=productId`.
+
+>[!NOTE]
+>
+>Ao contrário de uma ressincronização padrão, o `--by-ids` ignora a verificação de hash e força as entidades especificadas a serem enviadas para serviços Commerce conectados, independentemente de seu conteúdo ter sido alterado desde a última exportação.
 
 **Exemplos:**
 
