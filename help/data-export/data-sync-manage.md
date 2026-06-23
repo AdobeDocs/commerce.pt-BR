@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: e7d9c056ef8d565b4a143b05ff4e06d607fbfa8e
+source-git-commit: 98d604a71c2062a44070b207fc43b9d9b1c434fd
 workflow-type: tm+mt
-source-wordcount: 544
+source-wordcount: 557
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Use as opções a seguir para ressincronizar manualmente os dados do feed.
 | Tarefa | Opção | Notas |
 | --- | --- | --- |
 | Ressincronizar itens de feed com falha ou problemáticos selecionados | **[!UICONTROL Data Feed Sync Status]página** | Monitore e ressincronize os itens de feed selecionados do administrador do Commerce. Consulte [Verificar se a sincronização de dados está funcionando](#verify-that-the-data-sync-is-working). |
-| Ressincronização completa de todos os feeds | **[!UICONTROL Data Management Dashboard]** | Executar uma ressincronização completa de todos os feeds do Administrador do Commerce. A Adobe recomenda isso principalmente ao se conectar pela primeira vez a um serviço do Commerce. Consulte [Verificar se a sincronização de dados está funcionando](#verify-that-the-data-sync-is-working). |
+| Ressincronização completa de todos os feeds | **[!UICONTROL Data Management Dashboard]** | Executar uma ressincronização completa de todos os feeds do Administrador do Commerce. A Adobe recomenda isso principalmente ao se conectar pela primeira vez a um serviço do Commerce. Os itens cujo hash de conteúdo não foi alterado desde a última exportação são ignorados. Consulte [Verificar se a sincronização de dados está funcionando](#verify-that-the-data-sync-is-working). |
 | Ressincronização de feed direcionado com controle operacional | **CLI DO Commerce** | Use o comando `saas:resync` para ressincronizações de feed direcionadas. Consulte [Sincronizar feeds usando a CLI do Commerce](data-export-cli-commands.md). |
 
 >[!MORELIKETHIS]
