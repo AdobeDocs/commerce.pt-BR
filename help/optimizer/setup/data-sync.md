@@ -14,7 +14,7 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: c7633056caec2fcec318f8ebcc9664cfc7b3b9b4
 workflow-type: tm+mt
 source-wordcount: 484
 ht-degree: 0%
@@ -34,7 +34,7 @@ A página **Sincronização de Dados** está localizada em *Configuração* > **
 A página **Sincronização de Dados** contém os seguintes campos:
 
 | Campo | Descrição |
-|--- |--- |
+| --- | --- |
 | Origem do catálogo | Local específico dos dados sincronizados. |
 | [!DNL Catalog Service] | Exibe a última atualização de sincronização, o total de produtos recebidos, um campo de pesquisa e uma tabela dos produtos sincronizados para [!DNL Catalog Service]. |
 | Descoberta de produto | Exibe a última atualização de sincronização, o total de produtos recebidos, um campo de pesquisa e uma tabela dos produtos sincronizados para Pesquisa. |
@@ -61,12 +61,11 @@ Se você não vir produtos específicos na página **Sincronização de Dados**,
 >
 >O tempo necessário para concluir a sincronização varia de acordo com o tamanho do catálogo e o volume de dados atualizados.
 
-## Monitorar status de sincronização de dados
+## Verifique se a sincronização de dados está funcionando
 
-Para projetos que usam o Adobe Commerce como fonte de dados upstream por meio do Conector do Adobe Commerce Optimizer, é possível monitorar o processo de exportação de dados e iniciar operações de ressincronização na [página Status de sincronização do feed de dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) no Administrador do Commerce.
+Para projetos que usam o Adobe Commerce como fonte de dados de upstream por meio do Adobe Commerce Optimizer Connector, é possível monitorar o processo de exportação de dados e iniciar operações de ressincronização na página Status de sincronização do feed de dados. Para obter detalhes, consulte [Verificar se a sincronização de dados está funcionando](../../aco-connector/data-sync-manage.md#verify-that-the-data-sync-is-working) na documentação do _Adobe Commerce Optimizer Connector_.
 
 ## Tópicos relacionados
 
 - [Adobe Commerce Optimizer Connector](../../aco-connector/overview.md){target="_blank"}
-
 

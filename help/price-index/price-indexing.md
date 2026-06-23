@@ -15,9 +15,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 029d78d5c87bf75ccc26b8af462081f8e08d1176
 workflow-type: tm+mt
-source-wordcount: 398
+source-wordcount: 475
 ht-degree: 0%
 
 ---
@@ -71,7 +71,17 @@ bin/magento saas:resync --feed=scopesWebsite
 bin/magento saas:resync --feed=prices
 ```
 
-### Preços para tipos de produtos personalizados
+## Monitorar progresso da sincronização
+
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
+
+Use a [CLI do Commerce](../data-export/data-export-cli-commands.md) para ressincronizar manualmente os feeds quando necessário. Para opções de ressincronização e etapas adicionais de solução de problemas, consulte [Gerenciar sincronização](../data-export/data-sync-manage.md) no _Guia de Exportação de Dados SaaS_.
+
+>[!NOTE]
+>
+>Se a página Status da sincronização do feed de dados não estiver disponível no Commerce Admin for Commerce em implantações na nuvem ou locais, siga as [instruções de instalação da extensão](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension) para habilitá-la.
+
+## Preços para tipos de produtos personalizados
 
 Os cálculos de preço são compatíveis com tipos de produtos personalizados, como preço base, preço especial, preço de grupo, preço de regra de catálogo e assim por diante.
 
@@ -102,7 +112,7 @@ Se você tiver um tipo de produto personalizado que usa uma fórmula específica
        */
        public function afterGet(ProductPrice $subject, array $result, array $values) : array
        {
-           // Override the output $result with your data for the corresponding products (see original method for details) 
+           // Override the output $result with your data for the corresponding products (see original method for details)
            return $result;
        }
    }

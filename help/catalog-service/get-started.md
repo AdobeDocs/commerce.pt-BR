@@ -18,9 +18,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
 workflow-type: tm+mt
-source-wordcount: 586
+source-wordcount: 437
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Para obter detalhes sobre como usar a API do GraphQL do Serviço de Catálogo, c
 
 Para integrar com uma loja headless, você deve atualizar a configuração da loja para habilitar a comunicação entre a loja e a [!DNL Catalog Service] para recuperar dados de produto e categoria.
 
-Se você estiver usando a loja do Adobe Commerce no Edge Delivery Services, adicione o ponto de extremidade do Serviço de catálogo à configuração da loja. Para obter detalhes, consulte a [documentação do Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=pt-BR#storefront-configuration).
+Se você estiver usando a loja do Adobe Commerce no Edge Delivery Services, adicione o ponto de extremidade do Serviço de catálogo à configuração da loja. Para obter detalhes, consulte a [documentação do Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/#storefront-configuration).
 
 Para outras integrações, consulte a documentação de configuração do projeto para obter detalhes sobre como configurar integrações entre o serviço e as fontes de dados de back-end.
 
@@ -81,12 +81,8 @@ Consulte o tópico [[!DNL Catalog Service] e Malha de API](mesh.md) para obter d
 
 ## Monitorar e solucionar problemas de exportação de dados
 
-O administrador do Commerce fornece ferramentas para monitorar e solucionar problemas na exportação de dados do Commerce para os serviços conectados:
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
 
-- **[Painel de Gerenciamento de Dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard)** — Monitore a sincronização de dados entre o [!DNL Catalog Service] e sua instância do Adobe Commerce. O painel mostra o status geral de sincronização e lista todos os produtos sincronizados.
+Use a [CLI do Commerce](../data-export/data-export-cli-commands.md) para ressincronizar manualmente os feeds quando necessário. Para opções de ressincronização e etapas adicionais de solução de problemas, consulte [Gerenciar sincronização](../data-export/data-sync-manage.md) no _Guia de Exportação de Dados SaaS_.
 
-- **[Página Status da Sincronização do Feed de Dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status)** — Rastreie o status da exportação de todos os feeds de dados para garantir a consistência dos dados. Essa página alerta sobre problemas que ocorrem durante o processo de exportação para que você possa resolvê-los rapidamente. Um status &quot;Sucesso&quot; indica que os dados foram exportados e estarão disponíveis nos serviços conectados da Commerce quando o processo de sincronização de dados for concluído.
-
->[!NOTE]
->
->Se a página Status da sincronização do feed de dados não estiver disponível no Commerce Admin for Commerce em implantações na nuvem ou locais, siga as [instruções de instalação da extensão](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension) para habilitá-la.
+{{install-data-sync-feed-status}}

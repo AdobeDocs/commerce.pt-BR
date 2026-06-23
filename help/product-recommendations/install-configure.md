@@ -18,9 +18,9 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
 workflow-type: tm+mt
-source-wordcount: 641
+source-wordcount: 578
 ht-degree: 0%
 
 ---
@@ -80,9 +80,9 @@ Depois de vincular com êxito o aplicativo do Commerce aos Serviços da Commerce
 
 ## Monitorar e solucionar problemas de sincronização de dados
 
-Com o Administrador do Commerce, é possível monitorar o processo de sincronização usando o [Painel de Gerenciamento de Dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard). Use a [CLI do Commerce](../data-export/data-export-cli-commands.md) e os [logs](../data-export/troubleshooting/logging.md) para gerenciar e solucionar problemas do processo.
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
 
-Em seguida, você pode [verificar](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) se os dados comportamentais estão sendo enviados para a loja.
+{{install-data-sync-feed-status}}
 
 ## Atualize sua instalação do [!DNL Product Recommendations] {#update}
 

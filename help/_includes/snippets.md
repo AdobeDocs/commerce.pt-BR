@@ -1,11 +1,17 @@
 ---
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '577'
 ht-degree: 0%
 
 ---
 # Commerce snippets
+
+## Nota de instalação da extensão Status de sincronização do feed de dados {#install-data-sync-feed-status}
+
+>[!NOTE]
+>
+>Se a página Status da sincronização do feed de dados não estiver disponível no Commerce Admin for Commerce em implantações na nuvem ou locais, siga as [instruções de instalação da extensão](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension){target="_blank"} para habilitá-la.
 
 
 ## Alinhamento do ambiente de integração do Adobe Commerce Optimizer {#aco-integration-environment-alignment}
@@ -25,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Se você instalou o [Adobe Commerce Optimizer Connector](../aco-connector/overview.md) para exportar dados do catálogo para o Adobe Commerce Optimizer, use a [página Status de sincronização do feed de dados](../optimizer/setup/data-sync.md) no Commerce Optimizer Studio para verificar os dados sincronizados com êxito para o Adobe Commerce Optimizer em vez do Painel de Gerenciamento de Dados.
+>Para implantações que usam o [[!DNL Adobe Commerce Optimizer Connector]](../aco-connector/overview.md) para exportar dados de catálogo para [!DNL Adobe Commerce Optimizer], verifique a sincronização de dados de catálogo usando a [página Status da Sincronização do Feed de Dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) no Administrador do Commerce e a [página Sincronização de Dados](../optimizer/setup/data-sync.md) em [!DNL Adobe Commerce Optimizer Studio], não o [painel Gerenciamento de Dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard).
 
 ## Nota suspensa do Adobe Commerce Optimizer para atualizações de API {#aco-api-updates-and-dropins}
 
@@ -50,7 +56,7 @@ ht-degree: 0%
     <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR"><img alt="Storefront" src="../assets/icons/storefront.svg" /> <strong>Storefront</strong></a></td>
     <td style="vertical-align: middle;"><a href="../cloud-service/overview.md"><img alt="Merchants" src="../assets/icons/merchants.svg" /> <strong>Merchants</strong></a></td>
     <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/overview"><img alt="Videos" src="../assets/icons/videos.svg" /> <strong>Videos</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/playgrounds/commerce-services/?lang=pt-BR"><img alt="Playgrounds" src="../assets/icons/playgrounds.svg" /> <strong>Playgrounds</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/developer/commerce/storefront/playgrounds/commerce-services/"><img alt="Playgrounds" src="../assets/icons/playgrounds.svg" /> <strong>Playgrounds</strong></a></td>
   </tr>
 </table>
 

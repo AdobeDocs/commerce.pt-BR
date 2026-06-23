@@ -14,9 +14,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
 workflow-type: tm+mt
-source-wordcount: 972
+source-wordcount: 958
 ht-degree: 0%
 
 ---
@@ -180,4 +180,8 @@ Para garantir que a exportação de catálogo esteja sendo executada corretament
 
 ### Monitorar e solucionar problemas de sincronização de dados
 
-Com o Administrador do Commerce, é possível monitorar o processo de sincronização usando o [Painel de Gerenciamento de Dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard). Use a [CLI do Commerce](../data-export/data-export-cli-commands.md) e os [logs](../data-export/troubleshooting/logging.md) para gerenciar e solucionar problemas do processo.
+{{$include /help/_includes/data-export/verify-commerce-service-data-sync.md}}
+
+Use a [CLI do Commerce](../data-export/data-export-cli-commands.md) para ressincronizar manualmente os feeds quando necessário. Para opções de ressincronização e etapas adicionais de solução de problemas, consulte [Gerenciar sincronização](../data-export/data-sync-manage.md) no _Guia de Exportação de Dados SaaS_.
+
+{{install-data-sync-feed-status}}
