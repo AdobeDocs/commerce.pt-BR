@@ -65,7 +65,7 @@ Para obter detalhes sobre como usar a API do GraphQL do Serviço de Catálogo, c
 
 Para integrar com uma loja headless, você deve atualizar a configuração da loja para habilitar a comunicação entre a loja e a [!DNL Catalog Service] para recuperar dados de produto e categoria.
 
-Se você estiver usando a loja do Adobe Commerce no Edge Delivery Services, adicione o ponto de extremidade do Serviço de catálogo à configuração da loja. Para obter detalhes, consulte a [documentação do Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/#storefront-configuration).
+Se você estiver usando a loja do Adobe Commerce no Edge Delivery Services, adicione o ponto de extremidade do Serviço de catálogo à configuração da loja. Para obter detalhes, consulte a [documentação do Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=pt-BR#storefront-configuration).
 
 Para outras integrações, consulte a documentação de configuração do projeto para obter detalhes sobre como configurar integrações entre o serviço e as fontes de dados de back-end.
 
