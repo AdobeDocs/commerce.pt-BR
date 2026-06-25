@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+source-git-commit: f1c7779558406641972e9c690d0f508d46da3e0c
 workflow-type: tm+mt
-source-wordcount: 1316
+source-wordcount: 1324
 ht-degree: 0%
 
 ---
@@ -35,6 +35,13 @@ As notas de versão a seguir contêm atualizações para [!DNL Adobe Commerce Op
 ## Junho de 2026
 
 >[!BEGINSHADEBOX]
+
+_24 de junho de 2026_
+
+<!-- v1.3 -->
+
+![Novo](../assets/new.svg) **Novo campo `canEditQuantity`** — Adicionado `canEditQuantity` a `ProductViewOptionValueProduct` no GraphQL de Serviço de Catálogo. Ele expõe a configuração de quantidade **Definida pelo Usuário** opcional para seleções de pacotes do Administrador do Commerce, para que os consumidores da loja possam determinar se a quantidade de uma seleção de pacote é editável.
+<!--COMOPT-2050-->
 
 ### Pesquisa semântica
 
