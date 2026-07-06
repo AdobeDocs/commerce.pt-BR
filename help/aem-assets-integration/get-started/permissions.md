@@ -2,7 +2,7 @@
 title: Configurar permissões de usuário do IMS para a integração com o AEM Assets
 description: Saiba como a identidade do IMS e os perfis do Admin Console habilitam o acesso ao delivery do AEM Assets, o Seletor de ativos e os campos de configuração do Commerce preenchidos automaticamente.
 feature: CMS, Media, Configuration
-source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
+source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 0%
@@ -82,3 +82,4 @@ Sem o IMS, ainda é possível configurar a integração inserindo manualmente a 
 * [Seleção manual de ativos](../synchronize/asset-selector-integration.md) — Use o Seletor de ativos para imagens de categoria e Page Builder.
 * [Adicionar um usuário ao AEM Assets ou Visuais de Produto](https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/user-management#add-a-user-to-aem-assets-or-product-visuals){target=_blank} — Para [!DNL Adobe Commerce as a Cloud Service], adicione usuários ao Commerce e ao AEM Cloud Manager (Proprietário da Empresa, Gerente de Implantação) primeiro. Os **Usuários do AEM Assets DM OpenAPI - entrega** perfil (ou perfil **autor** como fallback) são um requisito adicional para o Seletor de ativos e os recursos de preenchimento automático.
 * [Atribuir membros da equipe à camada de entrega do AEM](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem#add-team-members){target=_blank}. Documentação do AEM para obter acesso à entrega.
+

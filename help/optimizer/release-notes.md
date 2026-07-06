@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: f1c7779558406641972e9c690d0f508d46da3e0c
+source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
 workflow-type: tm+mt
-source-wordcount: 1324
+source-wordcount: 1404
 ht-degree: 0%
 
 ---
@@ -41,7 +41,6 @@ _24 de junho de 2026_
 <!-- v1.3 -->
 
 ![Novo](../assets/new.svg) **Novo campo `canEditQuantity`** — Adicionado `canEditQuantity` a `ProductViewOptionValueProduct` no GraphQL de Serviço de Catálogo. Ele expõe a configuração de quantidade **Definida pelo Usuário** opcional para seleções de pacotes do Administrador do Commerce, para que os consumidores da loja possam determinar se a quantidade de uma seleção de pacote é editável.
-<!--COMOPT-2050-->
 
 ### Pesquisa semântica
 
@@ -70,13 +69,10 @@ _28 de maio de 2026_
 <!-- v1.2 -->
 
 ![Correção](../assets/fix.svg) **Árvores de navegação completas**—As categorias descendentes marcadas agora são incluídas corretamente nas árvores `navigation` filtradas por família quando existe um nó intermediário não marcado no caminho. Essa correção garante que os compradores vejam todas as categorias relevantes na navegação, facilitando a navegação e a descoberta de itens.
-<!--DATA-7183-->
 
 ![Correção](../assets/fix.svg) **Tratamento de espaçador vazio em `categoryTree` solicitações**—Correção de um problema em que a consulta [`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) retornava um erro de servidor interno quando o argumento `slugs` incluía uma cadeia de caracteres vazia. Valores de espaçador vazios agora são ignorados, de modo que as frentes de loja e as integrações continuam a resolver dados de categoria sem solicitações com falha.
-<!--DATA-7184-->
 
 ![Corrigir](../assets/fix.svg) **`searchCategory`solicitações retornam resultados em ordem alfabética, que não diferenciam maiúsculas de minúsculas**—A consulta `searchCategory` agora classifica os resultados de pesquisa em ordem alfabética, sem diferenciação entre maiúsculas e minúsculas, garantindo uma ordem consistente e previsível. As categorias com prefixos mais curtos aparecem primeiro quando os nomes são idênticos.
-<!--COMOPT-2142-->
 
 _4 de maio de 2026_
 
@@ -316,3 +312,4 @@ Os URLs de produção de base da região da União Europeia são:
 {{aco-release}}
 
 >[!ENDSHADEBOX]
+

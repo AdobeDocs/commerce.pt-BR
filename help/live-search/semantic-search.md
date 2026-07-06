@@ -3,7 +3,7 @@ title: Pesquisa semântica
 description: Habilitar a pesquisa semântica de IA para  [!DNL Live Search]  em Configurações. Nenhuma configuração de atributo ou alteração de vitrine eletrônica é necessária.
 role: Admin
 recommendations: noCatalog
-source-git-commit: e631346aa13737ded2c14daecbb91457e15417eb
+source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 0%
@@ -106,3 +106,4 @@ Depois que a pesquisa semântica estiver ativa e a indexação for concluída, a
 - [Configurações](settings.md#semantic-search)
 - [Sinônimos](synonyms.md)
 - [Desempenho](performance.md)
+
