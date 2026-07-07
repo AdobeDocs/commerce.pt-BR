@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 55d4fefaa15a09e475bcda93f23801319b56db70
 workflow-type: tm+mt
-source-wordcount: 2903
+source-wordcount: 3115
 ht-degree: 0%
 
 ---
@@ -45,6 +45,13 @@ As atualizações incluem:
 
 ## Versões de 2026
 
+### Versão 103.4.29
+
+_6 de julho de 2026_
+
+![Corrigir](../assets/fix.svg) Classifique links de produtos para evitar sincronização aleatória. <!--MDEE-1391-->
+![Correção](../assets/fix.svg) O feed de preço envia o preço base em vez do preço de regra de catálogo para sites UTC-negativos após a meia-noite UTC. <!--MDEE-1401-->
+
 ### Versão 103.4.28
 
 _11 de junho de 2026_
@@ -55,8 +62,7 @@ _11 de junho de 2026_
 
 _4 de junho de 2026_
 
-![Correção](../assets/fix.svg) **Os produtos do pacote permanecem visíveis após as atualizações simultâneas do catálogo**-Correção de um problema em que os produtos do pacote não apareciam na loja quando os produtos configuráveis e do pacote eram atualizados ao mesmo tempo. Depois de atualizar o `magento/module-data-exporter` para a versão 103.4.27, o feed de produtos é automaticamente agendado para ressincronização, a fim de corrigir as inconsistências de dados de pacote existentes no [!DNL Catalog Service], [!DNL Live Search] e outros serviços conectados da Commerce.
-<!--MDEE-1379-->
+![Correção](../assets/fix.svg) **Os produtos do pacote permanecem visíveis após as atualizações simultâneas do catálogo**-Correção de um problema em que os produtos do pacote não apareciam na loja quando os produtos configuráveis e do pacote eram atualizados ao mesmo tempo. Depois de atualizar o `magento/module-data-exporter` para a versão 103.4.27, o feed de produtos é automaticamente agendado para ressincronização, a fim de corrigir as inconsistências de dados do pacote existentes no [!DNL Catalog Service], [!DNL Live Search] e outros serviços conectados da Commerce.
 
 ### Versão 103.4.26
 
@@ -77,10 +83,8 @@ _19 de maio de 2026_
 _5 de maio de 2026_
 
 ![Corrigir](../assets/fix.svg) **Solução de problemas mais fácil a partir de logs de exportação**-Muitos erros e avisos relacionados à exportação agora incluem códigos de log consistentes. Esses códigos ajudam a rastrear problemas mais rapidamente ao trabalhar com suporte ou documentação. Para obter detalhes, consulte a [Referência de códigos de log](troubleshooting/log-codes-reference.md).
-<!--MDEE-1276-->
 
 ![Corrigir](../assets/fix.svg) **Ressincronização automática quando os rótulos de opção de atributo mudam**. A alteração dos rótulos de opção de atributo de produto para uma exibição da loja (incluindo atributos de seleção múltipla) agora enfileira os produtos afetados para exportação novamente, de modo que o Live Search, as Recomendações de Produto, o Serviço de Catálogo e outros serviços conectados da Commerce exibam os rótulos de faceta e filtro atualizados nas exibições do comprador. Anteriormente, as edições somente de rótulo podiam deixar catálogos SaaS mostrando texto obsoleto até que uma alteração mais ampla do produto acionasse uma sincronização.
-<!--MDEE-1337-->
 
 ![Corrigir](../assets/fix.svg) **Status confiável e visibilidade quando os dados de escopo padrão estão ausentes**-A exportação de produtos lida com lacunas no escopo Admin padrão para que os serviços conectados tenham o comportamento correto de habilitação, desabilitação e visibilidade. Os valores específicos do armazenamento definidos ainda têm prioridade.
 
@@ -98,9 +102,7 @@ _5 de maio de 2026_
 _20 de abril de 2026_
 
 ![Correção](../assets/fix.svg) **Erros SQL Resolvidos ao Excluir Atributos EAV Estáticos**-O plug-in ProductAttributeDelete não gera mais erros SQL ao excluir atributos EAV estáticos, garantindo um gerenciamento de atributos mais suave e confiabilidade aprimorada do sistema. <!--MDEE-1336-->
-![Correção](../assets/fix.svg) **Exportação de caminho de categoria fixo após movimentações de categoria**- Garante que o feed de categorias atualize corretamente o `url_path` quando uma categoria é movida para um pai diferente, evitando caminhos de categoria ausentes ou obsoletos nos serviços Commerce conectados.<!--MDEE-1331-->
-![Correção](../assets/fix.svg) **As atualizações de categoria agendadas aprimoradas para produtos relacionados**. As atualizações agendadas para URLs de categoria agora afetam apenas as categorias desejadas, preservando a integridade dos dados e evitando alterações não intencionais em produtos relacionados. Agora, as alterações agendadas no URL da categoria são refletidas corretamente nos dados exportados, mantendo a navegação da loja e os serviços vinculados alinhados com seu catálogo atual.
-<!--MDEE-1321-->
+![Correção](../assets/fix.svg) **Exportação de caminho de categoria fixo após movimentações de categoria**- Garante que o feed de categorias atualize corretamente o `url_path` quando uma categoria é movida para um pai diferente, evitando caminhos de categoria ausentes ou obsoletos nos serviços Commerce conectados.![Correção](../assets/fix.svg) **Atualizações aprimoradas de categorias agendadas para produtos relacionados**. As atualizações agendadas de URLs de categorias agora afetam apenas as categorias desejadas, preservando a integridade dos dados e evitando alterações não intencionais em produtos relacionados. Agora, as alterações agendadas no URL da categoria são refletidas corretamente nos dados exportados, mantendo a navegação da loja e os serviços vinculados alinhados com seu catálogo atual.
 
 ### Versão 103.4.22
 
