@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 7ab609a2da3173f4be31bb0927418c4b9ec05ff4
 workflow-type: tm+mt
-source-wordcount: 4489
+source-wordcount: 4655
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ As notas de versão a seguir contêm atualizações para [!DNL Adobe Commerce as
 >
 >Se você estiver usando o Adobe Commerce no local ou o Adobe Commerce na infraestrutura em nuvem, consulte as [notas de versão do Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/overview).
 
-## Junho de 2026 - versão #2 {#latest}
+## Julho de 2026 - versão #1 {#latest}
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
@@ -64,6 +64,27 @@ Os pontos de extremidade da API REST `GET /V1/orders` e `GET /V1/invoices` agora
 ### Listar modelos de email personalizados por meio da API
 
 O novo ponto de extremidade da API REST `GET /V1/custom-email/templates` retorna seus [modelos de email personalizados](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/), incluindo a ID, o código e o assunto de cada modelo. As integrações podem usar uma ID de modelo retornada com o ponto de extremidade `POST /V1/custom-email/send` em vez de pesquisar a ID manualmente. <!-- CCSAAS-5089 -->
+
+### Gerenciar toda a cadeia de pedidos por meio da REST API
+
+>[!IMPORTANT]
+>
+>Esse recurso é experimental e deve ser ativado entrando em contato com o Gerente de sucesso do cliente da Adobe Commerce ou criando um tíquete de suporte.
+
+Os novos pontos de extremidade da API REST `orderChain` permitem que as integrações modifiquem um pedido usando sua ID e resolvam automaticamente a cadeia completa de pedidos editados:
+
+| Método | Endpoint | Descrição |
+| --- | --- | --- |
+| `POST` | `/V1/orderChain/{orderId}/invoice` | Criar uma fatura para a ordem, resolvendo os itens a serem faturados na cadeia de ordens. |
+| `POST` | `/V1/orderChain/{id}/cancel` | Cancelar a ordem atual na cadeia. |
+| `POST` | `/V1/orderChain/{id}/hold` | Colocar a ordem em espera. |
+| `POST` | `/V1/orderChain/{id}/unhold` | Remover a suspensão da ordem. |
+| `POST` | `/V1/orderChain/{id}/emails` | Enviar uma notificação por e-mail de pedido. |
+| `POST` | `/V1/orderChain/{id}/comments` | Adicione um comentário ao pedido. |
+| `GET` | `/V1/orderChain/{id}/comments` | Recuperar os comentários do pedido. |
+| `GET` | `/V1/orderChain/{id}/statuses` | Recupera o status atual do pedido. |
+
+`GET` pontos de extremidade que oferecem suporte à filtragem de faturas, remessas, avisos de crédito e devoluções agora oferecem suporte à filtragem por `order_original_id`. Filtrar por `order_original_id` retorna detalhes sobre toda a cadeia de pedidos, não apenas o pedido único. Um exemplo de terminal que suporta este recurso é `GET /V1/invoices`. <!-- ACCS-1004, ACCS-1005 -->
 
 ### Exibir o histórico de modificação de pedidos no Administrador
 
@@ -84,6 +105,10 @@ Os seguintes aprimoramentos, otimizações e correções de erros selecionados e
 * Agora, catálogos compartilhados grandes são mais fáceis de gerenciar no Admin, com tempos de carregamento melhorados e probabilidade reduzida de tempos limite. <!-- CCSAAS-4946, CCSAAS-4925, CCSAAS-1245, CCSAAS-1246 -->
 
 * Correção de uma falha na criação de remessa que ocorria ao criar remessas para pedidos que continham produtos configuráveis. <!-- ACCS-1095 -->
+
+* Correção de um problema no [!DNL Commerce Admin] em que o menu de navegação esquerdo podia desaparecer. <!-- ACCS-1035 -->
+
+* Melhora no desempenho da atribuição e do cancelamento de atribuição em catálogos compartilhados. <!-- ACCS-1324, CCSAAS-5177, CCSAAS-5190, CCSAAS-5192 -->
 
 {{accs-release}}
 
@@ -129,7 +154,7 @@ Os seguintes aprimoramentos, otimizações e correções de erros selecionados e
 
 * Correção de um erro &quot;o consumidor não está autorizado&quot; que poderia impedir logons do GraphQL convidado quando o cabeçalho `X-Adobe-Company` estava presente na solicitação. <!-- ACCS-949 -->
 
-* Correção de um problema em que a edição ou exclusão de uma empresa no [!DNL Commerce Admin] poderia falhar com um erro &quot;Nenhuma entidade&quot; após atribuir um cliente à empresa por meio do ponto de extremidade REST PUT `V1/customers/companies`. <!-- ACCS-856 -->
+* Correção de um problema em que a edição ou exclusão de uma empresa no [!DNL Commerce Admin] poderia falhar com um erro &quot;Nenhuma entidade&quot; após atribuir um cliente à empresa por meio do ponto de extremidade REST `V1/customers/companies` do PUT. <!-- ACCS-856 -->
 
 * Solução de um problema com status de grade de ordens de venda obsoletas. <!-- CCSAAS-4915 -->
 
