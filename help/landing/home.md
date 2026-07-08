@@ -30,9 +30,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 976bc4114790473d3bdcab6c06684f0c955893ee
+source-git-commit: ee8113dcf4e6d4d91fdf6cc69078d6104315a33f
 workflow-type: tm+mt
-source-wordcount: 1291
+source-wordcount: 1314
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Os serviços da Storefront são um grupo de recursos alimentados por IA que otim
       <div>
          <a href="../catalog-service/overview.md">
          <strong>Serviço de catálogo</strong>
-         </a>
+         
       </div>
       <p>
          <em>Ofereça aos seus clientes uma experiência de produto otimizada enquanto aumenta o desempenho, melhora a escalabilidade e aumenta as conversões.</em>
@@ -103,7 +103,7 @@ Os serviços da Storefront são um grupo de recursos alimentados por IA que otim
       <div>
          <a href="../product-recommendations/overview.md">
          <strong>Recomendações de produto</strong>
-         </a>
+         
       </div>
       <p>
          <em>Adicione recomendações alimentadas por IA com base no comportamento do comprador, nas tendências populares, na similaridade do produto e muito mais.</em>
@@ -116,7 +116,7 @@ Os serviços da Storefront são um grupo de recursos alimentados por IA que otim
       <div>
          <a href="../payment-services/guide-overview.md">
          <strong>Serviços de pagamento</strong>
-         </a>
+         
       </div>
       <p>
          <em>Impulsione a satisfação do cliente com diversos métodos de pagamento, incluindo prestações sem juros e exibições simplificadas de processamento de pagamento, ordens e faturas.</em>
@@ -151,22 +151,10 @@ Os serviços de integração se referem a recursos que conectam sua instância d
       <div>
           <a href="../aem-assets-integration/overview.md">
          <strong>integração com o AEM Assets</strong>
-         </a>
+         
       </div>
       <p>
          <em>Simplifique o gerenciamento de ativos digitais usando um sistema integrado ao Adobe Experience Manager para gerenciar conteúdo de mídia avançada.</em>
-      </p>
-      <br/>
-      <a href="../llmo-integration/overview.md">
-      <img alt="Otimização de LLM" src="../assets/icons/gauge4.svg" width="40">
-      </a>
-      <div>
-          <a href="../llmo-integration/overview.md">
-         <strong>[!DNL Adobe LLM Optimizer] integração</strong>
-         </a>
-      </div>
-      <p>
-         <em>Conecte seu catálogo ao [!DNL Adobe LLM Optimizer] para monitorar como os produtos aparecem nas respostas orientadas por IA e implante o nome do produto aprovado e as atualizações de descrição das oportunidades de volta ao [!DNL Adobe Commerce].</em>
       </p>
    </td>
    <td valign="top">
@@ -176,7 +164,7 @@ Os serviços de integração se referem a recursos que conectam sua instância d
       <div>
          <a href="../app-management/overview.md">
          <strong>Gerenciamento de aplicativos</strong>
-         </a>
+         
       </div>
       <p>
          <em>Associe, configure e gerencie aplicativos do App Builder com sua instância do Commerce por meio da interface do Administrador.</em>
@@ -201,8 +189,7 @@ As ferramentas de dados ajudam você a gerenciar e otimizar o fluxo de informaç
          </a>
       </div>
       <p>
-         <em>Sincronizar automaticamente dados de catálogo, pedido e inventário da Adobe Commerce com os serviços conectados. Use comandos da CLI do Commerce ou o <strong>Painel de Gerenciamento de Dados</strong> para gerenciar o processamento de sincronização.</em>
-      </p>
+         <em>Sincronizar automaticamente dados de catálogo, pedido e inventário da Adobe Commerce com os serviços conectados. Use comandos da CLI do Commerce ou o <strong>Painel de Gerenciamento de Dados</strong> para gerenciar o processamento de sincronização.</em></p>
    </td>
    <td valign="top">
       <a href="../price-index/price-indexing.md">
@@ -211,7 +198,7 @@ As ferramentas de dados ajudam você a gerenciar e otimizar o fluxo de informaç
       <div>
           <a href="../price-index/price-indexing.md">
          <strong>Indexador de preços SaaS</strong>
-         </a>
+         
       </div>
       <p>
          <em>Otimize o desempenho do site descarregando tarefas que consomem muitos recursos, como indexação e cálculo de preços, do aplicativo Commerce para a infraestrutura em nuvem da Adobe.</em>
@@ -224,11 +211,10 @@ As ferramentas de dados ajudam você a gerenciar e otimizar o fluxo de informaç
       <div>
           <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard" target="_blank">
          <strong>Painel de gerenciamento de dados</strong>
-         </a>
+         
       </div>
       <p>
-         <em>Rastreie facilmente a sincronização de dados do Commerce e acione a ressincronização a partir de um painel unificado no Administrador do Commerce. Obtenha insights valiosos sobre a disponibilidade de dados para exibição oportuna a seus compradores.</em>
-      </p>
+         <em>Rastreie facilmente a sincronização de dados do Commerce e acione a ressincronização a partir de um painel unificado no Administrador do Commerce. Obtenha insights valiosos sobre a disponibilidade de dados para exibição oportuna a seus compradores.</em></p>
    </td>
 </table>
 
