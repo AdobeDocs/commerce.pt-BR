@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ff5d3ee7f421c8fee9a40a71ea1de366fd5e6d47
+source-git-commit: 616ad9e9b45a66f127a55ef87dd6c6b9c0b470c8
 workflow-type: tm+mt
-source-wordcount: 2946
+source-wordcount: 3024
 ht-degree: 0%
 
 ---
@@ -593,6 +593,16 @@ Atualizações no metapackage PHP do Serviço de Catálogo (`magento/catalog-ser
 - Para clientes do Adobe Commerce as a Cloud Service, a versão mais recente é instalada em seu ambiente.
 
 - Para o Adobe Commerce na nuvem ou no local, a Adobe recomenda usar o Composer para atualizar o metapackage do Serviço de catálogo nos seus ambientes de nuvem na versão mais recente.
+
+### Versão v3.5.0
+
+**Data de lançamento**: 10 de julho de 2026
+
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
+
+![Nova](../assets/new.svg) **Sincronização de chave de URL da categoria de preparo**—Atualizou as dependências de metapackage do Serviço de Catálogo para incluir o módulo Exportador de Dados de Preparo de Catálogo (`magento/module-catalog-staging-data-exporter`). Este módulo reexporta feeds de produtos quando uma alteração de categoria em etapas `url_key` é aplicada. Portanto, as alterações de catálogo em etapas se propagam corretamente para o catálogo SaaS (Serviço de Catálogo, Live Search e Recomendações de Produto).
+
+![Novo](../assets/new.svg) Atualizou as dependências para manter a compatibilidade entre o Serviço de Catálogo e a pilha do Commerce.
 
 ### Versão v3.4.0
 
