@@ -3,14 +3,18 @@ title: Pesquisa semântica
 description: Habilitar a pesquisa semântica de IA para  [!DNL Live Search]  em Configurações. Nenhuma configuração de atributo ou alteração de vitrine eletrônica é necessária.
 role: Admin
 recommendations: noCatalog
-source-git-commit: 94598c3cbc6b9fa84f92532e42ec5e9027c5b1fc
+source-git-commit: 33d9172b2d0455a061c00781128a9f2fe804af7b
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
 
 # Pesquisa semântica
+
+>[!AVAILABILITY]
+>
+>A pesquisa semântica está disponível para comerciantes que usam o Adobe Commerce versões 2.4.4 e mais recentes.
 
 A pesquisa semântica usa IA para entender o que os compradores significam, não apenas as palavras exatas que digitam. Consultas como &quot;vestido de casamento na praia&quot; ou &quot;sapatos confortáveis para ficar o dia todo&quot; podem retornar produtos relevantes mesmo quando seu catálogo não usa essas frases exatas.
 

@@ -3,13 +3,11 @@ title: Configurações
 description: Configure a pesquisa semântica, os intervalos de aspectos de preço e o idioma de indexação padrão para o serviço  [!DNL Live Search] .
 exl-id: 6387a365-7e23-4023-95ac-27908164d81c
 TQID: https://experienceleague.adobe.com/Dn4x8Boo-1F5RQgMXVx6Dpt7iYWFIlqOlO5QwhJrjVU
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 1f5246b6f5853f8b53a356ae2d6d58077b07a9a5
 workflow-type: tm+mt
-source-wordcount: 650
+source-wordcount: 679
 ht-degree: 0%
 
 ---
@@ -21,6 +19,10 @@ Use o espaço de trabalho **Configurações** para configurar a pesquisa semânt
 ![Configurações](assets/settings.png)
 
 ## Pesquisa semântica {#semantic-search}
+
+>[!AVAILABILITY]
+>
+>A pesquisa semântica está disponível para comerciantes que usam o Adobe Commerce versões 2.4.4 e mais recentes.
 
 A pesquisa semântica usa IA para corresponder produtos com base no significado e no contexto, não apenas palavras-chave exatas. Quando o **[!UICONTROL Semantic search]** estiver habilitado, os compradores que usam linguagem natural ou texto que não corresponde ao texto do catálogo ainda poderão encontrar produtos relevantes. O [!DNL Live Search] fornece correspondência de palavra-chave e semântica em uma experiência de pesquisa unificada na loja. A pesquisa semântica funciona com sua configuração existente; as [regras de pesquisa](rules.md), os [sinônimos](synonyms.md), os [aspectos](facets.md), os aumentos e o [merchandising de categoria](category-merch.md) continuam sendo aplicados.
 
@@ -72,8 +74,7 @@ Você pode especificar o número de grupos de faixas de preços e como os valore
 
 A configuração Idioma informa a [!DNL Live Search] qual idioma esperar ao ler o catálogo e gravar o índice.
 
-As línguas têm diferentes conjuntos de regras para a gramática: como as palavras são separadas, tempos verbais e formas de palavras, por exemplo.
-A configuração Idioma garante que o conjunto correto de regras seja aplicado ao mecanismo de indexação.
+As línguas têm diferentes conjuntos de regras para a gramática: como as palavras são separadas, tempos verbais e formas de palavras, por exemplo.A configuração Idioma garante que o conjunto correto de regras seja aplicado ao mecanismo de indexação.
 
 Defina a configuração Idioma para o idioma principal do catálogo. Ao alterar o idioma do índice, pode levar de 5 a 60 minutos para refletir a alteração na loja, dependendo do tamanho e da complexidade do catálogo.
 
