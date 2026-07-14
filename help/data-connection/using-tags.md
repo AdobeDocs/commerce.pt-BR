@@ -5,10 +5,18 @@ role: Admin, Developer
 feature: Personalization, Integration
 exl-id: dab333e8-5f71-4f3e-9660-6363b0e230c8
 TQID: https://experienceleague.adobe.com/7HNafiIenZfLrAhILPMwuUzRDzBVuClvDchJBGEg6bs
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
 source-wordcount: 2684
@@ -67,7 +75,7 @@ Por exemplo, vamos adicionar o evento `signOut` do Adobe Commerce às tags da Ad
 
 1. Criar um elemento de dados:
 
-   ![Criar novo elemento de dados
+   !&lbrack;Criar novo elemento de dados
    _Criar novo elemento de dados_
 
 1. Definir **Nome** como `sign out`.
@@ -80,14 +88,14 @@ Por exemplo, vamos adicionar o evento `signOut` do Adobe Commerce às tags da Ad
 
 1. Em **userAccount** > **logout**, defina o **value** no **Logout do visitante** como `1`.
 
-   ![Atualizar valor de Saída
+   !&lbrack;Atualizar valor de Saída
    _Atualizar valor de Saída_
 
 1. Selecione **Salvar**.
 
 1. Criar uma regra:
 
-   ![Criar nova regra
+   !&lbrack;Criar nova regra
    _Criar nova regra_
 
 1. Selecione **Adicionar** em **EVENTOS**.
@@ -1343,7 +1351,7 @@ As etapas a seguir mostram como configurar um evento `pageView` com `identityMap
 
 1. Configurar elemento de dados com código personalizado para ECID:
 
-   ![Configurar elemento de dados com código personalizado
+   !&lbrack;Configurar elemento de dados com código personalizado
    _Configurar elemento de dados com código personalizado_
 
 1. Selecione [!UICONTROL Open Editor] e adicione o seguinte código personalizado:
@@ -1370,12 +1378,12 @@ As etapas a seguir mostram como configurar um evento `pageView` com `identityMap
 
 1. Atualizar esquema XDM com `identityMap` definido como ECID:
 
-   ![Definir identityMap como ECID
+   !&lbrack;Definir identityMap como ECID
    _Definir identityMap como ECID_
 
 1. Defina as ações da regra que recuperam a ECID:
 
-   ![Recuperar ECID
+   !&lbrack;Recuperar ECID
    _Recuperar ECID_
 
 ## Definir identidade em eventos de back office
@@ -1384,7 +1392,7 @@ Ao contrário dos eventos da loja que usam a ECID para identificar e vincular in
 
 1. Criar um elemento do mapa de identidade.
 
-   ![Mapa de identidade do back office
+   !&lbrack;Mapa de identidade do back office
    _Criar mapa de identidade de back office_
 
 1. Selecione [!UICONTROL Open Editor] e adicione o seguinte código personalizado:
@@ -1412,7 +1420,7 @@ return IdentityMap;
 
 1. Adicione este novo elemento a cada campo `identityMap`.
 
-   ![Atualizar cada identityMap
+   !&lbrack;Atualizar cada identityMap
    _Atualizar cada identityMap_
 
 ## Definição do consentimento
@@ -1421,17 +1429,17 @@ Ao instalar a extensão [!DNL Data Connection] no Adobe Commerce, o consentiment
 
 1. Crie um elemento de dados (`%do not track cookie%`) do **Código personalizado principal** para o cookie `mg_dnt`:
 
-   ![Criar não rastrear elemento de dados
+   !&lbrack;Criar não rastrear elemento de dados
    _Criar não rastrear elemento de dados_
 
 1. Crie um elemento de dados (`%consent%`) **Código personalizado principal** que retorne `out` se o cookie estiver definido e `in` caso contrário:
 
-   ![Criar elemento de dados de consentimento
+   !&lbrack;Criar elemento de dados de consentimento
    _Criar elemento de dados de consentimento_
 
 1. Configure a Extensão Adobe Experience Platform Web SDK com o elemento de dados `%consent%`:
 
-   ![Atualizar o SDK com consentimento
+   !&lbrack;Atualizar o SDK com consentimento
    _Atualizar o SDK com consentimento_
 
 ## Avisos
