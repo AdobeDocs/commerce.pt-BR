@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 55d4fefaa15a09e475bcda93f23801319b56db70
+source-git-commit: ee2211b243171ebfc9ca744f169c786943c40ad9
 workflow-type: tm+mt
-source-wordcount: 3115
+source-wordcount: 3256
 ht-degree: 0%
 
 ---
@@ -45,12 +45,19 @@ As atualizações incluem:
 
 ## Versões de 2026
 
+### Versão 103.4.30
+
+_10 de julho de 2026_
+
+![Correção](../assets/fix.svg) Corrigido o filtro de grade de status de feed por recurso de ID na página Status de sincronização de feed de dados no Administrador do Commerce para que os registros de feed correspondentes sejam exibidos corretamente ao filtrar por ID de feed. <!--MDEE-1396-->
+![Novo](../assets/new.svg) Adicionada uma opção `--force` ao comando `bin/magento saas:resync` para ressincronizar todos os feeds de dados selecionados mesmo quando já são exibidos como sincronizados, facilitando cenários completos de ressincronização e recuperação. <!--MDEE-1334-->
+
 ### Versão 103.4.29
 
 _6 de julho de 2026_
 
-![Corrigir](../assets/fix.svg) Classifique links de produtos para evitar sincronização aleatória. <!--MDEE-1391-->
-![Correção](../assets/fix.svg) O feed de preço envia o preço base em vez do preço de regra de catálogo para sites UTC-negativos após a meia-noite UTC. <!--MDEE-1401-->
+![Correção](../assets/fix.svg) Correção de um problema em que a ordem dos links de produtos relacionados, de venda adicional e de venda cruzada no feed de produtos podia variar entre execuções, fazendo com que produtos inalterados fossem reenviados a cada execução de `bin/magento saas:resync --feed products`. Esses links agora são exportados em uma ordem consistente, de modo que os produtos são ressincronizados somente quando realmente são alterados. <!--MDEE-1391-->
+![Correção](../assets/fix.svg) Corrigido um problema no qual o feed de preços enviava preços base completos em vez de preços de regras de catálogo para sites em fusos horários atrás de UTC (por exemplo, EUA e Canadá) durante as primeiras horas da manhã em UTC. Agora os preços da regra de catálogo são entregues corretamente, independentemente do fuso horário de um site. <!--MDEE-1401-->
 
 ### Versão 103.4.28
 
