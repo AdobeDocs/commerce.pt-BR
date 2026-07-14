@@ -46,11 +46,11 @@ A imagem a seguir mostra como os dados do Commerce fluem de sua loja para outros
 
 ![Como os dados fluem para a borda do Experience Platform](assets/commerce-edge.png)
 
-Na imagem acima, seus dados comportamentais, de back office e de perfil do cliente são enviados para a borda do Experience Platform usando uma SDK, uma API e um conector de origem. Não é necessário entender totalmente como essas partes funcionam, pois a extensão lida com a complexidade do compartilhamento de dados para você. Quando os dados do evento estiverem na borda, você poderá usá-los em produtos Adobe DX downstream, como o [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=pt-BR), [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html), [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/admin-overview/analytics-overview.html) e [Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html). Para obter exemplos guiados, consulte [Usar o Adobe Journey Optimizer para enviar um email de carrinho abandonado](using-ajo.md) e [Criar um público no Real-Time CDP usando os dados de evento do Commerce](create-audience.md).
+Na imagem acima, seus dados comportamentais, de back office e de perfil do cliente são enviados para a borda do Experience Platform usando uma SDK, uma API e um conector de origem. Não é necessário entender totalmente como essas partes funcionam, pois a extensão lida com a complexidade do compartilhamento de dados para você. Quando os dados do evento estiverem na borda, você poderá usá-los em produtos Adobe DX downstream, como o [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=pt-BR), [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-overview.html?lang=pt-BR), [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/admin-overview/analytics-overview.html?lang=pt-BR) e [Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html?lang=pt-BR). Para obter exemplos guiados, consulte [Usar o Adobe Journey Optimizer para enviar um email de carrinho abandonado](using-ajo.md) e [Criar um público no Real-Time CDP usando os dados de evento do Commerce](create-audience.md).
 
 ## Enviar dados do Experience Platform de volta para o Commerce
 
-Enviar os dados do Commerce para a Experience Platform usando a extensão [!DNL Data Connection] é um lado dos recursos de compartilhamento de dados da Commerce. O outro lado, que é uma extensão opcional, é chamado [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html). Essa extensão permite criar públicos-alvo no Real-Time CDP e implantá-los na Commerce Store para informar as regras de preço do carrinho, as regras de produto relacionadas e os blocos dinâmicos.
+Enviar os dados do Commerce para a Experience Platform usando a extensão [!DNL Data Connection] é um lado dos recursos de compartilhamento de dados da Commerce. O outro lado, que é uma extensão opcional, é chamado [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=pt-BR). Essa extensão permite criar públicos-alvo no Real-Time CDP e implantá-los na Commerce Store para informar as regras de preço do carrinho, as regras de produto relacionadas e os blocos dinâmicos.
 
 Em um alto nível, o fluxo de dados do armazenamento do Commerce para a Experience Platform e de volta pela extensão do Audience Activation é semelhante ao seguinte:
 
@@ -72,13 +72,13 @@ O compartilhamento de dados entre esses dois sistemas requer a compreensão de v
 
 - **Eventos de perfil** — Eventos de série temporal para alterações de ciclo de vida de perfil no servidor. Consulte [eventos de perfil do cliente](events-backoffice.md#customer-profile-events).
 
-- **Experience Platform e Edge Network** - O data warehouse da maioria dos produtos Adobe DX. Os dados enviados para a Experience Platform são propagados para os produtos Adobe DX por meio da Experience Platform Edge Network. Por exemplo, você pode iniciar o Journey Optimizer, recuperar seus dados de evento específicos do Commerce da borda e criar um email de carrinho abandonado no Journey Optimizer. O Journey Optimizer pode enviar esse email se houver carrinhos abandonados na loja do Commerce. Saiba mais sobre o [Experience Platform e o Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html).
+- **Experience Platform e Edge Network** - O data warehouse da maioria dos produtos Adobe DX. Os dados enviados para a Experience Platform são propagados para os produtos Adobe DX por meio da Experience Platform Edge Network. Por exemplo, você pode iniciar o Journey Optimizer, recuperar seus dados de evento específicos do Commerce da borda e criar um email de carrinho abandonado no Journey Optimizer. O Journey Optimizer pode enviar esse email se houver carrinhos abandonados na loja do Commerce. Saiba mais sobre o [Experience Platform e o Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html?lang=pt-BR).
 
-- **Esquema** - O esquema descreve a estrutura dos dados que estão sendo enviados. Antes que o Experience Platform possa assimilar seus dados do Commerce, você deve compor um esquema para descrever a estrutura dos dados e fornecer restrições para o tipo de dados que pode estar contido em cada campo. Os esquemas consistem em uma classe base e zero ou mais grupos de campos de esquema. O esquema usa a estrutura XDM, que todos os produtos Adobe DX podem ler. O esquema garante que os dados enviados para a Experience Platform sejam compreendidos em todos os produtos DX. Saiba mais sobre [esquemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
+- **Esquema** - O esquema descreve a estrutura dos dados que estão sendo enviados. Antes que o Experience Platform possa assimilar seus dados do Commerce, você deve compor um esquema para descrever a estrutura dos dados e fornecer restrições para o tipo de dados que pode estar contido em cada campo. Os esquemas consistem em uma classe base e zero ou mais grupos de campos de esquema. O esquema usa a estrutura XDM, que todos os produtos Adobe DX podem ler. O esquema garante que os dados enviados para a Experience Platform sejam compreendidos em todos os produtos DX. Saiba mais sobre [esquemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=pt-BR).
 
-- **Conjunto de dados** - Uma construção de armazenamento e gerenciamento para uma coleção de dados, geralmente uma tabela que contém um esquema (colunas) e campos (linhas). Os conjuntos de dados também contêm metadados que descrevem vários aspectos dos dados armazenados. Todos os dados assimilados com sucesso na Adobe Experience Platform estão contidos em conjuntos de dados. Saiba mais sobre [conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html).
+- **Conjunto de dados** - Uma construção de armazenamento e gerenciamento para uma coleção de dados, geralmente uma tabela que contém um esquema (colunas) e campos (linhas). Os conjuntos de dados também contêm metadados que descrevem vários aspectos dos dados armazenados. Todos os dados assimilados com sucesso na Adobe Experience Platform estão contidos em conjuntos de dados. Saiba mais sobre [conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=pt-BR).
 
-- **Sequência de dados** - ID que permite que os dados fluam do Adobe Experience Platform para outros produtos Adobe DX. Essa ID deve ser associada a um site específico em sua instância específica do Adobe Commerce. Ao criar esse fluxo de dados, especifique o esquema XDM criado acima. Saiba mais sobre [datastreams](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html).
+- **Sequência de dados** - ID que permite que os dados fluam do Adobe Experience Platform para outros produtos Adobe DX. Essa ID deve ser associada a um site específico em sua instância específica do Adobe Commerce. Ao criar esse fluxo de dados, especifique o esquema XDM criado acima. Saiba mais sobre [datastreams](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=pt-BR).
 
 ## Arquitetura com suporte
 
@@ -86,7 +86,7 @@ A extensão [!DNL Data Connection] está disponível nas seguintes arquiteturas:
 
 - PHP/Luma
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)
-- [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html)
+- [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html?lang=pt-BR)
 
 >[!BEGINSHADEBOX]
 
@@ -96,7 +96,7 @@ Para usar a extensão [!DNL Data Connection], você deve ter o seguinte:
 
 - Adobe Commerce 2.4.4 ou mais recente
 - Adobe ID e ID da organização
-- [ACDL (Adobe Client Data Layer)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html), que é necessária para coletar dados do evento de vitrine
+- [ACDL (Adobe Client Data Layer)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html?lang=pt-BR), que é necessária para coletar dados do evento de vitrine
 - Qualificações para outros produtos Adobe DX.
 
 >[!ENDSHADEBOX]
@@ -106,12 +106,12 @@ Para usar a extensão [!DNL Data Connection], você deve ter o seguinte:
 Em um nível superior, habilitar a extensão [!DNL Data Connection] envolve as seguintes etapas:
 
 1. [Instalar](install.md) a extensão [!DNL Data Connection].
-1. [Entre](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) com sua conta da Adobe e [exiba para confirmar](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255) sua ID da organização. A ID da organização é a ID associada à empresa provisionada pela Experience Cloud. A ID é uma sequência de 24 caracteres alfanuméricos seguidos por (e deve incluir) `@AdobeOrg`.
-1. Verifique se você tem [permissão para a coleta de dados no Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html).
+1. [Entre](https://helpx.adobe.com/br/manage-account/using/access-adobe-id-account.html) com sua conta da Adobe e [exiba para confirmar](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=pt-BR#concept_EA8AEE5B02CF46ACBDAD6A8508646255) sua ID da organização. A ID da organização é a ID associada à empresa provisionada pela Experience Cloud. A ID é uma sequência de 24 caracteres alfanuméricos seguidos por (e deve incluir) `@AdobeOrg`.
+1. Verifique se você tem [permissão para a coleta de dados no Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html?lang=pt-BR).
 1. Revise os [tipos de dados](data-ingestion.md) que você pode coletar e enviar.
 1. Crie ou atualize seu [esquema de evento de série temporal](update-xdm.md) ou [esquema de dados de registro de perfil](profile-data.md) com grupos de campos específicos do Commerce.
-1. [Crie um conjunto de dados](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) com base no esquema que você criou ou atualizou. Esse conjunto de dados contém os dados do Commerce enviados para o Experience Platform Edge.
-1. [Crie uma sequência de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) e selecione o esquema XDM que contém os grupos de campos específicos do Commerce.
+1. [Crie um conjunto de dados](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html?lang=pt-BR#create-a-dataset) com base no esquema que você criou ou atualizou. Esse conjunto de dados contém os dados do Commerce enviados para o Experience Platform Edge.
+1. [Crie uma sequência de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=pt-BR) e selecione o esquema XDM que contém os grupos de campos específicos do Commerce.
 1. [Conecte-se aos Serviços Commerce](../landing/saas.md).
 1. [Conectar-se ao Adobe Experience Platform](connect-data.md).
 
@@ -133,5 +133,5 @@ Este guia foi projetado para o comerciante do Adobe Commerce que deseja enriquec
 
 Se você precisar de informações ou tiver dúvidas que não são abordadas neste guia, use os seguintes recursos:
 
-- [Central de ajuda](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target="_blank"}
-- [Tíquetes de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"} — Envie um tíquete para receber ajuda adicional.
+- [Central de ajuda](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=pt-BR){target="_blank"}
+- [Tíquetes de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket){target="_blank"} — Envie um tíquete para receber ajuda adicional.
