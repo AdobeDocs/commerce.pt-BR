@@ -24,9 +24,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 5ba5dfa23580b5eefa8271277e78c6ea67879b90
 workflow-type: tm+mt
-source-wordcount: 3071
+source-wordcount: 3511
 ht-degree: 0%
 
 ---
@@ -54,9 +54,36 @@ Após configurar o conector de Serviços da Commerce, configure a extensão [!DN
 
 Nesta seção, você aprenderá a configurar a extensão [!DNL Data Connection].
 
+### Escopo da configuração {#configuration-scope}
+
+As configurações de [!DNL Data Connection] usam uma combinação de valores globais e com escopo de site. As configurações globais se aplicam a toda a instância do Adobe Commerce. As configurações com escopo de site permitem que comerciantes de várias marcas e vários sites encaminhem dados para diferentes sandboxes e conjuntos de dados da Adobe Experience Platform por site.
+
+Antes de configurar a loja, o back office ou a coleção de dados de perfil, defina o menu suspenso **[!UICONTROL Scope]** na guia **[!UICONTROL Settings]** para o site que você deseja configurar. Repita a configuração para cada site que precisa de roteamento Experience Platform diferente.
+
+| Configuração ou campo | Escopo | Notas |
+| --- | --- | --- |
+| ID da organização | Global | Uma ID de organização por instância da Adobe Commerce. Já configurado no [Commerce Services connector](../landing/saas.md#organizationid). |
+| Credenciais da conta de serviço | Global | Insira os detalhes da conta de serviço uma vez. As mesmas credenciais autenticam as chamadas da API do Experience Platform para todos os sites, a menos que sua implantação exija o contrário. |
+| Nome da sandbox | Site | Selecione a sandbox do Experience Platform para o site no escopo. Configuração principal com escopo de site para [!DNL Data Connection] eventos de back office. |
+| **[!UICONTROL Test connection]** | Site | Valida as credenciais de conta de serviço e a sandbox do site atualmente selecionado no **Escopo**. |
+| ID da sequência de dados | Site | Encaminha dados de evento comportamentais e de back office do site selecionado. |
+| ID do conjunto de dados | Site | Identifica o conjunto de dados que armazena dados do Commerce para o site selecionado. |
+| Eventos de vitrine, eventos de back office, perfis de clientes | Site | As opções de coleta de dados se aplicam ao site selecionado em **Escopo**. |
+
+#### Exemplo de vários sites {#multi-website-example}
+
+Um comerciante opera dois sites a partir de uma instância do Adobe Commerce:
+
+- O **Site A (Marca A)** envia dados de vitrine e back office para uma sandbox do Experience Platform de **produção**.
+- O **Site B (Marca B)** envia dados para uma sandbox do Experience Platform **development** para teste.
+
+O comerciante insere as credenciais da conta de serviço uma vez na página **[!UICONTROL Service Account/Credential details]**. Na guia **[!UICONTROL Settings]**, o comerciante define **[!UICONTROL Scope]** como **Site A**, seleciona o nome da sandbox de produção e salva. O comerciante então define **[!UICONTROL Scope]** como **Site B**, seleciona o nome da sandbox de desenvolvimento e salva. **[!UICONTROL Test connection]** é executado para cada site para confirmar a sandbox e as credenciais corretas.
+
 ### Adicionar conta de serviço e detalhes da credencial
 
 Se você planeja coletar e enviar [dados históricos de pedido](#send-historical-order-data) ou [dados de perfil do cliente](#send-customer-profile-data), é necessário adicionar a conta de serviço e os detalhes da credencial. Além disso, se você estiver configurando a extensão [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=pt-BR), conclua essas etapas.
+
+As credenciais da conta de serviço estão configuradas no escopo **Configuração Padrão** e se aplicam globalmente. Consulte [Escopo de configuração](#configuration-scope) para configurações no escopo do site, como nome da sandbox.
 
 Se você estiver coletando e enviando apenas dados da loja ou do back office, pule para a seção [geral](#general).
 
@@ -86,9 +113,9 @@ Baixe o [arquivo de configuração do espaço de trabalho](https://developer.ado
 
 1. Copie o conteúdo do arquivo `<workspace-name>.json` nos **detalhes da Conta de Serviço/Credencial** campos, como `"client_id"`, `"client_secrets"`, `"technical_account_email"`, `"technical_account_id"` e assim por diante.
 
-1. Clique em **Salvar configuração**.
+1. Clique em **[!UICONTROL Save Config]**.
 
-1. Clique no botão **[!UICONTROL Test connection]** para verificar se a conta de serviço e as informações de credencial inseridas estão corretas.
+   Depois de salvar, conclua a configuração com escopo de site (incluindo **[!UICONTROL Sandbox name]** e **[!UICONTROL Test connection]**) na guia **[!UICONTROL Settings]**. Consulte [Geral](#general).
 
 ### Geral
 
@@ -96,9 +123,13 @@ Baixe o [arquivo de configuração do espaço de trabalho](https://developer.ado
 
    ![[!DNL Data Connection] Configurações](./assets/epc-settings.png){width="700" zoomable="yes"}
 
-1. Na guia **Configurações** em **Geral**, verifique a ID associada à sua conta do Adobe Experience Platform, conforme configurado no [Commerce Services Connector](../landing/saas.md#organizationid). A ID da organização é global. Somente uma ID de organização pode ser associada por instância do Adobe Commerce.
+1. Na guia **[!UICONTROL Settings]** em **[!UICONTROL General]**, verifique a ID associada à sua conta do Adobe Experience Platform, conforme configurado no [Commerce Services Connector](../landing/saas.md#organizationid). A ID da organização é global. Somente uma ID de organização pode ser associada por instância do Adobe Commerce.
 
-1. No menu suspenso **Escopo**, defina o contexto como **Site**.
+1. Na lista suspensa **[!UICONTROL Scope]**, defina o contexto como **Site**. Consulte [Escopo de configuração](#configuration-scope) para o qual as configurações se aplicam globalmente e por site.
+
+1. Digite o **[!UICONTROL Sandbox name]** para o site no escopo.
+
+1. Clique em **[!UICONTROL Test connection]** para validar as credenciais da conta de serviço e a sandbox do site atualmente selecionado em **[!UICONTROL Scope]**. Repita o procedimento para cada site que usa uma sandbox diferente.
 
 1. (Opcional) Se você já tiver um [AEP Web SDK (alloy)](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=pt-BR) implantado em seu site, habilite a caixa de seleção e adicione o nome de seu AEP Web SDK. Caso contrário, deixe esses campos em branco e a extensão [!DNL Data Connection] implantará um para você.
 
@@ -118,7 +149,7 @@ Nesta seção, especifique o tipo de dados que deseja coletar e enviar para a bo
 
 Para garantir que sua instância do Adobe Commerce possa iniciar a coleta de dados, verifique os [pré-requisitos](overview.md#prerequisites).
 
-Consulte o tópico de eventos para saber mais sobre [loja](events.md#storefront-events), [back office](events-backoffice.md) e [perfil](events-backoffice.md#customer-profile-events) eventos.
+Consulte o tópico de eventos para saber mais sobre [vitrine](events.md#storefront-events), [back office](events-backoffice.md) e [registros de perfil](events-profilerecord.md) dados. Para a série de tempo [eventos de perfil](events-backoffice.md#customer-profile-events), consulte a referência a eventos de back office.
 
 >[!NOTE]
 >
@@ -162,16 +193,18 @@ Consulte o tópico de eventos para saber mais sobre [loja](events.md#storefront-
 
 | Campo | Descrição |
 |--- |--- |
-| Escopo | Site específico no qual você deseja aplicar as configurações. |
-| ID da organização (global) | ID que pertence à organização que comprou o produto Adobe DX. Essa ID vincula sua instância do Adobe Commerce ao Adobe Experience Platform. |
+| Escopo | Site onde as configurações com escopo de site se aplicam. Alterne o escopo para configurar o nome da sandbox, a ID da sequência de dados, a ID do conjunto de dados e as opções de coleção de dados para cada site. |
+| ID da organização (global) | ID que pertence à organização que comprou o produto Adobe DX. Essa ID vincula sua instância do Adobe Commerce ao Adobe Experience Platform. Configurado globalmente; não definido por site. |
+| Nome da sandbox (site) | Nome da sandbox da Experience Platform em que o Commerce envia dados para o site selecionado. Configure separadamente para cada site quando as implantações de várias marcas ou de vários sites encaminharem os dados para sandboxes diferentes. |
 | O AEP Web SDK já foi implantado no site? | Marque essa caixa de seleção se você implantou seu próprio AEP Web SDK no site |
 | AEP Web SDK Name (global) | Se você já tiver um Experience Platform Web SDK implantado em seu site, especifique o nome desse SDK neste campo. Isso permite que o Coletor de Eventos da Storefront e o SDK de Eventos da Storefront usem seu Experience Platform Web SDK em vez da versão implantada pela extensão [!DNL Data Connection]. Se você não tiver um Experience Platform Web SDK implantado no site, deixe esse campo em branco e a extensão [!DNL Data Connection] implantará um para você. |
 | Eventos da loja | É marcado por padrão, desde que a ID da organização e a ID do fluxo de dados sejam válidas. Os eventos da loja coletam dados comportamentais anônimos dos compradores enquanto eles navegam pelo site. |
 | Eventos de back office | Se marcado, a carga do evento conterá informações anônimas sobre o status do pedido, como se um pedido tivesse sido feito, cancelado, reembolsado ou remetido. |
 | ID da sequência de dados (site) | ID que permite que os dados fluam do Adobe Experience Platform para outros produtos Adobe DX. Essa ID deve ser associada a um site específico em sua instância específica do Adobe Commerce. Se você especificar seu próprio Experience Platform Web SDK, não especifique uma ID de fluxo de dados nesse campo. A extensão [!DNL Data Connection] usa a ID de sequência de dados associada a essa SDK e ignora qualquer ID de sequência de dados especificada nesse campo (se houver). |
 | ID do conjunto de dados (site) | ID do conjunto de dados que contém seus dados do Commerce. Este campo é obrigatório, a menos que você tenha desmarcado as caixas de seleção **Eventos da vitrine** ou **Eventos do back office**. Além disso, se você estiver usando sua própria Experience Platform Web SDK e, portanto, não tiver especificado uma ID de sequência de dados, ainda será necessário adicionar a ID do conjunto de dados associada à sequência de dados. Caso contrário, você não poderá salvar este formulário. |
+| **[!UICONTROL Test connection]** | Valida as credenciais da conta de serviço e o nome da sandbox do site atualmente selecionado no **Escopo**. Execute o teste depois de configurar as credenciais e depois de alterar o nome ou o escopo da sandbox de um site. |
 
-Após a integração, os dados da loja começam a fluir para a borda do Experience Platform. Os dados de back office levam cerca de cinco minutos para serem exibidos na borda do. As atualizações subsequentes ficam visíveis na borda com base na programação do cron.
+Após configurar a extensão, os dados da loja começam a fluir para a borda do Experience Platform. Os dados de back office levam cerca de cinco minutos para serem exibidos na borda do. As atualizações subsequentes ficam visíveis na borda com base na programação do cron.
 
 ### Enviar dados de perfil do cliente
 
@@ -301,9 +334,9 @@ Saiba mais sobre como [configurar atributos personalizados](custom-attributes.md
 | Experience Platform | Exibe todos os atributos personalizados especificados no esquema [!DNL Commerce] na Experience Platform. |
 | Atualizar | Recupera nomes de atributos personalizados do esquema [!DNL Commerce] na Experience Platform. |
 
-## Confirmar se os dados do evento foram coletados
+## Confirmar se os dados do evento foram coletados {#confirm-that-event-data-is-collected}
 
-Para confirmar se os dados estão sendo coletados do seu armazenamento do Commerce, use o [Adobe Experience Platform debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=pt-BR) para examinar seu site do Commerce. Depois de confirmar que os dados estão sendo coletados, você pode verificar se os dados do evento da loja e do back office aparecem na borda executando uma consulta que retorna dados do [conjunto de dados criado](overview.md#prerequisites).
+Para confirmar se os dados estão sendo coletados do seu armazenamento do Commerce, use o [Adobe Experience Platform debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=pt-BR) para examinar seu site do Commerce. Depois de confirmar que os dados estão sendo coletados, você pode verificar se os dados de evento da loja e do back office aparecem na borda executando uma consulta que retorna dados do [conjunto de dados criado durante a configuração](overview.md#enable-extension).
 
 1. Selecione **Consultas** na navegação à esquerda do Experience Platform e clique em [!UICONTROL Create Query].
 
@@ -329,7 +362,7 @@ Se os resultados não forem os esperados, abra o conjunto de dados e procure qua
 
 ### Verifique se os dados do perfil aparecem na Experience Platform
 
-Se você não estiver vendo os dados do perfil na Experience Platform, consulte a [Base de Dados de Conhecimento Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported) para obter sugestões de solução de problemas.
+Para obter sugestões de solução de problemas, consulte a dica em [Enviar dados de perfil do cliente](#send-customer-profile-data).
 
 ## Próximas etapas
 

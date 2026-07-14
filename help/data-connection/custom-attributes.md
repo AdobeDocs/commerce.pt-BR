@@ -17,7 +17,7 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
 source-wordcount: 616
 ht-degree: 2%
@@ -384,6 +384,6 @@ Exiba a guia [Personalização de Dados](connect-data.md#data-customization) no 
 
 Se você vir a mensagem `No custom order attributes found.` na guia **[!UICONTROL Data Customization]**, confirme o seguinte:
 
-1. Você concluiu os pré-requisitos para habilitar a [extensão do Conector de Dados](overview.md#prerequisites).
+1. Você concluiu os pré-requisitos para habilitar a extensão [!DNL Data Connection]. Consulte [Pré-requisitos](overview.md#prerequisites).
 1. Você configurou [atributos de pedido personalizados](#add-custom-attributes-to-orders).
 1. Pelo menos um evento de pedido foi gerado.

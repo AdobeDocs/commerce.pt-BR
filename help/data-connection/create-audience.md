@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: fd2e3797-f2ea-4b36-a9af-52acf5e90513
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
 workflow-type: tm+mt
-source-wordcount: 1132
+source-wordcount: 1107
 ht-degree: 0%
 
 ---
@@ -37,16 +37,7 @@ Crie públicos-alvo no Real-Time CDP usando dados de eventos da loja, do back of
 
 ## O que outros clientes conquistaram?
 
-Os clientes do Adobe [!DNL Commerce] obtiveram impactos comerciais significativos ao ativar públicos-alvo incorporados no Real-Time CDP e implantá-los na instância [!DNL Commerce].
-
-Um retailer de vestuário global de várias marcas obteve:
-
-- Uma fonte da verdade com dezenas de milhões de perfis unificados de clientes
-- Foram criados mais de 40 públicos-alvo exclusivos de &quot;clientes de alta intenção&quot; para se envolver em vários canais
-
-Uma empresa global de bebidas coletou:
-
-- 98 milhões de perfis de clientes de mais de 100 países
+Os clientes do Adobe [!DNL Commerce] obtiveram impactos comerciais significativos ao ativar públicos-alvo incorporados no Real-Time CDP e implantá-los na instância [!DNL Commerce]. Para obter os resultados do cliente relacionados com os dados do evento do Commerce, consulte [Usar o Adobe Journey Optimizer para enviar um email de carrinho abandonado](using-ajo.md#what-have-other-customers-achieved).
 
 ## Vamos começar
 

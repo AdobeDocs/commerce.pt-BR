@@ -14,21 +14,23 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adeb
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 5ba5dfa23580b5eefa8271277e78c6ea67879b90
 workflow-type: tm+mt
-source-wordcount: 1019
+source-wordcount: 1028
 ht-degree: 0%
 
 ---
 
 # Atualizar esquemas de evento de série de tempo para assimilação de dados do Commerce
 
-Uma das [etapas de integração](overview.md#onboarding-steps) para usar a extensão [!DNL Data Connection] é acessar o espaço de trabalho da sequência de dados e [criar uma sequência de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=pt-BR) específica para o Adobe Commerce. Ao criar esse fluxo de dados, você também deve selecionar um esquema que descreva os dados que planeja assimilar. Esse esquema deve incluir grupos de campos específicos do comércio.
+Uma das etapas ao [habilitar a extensão [!DNL Data Connection]](overview.md#enable-extension) é acessar o espaço de trabalho da sequência de dados e [criar uma sequência de dados](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=pt-BR) específica para o Adobe Commerce. Ao criar esse fluxo de dados, você também deve selecionar um esquema que descreva os dados que planeja assimilar. Esse esquema deve incluir grupos de campos específicos do comércio.
 
 Este artigo fornece os grupos de campos que seu esquema deve incluir para coletar com êxito os seguintes dados de série temporal fornecidos pelos eventos do Adobe Commerce:
 
-- [Comportamento](events.md) - Inclui eventos da loja, do perfil, da pesquisa e B2B.
-- [Back office](events-backoffice.md) - Inclui status de pedido e eventos de perfil.
+- [Comportamento](events.md) - Inclui eventos de vitrine, pesquisa e B2B.
+- [Back office](events-backoffice.md) - Inclui o status do pedido e a série temporal [eventos de perfil](events-backoffice.md#customer-profile-events).
+
+Para os *registros* do perfil, consulte [Atualizar esquema de registro de perfil](profile-data.md).
 
 Saiba mais sobre [dados de série temporal](data-ingestion.md).
 
