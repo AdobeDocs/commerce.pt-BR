@@ -2,10 +2,15 @@
 title: Metadados do Commerce no AEM Assets
 description: Saiba mais sobre o namespace do Commerce, o esquema de metadados e o texto alternativo que a integração do AEM Assets adiciona ao ambiente de criação do AEM Assets.
 feature: CMS, Media, Integration
-product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: da3860b0-d637-47df-bef0-273751180266
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: da3860b0-d637-47df-bef0-273751180266
 source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
 workflow-type: tm+mt
 source-wordcount: 749
@@ -66,7 +71,7 @@ Esse código de pacote adiciona os seguintes recursos ao ambiente de criação d
 
 ## Texto alternativo localizado nos metadados do AEM Assets
 
-O multicampo _[!UICONTROL Alt texts]_está disponível no editor de metadados de ativos da AEM Assets, na guia **[!UICONTROL Commerce]**, ao editar uma imagem qualificada.
+O multicampo _[!UICONTROL Alt texts]_&#x200B;está disponível no editor de metadados de ativos da AEM Assets, na guia **[!UICONTROL Commerce]**, ao editar uma imagem qualificada.
 
 >[!IMPORTANT]
 >
@@ -82,7 +87,7 @@ Selecione **[!UICONTROL Add]** para adicionar mais linhas para exibições de ar
 
 ![Múltiplos campos de textos alternativos com entradas de Código de Exibição de Loja e Texto Alternativo](assets/commerce-metadata-alt-texts-multifield.png){width="600" zoomable="yes"}
 
-Ao salvar, a validação do lado do cliente bloqueia o envio se qualquer linha tiver um _[!UICONTROL Store View Code]_vazio ou se duas linhas usarem o mesmo código de exibição de armazenamento (não diferencia maiúsculas de minúsculas).
+Ao salvar, a validação do lado do cliente bloqueia o envio se qualquer linha tiver um _[!UICONTROL Store View Code]_&#x200B;vazio ou se duas linhas usarem o mesmo código de exibição de armazenamento (não diferencia maiúsculas de minúsculas).
 
 Entradas de texto alternativo são mantidas nos metadados de ativos JCR como duas propriedades `String[]` alinhadas por índice:
 
