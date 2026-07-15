@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: a6a91fbd6cc6907d070998f67eb0b9c8171dda23
+source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
 workflow-type: tm+mt
-source-wordcount: 948
+source-wordcount: 965
 ht-degree: 2%
 
 ---
@@ -43,7 +43,7 @@ Antes de configurar a Integração do AEM Assets, verifique se você concluiu as
 
 * [!BADGE Somente PaaS]{type=Informative tooltip="Aplicável a projetos do Adobe Commerce na nuvem somente (infraestrutura do PaaS gerenciada pela Adobe)."} [Instale pacotes do Adobe Commerce](configure-commerce.md) para adicionar a extensão e gerar as credenciais e conexões necessárias para usar a extensão.
 
-* [Permissões de usuário e IMS](permissions.md) — Obrigatório para o Seletor de ativos e campos de configuração preenchidos automaticamente (ID do programa, ID do ambiente, Mapeamento de domínio).
+* [Permissões de usuário e IMS](permissions.md) — Configure as permissões necessárias para o Seletor de ativos e os campos de configuração preenchidos automaticamente (ID do programa, ID do ambiente, Mapeamento de domínio).
 
 ## Configurar a conexão
 
@@ -63,11 +63,11 @@ Antes de configurar a Integração do AEM Assets, verifique se você concluiu as
 
 1. Selecione o ambiente AEM Assets **[!UICONTROL Program ID]** e **[!UICONTROL Environment ID]** nos menus suspensos.
 
-   Os seletores são exibidos quando o usuário administrador do Commerce satisfaz as [permissões de usuário e o IMS](permissions.md#user-permissions-and-ims) para a experiência: as integrações do **Adobe Commerce as a Cloud Service**, **Adobe Commerce Optimizer** e **Adobe Commerce na infraestrutura da nuvem** podem preencher esses campos automaticamente a partir da sua sessão vinculada ao IMS, em vez de depender de IDs coladas.
+   Os seletores são exibidos quando o usuário administrador do Commerce tem as [permissões de usuário](permissions.md#user-permissions-and-ims) necessárias para a experiência: as integrações do **Adobe Commerce as a Cloud Service**, **Adobe Commerce Optimizer** e **Adobe Commerce na infraestrutura da nuvem** podem preencher esses campos automaticamente a partir da sua sessão vinculada ao IMS, em vez de dependerem de IDs coladas.
 
    Se os seletores não estiverem disponíveis, copie **[!UICONTROL Program ID]** e **[!UICONTROL Environment ID]** do AEM Cloud Manager ou derive-os da URL do autor: `https://author-<ProgramID>-<EnvironmentID>.adobeaemcloud.com/` (substitua os espaços reservados pelos seus identificadores).
 
-   Limpe **[!UICONTROL Use system value]** para qualquer um dos campos antes de colar ou selecione novos valores manualmente.
+   Você deve limpar **[!UICONTROL Use system value]** em ambos os campos antes de poder colar ou selecionar novos valores manualmente.
 
    ![Formulário de integração do AEM Assets com seletores de ID de programa e ID de ambiente](../assets/aem-assets-view.png){width="600" zoomable="yes"}
 
@@ -90,13 +90,13 @@ Antes de configurar a Integração do AEM Assets, verifique se você concluiu as
 
 ### SLA de sincronização
 
-A integração garante os seguintes níveis de desempenho de sincronização:
+O service level agreement (SLA) para a integração garante os seguintes níveis de desempenho de sincronização:
 
 * `< 5 minutes for 99% of updates`
 
 * `< 30 minutes for 99.9% of updates`
 
-Isso garante que as páginas de produtos sempre exibam as imagens mais atualizadas, mantendo o conteúdo da vitrine eletrônica preciso e visualmente atraente.
+Esse nível de serviço garante que as páginas de produtos sempre exibam as imagens mais atualizadas, mantendo o conteúdo da loja preciso e visualmente atraente.
 
 ### Configurar o proprietário da visualização
 
