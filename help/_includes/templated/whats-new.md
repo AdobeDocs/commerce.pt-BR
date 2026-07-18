@@ -1,7 +1,7 @@
 ---
-source-git-commit: c99194b2eb7111a593cfe7c4ba1b4917e38589d2
+source-git-commit: 26e80644cd94f01e0cd310ff2197dc01de6c6819
 workflow-type: tm+mt
-source-wordcount: '1799'
+source-wordcount: '1892'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,28 @@ ht-degree: 1%
 ## Novidades
 
 Esta página contém as alterações feitas nos últimos 60 dias. Excluímos todas as atualizações secundárias, como a edição de cópia, desta lista.
+
+### 15 de julho de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>A <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aem-assets-integration/get-started/configure-aem#enable-aem-commerce-self-service">integração de autoatendimento</a> documentada para a integração do AEM Assets na versão <code>2026.5.26309</code> e posterior do AEM, adicionou novos <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aem-assets-integration/metadata">metadados do Commerce no tópico </a> do AEM Assets e adicionou um guia para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aem-assets-integration/get-started/configure-storefront#connect-aem-assets-authoring">conectar o AEM Assets à sua loja</a> via Da.live.</p>
+</td>
+      <td>
+        Atualização importante
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/21d305eaa87cd70d82c530e4ee5a4ea34574d400">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 7 de julho de 2026
 
