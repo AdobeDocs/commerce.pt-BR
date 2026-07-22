@@ -1,7 +1,7 @@
 ---
-source-git-commit: e761e54e7bd7997f3f40b1dfc1293012931111b0
+source-git-commit: bdde436394667a2d5477fbc44eac5b90bd865c68
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ Este projeto adotou o [Código de Conduta do Adobe Open Source](code-of-conduct.
 
 ## Sobre suas contribuições para o conteúdo do Adobe
 
-Consulte o [Guia do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=pt-BR).
+Consulte o [Guia do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 A forma como você contribui depende de quem você é e do tipo de alterações com as quais deseja contribuir:
 
 ### Pequenas alterações
 
-Se você estiver contribuindo com pequenas atualizações, visite o artigo e clique na área de feedback que aparece na parte inferior do artigo, clique em **Opções de feedback detalhadas** e em **Sugerir uma edição** para ir para o arquivo de origem do Markdown no GitHub. Use a interface do GitHub para fazer suas atualizações. Consulte o [guia geral do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=pt-BR) para obter mais informações.
+Se você estiver contribuindo com pequenas atualizações, visite o artigo e clique na área de feedback que aparece na parte inferior do artigo, clique em **Opções de feedback detalhadas** e em **Sugerir uma edição** para ir para o arquivo de origem do Markdown no GitHub. Use a interface do GitHub para fazer suas atualizações. Consulte o [guia geral do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) para obter mais informações.
 
 Pequenas correções ou esclarecimentos que você envia para documentação e exemplos de código neste repositório são cobertos pelos termos de uso da Adobe.
 
@@ -37,7 +37,7 @@ Se você for um autor técnico, gerente de programa ou desenvolvedor da equipe d
 
 Os colaboradores da comunidade podem usar a interface do usuário do GitHub para a edição básica ou bifurcar o repositório para fazer grandes contribuições.
 
-Consulte o [Guia do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=pt-BR) para obter mais detalhes.
+Consulte o [Guia do colaborador do Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) para obter mais detalhes.
 
 ## Como usar o Markdown para formatar seu tópico
 
@@ -60,10 +60,11 @@ Após clonar o repositório, execute:
 
 ### O que os ganchos fazem
 
-- Detectar automaticamente arquivos de imagem preparados (PNG, JPG, JPEG, GIF, SVG)
-- Executar `image_optim` para compactar e otimizar imagens
+- Detectar automaticamente arquivos de imagem preparados (PNG, JPEG, GIF, SVG)
+- Executar `image_optim` para compactar e otimizar imagens rasterizadas (PNG, JPEG, GIF)
 - Transferir imagens otimizadas automaticamente
-- Garantir que todas as imagens confirmadas estejam corretamente otimizadas
+- Garantir que todas as imagens rasterizadas confirmadas estejam corretamente otimizadas
+- Verificar SVGs preparados em relação a um limite de tamanho e anular a confirmação se qualquer SVG o exceder
 
 ### Benefícios
 
@@ -76,7 +77,9 @@ Para obter instruções detalhadas de instalação, solução de problemas e con
 
 ## Tarefas do rake disponíveis
 
-Este repositório usa tarefas do rake fornecidas pela gem `adobe-comdox-exl-rake-tasks`. Para ver todas as tarefas disponíveis, execute:
+Este repositório usa tarefas do rake fornecidas pelo
+[`adobe-comdox-exl-rake-tasks`](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks)
+gem. Para ver todas as tarefas disponíveis, execute:
 
 ```bash
 cd _jekyll
