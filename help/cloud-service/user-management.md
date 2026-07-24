@@ -22,9 +22,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 09692e5e2630568a48d14f727930d324c6932ca6
 workflow-type: tm+mt
-source-wordcount: 1822
+source-wordcount: 1816
 ht-degree: 0%
 
 ---
@@ -58,10 +58,10 @@ As seguintes funções estão disponíveis para [!DNL Adobe Commerce as a Cloud 
 * [**Desenvolvedores**](https://helpx.adobe.com/br/enterprise/using/manage-developers.html#Adddevelopers){target="_blank"} — Os desenvolvedores têm permissões de usuário e são adicionados à instância do Commerce como um usuário desenvolvedor. Eles podem usar os [[!DNL Admin UI SDK]](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/){target="_blank"}, [configurar eventos](https://developer.adobe.com/commerce/extensibility/events/){target="_blank"} e [criar webhooks](https://developer.adobe.com/commerce/extensibility/webhooks/){target="_blank"}.
 
 * Administradores - Há diferentes tipos de funções administrativas:
-   * [Administradores do sistema](https://helpx.adobe.com/br/enterprise/using/admin-roles.html){target="_blank"} - O administrador do sistema tem acesso a todos os produtos e perfis de produtos na organização por meio da Admin Console.
-   * [Administradores de produtos](#add-a-product-admin) - Os administradores de produtos podem [gerenciar usuários, funções e permissões do produto](#add-users) no [!DNL Adobe Admin Console] e [gerenciar usuários no Administrador do Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}.
-   * [Administradores de perfil de produto](#add-developers-and-product-profile-admins) - Os administradores de perfil de produto não têm acesso ao Administrador do Adobe Commerce, mas podem gerenciar usuários para o produto no [!DNL Adobe Admin Console].
-   * Administradores de suporte - Os administradores de suporte podem criar e gerenciar tíquetes de suporte.
+  * [Administradores do sistema](https://helpx.adobe.com/br/enterprise/using/admin-roles.html){target="_blank"} - O administrador do sistema tem acesso a todos os produtos e perfis de produtos na organização por meio da Admin Console.
+  * [Administradores de produtos](#add-a-product-admin) - Os administradores de produtos podem [gerenciar usuários, funções e permissões do produto](#add-users) no [!DNL Adobe Admin Console] e [gerenciar usuários no Administrador do Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/user-accounts/permissions-users-all#create-a-user){target="_blank"}.
+  * [Administradores de perfil de produto](#add-developers-and-product-profile-admins) - Os administradores de perfil de produto não têm acesso ao Administrador do Adobe Commerce, mas podem gerenciar usuários para o produto no [!DNL Adobe Admin Console].
+  * Administradores de suporte - Os administradores de suporte podem criar e gerenciar tíquetes de suporte.
 
 >[!NOTE]
 >
@@ -194,49 +194,49 @@ A lista a seguir descreve os recursos que as funções padrão têm permissão p
 **Usuários**
 
 * Catálogo
-   * Inventário
-      * Produtos
-         * Ler preço do produto
+  * Inventário
+    * Produtos
+      * Ler preço do produto
 
 **Desenvolvedores**
 
 * Catálogo
-   * Inventário
-      * Produtos
-         * Ler preço do produto
+  * Inventário
+    * Produtos
+      * Ler preço do produto
 * Sistema
-   * Transferência de dados
-      * Importar histórico
+  * Transferência de dados
+    * Importar histórico
 * Configuração de eventos do Adobe IO
-   * Verificação de configuração
-   * Criar provedor de eventos
-   * Atualização da configuração
-   * Sincronizar eventos
-   * Obter Lista de Provedores de Eventos
+  * Verificação de configuração
+  * Criar provedor de eventos
+  * Atualização da configuração
+  * Sincronizar eventos
+  * Obter Lista de Provedores de Eventos
 * Estrutura de evento
-   * Lista de Eventos
-   * Testar conexão de evento
-   * Inscrever-se em um evento
-   * Cancelar inscrição em um evento
-   * Status do evento
-   * API para obter assinaturas de evento
-   * Exibir Interface do administrador de Assinaturas de Eventos
-   * Criar interface do administrador de Assinaturas de Eventos
-   * Solicitar nova interface do administrador de eventos
+  * Lista de Eventos
+  * Testar conexão de evento
+  * Inscrever-se em um evento
+  * Cancelar inscrição em um evento
+  * Status do evento
+  * API para obter assinaturas de evento
+  * Exibir Interface do administrador de Assinaturas de Eventos
+  * Criar interface do administrador de Assinaturas de Eventos
+  * Solicitar nova interface do administrador de eventos
 * Webhooks
-   * Assinatura digital do Webhooks
-      * Configurações de assinatura digital do Webhooks
-      * Webhooks Assinatura digital Gerar chaves
-   * Gerenciamento de Webhooks
-      * Grade de Webhooks
-      * Edição de Webhooks
-      * Webhooks de teste
-      * Assinatura da API no webhook
-      * Cancelamento de inscrição de API no webhook
-      * Lista de webhooks
-      * Solicitar novo webhook
-      * Logs do Webhooks
-      * Obter lista de Webhooks
+  * Assinatura digital do Webhooks
+    * Configurações de assinatura digital do Webhooks
+    * Webhooks Assinatura digital Gerar chaves
+  * Gerenciamento de Webhooks
+    * Grade de Webhooks
+    * Edição de Webhooks
+    * Webhooks de teste
+    * Assinatura da API no webhook
+    * Cancelamento de inscrição de API no webhook
+    * Lista de webhooks
+    * Solicitar novo webhook
+    * Logs do Webhooks
+    * Obter lista de Webhooks
 
 **Administradores**
 
@@ -256,13 +256,13 @@ Se sua conta tiver acesso a [[!DNL Adobe Experience Manager as a Cloud Service]]
 >
 >Para adicionar vários usuários simultaneamente, você pode fazer um [upload CSV em massa](https://helpx.adobe.com/br/enterprise/using/bulk-upload-users.html){target="_blank"}.
 >
->Você também pode adicionar vários usuários a uma função criando um [grupo de usuários](https://helpx.adobe.com/br/enterprise/using/user-groups.html){target="_blank"}. Em seguida, você pode adicionar o produto [!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**] ao grupo de usuários.
+>Você também pode adicionar vários usuários a uma função criando um [grupo de usuários](https://helpx.adobe.com/br/enterprise/using/user-groups.html){target="_blank"}. Em seguida, você pode adicionar o produto [!DNL **Adobe Experience Manager as a Cloud Service**] ao grupo de usuários.
 
 1. Navegue até <https://adminconsole.adobe.com> e entre com sua Adobe ID.
 
 1. Selecione sua organização.
 
-1. Na guia [!UICONTROL **Produtos**], em [!UICONTROL **Produtos e Serviços**], selecione o produto [!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**].
+1. Na guia [!UICONTROL **Produtos**], em [!UICONTROL **Produtos e Serviços**], selecione o produto [!UICONTROL **Adobe Experience Manager as a Cloud Service**].
 
    ![Seleção de produto do AEM Cloud Manager no Admin Console](./assets/backend-aem.png){width="600" zoomable="yes"}
 
@@ -291,7 +291,7 @@ Se sua conta tiver acesso a [[!DNL Adobe Experience Manager as a Cloud Service]]
 
 1. Clique em [!UICONTROL **Salvar**].
 
-Para confirmar se o usuário tem acesso, clique no nome do usuário para abrir a página de perfil. Na seção [!UICONTROL **Produtos**], deve constar [!UICONTROL **Concluído**] em [!UICONTROL **Adobe Experience Manager as a Cloud Service - Cloud Manager**]. Pode levar alguns segundos após adicionar o usuário para ver o status atualizado em seu perfil. Atualize a página para ver o status atualizado.
+Para confirmar se o usuário tem acesso, clique no nome do usuário para abrir a página de perfil. Na seção [!UICONTROL **Produtos**], deve constar [!UICONTROL **Concluído**] no produto [!UICONTROL **Adobe Experience Manager as a Cloud Service**]. Pode levar alguns segundos após adicionar o usuário para ver o status atualizado em seu perfil. Atualize a página para ver o status atualizado.
 
 ![Perfil de usuário mostrando o status de acesso ao produto concluído](./assets/product-access.png){width="600" zoomable="yes"}
 
