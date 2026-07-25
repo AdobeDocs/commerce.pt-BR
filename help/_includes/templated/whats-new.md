@@ -1,7 +1,7 @@
 ---
-source-git-commit: 26e80644cd94f01e0cd310ff2197dc01de6c6819
+source-git-commit: 64d5e1d1ee41241bce36faa31db7c436e018037c
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1665'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,28 @@ ht-degree: 1%
 ## Novidades
 
 Esta página contém as alterações feitas nos últimos 60 dias. Excluímos todas as atualizações secundárias, como a edição de cópia, desta lista.
+
+### 23 de julho de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Atualização das <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/release-notes">notas de versão</a> da Sandbox para Adobe Commerce as a Cloud Service.</p>
+</td>
+      <td>
+        Atualização importante
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ed8bf2044f77432eb38df3c3cbb13b7708f3c33b">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 15 de julho de 2026
 
@@ -399,66 +421,6 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
         Atualização importante
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/de94aaad29313b3e8254d11d8801ba0d7efff3dc">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 22 de maio de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Adição de notas de versão para atualizações de API do <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/release-notes">Adobe Commerce Optimizer</a> e do <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/release-notes">Serviço de catálogo</a> da Commerce para a versão de 20 de maio de 2026, que agora impõe o limite de 100 SKUs documentado por solicitação ao recuperar dados do produto.</p>
-</td>
-      <td>
-        Técnico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/342a3015f743e12b7089e4d430a517804a7cd40c">confirmar</a></td>
-    </tr>
-    <tr>
-      <td><p>Aumento de classificação inteligente documentado (peso comportamental configurável por regra, padrão 5.0) para [!DNL Live Search] em <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/live-search/live-search-admin/rules/rules-add#intelligent-ranking-boost">Adicionar regras</a> e <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/live-search/best-practice">Práticas recomendadas</a>, com uma referência cruzada de <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/live-search/live-search-admin/category-merch">Merchandising de categoria</a>. Adição da mesma orientação para [!DNL Adobe Commerce Optimizer] em <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost">Criar e gerenciar</a> e <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/best-practice">Práticas recomendadas das regras de merchandising</a>.</p>
-</td>
-      <td>
-        Atualização importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/40b4528d417a4df09ac9ae9fb0d97b0f678b55ac">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 19 de maio de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>O guia de integração do AEM Assets descreve como os editores definem o <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aem-assets-integration/get-started/configure-aem#localized-alt-text-in-aem-assets-metadata">texto alternativo</a> na <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aem-assets-integration/release-notes">integração do AEM Assets v1.3.6 </a>.</p>
-</td>
-      <td>
-        Atualização importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6d3dfbc59e72c00c3552af5805b57c69e60b38b4">confirmar</a></td>
-    </tr>
-    <tr>
-      <td><p>Adição das <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/release-notes">notas de versão</a> da Sandbox para o Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Atualização importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/14aa082c1f0f8ce4c51328eb8ee9f4af25adf859">confirmar</a></td>
     </tr>
   </tbody>
 </table>
