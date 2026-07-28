@@ -54,7 +54,7 @@ Antes de começar, confirme se você concluiu cada item da [lista de verificaç�
 
 Configurar o ambiente para a migração de dados em massa:
 
->[!VIDEO](https://video.tv.adobe.com/v/3496121)
+>[!VIDEO](https://video.tv.adobe.com/v/3496126?captions=por_br)
 
 1. Extrair o conteúdo de `ccsaas-migration-tools.tar.gz`.
 
@@ -97,7 +97,7 @@ SOURCE_INSTANCE_ACCESS_TOKEN_SECRET=<access_token_secret>
 
 ### Configurar credenciais do OAuth de origem
 
->[!VIDEO](https://video.tv.adobe.com/v/3496142)
+>[!VIDEO](https://video.tv.adobe.com/v/3496146?captions=por_br)
 
 Esses quatro valores assinam solicitações da ferramenta de migração para as APIs do armazenamento de origem. Para obtê-los, abra o [!UICONTROL Admin] de origem e vá para [!UICONTROL **Sistema**] > [!UICONTROL **Extensões**] > [!UICONTROL **Integrações**]. Crie ou abra uma integração e copie os valores em `.env`:
 
@@ -142,7 +142,7 @@ Antes da migração, verifique se as configurações a seguir estão consistente
 
 ### Configurar credenciais SaaS e IMS do público-alvo
 
->[!VIDEO](https://video.tv.adobe.com/v/3496167)
+>[!VIDEO](https://video.tv.adobe.com/v/3496171?captions=por_br)
 
 Estas são as configurações de IMS e API [!DNL Adobe Commerce as a Cloud Service] para o destino. Você precisa da ID do locatário, da ID da organização, das credenciais de servidor para servidor do IMS OAuth e do host IMS correto para o seu ambiente. Coordene com sua equipe da Adobe a organização, o locatário e o acesso ao perfil. Não tente inferir ou estimar valores sensíveis.
 
@@ -247,7 +247,7 @@ O padrão de `STORE_CODE` é `default` em `.example.env`. Verifique se isso corr
 
 ## Configurar o arquivo de conexão de banco de dados
 
->[!VIDEO](https://video.tv.adobe.com/v/3496152)
+>[!VIDEO](https://video.tv.adobe.com/v/3496161?captions=por_br)
 
 O arquivo `.my.cnf` fornece configurações de conexão [!DNL MySQL] para o lado da extração da ferramenta de migração. Crie-o copiando `.my.cnf.example` para `.my.cnf` na raiz do projeto. O nome da seção deve corresponder a `SOURCE_CONNECTION_NAME` em `.env`.
 
