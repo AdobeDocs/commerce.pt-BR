@@ -1,7 +1,7 @@
 ---
-source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
+source-git-commit: 039f848c37235195a3ffcc90238dad77513a9ec3
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '620'
 ht-degree: 0%
 
 ---
@@ -104,3 +104,9 @@ O [!DNL Adobe Commerce Optimizer] funciona com as versões mais recentes da inte
 | Serviços | Loja |
 | --- | --- |
 | [integração do AEM Assets](../aem-assets-integration/release-notes.md)<br>[conector do Commerce Optimizer](../aco-connector/release-notes.md) | [Informações sobre a versão da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/?lang=pt-BR)<br>[changelog da loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=pt-BR) |
+
+## Ferramenta de migração de dados em massa Acesso antecipado {#bulk-data-early-access}
+
+>[!IMPORTANT]
+>
+>A ferramenta de migração de dados em massa está atualmente em Acesso antecipado. O acesso é fornecido exclusivamente por meio do processo de contrato do Commerce Deployment Engineering (CDE). Para obter uma visão geral da ferramenta e seus requisitos de qualificação, consulte [Ferramenta de migração de dados em massa](../cloud-service/migration/bulk-data/migration-tool.md).
