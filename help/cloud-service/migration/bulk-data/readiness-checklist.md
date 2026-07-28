@@ -2,7 +2,7 @@
 title: Lista de verificação de prontidão do cliente
 description: Saiba como se preparar para uma migração de dados em massa para o Adobe Commerce as a Cloud Service com uma lista de verificação de disponibilidade que abrange engajamento, máquina, origem e destino.
 feature: Cloud
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 role: Developer
 level: Intermediate
 autotag-review: '2026-07-22T19:19:18.443Z'
@@ -64,7 +64,7 @@ A ferramenta de migração é executada em uma máquina controlada por você, co
 - **Diretório de trabalho gravável** — O diretório onde a ferramenta de migração é extraída deve ser totalmente gravável pelo usuário de migração. A ferramenta grava logs, cache, [!DNL Composer] dependências e arquivos gerados durante a execução.
 - **Espaço em disco suficiente** — garanta espaço livre em disco adequado para dados extraídos, [!DNL Docker] imagens e saída de log. Os requisitos de espaço variam dependendo do tamanho do banco de dados de origem.
 - **Fontes locais: conectividade direta de banco de dados do computador de migração** — Para instâncias de origem locais, o computador de migração deve ter acesso direto de rede ao banco de dados de origem. A ferramenta não estabelece automaticamente a conectividade com o banco de dados local. Confirme se o host, a porta e as credenciais podem ser acessados no computador de migração antes de executar qualquer comando de migração.
-- **CLI da Nuvem instalada e chave SSH registrada** — Para instâncias de origem [!DNL Adobe Commerce on Cloud], a [CLI da Nuvem](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) deve estar instalada no computador de migração. Sua chave pública SSH também deve estar registrada em sua conta. Consulte o [Guia de conexões seguras](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) para obter instruções.
+- **CLI da Nuvem instalada e chave SSH registrada** — Para instâncias de origem [!DNL Adobe Commerce on Cloud], a [CLI da Nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) deve estar instalada no computador de migração. Sua chave pública SSH também deve estar registrada em sua conta. Consulte o [Guia de conexões seguras](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/secure-connections) para obter instruções.
 
 ### Instância do Source
 
