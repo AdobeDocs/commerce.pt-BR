@@ -32,9 +32,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: b05e2183cc0e4b8352a150df9dabfc9dfdb31750
+source-git-commit: 155703001fc049470266874e0f519ab060248b31
 workflow-type: tm+mt
-source-wordcount: 5265
+source-wordcount: 5259
 ht-degree: 0%
 
 ---
@@ -49,11 +49,11 @@ As notas de versão a seguir contêm atualizações para [!DNL Adobe Commerce as
 
 ## Julho de 2026 - versão #1 {#latest}
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Produção]{type=Neutral tooltip="Os itens listados estão disponíveis atualmente em Ambientes de produção."}
 
-[!BADGE Sandbox]{type=Caution tooltip="Os itens listados estão disponíveis atualmente apenas em ambientes de sandbox. A Adobe disponibiliza novas versões em ambientes de sandbox primeiro para fornecer tempo para testar alterações futuras antes que a versão esteja disponível em ambientes de produção."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-Os itens a seguir estão disponíveis atualmente apenas em ambientes de sandbox e estão programados para serem transferidos para ambientes de produção em 28 de julho de 2026.
+Os seguintes itens estarão disponíveis nos ambientes de produção a partir de 28 de julho de 2026.
 
 >[!BEGINSHADEBOX]
 
@@ -63,7 +63,7 @@ Os itens a seguir estão disponíveis atualmente apenas em ambientes de sandbox 
 >
 >Esse recurso está desativado por padrão. Para ativá-lo, entre em contato com o Gerente de sucesso do cliente da Adobe Commerce ou crie um tíquete de suporte.
 
-Os novos pontos de extremidade da REST API replicam o recurso [!DNL Commerce Admin] [!UICONTROL **Editar ordem**], permitindo integrações para editar uma ordem de forma programática:
+Novos pontos de extremidade de API [REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management) replicam o recurso [!DNL Commerce Admin] [!UICONTROL **Editar Pedido**], permitindo integrações para editar um pedido de forma programática:
 
 | Método | Endpoint | Descrição |
 | --- | --- | --- |
@@ -100,7 +100,7 @@ Todos os pontos de extremidade `custom-email` exigem acesso ao `Marketing > Comm
 >
 >Esse recurso é experimental e deve ser ativado entrando em contato com o Gerente de sucesso do cliente da Adobe Commerce ou criando um tíquete de suporte.
 
-Os novos pontos de extremidade da API REST `orderChain` permitem que as integrações modifiquem um pedido usando sua ID e resolvam automaticamente a cadeia completa de pedidos editados:
+Novos pontos de extremidade de API REST [`orderChain`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/order-management) permitem que as integrações modifiquem uma ordem usando sua ID e resolvam automaticamente a cadeia completa de ordens editadas:
 
 | Método | Endpoint | Descrição |
 | --- | --- | --- |
@@ -133,7 +133,7 @@ Um novo evento `observer.reminder_matched_carts` é emitido depois que as regras
 
 ### Suprimir emails transacionais por área ou modelo
 
-Uma nova configuração de [!UICONTROL **Supressão de Email**] ([!UICONTROL **Lojas**] > [!UICONTROL **Configuração**] > [!UICONTROL **Serviços da Adobe**] > [!UICONTROL **Supressão de Email**]) permite que os administradores impeçam [!DNL Commerce] de enviar emails transacionais de forma seletiva. Você pode suprimir emails por área funcional (como Conta do Cliente, Order Management, Devoluções, Check-out, Marketing ou B2B) ou por uma lista exata de identificadores de modelo.<!-- ACCS-1025 -->
+Uma nova configuração de [Supressão de Email](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/email-suppression) ([!UICONTROL **Lojas**] > [!UICONTROL **Configuração**] > [!UICONTROL **Serviços da Adobe**] > [!UICONTROL **Supressão de Email**]) permite que os administradores impeçam [!DNL Commerce] de enviar emails transacionais de forma seletiva. Você pode suprimir emails por área funcional (como Conta do Cliente, Order Management, Devoluções, Check-out, Marketing ou B2B) ou por uma lista exata de identificadores de modelo.<!-- ACCS-1025 -->
 
 ### Exibir o histórico de modificação de pedidos no Administrador
 
