@@ -14,9 +14,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 10a91a91337778648e99078bcbf0c9ef25a49f86
+source-git-commit: df9b8455e52b2721ba92971b1d0fddb92da8159a
 workflow-type: tm+mt
-source-wordcount: 958
+source-wordcount: 971
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 {{aco-merchandising-services}}
 
-Instale o Serviço de Catálogo para solicitar e receber dados do produto de uma instância do Commerce usando a [API GraphQL do Serviço de Catálogo](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/). O Serviço de catálogo é fornecido como um metapackage de PHP compositor a partir do repositório repo.magento.com.
+Para solicitar e receber dados do produto de uma instância do Commerce usando a [API GraphQL do Serviço de Catálogo](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/), instale o Serviço de Catálogo. O Serviço de catálogo é fornecido como um metapackage de PHP compositor a partir do repositório repo.magento.com.
 
 >[!NOTE]
 >
@@ -33,16 +33,14 @@ Instale o Serviço de Catálogo para solicitar e receber dados do produto de uma
 >
 >Se você estiver usando o Adobe Commerce as a Cloud Service, a versão mais recente do metapackage estará disponível em seu ambiente. Para começar a usar os serviços, consulte [Introdução ao Serviço de Catálogo](get-started.md).
 >
->Para implementações de vitrine da Commerce usando o Adobe Commerce Optimizer, consulte o [Guia do Desenvolvedor de Serviços de Merchandising](https://developer-stage.adobe.com/commerce/services/optimizer/).
+>Para implementações de vitrine da Commerce usando o Adobe Commerce Optimizer, consulte o [Guia do Desenvolvedor de Serviços de Merchandising para o Adobe Commerce Optimizer](https://developer-stage.adobe.com/commerce/services/optimizer/).
 
 
 ## Requisitos do sistema
 
 **Requisitos de software**
 
-- Adobe Commerce 2.4.4+
-- PHP 8.1, 8.2, 8.3, 8.4
-- Compositor: 2.x
+[Adobe Commerce](https://business.adobe.com/br/products/magento/magento-commerce.html) 2.4.4+. Para obter detalhes, consulte [Requisitos do sistema](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}.
 
 **Plataformas com suporte**
 
@@ -58,7 +56,7 @@ Instale o Serviço de Catálogo para solicitar e receber dados do produto de uma
 
 Todas as instâncias de teste do Commerce usam o ponto de extremidade da sandbox.
 
-Execute todos os testes de carga no endpoint da sandbox. Antes de começar o teste de carregamento, envie um [Tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket) para que a equipe de Serviços possa antecipar o tráfego adicional do servidor.
+Execute todos os testes de carga no endpoint da sandbox. Antes de começar o teste de carregamento, envie um [Tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#create-a-support-ticket-with-experience-league) para que a equipe de Serviços possa antecipar o tráfego adicional do servidor.
 
 ## Instalação e configuração
 
@@ -74,7 +72,7 @@ Para começar a usar o [!DNL Catalog Service] for Adobe Commerce, siga estas eta
 
 **Pré-requisito**
 
-- Acesse [repo.magento.com](https://repo.magento.com) para instalar a extensão. Para geração de chaves e obtenção dos direitos necessários, consulte [Obter suas chaves de autenticação](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Para instalações na nuvem, consulte o [Guia de Infraestrutura do Commerce na Nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
+- Acesse [repo.magento.com](https://repo.magento.com) para instalar a extensão. Para geração de chaves e obtenção dos direitos necessários, consulte [Obter suas chaves de autenticação](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Para instalações na nuvem, consulte o [Guia de Infraestrutura do Commerce na Nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/authentication-keys)
 
 - Acesso à linha de comando do servidor de aplicativos do Adobe Commerce.
 
@@ -100,7 +98,7 @@ Use este método para instalar o [!DNL Catalog Service] para uma instância do C
    magento-cloud environment:checkout <environment-id>
    ```
 
-1. Adicione o módulo Serviço de Catálogo.
+1. Adicionar o módulo `magento/catalog-service` usando o Composer:
 
    ```bash
    composer require magento/catalog-service --no-update
@@ -120,13 +118,13 @@ Use este método para instalar o [!DNL Catalog Service] para uma instância do C
    git push origin <branch-name>
    ```
 
-   A ação de enviar as atualizações para o ambiente de nuvem inicia o [processo de implantação da nuvem do Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/develop/deploy/process) para aplicar as alterações. Verifique o status da implantação no [log de implantação](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+   A ação de enviar as atualizações para o ambiente de nuvem inicia o [processo de implantação da nuvem do Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/deploy/process) para aplicar as alterações. Verifique o status da implantação no [log de implantação](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/test/log-locations#deploy-log).
 
 >[!TAB No local]
 
 Use este método para instalar o [!DNL Catalog Service] para uma instância local.
 
-1. Use o Composer para adicionar o módulo Serviço de catálogo ao seu projeto:
+1. Adicionar o pacote `magento/catalog-service` usando o Composer:
 
    ```bash
    composer require magento/catalog-service --no-update
@@ -158,7 +156,7 @@ Use este método para instalar o [!DNL Catalog Service] para uma instância loca
 
 ### Configurar o serviço e a exportação de dados
 
-Após instalar o [!DNL Catalog Service], conclua as tarefas a seguir para integrar o serviço de Catálogo à sua instância do Adobe Commerce. Essa integração permite a sincronização de dados e a comunicação entre a instância do Commerce, o Serviço de catálogo e outros serviços de suporte. A sincronização de dados é realizada pela [extensão de Exportação de Dados SaaS](../data-export/overview.md).
+Para integrar o serviço de Catálogo à sua instância do Adobe Commerce depois de instalar o [!DNL Catalog Service], conclua as tarefas a seguir. Essa integração permite a sincronização de dados e a comunicação entre a instância do Commerce, o Serviço de catálogo e outros serviços de suporte. A [Extensão de Exportação de Dados SaaS](../data-export/overview.md) manipula a sincronização de dados.
 
 1. Configure o [Commerce Services Connector](https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/integration-services/saas) especificando as chaves de API e selecionando um Espaço de Dados SaaS.
 

@@ -14,9 +14,9 @@ role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 88c74f789dc398afa8f40ee2258450e83f134d87
 workflow-type: tm+mt
-source-wordcount: 454
+source-wordcount: 506
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Botão ![verificar](assets/icon-check.png) Cartão de crédito ou débito do Pay
 
 ![verificar](assets/icon-check.png) Preços padrão
 
-![Verificação](assets/icon-check.png) **Disponível em XX países**
+![Verificação](assets/icon-check.png) **Disponível em mais de 200 países**
 
 [![saiba mais](assets/learn-more-button.svg)](onboard.md)
 
@@ -99,7 +99,7 @@ Botão ![verificar](assets/icon-check.png) pagar mais tarde
 
 ![verificação](assets/icon-check.png) (recursos de preços N2/N3 - Somente EUA)
 
-![check](assets/icon-check.png) **Disponível somente nos Estados Unidos (EUA), Canadá (CA) e Austrália (AUS). França (FR), Reino Unido (UK)**
+![check](assets/icon-check.png) Disponível em 37 países. Austrália, Áustria, Bélgica, Bulgária, Canadá, China, Chipre, República Tcheca, Dinamarca, Estônia, Finlândia, França, Alemanha, Grécia, Hong Kong, Hungria, Irlanda, Itália, Japão, Letônia, Liechtenstein, Lituânia, Luxemburgo, Malta, México, Países Baixos, Noruega, Polônia, Portugal, Romênia, Cingapura, Eslováquia, Eslovênia, Espanha, Suécia, Reino Unido, Estados Unidos. **Taxas negociadas disponíveis nos Estados Unidos (EUA), Canadá (CA), Austrália (AU), França (FR), Reino Unido (GB), Itália (IT), Países Baixos (NL), Alemanha (DE)**
 
 [![saiba mais](assets/learn-more-button.svg)](onboard.md)
 
