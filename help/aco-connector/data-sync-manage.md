@@ -4,7 +4,7 @@ description: Saiba como verificar a sincronização de dados do catálogo e ress
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
+badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
@@ -55,5 +55,5 @@ Quando a sincronização parcial e a repetição automática não resolvem os pr
 > - [Estimar volume de dados e tempo de sincronização](reference/estimate-data-volume-sync-time.md) — Calcular duração de sincronização esperada
 > - [Solução de problemas](troubleshooting.md) — Diagnosticar problemas de exportação de credencial, sincronização e escopo
 > - [Módulos de conector e pontos de extremidade de feed](reference/connector-reference.md) — Revise módulos, pontos de extremidade de API e feeds com suporte
-> - [Página Status da sincronização do feed de dados no Administrador do Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"} — Saiba mais sobre os campos e recursos disponíveis para monitorar o status do feed
+> - [Página Status da sincronização do feed de dados no Administrador do Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"} — Saiba mais sobre os campos e recursos disponíveis para monitorar o status do feed
 > - Painel de Sincronização de Dados [&#x200B; em  [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/en/docs/commerce-optimizer/data-sync/data-sync){target="_blank"} — Documentação de referência para campos e ações disponíveis para monitorar a sincronização de dados do catálogo
