@@ -133,7 +133,7 @@ Um novo evento `observer.reminder_matched_carts` é emitido depois que as regras
 
 ### Suprimir emails transacionais por área ou modelo
 
-Uma nova configuração de [Supressão de Email](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/email-suppression) ([!UICONTROL **Lojas**] > [!UICONTROL **Configuração**] > [!UICONTROL **Serviços da Adobe**] > [!UICONTROL **Supressão de Email**]) permite que os administradores impeçam [!DNL Commerce] de enviar emails transacionais de forma seletiva. Você pode suprimir emails por área funcional (como Conta do Cliente, Order Management, Devoluções, Check-out, Marketing ou B2B) ou por uma lista exata de identificadores de modelo.<!-- ACCS-1025 -->
+Uma nova configuração de [Supressão de Email](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/config/services/email-suppression) ([!UICONTROL **Lojas**] > [!UICONTROL **Configuração**] > [!UICONTROL **Serviços da Adobe**] > [!UICONTROL **Supressão de Email**]) permite que os administradores impeçam [!DNL Commerce] de enviar emails transacionais de forma seletiva. Você pode suprimir emails por área funcional (como Conta do Cliente, Order Management, Devoluções, Check-out, Marketing ou B2B) ou por uma lista exata de identificadores de modelo.<!-- ACCS-1025 -->
 
 ### Exibir o histórico de modificação de pedidos no Administrador
 
