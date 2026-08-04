@@ -17,9 +17,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 70990a7bb7e8926a171ea6d2148542b7b73f4dba
+source-git-commit: bb09ff54afbba3d0a0e48bfd1a0392cba435ea9a
 workflow-type: tm+mt
-source-wordcount: 1405
+source-wordcount: 1493
 ht-degree: 0%
 
 ---
@@ -30,23 +30,24 @@ A extensão do [!DNL Catalog Service] for Adobe Commerce melhora os tempos de ca
 
 Os dados avançados do modelo de exibição fornecidos pelo [!DNL Catalog Service] incluem detalhes do produto, atributos, estoque e preços, permitindo a renderização rápida de experiências da loja relacionadas ao produto, como:
 
-- Páginas de detalhes do produto
-- Páginas de lista de produtos e categoria
-- Páginas de resultados da pesquisa
-- Carrosséis de produtos
-- Páginas de comparação do produto
-- Qualquer outra página que renderize dados do produto, como carrinho, pedido e páginas de lista de desejos
+* Páginas de detalhes do produto
+* Páginas de lista de produtos e categoria
+* Páginas de resultados da pesquisa
+* Carrosséis de produtos
+* Páginas de comparação do produto
+* Qualquer outra página que renderize dados do produto, como carrinho, pedido e páginas de lista de desejos
 
 ## Principais benefícios e recursos
 
-- **Carregamentos de página mais rápidos**: consultas otimizadas para uma recuperação de dados de catálogo até 10 vezes mais rápida em comparação com o sistema GraphQL principal
-- **Taxas de conversão aprimoradas**: tempos de carregamento mais rápidos proporcionam uma melhor experiência ao usuário
-- **Tipos de produtos simplificados**: o esquema unificado baseado em tipos de produtos simples e complexos reduz a complexidade para os desenvolvedores
-- **Precisão de preço aprimorada**: suporte para valores de 16 dígitos com 4 casas decimais
-- **Arquitetura dissociada**: um sistema GraphQL separado para dados de catálogo garante alto desempenho sem afetar as operações principais do Commerce
-- **Sincronização de dados em tempo real**: o serviço de catálogo é mantido em sincronia com o aplicativo do Adobe Commerce por meio da extensão Exportação de dados SaaS, garantindo que as consultas retornem os dados de catálogo mais recentes
-- **Painel de Gerenciamento de Dados**: Monitore e gerencie operações de sincronização de dados na interface de Administrador do Adobe Commerce
-- **Integração da API Mesh**: como opção, integre-se à [API Mesh para Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/) para combinar os sistemas do Adobe Commerce GraphQL com outras APIs internas e de terceiros para estender o esquema da GraphQL do Serviço de Catálogo e adicionar dados ou funcionalidades personalizados
+* **Carregamentos de página mais rápidos**: consultas otimizadas para uma recuperação de dados de catálogo até 10 vezes mais rápida em comparação com o sistema GraphQL principal
+* **Taxas de conversão aprimoradas**: tempos de carregamento mais rápidos proporcionam uma melhor experiência ao usuário
+* **Tipos de produtos simplificados**: o esquema unificado baseado em tipos de produtos simples e complexos reduz a complexidade para os desenvolvedores
+* **Precisão de preço aprimorada**: suporte para valores de 16 dígitos com 4 casas decimais
+* **Arquitetura dissociada**: um sistema GraphQL separado para dados de catálogo garante alto desempenho sem afetar as operações principais do Commerce
+* **Sincronização de dados em tempo real**: o serviço de catálogo é mantido em sincronia com o aplicativo do Adobe Commerce por meio da extensão Exportação de dados SaaS, garantindo que as consultas retornem os dados de catálogo mais recentes
+* **Eventos de catálogo**: publique notificações de alteração do catálogo por meio do [!DNL Adobe I/O Events] para que as integrações possam reagir a atualizações de produto, categoria e preço sem sondar o GraphQL
+* **Painel de Gerenciamento de Dados**: Monitore e gerencie operações de sincronização de dados na interface de Administrador do Adobe Commerce
+* **Integração da API Mesh**: como opção, integre-se à [API Mesh para Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/) para combinar os sistemas do Adobe Commerce GraphQL com outras APIs internas e de terceiros para estender o esquema da GraphQL do Serviço de Catálogo e adicionar dados ou funcionalidades personalizados
 
 ## Visão geral da arquitetura
 
@@ -60,19 +61,21 @@ A Adobe Commerce fornece dois sistemas GraphQL que atendem a diferentes objetivo
 
 ### Sistema GraphQL principal
 
-- **Propósito**: API completa para todas as operações do Commerce
-- **Recursos**: consultas (leitura) e mutações (gravação) para produtos, clientes, carrinho, check-out e muito mais
-- **Limitação**: as consultas de produto não estão otimizadas para velocidade
-- **Caso de uso**: operações gerais de Commerce e operações de gravação
+* **Propósito**: API completa para todas as operações do Commerce
+* **Recursos**: consultas (leitura) e mutações (gravação) para produtos, clientes, carrinho, check-out e muito mais
+* **Limitação**: as consultas de produto não estão otimizadas para velocidade
+* **Caso de uso**: operações gerais de Commerce e operações de gravação
 
 ### Sistema GraphQL do Serviço de Catálogo
 
-- **Propósito**: somente consultas de catálogo de produtos de alto desempenho
-- **Recursos**: consultas somente leitura de produtos, atributos, estoque e preços
-- **Vantagem**: significativamente mais rápido que o sistema principal para dados de produtos
-- **Caso de uso**: experiências de produto de vitrine eletrônica em que a velocidade é crítica
+* **Propósito**: somente consultas de catálogo de produtos de alto desempenho
+* **Recursos**: consultas somente leitura de produtos, atributos, estoque e preços
+* **Vantagem**: significativamente mais rápido que o sistema principal para dados de produtos
+* **Caso de uso**: experiências de produto de vitrine eletrônica em que a velocidade é crítica
 
 Os dados disponíveis para o Serviço de catálogo são fornecidos pela extensão Exportação de dados SaaS. Essa extensão sincroniza dados entre o aplicativo do Commerce e os Serviços da Commerce conectados para garantir que as consultas aos endpoints da API do GraphQL de serviços retornem os dados do catálogo mais recentes. Para obter informações sobre como gerenciar e solucionar problemas de operações de exportação de dados SaaS, consulte o [Guia de exportação de dados SaaS](../data-export/overview.md).
+
+Quando os dados do catálogo no [!DNL Catalog Service] forem alterados, os eventos de catálogo notificarão os consumidores inscritos por meio de [!DNL Adobe I/O Events]. Use esses eventos para invalidar caches, atualizar índices de pesquisa ou sincronizar sistemas externos sem pesquisar a API do GraphQL. Para tipos de eventos, garantias de entrega e configuração, consulte o [Guia de integração de eventos de catálogo e Adobe I/O](catalog-events-guide.md).
 
 [!DNL Catalog Service] clientes podem usar o [indexador de preços do SaaS](../price-index/price-indexing.md), que fornece atualizações de preços e tempo de sincronização mais rápidos.
 
@@ -106,15 +109,15 @@ Como o Serviço de catálogo funciona como um serviço, os integradores não pre
 
 O esquema reduz a diversidade de tipos de produtos a dois casos de uso:
 
-- **Produtos simples** — o Serviço de Catálogo mapeia os tipos de produtos Adobe Commerce simples, virtuais, para download e de cartão-presente para `simpleProductViews`. Esse tipo tem:
-   - Um preço e uma quantidade únicos e fixos
-   - Um preço normal (antes dos descontos) e preço final (após os descontos)
-   - Suporte para atributos do produto, como cor, tamanho e outras características
+* **Produtos simples** — o Serviço de Catálogo mapeia os tipos de produtos Adobe Commerce simples, virtuais, para download e de cartão-presente para `simpleProductViews`. Esse tipo tem:
+  * Um preço e uma quantidade únicos e fixos
+  * Um preço normal (antes dos descontos) e preço final (após os descontos)
+  * Suporte para atributos do produto, como cor, tamanho e outras características
 
-- **Produtos complexos** — O Serviço de Catálogo mapeia os tipos de produtos configuráveis, agrupados e agrupados do Adobe Commerce para `complexProductViews`. Produtos complexos são coleções de vários produtos simples que podem ser configurados ou agrupados juntos.
-   - Cada componente do produto simples pode ter seu próprio preço.
-   - Os compradores podem especificar quantidades para produtos de componentes individuais.
-   - As opções de produto (como tamanho, cor, material) são unificadas e funcionam da mesma maneira, independentemente do tipo de produto. Cada seleção de opção aponta para um produto simples específico com seus próprios atributos e preço. O produto final permanece indefinido até que o comprador selecione todas as opções necessárias.
+* **Produtos complexos** — O Serviço de Catálogo mapeia os tipos de produtos configuráveis, agrupados e agrupados do Adobe Commerce para `complexProductViews`. Produtos complexos são coleções de vários produtos simples que podem ser configurados ou agrupados juntos.
+  * Cada componente do produto simples pode ter seu próprio preço.
+  * Os compradores podem especificar quantidades para produtos de componentes individuais.
+  * As opções de produto (como tamanho, cor, material) são unificadas e funcionam da mesma maneira, independentemente do tipo de produto. Cada seleção de opção aponta para um produto simples específico com seus próprios atributos e preço. O produto final permanece indefinido até que o comprador selecione todas as opções necessárias.
 
 #### Atributos de exibição do produto
 
@@ -141,6 +144,7 @@ O Serviço de catálogo garante atualizações de preços e cálculos precisos, 
 O processo de implementação envolve:
 
 1. [!BADGE Somente PaaS]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."} **[Instalar e configurar o Serviço de Catálogo](installation.md)**—Instale e configure a extensão Serviço de Catálogo e configure a conexão SaaS usando o [!DNL Commerce Services Connector].
-2. **Atualizar código de vitrine**: integre consultas GraphQL do Serviço de Catálogo ao seu front-end.
-3. **Consultas de rota**: todas as consultas do Serviço de catálogo passam pelo gateway do GraphQL (URL fornecida durante a integração)
-4. **Monitorar e solucionar problemas de sincronização de dados**: verifique o desempenho aprimorado e monitore os resultados
+1. **Atualizar código de vitrine**: integre consultas GraphQL do Serviço de Catálogo ao seu front-end.
+1. **Consultas de rota**: todas as consultas do Serviço de catálogo passam pelo gateway do GraphQL (URL fornecida durante a integração)
+1. **Monitorar e solucionar problemas de sincronização de dados**: verifique o desempenho aprimorado e monitore os resultados
+1. **(Opcional) [Configurar eventos de catálogo](catalog-events-guide.md)** — Configurar assinaturas [!DNL Adobe I/O Events] para receber notificações de alteração de catálogo para invalidação de cache, indexação de pesquisa ou sincronização de sistema externo.
