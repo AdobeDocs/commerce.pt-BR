@@ -26,9 +26,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 04f966aca4d7ce85990b42ad958938a186629af1
 workflow-type: tm+mt
-source-wordcount: 1464
+source-wordcount: 1452
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Esse fluxo de trabalho demonstra o processo de finalização para um cliente que
 
 1. No Administrador do Commerce, navegue até [!UICONTROL **Lojas**] > [!UICONTROL Settings] > [!UICONTROL **Configuração**] > [!UICONTROL **Métodos de pagamento**].
 
-1. Na seção [!UICONTROL **Configuração Geral**], digite os `Payment Services Sandbox ID` e `Payment Services Sandbox Key`. Você pode obter essas IDs seguindo as etapas descritas em [Integração da sandbox](../payment-services/sandbox.md#sandbox-onboarding)
+1. Na seção [!UICONTROL **Configuração Geral**], digite os `Payment Services Sandbox ID` e `Payment Services Sandbox Key`. Você pode obter essas IDs seguindo as etapas descritas em [Integração da sandbox](../payment-services/sandbox.md#sandbox-onboarding){target="_blank"}
 
 1. Defina a lista suspensa [!UICONTROL **Habilitar**] para [!UICONTROL **Sim**].
 
@@ -83,7 +83,7 @@ Esse fluxo de trabalho demonstra o processo de finalização para um cliente que
 
 1. Insira os detalhes de contato e as informações de entrega necessários. Você pode usar informações fictícias para este pedido.
 
-1. Para fazer check-out, selecione [!UICONTROL **Cheque/Ordem de Pagamento**]. Se quiser usar um cartão de crédito, use um dos [cartões de teste fornecidos pelo Paypal](https://developer.paypal.com/tools/sandbox/card-testing/#link-teststaticcardnumbers). Você pode usá-los com qualquer data de expiração futura e qualquer CVC.
+1. Para fazer check-out, selecione [!UICONTROL **Cheque/Ordem de Pagamento**]. Se quiser usar um cartão de crédito, use um dos [cartões de teste fornecidos pelo PayPal](https://developer.paypal.com/credit-card-number-generator#link-teststaticcardnumbers). Você pode usá-los com qualquer data de expiração futura e qualquer CVC.
 
    ![Formulário de check-out com campos de informações de contato e remessa](./assets/enter-details.png){width="600" zoomable="yes"}
 
@@ -125,7 +125,7 @@ Crie, edite e publique conteúdo diretamente na loja.
 
 ## Experimentação contextual
 
-O recurso de experimentação contextual do [!DNL Adobe Commerce] permite que você crie e gerencie experimentos em sua loja para testar diferentes conteúdos e configurações.
+O recurso de experimentação contextual do Adobe permite criar e gerenciar experimentos em sua loja para testar diferentes conteúdos e configurações.
 
 ### Pré-requisitos
 
@@ -139,9 +139,9 @@ O recurso de experimentação contextual do [!DNL Adobe Commerce] permite que vo
 
 1. Cole as duas cópias da página de índice na pasta **1234**.
 
-1. Abra cada página e renomeie-as como &quot;homev1&quot; e &quot;homev2&quot;. Estes são seus [desafiantes](https://www.aem.live/docs/experimentation#create-your-challenger-page).
+1. Abra cada página e renomeie-as como &quot;homev1&quot; e &quot;homev2&quot;. Estas páginas são seus [desafiantes](https://www.aem.live/docs/experimentation#create-your-challenger-page).
 
-1. Modifique cada página para incluir conteúdo diferente. Por exemplo, altere a imagem herói ou o texto. Você precisa identificar as diferenças entre cada página.
+1. Para incluir conteúdo diferente, modifique cada página. Por exemplo, altere a imagem herói ou o texto. Você precisa identificar as diferenças entre cada página.
 
 1. Publique cada uma de suas páginas desafiantes.
 
@@ -155,14 +155,14 @@ O recurso de experimentação contextual do [!DNL Adobe Commerce] permite que vo
    * Descrição - Uma loja da Web
    * Experimento - 1234
    * Variantes de experimento
-      * `https://<your-site>.aem.live/experiments/1234/indexv1`
-      * `https://<your-site>.aem.live/experiments/1234/indexv2`
+     * `https://<your-site>.aem.live/experiments/1234/indexv1`
+     * `https://<your-site>.aem.live/experiments/1234/indexv2`
 
    ![Configuração de bloco de metadados para experimentação contextual](./assets/metadata-block.png){width="600" zoomable="yes"}
 
 1. Abra uma janela de navegação incógnita ou privada e navegue até a página principal.
 
-1. Feche a janela de navegação privada e repita a etapa anterior. Cada vez que abrir a página, você verá uma variante aleatória criada.
+1. Feche a janela de navegação privada e repita a etapa anterior. Cada vez que abre a página, você vê uma variante aleatória criada.
 
 ## Aprimorar conteúdo da loja
 
@@ -174,9 +174,9 @@ Com o [!DNL AEM Assets], [!DNL Adobe Express] e [!DNL Firefly], você pode fazer
 
 ### Personalizar o plano de fundo de uma imagem
 
-Considere um cenário em que você deseja modificar rapidamente o plano de fundo de uma imagem de produto. A combinação de [!DNL Adobe Commerce], [!DNL AEM Assets] e [!DNL Adobe Express] permite concluir essa alteração em algumas etapas simples.
+Considere um cenário em que você deseja modificar o plano de fundo de uma imagem de produto rapidamente. A combinação de [!DNL Adobe Commerce], [!DNL AEM Assets] e [!DNL Adobe Express] permite concluir essa alteração em algumas etapas.
 
-1. Abra a [loja](./storefront.md) criada nos pré-requisitos e navegue até um item que você deseja alterar. Anote o SKU ou o Código do produto.
+1. Abra a [loja](./storefront.md) criada nos pré-requisitos e navegue até um item que você deseja alterar. Anote o SKU ou o código do produto do item.
 
 1. Abra [!DNL AEM Assets], selecionando-o na [Adobe Experience Cloud](https://experience.adobe.com/#/home).
 
@@ -200,7 +200,7 @@ Considere um cenário em que você deseja modificar rapidamente o plano de fundo
 
    ![Caixa de texto para descrever a imagem a ser gerada com IA](./assets/insert-object-edit.png){width="600" zoomable="yes"}
 
-1. Ajuste o [!UICONTROL Brush size] e desenhe onde deseja adicionar a imagem gerada. Para este exemplo, desenhe ao redor do objeto existente para selecionar o plano de fundo.
+1. Ajuste o [!UICONTROL Brush size] e desenhe onde deseja adicionar a imagem gerada. Para selecionar o plano de fundo para este exemplo, desenhe ao redor do objeto existente.
 
 1. Clique em [!UICONTROL **Gerar**] para exibir os resultados.
 
@@ -284,7 +284,7 @@ A função Gerar variações de [!DNL Adobe Commerce] aproveita a IA gerativa pa
 
 ### Gerar conteúdo e imagens
 
-1. Abrir [[!DNL Generate Variations]](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/generative-ai/generate-variations)
+1. Abrir [[!DNL Generate Variations]](/en/docs/experience-manager-cloud-service/content/ai-in-aem/generate-variations/generate-variations)
 
 1. Selecione o modelo [!UICONTROL **Banner principal**].
 
@@ -300,11 +300,11 @@ A função Gerar variações de [!DNL Adobe Commerce] aproveita a IA gerativa pa
 
 1. Na lista suspensa [!UICONTROL **Tipo de conteúdo**], selecione [!UICONTROL **Foto**].
 
-1. Para a imagem de referência [!UICONTROL **Style**], selecione o banner de armazenamento do Adobe existente.
+1. Para a imagem de referência de [!UICONTROL **Estilo**], selecione o banner existente da Adobe Store.
 
 1. Selecione a imagem gerada que você deseja usar e clique em [!UICONTROL **Salvar**].
 
-1. Repita esse processo com outras imagens de referência para gerar mais variações.
+1. Para gerar mais variações, repita esse processo com outras imagens de referência.
 
 
 ## Solução de problemas
@@ -313,35 +313,35 @@ Use as sugestões a seguir para resolver qualquer problema ao tentar utilizar es
 
 * Se você precisar de orientação sobre comandos ou sinalizadores:
 
-   1. Execute `aio --help` para ver todos os comandos e sinalizadores disponíveis.
-   1. Para comandos específicos, use o sinalizador `--help`. Por exemplo:
-      * `aio console --help`
-      * `aio commerce --help`
+  1. Execute `aio --help` para ver todos os comandos e sinalizadores disponíveis.
+  1. Para comandos específicos, use o sinalizador `--help`. Por exemplo:
+     * `aio console --help`
+     * `aio commerce --help`
 
 * Se você encontrar problemas de login inválidos:
 
-   1. Executar `aio config clear`.
-   1. Executar `aio auth login --force`.
-   1. Faça logon no navegador.
-   1. Selecione seu perfil.
-   1. Volte para o terminal para continuar.
+  1. Executar `aio config clear`.
+  1. Executar `aio auth login --force`.
+  1. Faça logon no navegador.
+  1. Selecione seu perfil.
+  1. Volte para o terminal para continuar.
 
 * Se o comando `init` falhar:
 
-   1. Executar `aio api-mesh delete`.
-   1. Execute `aio commerce init` novamente.
+  1. Executar `aio api-mesh delete`.
+  1. Execute `aio commerce init` novamente.
 
 * Se você selecionou a organização, o projeto ou o espaço de trabalho errado antes de executar o comando `init`:
 
-   1. Executar `aio console org select`.
-   1. Executar `aio console project select`.
-   1. Executar `aio console workspace select`.
+  1. Executar `aio console org select`.
+  1. Executar `aio console project select`.
+  1. Executar `aio console workspace select`.
 
 * Se você tiver uma seleção de locatário inválida:
 
-   1. Cancele a execução atual da CLI pressionando **Ctrl-C**.
-   1. Executar `aio commerce init`.
+  1. Cancele a execução atual da CLI pressionando **Ctrl-C**.
+  1. Executar `aio commerce init`.
 
 * Se você encontrar uma instalação inválida do API Mesh:
 
-   * Executar `aio api-mesh update mesh-config.json`.
+  * Executar `aio api-mesh update mesh-config.json`.
