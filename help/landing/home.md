@@ -30,11 +30,11 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-last-update: 2026-07-24
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+last-update: 2026-08-03
+source-git-commit: aeb1e656f77b974baf7044ae80fdd9d6bcc64cbb
 workflow-type: tm+mt
-source-wordcount: 1221
-ht-degree: 0%
+source-wordcount: 1335
+ht-degree: 1%
 
 ---
 
@@ -190,7 +190,7 @@ As ferramentas de dados ajudam você a gerenciar e otimizar o fluxo de informaç
          </a>
       </div>
       <p>
-         <em>Sincronizar automaticamente dados de catálogo, pedido e inventário da Adobe Commerce com os serviços conectados. Use os comandos da CLI do Commerce ou o <strong>Painel de Gerenciamento de Dados</strong> para gerenciar o processamento de sincronização.</em>
+         <em>Sincronizar automaticamente dados de catálogo, pedido e inventário da Adobe Commerce com os serviços conectados. Use comandos da CLI do Commerce ou o <strong>Painel de Gerenciamento de Dados</strong> para gerenciar o processamento de sincronização.</em>
       </p>
    </td>
    <td valign="top">
