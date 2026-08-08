@@ -32,10 +32,10 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-last-update: 2026-08-06
-source-git-commit: 1dd79f88f97d2f6a2f6314434f11049871dcdb6e
+last-update: 2026-08-07
+source-git-commit: 477802467d8f60f05137d60e0d703c0302de5144
 workflow-type: tm+mt
-source-wordcount: 5259
+source-wordcount: 5371
 ht-degree: 0%
 
 ---
@@ -48,7 +48,31 @@ As notas de versão a seguir contêm atualizações para [!DNL Adobe Commerce as
 >
 >Se você estiver usando o Adobe Commerce no local ou o Adobe Commerce na infraestrutura em nuvem, consulte as [notas de versão do Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/overview).
 
-## Julho de 2026 - versão #1 {#latest}
+## Agosto de 2026 - versão #1 {#latest}
+
+[!BADGE Sandbox]{type=Caution tooltip="Os itens listados estão disponíveis atualmente apenas em ambientes de sandbox. A Adobe disponibiliza novas versões em ambientes de sandbox primeiro para fornecer tempo para testar alterações futuras antes que a versão esteja disponível em ambientes de produção."}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+Os itens a seguir serão publicados na Produção em 11 de agosto de 2026.
+
+>[!BEGINSHADEBOX]
+
+### Assinar um evento para pagamentos de fatura
+
+Um novo evento `observer.sales_order_invoice_pay` é emitido quando um pagamento de fatura é registrado, para que as integrações possam assinar o evento, em vez de sondar as alterações de status da fatura. <!-- CEXT-5983 -->
+
+### Melhorias e correções de erros
+
+Os seguintes aprimoramentos, otimizações e correções de erros selecionados estão incluídos nesta versão:
+
+* Correção de um problema em que a busca das empresas atribuídas de um cliente por meio do GraphQL podia ser lenta. <!-- ACCS-1425 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## Julho de 2026
 
 [!BADGE Produção]{type=Neutral tooltip="Os itens listados estão disponíveis atualmente em Ambientes de produção."}
 
