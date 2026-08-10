@@ -2,11 +2,11 @@
 title: O que é  [!DNL Adobe Commerce Optimizer]?
 description: Saiba mais sobre  [!DNL Adobe Commerce Optimizer]  e seus principais recursos.
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: f9516d4c-fbae-4db2-a1a9-cda3684a8122
-source-git-commit: 3e759c0d7e51082b70ea9a1fcc5757b60a8aab61
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -21,12 +21,12 @@ Com [!DNL Adobe Commerce Optimizer], você pode:
 - Assimilar dados de catálogo de qualquer origem.
 - Definir visualizações e políticas do catálogo de negócios.
 - Crie pesquisas e recomendações personalizadas usando IA e ML.
-- Melhore a relevância da descoberta de produtos com classificações que priorizam **correspondências exatas e próximas** e correspondências de mesmo campo; consulte [Pesquisar correspondência e classificação](./manage-results/search-relevance-matching.md).
+- Melhore a relevância da descoberta de produtos com classificações que priorizam **correspondências exatas e próximas** e correspondências de mesmo campo. Consulte [Pesquisar correspondência e classificação](./manage-results/search-relevance-matching.md).
 - Visualize dados essenciais do produto disponíveis, incluindo o status da sincronização e dados de eventos da loja, para uma implementação precisa e solução de problemas.
 
 Assista ao vídeo a seguir para obter uma visão geral de alto nível do [!DNL Adobe Commerce Optimizer]:
 
->[!VIDEO](https://video.tv.adobe.com/v/3450468?captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3450226)
 
 ## Quem se beneficia mais de [!DNL Adobe Commerce Optimizer]?
 
@@ -72,6 +72,7 @@ Defina as visualizações e políticas do catálogo. O catálogo não só conté
 - **Exibições de catálogo** - Ajudam a definir sua estrutura de varejo em grupos funcionais significativos. Por exemplo, revendedores para a indústria automobilística, subsidiárias para conglomerados multimarca ou locais de fabricação para fornecedores.
 - **Camadas do catálogo** - Modifique os dados do produto sem alterar os dados de origem. Ao usar o AEM Assets para imagens de produtos, a camada AEM-Assets é aplicada por meio de [Visuais de Produto](setup/product-visuals.md). Consulte [Camadas do catálogo](setup/catalog-layer.md) para obter detalhes.
 - **Políticas** - Filtros de acesso a dados alojados em exibições de catálogo. As políticas ajudam a garantir que o conteúdo correto seja enviado ao destino certo. Por exemplo, lojas físicas, mercados, pipelines de anúncios (Google, Facebook, Instagram) em pontos de venda.
+- **Exibições de catálogo privado** - Restrinja uma exibição de catálogo para que somente as solicitações que carregam um token assinado válido possam recuperar seus dados. Consulte [Exibições de catálogo privado](setup/private-catalog-view.md) para configuração.
 - **Sincronização de Dados** - Exibe uma visão geral do status de sincronização dos dados do produto transferidos de sua fonte de dados (PIM, ERP, etc.) para [!DNL Adobe Commerce Optimizer]. Os dados desse produto são exibidos nas guias **[!UICONTROL Catalog Service]**, **[!UICONTROL Search]** e **[!UICONTROL Recommendations]**.
 - **Eventos** - Exibe os dados do evento da loja que habilita a Descoberta de Produtos e o Recommendations. A página **Eventos** permite que o comerciante verifique se implementou os eventos de vitrine corretamente e se os eventos estão sendo capturados com êxito. Os comerciantes podem usar esta página para identificar possíveis problemas e tomar medidas para resolvê-los.
 

@@ -4,28 +4,16 @@ description: Diagnosticar e resolver comportamento inesperado em  [!DNL Adobe Co
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-subfeature_v2:
-  - id: a40ebd6b-b542-4432-a730-1803ef74518d
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: c32adafa-ed01-4b31-997e-2413013911b0id: e7dae43f-215c-4cdf-90d3-c5a461a6e669id: c18ed297-2187-4aec-affb-9d9654eca6fc
+subfeature_v2: id: a40ebd6b-b542-4432-a730-1803ef74518d
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 516
+source-wordcount: 645
 ht-degree: 0%
 
 ---
@@ -69,6 +57,17 @@ Esta página descreve comportamentos que você pode observar ao trabalhar com o 
 
 - Verifique se o site está configurado para sincronização na configuração de exportação do conector. Consulte [Personalizar a configuração da exportação de dados](../get-started.md#customize-the-commerce-scopes-export-configuration).
 - Confirme se a ID do catálogo de preços usada em [!DNL Commerce Optimizer] está presente na configuração da [exibição do catálogo](../../optimizer/setup/catalog-view.md){target="_blank"} usada para executar a consulta de produtos.
+
+## As solicitações de vitrine retornam um erro de acesso negado ou os dados do catálogo desaparecem completamente
+
+**Problema:** as solicitações à API de merchandising para uma exibição de catálogo que retornava dados anteriormente agora falham com um erro `access-key-invalid`, ou uma loja que estava funcionando para de mostrar dados de catálogo.
+
+**Causa:** a exibição de catálogo tem [proteção de catálogo](../../optimizer/setup/private-catalog-view.md) habilitada, e a solicitação não tem o cabeçalho `AC-Catalog-View-Access-Token` necessário ou todas as chaves de acesso restrito atribuídas à exibição expiraram. O [!DNL Adobe Commerce Optimizer Connector] não cria, atribui ou gira chaves de acesso restrito automaticamente—o gerenciamento de chaves é feito inteiramente pelo seu aplicativo cliente.
+
+**Solução:**
+
+- Confirme se a exibição do catálogo ainda tem pelo menos uma [chave de acesso restrito](../../optimizer/setup/restricted-access-keys.md) não expirada atribuída e gire ou adicione uma chave, se necessário.
+- Verifique se a loja ou o cliente envia um cabeçalho `AC-Catalog-View-Access-Token` assinado válido com cada solicitação. Consulte [Exibições de catálogo privado](../../optimizer/setup/private-catalog-view.md).
 
 ## Os dados em [!DNL Adobe Commerce Optimizer] foram substituídos ou modificados inesperadamente após a sincronização
 
