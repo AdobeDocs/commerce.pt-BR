@@ -1,5 +1,5 @@
 ---
-title: Configurar a loja
+title: Configurar sua vitrine eletrônica
 description: Saiba como configurar sua  [!DNL Adobe Commerce Optimizer] loja.
 role: Developer
 badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
@@ -20,9 +20,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 1562
+source-wordcount: 1573
 ht-degree: 0%
 
 ---
@@ -37,20 +37,20 @@ Este guia orienta você na configuração de uma loja para sua instância do [!D
 
 * **Conta do GitHub** que pode criar repositórios e está configurada para desenvolvimento local (github.com)
 * **[!DNL Adobe Commerce Optimizer]instância** com dados de exemplo e exibições e políticas de catálogo configuradas
-   * Consulte [Adicionar dados de amostra](get-started.md#add-sample-data) para obter instruções de configuração.
+  * Consulte [Adicionar dados de amostra](get-started.md#add-sample-data) para obter instruções de configuração.
 
 ### Dados de instância necessários
 
 Antes de começar, colete as seguintes informações da instância do [!DNL Adobe Commerce Optimizer]:
 
 * **ID do Locatário** (também chamada de ID de instância)
-   * Disponível na [página de detalhes da instância](get-started.md#manage-instances)
+  * Disponível na [página de detalhes da instância](get-started.md#manage-instances)
 * **Ponto de extremidade do GraphQL** para sua instância
-   * Disponível na [página de detalhes da instância](get-started.md#manage-instances)
+  * Disponível na [página de detalhes da instância](get-started.md#manage-instances)
 * **ID de exibição de catálogo** para a exibição de catálogo global
-   * Disponível na [página de detalhes do catálogo](./setup/catalog-view.md#manage-catalog-view)
+  * Disponível na [página de detalhes do catálogo](./setup/catalog-view.md#manage-catalog-views)
 * **localidade do Source** para exibição do catálogo
-   * O padrão para dados de exemplo é `en-US`
+  * O padrão para dados de exemplo é `en-US`
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ A ferramenta Criador de sites cria um projeto completo da loja com os seguintes 
 
    ![[!DNL Site Creator tool]](./assets/storefront-setup-site-creator.png){width="700" zoomable="yes"}
 
-1. Selecione **Criar Novo Site (Código e Conteúdo)**.
+1. Selecione **[!UICONTROL Create New Site (Code & Content)]**.
 
 1. Conclua a configuração do site:
 
@@ -89,7 +89,7 @@ A ferramenta Criador de sites cria um projeto completo da loja com os seguintes 
    * **Nome do Site**: escolha um nome descritivo para sua vitrine eletrônica
    * **Ponto de extremidade do Commerce GraphQL (opcional)**: insira o ponto de extremidade do GraphQL para sua instância [!DNL Adobe Commerce Optimizer]
 
-1. Clique em **Criar Site** para criar o repositório GitHub com o código padrão da loja.
+1. Clique em **[!UICONTROL Create Site]** para criar o repositório GitHub com o código padrão da loja.
 
    Quando o repositório é criado, o Criador do site atualiza e solicita que você instale o aplicativo Sincronização de código.
 
@@ -103,7 +103,7 @@ A ferramenta Criador de sites cria um projeto completo da loja com os seguintes 
    * Clique no menu **[!UICONTROL Select repositories]** e escolha o repositório de código da loja que você criou.
    * Clique em **[!UICONTROL Save]** para registrar seu repositório.
 
-1. Retorne à janela do navegador onde o Criador de Sites está aberto e clique em **Criar Site**.
+1. Retorne à janela do navegador onde o Criador de Sites está aberto e clique em **[!UICONTROL Create Site]**.
 
    O Criador de sites copia o conteúdo do modelo da loja para o ambiente do Autor do documento. Esse processo leva de 1 a 2 minutos.
 
@@ -115,7 +115,7 @@ A ferramenta Criador de sites cria um projeto completo da loja com os seguintes 
 
    Use esses links para gerenciar o código, o conteúdo e a configuração da loja.
 
-1. Copie e salve estes links para referência futura: clique em **[!UICONTROL Copy].
+1. Copie e salve estes links para referência futura: clique em **[!UICONTROL Copy]**.
 
 ## Configurar a loja
 
@@ -140,6 +140,10 @@ Atualize a configuração da loja para se conectar à instância do [!DNL Adobe 
    >[!NOTE]
    >
    >Para encontrar a ID do catálogo de preços, verifique os [detalhes da configuração de exibição do catálogo](./setup/catalog-view.md) em [!DNL Adobe Commerce Optimizer] para ver os catálogos de preços atribuídos. Se nenhum catálogo de preços for atribuído, você poderá remover esse cabeçalho do arquivo de configuração. Adicioná-lo novamente quando um catálogo de preços tiver sido atribuído à exibição do catálogo.
+
+   >[!NOTE]
+   >
+   >Se a exibição de catálogo tiver [!UICONTROL Catalog Protection] habilitada, adicione um cabeçalho `AC-Catalog-View-Access-Token` que contenha um token assinado válido, ou as solicitações da loja a essa exibição de catálogo serão negadas. Consulte [Exibições de catálogo privado](./setup/private-catalog-view.md).
 
 1. Salve o arquivo de configuração.
 
@@ -228,7 +232,7 @@ Antes de prosseguir para as próximas etapas, verifique se a vitrine eletrônica
 ![Lista de verificação](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Pelo menos uma página de detalhes do produto exibe informações completas<br>
 A funcionalidade de pesquisa ![Lista de Verificação](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) retorna resultados relevantes<br>
 ![Lista de verificação](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Imagens de produtos estão carregando corretamente<br>
-![Lista de verificação](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) Os valores de configuração correspondem às suas configurações de instância<br>
+<br>
 
 ### Obter ajuda
 

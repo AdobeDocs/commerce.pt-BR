@@ -1,5 +1,5 @@
 ---
-title: Origens do catálogo
+title: Origens no catálogo
 description: Saiba o que são as fontes de catálogo e como elas definem o escopo autoritativo de produtos, atributos e categorias para o comportamento de pesquisa, filtragem e classificação.
 role: Admin, Developer
 recommendations: noCatalog
@@ -23,9 +23,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 94ba07437d532d0d101c166f58114c2aa0bd4be4
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: 446
+source-wordcount: 457
 ht-degree: 0%
 
 ---
@@ -64,4 +64,5 @@ Use as orientações a seguir ao decidir como estruturar suas fontes de catálog
 > * [Camadas do catálogo](catalog-layer.md) - Modificar a apresentação do produto sem alterar os dados de origem
 > * [Políticas](policies.md) - Criar filtros baseados em atributos para exibições de catálogo
 > * [Catálogos de preços](pricebooks.md) - Gerenciar estruturas de preços para diferentes segmentos de clientes
+> * [Chaves de acesso restrito](restricted-access-keys.md) - Proteja uma exibição de catálogo com autenticação de token assinado
 

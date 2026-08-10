@@ -26,10 +26,10 @@ topic_v2:
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 last-update: 2026-07-29
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: fb025e5232902ba9fea7e858085ea85abeb11720
 workflow-type: tm+mt
-source-wordcount: 1059
-ht-degree: 0%
+source-wordcount: 1106
+ht-degree: 3%
 
 ---
 
@@ -202,7 +202,7 @@ Obtenha a _ID do locatário_ do campo _[!DNL Instance Id]_&#x200B;na [[!DNL Inst
 
 1. **Configurar [!DNL Commerce Optimizer] exibições e políticas de catálogo**
 
-   Crie políticas e exibições de catálogo na interface do usuário do [!DNL Commerce Optimizer]. Observe que os catálogos de preços são criados automaticamente de [!DNL Adobe Commerce] grupos de clientes. Para obter instruções, consulte a documentação das [Exibições de catálogo](../optimizer/setup/catalog-view.md) e [Políticas](../optimizer/setup/policies.md) no *[!DNL Commerce Optimizer]Guia do Usuário*.
+   Crie políticas e exibições de catálogo na interface do usuário do [!DNL Commerce Optimizer]. Observe que os catálogos de preços são criados automaticamente de [!DNL Adobe Commerce] grupos de clientes. Para obter instruções, consulte a documentação das [Exibições de catálogo](../optimizer/setup/catalog-view.md) e [Políticas](../optimizer/setup/policies.md) no *[!DNL Commerce Optimizer]Guia do Usuário*. Para restringir o acesso a uma exibição de catálogo, consulte [Exibições de catálogo privado](../optimizer/setup/private-catalog-view.md).
 
 1. **Configurar uma Commerce Storefront em[!DNL Edge Delivery Services]**
 

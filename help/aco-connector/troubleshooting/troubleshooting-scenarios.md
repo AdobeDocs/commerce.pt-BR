@@ -23,9 +23,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
 workflow-type: tm+mt
-source-wordcount: 516
+source-wordcount: 645
 ht-degree: 0%
 
 ---
@@ -69,6 +69,17 @@ Esta página descreve comportamentos que você pode observar ao trabalhar com o 
 
 - Verifique se o site está configurado para sincronização na configuração de exportação do conector. Consulte [Personalizar a configuração da exportação de dados](../get-started.md#customize-the-commerce-scopes-export-configuration).
 - Confirme se a ID do catálogo de preços usada em [!DNL Commerce Optimizer] está presente na configuração da [exibição do catálogo](../../optimizer/setup/catalog-view.md){target="_blank"} usada para executar a consulta de produtos.
+
+## As solicitações de vitrine retornam um erro de acesso negado ou os dados do catálogo desaparecem completamente
+
+**Problema:** as solicitações à API de merchandising para uma exibição de catálogo que retornava dados anteriormente agora falham com um erro `access-key-invalid`, ou uma loja que estava funcionando para de mostrar dados de catálogo.
+
+**Causa:** a exibição de catálogo tem [proteção de catálogo](../../optimizer/setup/private-catalog-view.md) habilitada, e a solicitação não tem o cabeçalho `AC-Catalog-View-Access-Token` necessário ou todas as chaves de acesso restrito atribuídas à exibição expiraram. O [!DNL Adobe Commerce Optimizer Connector] não cria, atribui ou gira chaves de acesso restrito automaticamente—o gerenciamento de chaves é feito inteiramente pelo seu aplicativo cliente.
+
+**Solução:**
+
+- Confirme se a exibição do catálogo ainda tem pelo menos uma [chave de acesso restrito](../../optimizer/setup/restricted-access-keys.md) não expirada atribuída e gire ou adicione uma chave, se necessário.
+- Verifique se a loja ou o cliente envia um cabeçalho `AC-Catalog-View-Access-Token` assinado válido com cada solicitação. Consulte [Exibições de catálogo privado](../../optimizer/setup/private-catalog-view.md).
 
 ## Os dados em [!DNL Adobe Commerce Optimizer] foram substituídos ou modificados inesperadamente após a sincronização
 

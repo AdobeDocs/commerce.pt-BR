@@ -23,7 +23,7 @@ topic_v2:
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
 source-wordcount: 1445
 ht-degree: 0%
@@ -167,7 +167,7 @@ Siga estas etapas para implementar uma otimização sugerida pela IA:
 
 ### Como as camadas de catálogo funcionam com a correção automática
 
-Se uma camada do Adobe Sites Optimizer não existir na visualização de catálogo, a correção automática criará uma camada automaticamente e a atribuirá como a prioridade mais alta (número mais alto). Se você excluir essa camada, ela será recriada na próxima vez que a correção automática for executada e as camadas existentes serão deslocadas para números de ordem mais baixos. Se a camada do Adobe Sites Optimizer já existir em um número de pedido diferente, a correção automática não alterará sua prioridade. Se quiser manter uma camada de correção automática, mas não usá-la imediatamente, desative-a. Saiba mais sobre como gerenciar [camadas de catálogo](../setup/catalog-layer.md#activate-deactivate-or-delete-layers).
+Se uma camada do Adobe Sites Optimizer não existir na visualização de catálogo, a correção automática criará uma camada automaticamente e a atribuirá como a prioridade mais alta (número mais alto). Se você excluir essa camada, ela será recriada na próxima vez que a correção automática for executada e as camadas existentes serão deslocadas para números de ordem mais baixos. Se a camada do Adobe Sites Optimizer já existir em um número de pedido diferente, a correção automática não alterará sua prioridade. Se quiser manter uma camada de correção automática, mas não usá-la imediatamente, desative-a. Saiba mais sobre como gerenciar [camadas de catálogo](../setup/catalog-layer.md#manage-layer-activation-and-deletion).
 
 ![Camadas do catálogo](../assets/catalog-layers.png)
 

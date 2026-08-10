@@ -266,10 +266,10 @@ Após a implantação, conclua as etapas a seguir para registrar a portadora fic
 
    - Vá para **Lojas** > Configurações > **Configuração** > **Adobe Services** > **Webhooks do Commerce**.
    - Adicionar um webhook:
-      - **Método do Webhook:** `plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates`
-      - **Tipo de Webhook:** **after**
-      - **URL:** a URL de ação da Web **de métodos de envio** implantada (da saída de implantação ou do [!DNL Adobe Developer Console]).
-      - **Obrigatório:** **Opcional** - Permite que o check-out ainda funcione se a API externa não retornar taxas.
+     - **Método do Webhook:** `plugin.magento.out_of_process_shipping_methods.api.shipping_rate_repository.get_rates`
+     - **Tipo de Webhook:** **after**
+     - **URL:** a URL de ação da Web **de métodos de envio** implantada (da saída de implantação ou do [!DNL Adobe Developer Console]).
+     - **Obrigatório:** **Opcional** - Permite que o check-out ainda funcione se a API externa não retornar taxas.
 
    ![Configuração de webhook de administrador do Commerce para taxas de envio de modelo](../assets/admin-webhook-shipping.png){width="600" zoomable="yes"}
 
@@ -287,9 +287,9 @@ Após a implantação, conclua as etapas a seguir para registrar a portadora fic
    - Abra **Aplicativos** e selecione seu aplicativo.
    - Abra a guia **Envio Simulado** (ou equivalente).
    - Insira os seguintes detalhes:
-      - **URL do Serviço:** a URL do fluxo de trabalho Pipedream copiada (por exemplo, `https://123456.m.pipedream.net`).
-      - **Chave de API:** qualquer valor não vazio para o modelo, por exemplo `tutorial-key`.
-      - **Endereço do depósito (origem da remessa):** nome, telefone, rua, cidade, estado, CEP, país.
+     - **URL do Serviço:** a URL do fluxo de trabalho Pipedream copiada (por exemplo, `https://123456.m.pipedream.net`).
+     - **Chave de API:** qualquer valor não vazio para o modelo, por exemplo `tutorial-key`.
+     - **Endereço do depósito (origem da remessa):** nome, telefone, rua, cidade, estado, CEP, país.
    - Clique em **Salvar**. A configuração é armazenada no Estado de tempo de execução e é usada pela ação de métodos de envio.
 
    ![Formulário de configuração de envio simulado com URL de Serviço, chave de API e endereço de depósito](../assets/admin-ui-mock-shipping.png){width="600" zoomable="yes"}

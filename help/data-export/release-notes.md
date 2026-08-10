@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 06cf519b8588e19f870e851558fa7fe7f0602b17
+source-git-commit: 0c38384dc0b8c9c964402cd3d363ff784d7a0cf5
 workflow-type: tm+mt
-source-wordcount: 3237
+source-wordcount: 3270
 ht-degree: 0%
 
 ---
@@ -44,6 +44,13 @@ As atualizações incluem:
 >A extensão [!DNL SaaS data export] é uma coleção de módulos instalados automaticamente com [!DNL Live Search], [!DNL Product Recommendations] e [!DNL Catalog Service]. Você pode verificar a versão instalada em seu sistema usando o [!DNL Composer]. Em alguns casos, você pode querer atualizar a extensão de exportação de dados no seu sistema para coletar correções ou novos recursos sem atualizar a versão do Serviço do Commerce.
 
 ## Versões de 2026 {#release-notes-2026}
+
+### Versão 103.4.31
+
+_7 de agosto de 2026_
+
+![Correção](../assets/fix.svg) **Reduzir processamento desnecessário**-A extensão Exportação de Dados SaaS agora ignora a indexação para reduzir o processamento desnecessário se o Commerce Services Connector não estiver configurado. <!--MDEE-1413-->
+![Correção](../assets/fix.svg) Não use row_id. <!--MDEE-830-->
 
 ### Versão 103.4.30
 

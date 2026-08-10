@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: 278
+source-wordcount: 290
 ht-degree: 0%
 
 ---
@@ -63,6 +63,7 @@ As tabelas de resumo a seguir usam o modelo RACI para mostrar as responsabilidad
 | Executando verificações ASV de PCI | RA | I |
 | Remediando verificações de PCI de infraestrutura [!DNL Adobe Commerce Optimizer] | R | |
 | Gerenciamento de segredos de SO e plataforma | RA | |
+| Gerando, girando e revogando [chaves de acesso restrito](setup/restricted-access-keys.md) e tokens de assinatura para [!UICONTROL Catalog Protection] | | RA |
 | Monitorar logs de segurança de back-end | RA | |
 | Controle do suporte e do acesso do cliente | A | R |
 | Teste e documentação anuais do plano de DR da Adobe e backup e restauração | RA | |

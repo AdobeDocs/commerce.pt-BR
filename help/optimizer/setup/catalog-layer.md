@@ -1,5 +1,5 @@
 ---
-title: Camada de catálogo
+title: Camadas do catálogo
 description: Saiba como as camadas de catálogo permitem modificar dados do produto sem alterar os dados de origem originais, para que você possa personalizar com segurança e reverter alterações a qualquer momento.
 role: Admin, Developer
 recommendations: noCatalog
@@ -18,22 +18,22 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: 1555
+source-wordcount: 1533
 ht-degree: 0%
 
 ---
 
-# Camada de catálogo
+# Camadas do catálogo
 
-As camadas de catálogo permitem modificar os dados do produto sem alterar os dados de origem originais. As camadas aplicam alterações a atributos específicos do produto, como nome, descrição, imagens, links e metadados, criando uma camada na parte superior do catálogo base. Os dados originais do produto permanecem intactos, permitindo personalizar produtos com segurança e reverter alterações a qualquer momento.
+As camadas de catálogo permitem modificar os dados do produto sem alterar os dados de origem originais. As camadas modificam atributos do produto, como nome, descrição, imagens, links e metadados, criando uma camada na parte superior do catálogo base. Os dados originais do produto permanecem intactos, permitindo personalizar produtos com segurança e reverter alterações a qualquer momento.
 
 ![Camadas do catálogo](../assets/catalog-layers.png)
 
 ## Como as camadas de catálogo funcionam
 
-Quando um cliente visualiza sua loja, o sistema combina os dados do catálogo base com as camadas do catálogo ativo para exibir as informações finais do produto. Veja como o processo funciona:
+Quando um cliente visualiza sua loja, o sistema combina os dados do catálogo base com as camadas do catálogo ativo para exibir as informações finais do produto. O processo funciona da seguinte maneira:
 
 1. **Aplicativo de camada** — Quando uma solicitação é feita com uma ID de canal e uma ID de ambiente, o serviço de armazenamento recupera a exibição de catálogo relevante.
 
@@ -41,7 +41,7 @@ Quando um cliente visualiza sua loja, o sistema combina os dados do catálogo ba
 
 1. **Tratamento de campo**—Tipos de campo diferentes são processados de forma diferente:
 
-   * **Substituir campos** — Campos de texto como nome, descrição e metatítulos são substituídos pelos valores definidos na camada, com a camada de prioridade mais alta tendo precedência.
+   * **Substituir campos** — Campos de texto como nome, descrição e metatítulos são substituídos por valores de camada, e a camada de prioridade mais alta tem precedência.
    * **Mesclar campos** — Campos de matriz como imagens, links e atributos são combinados de várias camadas, fornecendo uma resposta unificada.
 
 1. **Resolução de prioridade** — O campo de ordem determina qual camada tem prioridade. Quando várias camadas modificam o mesmo campo, a camada com o número de ordem mais alto tem prioridade mais alta (por exemplo, a ordem 10 é a mais alta).
@@ -59,7 +59,7 @@ As camadas de catálogo geralmente são usadas para:
 
 ## Camada AEM-Assets
 
-Ao habilitar o [Product Visuals](product-visuals.md), a Integração do AEM Assets cria e gerencia automaticamente uma camada de catálogo dedicada exclusivamente ao conteúdo do AEM Assets. O nome da camada padrão é `AEM-Assets`, no entanto, você pode especificar um nome personalizado durante a [integração na integração com o AEM Assets](../../aem-assets-integration/get-started/configure-aco.md).
+Ao habilitar o [Product Visuals](product-visuals.md), a Integração do AEM Assets cria e gerencia automaticamente uma camada de catálogo dedicada exclusivamente ao conteúdo do AEM Assets. O nome da camada padrão é `AEM-Assets`; no entanto, você pode especificar um nome personalizado durante a [integração na integração com o AEM Assets](../../aem-assets-integration/get-started/configure-aco.md).
 
 Essa camada contém imagens de produtos sincronizadas do AEM Assets. Como outras camadas de catálogo, ele é preenchido por meio da [API de Camadas de Produto](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank}. O Serviço de integração do Assets transforma os metadados de ativos do AEM e os URLs de entrega no formato da API e envia os dados automaticamente quando os ativos são aprovados no AEM Assets.
 
@@ -67,7 +67,7 @@ A integração oferece suporte a uma origem por locatário (uma localidade + uma
 
 >[!CAUTION]
 >
-> Atribua a camada AEM-Assets à visualização do catálogo. Se a camada não for atribuída, os dados da imagem do produto poderão ser substituídos inesperadamente.
+> Atribua a camada AEM-Assets à visualização do catálogo. Se a camada não for atribuída, os dados da imagem do produto serão substituídos inesperadamente.
 
 ### Como a camada AEM-Assets funciona
 
@@ -81,13 +81,13 @@ A integração oferece suporte a uma origem por locatário (uma localidade + uma
 
 Para exibir imagens do AEM Assets em sua loja:
 
-1. Navegue até _Configuração da loja_ e clique em **[!UICONTROL Catalog views]**.
+1. Navegue até **[!UICONTROL Store setup]** e clique em **[!UICONTROL Catalog views]**.
 
 1. Selecione a exibição de catálogo na qual deseja aplicar a camada.
 
 1. Na seção de camadas do catálogo, localize a camada **AEM-Assets**.
 
-1. Ative a camada para ativá-la para esta exibição de catálogo.
+1. Para ativar a camada para esta exibição de catálogo, ative-a.
 
 1. Clique em **[!UICONTROL Save]** para aplicar as alterações.
 
@@ -124,11 +124,11 @@ Para obter especificações detalhadas de API e exemplos de carga, consulte [Cam
 >
 >Este recurso ainda não está disponível.
 
-A interface de exibição de catálogo permite criar e gerenciar manualmente camadas, o que é particularmente útil para integrações como o Sites Optimizer que geram recomendações alimentadas por IA.
+A interface de exibição de catálogo permite criar e gerenciar camadas manualmente, o que é particularmente útil para integrações como o Sites Optimizer que geram recomendações alimentadas por IA.
 
 >[!NOTE]
 >
->Se uma camada do Sites Optimizer não existir na visualização de catálogo, o recurso de correção automática no Sites Optimizer criará automaticamente uma camada e a atribuirá à prioridade mais alta (número mais alto). Se você excluir essa camada, ela será recriada na próxima vez que o recurso de correção automática no Sites Optimizer for executado e mudará as camadas existentes para números de ordem mais baixos. Se a camada do Sites Optimizer já existir com um número de pedido diferente, o recurso de correção automática não alterará sua prioridade.
+>Se uma camada do Sites Optimizer não existir na visualização de catálogo, o recurso de correção automática no Sites Optimizer criará automaticamente uma camada e a atribuirá à prioridade mais alta (número mais alto). Se você excluir essa camada, ela será recriada na próxima vez que o recurso de correção automática no Sites Optimizer for executado e mudar as camadas existentes para números de ordem mais baixos. Se a camada do Sites Optimizer já existir em um número de pedido diferente, o recurso de correção automática não alterará sua prioridade.
 
 >[!TIP]
 >
@@ -136,7 +136,7 @@ A interface de exibição de catálogo permite criar e gerenciar manualmente cam
 
 **Para criar uma camada manual:**
 
-1. Navegue até **Configuração da loja** > **Exibições de catálogo**.
+1. Navegue até **[!UICONTROL Store setup]** > **[!UICONTROL Catalog views]**.
 
 1. Selecione a exibição de catálogo na qual deseja aplicar a camada.
 
@@ -149,7 +149,7 @@ A interface de exibição de catálogo permite criar e gerenciar manualmente cam
    * **Atributos** — Escolha quais atributos de produto modificar (nome, descrição, imagens, metatags e assim por diante).
    * **Valores** — Insira os novos valores para cada atributo selecionado.
 
-1. Clique em **Salvar** para criar a camada.
+1. Clique em **[!UICONTROL Save]** para criar a camada.
 
 A nova camada é adicionada à visualização do catálogo e é automaticamente atribuída ao próximo número de pedido disponível.
 
@@ -163,7 +163,7 @@ Antes de ativar camadas ou alterar prioridades, é possível visualizar como ela
 
 **Para visualizar as alterações da camada:**
 
-1. Navegue até **Configuração da loja** > **Exibições de catálogo**.
+1. Navegue até **[!UICONTROL Store setup]** > **[!UICONTROL Catalog views]**.
 
 1. Selecione a exibição de catálogo com as camadas que deseja visualizar.
 
@@ -173,13 +173,13 @@ Antes de ativar camadas ou alterar prioridades, é possível visualizar como ela
 
 1. Faça ajustes no conteúdo da camada ou na ordem de prioridade, conforme necessário.
 
-## Ativar, desativar ou excluir camadas
+## Gerenciar ativação e exclusão de camadas
 
 É possível ativar ou desativar camadas de catálogo sem excluí-las, permitindo que você controle quando personalizações específicas são aplicadas.
 
 **Para ativar ou desativar uma camada:**
 
-1. Navegue até **Configuração da loja** > **Exibições de catálogo**.
+1. Navegue até **[!UICONTROL Store setup]** > **[!UICONTROL Catalog views]**.
 
 1. Selecione a exibição de catálogo que contém a camada.
 
@@ -210,7 +210,7 @@ A ordem em que as camadas são aplicadas determina quais valores aparecem na loj
 
 **Para reordenar as prioridades de camada:**
 
-1. Navegue até **Configuração da loja** > **Exibições de catálogo**.
+1. Navegue até **[!UICONTROL Store setup]** > **[!UICONTROL Catalog views]**.
 
 1. Selecione a exibição do catálogo que contém as camadas que você deseja reordenar.
 
@@ -220,30 +220,30 @@ A ordem em que as camadas são aplicadas determina quais valores aparecem na loj
 
 1. O sistema atualiza automaticamente os números dos pedidos com base na nova sequência.
 
-1. Clique em **Salvar** para aplicar a nova ordem de prioridade.
+1. Clique em **[!UICONTROL Save]** para aplicar a nova ordem de prioridade.
 
 >[!IMPORTANT]
 >
->As alterações na prioridade da camada têm efeito imediatamente e podem afetar o que os clientes veem em sua loja. Revise a visualização antes de salvar para garantir que os valores corretos sejam aplicados (**a visualização ainda não está disponível**).
+>As alterações na prioridade da camada têm efeito imediatamente e afetam o que os clientes veem em sua loja. Revise a visualização antes de salvar para garantir que os valores corretos sejam aplicados (**a visualização ainda não está disponível**).
 
 ## Práticas recomendadas
 
 Siga estas recomendações ao trabalhar com camadas de catálogo:
 
-* **Use nomes descritivos** — Nomeie camadas claramente para indicar sua finalidade (por exemplo, &quot;Campanha de Natal 2025&quot; ou &quot;Otimização de SEO - Páginas de Produto&quot;).
+* **Use nomes descritivos** — Nomeie camadas claramente para indicar sua finalidade (por exemplo, &quot;Campanha Natal 2025&quot; ou &quot;Otimização de SEO — Páginas de Produto&quot;).
 
 * **Limitar camadas**—Embora o sistema suporte várias camadas, o uso de muitas pode afetar o desempenho. Consolidar camadas quando possível.
 
-<!--- **Test before activating**—Always preview layer effects before activating them on your live storefront. !!!REMOVE IF PREVIEW NOT AVAILABLE FOR GA!!!-->
 
-* **Lógica de prioridade do documento**—Acompanhe quais camadas devem ter precedência para evitar substituições não intencionais.
+* **Lógica de prioridade do documento**—Acompanhe quais camadas têm precedência para evitar substituições não intencionais.
 
-* **Revisar camadas do Sites Optimizer**—Ao usar a correção automática do Sites Optimizer, o sistema cria camadas com a prioridade mais alta. Lembre-se de adicionar camadas manuais que podem substituir as recomendações de IA. Saiba mais sobre como usar o [Sites Optimizer](../manage-results/opportunities.md).
+* **Revisar camadas do Sites Optimizer**—Ao usar a correção automática do Sites Optimizer, o sistema cria camadas com a prioridade mais alta. Lembre-se de adicionar camadas manuais que substituem as recomendações de IA. Saiba mais sobre como usar o [Sites Optimizer](../manage-results/opportunities.md).
 
 * **Monitorar desempenho** — Se você observar carregamentos lentos de páginas de produtos, revise sua configuração de camada e considere a consolidação de camadas.
 
 ## Veja mais aqui
 
-* [Exibições de catálogo](catalog-view.md) - Configure exibições de catálogo para diferentes vitrines
-* [Visuais de Produtos](product-visuals.md) - Use o AEM Assets para imagens de produtos
-* [Oportunidades](../manage-results/opportunities.md) - Saiba mais sobre a otimização baseada em IA usando camadas de catálogo
+* [Exibições de catálogo](catalog-view.md) — Configure exibições de catálogo para diferentes vitrines
+* [Visuais de Produtos](product-visuals.md)—Use o AEM Assets para imagens de produtos
+* [Oportunidades](../manage-results/opportunities.md)—Saiba mais sobre a otimização baseada em IA usando camadas de catálogo
+* [Chaves de acesso restrito](restricted-access-keys.md)—Proteja uma exibição de catálogo com autenticação de token assinado

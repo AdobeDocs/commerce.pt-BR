@@ -1,5 +1,5 @@
 ---
-title: Exibição de catálogo
+title: Exibições do catálogo
 description: Saiba o que são exibições de catálogo e como criá-las para organizar o catálogo de produtos por estrutura de negócios, políticas e preços.
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
@@ -20,18 +20,19 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+nudge: true
+source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
 workflow-type: tm+mt
-source-wordcount: 1210
+source-wordcount: 1276
 ht-degree: 0%
 
 ---
 
-# Exibições de catálogo para serviços de merchandising
+# Exibições de catálogo para Serviços de merchandising
 
-As exibições de catálogo são a base dos Serviços de Merchandising do [!DNL Adobe Commerce Optimizer], permitindo que você organize o catálogo de produtos por estrutura de negócios, políticas e preços. Esse modelo de dados flexível oferece suporte a várias marcas, unidades de negócios e cenários em vários idiomas, mantendo a eficiência operacional.
+Uma exibição de catálogo define os produtos e os preços que um cliente pode recuperar. Ele combina fontes de catálogo, camadas de catálogo, políticas e catálogos de preços para oferecer suporte a diferentes marcas, regiões, unidades de negócios ou canais.
 
-## O que são Exibições de catálogo?
+## O que são visualizações de catálogo?
 
 As exibições de catálogo definem como o catálogo de produtos é organizado e exibido. Eles atuam como filtros que determinam:
 
@@ -39,26 +40,30 @@ As exibições de catálogo definem como o catálogo de produtos é organizado e
 - **Que preços são mostrados** por meio de catálogos de preços vinculados
 - **Como os produtos são filtrados** usando políticas (atributos como marca, modelo, categoria)
 - **Que [origem do catálogo](catalog-sources.md) é usada** com base em atributos como localidade
+- **Quem pode acessar os dados da exibição** por meio da [Proteção de Catálogo](private-catalog-view.md) e das [chaves de acesso restrito](restricted-access-keys.md)
 
-Considere as exibições de catálogo como diferentes &quot;lentes&quot; pelas quais os clientes veem seu catálogo. Por exemplo:
+Por exemplo, é possível criar exibições de catálogo separadas para:
 
-- A exibição do catálogo do revendedor pode mostrar somente os produtos disponíveis para esse revendedor específico
-- Uma exibição de catálogo regional pode mostrar produtos e preços específicos de uma área geográfica
-- A exibição do catálogo de marcas pode mostrar apenas produtos de uma marca específica
+- Uma marca ou unidade de negócios
+- Uma região geográfica
+- Um canal de revendedor ou parceiro
+- Um segmento de cliente com preços específicos
 
 ## Criar uma exibição de catálogo
 
+Antes de criar uma visualização de catálogo, prepare os seguintes itens conforme necessário:
+
+- Uma [origem do catálogo](catalog-sources.md)
+- [Políticas](policies.md) que definem filtros de produto
+- [Camadas do catálogo](catalog-layer.md) se precisar substituir atributos do produto
+- [Catálogos de preços](pricebooks.md) para os preços exibidos na exibição
+- [Chaves de acesso restrito](restricted-access-keys.md) se você deseja criar uma exibição de catálogo privado
+
+### Configuração
+
 Nesta seção, você cria uma exibição de catálogo, selecione uma [política](policies.md) e um [catálogo de preços](pricebooks.md).
 
-Antes de criar uma visualização de catálogo, verifique se você tem:
-
-- [Políticas criadas](policies.md) para definir filtros de produto.
-
-- [Definiu camadas de catálogo](catalog-layer.md) para definir variantes de seus produtos.
-
-- [Catálogos de preços assimilados](pricebooks.md) para preços.
-
-1. No menu esquerdo, vá para _Configuração da loja_ e clique em **[!UICONTROL Catalog views]**.
+1. No menu esquerdo, vá para **[!UICONTROL Store setup]** e clique em **[!UICONTROL Catalog views]**.
 
 1. Clique em **[!UICONTROL Create catalog view]**. &#x200B;
 
@@ -66,14 +71,20 @@ Antes de criar uma visualização de catálogo, verifique se você tem:
 
    - **Nome** — Digite o nome da exibição do catálogo, por exemplo `Celport`. &#x200B;
    - **Origens do catálogo** — Selecione a [origem do catálogo](catalog-sources.md), por exemplo `en-US`.
-   - **Camadas do catálogo**-Revise as camadas e a prioridade assimiladas.
+   - **Camadas do catálogo** — Revise as camadas e a prioridade assimiladas.
    - **Políticas** — use o menu suspenso para selecionar as políticas relevantes. Por exemplo, &quot;Marca&quot;, &quot;Modelo&quot;. &#x200B;Verifique se você já [criou uma política](policies.md).
 
 1. Selecione o catálogo de preços a ser vinculado à exibição do catálogo.
 
-   - **Usar todos os catálogos de preços disponíveis**-Essa opção extrai dados de preços de todos os catálogos de preços disponíveis.
-   - **Permitir somente catálogos de preços selecionados**-Essa opção exibe a caixa de diálogo **Adicionar catálogos de preços permitidos**, onde é possível selecionar qual catálogo de preços específico usar para a exibição do catálogo.
-   - **Desabilitar preço**-Esta opção não está disponível no momento.
+   - **Usar todos os catálogos de preços disponíveis**—Esta opção extrai dados de preços de todos os catálogos de preços disponíveis.
+   - **Permitir somente catálogos de preços selecionados**—Esta opção exibe a caixa de diálogo **Adicionar catálogos de preços permitidos**. Use esta caixa de diálogo para selecionar qual catálogo de preços específico usar para a exibição do catálogo.
+   - **Desabilitar preço**—Esta opção não está disponível no momento.
+
+   >[!NOTE]
+   >
+   >Uma ID de catálogo de preços controla quais preços são solicitados. Ele não restringe o acesso à exibição do catálogo. Para restringir o acesso, habilite a Proteção de Catálogo para criar uma [exibição de catálogo privado](private-catalog-view.md).
+
+1. (Opcional) Alterne **[!UICONTROL Catalog Protection]** para **[!UICONTROL Enabled]** para restringir os dados desta exibição de catálogo aos clientes com um token assinado válido. Consulte [Proteger uma exibição de catálogo](private-catalog-view.md#protect-a-catalog-view) para obter etapas de configuração.
 
 1. Clique em **[!UICONTROL Add]** para criar a exibição de catálogo com as políticas e os catálogos de preços vinculados.
 
@@ -87,41 +98,42 @@ Você pode especificar uma exibição de catálogo ao [criar unidades de recomen
 
 ## Camadas do catálogo
 
-As camadas de catálogo permitem modificar os dados do produto em uma exibição de catálogo sem alterar os dados de origem originais. As camadas aplicam alterações a atributos específicos do produto, como nome, descrição, imagens, links e metadados, criando uma camada na parte superior do catálogo base. Os dados originais do produto permanecem intactos, permitindo personalizar produtos com segurança e reverter alterações a qualquer momento.
+As camadas de catálogo permitem substituir atributos de produto selecionados sem alterar os dados do catálogo de origem. Use camadas para personalizar nomes, descrições, imagens, links ou metadados para uma exibição de catálogo.
 
-Casos de uso comuns para camadas de catálogo incluem:
+Consulte [Camadas do catálogo](catalog-layer.md).
 
-- **Otimização de SEO**—Substitua metatítulos e descrições do produto com base nas recomendações de IA do [Sites Optimizer](../manage-results/opportunities.md)
-- **Campanhas sazonais** — Atualize temporariamente nomes de produtos, descrições ou imagens para promoções
-- **Personalização regional**—Exibir informações de produto diferentes com base na localização geográfica ou no idioma
-- **Teste A/B**—Teste diferentes apresentações de produtos para otimizar as taxas de conversão
-- **Gerenciamento de várias marcas**—Personalize atributos de produto para diferentes exibições de catálogos de marcas
+## Tornar uma exibição de catálogo privada
 
-Para saber mais sobre como criar, gerenciar e priorizar camadas de catálogo, consulte [Camadas de catálogo](catalog-layer.md).
+Por padrão, uma visualização de catálogo é pública para aplicativos clientes que podem acessar a API de merchandising do GraphQL. Para restringir o acesso, configure uma exibição de catálogo privado habilitando **[!UICONTROL Catalog Protection]**.
 
-## Gerenciar exibição de catálogo
+Para saber como proteger uma exibição de catálogo e verificar se o acesso é imposto, consulte [Exibições de catálogo privado](private-catalog-view.md).
 
-Siga estas instruções para atualizar ou exibir as propriedades de exibições de catálogo existentes.
+## Gerenciar exibições do catálogo
 
-### Editar exibição de catálogo
+Para atualizar ou exibir as propriedades de exibições de catálogo existentes, siga estas instruções.
 
-1. No espaço de trabalho *Exibições de catálogo*, localize a exibição de catálogo na grade que você deseja editar e clique em **...** para abrir o menu de ações.
-1. Clique em **Editar** para acessar o editor de exibição de catálogo.
-1. Atualize o nome, as origens do catálogo, as políticas e as informações do catálogo de preços conforme necessário.
-1. Salve as alterações.
+### Editar uma exibição de catálogo
 
-### Excluir exibição de catálogo
+1. No espaço de trabalho **[!UICONTROL Catalog views]**, localize a exibição do catálogo.
+1. Para abrir o menu de ações, selecione (**[!UICONTROL ...]**).
+1. Selecione **[!UICONTROL Edit]** para acessar o editor de exibição de catálogo.
+1. Atualize o nome, as fontes de catálogo, as políticas, as informações do catálogo de preços e as configurações de **[!UICONTROL Catalog Protection]** (incluindo chaves de acesso restrito atribuídas), conforme necessário.
+1. Clique em **[!UICONTROL Save]**.
 
-1. No espaço de trabalho *Exibições de catálogo*, localize a exibição de catálogo na grade que você deseja editar e clique em **...** para abrir o menu de ações.
-1. Clique em **Excluir**.
+### Excluir uma exibição de catálogo
+
+1. No espaço de trabalho **[!UICONTROL Catalog views]**, localize a exibição do catálogo.
+1. Para abrir o menu de ações, selecione (**[!UICONTROL ...]**).
+1. Selecione **[!UICONTROL Delete]**.
+1. Confirme a exclusão.
 
    Quando a caixa de diálogo de confirmação for exibida, clique em **[!UICONTROL Delete]**.
 
-### Exibir detalhes
+### Exibir detalhes de exibição do catálogo
 
-Esta opção fornece uma maneira rápida de ver todos os parâmetros de exibição de catálogo, permanecendo na tabela *Exibições de catálogo*.
+Esta opção fornece uma maneira rápida de ver todos os parâmetros de exibição do catálogo, permanecendo na tabela **[!UICONTROL Catalog views]**.
 
-No espaço de trabalho *Exibições de catálogo*, localize a exibição de catálogo na grade que você deseja editar e clique no ![ícone de informações](../assets/info-icon.png).
+No espaço de trabalho **[!UICONTROL Catalog views]**, selecione o ![ícone de informações](../assets/info-icon.png) para uma exibição de catálogo para exibir seus detalhes de configuração.
 
 ![Detalhes de exibição do catálogo](../assets/catalog-view-details.png)
 
@@ -154,7 +166,9 @@ Os dados assimilados criam um catálogo base unificado no pipeline de dados do S
 Várias exibições de catálogo representam unidades de negócios diferentes (por exemplo, &quot;Texas Retail&quot;, &quot;Texas Retail Seasonal&quot;). Locais, políticas e catálogos de preços podem ser compartilhados entre exibições de catálogo para maior flexibilidade.
 
 **4. Entrega multicanal**
-Os dados de catálogo filtrados são entregues para vários destinos, incluindo lojas Edge Delivery Services, marketplaces, plataformas de publicidade e microlojas personalizadas. Para obter mais informações sobre a entrega de dados do catálogo, consulte a [documentação do desenvolvedor](https://developer.adobe.com/commerce/services/optimizer/).
+Os dados de catálogo filtrados são entregues a destinos como Edge Delivery Services, marketplaces, plataformas de publicidade e microlojas personalizadas. Para obter mais informações sobre a entrega de dados do catálogo, consulte a [documentação do desenvolvedor](https://developer.adobe.com/commerce/services/optimizer/).
+
+Quando uma exibição de catálogo tem **[!UICONTROL Catalog Protection]** habilitada, a entrega para esse destino requer um token assinado válido de uma [chave de acesso restrito](restricted-access-keys.md) atribuída; solicitações não autorizadas são negadas em vez de receber dados de catálogo.
 
 ### Componentes principais
 
@@ -164,6 +178,7 @@ Os dados de catálogo filtrados são entregues para vários destinos, incluindo 
 | **Política** | Filtro de produto com base em atributos | Marca, modelo, categoria |
 | **Localidade** | Configuração de idioma/região | en-US, fr-CA, es-MX |
 | **Catálogo de Preços** | Estrutura de preços | Varejo, Atacado, Funcionário |
+| **Chave de acesso restrito** | Credencial de token assinado que dá acesso a uma exibição de catálogo protegida | Chave do portal do parceiro, chave de preços B2B |
 
 ### Fluxo de dados
 
@@ -180,6 +195,7 @@ Os dados de catálogo filtrados são entregues para vários destinos, incluindo 
 | **Escalável** | Gerencie mais de 200 milhões de SKUs com eficiência |
 | **Multicanal** | Oferece catálogos para vitrines, mercados e plataformas de publicidade |
 | **Atualizações em tempo real** | Atualize rapidamente os dados do catálogo para promoções e campanhas |
+| **Exibições de catálogo privado** | Restringir uma exibição de catálogo aos clientes autorizados usando a validação de token assinado |
 
 ## Casos de uso
 
@@ -198,13 +214,15 @@ Os dados de catálogo filtrados são entregues para vários destinos, incluindo 
 **Desafio**: preços e inventário diferentes por localização<br>
 **Solução**: exibições de catálogo baseadas em localização com políticas específicas de região
 
->[!INFO]
+>[!NOTE]
 >
 >Para obter informações detalhadas sobre a assimilação e a entrega de dados do catálogo, consulte a [documentação do desenvolvedor](https://developer.adobe.com/commerce/services/optimizer/).
 
 ## Veja mais aqui
 
-- [Fontes do catálogo](catalog-sources.md) - Defina o escopo autoritativo de produtos, atributos e categorias para comportamento de pesquisa, filtro e classificação
-- [Camadas do catálogo](catalog-layer.md) - Saiba como modificar dados do produto sem alterar a origem original
-- [Políticas](policies.md) - Criar políticas para filtrar produtos nas exibições de catálogo
-- [Catálogos de preços](pricebooks.md) - Gerenciar estruturas de preços para diferentes segmentos de clientes
+- [Fontes do catálogo](catalog-sources.md) — Defina o escopo autoritativo de produtos, atributos e categorias para comportamento de pesquisa, filtro e classificação
+- [Camadas do catálogo](catalog-layer.md)—Saiba como modificar dados do produto sem alterar a origem original
+- [Exibições de catálogo privado](private-catalog-view.md) — Crie uma exibição de catálogo privado para restringir o acesso a clientes autorizados
+- [Chaves de acesso restrito](restricted-access-keys.md)—Crie, atribua e gire as chaves usadas para assinar tokens para Proteção de Catálogo
+- [Políticas](policies.md) — Crie políticas para filtrar produtos nas exibições de catálogo
+- [Catálogos de preços](pricebooks.md) — Gerencie estruturas de preços para diferentes segmentos de clientes
