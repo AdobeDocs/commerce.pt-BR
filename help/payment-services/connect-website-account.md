@@ -30,7 +30,7 @@ Para instâncias do Commerce com **vários sites**, talvez você precise de **co
 
 A integração no nível do site só estará disponível depois que a loja atender aos seguintes requisitos:
 
-- A instalação do [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce/user-guides/integration-services/saas) foi concluída.
+- A instalação do [Commerce Services Connector](https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/integration-services/saas) foi concluída.
 - Uma conta do PayPal é conectada ao escopo global (Configuração padrão).
 
 Você pode confirmar isso verificando se os seguintes campos estão preenchidos no escopo padrão:
