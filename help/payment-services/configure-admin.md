@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration, Paas, Saas
-source-git-commit: 379345261bebe5bee9cdbcb6fd3b0ce6275df6ea
+source-git-commit: 882a39a5b0eeb616c7ca1d9e64c3fae76760afad
 workflow-type: tm+mt
-source-wordcount: '3710'
+source-wordcount: '3778'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 Você pode personalizar o [!DNL Payment Services] de acordo com suas necessidades com opções de configuração úteis no Administrador.
 
 Ao configurar [!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magento Open Source] no Administrador, essas configurações se aplicam apenas ao ambiente definido no campo _[!UICONTROL Method]_&#x200B;de&#x200B;_[!UICONTROL General Configuration]_. Quaisquer alterações feitas nos campos de configuração são independentes da alternância da seleção _[!UICONTROL Method]_. Se você alternar o método, suas seleções não serão redefinidas.
+
+Se você executar uma única instância do Commerce com **vários sites** (e exibições de loja), talvez precise de uma **conta de comerciante do PayPal** diferente para alguns sites. [!DNL Payment Services] permite concluir a integração com **escopo de site** do PayPal no Administrador depois que a instância é configurada e integrada no escopo **global** (padrão). Consulte [Conectar uma conta do PayPal diferente para um site](connect-website-account.md) para obter os pré-requisitos e as etapas de conclusão para integrar uma conta do PayPal com escopo de site.
 
 ## Configuração geral
 
@@ -56,11 +58,11 @@ Você pode habilitar [!DNL Payment Services] para sua loja e _[!UICONTROL Mercha
 
 Se você executar uma única instância do Commerce com **vários sites** (e exibições de loja), talvez precise de uma **conta de comerciante do PayPal** diferente para alguns sites. [!DNL Payment Services] permite concluir a integração com **escopo de site** do PayPal no Administrador depois que a instância é configurada e integrada no escopo **global** (padrão).
 
-Em versões anteriores, o mapeamento de conta do PayPal no nível do site normalmente exigia que você [contatasse o Suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#Solution) ou o representante da Adobe. Use a ação **[!UICONTROL Connect different account for website]** quando atender aos pré-requisitos abaixo.
+Em versões anteriores, o mapeamento de conta do PayPal no nível do site normalmente exigia que você [contatasse o Suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#Solution) ou o representante da Adobe. Use a ação **[!UICONTROL Connect different account]** quando atender aos pré-requisitos abaixo.
 
 ### Pré-requisitos (escopo global)
 
-O controle **[!UICONTROL Connect different account for website]** só está disponível e habilitado no escopo de **site** quando **todos** dos itens a seguir já são verdadeiros para a instância na configuração **padrão/global**:
+O controle **[!UICONTROL Connect different account]** só está disponível e habilitado no escopo de **site** quando **todos** dos itens a seguir já são verdadeiros para a instância na configuração **padrão/global**:
 
 1. A instalação do [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas) foi concluída.
 
@@ -70,7 +72,7 @@ O controle **[!UICONTROL Connect different account for website]** só está disp
 
 1. Uma conta de comerciante do PayPal **global** está **conectada** e você **concluiu a integração do PayPal** para esse escopo padrão (os campos **[!UICONTROL PayPal Merchant ID]** e relacionados são preenchidos para o escopo global conforme descrito em [Configuração geral](#general-configuration)).
 
-   Se a integração global não for concluída, alterne o escopo de configuração para **[!UICONTROL Website]**, abra **[!UICONTROL Payment Services]** em **[!UICONTROL Payment Methods]** e o botão **[!UICONTROL Connect different account for website]** será **desabilitado**; conclua primeiro a configuração do conector e a integração do PayPal **global**.
+   Se a integração global não for concluída, alterne o escopo de configuração para **[!UICONTROL Website]**, abra **[!UICONTROL Payment Services]** em **[!UICONTROL Payment Methods]** e o botão **[!UICONTROL Connect different account]** será **desabilitado**; conclua primeiro a configuração do conector e a integração do PayPal **global**.
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -353,7 +355,7 @@ Os métodos de pagamento locais (LPMs) oferecem suporte a métodos de pagamento 
 
 >[!NOTE]
 >
->Cada método de pagamento local (LPM) tem requisitos específicos de país e moeda. Um método de pagamento é exibido somente quando o país do endereço de faturamento do cliente e a moeda base do site correspondem a esses requisitos. Por exemplo, Bancontact aparece somente para clientes com um endereço de cobrança belga quando a moeda base é EUR.
+>Cada método de pagamento local (LPM) tem requisitos específicos de país e moeda. Um método de pagamento é exibido somente quando o país do endereço de cobrança do cliente e a moeda base do site correspondem a esses requisitos. Por exemplo, Bancontact aparece somente para clientes com um endereço de cobrança belga quando a moeda base é EUR.
 
 ## Itens de linha
 
@@ -444,6 +446,6 @@ No [!UICONTROL Payment Services], você pode usar várias contas do PayPal em **
 
 Consulte [Escopo de Site, Armazenamento e Exibição](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=pt-BR) para obter mais informações sobre a hierarquia de sites, lojas e exibições de loja.
 
-Para conectar uma **conta diferente do PayPal a um site individual** do Administrador após a conclusão da integração do **global** com o Commerce Services e o PayPal, use o **[!UICONTROL Connect different account for website]** no escopo **[!UICONTROL Website]**. Consulte [Conectar uma conta diferente do PayPal para um site](#connect-a-different-paypal-account-for-a-website).
+Para conectar uma **conta diferente do PayPal a um site individual** do Administrador após a conclusão da integração do **global** com o Commerce Services e o PayPal, use o **[!UICONTROL Connect different account]** no escopo **[!UICONTROL Website]**. Consulte [Conectar uma conta diferente do PayPal para um site](#connect-a-different-paypal-account-for-a-website).
 
 Consulte [Configuração de linha de comando](configure-cli.md#configure-scope-via-cli) para obter mais informações sobre a configuração de escopos para várias contas do PayPal via CLI.
