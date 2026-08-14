@@ -3,9 +3,9 @@ title: Notas de versão da Integração do AEM Assets
 description: Revise as notas de versão para obter informações sobre todas as versões da Integração do AEM Assets.
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: e269b5a3bbd246530ba77d8c50467e2b0f4e2f7e
+source-git-commit: afef108e512c69047a0420566a498dab164c207e
 workflow-type: tm+mt
-source-wordcount: '1352'
+source-wordcount: '1491'
 ht-degree: 0%
 
 ---
@@ -38,13 +38,29 @@ _11 de fevereiro de 2025_
 
 +++
 
+## v1.4.4
+
+_30 de julho de 2026_
+
+[!BADGE Com Suporte]{type=Informative tooltip="Compatível"} no Adobe Commerce versão 2.4.5 e posteriores.
+
+![Novo problema](../assets/new.svg) Agora, os comerciantes podem ocultar exibições de loja específicas para um ativo do AEM. Quando o AEM Assets marca uma imagem como oculta para uma ou mais visualizações da loja, o Commerce exclui essa imagem da loja nessas visualizações da loja. A galeria de mídia do produto Admin agora inclui um campo **[!UICONTROL Store View Visibility]** que mostra quais exibições de loja ocultam a imagem. <!-- Issue ACAP-1308 -->
+
+## v1.4.2
+
+_10 de julho de 2026_
+
+[!BADGE Com Suporte]{type=Informative tooltip="Compatível"} no Adobe Commerce versão 2.4.5 e posteriores.
+
+![Correção de um problema](../assets/fix.svg) em que os atributos da função de ativo (imagem, imagem pequena, miniatura e imagem de amostra) podiam acumular valores vazios no nível do modo de exibição de repositório, fazendo com que as imagens parecessem ausentes nos modos de exibição de repositório não padrão. Agora, esses atributos são globais no escopo e as linhas vazias existentes na exibição de armazenamento são removidas para que as imagens herdem corretamente da exibição de armazenamento padrão. <!-- Issue ACCS-1401 -->
+
 ## v1.4.1
 
 _15 de junho de 2026_
 
 [!BADGE Com Suporte]{type=Informative tooltip="Compatível"} no Adobe Commerce versão 2.4.5 e posteriores.
 
-![Correção de um problema](../assets/fix.svg) em que o cabeçalho da seção **[!UICONTROL OBSERVABILITY]** não estava presente no menu Admin **[!UICONTROL System]** quando a integração com o AEM Assets estava habilitada, deixando o link **[!UICONTROL Subscription List]** exibido sem seu cabeçalho. <!--ACAP-1302 -->
+![Correção de um problema](../assets/fix.svg) em que o cabeçalho da seção **[!UICONTROL OBSERVABILITY]** não estava presente no menu Admin **[!UICONTROL System]** quando a integração com o AEM Assets estava habilitada, deixando o link **[!UICONTROL Subscription List]** exibido sem seu cabeçalho. <!-- Issue ACAP-1302 -->
 
 ![Correção de um problema](../assets/fix.svg): correção de um problema em que salvar a configuração de integração do AEM Assets exibia um aviso de PHP bruto em vez de uma mensagem clara em instâncias nas quais a API de abertura do Dynamic Media não está habilitada. Uma mensagem de erro clara e genérica é exibida. <!-- ACAP-1298 -->
 
