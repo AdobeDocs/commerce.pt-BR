@@ -1,7 +1,7 @@
 ---
-source-git-commit: 06d8280f848fa6fc390194ebdd05a5dba1bfac94
+source-git-commit: 4ecab54255029c3e9e84ba9f6de96888157d8fea
 workflow-type: tm+mt
-source-wordcount: '1539'
+source-wordcount: '1355'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,58 @@ ht-degree: 1%
 ## Novidades
 
 Esta página contém as alterações feitas nos últimos 60 dias. Excluímos todas as atualizações secundárias, como a edição de cópia, desta lista.
+
+### 12 de agosto de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adicionadas as <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/release-notes">notas de versão</a> de produção para o Adobe Commerce as a Cloud Service.</p>
+</td>
+      <td>
+        Atualização importante
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ed13ed011180fbb9d535f5a228a5f932ebf00689">confirmar</a></td>
+    </tr>
+    <tr>
+      <td><p>Os comerciantes agora podem realizar o autoatendimento da integração de uma conta do PayPal diferente no escopo do site diretamente do administrador do Commerce. Consulte <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/payment-services/configure/connect-website-account">Conectar uma conta diferente do PayPal para um site</a> para obter mais informações.</p>
+</td>
+      <td>
+        Novo tópico
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e18c82a81c49de8175a8a8d77e9a191fe2af4b46">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 10 de agosto de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Atualização do Guia de Instalação do Adobe Commerce Optimizer com instruções para habilitar e configurar exibições de catálogos privados para restringir o acesso aos dados de catálogo com tokens assinados, e atualização de tópicos relacionados para fazer referência ao novo recurso:<br />- Adição de <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/setup/private-catalog-view">Exibições de catálogo privado</a>, que explica como habilitar a Proteção de Catálogo para que somente solicitações com um token assinado válido possam recuperar os dados de uma exibição de catálogo.<br />- Adição de <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/setup/restricted-access-keys">Chaves de acesso restrito</a>, que explica como criar, atribuir e girar as chaves usadas para assinar tokens para a Proteção de Catálogo.<br />- Atualização de <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/setup/catalog-view">Exibições de catálogo</a>, <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/overview">O que é Adobe Commerce Optimizer?</a>, <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/get-started">Introdução</a>, <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/boundaries-limits">Limites e limites</a>, <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/launch/launch-checklist">Lista de verificação do Launch</a> e o <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aco-optimizer-connector/overview">Guia do Conector Adobe Commerce Optimizer</a> para fazer referência aos novos tópicos Exibições de catálogo privado e Chaves de acesso restritas.</p>
+</td>
+      <td>
+        Atualização importante, novo tópico
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/de0de805f8ecd4f329ce3afc90e28197186856c2">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 7 de agosto de 2026
 
@@ -309,120 +361,6 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
         Atualização importante
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/7be26764bc3f3878c3c78a881ad8912038c7f07f">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 15 de junho de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Atualização das <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/payment-services/release-notes">notas de versão dos Serviços de Pagamento</a> para a v2.15.0 (atualizações do Google Pay e do Apple Pay Express, Ignorar Revisão); alinhou as <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/payment-services/payments-checkout/payments-options">Opções de pagamento</a> e a <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/payment-services/configure/configure-admin">Configuração dos Serviços de Pagamento</a> com os novos comportamentos.</p>
-</td>
-      <td>
-        Atualização importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/b0eb472bfcb3fb568d4e8a70e63356d60873b641">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 12 de junho de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>A priorização de correspondência de pesquisa documentada (frase exata/próxima, mesmo campo, entre campos) e as compensações de classificação em <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/search-relevance-matching">Correspondência e classificação de pesquisa (Live Search)</a> e <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/manage-results/search-relevance-matching">Correspondência e classificação de pesquisa (Adobe Commerce Optimizer)</a>, com links de visão geral, indexação, práticas recomendadas e tópicos de desempenho de pesquisa.</p>
-</td>
-      <td>
-        Atualização importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/6f9744e6a0b3390b9e29a1d973fa44456db1612c">confirmar</a></td>
-    </tr>
-    <tr>
-      <td><p>Atualização das <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aem-assets-integration/release-notes">notas de versão da Integração do AEM Assets</a> com a v1.3.8.</p>
-</td>
-      <td>
-        Atualização importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8937c04dcb4da5f19bce017ef0da8a48bd61c3a6">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 10 de junho de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>O guia de integração do Conector do Adobe Commerce Optimizer foi expandido com novos tópicos técnicos e operacionais:<br />- <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aco-optimizer-connector/connector-sync-pipeline">Pipeline de sincronização do conector</a> — trabalhos do cron, inicialização, envio do feed e tratamento de erros<br />- <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aco-optimizer-connector/headless-storefront">Integração com a loja headless</a> — codificação de consulta e pacote do GraphQL <code>commerceOptimizer</code><br />- <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aco-optimizer-connector/troubleshooting/troubleshooting">Solução de problemas</a> — problemas de configuração de credencial, sincronização e escopo<br />- <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aco-optimizer-connector/reference/connector-reference">Referência do conector</a> — módulos, pontos de extremidade de feed, limites de lote e caminhos de configuração<br />- <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aco-optimizer-connector/reference/field-mapping">Campo mapeamentos</a> — mapeamento de campos do Commerce para o Otimizer para todos os feeds</p>
-</td>
-      <td>
-        Atualização importante, novo tópico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/2973937a78f4ea425da7876ac006eb2023a35bb3">confirmar</a></td>
-    </tr>
-    <tr>
-      <td><p>Adição de uma página sobre <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/overview">avaliações de migração</a> para usuários migrando para o [!DNL Adobe Commerce as a Cloud Service].</p>
-</td>
-      <td>
-        Atualização importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/8f260d114983890872281115f74b1f98b32e524d">confirmar</a></td>
-    </tr>
-    <tr>
-      <td><ul>
-  <li>Adição de uma atualização de serviço hospedado de 8 de junho de 2026 para pesquisa semântica nas <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/live-search/release-notes#hosted-service-updates">notas de versão do Live Search</a>, incluindo o comportamento padrão para Adobe Commerce as a Cloud Service, a habilitação manual para PaaS e o suporte ao catálogo em inglês.<br />- Adição de uma seção de junho de 2026 às <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/release-notes#june-2026">notas de versão do Adobe Commerce Optimizer</a> para pesquisa semântica e filtros de preço de recomendação (beta).</li>
-</ul>
-</td>
-      <td>
-        Atualização importante, novo tópico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/4c5b282a83b75c07d82dc34b5500916f22e08a44">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 9 de junho de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p><a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/recommendations/filters#price">filtros de preço</a> dinâmicos e estáticos documentados para [!DNL Adobe Commerce Optimizer] recomendações, incluindo operadores relativos a PDP, semântica de deslocamento e orientação de configuração para tipos de recomendações relacionadas a SKU.</p>
-</td>
-      <td>
-        Feedback, atualização importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/bccb739bbbfcc7e3bfa645c2a0245933014b934f">confirmar</a></td>
     </tr>
   </tbody>
 </table>
