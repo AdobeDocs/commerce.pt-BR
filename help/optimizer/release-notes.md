@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 27cbf66e4851f0d21ecc039fd53aa838b4c211ba
+source-git-commit: 413d0932d402615c9e155e1650a7c8aba2c082a1
 workflow-type: tm+mt
-source-wordcount: 1365
+source-wordcount: 1522
 ht-degree: 0%
 
 ---
@@ -31,6 +31,22 @@ As notas de versão a seguir contêm atualizações para [!DNL Adobe Commerce Op
 * Atualizações da [API REST de assimilação de dados](https://developer.adobe.com/commerce/services/reference/rest/) e da [API GraphQL para recuperação de dados de catálogo da loja](https://developer.adobe.com/commerce/services/reference/graphql/).
 
   {{aco-api-updates-and-dropins}}
+
+## Agosto de 2026
+
+>[!BEGINSHADEBOX]
+
+_7 de agosto de 2026_
+
+![Novo](../assets/new.svg) **Novo campo `externalIds`**—Adicionado `externalIds` ao GraphQL do Serviço de Catálogo, expondo a fonte de dados externa associada a um produto para que os consumidores de vitrine e integração possam identificar a fonte de dados de origem. Consulte [Retornar externalIds para um produto](https://developer.adobe.com/commerce/services/optimizer/merchandising-services/use-cases#return-external-ids-for-a-product){target="_blank"}
+<!--DATA-7307-->
+
+![Correção](../assets/fix.svg) **Correção da resposta `refineProduct` para produtos configuráveis**—Correção de um problema em que a consulta `refineProduct` retornava `priceRange: null` e `roles: ["hidden"]` para produtos configuráveis específicos, garantindo informações precisas de visibilidade e preços para os consumidores de vitrine.
+<!--COMOPT-2367-->
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
 
 ## Julho de 2026
 
@@ -95,7 +111,7 @@ _4 de maio de 2026_
 
 <!--v1.53-->
 
-**Exibição de moeda correta**—Os preços de produtos da vitrine agora exibem o código de moeda correto (por exemplo, USD) para todos os tipos de produtos. Anteriormente, alguns produtos exibiam `NONE` em vez da moeda esperada, resultando em preços ausentes.
+**Exibição de moeda correta**—Os preços de produtos da vitrine agora exibem o código monetário correto (por exemplo, USD) para todos os tipos de produtos. Anteriormente, alguns produtos exibiam `NONE` em vez da moeda esperada, resultando em preços ausentes.
 
 <!--DATA-7115-->
 

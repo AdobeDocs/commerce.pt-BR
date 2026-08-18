@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 616ad9e9b45a66f127a55ef87dd6c6b9c0b470c8
+source-git-commit: 1375139292fb11df9406948010916dbd2507ef4e
 workflow-type: tm+mt
-source-wordcount: 3024
+source-wordcount: 3063
 ht-degree: 0%
 
 ---
@@ -53,7 +53,13 @@ O suporte é fornecido para a versão mais recente. As notas de versão para ver
 
 ## Serviço de Catálogo da Loja
 
-## Junho de 2026
+### Agosto de 2026
+
+**Data de lançamento**: 7 de agosto de 2026
+
+![Correção](../assets/fix.svg) Corrigido um problema com a consulta do GraphQL `products`, na qual o campo `title` para opções personalizáveis (`inputOptions` e `options`) retornava incorretamente `null` em vez do próprio título da opção, quando o campo `sku` da opção estava vazio ou não indexado. <!--DATA-7304-->
+
+### Julho de 2026
 
 **Data de lançamento**: 1º de julho de 2026
 
