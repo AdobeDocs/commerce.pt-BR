@@ -17,9 +17,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+source-git-commit: 16e3405e1500dfd39603b1e300f4625e5a57cf02
 workflow-type: tm+mt
-source-wordcount: 467
+source-wordcount: 642
 ht-degree: 0%
 
 ---
@@ -28,15 +28,30 @@ ht-degree: 0%
 
 Por padrão, uma [exibição de catálogo](catalog-view.md) é pública. Ative a proteção de catálogo em uma exibição de catálogo para restringir o acesso a solicitações que incluem um token assinado válido.
 
-A proteção de catálogo se aplica somente à exibição de catálogo selecionada. Isso não altera as políticas, camadas ou catálogos de preços da exibição.
+A proteção de catálogo se aplica somente à exibição de catálogo selecionada. Isso não altera as políticas ou camadas da exibição. Ela restringe a exibição a um único catálogo de preços — consulte [Restrição de catálogo de preços em exibições de catálogo privado](#price-book-restriction-on-private-catalog-views).
 
 Consulte os [Casos de uso da chave de acesso restrito](restricted-access-keys.md#restricted-access-key-use-cases) para obter exemplos de quando proteger uma exibição de catálogo.
 
 ## Entender o limite de proteção
 
-A proteção de catálogo se aplica somente à exibição de catálogo em que está habilitada. Ele protege solicitações de catálogo e pesquisa, mas não altera as políticas ou catálogos de preços da exibição, protege outras exibições de catálogo ou protege o carrinho, o checkout ou as operações de pedido.
+A proteção de catálogo se aplica somente à exibição de catálogo em que está habilitada. Ela protege solicitações de catálogo e pesquisa, mas não altera as políticas ou camadas da exibição, protege outras exibições de catálogo ou protege o carrinho, a finalização ou as operações de pedido.
 
 O back-end de comércio conectado deve impor independentemente a qualificação de compra.
+
+## Restrição de catálogo de preços em exibições de catálogo privado
+
+Uma exibição de catálogo privado pode fazer referência a apenas um catálogo de preços. Isso é diferente de uma exibição de catálogo público, que pode usar vários catálogos de preços.
+
+Quando [!UICONTROL Catalog Protection] está habilitado, o seletor de catálogo de preços no formulário de exibição de catálogo alterna de um controle de seleção múltipla para um controle de seleção única (botão de opção).
+
+![Restrição de catálogo de preços de exibição de catálogo privado](../assets/catalog-view-private-pricebook-restrictions.png)
+
+- Se você habilitar [!UICONTROL Catalog Protection] em uma exibição de catálogo com vários catálogos de preços atribuídos, não poderá salvar a exibição até remover todos, exceto um catálogo de preços.
+- Se você tiver salvo anteriormente uma exibição de catálogo privado com várias atribuições de catálogo de preços antes dessa restrição existir, a configuração da exibição de catálogo não será alterada automaticamente. No entanto, na próxima vez que você editar a view, deverá remover todos, exceto um catálogo de preços, antes de salvar as atualizações.
+
+Em cada um desses casos, [!DNL Adobe Commerce Optimizer] exibe a seguinte mensagem de validação: `A protected catalog view can use only one price book. Select 'Single price book only' to continue.`
+
+As exibições de catálogo público não são afetadas por essa restrição e podem continuar fazendo referência a vários catálogos de preços.
 
 ## Proteger uma exibição de catálogo
 

@@ -21,9 +21,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 nudge: true
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+source-git-commit: 42c252f70f6ed1d7a5c1fd2832324308294da264
 workflow-type: tm+mt
-source-wordcount: 1276
+source-wordcount: 1317
 ht-degree: 0%
 
 ---
@@ -78,6 +78,7 @@ Nesta seção, você cria uma exibição de catálogo, selecione uma [política]
 
    - **Usar todos os catálogos de preços disponíveis**—Esta opção extrai dados de preços de todos os catálogos de preços disponíveis.
    - **Permitir somente catálogos de preços selecionados**—Esta opção exibe a caixa de diálogo **Adicionar catálogos de preços permitidos**. Use esta caixa de diálogo para selecionar qual catálogo de preços específico usar para a exibição do catálogo.
+   - **Somente catálogo de preços** — Selecione esta opção se somente um catálogo de preços se aplicar. Essa opção é necessária se você quiser configurar uma exibição de catálogo privado, que pode fazer referência a apenas um catálogo de preços. Consulte [Restrição de catálogo de preços em exibições de catálogo privado](private-catalog-view.md#price-book-restriction-on-private-catalog-views).
    - **Desabilitar preço**—Esta opção não está disponível no momento.
 
    >[!NOTE]
