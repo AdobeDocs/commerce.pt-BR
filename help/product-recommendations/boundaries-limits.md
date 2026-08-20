@@ -2,9 +2,9 @@
 title: Limites e limites
 description: Saiba mais sobre os limites do  [!DNL Product Recommendations]  para garantir que ele atenda às necessidades da sua empresa.
 role: Admin, Developer
-source-git-commit: 66830c9d950a27269aca1bda0dcc7d0d86f05647
+source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,10 @@ Revise os limites e limites a seguir para garantir que o [!DNL Product Recommend
 
 - **Tipos de produtos** - Os tipos de produtos compatíveis incluem _simple_, _configurable_, _virtual_, _downloadable_ e _vale-presente_. Não há suporte para _Pacotes_, _agrupados_ e tipos de produtos personalizados. Se seu catálogo contiver um grande número de tipos de produtos não suportados, você pode esperar uma baixa [pontuação de preparação](create.md#readiness-indicators). Consulte [Filtrar por tipo de produto](filters.md#type).
 - **SKUs com espaços** - SKUs que contêm espaços podem reduzir a relevância da recomendação e devem ser evitadas quando possível.
-- **Página de carrinho** - Recomendações de produto não têm suporte na página de carrinho quando a loja está configurada para [exibir a página do carrinho de compras imediatamente após adicionar um produto ao carrinho](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration). Consulte [Criar recomendações](create.md).
+- **Página de carrinho** - Recomendações de produto não têm suporte na página de carrinho quando a loja está configurada para [exibir a página do carrinho de compras imediatamente após adicionar um produto ao carrinho](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration). Consulte [Criar recomendações](create.md).
 - **Produtos secundários** - Os produtos secundários de um produto configurável (visibilidade _Não visível individualmente_) não são exibidos em uma unidade de recomendação. Somente o produto configurável (principal) pode ser exibido. Consulte [Filtrar produtos](filters.md#product).
 - **Produtos desabilitados ou não visíveis** - Os produtos desabilitados ou não visíveis individualmente nunca podem aparecer nas recomendações e não podem ser selecionados nos filtros de produto.
-- **Preços especiais** - [Preços especiais](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/products/pricing/product-price-special) com datas de início e término não são suportados em unidades de recomendação. Um produto com um preço especial pode aparecer nas recomendações, mas a unidade não exibe o preço especial, a data inicial ou a data final. Os compradores veem o preço normal (ou outros dados de preço fornecidos pelo seu catálogo/feed de preço) até abrirem a página do produto.
+- **Preços especiais** - [Preços especiais](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) com datas de início e término não são suportados em unidades de recomendação. Um produto com um preço especial pode aparecer nas recomendações, mas a unidade não exibe o preço especial, a data inicial ou a data final. Os compradores veem o preço normal (ou outros dados de preço fornecidos pelo seu catálogo/feed de preço) até abrirem a página do produto.
 
 ## Unidades de recomendação
 
@@ -54,7 +54,7 @@ Revise os limites e limites a seguir para garantir que o [!DNL Product Recommend
 
 ## B2B
 
-- As Recomendações de produto respeitam as [permissões de categoria](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions.html), os [catálogos compartilhados](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html) e os preços específicos do grupo de clientes. Os compradores veem apenas recomendações de produtos que podem ser acessados de acordo com a atribuição de segmento e catálogo. Consulte [Integração](onboarding.md).
+- As Recomendações de produto respeitam as [permissões de categoria](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions), os [catálogos compartilhados](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared) e os preços específicos do grupo de clientes. Os compradores veem apenas recomendações de produtos que podem ser acessados de acordo com a atribuição de segmento e catálogo. Consulte [Integração](onboarding.md).
 
 ## Dados e disponibilidade
 
@@ -63,4 +63,4 @@ Revise os limites e limites a seguir para garantir que o [!DNL Product Recommend
 
 ## Solução de problemas
 
-Para obter ajuda com a sincronização do catálogo, com a não exibição de recomendações ou com outros problemas comuns, pesquise a [Base de Dados de Conhecimento Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/overview) ou contate o [suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Para obter ajuda com a sincronização do catálogo, com a não exibição de recomendações ou com outros problemas comuns, pesquise a [Base de Dados de Conhecimento Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) ou contate o [suporte](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).

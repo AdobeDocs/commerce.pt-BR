@@ -3,17 +3,13 @@ title: Posicionamento e rótulos
 description: Saiba onde você pode fazer recomendações em várias páginas do site e obtenha sugestões para rótulos usados com frequência para cada tipo de recomendação.
 exl-id: 0576add8-50dd-4aac-91f5-38b7d85b751f
 TQID: https://experienceleague.adobe.com/Bu5SbZHmj-PfJ3-KnVTu6sc4emkmRJeWTusmQHYz1aU
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 500
+source-wordcount: 501
 ht-degree: 0%
 
 ---
@@ -68,4 +64,4 @@ A tabela a seguir lista as páginas de vitrine onde você pode colocar recomenda
 | Detalhes do produto | Na parte inferior do conteúdo principal (padrão) | Mais visualizados<br>Mais comprados<br>Mais adicionados ao carrinho<br>Visualizaram isto, visualizaram aquilo<br>Visualizaram isto, compraram aquilo<br>Compraram isto, compraram aquilo<br>Mais parecidos com isto<br>Tendências<br>Similaridade visual |
 | Carrinho | Na parte inferior do conteúdo principal (padrão) | Mais visualizados<br>Mais comprados<br>Mais adicionados ao carrinho<br>Visualizaram isto, visualizaram aquilo<br>Visualizaram isto, compraram aquilo<br>Compraram isto, compraram aquilo<br>Mais como isto<br>Tendências |
 | Confirmação | Na parte inferior do conteúdo principal (padrão) | Mais visualizados<br>Mais comprados<br>Mais adicionados ao carrinho<br>Visualizaram isto, visualizaram aquilo<br>Visualizaram isto, compraram aquilo<br>Compraram isto, compraram aquilo<br>Mais como isto<br>Tendências |
-| Page Builder | [Arrastar e soltar](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html?lang=pt-BR) para posicionar o tipo de conteúdo | Mais visualizados<br>Mais comprados<br>Mais adicionados ao carrinho<br>Recomendado para você<br>Tendências |
+| Page Builder | [Arrastar e soltar](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations) para posicionar o tipo de conteúdo | Mais visualizados<br>Mais comprados<br>Mais adicionados ao carrinho<br>Recomendado para você<br>Tendências |

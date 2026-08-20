@@ -3,15 +3,12 @@ title: Filtrar produtos
 description: Defina condições que incluam ou excluam produtos de serem usados como recomendações.
 exl-id: 140bf047-4f6a-48da-b536-d96e78ae3d17
 TQID: https://experienceleague.adobe.com/IcJh0vfW3tvlyeZT0K9OnyqLqRmHlgfmUOX3lY-50tg
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 775
+source-wordcount: 778
 ht-degree: 0%
 
 ---
@@ -55,7 +52,7 @@ O campo de categoria exibe categorias que pertencem à loja atual.
 
 >[!NOTE]
 >
->Para comerciantes B2B, o filtro Categoria adere a qualquer [categoria de produto específica do cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html?lang=pt-BR) configurada.
+>Para comerciantes B2B, o filtro Categoria adere a qualquer [categoria de produto específica do cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions) configurada.
 
 A Adobe Commerce recomenda usar a seguinte configuração de filtro de categoria ao implantar recomendações para seus tipos de página:
 
@@ -85,11 +82,11 @@ Filtra produtos com base na visibilidade, como: _Catálogo_, _Pesquisa_ ou ambos
 
 ### Preço
 
-Um filtro com base no preço do produto usa o preço final para executar a comparação. O preço final inclui descontos disponíveis para compradores anônimos. Para comerciantes B2B, o preço exibido reflete o [preço de grupo específico do cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html?lang=pt-BR) que você configurou.
+Um filtro com base no preço do produto usa o preço final para executar a comparação. O preço final inclui descontos disponíveis para compradores anônimos. Para comerciantes B2B, o preço exibido reflete o [preço de grupo específico do cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/pricing-advanced) que você configurou.
 
 ### Status do estoque
 
 Os seguintes filtros de exclusão podem ser usados para filtrar produtos com base no status do estoque:
 
 - Fora de estoque - (Somente exclusão) Exclui produtos que estão fora de estoque.
-- Baixo em estoque - (Somente exclusão) Exclui produtos com baixo estoque. O status de estoque baixo é baseado no valor _Somente X limite à esquerda_ na [Configuração de inventário](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html?lang=pt-BR).
+- Baixo em estoque - (Somente exclusão) Exclui produtos com baixo estoque. O status de estoque baixo é baseado no valor _Somente X limite à esquerda_ na [Configuração de inventário](https://experienceleague.adobe.com/en/docs/commerce-admin/config/catalog/inventory).

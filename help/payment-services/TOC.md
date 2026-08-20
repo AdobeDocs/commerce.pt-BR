@@ -7,9 +7,9 @@ role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
 nudge: true
-source-git-commit: 2abebf247603b37a28eb6f4653d63e83aa5d9fd5
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '117'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 2%
 - [Notas de versão](release-notes.md)
 - Integrar [!DNL Payment Services] {#get-started}
   - [Visão geral da integração](onboard.md)
-  - [Instalar a extensão  [!DNL Payment Services] &#x200B;](install.md)
+  - [Instalar a extensão  [!DNL Payment Services] ](install.md)
   - [Conectar sua instância](connect.md)
   - [Configurar sandbox de teste](sandbox.md)
   - [Ativar para produção](production.md)
@@ -52,4 +52,4 @@ ht-degree: 2%
 - Segurança e conformidade {#security-compliance}
   - [Segurança](security.md)
   - [Proteção contra fraude Signifyd](fraud-protection.md)
-- [Retornar à página inicial dos Serviços da Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html?lang=pt-BR)
+- [Retornar à página inicial dos Serviços da Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

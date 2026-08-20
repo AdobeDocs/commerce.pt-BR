@@ -6,20 +6,14 @@ level: Intermediate
 feature: Payments, Checkout, Paas, Saas
 exl-id: 191467ab-4c5e-4df1-b423-7a470a4910ea
 TQID: https://experienceleague.adobe.com/0jiNXLUWzekxm4ajhgs0VLUCmVDMdn6OE1m07TO-rLo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 334
+source-wordcount: 335
 ht-degree: 0%
 
 ---
@@ -58,7 +52,7 @@ A demanda é alta por uma experiência Commerce de qualidade, e um processo de p
 
 1. **Fluxos de check-out personalizados** — Ofereça opções de check-out em vários estágios da jornada de comércio para reduzir o atrito durante o processo de compra e aumentar as taxas de conversão.
 
-1. **[Compatibilidade headless com o GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/)** — os comerciantes têm alternativas às APIs da Web REST e SOAP para desenvolvimento de front-end.
+1. **[Compatibilidade headless com o GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services-extension/)** — os comerciantes têm alternativas às APIs da Web REST e SOAP para desenvolvimento de front-end.
 
 1. **Relatórios financeiros**—Sincronize [detalhes de pagamento](order-payment-status.md) com ordens para obter total transparência para o volume processado, saldo de pagamento, [pagamentos](payouts.md) e [relatórios de nível de transação](reporting.md) detalhados para reconciliação financeira e o máximo em visibilidade de transação.
 

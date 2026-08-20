@@ -5,24 +5,19 @@ role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 exl-id: 903f4f96-6dba-4c45-8106-76d9845544ec
 TQID: https://experienceleague.adobe.com/FPo8tOFgizn4m-6DFo0ayRf6ct-Oepl6kczu3kZSaVg
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 324
+source-wordcount: 329
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service and API Mesh]
 
-A [API Mesh para Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permite que os desenvolvedores integrem APIs privadas ou de terceiros e outras interfaces com produtos da Adobe usando o Adobe I/O Runtime.
+A [API Mesh para Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/mesh/) permite que os desenvolvedores integrem APIs privadas ou de terceiros e outras interfaces com produtos da Adobe usando o Adobe I/O Runtime.
 
 ![Diagrama de arquitetura do catálogo](assets/catalog-service-architecture-mesh.png)
 
@@ -30,7 +25,7 @@ Para usar a API Mesh com o Serviço de Catálogo, conecte a API Mesh à sua inst
 
 ## Conecte e configure a API Mesh.
 
-1. Conecte o API Mesh à sua instância do Adobe Commerce seguindo as instruções para [Criar um Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/) no _Guia do Desenvolvedor do API Mesh_.
+1. Conecte o API Mesh à sua instância do Adobe Commerce seguindo as instruções para [Criar um Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh) no _Guia do Desenvolvedor do API Mesh_.
 
    Se esta for a primeira vez que você usa a API Mesh, conclua o [processo de Introdução](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/) antes de criar a malha.
 

@@ -6,25 +6,13 @@ feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 8ae51d3d-8c12-4607-b7e5-985033143a84
 TQID: https://experienceleague.adobe.com/l3Z3-ncMTQ3j-4s6xL9X8ZYtlBHqzhBfMLc2jL4Kv6A
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: f42e0a1a-0d79-488d-a83f-f2c30672b137
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 0c38384dc0b8c9c964402cd3d363ff784d7a0cf5
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: f42e0a1a-0d79-488d-a83f-f2c30672b137
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 3270
+source-wordcount: 3271
 ht-degree: 0%
 
 ---
@@ -132,7 +120,7 @@ _13 de abril, 2026_
 - Correção de um problema em que os produtos excluídos não eram removidos corretamente dos serviços conectados da Commerce se o serviço de exportação não estivesse disponível durante a exclusão. As operações de nova tentativa e ressincronização agora garantem que os produtos excluídos sejam refletidos corretamente no SaaS. <!--MDEE-1319-->
 - As entidades de catálogo (produtos e categorias) agora podem ser exportadas para serviços conectados do Commerce mesmo se os valores de atributo estiverem ausentes na exibição da loja do administrador. Isso melhora a compatibilidade com extensões de terceiros e reduz os erros de exportação devido à falta de valores padrão. <!--MDEE-1333-->
 
-![Correção](../assets/fix.svg) Resolveu um erro na página Status de Sincronização do Feed de Dados que poderia ocorrer quando os registros de feed continham dados inesperados ou ausentes. O sistema agora lida normalmente com esses casos, melhorando a estabilidade e evitando falhas. Se você estiver usando o Adobe Commerce Optimizer Connector para sincronizar dados do Adobe Commerce com o Adobe Commerce Optimizer, atualize para o [Adobe Commerce Optimizer Connector versão 1.0.11](https://experienceleague.adobe.com/pt-br/docs/commerce/aco-optimizer-connector/release-notes) ou posterior para a correção.<!--MDEE-1327-->
+![Correção](../assets/fix.svg) Resolveu um erro na página Status de Sincronização do Feed de Dados que poderia ocorrer quando os registros de feed continham dados inesperados ou ausentes. O sistema agora lida normalmente com esses casos, melhorando a estabilidade e evitando falhas. Se você estiver usando o Adobe Commerce Optimizer Connector para sincronizar dados do Adobe Commerce com o Adobe Commerce Optimizer, atualize para o [Adobe Commerce Optimizer Connector versão 1.0.11](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/release-notes) ou posterior para a correção.<!--MDEE-1327-->
 
 ### Versão 103.4.21
 
@@ -158,7 +146,7 @@ _6 de fevereiro de 2026_
 
 _2 de fevereiro de 2026_
 
-![Correção](../assets/fix.svg) Corrigido um problema em que os lotes de itens podiam exceder o limite permitido durante as atualizações, causando `items_limit_exceeded` erros ao sincronizar dados com os [serviços da Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/home) ou o [Adobe Commerce Optimizer](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/setup/data-sync). <!--MDEE-1264-->
+![Correção](../assets/fix.svg) Corrigido um problema em que os lotes de itens podiam exceder o limite permitido durante as atualizações, causando `items_limit_exceeded` erros ao sincronizar dados com os [serviços da Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home) ou o [Adobe Commerce Optimizer](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/data-sync). <!--MDEE-1264-->
 
 ![Correção](../assets/fix.svg) Confiabilidade aprimorada das exportações de dados de produtos ao adicionar lógica para registrar itens com falha durante a coleção de opções de produtos agrupados. <!--CCSAAS-4458-->
 
@@ -186,7 +174,7 @@ _24 de novembro de 2025_
 
 _22 de outubro de 2025_
 
-![Novo](../assets/new.svg) Adicionado suporte para a extensão Status de Sincronização de Feed de Dados para monitorar e solucionar problemas de transferências de dados de [!DNL Adobe Commerce] para serviços conectados ([!DNL Catalog Service], [!DNL Live Search] e [!DNL Product Recommendations]). Para obter detalhes sobre como instalar e usar essa extensão, consulte [Monitoramento do Status de Sincronização do Feed de Dados](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status.html?lang=pt-BR) no *Guia de Administração do Commerce*. <!--MDEE-954-->
+![Novo](../assets/new.svg) Adicionado suporte para a extensão Status de Sincronização de Feed de Dados para monitorar e solucionar problemas de transferências de dados de [!DNL Adobe Commerce] para serviços conectados ([!DNL Catalog Service], [!DNL Live Search] e [!DNL Product Recommendations]). Para obter detalhes sobre como instalar e usar essa extensão, consulte [Monitoramento do Status de Sincronização do Feed de Dados](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) no *Guia de Administração do Commerce*. <!--MDEE-954-->
 
 ### Versão 103.4.14
 
@@ -212,7 +200,7 @@ _18 de setembro de 2025_
 
 _29 de agosto de 2025_
 
-![Novo](../assets/new.svg) [!BADGE PaaS somente]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."}
+![Novo](../assets/new.svg) [!BADGE PaaS somente]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."}
 Foi adicionado suporte para atributos de produto adicionais para incluir classe de imposto, conjunto de atributos e dados de inventário das configurações de produto da Commerce no feed de produto. Os clientes que quiserem incluir esses atributos em feeds de exportação de produtos devem adicionar o módulo Atributos de produto extras aos seus projetos do Adobe Commerce. Consulte [Adicionar classe de imposto, conjunto de atributos e atributos de inventário](add-tax-attribute-set-inventory-attributes.md).<!--MDEE-1135-->
 
 ![Correção](../assets/fix.svg) resolveu um problema que causava a sincronização incorreta de atualizações de produtos excluídos se um erro ocorresse durante um índice de produto completo. Agora, todas as exclusões de produtos são sincronizadas corretamente, mesmo que ocorra um erro durante o processo de indexação. <!--MDEE-1144-->

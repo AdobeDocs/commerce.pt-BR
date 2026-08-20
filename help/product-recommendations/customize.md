@@ -3,16 +3,12 @@ title: Personalizar
 description: Saiba como personalizar as recomendações de produto.
 exl-id: b59932e1-748a-432d-b65b-13cf1c287fb2
 TQID: https://experienceleague.adobe.com/-49Lqkuhnrn5GCQtHLO-9gr1nHwMjEQeEVDRR4cDk5Y
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 645
+source-wordcount: 646
 ht-degree: 0%
 
 ---
@@ -23,7 +19,7 @@ Ao instalar o módulo Product Recommendations, o Adobe Commerce cria o diretóri
 
 `<your theme>/Magento_ProductRecommendationsLayout/web/template/recommendations.html`
 
-Para obter mais informações sobre a modificação de arquivos de modelo, consulte [Personalização de modelo](https://developer.adobe.com/commerce/frontend-core/guide/templates/walkthrough/) no Guia do Desenvolvedor de Front-end.
+Para obter mais informações sobre a modificação de arquivos de modelo, consulte [Personalização de modelo](https://developer.adobe.com/commerce/frontend-core/guide/templates/walkthrough) no Guia do Desenvolvedor de Front-end.
 
 Se você modificar o arquivo `recommendations.html`, deverá preservar as seguintes marcas no arquivo para garantir que o Adobe Commerce possa coletar métricas de recomendação da sua loja:
 
@@ -121,7 +117,7 @@ Por exemplo, se sua loja vende alguns produtos orgânicos, você pode ter um atr
 
 ![Adicionar medalha](assets/unit-custom.png)
 
-Para garantir que um atributo de produto personalizado esteja disponível ao renderizar a unidade de recomendação na página, defina a propriedade `Used in Product Listing` como `Yes` na página [Atributos de Produto](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=pt-BR) no Administrador.
+Para garantir que um atributo de produto personalizado esteja disponível ao renderizar a unidade de recomendação na página, defina a propriedade `Used in Product Listing` como `Yes` na página [Atributos de Produto](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create) no Administrador.
 
 Quando essa propriedade é definida, a carga JSON inclui um objeto `attributes` que contém uma matriz de códigos e valores de atributo. É possível aplicar o estilo personalizado da loja com base nesses valores de atributo, como adicionar tratamentos visuais especiais ou selos, conforme mencionado anteriormente.
 

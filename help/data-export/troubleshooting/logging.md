@@ -5,22 +5,13 @@ autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services
 exl-id: d022756f-6e75-4c2a-9601-31958698dc43
 TQID: https://experienceleague.adobe.com/PkV4L0RpfA-jeja0Fd6JCDriE6wwjd25Qou0JhG5o8E
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088bid: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 1007
+source-wordcount: 1010
 ht-degree: 0%
 
 ---
@@ -31,7 +22,7 @@ A extensão [!DNL data export] fornece logs para rastrear processos de sincroniz
 
 >[!NOTE]
 >
->Você também pode acompanhar a integridade e o desempenho dos feeds de exportação de dados para dados de produto e categoria no [painel Status de sincronização do feed de dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) em Administrador.
+>Você também pode acompanhar a integridade e o desempenho dos feeds de exportação de dados para dados de produto e categoria no [painel Status de sincronização do feed de dados](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) em Administrador.
 
 ## Logs
 
@@ -98,8 +89,8 @@ Neste exemplo, os valores `status` fornecem informações sobre a operação de 
 - **`"Progress 2/5"`** indica que 2 de 5 iterações foram concluídas. O número de iterações depende do número de entidades exportadas.
 - **`"processed: 200"`** indica que 200 itens foram processados.
 - **`"synced: 100"`** indica que 100 itens foram enviados para SaaS. Espera-se que `"synced"` não seja igual a `"processed"`. Veja um exemplo:
-   - **`"synced" < "processed"`** significa que a tabela de feed não detectou alterações no item em comparação à versão sincronizada anteriormente. Esses itens são ignorados durante a operação de sincronização.
-   - **`"synced" > "processed"`** a mesma id de entidade (por exemplo, `Product ID`) pode ter vários valores em escopos diferentes. Por exemplo, um produto pode ser atribuído a cinco sites. Nesse caso, você pode ter &quot;1 item processado&quot; e &quot;5 itens sincronizados&quot;.
+  - **`"synced" < "processed"`** significa que a tabela de feed não detectou alterações no item em comparação à versão sincronizada anteriormente. Esses itens são ignorados durante a operação de sincronização.
+  - **`"synced" > "processed"`** a mesma id de entidade (por exemplo, `Product ID`) pode ter vários valores em escopos diferentes. Por exemplo, um produto pode ser atribuído a cinco sites. Nesse caso, você pode ter &quot;1 item processado&quot; e &quot;5 itens sincronizados&quot;.
 
 +++ **Exemplo: Log de ressincronização completo para o feed de preço**
 
@@ -148,7 +139,7 @@ Se os dados estiverem ausentes ou incorretos nos serviços da Commerce, verifiqu
 - O log de erros de Exportação de Dados (`commerce-data-export-errors.log`) captura erros que ocorrem durante a fase de coleta.
 - O log de erros de exportação SaaS (`saas-export-errors.log`) captura os erros que ocorrem durante a fase de transmissão.
 
-Se você vir erros não relacionados à configuração ou a extensões de terceiros, envie um [tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) com o máximo de informações possível.
+Se você vir erros não relacionados à configuração ou a extensões de terceiros, envie um [tíquete de suporte](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) com o máximo de informações possível.
 
 ### Resolver problemas de sincronização do catálogo {#resolvesync}
 

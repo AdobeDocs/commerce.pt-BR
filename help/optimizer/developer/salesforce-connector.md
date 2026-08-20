@@ -3,26 +3,12 @@ title: Salesforce Commerce Connector
 description: Saiba mais sobre o [!DNL Commerce Optimizer SFCC Connector] que fornece um ponto de partida para a integração do Salesforce Commerce B2C com o [!DNL Adobe Commerce Optimizer] para sincronizar dados de catálogo e implementar e personalizar o conector para oferecer suporte a operações comerciais.
 role: Admin, Developer
 TQID: https://experienceleague.adobe.com/pbzScjaJ7FybdPP06QIhKlowmMbkDHTxUSJUw6eG6JY
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c18ed297-2187-4aec-affb-9d9654eca6fcid: c32adafa-ed01-4b31-997e-2413013911b0id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: e91a50b1-0b31-436e-9033-00e4776e94cbid: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
 source-wordcount: 1183
 ht-degree: 0%
@@ -35,7 +21,7 @@ Baseado na tecnologia App Builder da Adobe, o [!DNL Commerce Optimizer Salesforc
 
 Pronto para uso, o conector oferece recursos confiáveis de sincronização de dados e a flexibilidade para personalizar workflows de acordo com as necessidades da sua empresa.
 
-Para obter uma série completa de tutoriais em vídeo, consulte [Saiba mais sobre o kit de início de nuvem do Salesforce Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
+Para obter uma série completa de tutoriais em vídeo, consulte [Saiba mais sobre o kit de início de nuvem do Salesforce Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/adobe-commerce-optimizer/sfcc-starter-kit/overview).
 
 >[!NOTE]
 >
@@ -48,13 +34,13 @@ Para obter uma série completa de tutoriais em vídeo, consulte [Saiba mais sobr
 * **Suporta vários tipos de dados:** Sincronize produtos, preços e estruturas de catálogo para refletir configurações complexas de merchandising.
 
 * **Fluxos de Trabalho de Sincronização Flexíveis**
-   * **Sincronizações Agendadas:** Automatize atualizações usando o agendamento de trabalhos cron; não é necessário nenhum esforço manual.
-   * **Atualizações sob Demanda:** acione instantaneamente atualizações no nível de SKU para alterações, correções ou inicializações de produtos urgentes.
+  * **Sincronizações Agendadas:** Automatize atualizações usando o agendamento de trabalhos cron; não é necessário nenhum esforço manual.
+  * **Atualizações sob Demanda:** acione instantaneamente atualizações no nível de SKU para alterações, correções ou inicializações de produtos urgentes.
 
 * **Compilado para Extensibilidade**
-   * Usa pontos de extremidade personalizados [Salesforce Commerce B2C API](https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html) (SCAPI) para compatibilidade e fácil adaptação a casos de uso exclusivos ou avançados.
-   * Dimensionável de acordo com seus negócios - comece com a sincronização de catálogos e preços e, em seguida, estenda os fluxos de trabalho para oferecer suporte a integrações adicionais ou lógica de negócios.
-   * Configurar e evoluir workflows sem reconstruir as integrações principais.
+  * Usa pontos de extremidade personalizados [Salesforce Commerce B2C API](https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html) (SCAPI) para compatibilidade e fácil adaptação a casos de uso exclusivos ou avançados.
+  * Dimensionável de acordo com seus negócios - comece com a sincronização de catálogos e preços e, em seguida, estenda os fluxos de trabalho para oferecer suporte a integrações adicionais ou lógica de negócios.
+  * Configurar e evoluir workflows sem reconstruir as integrações principais.
 
 >[!NOTE]
 >
