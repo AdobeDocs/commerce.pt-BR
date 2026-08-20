@@ -5,7 +5,7 @@ feature: Storefront
 role: Developer
 level: Beginner
 exl-id: 02928dc4-1777-483e-b0ee-b04fc813864d
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 autotag-review: '2026-06-18T16:05:19.363Z'
 TQID: 'https://experienceleague.adobe.com/LoeNTJ-evBJB-TaJV0mEQpD2G2MwxHX7cYHx67kP0cA'
 product_v2:
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 Para configurar seu [!DNL Adobe Commerce Storefront] com a tecnologia [!DNL Edge Delivery Services] para [!DNL Adobe Commerce as a Cloud Service] (SaaS), conclua as etapas a seguir.
 
-Para obter uma apresentação mais personalizável e detalhada, consulte a [documentação sobre vitrines](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
+Para obter uma apresentação mais personalizável e detalhada, consulte a [documentação sobre vitrines](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=pt-BR).
 
 1. Abra a [ferramenta do criador do site](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator).
 
@@ -63,6 +63,6 @@ Consulte os seguintes artigos para obter mais informações:
 * [Atualizando conteúdo da loja](./use-cases.md#update-storefront-content)—Gerencie e exiba conteúdo e dados na loja.
 * [Experimentação contextual](./use-cases.md#contextual-experimentation) — crie e gerencie experimentos em sua loja.
 * [Gerar variações](./use-cases.md#generate-variations) — Use a IA de geração para automatizar a geração de conteúdo de alta qualidade.
-* [Documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/) — obtenha informações detalhadas sobre a atualização do conteúdo do site e a integração com componentes de front-end e dados de back-end do Commerce.
+* [Documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR) — obtenha informações detalhadas sobre a atualização do conteúdo do site e a integração com componentes de front-end e dados de back-end do Commerce.
 * [Serviço de Configuração](https://www.aem.live/docs/config-service-setup)—Saiba mais sobre como migrar a configuração da loja do `config.json` para usar o Serviço de Configuração, que oferece suporte a casos de uso avançados, como configuração de resposta e sobreposições.
-* [Recursos B2B da Loja](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/b2b/#major-features)—Saiba mais sobre recursos B2B disponíveis no pacote de compatibilidade da loja, que é instalado automaticamente para todas as instâncias [!DNL Adobe Commerce as a Cloud Service].
+* [Recursos B2B da Loja](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/b2b/?lang=pt-BR#major-features)—Saiba mais sobre recursos B2B disponíveis no pacote de compatibilidade da loja, que é instalado automaticamente para todas as instâncias [!DNL Adobe Commerce as a Cloud Service].
