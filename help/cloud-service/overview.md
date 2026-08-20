@@ -5,40 +5,18 @@ feature: App Builder, GraphQL, Integration, Saas
 role: Admin, Developer, User, Leader
 level: Beginner
 exl-id: 1b7e2731-4a10-4c2b-9bfc-8945729ed523
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 autotag-review: '2026-06-18T16:02:31.185Z'
 TQID: 'https://experienceleague.adobe.com/D1Aq9qlw2HprQUy-g5KcIH2Ky2XUDawZIrAbe2Jz6ZI'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-feature_v2:
-  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
-  - id: c32adafa-ed01-4b31-997e-2413013911b0
-  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
-  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
-  - id: f236e2a1-90d4-477d-92e1-5996b5e92bff
-  - id: f8ddfd3b-6194-46e8-a176-0e918039be56
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: c5b10a715f64a220fc965328a7c913951d44dedc
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+feature_v2: id: ba9e5be9-7de1-4f71-a5d2-baead0e425eeid: c1256247-af4b-46d8-9dca-0c654ecfa157id: c18ed297-2187-4aec-affb-9d9654eca6fcid: c32adafa-ed01-4b31-997e-2413013911b0id: cc250cf1-34eb-4863-80d0-d170d45ea067id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: a743e5dc-8f37-4b5d-a848-03c32ca30598id: e91a50b1-0b31-436e-9033-00e4776e94cbid: f236e2a1-90d4-477d-92e1-5996b5e92bffid: f8ddfd3b-6194-46e8-a176-0e918039be56
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12bid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: d095671a-1355-40aa-8b5f-06c33c68080bid: da3860b0-d637-47df-bef0-273751180266
+source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
 workflow-type: tm+mt
-source-wordcount: 1461
+source-wordcount: 1456
 ht-degree: 0%
 
 ---
@@ -88,7 +66,7 @@ A tabela a seguir destaca os produtos que alimentam o [!DNL Adobe Commerce as a 
 
 Assista ao vídeo a seguir para obter uma breve introdução à arquitetura [!DNL Adobe Commerce as a Cloud Service]. Diagramas que ilustram a arquitetura são fornecidos abaixo do vídeo.
 
->[!VIDEO](https://video.tv.adobe.com/v/3443272?captions=por_br&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3443232?learn=on)
 
 Este diagrama ilustra o fluxo de dados entre o [!DNL Adobe Commerce as a Cloud Service] e todas as soluções da Adobe Experience Cloud.
 
@@ -96,15 +74,15 @@ Este diagrama ilustra o fluxo de dados entre o [!DNL Adobe Commerce as a Cloud S
 
 ## Commerce Storefront
 
-Para criar experiências ricas em minutos com criação simples baseada em documentos ou edição visual com [!DNL Storefront Builder], use o [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR) da Adobe viabilizado por [!DNL Edge Delivery Services].
+Para criar experiências ricas em minutos com criação simples baseada em documentos ou edição visual com [!DNL Storefront Builder], use o [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront/) da Adobe viabilizado por [!DNL Edge Delivery Services].
 
-O [!DNL Commerce Storefront] é totalmente headless com uma arquitetura dissociada que fornece todos os serviços e dados de merchandising por meio de uma camada de API do GraphQL. Essa arquitetura permite que as equipes desenvolvam seus front-ends independentemente da Commerce Foundation, fornecendo agilidade para criar e testar novos pontos de contato com tecnologias emergentes.
+O [!DNL Commerce Storefront] é totalmente headless com uma arquitetura dissociada que fornece todos os serviços e dados da Adobe Merchandising por meio de uma camada de API do GraphQL. Essa arquitetura permite que as equipes desenvolvam seus front-ends independentemente da Commerce Foundation, fornecendo agilidade para criar e testar novos pontos de contato com tecnologias emergentes.
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] não dá suporte a vitrines Luma. Se você estiver migrando do Adobe Commerce na Nuvem ou no local, consulte [vitrines existentes](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=pt-BR#existing-storefronts) para obter orientações sobre a transição.
+>[!DNL Adobe Commerce as a Cloud Service] não dá suporte a vitrines Luma. Se você estiver migrando de [!DNL Adobe Commerce on Cloud] ou no local, consulte [vitrines existentes](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/#existing-storefronts) para obter orientações sobre a transição.
 
-## Serviços de merchandising e serviços de pagamento
+## Serviços Adobe Merchandising e serviços de pagamento
 
 A Adobe fornece um conjunto avançado de serviços de merchandising inteligentes e combináveis para ajudá-lo a apoiar suas principais metas comerciais. Esses serviços também fornecem APIs essenciais para otimizar o desempenho em escala.
 
@@ -116,7 +94,7 @@ A Adobe fornece um conjunto avançado de serviços de merchandising inteligentes
   >
   >O Serviço de Catálogo é incluído automaticamente com [!DNL Live Search] e [!DNL Product Recommendations].
 
-- [Serviços de Pagamento](../payment-services/guide-overview.md)—Impulsione a satisfação do cliente oferecendo vários métodos de pagamento, incluindo prestações de pagamento sem juros, e uma única visão do processamento de pagamento, ordens e faturas. Para obter instruções de configuração, consulte [Página Inicial dos Serviços de Pagamento](../payment-services/payments-home.md).
+- [Serviços de Pagamento](../payment-services/guide-overview.md)—Impulsione a satisfação do cliente oferecendo vários métodos de pagamento, incluindo prestações sem juros e uma única visão do processamento, dos pedidos e das faturas. Para obter instruções de configuração, consulte [Página Inicial dos Serviços de Pagamento](../payment-services/payments-home.md).
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
@@ -224,7 +202,7 @@ O processo típico de atualização do Adobe Commerce na nuvem envolvia a criaç
 
 >[!NOTE]
 >
->O Adobe garante compatibilidade com versões anteriores para todas as atualizações. Isso significa que, quando as atualizações forem aplicadas, elas não interromperão a funcionalidade existente ou as personalizações que aderem ao modelo [API-first extensibility](https://developer.adobe.com/commerce/extensibility/).
+>O Adobe garante compatibilidade com versões anteriores para todas as atualizações. Isso significa que quando as atualizações são aplicadas, elas não interrompem a funcionalidade existente ou as personalizações que seguem o modelo [API-first extensibility](https://developer.adobe.com/commerce/extensibility/).
 
 ### Integrações de terceiros
 
@@ -233,7 +211,7 @@ Os desenvolvedores podem usar o [GraphQL](https://developer.adobe.com/commerce/w
 <!-- 
 ## Experience Cloud integration
 
-[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
+[!DNL Adobe Commerce as a Cloud Service] integrates with all Experience Cloud solutions to deliver [personalized commerce experiences at scale](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customers-menu/personalize-scale#customers-menu).
 
 [Data Connection](../data-connection/overview.md) unlocks insights about your shoppers' buying behavior so that you can create personalized shopping experiences across all channels with other Adobe Digital Experience products. 
 -->
@@ -247,11 +225,11 @@ As seções a seguir fornecem informações sobre os benefícios que o [!DNL Ado
 - **Aumente a receita**: direcione o tráfego orgânico com uma vitrine de alto desempenho que aumenta a SEO. Crie experiências personalizadas que impulsionam a conversão usando dados avançados.
 - **Operações de dimensionamento**: os serviços de dimensionamento automático atendem às demandas de pico da sua empresa com 99,9% de disponibilidade. Implante várias marcas e regiões e ofereça suporte a B2B e B2C a partir de uma única instância. Suporte a catálogos de produtos grandes e complexos com modelagem de dados flexível.
 - **Aumente a produtividade do merchandiser**: use serviços de merchandising alimentados por IA para melhorar a conversão. Faça um experimento nativo, diretamente na loja. Gerencie a experiência da loja para criar experiências avançadas em minutos com a criação simples baseada em documentos ou um editor visual.
-- **Diminua o custo total de propriedade (TCO) e acelere a inovação**: serviços sempre atualizados fornecem acesso imediato a novos recursos. Ative novos recursos instalando facilmente os aplicativos do marketplace. Libere recursos da manutenção tediosa para se concentrar na criação de novos recursos.
+- **Diminua o custo total de propriedade (TCO) e acelere a inovação**: serviços sempre atualizados fornecem acesso imediato a novos recursos. Ative novos recursos instalando facilmente os aplicativos do marketplace. Realoque recursos da manutenção de rotina para se concentrar na criação de novos recursos.
 
 ### Líderes em tecnologia da informação (TI)
 
 - **Provisionamento rápido**: comece rapidamente com o provisionamento de autoatendimento em minutos. Todos os serviços são pré-configurados para trabalhar em conjunto de maneira simples e rápida. Provisione sandboxes para experimentação de desenvolvedores, conforme necessário.
 - **Baixo custo de propriedade**: não há mais atualizações com serviços sempre atualizados. Mantenha-se seguro e em conformidade com os patches de segurança mais recentes aplicados automaticamente para você. Dimensione automaticamente para atender às cargas de trabalho mais exigentes.
 - **Loja de alto desempenho**: crie experiências ricas em minutos com criação simples baseada em documento ou um editor visual. Use serviços de merchandising alimentados por IA para melhorar a conversão. Experimentação nativa incorporada à loja.
-- **Inovação mais rápida**: libere recursos de uma manutenção tediosa para se concentrar na criação de novos recursos que agregam valor aos negócios. Use extensibilidade abrangente e tecnologias baseadas em padrões (JavaScript, HTML, CSS e ferramentas de baixo código) para criar experiências diferenciadas. Instale aplicativos de terceiros com um clique para adicionar novos recursos à sua plataforma de comércio.
+- **Inovação mais rápida**: realoque recursos da manutenção de rotina para se concentrar na criação de novos recursos que agreguem valor aos negócios. Use extensibilidade abrangente e tecnologias baseadas em padrões (JavaScript, HTML, CSS e ferramentas de baixo código) para criar experiências diferenciadas. Instale aplicativos de terceiros com um clique para adicionar novos recursos à sua plataforma de comércio.

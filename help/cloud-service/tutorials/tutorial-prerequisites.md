@@ -9,26 +9,15 @@ level: Intermediate
 type: Tutorial
 autotag-review: '2026-06-18T16:21:35.357Z'
 TQID: 'https://experienceleague.adobe.com/aF6iiuFf5sCDyT0gmYmh8h94ZhMWr0DbIKrG1pI0G6I'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: adedf3b3-e153-47a3-ae73-b5d65067b544
-  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: e7840a7b-a94f-4256-aed0-4e94b08e157b
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: cc250cf1-34eb-4863-80d0-d170d45ea067id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: adedf3b3-e153-47a3-ae73-b5d65067b544id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: e7840a7b-a94f-4256-aed0-4e94b08e157b
+source-git-commit: d9ea778afc86de323e53cd1be4768bc87cb71a8b
 workflow-type: tm+mt
-source-wordcount: 1291
+source-wordcount: 1289
 ht-degree: 0%
 
 ---
@@ -55,10 +44,10 @@ As ferramentas a seguir são necessárias para a extensão e o desenvolvimento d
   ```
 
 * Bash shell
-   * macOS/Linux: não é necessária instalação
-   * Windows: Use o [Git Bash](https://git-scm.com/install) ou o [Subsistema do Windows para Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
+  * macOS/Linux: não é necessária instalação
+  * Windows: Use o [Git Bash](https://git-scm.com/install) ou o [Subsistema do Windows para Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install)
 
-* Baixe um IDE assistido por IA, como [Cursor](https://cursor.com/download) (recomendado). Outros IDEs, como Claude Code, Gemini CLI ou Copilot também são suportados, mas podem exigir modificações nos prompts e outras etapas no tutorial.
+* Baixe um IDE assistido por IA, como [Cursor](https://cursor.com/download) (recomendado). Outros IDEs, como Claude Code, Gemini CLI ou Copilot, também são suportados, mas podem exigir modificações nos prompts e em outras etapas do tutorial.
 
 ## [!DNL Adobe Commerce as a Cloud Service] pré-requisitos
 
@@ -74,7 +63,7 @@ As ferramentas a seguir são necessárias para a extensão e o desenvolvimento d
   aio plugins:install https://github.com/adobe-commerce/aio-cli-plugin-commerce @adobe/aio-cli-plugin-app-dev @adobe/aio-cli-plugin-runtime
   ```
 
-Depois de instalar o [!DNL Adobe I/O CLI] e os plug-ins necessários, configure o espaço de trabalho de extensibilidade. A Adobe recomenda usar a configuração automatizada para obter a experiência mais rápida.
+Depois de instalar o [!DNL Adobe I/O CLI] e os plug-ins necessários, configure o espaço de trabalho de extensibilidade. A Adobe recomenda usar a configuração automatizada para obter a experiência mais eficiente.
 
 * **[Configuração automatizada](#automated-setup) (Recomendada)** — Execute um único comando para configurar o seu espaço de trabalho automaticamente.
 * **[Configuração manual](#manual-setup)** — siga as instruções passo a passo para configurar cada componente individualmente.
@@ -202,7 +191,7 @@ Configure um projeto no Adobe Developer Console com as APIs e credenciais necess
 
 #### Criar um novo projeto
 
-Crie um projeto do App Builder na Adobe Developer Console para hospedar sua extensão.
+Para hospedar sua extensão, crie um projeto [!DNL App Builder] na Adobe Developer Console.
 
 1. Navegue até [Adobe Developer Console](https://developer.adobe.com/).
 1. Clique em **[!UICONTROL Create project from a template]**.
@@ -227,10 +216,10 @@ Adicione as APIs necessárias ao espaço de trabalho do Stage para gerenciamento
 1. Selecione uma das seguintes APIs. Repita esse processo para cada API listada abaixo:
 
    * **[!UICONTROL Adobe Services]** filtro:
-      * **[!UICONTROL I/O Management API]**
-      * API **[!UICONTROL I/O Events]**
+     * **[!UICONTROL I/O Management API]**
+     * API **[!UICONTROL I/O Events]**
    * **[!UICONTROL Experience Cloud]** filtro:
-      * API **[!UICONTROL Adobe I/O Events for Adobe Commerce]**
+     * API **[!UICONTROL Adobe I/O Events for Adobe Commerce]**
 
 1. Clique em **[!UICONTROL Next]**.
 
@@ -342,7 +331,7 @@ EVENT_PREFIX=test
 
 ### Baixar a configuração do espaço de trabalho
 
-Execute o seguinte comando para baixar o arquivo de configuração do espaço de trabalho:
+Para baixar o arquivo de configuração do espaço de trabalho, execute o seguinte comando:
 
 ```bash
 aio console workspace download workspace.json
@@ -382,7 +371,7 @@ Quando solicitado, escolha a opção que usa a organização, o projeto e o espa
 
 ### Instalar as ferramentas de IA de extensibilidade
 
-Este processo cria a configuração de MCP (`.<agent>/mcp.json`), o diretório de habilidades (`.<agent>/skills/`) e adiciona `AGENTS.md` à raiz do projeto. Você deverá escolher um kit inicial, um agente de codificação e um gerenciador de pacotes.
+Este processo cria a configuração de MCP (`.<agent>/mcp.json`), o diretório de habilidades (`.<agent>/skills/`) e adiciona `AGENTS.md` à raiz do projeto. Você será solicitado a escolher um kit inicial, um agente de codificação e um gerenciador de pacotes.
 
 
 1. Configure as ferramentas de desenvolvimento assistido por IA na pasta `extension` usando os seguintes comandos:
@@ -407,9 +396,9 @@ Este processo cria a configuração de MCP (`.<agent>/mcp.json`), o diretório d
 
 ## Configuração manual da vitrine
 
-Esta seção descreve como configurar manualmente sua loja para o [Tutorial de extensão de classificações](./ratings-extension.md) e outros tutoriais da loja.
+Esta seção descreve como configurar a loja manualmente para o [Tutorial de extensão de classificações](./ratings-extension.md) e outros tutoriais da loja.
 
-Para configurar automaticamente sua loja, execute o comando `app-setup` descrito na seção [Configuração automatizada](#automated-setup) e selecione o kit inicial [!DNL AEM Boilerplate Commerce].
+Para configurar sua loja automaticamente, execute o comando `app-setup` descrito na seção [Configuração automatizada](#automated-setup) e selecione o kit inicial [!DNL AEM Boilerplate Commerce].
 
 ### Pré-requisitos
 
@@ -417,7 +406,7 @@ Os itens a seguir são necessários para concluir a seção [vitrine](./ratings-
 
 * [Google Chrome](https://www.google.com/chrome/) - Necessário para testar a vitrine
 
-* Um projeto de vitrine conectado à sua instância [!DNL Commerce]. Se você não tiver um projeto de vitrine eletrônica, siga as etapas em [Criar uma vitrine eletrônica](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=pt-BR){target="_blank"}, incluindo a seção [Vincular repositório aos dados de comércio](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=pt-BR#link-repo-to-commerce-data){target="_blank"}.
+* Um projeto de vitrine conectado à sua instância [!DNL Commerce]. Se você não tiver um projeto de vitrine eletrônica, siga as etapas em [Criar uma vitrine eletrônica](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/){target="_blank"}, incluindo a seção [Vincular repositório aos dados de comércio](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/#link-repo-to-commerce-data){target="_blank"}.
 
 ### Clonar o repositório da loja
 

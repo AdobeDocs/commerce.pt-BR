@@ -9,22 +9,15 @@ level: Intermediate
 type: Tutorial
 autotag-review: '2026-06-18T16:24:27.547Z'
 TQID: 'https://experienceleague.adobe.com/FozTiUWpL6Ab2eqbbf3nhL-faFHdwBIFOgAkvGe5jXQ'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-subfeature_v2:
-  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+subfeature_v2: id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: d7623f5d42eaa50b95a2f36c244b8a3e78d4c7a9
 workflow-type: tm+mt
-source-wordcount: 1738
+source-wordcount: 1737
 ht-degree: 0%
 
 ---
@@ -120,7 +113,7 @@ Esta seção orienta você no desenvolvimento de uma extensão de classificaçõ
 
 1. Revise o arquivo `requirements.md` e verifique o plano.
 
-   Se tudo estiver correto, instrua o agente a migrar para a **Fase 2 - Planejamento de Arquitetura**.
+   Se tudo estiver correto, instrua o agente a migrar para a **Fase 2 — Planejamento de Arquitetura**.
 
 1. Revise o plano de arquitetura.
 
@@ -233,7 +226,7 @@ Prepare o ambiente da loja local para desenvolvimento.
 
 1. Abra a pasta de vitrine em uma nova janela Cursor.
 
-   Como alternativa, se você tiver a [CLI do Cursor](https://cursor.com/docs/configuration/shell#installing-cli-commands) instalada, abra a janela usando o seguinte comando no terminal:
+   Como alternativa, se você tiver a [CLI do Cursor](https://cursor.com/help/customization/keyboard-shortcuts#installing-cli-commands) instalada, abra a janela usando o seguinte comando no terminal:
 
    ```bash
    cursor .
@@ -266,8 +259,8 @@ Use o agente para integrar a API de classificações na página de detalhes do p
 1. O agente avalia a complexidade da tarefa e invoca um fluxo de trabalho em fases. Durante a **Fase 1 (Coleta de Requisitos)**, o agente cria um documento de requisitos e faz perguntas esclarecedoras como:
 
    * Onde as classificações devem aparecer no PDP?
-   * Deve ser um novo bloco autônomo ou uma personalização de slot dentro do componente PDP existente suspenso?
-   * Qual deve ser o fallback se a API não estiver disponível ou não retornar dados?
+   * Este é um novo bloco independente ou uma personalização de slot dentro do componente PDP existente drop-in?
+   * Qual é o fallback se a API não estiver disponível ou não retornar dados?
    * As classificações também devem aparecer na PLP (lista de produtos) ou somente no PDP?
    * Existem especificações ou modelos de design?
 
@@ -318,7 +311,7 @@ Use o agente para integrar a API de classificações na página de detalhes do p
    Você deve ver as seguintes alterações no ambiente de desenvolvimento e no navegador:
 
    * Um componente de classificação de produto é criado automaticamente.
-   * O componente é integrado ao PDP usando [slots internos](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots/?lang=pt-BR) ou como um bloco autônomo, dependendo da arquitetura escolhida.
+   * O componente é integrado ao PDP usando [slots internos](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/customize/slots/) ou como um bloco autônomo, dependendo da arquitetura escolhida.
    * As estrelas são exibidas com proporções de preenchimento apropriadas com base nos valores de classificação da sua API.
 
    ![Página de detalhes do produto mostrando classificações de estrelas integradas abaixo do título do produto](../assets/product-ratings-implementation.png){width="600" zoomable="yes"}
