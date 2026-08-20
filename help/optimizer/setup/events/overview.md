@@ -191,4 +191,4 @@ Esta tabela descreve os eventos usados por cada tipo de recomendação.
 
 ## Suporte
 
-Se você observar discrepâncias de dados ou se as recomendações e os resultados da pesquisa não estiverem funcionando como esperado, [envie um tíquete de suporte](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+Se você observar discrepâncias de dados ou se as recomendações e os resultados da pesquisa não estiverem funcionando como esperado, [envie um tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).

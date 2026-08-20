@@ -31,7 +31,7 @@ Você pode [baixar transações de pagamento](#download-transactions) em um form
 
 >[!NOTE]
 >
->Os relatórios de pagamentos mostram apenas pedidos capturados (a ação de pagamento está definida como [`Authorize and Capture`](production.md#set-payment-services-as-payment-method)) ou [marcados como `Invoiced`](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
+>Os relatórios de pagamentos mostram apenas pedidos capturados (a ação de pagamento está definida como [`Authorize and Capture`](production.md#set-payment-services-as-payment-method)) ou [marcados como `Invoiced`](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
 
 ## Visualização de visualização de dados de pagamentos
 
@@ -159,7 +159,7 @@ Os relatórios de pagamento incluem as seguintes informações.
 | [!UICONTROL Code] | Código de transação que indica Crédito (*CR*) ou Débito (*DR*) |
 | [!UICONTROL Reference ID] | ID da transação original para a qual este evento está relacionado |
 | [!UICONTROL Invoice] | ID da fatura (uma por pedido) da transação |
-| [!UICONTROL Commerce order] | ID do pedido Commerce <br> <br>Para ver as [informações do pedido](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders) relacionadas, clique na ID. |
+| [!UICONTROL Commerce order] | ID do pedido Commerce <br> <br>Para ver as [informações do pedido](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/order-management/orders/orders) relacionadas, clique na ID. |
 | [!UICONTROL Commerce trans] | ID de transação do Commerce |
 | [!UICONTROL Pay method] | Tipo de cartão de crédito—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*—e provedor de cartão associado (como *Visa* ou *MasterCard*) |
 | [!UICONTROL TRANS AMT] | Valor da transação |

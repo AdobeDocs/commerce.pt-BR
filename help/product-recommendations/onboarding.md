@@ -24,7 +24,7 @@ ht-degree: 0%
 >
 >**O Product Recommendations não é um serviço pronto para HIPAA.** Não ative ou use as Recomendações de produto em nenhuma implementação do Adobe Commerce que use a oferta pronta para HIPAA ou que processe de outra forma as PHIs (Protected Health Information, informações protegidas de saúde). O Product Recommendations faz parte dos serviços SaaS da Commerce, atualmente classificados como prontos para não-HIPAA.
 >
->Para obter detalhes sobre quais recursos do Adobe Commerce estão prontos para HIPAA e quais serviços não devem ser usados com PHI, consulte [Preparação para HIPAA no Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) e [Operações](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services).
+>Para obter detalhes sobre quais recursos do Adobe Commerce estão prontos para HIPAA e quais serviços não devem ser usados com PHI, consulte [Preparação para HIPAA no Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) e [Operações](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services).
 
 O processo de integração do [!DNL Product Recommendations] requer acesso à linha de comando do servidor e consiste nas seguintes etapas. Se você não estiver familiarizado com o trabalho a partir da linha de comando, peça ajuda a um desenvolvedor ou integrador de sistemas.
 
@@ -36,14 +36,14 @@ O processo de integração do [!DNL Product Recommendations] requer acesso à li
 
 ## Requisitos
 
-[Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+. Para obter detalhes, consulte [Requisitos do sistema](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}.
+[Adobe Commerce](https://business.adobe.com/br/products/magento/magento-commerce.html) 2.4.4+. Para obter detalhes, consulte [Requisitos do sistema](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/system-requirements){target="_blank"}.
 
 ### Plataformas compatíveis
 
 - Adobe Commerce no local (EE): 2.4.4+
 - Adobe Commerce na nuvem (ECE): 2.4.4+
 
-Para obter requisitos detalhados, consulte [Requisitos do sistema](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements).
+Para obter requisitos detalhados, consulte [Requisitos do sistema](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/system-requirements).
 
 ## Endpoint
 
@@ -61,7 +61,7 @@ Os clientes da Recomendação de produto podem usar a [indexação de preço do 
 
 ### Suporte B2B {#b2bsupport}
 
-As vitrines B2B geralmente exigem uma lógica complexa que determina a visibilidade e os preços do produto para cada comprador ou grupo de clientes. [!DNL Product Recommendations] agora [oferece suporte](release-notes.md) a essa funcionalidade ao honrar [permissões de categoria](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions), [catálogos compartilhados](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared) e [preços específicos de grupo de clientes](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/pricing-advanced). Por exemplo, se você tiver ocultado determinadas categorias do segmento de cliente de varejo, um comprador nesse segmento não receberá recomendações para os produtos nessas categorias. Além disso, ao definir um catálogo compartilhado para grupos de clientes e empresas específicos, esses compradores veem recomendações somente para produtos que podem acessar. Todos os produtos recomendados refletem o preço correto específico do grupo de clientes com base no grupo de clientes de cada comprador.
+As vitrines B2B geralmente exigem uma lógica complexa que determina a visibilidade e os preços do produto para cada comprador ou grupo de clientes. [!DNL Product Recommendations] agora [oferece suporte](release-notes.md) a essa funcionalidade ao honrar [permissões de categoria](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/categories/category-permissions), [catálogos compartilhados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/b2b/shared-catalogs/catalog-shared) e [preços específicos de grupo de clientes](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/products/pricing/pricing-advanced). Por exemplo, se você tiver ocultado determinadas categorias do segmento de cliente de varejo, um comprador nesse segmento não receberá recomendações para os produtos nessas categorias. Além disso, ao definir um catálogo compartilhado para grupos de clientes e empresas específicos, esses compradores veem recomendações somente para produtos que podem acessar. Todos os produtos recomendados refletem o preço correto específico do grupo de clientes com base no grupo de clientes de cada comprador.
 
 >[!NOTE]
 >

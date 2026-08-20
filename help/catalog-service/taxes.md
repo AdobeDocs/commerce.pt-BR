@@ -29,8 +29,8 @@ Neste tópico, a Malha de API é usada para exibir preços de produtos em uma P�
 
 É necessário ter impostos configurados para que eles sejam exibidos na Página de detalhes do produto.
 
-1. [Configurar alíquotas de imposto](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules).
-1. Habilite os impostos para serem [exibidos no catálogo](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/taxes/display-settings#step-1%3A-configure-catalog-prices-display-settings) e defina-os como `Including and Excluding Tax` ou `Including Tax`.
+1. [Configurar alíquotas de imposto](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules).
+1. Habilite os impostos para serem [exibidos no catálogo](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/site-store/taxes/display-settings#step-1%3A-configure-catalog-prices-display-settings) e defina-os como `Including and Excluding Tax` ou `Including Tax`.
 
 Verifique se o Serviço de Catálogo está funcionando, marcando uma Página de detalhes do produto.
 

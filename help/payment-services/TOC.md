@@ -52,4 +52,4 @@ ht-degree: 2%
 - Segurança e conformidade {#security-compliance}
   - [Segurança](security.md)
   - [Proteção contra fraude Signifyd](fraud-protection.md)
-- [Retornar à página inicial dos Serviços da Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- [Retornar à página inicial dos Serviços da Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/home)

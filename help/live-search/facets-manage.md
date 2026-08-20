@@ -45,7 +45,7 @@ Consulte [Configurações](settings.md) para configurar intervalos e agrupamento
 
 1. Para editar o rótulo da faceta, siga um destes procedimentos:
 
-   * Para uma loja [!DNL Commerce], edite o [rótulo do atributo](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes).
+   * Para uma loja [!DNL Commerce], edite o [rótulo do atributo](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/product-attributes/product-attributes).
    * Para uma implementação headless, clique no valor na primeira coluna e edite o texto conforme necessário.
 
    ![Editar rótulo](assets/facet-edit-label.png)

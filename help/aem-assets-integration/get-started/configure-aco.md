@@ -56,7 +56,7 @@ A integração do [!DNL Commerce Optimizer] tem as seguintes limitações:
 
 Antes de configurar a integração, verifique se você tem:
 
-* Uma instância [!DNL Adobe Commerce Optimizer] ativa com o direito **Visuais de Produto** (inclui o Dynamic Media com recursos OpenAPI + [AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime)) ou uma licença AEM Assets fornecida pelo cliente (por exemplo, **AEM Assets Ultimate**) com o Dynamic Media habilitado.
+* Uma instância [!DNL Adobe Commerce Optimizer] ativa com o direito **Visuais de Produto** (inclui o Dynamic Media com recursos OpenAPI + [AEM Assets Prime](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/assets-prime)) ou uma licença AEM Assets fornecida pelo cliente (por exemplo, **AEM Assets Ultimate**) com o Dynamic Media habilitado.
 * Acesso a um ambiente do AEM Assets as a Cloud Service.
 * O [!DNL Commerce Optimizer] e o AEM Assets na mesma Organização do Adobe IMS.
 * Dynamic Media com OpenAPI habilitado no seu ambiente do AEM Assets (consulte [Configurar o projeto do AEM Assets](configure-aem.md#prerequisites) para ver as etapas de habilitação).
@@ -85,7 +85,7 @@ Para integrar a Integração do AEM Assets com o [!DNL Commerce Optimizer], o Su
 * Eventos do AEM Assets (ativo aprovado, atualizado, removido)
 * [!DNL Commerce Optimizer] eventos de catálogo (produto criado, atualizado)
 
-Para iniciar este processo, [crie um tíquete de suporte](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) que inclua as seguintes informações:
+Para iniciar este processo, [crie um tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) que inclua as seguintes informações:
 
 * **[!DNL Adobe Commerce Optimizer]ID do Locatário** (ID da Instância) encontrada na sua URL [!DNL Commerce Optimizer] ou na interface do Commerce Cloud Manager.
 * **ID de Programa e ID de Ambiente do AEM** configurados quando você [configurou o AEM Assets](#configure-aem-assets-first) para a integração.

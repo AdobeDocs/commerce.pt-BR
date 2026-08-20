@@ -23,7 +23,7 @@ ht-degree: 0%
 
 A [extensão de Conexão de Dados](overview.md) conecta seus dados do Commerce à Experience Platform. Os dados destinados ao uso na Experience Platform estão agrupados em dois tipos de comportamento: dados de série temporal, que pertencem à classe **Evento de experiência**, e dados de registro, que pertencem à classe **Perfil individual**.
 
-Saiba mais sobre [comportamento dos dados](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#data-behaviors) e [classes](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition#class) no Experience Platform.
+Saiba mais sobre [comportamento dos dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition#data-behaviors) e [classes](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/composition#class) no Experience Platform.
 
 ## Dados de série temporal
 
@@ -39,7 +39,7 @@ Saiba como [criar um esquema](update-xdm.md) que possa assimilar dados de evento
 
 ## Registrar dados
 
-Os dados do registro fornecem informações sobre os atributos de um assunto. Um assunto pode ser uma organização ou um indivíduo. Por exemplo, um comprador em seu site cria uma conta e gera dados de registro. Estes dados são assimilados na Experience Platform usando um esquema que tem a classe definida como **Perfil Individual**. Você pode enviar esses dados de registro para o serviço de gerenciamento e segmentação de perfis da Adobe: [Real-Time CDP](https://experienceleague.adobe.com/en/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview).
+Os dados do registro fornecem informações sobre os atributos de um assunto. Um assunto pode ser uma organização ou um indivíduo. Por exemplo, um comprador em seu site cria uma conta e gera dados de registro. Estes dados são assimilados na Experience Platform usando um esquema que tem a classe definida como **Perfil Individual**. Você pode enviar esses dados de registro para o serviço de gerenciamento e segmentação de perfis da Adobe: [Real-Time CDP](https://experienceleague.adobe.com/pt-br/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview).
 
 ### Dados de registro de perfil capturados
 

@@ -30,7 +30,7 @@ ht-degree: 0%
 
 Integrar a [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/) com o aplicativo móvel do Commerce permite que os comerciantes enviem os [dados do evento](events.md) do Commerce para a borda do Experience Platform.
 
-Quando os dados do evento do Commerce estiverem disponíveis na borda, eles poderão ser acessados por outros aplicativos da Adobe Experience Cloud. Por exemplo, você pode usar os dados para criar públicos no Real-Time CDP e [usar esses públicos](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/audience-activation) para personalizar seu aplicativo móvel do Commerce.
+Quando os dados do evento do Commerce estiverem disponíveis na borda, eles poderão ser acessados por outros aplicativos da Adobe Experience Cloud. Por exemplo, você pode usar os dados para criar públicos no Real-Time CDP e [usar esses públicos](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/customers/audience-activation) para personalizar seu aplicativo móvel do Commerce.
 
 ## Configuração
 
@@ -38,7 +38,7 @@ Para começar a usar o Adobe Experience Platform Mobile SDK com o Commerce, inst
 
 ### Experience Platform
 
-1. Saiba mais sobre os recursos do aplicativo móvel assistindo ao [tutorial da Adobe Experience Cloud em aplicativos móveis](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview).
+1. Saiba mais sobre os recursos do aplicativo móvel assistindo ao [tutorial da Adobe Experience Cloud em aplicativos móveis](https://experienceleague.adobe.com/pt-br/docs/platform-learn/implement-mobile-sdk/overview).
 
 1. [Instalar e configurar](https://developer.adobe.com/client-sdks/home/getting-started/) o SDK no Experience Platform.
 
@@ -174,4 +174,4 @@ Todos os [eventos](events.md) contêm um campo chamado `channel`. O campo `chann
 
 ## Próximas etapas
 
-Para saber como recuperar públicos-alvo da Real-Time CDP de seu aplicativo para dispositivos móveis Commerce para informar regras de preço de carrinho, blocos dinâmicos e regras de produto relacionadas, consulte [Audience Activation](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/audience-activation#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).
+Para saber como recuperar públicos-alvo da Real-Time CDP de seu aplicativo para dispositivos móveis Commerce para informar regras de preço de carrinho, blocos dinâmicos e regras de produto relacionadas, consulte [Audience Activation](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/customers/audience-activation#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).

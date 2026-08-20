@@ -2,7 +2,7 @@
 title: Pipeline de sincronização de catálogo
 description: Saiba como o pipeline de sincronização  [!DNL Adobe Commerce Optimizer Connector]  funciona, incluindo transformação de feed, agendamentos cron, controle de escopo e tratamento de erros.
 feature: Integration, Configuration
-badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
+badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
 autotag-review: '2026-06-09T16:21:52.214Z'
 TQID: 'https://experienceleague.adobe.com/EXUQzAd0I6Hnq4twzhaBZZnv0jLjeGBuTx-QgQz-5MA'
 product_v2:
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 # Pipeline de sincronização do conector
 
-Criado em [[!DNL SaaS Data Export]](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview), o **[!DNL Adobe Commerce Optimizer Connector]** mapeia os dados coletados pelos indexadores [!DNL SaaS Data Export] para o formato exigido pelo [!DNL Adobe Commerce Optimizer] [!DNL Catalog Data Ingestion API] e manipula a autenticação, o envio em lote e o controle de sincronização baseado em escopo. As seções abaixo descrevem como essa sincronização funciona.
+Criado em [[!DNL SaaS Data Export]](https://experienceleague.adobe.com/pt-br/docs/commerce/saas-data-export/overview), o **[!DNL Adobe Commerce Optimizer Connector]** mapeia os dados coletados pelos indexadores [!DNL SaaS Data Export] para o formato exigido pelo [!DNL Adobe Commerce Optimizer] [!DNL Catalog Data Ingestion API] e manipula a autenticação, o envio em lote e o controle de sincronização baseado em escopo. As seções abaixo descrevem como essa sincronização funciona.
 
 Contexto relacionado:
 
@@ -70,7 +70,7 @@ A extensão **[!DNL SaaS Data Export]** lida com a coleta de feeds e o rastreame
 
 #### Requisitos
 
-- [cron do Commerce deve estar em execução](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-39832){target="_blank"}.
+- [cron do Commerce deve estar em execução](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-39832){target="_blank"}.
 - Os indexadores de feed devem usar o modo **[!UICONTROL Update by Schedule]**. Consulte [Sincronização parcial](../data-export/sync-overview.md#partial-sync){target="_blank"}.
 
 ## Controle de sincronização baseado em escopo
@@ -93,7 +93,7 @@ Para obter detalhes sobre como personalizar o escopo de sincronização, consult
 | Falhas transitórias | Repetido a cada 5 minutos |
 | Sincronização completa ou catálogos grandes | Minutos a horas |
 
-Monitorar status por feed da página [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) no Administrador do Commerce. Consulte [Verificar se a sincronização de dados está funcionando](./data-sync-manage.md#verify-that-the-data-sync-is-working).
+Monitorar status por feed da página [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) no Administrador do Commerce. Consulte [Verificar se a sincronização de dados está funcionando](./data-sync-manage.md#verify-that-the-data-sync-is-working).
 
 ## Envio de feed e tratamento de erros
 
