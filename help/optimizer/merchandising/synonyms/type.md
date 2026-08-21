@@ -12,9 +12,9 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 393
+source-wordcount: 396
 ht-degree: 0%
 
 ---
@@ -45,4 +45,4 @@ Se nenhum sinônimo for criado e um comprador procurar por **tabela de cozinha**
 
 Depois de criar um sinônimo, o comportamento de pesquisa muda para procurar a frase exata **tabela de cozinha**. Isso pode reduzir o número de resultados, pois somente os produtos com a frase exata serão exibidos.
 
-Se quiser que os termos sejam pesquisados separadamente como antes, você pode [criar um tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide). Se houver demanda suficiente, o [!DNL Adobe Commerce Optimizer] considerará adicionar essa funcionalidade ao produto em uma versão futura.
+Se quiser que os termos sejam pesquisados separadamente como antes, você pode [criar um tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide). Se houver demanda suficiente, o [!DNL Adobe Commerce Optimizer] considerará adicionar essa funcionalidade ao produto em uma versão futura.

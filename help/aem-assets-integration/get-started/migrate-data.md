@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
-source-wordcount: 1010
+source-wordcount: 994
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ O Adobe Commerce e o Adobe Experience Manager (AEM) fornecem recursos integrados
 | **Permissões e acesso necessários** | <ul><li>Acesso de administrador ao AEM Assets as a Cloud Service</li><li>Acesso ao sistema de origem onde os arquivos de mídia são armazenados (Adobe Commerce ou sistema externo)</li><li>Permissões apropriadas para acessar serviços de armazenamento na nuvem</li></ul> |
 | **Conta de Armazenamento na Nuvem** | <ul><li>Conta de armazenamento AWS S3 ou Azure Blob</li><li>Configuração privada de container/bucket</li><li>Credenciais de autenticação</li></ul> |
 | **Conteúdo do Source** | <ul><li>Arquivos de mídia organizados prontos para migração</li><li>Arquivos de imagem e vídeo em <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/file-format-support#image-formats">formatos com suporte no AEM Assets</a>.</li><li>Ativos limpos e duplicados</li></li> |
-| **Preparação de Metadados** | <ul><li><a href="https://experienceleague.adobe.com/pt-br/docs/commerce-admin/content-design/aem-asset-management/getting-started/aem-assets-configure-aem">Perfil de metadados do AEM Assets configurado para ativos do Commerce</a></li><li>Valores de metadados mapeados para cada ativo</li><li>Editor de arquivos CSV (por exemplo, Microsoft Excel)</li></ul> |
+| **Preparação de Metadados** | <ul><li><a href="configure-aem.md">Perfil de metadados do AEM Assets configurado para ativos do Commerce</a></li><li>Valores de metadados mapeados para cada ativo</li><li>Editor de arquivos CSV (por exemplo, Microsoft Excel)</li></ul> |
 
 ## Práticas recomendadas de migração
 

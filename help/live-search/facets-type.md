@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 428
+source-wordcount: 429
 ht-degree: 0%
 
 ---
@@ -42,11 +42,11 @@ No momento da consulta, [!DNL Live Search] gera os resultados da pesquisa em gru
 
 Os aspectos renderizados para a loja [!DNL Commerce] são processados pelo adaptador de pesquisa, que roteia solicitações e renderiza os resultados na loja. Todas as facetas de vitrine do [!DNL Commerce] são classificadas alfabeticamente com opções de seleção única, independentemente do tipo de entrada atribuído ao atributo correspondente. Os aspectos disponíveis na loja são renderizados de acordo com o tema atual e refletem as personalizações feitas na apresentação da navegação em camadas.
 
-Por outro lado, as implementações [headless](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api/) são processadas pela API e oferecem suporte a opções adicionais. As facetas headless podem ser classificadas alfabeticamente ou por contagem, e podem ter opções de seleção única ou múltipla.
+Por outro lado, as implementações [headless](https://developer.adobe.com/commerce/php/architecture/technical-vision/web-api) são processadas pela API e oferecem suporte a opções adicionais. As facetas headless podem ser classificadas alfabeticamente ou por contagem, e podem ter opções de seleção única ou múltipla.
 
 ### Rótulos de facetas
 
-Para [!DNL Commerce] vitrines, o rótulo da faceta é determinado pelas [*Propriedades do Atributo*](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html?lang=pt-BR). Para lojas com vários modos de exibição, rótulos adicionais podem ser definidos em *Gerenciar Rótulos*. Para implementações headless, os rótulos são editados no [espaço de trabalho de facetamento](faceting-workspace.md).
+Para [!DNL Commerce] vitrines, o rótulo da faceta é determinado pelas [*Propriedades do Atributo*](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create). Para lojas com vários modos de exibição, rótulos adicionais podem ser definidos em *Gerenciar Rótulos*. Para implementações headless, os rótulos são editados no [espaço de trabalho de facetamento](faceting-workspace.md).
 
 ### Tipo de classificação
 

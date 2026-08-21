@@ -16,9 +16,9 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d30ce9f02c9d2217c6669e8e9a1794bbc0387128
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 2102
+source-wordcount: 2105
 ht-degree: 0%
 
 ---
@@ -358,11 +358,11 @@ Neste cenário, você tem uma loja headless ou PWA que requer uma coleção de e
 1. **Implementar coleção de eventos**:
    - Revise a [documentação de Eventos da vitrine](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search).
    - Implemente os eventos necessários:
-      - `search-request-sent`
-      - `search-response-received`
-      - `search-results-view`
-      - `product-page-view`
-      - `add-to-cart`
+     - `search-request-sent`
+     - `search-response-received`
+     - `search-results-view`
+     - `product-page-view`
+     - `add-to-cart`
    - Testar o fluxo de dados do evento para o Adobe Commerce.
 
 1. **Configurar classificação de facetas**:
@@ -458,7 +458,7 @@ O **Suporte da Adobe** pode ajudar com:
 - Implementações headless ou PWA
 - Rastreamento de evento personalizado
 
-Para contatar o Suporte da Adobe, consulte o [Guia do Usuário da Central de Ajuda](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Para contatar o Suporte da Adobe, consulte o [Guia do Usuário da Central de Ajuda](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
 
 ## Perguntas frequentes
 

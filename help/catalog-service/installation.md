@@ -15,9 +15,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 last-update: 2026-07-29
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 971
+source-wordcount: 966
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Para solicitar e receber dados do produto de uma instância do Commerce usando a
 >
 >Se você estiver usando o Adobe Commerce as a Cloud Service, a versão mais recente do metapackage estará disponível em seu ambiente. Para começar a usar os serviços, consulte [Introdução ao Serviço de Catálogo](get-started.md).
 >
->Para implementações de vitrine da Commerce usando o Adobe Commerce Optimizer, consulte o [Guia do Desenvolvedor de Serviços de Merchandising para o Adobe Commerce Optimizer](https://developer-stage.adobe.com/commerce/services/optimizer/).
+>Para implementações de vitrine da Commerce usando o Adobe Commerce Optimizer, consulte o [Guia do Desenvolvedor de Serviços de Merchandising para o Adobe Commerce Optimizer](https://developer.adobe.com/commerce/services/optimizer/).
 
 
 ## Requisitos do sistema
@@ -91,7 +91,7 @@ Use este método para instalar o [!DNL Catalog Service] para uma instância do C
 
    >[!NOTE]
    >
-   >Para obter informações sobre o gerenciamento local de ambientes de projeto do Commerce, consulte [Gerenciamento de ramificações com a CLI](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/develop/cli-branches) no _Guia do Usuário do Adobe Commerce na Infraestrutura da Nuvem_.
+   >Para obter informações sobre o gerenciamento local de ambientes de projeto do Commerce, consulte [Gerenciamento de ramificações com a CLI](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/cli-branches) no _Guia do Usuário do Adobe Commerce na Infraestrutura da Nuvem_.
 
 1. Confira a ramificação de ambiente para atualizar usando a CLI da Adobe Commerce Cloud.
 
@@ -173,7 +173,7 @@ Para integrar o serviço de Catálogo à sua instância do Adobe Commerce depois
 
 Para garantir que a exportação de catálogo esteja sendo executada corretamente:
 
-- [Confirme se os trabalhos cron estão em execução](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
+- [Confirme se os trabalhos cron estão em execução](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-39832).
 - Verifique se os indexadores estão sendo executados do [Admin](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/index-management) ou usando o comando `bin/magento indexer:info` da CLI do Commerce.
 - Verifique se os indexadores `Catalog Attributes Feed, Product Feed, Product Overrides Feed` e `Product Variant Feed` estão definidos como `Update by Schedule`.
 

@@ -15,9 +15,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
-source-wordcount: 372
+source-wordcount: 363
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Você pode integrar o [!DNL Product Recommendations] em uma loja headless usando
 
 Os integradores personalizados e headless devem consultar essas instruções do Luma e do PWA como uma implementação sugerida. Há muitas maneiras de implementar as Recomendações de produto em soluções headless e esta documentação não aborda todos os cenários. Os integradores devem cobrir o evento, o design e o teste de suas implementações.
 
-[!DNL Product Recommendations] requer [dados comportamentais e de catálogo](https://experienceleague.adobe.com/docs/commerce/product-recommendations/developer/development-overview.html?lang=pt-BR) para operar. O processo de sincronização de dados de catálogo permanece inalterado em uma implementação headless, mas são necessárias alterações para a coleta de dados comportamentais.
+[!DNL Product Recommendations] requer [dados comportamentais e de catálogo](development-overview.md) para operar. O processo de sincronização de dados de catálogo permanece inalterado em uma implementação headless, mas são necessárias alterações para a coleta de dados comportamentais.
 
 >[!NOTE]
 >

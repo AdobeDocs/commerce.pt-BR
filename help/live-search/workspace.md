@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 015f88e540fe5bf7acc4469d7c91b4f606709809
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 2318
+source-wordcount: 2323
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Se você for um cliente da área de saúde e tiver instalado a [extensão HIPAA 
 
 ## Definir o escopo
 
-Inicialmente, o [escopo](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=pt-BR#scope-settings) de todas as configurações de [!DNL Live Search] está definido como `Default Store View`. Se a instalação do [!DNL Commerce] incluir vários modos de exibição de repositório, defina o **Escopo** como [modo de exibição de repositório](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=pt-BR) ao qual as configurações das facetas se aplicam.
+Inicialmente, o [escopo](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) de todas as configurações de [!DNL Live Search] está definido como `Default Store View`. Se a instalação do [!DNL Commerce] incluir vários modos de exibição de repositório, defina o **Escopo** como [modo de exibição de repositório](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/setup/websites-stores-views) ao qual as configurações das facetas se aplicam.
 
 ## Opções de Menu
 
@@ -61,7 +61,7 @@ Inicialmente, o [escopo](https://experienceleague.adobe.com/docs/commerce-admin/
 
 ## Definir atributos como pesquisáveis
 
-Para produzir resultados altamente direcionados, revise o conjunto de atributos de produto [pesquisáveis](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=pt-BR) (`searchable=true`). Para garantir relevância, torne os atributos pesquisáveis somente se eles tiverem conteúdo com significado claro e conciso. Evite usar atributos que contenham texto menos preciso e longo, como `description`, que, embora habilitado para pesquisa por padrão, pode reduzir a precisão dos resultados da pesquisa. Por exemplo, se uma pessoa procurar por &quot;shorts&quot; e houver camisas com uma descrição que inclua o termo &quot;mangas curtas&quot;, as camisas serão incluídas nos resultados da pesquisa.
+Para produzir resultados altamente direcionados, revise o conjunto de atributos de produto [pesquisáveis](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/product-attributes/product-attributes) (`searchable=true`). Para garantir relevância, torne os atributos pesquisáveis somente se eles tiverem conteúdo com significado claro e conciso. Evite usar atributos que contenham texto menos preciso e longo, como `description`, que, embora habilitado para pesquisa por padrão, pode reduzir a precisão dos resultados da pesquisa. Por exemplo, se uma pessoa procurar por &quot;shorts&quot; e houver camisas com uma descrição que inclua o termo &quot;mangas curtas&quot;, as camisas serão incluídas nos resultados da pesquisa.
 
 Para permitir que os atributos sejam pesquisáveis, conclua as seguintes etapas:
 
@@ -69,7 +69,7 @@ Para permitir que os atributos sejam pesquisáveis, conclua as seguintes etapas:
 1. Selecione o atributo que você deseja pesquisar, como `color`.
 1. Selecione **Propriedades da vitrine** e defina **Usar na Pesquisa** como `yes`.
 
-[!DNL Live Search] também respeita o [peso](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html?lang=pt-BR#weighted-search) de um atributo de produto, conforme definido no Adobe Commerce. Atributos com um peso maior aparecerão mais altos nos resultados da pesquisa.
+[!DNL Live Search] também respeita o [peso](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search) de um atributo de produto, conforme definido no Adobe Commerce. Atributos com um peso maior aparecerão mais altos nos resultados da pesquisa.
 
 Os seguintes atributos são sempre pesquisáveis:
 
@@ -104,21 +104,21 @@ Os recursos de pesquisa avançada são implementados por meio do parâmetro `fil
 
 - **Pesquisa em camadas** - Pesquisar em outro contexto de pesquisa - Com esse recurso, você pode realizar até duas camadas de pesquisa para suas consultas de pesquisa. Por exemplo:
 
-   - **Pesquisa de Camada 1** - Pesquise por &quot;motor&quot; em `product_attribute_1`.
-   - **Pesquisa de camada 2** - Pesquise por &quot;número de peça 123&quot; em `product_attribute_2`. Este exemplo procura por &quot;número de peça 123&quot; nos resultados por &quot;motor&quot;.
+  - **Pesquisa de Camada 1** - Pesquise por &quot;motor&quot; em `product_attribute_1`.
+  - **Pesquisa de camada 2** - Pesquise por &quot;número de peça 123&quot; em `product_attribute_2`. Este exemplo procura por &quot;número de peça 123&quot; nos resultados por &quot;motor&quot;.
 
   A pesquisa em camadas está disponível para a indexação de pesquisa `startsWith` e a indexação de pesquisa `contains` na segunda camada da pesquisa em camadas, conforme descrito abaixo:
 
 - **startsWith indexação de pesquisa** - Pesquisar usando a indexação `startsWith`. Esse novo recurso permite:
 
-   - Procurando produtos em que o valor do atributo começa com uma string especificada.
-   - Configurar uma pesquisa &quot;termina com&quot; para que os compradores possam pesquisar produtos em que o valor do atributo termina com uma determinada string. Para habilitar uma pesquisa &quot;termina com&quot;, o atributo de produto precisa ser assimilado na ordem inversa, e a chamada de API também deve ser uma sequência invertida. Por exemplo, se você deseja procurar um nome de produto que termine com &quot;calças&quot;, é necessário enviá-lo como &quot;stnap&quot;.
+  - Procurando produtos em que o valor do atributo começa com uma string especificada.
+  - Configurar uma pesquisa &quot;termina com&quot; para que os compradores possam pesquisar produtos em que o valor do atributo termina com uma determinada string. Para habilitar uma pesquisa &quot;termina com&quot;, o atributo de produto precisa ser assimilado na ordem inversa, e a chamada de API também deve ser uma sequência invertida. Por exemplo, se você deseja procurar um nome de produto que termine com &quot;calças&quot;, é necessário enviá-lo como &quot;stnap&quot;.
 
 - **contém a indexação de pesquisa** - Pesquise um atributo usando a indexação contains. Esse novo recurso permite:
 
-   - Procurando uma consulta em uma cadeia de caracteres maior. Por exemplo, se um comprador procurar o número de produto &quot;PE-123&quot; na cadeia de caracteres &quot;HAPE-123&quot;.
+  - Procurando uma consulta em uma cadeia de caracteres maior. Por exemplo, se um comprador procurar o número de produto &quot;PE-123&quot; na cadeia de caracteres &quot;HAPE-123&quot;.
 
-      - Observação: este tipo de pesquisa é diferente da [pesquisa de frase](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase) existente, que executa uma pesquisa de preenchimento automático. Por exemplo, se o valor do atributo do seu produto for &quot;calças de ar livre&quot;, uma pesquisa de frase retornará uma resposta para &quot;fora da panela&quot;, mas não retornará uma resposta para &quot;ou formigas&quot;. A contém busca, no entanto, retorna uma resposta para &quot;ou formigas&quot;.
+    - Observação: este tipo de pesquisa é diferente da [pesquisa de frase](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#phrase) existente, que executa uma pesquisa de preenchimento automático. Por exemplo, se o valor do atributo do seu produto for &quot;calças de ar livre&quot;, uma pesquisa de frase retornará uma resposta para &quot;fora da panela&quot;, mas não retornará uma resposta para &quot;ou formigas&quot;. A contém busca, no entanto, retorna uma resposta para &quot;ou formigas&quot;.
 
 Essas novas condições aprimoram o mecanismo de filtragem de consultas de pesquisa para refinar os resultados da pesquisa. Essas novas condições não afetam a consulta de pesquisa principal.
 
@@ -203,7 +203,7 @@ Os preços na Página de listagem de produtos do widget e Popover são convertid
 
 ## Valores de atributo padrão
 
-Os seguintes atributos de produto têm [propriedades de vitrine](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html?lang=pt-BR) que são usadas por [!DNL Live Search] e habilitadas por padrão.
+Os seguintes atributos de produto têm [propriedades de vitrine](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/product-attributes/product-attributes) que são usadas por [!DNL Live Search] e habilitadas por padrão.
 
 | Propriedade | Propriedade da vitrine | Atributo |
 |---|---|---|

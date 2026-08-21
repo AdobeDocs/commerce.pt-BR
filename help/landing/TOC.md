@@ -6,9 +6,9 @@ role: Admin, Leader, User
 feature: Integration, Personalization, Services, Saas
 recommendations: noDisplay
 badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
-source-git-commit: 08581e17d291b1900ff8826a36edeaf97a9c0d3c
+source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '162'
 ht-degree: 12%
 
 ---
@@ -17,20 +17,20 @@ ht-degree: 12%
 
 - [Visão geral](home.md)
 - Informações da versão {#release-information}
-   - [Notas de versão](/help/landing/release-notes-all.md)
+  - [Notas de versão](/help/landing/release-notes-all.md)
 - {hide-from-toc}[Soluções do produto](product-solutions.md)
 - Serviços da Commerce {#commerce-services}
-   - [[!DNL AEM Assets Integration]](https://experienceleague.adobe.com/pt-br/docs/commerce/aem-assets-integration/overview)
-   - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce/live-search/overview.html?lang=pt-BR)
-   - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce/product-recommendations/guide-overview.html?lang=pt-BR)
-   - [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/commerce/catalog-service/guide-overview.html?lang=pt-BR)
-   - [[!DNL Payment Services]](https://experienceleague.adobe.com/docs/commerce/payment-services/guide-overview.html?lang=pt-BR)
+  - [[!DNL AEM Assets Integration]](https://experienceleague.adobe.com/pt-br/docs/commerce/aem-assets-integration/overview)
+  - [[!DNL Live Search]](https://experienceleague.adobe.com/pt-br/docs/commerce/live-search/overview)
+  - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/pt-br/docs/commerce/product-recommendations/guide-overview)
+  - [[!DNL Catalog Service]](https://experienceleague.adobe.com/pt-br/docs/commerce/catalog-service/guide-overview)
+  - [[!DNL Payment Services]](https://experienceleague.adobe.com/pt-br/docs/commerce/payment-services/guide-overview)
 - Serviços de integração {#integration-services}
-   - [[!DNL Adobe Commerce Optimizer Connector]](https://experienceleague.adobe.com/pt-br/docs/commerce/aco-optimizer-connector/overview)
-   - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce/data-connection/overview.html?lang=pt-BR)
-   - [[!DNL App Management]](https://experienceleague.adobe.com/pt-br/docs/commerce/app-management/overview)
-   - [Conector de serviços](/help/landing/saas.md)
+  - [[!DNL Adobe Commerce Optimizer Connector]](https://experienceleague.adobe.com/pt-br/docs/commerce/aco-optimizer-connector/overview)
+  - [[!DNL Data Connection]](https://experienceleague.adobe.com/pt-br/docs/commerce/data-connection/overview)
+  - [[!DNL App Management]](https://experienceleague.adobe.com/pt-br/docs/commerce/app-management/overview)
+  - [Conector de serviços](/help/landing/saas.md)
 - Ferramentas de dados {#data-services}
-   - [Exportação de dados SaaS](https://experienceleague.adobe.com/docs/commerce/saas-data-export/overview.html?lang=pt-BR)
-   - [Indexação de preços SaaS](https://experienceleague.adobe.com/docs/commerce/price-indexer/price-indexing.html?lang=pt-BR)
-   - [Sincronização de catálogo](/help/landing/catalog-sync.md)
+  - [Exportação de dados SaaS](https://experienceleague.adobe.com/pt-br/docs/commerce/saas-data-export/overview)
+  - [Indexação de preços SaaS](https://experienceleague.adobe.com/pt-br/docs/commerce/price-indexer/price-indexing)
+  - [Sincronização de catálogo](/help/landing/catalog-sync.md)

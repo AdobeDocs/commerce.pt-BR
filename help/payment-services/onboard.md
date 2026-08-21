@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
 feature: Payments, Checkout, Integration, Paas, Saas
-source-git-commit: 14c4178338859d55a7391139033d51d1aa6f7678
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -110,8 +110,8 @@ Este diagrama de fluxo mostra o processo geral de habilitação do [!DNL Payment
 
 >[!MORELIKETHIS]
 >
-> * [Solução de problemas [!DNL Payment Services] instalação](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=pt-BR)
-> * [Conta de sandbox do PayPal não verificada](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html?lang=pt-BR)
-> * [Dados do relatório [!DNL Payment Services] atrasados](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html?lang=pt-BR)
-> * [Falha no cartão de crédito de teste com PayPal ao processar pagamentos em um ambiente de Sandbox](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=pt-BR)
+> * [Solução de problemas [!DNL Payment Services] instalação](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-26826)
+> * [Conta de sandbox do PayPal não verificada](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-26836)
+> * [Dados do relatório [!DNL Payment Services] atrasados](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-26837)
+> * [Falha no cartão de crédito de teste com PayPal ao processar pagamentos em um ambiente de Sandbox](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-26825)
 > * [Desabilitar a [!DNL Payment Services] extensão](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure-store/extensions#manage-extensions-1)

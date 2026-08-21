@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: f7ea996f3adcd3beb2a9c064ce57d251f49ae5b3
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 1195
+source-wordcount: 1201
 ht-degree: 1%
 
 ---
@@ -121,10 +121,10 @@ Se você não enviar uma consulta de pesquisa para os dados do catálogo no ambi
 
 ### Ambiente de teste inativo
 
-Para reativar os dados do catálogo no ambiente de teste, [envie uma solicitação de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) com o título: &quot;Reativar [!DNL Live Search]&quot; e incluir as IDs de ambiente. Os dados do catálogo no ambiente de teste devem ser restaurados em algumas horas.
+Para reativar os dados do catálogo no ambiente de teste, [envie uma solicitação de suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page) com o título: &quot;Reativar [!DNL Live Search]&quot; e incluir as IDs de ambiente. Os dados do catálogo no ambiente de teste devem ser restaurados em algumas horas.
 
 ### Catálogo vazio
 
 Se o ambiente tiver um catálogo vazio 45 dias após a criação, os dados do catálogo serão definidos para o modo de hibernação e nenhum dado será retornado para nenhuma consulta de pesquisa. Isso inclui ambientes de produção e teste.
 
-Para reativar os dados do catálogo em seu ambiente, [envie uma solicitação de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) com o título: &quot;Reativar [!DNL Live Search]&quot; e inclua as IDs de ambiente. Os dados do catálogo em seu ambiente devem ser restaurados em algumas horas.
+Para reativar os dados do catálogo em seu ambiente, [envie uma solicitação de suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page) com o título: &quot;Reativar [!DNL Live Search]&quot; e inclua as IDs de ambiente. Os dados do catálogo em seu ambiente devem ser restaurados em algumas horas.

@@ -18,9 +18,9 @@ role_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 1007
+source-wordcount: 1010
 ht-degree: 0%
 
 ---
@@ -98,8 +98,8 @@ Neste exemplo, os valores `status` fornecem informações sobre a operação de 
 - **`"Progress 2/5"`** indica que 2 de 5 iterações foram concluídas. O número de iterações depende do número de entidades exportadas.
 - **`"processed: 200"`** indica que 200 itens foram processados.
 - **`"synced: 100"`** indica que 100 itens foram enviados para SaaS. Espera-se que `"synced"` não seja igual a `"processed"`. Veja um exemplo:
-   - **`"synced" < "processed"`** significa que a tabela de feed não detectou alterações no item em comparação à versão sincronizada anteriormente. Esses itens são ignorados durante a operação de sincronização.
-   - **`"synced" > "processed"`** a mesma id de entidade (por exemplo, `Product ID`) pode ter vários valores em escopos diferentes. Por exemplo, um produto pode ser atribuído a cinco sites. Nesse caso, você pode ter &quot;1 item processado&quot; e &quot;5 itens sincronizados&quot;.
+  - **`"synced" < "processed"`** significa que a tabela de feed não detectou alterações no item em comparação à versão sincronizada anteriormente. Esses itens são ignorados durante a operação de sincronização.
+  - **`"synced" > "processed"`** a mesma id de entidade (por exemplo, `Product ID`) pode ter vários valores em escopos diferentes. Por exemplo, um produto pode ser atribuído a cinco sites. Nesse caso, você pode ter &quot;1 item processado&quot; e &quot;5 itens sincronizados&quot;.
 
 +++ **Exemplo: Log de ressincronização completo para o feed de preço**
 
@@ -148,7 +148,7 @@ Se os dados estiverem ausentes ou incorretos nos serviços da Commerce, verifiqu
 - O log de erros de Exportação de Dados (`commerce-data-export-errors.log`) captura erros que ocorrem durante a fase de coleta.
 - O log de erros de exportação SaaS (`saas-export-errors.log`) captura os erros que ocorrem durante a fase de transmissão.
 
-Se você vir erros não relacionados à configuração ou a extensões de terceiros, envie um [tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) com o máximo de informações possível.
+Se você vir erros não relacionados à configuração ou a extensões de terceiros, envie um [tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) com o máximo de informações possível.
 
 ### Resolver problemas de sincronização do catálogo {#resolvesync}
 

@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 2362159cd352d812f60838b42ade1e98bab5a0d3
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 1395
+source-wordcount: 1404
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Esse caso de uso específico se concentra na criação de um email de carrinho a
 
 ### O que é o Adobe Journey Optimizer?
 
-O [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/get-started.html?lang=pt-BR) ajuda a personalizar a experiência de comércio para seus compradores. Por exemplo, você pode usar o Journey Optimizer para criar e entregar campanhas de marketing programadas, como promoções semanais para uma loja de varejo, ou gerar um email de carrinho abandonado se um cliente tiver adicionado um produto a um carrinho, mas não concluído o processo de finalização.
+O [Adobe Journey Optimizer](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/get-started/essentials/get-started) ajuda a personalizar a experiência de comércio para seus compradores. Por exemplo, você pode usar o Journey Optimizer para criar e entregar campanhas de marketing programadas, como promoções semanais para uma loja de varejo, ou gerar um email de carrinho abandonado se um cliente tiver adicionado um produto a um carrinho, mas não concluído o processo de finalização.
 
 Neste tópico, você aprenderá a criar um email de carrinho abandonado ouvindo um evento `checkout` gerado da sua instância [!DNL Commerce] e respondendo a esse evento no Journey Optimizer.
 
@@ -96,7 +96,7 @@ Crie um usuário em seu ambiente de sandbox e confirme se as informações da co
 
 No ambiente de sandbox do [!DNL Commerce], acione eventos na loja visualizando páginas de produto, adicionando itens ao carrinho e concluindo várias outras atividades que um comprador realizaria. Em seguida, confirme se esses eventos estão fluindo para o Journey Optimizer.
 
-1. Iniciar [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html?lang=pt-BR).
+1. Iniciar [Adobe Journey Optimizer](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/get-started/work-efficiently/user-interface).
 1. Selecione **[!UICONTROL Profiles]**.
 1. Defina **[!UICONTROL Identity namespace]** como `Email`.
 1. Defina o **[!UICONTROL Identity value]** como seu endereço de email.
@@ -125,7 +125,7 @@ Configure dois eventos no Journey Optimizer: um evento escuta o evento `commerce
 
 ### Criar um evento de ouvinte
 
-1. Iniciar [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer/using/get-started/user-interface.html?lang=pt-BR).
+1. Iniciar [Adobe Journey Optimizer](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/get-started/work-efficiently/user-interface).
 
 1. Clique em **[!UICONTROL Configurations]** na seção **[!UICONTROL Administration]** do painel esquerdo.
 
@@ -198,7 +198,7 @@ Crie um email de carrinho abandonado que é enviado quando um carrinho abandonad
 
 1. Na jornada criada acima, clique duas vezes no ícone **[!UICONTROL Email]** na tela.
 
-1. Siga as [etapas](https://experienceleague.adobe.com/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions.html?lang=pt-BR#configure-email) do guia do Journey Optimizer para criar o email de carrinho abandonado.
+1. Siga as [etapas](https://experienceleague.adobe.com/pt-br/docs/journey-optimizer/using/content-management/personalization/personalization-use-cases/personalization-use-case-helper-functions#configure-email) do guia do Journey Optimizer para criar o email de carrinho abandonado.
 
 Agora você tem uma jornada no Journey Optimizer que escuta o evento `commerce.checkouts` do seu armazenamento [!DNL Commerce] e um email de carrinho abandonado que é enviado após um período. A próxima seção mostra como testar a jornada.
 

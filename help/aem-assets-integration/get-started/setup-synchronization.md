@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 0c2e50338cbf286704239b6d1f628180e85a3bef
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 965
+source-wordcount: 966
 ht-degree: 2%
 
 ---
@@ -80,7 +80,7 @@ Antes de configurar a Integração do AEM Assets, verifique se você concluiu as
 1. Selecione uma das regras de correspondência de ativos para sincronização de ativos na lista suspensa **[!UICONTROL Asset matching rule]**.
 
    * Selecione **[!UICONTROL Match by SKU]** para [correspondência automática padrão](../synchronize/default-match.md),
-   * Selecione **[!UICONTROL Custom match]** para [correspondência automática personalizada](../synchronize/custom-match.md) (requer [Adobe Developer App Builder](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/adobe-developer-app-builder/introduction-to-app-builder).)
+   * Selecione **[!UICONTROL Custom match]** para [correspondência automática personalizada](../synchronize/custom-match.md) (requer [Adobe Developer App Builder](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder).)
 
 1. Adicione o [nome do campo de metadados do AEM Assets](configure-aem.md#define-the-metadata-profile) definido para SKUs de produtos Commerce no campo **[!UICONTROL Match by product SKU attribute name]**, `commerce:skus` por padrão.
 

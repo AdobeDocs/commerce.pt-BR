@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 413d0932d402615c9e155e1650a7c8aba2c082a1
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
-source-wordcount: 1522
+source-wordcount: 1506
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ _28 de maio de 2026_
 ![Correção](../assets/fix.svg) **Árvores de navegação completas**—As categorias descendentes marcadas agora são incluídas corretamente nas árvores `navigation` filtradas por família quando existe um nó intermediário não marcado no caminho. Essa correção garante que os compradores vejam todas as categorias relevantes na navegação, facilitando a navegação e a descoberta de itens.
 <!--DATA-7183-->
 
-![Correção](../assets/fix.svg) **Tratamento de espaçador vazio em `categoryTree` solicitações**—Correção de um problema em que a consulta [`categoryTree`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) retornava um erro de servidor interno quando o argumento `slugs` incluía uma cadeia de caracteres vazia. Valores de espaçador vazios agora são ignorados, de modo que as frentes de loja e as integrações continuam a resolver dados de categoria sem solicitações com falha.
+![Correção](../assets/fix.svg) **Tratamento de espaçador vazio em `categoryTree` solicitações**—Correção de um problema em que a consulta [`categoryTree`](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree) retornava um erro de servidor interno quando o argumento `slugs` incluía uma cadeia de caracteres vazia. Valores de espaçador vazios agora são ignorados, de modo que as frentes de loja e as integrações continuam a resolver dados de categoria sem solicitações com falha.
 <!--DATA-7184-->
 
 ![Corrigir](../assets/fix.svg) **`searchCategory`solicitações retornam resultados em ordem alfabética, que não diferenciam maiúsculas de minúsculas**—A consulta `searchCategory` agora classifica os resultados de pesquisa em ordem alfabética, sem diferenciação entre maiúsculas e minúsculas, garantindo uma ordem consistente e previsível. As categorias com prefixos mais curtos aparecem primeiro quando os nomes são idênticos.
@@ -153,7 +153,7 @@ _7 de abril, 2026_
 
 <!--v1.50 release-->
 
-**Pesquisas de categoria mais simples** — A consulta [categoryTree](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) trata `family` como opcional, para que você possa resolver categorias por slug sem fornecer uma família.
+**Pesquisas de categoria mais simples** — A consulta [categoryTree](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree) trata `family` como opcional, para que você possa resolver categorias por slug sem fornecer uma família.
 
 {{aco-release}}
 
@@ -191,13 +191,13 @@ _19 de fevereiro de 2026_
 
 <!--v1.48-->
 
-**Conteúdo de categoria mais avançada para vitrines** — A consulta [categoryTree](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#query-categoryTree) agora retorna descrições, imagens e metatags de SEO, para que vitrines possam renderizar páginas de categoria mais avançadas.<!--DATA-6933-->
+**Conteúdo de categoria mais avançada para vitrines** — A consulta [categoryTree](https://developer.adobe.com/commerce/services/reference/graphql/#categorytree) agora retorna descrições, imagens e metatags de SEO, para que vitrines possam renderizar páginas de categoria mais avançadas.<!--DATA-6933-->
 
 _12 de fevereiro de 2026_
 
 <!--v1.49-->
 
-**Dados aprimorados do produto por categoria** — a API do GraphQL adiciona o tipo [`CategoryProductView`](https://developer.adobe.com/commerce/services/graphql-api/merchandising-api/index.html#definition-CategoryProductView){target="blank"} para que você possa consultar e filtrar produtos por categoria com menos viagens de ida e volta.
+**Dados aprimorados do produto por categoria** — a API do GraphQL adiciona o tipo [`CategoryProductView`](https://developer.adobe.com/commerce/services/reference/graphql/#categoryproductview){target="blank"} para que você possa consultar e filtrar produtos por categoria com menos viagens de ida e volta.
 
 {{aco-release}}
 

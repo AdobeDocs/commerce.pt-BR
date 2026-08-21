@@ -15,9 +15,9 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 919
+source-wordcount: 921
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Se você estiver usando uma loja headless, consulte a seguinte documentação pa
 
 ## Definir o escopo
 
-Inicialmente, o [escopo](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=pt-BR) de todas as configurações de recomendação está definido como `Default Store View`. Se a instalação do Commerce incluir vários modos de exibição de armazenamento, defina o **Escopo** como [modo de exibição de armazenamento](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=pt-BR#scope-settings) ao qual as recomendações se aplicam.
+Inicialmente, o [escopo](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/setup/websites-stores-views) de todas as configurações de recomendação está definido como `Default Store View`. Se a instalação do Commerce incluir vários modos de exibição de armazenamento, defina o **Escopo** como [modo de exibição de armazenamento](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) ao qual as recomendações se aplicam.
 
 ## Definir intervalo de datas das métricas
 

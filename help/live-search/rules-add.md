@@ -12,9 +12,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 657c4b3123407580dfeb2c021a5a1ba515e82115
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 2547
+source-wordcount: 2561
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Para criar uma regra, a primeira etapa é usar o editor de regras para definir a
 ## Adicionar uma regra
 
 1. No Administrador, vá para **Marketing** > SEO e pesquisa > **[!DNL Live Search]**.
-1. Defina o **Escopo** para identificar a [exibição de repositório](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=pt-BR#scope-settings) onde a regra se aplica.
+1. Defina o **Escopo** para identificar a [exibição de repositório](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) onde a regra se aplica.
 1. Clique no espaço de trabalho **Pesquisar Merchandising**.
 1. Clique em **Adicionar regra** para iniciar o editor de regras.
 
@@ -136,8 +136,8 @@ Para **regras de pesquisa** (e a consulta de teste no editor de regras), a class
 
 * **Relevância textual**: o fator dominante na pontuação. Isso mede o nível de correspondência entre o nome, a descrição e os atributos de um produto e a consulta de pesquisa. A pontuação de relevância do texto é ilimitada (não tem limite superior específico) e é influenciada por fatores como:
 
-   * Frequência de ocorrência de palavras correspondentes.
-   * Comprimento (por palavras) dos nomes/descrições dos produtos.
+  * Frequência de ocorrência de palavras correspondentes.
+  * Comprimento (por palavras) dos nomes/descrições dos produtos.
 
 * **Sinais comportamentais**: um aumento limitado aplicado sobre a pontuação de relevância do texto. Ao selecionar uma estratégia de classificação inteligente como &quot;Mais visualizados&quot; ou &quot;Mais comprados&quot;, os produtos com sinais comportamentais mais altos recebem um peso relativo maior. A força desse peso é controlada por **[!UICONTROL Intelligent Ranking Boost]** (consulte [Aumento inteligente de classificação](#intelligent-ranking-boost)); o aumento permanece limitado, mas você pode aumentar o quanto ele altera a ordem.
 
@@ -164,11 +164,11 @@ Consulte [regras de pesquisa](./best-practice.md#search-rules) para saber como m
 * Apóstrofos e citações em queries podem levar a alguns problemas menores com classificação e relevância em alguns idiomas.
 * Para garantir que a classificação inteligente funcione corretamente, verifique se o **Peso da Pesquisa** para qualquer atributo de produto usado para pesquisa ou filtragem (facetas) é `5` ou menos. Para localizar esta configuração no [!DNL Commerce] Admin:
 
-   1. Selecione **Lojas** > _Atributos_ > **Produto**.
-   1. Procure o atributo, como &quot;nome&quot;.
-   1. Na página **Informações do Atributo** > **Propriedades da vitrine**, defina o peso da pesquisa como menor ou igual a `5`.
+  1. Selecione **Lojas** > _Atributos_ > **Produto**.
+  1. Procure o atributo, como &quot;nome&quot;.
+  1. Na página **Informações do Atributo** > **Propriedades da vitrine**, defina o peso da pesquisa como menor ou igual a `5`.
 
-      ![Produto - Peso de Pesquisa](assets/set-search-weight.png)
+     ![Produto - Peso de Pesquisa](assets/set-search-weight.png)
 
 >[!NOTE]
 >

@@ -22,7 +22,7 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
 workflow-type: tm+mt
 source-wordcount: 1183
 ht-degree: 0%
@@ -35,7 +35,7 @@ Baseado na tecnologia App Builder da Adobe, o [!DNL Commerce Optimizer Salesforc
 
 Pronto para uso, o conector oferece recursos confiáveis de sincronização de dados e a flexibilidade para personalizar workflows de acordo com as necessidades da sua empresa.
 
-Para obter uma série completa de tutoriais em vídeo, consulte [Saiba mais sobre o kit de início de nuvem do Salesforce Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/adobe-commerce-optimizer/sfcc-starter-kit/overview).
+Para obter uma série completa de tutoriais em vídeo, consulte [Saiba mais sobre o kit de início de nuvem do Salesforce Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/adobe-commerce-optimizer/sfcc-starter-kit/overview).
 
 >[!NOTE]
 >
@@ -48,13 +48,13 @@ Para obter uma série completa de tutoriais em vídeo, consulte [Saiba mais sobr
 * **Suporta vários tipos de dados:** Sincronize produtos, preços e estruturas de catálogo para refletir configurações complexas de merchandising.
 
 * **Fluxos de Trabalho de Sincronização Flexíveis**
-   * **Sincronizações Agendadas:** Automatize atualizações usando o agendamento de trabalhos cron; não é necessário nenhum esforço manual.
-   * **Atualizações sob Demanda:** acione instantaneamente atualizações no nível de SKU para alterações, correções ou inicializações de produtos urgentes.
+  * **Sincronizações Agendadas:** Automatize atualizações usando o agendamento de trabalhos cron; não é necessário nenhum esforço manual.
+  * **Atualizações sob Demanda:** acione instantaneamente atualizações no nível de SKU para alterações, correções ou inicializações de produtos urgentes.
 
 * **Compilado para Extensibilidade**
-   * Usa pontos de extremidade personalizados [Salesforce Commerce B2C API](https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html) (SCAPI) para compatibilidade e fácil adaptação a casos de uso exclusivos ou avançados.
-   * Dimensionável de acordo com seus negócios - comece com a sincronização de catálogos e preços e, em seguida, estenda os fluxos de trabalho para oferecer suporte a integrações adicionais ou lógica de negócios.
-   * Configurar e evoluir workflows sem reconstruir as integrações principais.
+  * Usa pontos de extremidade personalizados [Salesforce Commerce B2C API](https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html) (SCAPI) para compatibilidade e fácil adaptação a casos de uso exclusivos ou avançados.
+  * Dimensionável de acordo com seus negócios - comece com a sincronização de catálogos e preços e, em seguida, estenda os fluxos de trabalho para oferecer suporte a integrações adicionais ou lógica de negócios.
+  * Configurar e evoluir workflows sem reconstruir as integrações principais.
 
 >[!NOTE]
 >

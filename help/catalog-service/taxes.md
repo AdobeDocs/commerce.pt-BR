@@ -12,16 +12,16 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 19de20caafd45e3a00896d0d4b29b7e96dfe94e1
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
-source-wordcount: 292
+source-wordcount: 289
 ht-degree: 0%
 
 ---
 
 # Exibir preços tributados com a API Mesh para Adobe Developer App Builder
 
-A [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permite que os desenvolvedores integrem APIs privadas ou de terceiros e outras interfaces com produtos da Adobe usando o Adobe I/O Runtime.
+A [API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/) permite que os desenvolvedores integrem APIs privadas ou de terceiros e outras interfaces com produtos da Adobe usando o Adobe I/O Runtime.
 
 Neste tópico, a Malha de API é usada para exibir preços de produtos em uma Página de detalhes do produto com impostos configurados em.
 
@@ -29,8 +29,8 @@ Neste tópico, a Malha de API é usada para exibir preços de produtos em uma P�
 
 É necessário ter impostos configurados para que eles sejam exibidos na Página de detalhes do produto.
 
-1. [Configurar alíquotas de imposto](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules.html?lang=pt-BR).
-1. Habilite os impostos para serem [exibidos no catálogo](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/display-settings.html?lang=pt-BR#step-1%3A-configure-catalog-prices-display-settings) e defina-os como `Including and Excluding Tax` ou `Including Tax`.
+1. [Configurar alíquotas de imposto](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/site-store/taxes/tax-rules).
+1. Habilite os impostos para serem [exibidos no catálogo](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/site-store/taxes/display-settings#step-1%3A-configure-catalog-prices-display-settings) e defina-os como `Including and Excluding Tax` ou `Including Tax`.
 
 Verifique se o Serviço de Catálogo está funcionando, marcando uma Página de detalhes do produto.
 
@@ -38,7 +38,7 @@ Verifique se o Serviço de Catálogo está funcionando, marcando uma Página de 
 
 ## Configurar API Mesh
 
-Se ainda não tiver sido feito, conecte a API Mesh com o Serviço de catálogo à sua instância. Consulte as instruções detalhadas no tópico [Introdução](https://developer.adobe.com/graphql-mesh-gateway/gateway/getting-started/) no guia do desenvolvedor do API Mesh.
+Se ainda não tiver sido feito, conecte a API Mesh com o Serviço de catálogo à sua instância. Consulte as instruções detalhadas no tópico [Introdução](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/) no guia do desenvolvedor do API Mesh.
 
 No arquivo `mesh.json`, substitua os valores `name`, `endpoint` e `x-api-key`.
 
@@ -119,7 +119,7 @@ Este arquivo de configuração `mesh.json`:
 * Estende os tipos `ComplexProductView` e `SimpleProductView` com um novo campo chamado `priceWithTaxes`.
 * Adiciona um resolvedor personalizado ao novo campo.
 
-Crie a malha com o [comando create](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/#create-a-mesh-1) com o arquivo `mesh.json`.
+Crie a malha com o [comando create](https://developer.adobe.com/graphql-mesh-gateway/mesh/basic/create-mesh) com o arquivo `mesh.json`.
 
 ### consulta do GraphQL
 

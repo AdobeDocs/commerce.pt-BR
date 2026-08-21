@@ -26,9 +26,9 @@ topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
 workflow-type: tm+mt
-source-wordcount: 1019
+source-wordcount: 1076
 ht-degree: 0%
 
 ---
@@ -229,7 +229,7 @@ A tabela a seguir compara os recursos da plataforma e os recursos de extensibili
 >Ao considerar a migração para SaaS, a Adobe recomenda:
 >
 >- Sempre que possível, mova a funcionalidade adequada para a extensibilidade fora do processo.
->- Reduza a área de superfície que requer transição.
+>- Reduza o escopo que requer transição.
 >- Considere [!DNL API Mesh] para estender a funcionalidade da API.
 >- Monitore a evolução contínua da plataforma da Adobe e as novas versões de recursos.
 >- Avaliar os requisitos de modelo de dados específicos do setor em relação às opções de extensibilidade disponíveis.

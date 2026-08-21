@@ -20,7 +20,7 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 15a99ce130efaf3a35968cfc01747fe1b6ab93c9
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: 607
 ht-degree: 0%
@@ -83,7 +83,7 @@ A biblioteca [`@adobe/aio-lib-telemetry`](https://github.com/adobe/aio-lib-telem
 
 ### Registro de API Mesh
 
-O [registro em log da API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/logging/) permite monitorar e depurar solicitações que fluem pela malha usando IDs de raio. Exporte logs em massa ou encaminhe-os para plataformas como o [!DNL New Relic] para análise centralizada.
+O [registro em log da API Mesh](https://developer.adobe.com/graphql-mesh-gateway/mesh/advanced/logging) permite monitorar e depurar solicitações que fluem pela malha usando IDs de raio. Exporte logs em massa ou encaminhe-os para plataformas como o [!DNL New Relic] para análise centralizada.
 
 ## Loja
 

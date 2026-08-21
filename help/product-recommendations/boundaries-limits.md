@@ -2,9 +2,9 @@
 title: Limites e limites
 description: Saiba mais sobre os limites do  [!DNL Product Recommendations]  para garantir que ele atenda às necessidades da sua empresa.
 role: Admin, Developer
-source-git-commit: 66830c9d950a27269aca1bda0dcc7d0d86f05647
+source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Revise os limites e limites a seguir para garantir que o [!DNL Product Recommend
 
 ## B2B
 
-- As Recomendações de produto respeitam as [permissões de categoria](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-permissions.html), os [catálogos compartilhados](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html) e os preços específicos do grupo de clientes. Os compradores veem apenas recomendações de produtos que podem ser acessados de acordo com a atribuição de segmento e catálogo. Consulte [Integração](onboarding.md).
+- As Recomendações de produto respeitam as [permissões de categoria](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/categories/category-permissions), os [catálogos compartilhados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/b2b/shared-catalogs/catalog-shared) e os preços específicos do grupo de clientes. Os compradores veem apenas recomendações de produtos que podem ser acessados de acordo com a atribuição de segmento e catálogo. Consulte [Integração](onboarding.md).
 
 ## Dados e disponibilidade
 
@@ -63,4 +63,4 @@ Revise os limites e limites a seguir para garantir que o [!DNL Product Recommend
 
 ## Solução de problemas
 
-Para obter ajuda com a sincronização do catálogo, com a não exibição de recomendações ou com outros problemas comuns, pesquise a [Base de Dados de Conhecimento Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/overview) ou contate o [suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).
+Para obter ajuda com a sincronização do catálogo, com a não exibição de recomendações ou com outros problemas comuns, pesquise a [Base de Dados de Conhecimento Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/overview) ou contate o [suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).

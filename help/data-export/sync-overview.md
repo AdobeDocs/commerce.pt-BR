@@ -22,9 +22,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ef1a9efc579d8d21c145e6981235489a2e4ea203
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 907
+source-wordcount: 921
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Depois de conectar uma instância do Adobe Commerce ao Commerce Service, execute
 Com a sincronização parcial, a exportação de dados SaaS envia automaticamente as atualizações do aplicativo Commerce, como alterações de nome de produto ou atualizações de preço, para os serviços de comércio conectados.
 Para que a sincronização parcial funcione, o aplicativo Commerce requer a seguinte configuração:
 
-- [O agendamento de tarefas é habilitado através de trabalhos cron](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=pt-BR)
+- [O agendamento de tarefas é habilitado através de trabalhos cron](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/next-steps/configuration)
 - Todos os indexadores de exportação de dados SaaS estão configurados no modo `Update by Schedule`.
 
 ### Repetir sincronização de itens com falha {#retry-failed-items-sync}
@@ -103,7 +103,7 @@ Os grupos cron a seguir automatizam o pipeline em uma programação fixa.
 | `index` | `indexer_reindex_all_invalid` | Executa uma ressincronização completa para índices de feed marcados como &quot;Reindexação necessária&quot; | A cada 1 minuto |
 | `resync_failed_feeds_data_exporter` | `*_resend_failed_items` | Detecta itens de feed com falha e os reenvia | A cada 5 minutos |
 | `commerce_data_export` | `saas_data_exporter` | Envia dados para feeds do modo herdado (pedidos, escopos) | A cada 5 minutos |
-| `commerce_data_export` | `cleanup_deleted_feed_items` | Limpa itens de feed excluídos sincronizados após o período de retenção (7 dias) | Todos os dias às 2:00 AM |
+| `commerce_data_export` | `cleanup_deleted_feed_items` | Limpa itens de feed excluídos sincronizados após o período de retenção (7 dias) | Todos os dias às 2:00 |
 
 ## Envio de feed e tratamento de erros HTTP {#feed-submission-and-http-error-handling}
 

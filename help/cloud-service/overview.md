@@ -36,9 +36,9 @@ topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: c5b10a715f64a220fc965328a7c913951d44dedc
+source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
 workflow-type: tm+mt
-source-wordcount: 1461
+source-wordcount: 1456
 ht-degree: 0%
 
 ---
@@ -98,13 +98,13 @@ Este diagrama ilustra o fluxo de dados entre o [!DNL Adobe Commerce as a Cloud S
 
 Para criar experiências ricas em minutos com criação simples baseada em documentos ou edição visual com [!DNL Storefront Builder], use o [[!DNL Commerce Storefront]](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR) da Adobe viabilizado por [!DNL Edge Delivery Services].
 
-O [!DNL Commerce Storefront] é totalmente headless com uma arquitetura dissociada que fornece todos os serviços e dados de merchandising por meio de uma camada de API do GraphQL. Essa arquitetura permite que as equipes desenvolvam seus front-ends independentemente da Commerce Foundation, fornecendo agilidade para criar e testar novos pontos de contato com tecnologias emergentes.
+O [!DNL Commerce Storefront] é totalmente headless com uma arquitetura dissociada que fornece todos os serviços e dados da Adobe Merchandising por meio de uma camada de API do GraphQL. Essa arquitetura permite que as equipes desenvolvam seus front-ends independentemente da Commerce Foundation, fornecendo agilidade para criar e testar novos pontos de contato com tecnologias emergentes.
 
 >[!NOTE]
 >
->[!DNL Adobe Commerce as a Cloud Service] não dá suporte a vitrines Luma. Se você estiver migrando do Adobe Commerce na Nuvem ou no local, consulte [vitrines existentes](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=pt-BR#existing-storefronts) para obter orientações sobre a transição.
+>[!DNL Adobe Commerce as a Cloud Service] não dá suporte a vitrines Luma. Se você estiver migrando de [!DNL Adobe Commerce on Cloud] ou no local, consulte [vitrines existentes](https://experienceleague.adobe.com/developer/commerce/storefront/discovery/?lang=pt-BR#existing-storefronts) para obter orientações sobre a transição.
 
-## Serviços de merchandising e serviços de pagamento
+## Serviços Adobe Merchandising e serviços de pagamento
 
 A Adobe fornece um conjunto avançado de serviços de merchandising inteligentes e combináveis para ajudá-lo a apoiar suas principais metas comerciais. Esses serviços também fornecem APIs essenciais para otimizar o desempenho em escala.
 
@@ -116,7 +116,7 @@ A Adobe fornece um conjunto avançado de serviços de merchandising inteligentes
   >
   >O Serviço de Catálogo é incluído automaticamente com [!DNL Live Search] e [!DNL Product Recommendations].
 
-- [Serviços de Pagamento](../payment-services/guide-overview.md)—Impulsione a satisfação do cliente oferecendo vários métodos de pagamento, incluindo prestações de pagamento sem juros, e uma única visão do processamento de pagamento, ordens e faturas. Para obter instruções de configuração, consulte [Página Inicial dos Serviços de Pagamento](../payment-services/payments-home.md).
+- [Serviços de Pagamento](../payment-services/guide-overview.md)—Impulsione a satisfação do cliente oferecendo vários métodos de pagamento, incluindo prestações sem juros e uma única visão do processamento, dos pedidos e das faturas. Para obter instruções de configuração, consulte [Página Inicial dos Serviços de Pagamento](../payment-services/payments-home.md).
 
 ## [!DNL Product Visuals powered by AEM Assets]
 
@@ -224,7 +224,7 @@ O processo típico de atualização do Adobe Commerce na nuvem envolvia a criaç
 
 >[!NOTE]
 >
->O Adobe garante compatibilidade com versões anteriores para todas as atualizações. Isso significa que, quando as atualizações forem aplicadas, elas não interromperão a funcionalidade existente ou as personalizações que aderem ao modelo [API-first extensibility](https://developer.adobe.com/commerce/extensibility/).
+>O Adobe garante compatibilidade com versões anteriores para todas as atualizações. Isso significa que quando as atualizações são aplicadas, elas não interrompem a funcionalidade existente ou as personalizações que seguem o modelo [API-first extensibility](https://developer.adobe.com/commerce/extensibility/).
 
 ### Integrações de terceiros
 
@@ -247,11 +247,11 @@ As seções a seguir fornecem informações sobre os benefícios que o [!DNL Ado
 - **Aumente a receita**: direcione o tráfego orgânico com uma vitrine de alto desempenho que aumenta a SEO. Crie experiências personalizadas que impulsionam a conversão usando dados avançados.
 - **Operações de dimensionamento**: os serviços de dimensionamento automático atendem às demandas de pico da sua empresa com 99,9% de disponibilidade. Implante várias marcas e regiões e ofereça suporte a B2B e B2C a partir de uma única instância. Suporte a catálogos de produtos grandes e complexos com modelagem de dados flexível.
 - **Aumente a produtividade do merchandiser**: use serviços de merchandising alimentados por IA para melhorar a conversão. Faça um experimento nativo, diretamente na loja. Gerencie a experiência da loja para criar experiências avançadas em minutos com a criação simples baseada em documentos ou um editor visual.
-- **Diminua o custo total de propriedade (TCO) e acelere a inovação**: serviços sempre atualizados fornecem acesso imediato a novos recursos. Ative novos recursos instalando facilmente os aplicativos do marketplace. Libere recursos da manutenção tediosa para se concentrar na criação de novos recursos.
+- **Diminua o custo total de propriedade (TCO) e acelere a inovação**: serviços sempre atualizados fornecem acesso imediato a novos recursos. Ative novos recursos instalando facilmente os aplicativos do marketplace. Realoque recursos da manutenção de rotina para se concentrar na criação de novos recursos.
 
 ### Líderes em tecnologia da informação (TI)
 
 - **Provisionamento rápido**: comece rapidamente com o provisionamento de autoatendimento em minutos. Todos os serviços são pré-configurados para trabalhar em conjunto de maneira simples e rápida. Provisione sandboxes para experimentação de desenvolvedores, conforme necessário.
 - **Baixo custo de propriedade**: não há mais atualizações com serviços sempre atualizados. Mantenha-se seguro e em conformidade com os patches de segurança mais recentes aplicados automaticamente para você. Dimensione automaticamente para atender às cargas de trabalho mais exigentes.
 - **Loja de alto desempenho**: crie experiências ricas em minutos com criação simples baseada em documento ou um editor visual. Use serviços de merchandising alimentados por IA para melhorar a conversão. Experimentação nativa incorporada à loja.
-- **Inovação mais rápida**: libere recursos de uma manutenção tediosa para se concentrar na criação de novos recursos que agregam valor aos negócios. Use extensibilidade abrangente e tecnologias baseadas em padrões (JavaScript, HTML, CSS e ferramentas de baixo código) para criar experiências diferenciadas. Instale aplicativos de terceiros com um clique para adicionar novos recursos à sua plataforma de comércio.
+- **Inovação mais rápida**: realoque recursos da manutenção de rotina para se concentrar na criação de novos recursos que agreguem valor aos negócios. Use extensibilidade abrangente e tecnologias baseadas em padrões (JavaScript, HTML, CSS e ferramentas de baixo código) para criar experiências diferenciadas. Instale aplicativos de terceiros com um clique para adicionar novos recursos à sua plataforma de comércio.

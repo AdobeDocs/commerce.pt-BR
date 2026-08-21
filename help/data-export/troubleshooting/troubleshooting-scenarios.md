@@ -24,9 +24,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 991
+source-wordcount: 983
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ A correção imediata para esse problema é uma solução alternativa: configure
 1. Se o conteúdo não corresponder, faça uma pequena edição no produto no catálogo, como adicionar um espaço ou um ponto, para forçar a detecção da alteração.
 1. Aguarde uma ressincronização ou acione uma ressincronização manual da CLI ou da página [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) no Administrador.
 
-Para obter soluções de problemas adicionais de dados de catálogo no [!DNL Product Recommendations], consulte [Solução de problemas do módulo de Recomendações de Produto](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce) na Base de Dados de Conhecimento Commerce.
+Para obter soluções de problemas adicionais de dados de catálogo no [!DNL Product Recommendations], consulte [Solução de problemas do módulo de Recomendações de Produto](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-40095) na Base de Dados de Conhecimento Commerce.
 
 ## A sincronização de dados não está sendo executada de acordo com o agendamento {#sync-not-on-schedule}
 
@@ -96,7 +96,7 @@ Para obter soluções de problemas adicionais de dados de catálogo no [!DNL Pro
 
 **Solução:**
 
-- [Confirme se os trabalhos cron estão em execução](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
+- [Confirme se os trabalhos cron estão em execução](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-39832).
 - Verifique se os indexadores dos seguintes feeds estão definidos como **[!UICONTROL Update by Schedule]**: Atributos do Catálogo, Produto, Substituições de Produto e Variante de Produto. Verifique a partir de [[!UICONTROL Index Management]](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/index-management) no Administrador do Commerce ou usando a CLI: `bin/magento indexer:show-mode | grep -i feed`.
 
 ## A sincronização do catálogo tem um status Falha {#catalog-sync-failed}
@@ -110,7 +110,7 @@ Para obter soluções de problemas adicionais de dados de catálogo no [!DNL Pro
 1. Revise os logs de erro da exportação de dados para obter detalhes sobre a falha. Consulte [Revisar logs e solucionar problemas](logging.md) para ver o formato do log e as opções de log estendidas:
    - `var/log/commerce-data-export-errors.log` para erros durante a coleta de dados.
    - `var/log/saas-export-errors.log` para erros durante o envio de dados.
-1. Se o erro não estiver relacionado à configuração ou a uma extensão de terceiros, [envie um tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) com as entradas de log relevantes.
+1. Se o erro não estiver relacionado à configuração ou a uma extensão de terceiros, [envie um tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) com as entradas de log relevantes.
 
 ## O registro mostra mensagens de &quot;operação ignorada - processo bloqueado&quot; {#process-locked}
 

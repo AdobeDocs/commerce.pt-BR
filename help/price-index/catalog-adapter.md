@@ -12,7 +12,7 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: 75da477c3725f754495f5b13f99d65c66a2bf5ae
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
 source-wordcount: 775
 ht-degree: 0%
@@ -64,7 +64,7 @@ Use este método para instalar o [!DNL Catalog Adapter] para uma instância do C
 
    >[!NOTE]
    >
-   >Para obter informações sobre o gerenciamento local de ambientes de projeto do Commerce, consulte [Gerenciamento de ramificações com a CLI](https://experienceleague.adobe.com/pt-br/docs/commerce-cloud-service/user-guide/develop/cli-branches) no _Guia do Usuário do Adobe Commerce na Infraestrutura da Nuvem_.
+   >Para obter informações sobre o gerenciamento local de ambientes de projeto do Commerce, consulte [Gerenciamento de ramificações com a CLI](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/develop/cli-branches) no _Guia do Usuário do Adobe Commerce na Infraestrutura da Nuvem_.
 
 1. Confira a ramificação de ambiente para atualizar usando a CLI da Adobe Commerce Cloud.
 

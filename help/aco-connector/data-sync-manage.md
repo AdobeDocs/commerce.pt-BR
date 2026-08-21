@@ -24,9 +24,9 @@ topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
 last-update: 2026-06-23
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
 workflow-type: tm+mt
-source-wordcount: 349
+source-wordcount: 348
 ht-degree: 0%
 
 ---
@@ -56,4 +56,4 @@ Quando a sincronização parcial e a repetição automática não resolvem os pr
 > - [Solução de problemas](troubleshooting.md) — Diagnosticar problemas de exportação de credencial, sincronização e escopo
 > - [Módulos de conector e pontos de extremidade de feed](reference/connector-reference.md) — Revise módulos, pontos de extremidade de API e feeds com suporte
 > - [Página Status da sincronização do feed de dados no Administrador do Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status){target="_blank"} — Saiba mais sobre os campos e recursos disponíveis para monitorar o status do feed
-> - Painel de Sincronização de Dados [&#x200B; em  [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/en/docs/commerce-optimizer/data-sync/data-sync){target="_blank"} — Documentação de referência para campos e ações disponíveis para monitorar a sincronização de dados do catálogo
+> - Painel de Sincronização de Dados [&#x200B; em  [!DNL Commerce Optimizer]](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/setup/data-sync){target="_blank"} — Documentação de referência para campos e ações disponíveis para monitorar a sincronização de dados do catálogo

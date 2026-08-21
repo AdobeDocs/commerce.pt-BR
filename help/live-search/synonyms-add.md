@@ -9,9 +9,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
 workflow-type: tm+mt
-source-wordcount: 410
+source-wordcount: 434
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Aumente o engajamento do cliente adicionando sua própria lista com curadoria de
 ## Etapa 1: adicionar um sinônimo
 
 1. No Administrador, vá para **Marketing** > SEO e pesquisa > **[!DNL Live Search]**.
-1. Para vários armazenamentos, defina o **Escopo** para a [exibição de armazenamento](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=pt-BR#scope-settings) onde as configurações de sinônimo se aplicam.
+1. Para vários armazenamentos, defina o **Escopo** para a [exibição de armazenamento](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) onde as configurações de sinônimo se aplicam.
 1. Clique na guia **Sinônimos**.
 1. Clique no botão **Adicionar sinônimos**.
 

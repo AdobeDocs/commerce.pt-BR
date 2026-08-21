@@ -18,7 +18,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
 workflow-type: tm+mt
 source-wordcount: 267
 ht-degree: 0%
@@ -37,7 +37,7 @@ Você pode estender atributos de produto sem registrá-los no [!DNL Adobe Commer
 
 Crie um plug-in que adicione um `customer_attribute` à classe `Magento\CatalogDataExporter\Model\Provider\Product\Attributes`.
 
-1. Atualize o [arquivo de configuração de injeção de dependência](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`) para definir o plug-in.
+1. Atualize o [arquivo de configuração de injeção de dependência](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file) (`di.xml`) para definir o plug-in.
 
    ```xml
    <type name="Magento\CatalogDataExporter\Model\Provider\Product\Attributes">
@@ -110,7 +110,7 @@ Crie um plug-in que adicione um `customer_attribute` à classe `Magento\CatalogD
 
 Se você criar dinamicamente um atributo de produto personalizado e quiser usá-lo para exibição, pesquisa ou filtragem nos serviços da loja, adicione os metadados do atributo de produto para configurar o comportamento da loja.
 
-1. Atualize o [arquivo de configuração de injeção de dependência](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/) (`di.xml`) para definir o plug-in para os metadados de atributo de produto.
+1. Atualize o [arquivo de configuração de injeção de dependência](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file) (`di.xml`) para definir o plug-in para os metadados de atributo de produto.
 
    ```xml
    <type name="Magento\CatalogDataExporter\Model\Provider\ProductMetadata">

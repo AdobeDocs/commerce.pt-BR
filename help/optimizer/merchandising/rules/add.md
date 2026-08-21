@@ -16,9 +16,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+source-git-commit: 3ee9822b069504343f69f5b1dd36713e7dcbf3d8
 workflow-type: tm+mt
-source-wordcount: 3074
+source-wordcount: 3378
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Cada tipo de regra tem um ícone de informações no editor com uma breve explic
 
 | Tipo de regra | Finalidade |
 | --- | --- |
-| **Regra de todos os produtos** | Classificação e merchandising padrão em listas de produtos quando não há mais pesquisa específica ou regra de categoria aplicável. Você só pode criar uma dessas regras; ela não pode conter condições. |
+| **Todas as listagens de produtos** | Classificação e merchandising padrão em listas de produtos quando não há mais pesquisa específica ou regra de categoria aplicável. Você só pode criar uma dessas regras; ela não pode conter condições. |
 | **Regra de categoria** | Aplica merchandising e classificação a uma ou mais categorias selecionadas, controlando o pedido do produto nessas páginas de categoria. |
 | **Regra de pesquisa** | Aplica merchandising e classificação quando os compradores executam uma pesquisa que corresponde às condições de consulta da regra. |
 
@@ -82,7 +82,7 @@ Inicialmente, o painel de teste renderiza a consulta na caixa de pesquisa Condi�
 **Várias condições**
 
 1. Para criar uma regra com várias condições, clique em **Adicionar condição**.
-Uma regra pode ter até dez condições. O operador lógico que junta duas condições se baseia na configuração *Match* atual. Por padrão, *Correspondência* é `All` e o operador lógico é `AND`.
+Uma regra pode ter até dez condições. O operador lógico que junta duas condições se baseia na configuração *Correspondência* atual. Por padrão, *Correspondência* é `All` e o operador lógico é `AND`.
 
 1. Selecione a segunda condição e insira o texto de consulta necessário.
 
@@ -102,13 +102,32 @@ Uma regra pode ter até dez condições. O operador lógico que junta duas condi
 
 As regras de categoria controlam como os produtos são ordenados em **páginas de categoria**. Você combina **regras de categoria** com **classificação inteligente** (incluindo sinais orientados por IA) e **ações manuais**, como fixar, aumentar e enterrar, para poder preparar descobertas, executar promoções e alinhar páginas de categoria com a sua estratégia sem depender de ferramentas externas.
 
-1. Em **Categorias**, selecione a(s) categoria(s) à(s) qual(is) a regra deve ser aplicada. As categorias selecionadas aparecem abaixo do controle para que você possa confirmar o escopo.
-1. Na lista de categorias exibida, clique nos três pontos e selecione para:
+**Selecionar categorias**
+
+Em **Categorias**, selecione uma ou mais categorias às quais a regra deve se aplicar. As categorias selecionadas aparecem abaixo do controle para que você possa confirmar o escopo. Selecione categorias de uma das seguintes maneiras:
+
+- **Procurar na árvore de categorias** - Expanda uma categoria para carregar suas categorias secundárias imediatas. Para navegar para um nível mais profundo, expanda a categoria filho. A árvore carrega um nível de cada vez.
+- **Pesquisar por nome de categoria** - Insira um nome de categoria no campo **Pesquisar e selecionar categorias**. Os resultados da pesquisa incluem nomes de categoria correspondentes em todo o catálogo, incluindo categorias fora da ramificação expandida no momento. A pesquisa não corresponde ao texto do caminho da categoria.
+
+Quando várias categorias tiverem nomes semelhantes, use o caminho de categoria exibido com cada resultado (por exemplo, `brakes/aurora`) para selecionar a categoria correta.
+
+>[!NOTE]
+>
+>Expandir uma categoria carrega apenas suas categorias secundárias para navegação. Ela não seleciona a categoria ou aplica a regra às suas subcategorias. Selecione uma categoria para adicioná-la à regra. Para aplicar a regra às subcategorias de uma categoria, use **Aplicar às subcategorias** no menu de ação da categoria, descrito abaixo.
+
+>[!TIP]
+>
+>Se uma categoria secundária não estiver visível, expanda a categoria principal para carregar o próximo nível. Se você souber o nome da categoria, use o campo de pesquisa em vez de navegar pela árvore. Isso é útil para catálogos grandes, já que os níveis de categoria são carregados sob demanda.
+
+1. Na lista de categorias selecionadas, clique nos três pontos ao lado de uma categoria e selecione para:
 
    - **Excluir** - Remove a categoria da regra.
    - **Aplicar às subcategorias** - Aplica a regra às subcategorias que ainda não têm uma regra de merchandising ativa definida.
    - **Visualizar** - mostra como a página de categoria apareceria na sua vitrine.
 
+   ![Menu de Ação da Categoria](../../assets/category-action-menu.png)
+
+1. Verifique o caminho da categoria exibido para cada categoria selecionada para confirmar se você selecionou a categoria correta.
 1. Defina a [Classificação inteligente](#intelligent-ranking) e a [Classificação manual](#manual-ranking) conforme descrito nas seções a seguir. Os mesmos controles se aplicam às regras de pesquisa, com todas as diferenças chamadas.
 
 >[!ENDTABS]
@@ -165,8 +184,8 @@ Para **resultados de pesquisa** (e a consulta de teste no editor de regras), a c
 
 - **Relevância textual**: o fator dominante na pontuação. Isso mede o nível de correspondência entre o nome, a descrição e os atributos de um produto e a consulta de pesquisa. A pontuação de relevância do texto é ilimitada (não tem limite superior específico) e é influenciada por fatores como:
 
-   - Frequência de ocorrência de palavras correspondentes.
-   - Comprimento (por palavras) dos nomes/descrições dos produtos.
+  - Frequência de ocorrência de palavras correspondentes.
+  - Comprimento (por palavras) dos nomes/descrições dos produtos.
 
 - **Sinais comportamentais**: um aumento limitado aplicado sobre a pontuação de relevância do texto. Ao selecionar uma estratégia de classificação inteligente como &quot;Mais visualizados&quot; ou &quot;Mais comprados&quot;, os produtos com sinais comportamentais mais altos recebem um peso relativo maior. A força desse peso é controlada por **[!UICONTROL Intelligent Ranking Boost]** (consulte [Aumento inteligente de classificação](#intelligent-ranking-boost)); o aumento permanece limitado, mas você pode aumentar o quanto ele altera a ordem.
 

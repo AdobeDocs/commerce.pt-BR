@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: d85c2ab6b4f0372f8abfe09e92b3143c08ad883c
+source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
 workflow-type: tm+mt
-source-wordcount: '1373'
+source-wordcount: '1356'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Você pode [baixar transações de pagamento](#download-transactions) em um form
 
 >[!NOTE]
 >
->Os relatórios de pagamentos mostram apenas pedidos capturados (a ação de pagamento está definida como [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html?lang=pt-BR#set-payment-services-as-payment-method)) ou [marcados como `Invoiced`](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
+>Os relatórios de pagamentos mostram apenas pedidos capturados (a ação de pagamento está definida como [`Authorize and Capture`](production.md#set-payment-services-as-payment-method)) ou [marcados como `Invoiced`](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
 
 ## Visualização de visualização de dados de pagamentos
 

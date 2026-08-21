@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
 workflow-type: tm+mt
-source-wordcount: 236
+source-wordcount: 249
 ht-degree: 0%
 
 ---
@@ -43,12 +43,12 @@ Este guia não aborda os principais recursos do Adobe Commerce e do Magento Open
 
 | Guia | Descrição |
 |------ | ----------- |
-| [Guia do Usuário do Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce.html?lang=pt-BR) | Documentação voltada para o comerciante do Adobe Commerce e da Magento Open Source |
+| [Guia do Usuário do Adobe Commerce 2.4](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/user-guides/home) | Documentação voltada para o comerciante do Adobe Commerce e da Magento Open Source |
 | [Guia do desenvolvedor do Adobe Commerce 2.4](https://developer.adobe.com/commerce/docs) | Documentação voltada para o desenvolvedor usada para criar e personalizar o Adobe Commerce ou o Magento Open Source |
 
 ## Suporte
 
 Se você precisar de informações ou tiver dúvidas que não são abordadas neste guia, use os seguintes recursos:
 
-* [Centro de ajuda](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-tickets){target="_blank"} — Consulte os artigos de solução de problemas relacionados a [!DNL Product Recommendations].
-* [Tíquetes de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=pt-BR#submit-ticket){target="_blank"}—Envie um tíquete para receber ajuda adicional.
+* [Centro de ajuda](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-cases){target="_blank"} — Consulte os artigos de solução de problemas relacionados a [!DNL Product Recommendations].
+* [Tíquetes de suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case){target="_blank"}—Envie um tíquete para receber ajuda adicional.
