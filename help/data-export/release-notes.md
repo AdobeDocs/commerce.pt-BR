@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
+source-git-commit: 5964358bb4370fa4fb0c2f4c447bacb3603d0f5e
 workflow-type: tm+mt
-source-wordcount: 3271
+source-wordcount: 3356
 ht-degree: 0%
 
 ---
@@ -44,6 +44,14 @@ As atualizações incluem:
 >A extensão [!DNL SaaS data export] é uma coleção de módulos instalados automaticamente com [!DNL Live Search], [!DNL Product Recommendations] e [!DNL Catalog Service]. Você pode verificar a versão instalada em seu sistema usando o [!DNL Composer]. Em alguns casos, você pode querer atualizar a extensão de exportação de dados no seu sistema para coletar correções ou novos recursos sem atualizar a versão do Serviço do Commerce.
 
 ## Versões de 2026 {#release-notes-2026}
+
+### Versão 103.4.32
+
+_25 de agosto de 2026_
+
+![Novas](../assets/new.svg) **Opções personalizáveis incluídas no feed de produto** - As opções personalizáveis de produto, como amostras de cores, seleções de tamanho ou campos de personalização, agora são exportadas como um atributo de produto `customizable_options`. O atributo inclui o título de cada opção, se necessário, e seus valores disponíveis, para que os serviços conectados da Commerce possam exibir dados de opções personalizáveis precisos na loja. <!--MDEE-1029-->
+
+![Correção](../assets/fix.svg) **Sincronização de permissões de categoria confiáveis**-Correção de um problema em que o feed de permissões de categoria não sincronizava totalmente para configurações sem uma ID de site, resultando em erros de sincronização. <!--MDEE-1411-->
 
 ### Versão 103.4.31
 
