@@ -24,9 +24,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 2cb4bac8e36ce8b945eabf31e562a5e7fd097c2a
 workflow-type: tm+mt
-source-wordcount: 2627
+source-wordcount: 2835
 ht-degree: 0%
 
 ---
@@ -71,9 +71,29 @@ Os principais indicadores de desempenho são:
 
 1. Clique em **[!UICONTROL Export]** para salvar o relatório como uma PDF.
 
+## Metadados do C2PA em relatórios exportados {#c2pa-metadata-on-exported-reports}
+
+O relatório Métricas de sucesso inclui destaques e resumos usando IA gerativa. Quando você exporta um relatório para o PDF, o Adobe anexa automaticamente metadados C2PA ao arquivo exportado.
+
+Os metadados C2PA são metadados legíveis por máquina e evidentes em violação, com base no [padrão aberto C2PA](https://c2pa.org/). Os metadados registram que a IA gerativa foi usada para produzir conteúdo no relatório, juntamente com informações como o sistema de IA usado, se o conteúdo foi gerado ou editado com a IA gerativa e um carimbo de data e hora.
+
+>[!NOTE]
+>
+>Os metadados C2PA são anexados automaticamente. Nenhuma ação adicional é necessária e esse comportamento não pode ser desativado. Os metadados C2PA não alteram a aparência do relatório. Eles são metadados invisíveis transportados na PDF.
+
+**O que isso significa para seus relatórios exportados**
+
+- Quando você exporta um relatório de Métricas de sucesso para o PDF, o arquivo exportado carrega metadados C2PA.
+- Os metadados C2PA viajam com a PDF quando você compartilha ou faz download deles. Plataformas de terceiros que suportam metadados C2PA podem ler esses metadados e exibir informações de transparência para os visualizadores.
+- Você pode verificar os metadados C2PA anexados a qualquer arquivo carregando-os no [Inspect](https://contentauthenticity.adobe.com/inspect).
+
+![Inspecionar amostra](../assets/inspect-sample.png)
+
+Saiba mais sobre [Transparência do conteúdo de IA gerativa](https://experienceleague.adobe.com/pt-br/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency).
+
 ## Uso de métricas de sucesso e do Sites Optimizer juntos
 
-Métricas de sucesso e Sites Optimizer ([Oportunidades](opportunities.md)) são ferramentas complementares projetadas para trabalhar em conjunto, ajudando você a aprimorar o desempenho do site de comércio. Entender a diferença entre esses recursos ajuda você a tomar decisões melhores e alcançar resultados mensuráveis.
+Métricas de Sucesso e Sites Optimizer ([Oportunidades](opportunities.md)) são ferramentas complementares projetadas para trabalhar em conjunto, ajudando você a aprimorar o desempenho do site de comércio. Entender a diferença entre esses recursos ajuda você a tomar decisões melhores e alcançar resultados mensuráveis.
 
 ### Principais diferenças
 
