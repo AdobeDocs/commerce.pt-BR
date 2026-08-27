@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
+source-git-commit: 4b3bf2c28d4570141497bf6aa514152311fa4a37
 workflow-type: tm+mt
-source-wordcount: 3064
+source-wordcount: 3099
 ht-degree: 0%
 
 ---
@@ -54,6 +54,10 @@ O suporte é fornecido para a versão mais recente. As notas de versão para ver
 ## Serviço de Catálogo da Loja
 
 ### Agosto de 2026
+
+**Dados da versão**: 24 de agosto de 2026
+
+![Novo](../assets/new.svg) **Suporte para a consulta `categoryTree` no Adobe Commerce as a Cloud Service** — A consulta `categoryTree` do GraphQL agora está disponível para [!DNL Adobe Commerce as a Cloud Service], portanto as vitrines podem resolver categorias por descrição e renderizar árvores de categoria. <!-- DATA-7299 -->
 
 **Data de lançamento**: 7 de agosto de 2026
 
