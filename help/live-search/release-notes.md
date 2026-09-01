@@ -19,9 +19,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+source-git-commit: b540716da753f26cea4ec0198f2d176224ee5dbb
 workflow-type: tm+mt
-source-wordcount: 3317
+source-wordcount: 3355
 ht-degree: 1%
 
 ---
@@ -132,6 +132,14 @@ _31 de maio de 2024_
 _27 de outubro de 2023_
 
 ![Novo](../assets/new.svg) O widget PLP [!DNL Live Search] agora dá suporte a amostras de cores.
+
+## [!DNL Live Search] 4.7.3
+
+_28 de agosto de 2026_
+
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.5 e mais recentes
+
+![Correção](../assets/fix.svg) Corrigido um problema no qual a funcionalidade Adicionar ao carrinho na Página de listagem de produtos não funcionava com o Widget PLP em certos casos isolados.
 
 ## [!DNL Live Search] 4.7.2
 

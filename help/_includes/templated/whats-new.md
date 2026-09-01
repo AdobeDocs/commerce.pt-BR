@@ -1,7 +1,7 @@
 ---
-source-git-commit: a2126f6cc24cc3a17c31e0d8dd095f7d7df26354
+source-git-commit: 73cfc898b25e731238b049419fe0e964e29e92b6
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '1059'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,72 @@ ht-degree: 1%
 ## Novidades
 
 Esta página contém as alterações feitas nos últimos 60 dias. Excluímos todas as atualizações secundárias, como a edição de cópia, desta lista.
+
+### 28 de agosto de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Atualizando a <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/live-search/release-notes">Extensão do Live Search</a> para a versão 4.7.3 a fim de solucionar um problema em que a funcionalidade Adicionar ao Carrinho na Página de Listagem de Produtos não funcionava com o Widget do PLP em determinados casos isolados.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/01028c8645f0d8ef868aacbaf14e34595bc5ccc1">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 26 de agosto de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Atualização da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">Referência de códigos de log da Exportação de Dados</a> do <a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">log-codes.md de origem</a> mais recente.</p>
+</td>
+      <td>
+        Técnico
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e91727732882ce6a990068bf2bd3c4dc9fc69370">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 25 de agosto de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adição das <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/release-notes">notas de versão</a> da Sandbox para o Adobe Commerce as a Cloud Service.</p>
+</td>
+      <td>
+        Atualização importante
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/452a47d6769d90449ece9fe171a01a36df45324d">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 18 de agosto de 2026
 
