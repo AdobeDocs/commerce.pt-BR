@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 4b3bf2c28d4570141497bf6aa514152311fa4a37
+source-git-commit: 695f349ce38a3127beccab83f63f4157cc05e549
 workflow-type: tm+mt
-source-wordcount: 3099
+source-wordcount: 3190
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ O suporte é fornecido para a versão mais recente. As notas de versão para ver
 **Data de lançamento**: 4 de maio de 2026
 <!-- v1.53 -->
 
-![Correção](../assets/fix.svg) Os preços dos produtos da vitrine agora exibem o código monetário correto (por exemplo, USD) para todos os tipos de produtos. Anteriormente, alguns produtos exibiam `NONE` em vez da moeda esperada, resultando em preços ausentes. Esta atualização garante uma renderização de preço consistente e precisa em toda a loja.<!--DATA-7115-->
+![Correção](../assets/fix.svg) Os preços dos produtos da loja agora exibem o código monetário correto (por exemplo, USD) para todos os tipos de produtos. Anteriormente, alguns produtos exibiam `NONE` em vez da moeda esperada, resultando em preços ausentes. Esta atualização garante uma renderização de preço consistente e precisa em toda a loja.<!--DATA-7115-->
 
 ### Abril de 2026
 
@@ -624,6 +624,16 @@ Atualizações no metapackage PHP do Serviço de Catálogo (`magento/catalog-ser
 - Para clientes do Adobe Commerce as a Cloud Service, a versão mais recente é instalada em seu ambiente.
 
 - Para o Adobe Commerce na nuvem ou no local, a Adobe recomenda usar o Composer para atualizar o metapackage do Serviço de catálogo nos seus ambientes de nuvem na versão mais recente.
+
+### Versão v3.6.0
+
+**Data de lançamento**: 31 de agosto de 2026
+
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
+
+![Nova](../assets/new.svg) **Exportação de opções personalizáveis**—As dependências de metapackage do Serviço de Catálogo foram atualizadas para incluir o módulo Exportador de Dados de Opções Personalizáveis (`magento/module-customizable-options-data-exporter`). Esse módulo exporta as opções personalizáveis do Adobe Commerce de um produto — tanto as opções selecionáveis (lista suspensa, botão de opção, caixa de seleção, seleção múltipla) quanto as opções de entrada do comprador (campo de texto, área de texto, arquivo, data, data e hora, hora) — para que sejam propagadas para o catálogo SaaS consumido pelo Serviço de catálogo. <!--DATA-7366-->
+
+![Novo](../assets/new.svg) Atualizou as dependências para manter a compatibilidade entre o Serviço de Catálogo e a pilha do Commerce.
 
 ### Versão v3.5.0
 

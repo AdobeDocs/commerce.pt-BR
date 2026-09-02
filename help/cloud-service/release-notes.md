@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: 9d128fd11c1b83276f8a2158f1f2fb98a49bf6c5
+source-git-commit: 49a235a3a545b422b0371b53163d7de770df6a38
 workflow-type: tm+mt
-source-wordcount: 6100
+source-wordcount: 6271
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ As notas de versão a seguir contêm atualizações para [!DNL Adobe Commerce as
 
 <!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
 
-Os itens a seguir serão publicados para produção em 1 de setembro de 2026.
+Os itens a seguir serão publicados na Produção em 8 de setembro de 2026.
 
 >[!BEGINSHADEBOX]
 
@@ -122,7 +122,7 @@ Os Catálogos de endereços da empresa agora se integram a workflows B2B adicion
 * Cotações negociáveis
 * Modelos de cotação
 
-Para obter informações detalhadas, incluindo mutações do GraphQL e pontos de extremidade REST, consulte o [changelog de Pacote B2B de Compatibilidade de Loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=pt-BR) e exiba a seção **Pacote B2B de Compatibilidade de Loja v1.0.24**.
+Para obter informações detalhadas, incluindo mutações do GraphQL e pontos de extremidade REST, consulte o [changelog de Pacote B2B de Compatibilidade de Loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=pt-BR#storefront-compatibility-b2b-package-v1-0-24-2026-07-20).
 
 <!-- USF-3629, USF-4187, USF-4188, USF-4189, USF-4191, USF-4192, USF-4193, USF-4194, USF-4195 -->
 
@@ -141,6 +141,24 @@ A regra de preço do carrinho **Presente gratuito** está disponível no [!DNL C
 Essa regra permite adicionar um produto de presente gratuito ao carrinho quando as condições da regra são atendidas.
 
 <!-- dependent on https://github.com/Adobe-Enterprise-Docs/commerce-admin.en/pull/856 and https://github.com/AdobeDocs/commerce-webapi/pull/590 -->
+
+### Agendar regras de preço do carrinho por data e hora
+
+Agora você pode definir a hora do dia em que deseja que uma [regra de preço do carrinho](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create) comece ou termine em [!DNL Commerce Admin]. A grade Regras de preço do carrinho exibe os horários agendados e a API REST respeita um horário enviado em `from_date` e `to_date` em vez de definir a regra para meia-noite. <!-- ACCS-970 -->
+
+<!-- commenting this out until the B2B compatibility package version is live. -->
+
+<!-- ### Use a temporary shipping address at B2B checkout -->
+
+<!-- B2B company customers can now enter a custom, temporary shipping address during checkout without saving it to the Company Address Book, when custom shipping addresses are allowed. For detailed information, see the [Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=pt-BR) and view the **Storefront Compatibility B2B Package v1.0.28** section. USF-4310 -->
+
+### Registrar edições de pedidos no histórico de pedidos
+
+>[!IMPORTANT]
+>
+>Esse recurso está desativado por padrão. Para ativá-lo, entre em contato com o Gerente de sucesso do cliente da Adobe Commerce ou crie um tíquete de suporte.
+
+Quando um pedido é editado, o Commerce agora pode adicionar um comentário legível ao histórico do novo pedido, que resume o que foi alterado em relação ao pedido substituído. <!-- ACCS-1157 -->
 
 ### Melhorias e correções de erros
 
@@ -163,6 +181,12 @@ Os seguintes aprimoramentos, otimizações e correções de erros selecionados e
 * Correção de um problema em que os URLs de imagem de categoria eram quebrados no feed de exportação de dados de categoria. <!-- ACCS-1571 -->
 
 * Correção de um problema em que a atribuição ou o cancelamento simultâneo da atribuição de produtos em diferentes catálogos compartilhados podia falhar intermitentemente. <!-- CCSAAS-5287 -->
+
+* A configuração **Usar nas Opções de Pesquisa** como Não, mantém o atributo visível como uma coluna de grade, mas não conta no limite de 16 colunas. <!-- CCSAAS-5370 -->
+
+* Solução de um problema que poderia afetar a navegação do Administrador. <!-- CCSAAS-5232 -->
+
+* Correção de um problema em que os carrinhos vazios podiam relatar totais diferentes de zero. <!-- ACCS-1730 -->
 
 {{accs-release}}
 
@@ -676,7 +700,7 @@ Os itens a seguir foram lançados para ambientes de Produção do [!DNL Adobe Co
 
 ### Ferramentas e tutoriais de codificação do App Builder AI
 
-Agora você pode usar a [Ferramenta de desenvolvimento de codificação de IA](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"} para criar novos aplicativos [!DNL App Builder] e converter extensões PHP [!DNL Adobe Commerce] existentes em aplicativos [!DNL App Builder]. Os seguintes tutoriais estão disponíveis para demonstrar como usar as ferramentas:
+Agora você pode usar a [Ferramenta de desenvolvimento de codificação de IA](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/){target="_blank"} para criar novos aplicativos [!DNL App Builder] e converter extensões PHP [!DNL Adobe Commerce] existentes em aplicativos [!DNL App Builder]. Os seguintes tutoriais estão disponíveis para demonstrar como usar as ferramentas:
 
 * [Pré-requisitos do tutorial](./tutorials/tutorial-prerequisites.md)
 * [Tutorial da extensão de classificações](./tutorials/ratings-extension.md)

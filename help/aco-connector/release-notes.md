@@ -23,9 +23,9 @@ level_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 1d14f7827de3274564941765fd2943ecefac5fad
+source-git-commit: 355b319def41c3763bc0dddbe6b32707891bb811
 workflow-type: tm+mt
-source-wordcount: 460
+source-wordcount: 514
 ht-degree: 0%
 
 ---
@@ -40,12 +40,20 @@ Essas notas de versão descrevem todas as versões do [!DNL Adobe Commerce Optim
 
 ## Versões de 2026
 
+### Versão 1.0.17
+
+_1º de setembro de 2026_
+
+![Correção](../assets/fix.svg) **Sincronização mais rápida de catálogo para lojas com várias exibições de loja**-O [!DNL Adobe Commerce Optimizer Connector] agora filtra produtos e categorias por exibição de loja antes de extrair dados de feed, em vez de extrair cada exibição de loja e descartar os resultados irrelevantes posteriormente. Essa atualização reduz significativamente o tempo de sincronização e ressincronização de catálogos com muitas exibições de loja. <!--MDEE-1441-->
+
 ### Versão 1.0.16
 
 _7 de agosto de 2026_
 
 ![Correção](../assets/fix.svg) **A sincronização do catálogo não é mais paralisada na configuração inválida**-Correção de um problema em que a sincronização do catálogo poderia ser executada indefinidamente se a configuração [!DNL Adobe Commerce Optimizer Connector] estivesse ausente ou fosse inválida. A sincronização agora é concluída e registra um aviso em vez de continuar a ser executada. <!--MDEE-1413-->
-![Correção](../assets/fix.svg) **Solicitações de administrador [!DNL Adobe Commerce Optimizer] mais confiáveis**-Correção de um problema em que o [!DNL Adobe Commerce Optimizer Connector] poderia usar uma URL incorreta para [!DNL Adobe Commerce Optimizer] solicitações de administrador, o que poderia fazer com que essas solicitações falhassem. <!--COMOPT-2288-->
+
+![Correção](../assets/fix.svg) **Solicitações de administrador [!DNL Adobe Commerce Optimizer] mais confiáveis**-Correção de um problema em que [!DNL Adobe Commerce Optimizer Connector] poderia usar uma URL incorreta para [!DNL Adobe Commerce Optimizer] solicitações de administrador, o que poderia causar falha nessas solicitações. <!--COMOPT-2288-->
+
 ![Correção](../assets/fix.svg) **Operações mais confiáveis de atualização e correção**-Correção de um problema em que as operações de atualização e correção podiam ter como alvo o ambiente errado, o que poderia causar falha nas solicitações. <!--COMOPT-2288-->
 
 ### Versão 1.0.15
