@@ -39,7 +39,7 @@ Para saber mais sobre os dados comportamentais que os eventos do [!DNL Product R
 
 Se você for um cliente da área de saúde e tiver instalado a [extensão HIPAA do Data Services](../data-connection/hipaa-readiness.md#installation), que está incluída na [conexão de dados](../data-connection/overview.md), a [!DNL Product Recommendations] interromperá a coleta de dados do evento da loja porque são gerados no lado do cliente.
 
-Para continuar coletando e enviando dados do evento da loja, habilite novamente a coleta de eventos para [!DNL Product Recommendations]. Para obter mais informações, consulte [Configuração geral](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general#data-services).
+Para continuar coletando e enviando dados do evento da loja, habilite novamente a coleta de eventos para [!DNL Product Recommendations]. Para obter mais informações, consulte [Configuração geral](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/config/general/general#data-services).
 
 ## Tipos de dados e eventos
 
@@ -104,4 +104,4 @@ Se a coleta de dados de entrada for insuficiente, os seguintes tipos de recomend
 
 >[!NOTE]
 >
->Se o [Modo de restrição de cookies](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law) estiver habilitado, a Adobe Commerce não coletará dados comportamentais até que o comprador consente em usar cookies. Se o Modo de restrição de cookie estiver desativado, o Adobe Commerce coletará dados comportamentais por padrão.
+>Se o [Modo de restrição de cookies](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law) estiver habilitado, a Adobe Commerce não coletará dados comportamentais até que o comprador consente em usar cookies. Se o Modo de restrição de cookie estiver desativado, o Adobe Commerce coletará dados comportamentais por padrão.

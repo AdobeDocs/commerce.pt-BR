@@ -48,7 +48,7 @@ Para obter mais informações sobre os eventos necessários que você precisa ad
 
 ## Definir o escopo
 
-Inicialmente, o [escopo](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) de todas as configurações de recomendação está definido como `Default Store View`. Se a instalação do Commerce incluir vários modos de exibição de armazenamento, defina o **Escopo** como [modo de exibição de armazenamento](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) ao qual as recomendações se aplicam.
+Inicialmente, o [escopo](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/setup/websites-stores-views) de todas as configurações de recomendação está definido como `Default Store View`. Se a instalação do Commerce incluir vários modos de exibição de armazenamento, defina o **Escopo** como [modo de exibição de armazenamento](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) ao qual as recomendações se aplicam.
 
 ## Definir intervalo de datas das métricas
 
