@@ -12,24 +12,26 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 539
+source-wordcount: 524
 ht-degree: 0%
 
 ---
 
 # Widget da página de listagem de produtos
 
-O [!DNL Live Search Product Listing Page Widget] (PLP) usa a plataforma Commerce Services para fornecer uma página de listagem de produtos com desempenho, pesquisável e compatível com facetas. Este tópico descreve como ativar e estilizar o widget PLP.
+O [!DNL Live Search Product Listing Page Widget] (PLP) usa a Plataforma de Serviços da Commerce para fornecer uma página de listagem de produtos com desempenho, pesquisável e facetável. Este tópico descreve como ativar e estilizar o widget PLP.
 
 ## Ativar o dispositivo PLP
 
 Quando o serviço [!DNL Live Search] é instalado, a funcionalidade de pesquisa padrão é convertida para [!DNL Live Search] automaticamente.
 
-O widget PLP [!DNL Live Search] é habilitado por padrão para novas instalações.
+Novas instalações habilitam o widget PLP [!DNL Live Search] por padrão.
 
-Se você estiver atualizando o [!DNL Live Search] e o widget PLP já tiver sido desativado, ele permanecerá assim.
+Se você atualizar [!DNL Live Search] enquanto o widget PLP estiver desabilitado, ele permanecerá desabilitado após a atualização.
+
+
 
 >[!NOTE]
 >
@@ -42,7 +44,7 @@ Para ativar o dispositivo PLP:
 1. Clique na seção [!UICONTROL Storefront Features].
 1. Definir [!UICONTROL Enable Product Listing Widget] = Sim
 1. Salvar configuração
-1. Se solicitado, limpe o cache ( vá para Sistema > Ferramentas > Gerenciamento de cache > [!UICONTROL Flush Magento Cache]).
+1. Se solicitado, limpe o cache (vá para Sistema > Ferramentas > Gerenciamento de cache > [!UICONTROL Flush Magento Cache]).
 
 >[!IMPORTANT]
 >
@@ -50,7 +52,7 @@ Para ativar o dispositivo PLP:
 
 ## Recursos do widget
 
-O widget PLP fornece os seguintes recursos prontos para uso:
+O widget PLP fornece os seguintes recursos padrão:
 
 - Botões Adicionar ao carrinho - Disponível somente para produtos simples.
 - Várias imagens por produto — a imagem pode mudar quando uma cor diferente é escolhida para um produto configurável.
@@ -58,7 +60,7 @@ O widget PLP fornece os seguintes recursos prontos para uso:
 
 ### Personalização do widget
 
-Além dos recursos prontos do widget PLP, você pode personalizar ainda mais o widget para incluir os seguintes recursos:
+Além dos recursos padrão do widget PLP, você pode personalizar ainda mais o widget para incluir os seguintes recursos:
 
 - Filtrar por atributos
 - Suporte a vários idiomas
@@ -72,11 +74,11 @@ Para obter informações sobre como personalizar o widget PLP para lidar com os 
 
 ## Exemplo de estilo
 
-Você pode personalizar a aparência do widget PLP para corresponder ao seu site usando o [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/).
+Você pode personalizar a aparência do widget PLP para corresponder ao seu site usando [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/).
 
 >[!NOTE]
 >
->Elementos com classes personalizadas em um tema do Adobe Commerce não são herdados. Esses elementos devem ser direcionados por sua classe específica para corresponder às classes personalizadas; as classes de ação principais não funcionarão em um botão de widget. Os elementos genéricos de destino dentro do CSS são herdados; `button` aplica-se aos botões do widget.
+>Elementos com classes personalizadas em um tema do Adobe Commerce não são herdados. Direcione esses elementos por sua classe específica para corresponder às classes personalizadas; as classes de ação principais não são eficazes em um botão de widget. Os elementos genéricos de destino dentro do CSS são herdados; `button` aplica-se aos botões do widget.
 
 Os divs realçados contêm a classe de destino `ds-sdk-product-item__product-name`.
 
@@ -196,10 +198,10 @@ Personalize o nome do produto adicionando uma regra para torná-lo em letras mai
 - `.ds-sdk-product-item__product-name`
 - `.ds-sdk-product-item__product-options`
 - `.ds-sdk-product-price`
-   - `.ds-sdk-product-price--no-discount`
-   - `.ds-sdk-product-price--grouped`
-   - `.ds-sdk-product-price--bundle`
-   - `.ds-sdk-product-price--discount`
+  - `.ds-sdk-product-price--no-discount`
+  - `.ds-sdk-product-price--grouped`
+  - `.ds-sdk-product-price--bundle`
+  - `.ds-sdk-product-price--discount`
 
 ![Produto](assets/plp-css-product.png)
 

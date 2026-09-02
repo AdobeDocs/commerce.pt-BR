@@ -15,7 +15,7 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
 source-wordcount: 921
 ht-degree: 0%
@@ -37,13 +37,13 @@ _Workspace de recomendações_
 
 Para garantir que cada área funcional do espaço de trabalho contenha os dados corretos, é necessário configurar a coleta de dados com base na implementação de vitrine selecionada:
 
-1. Luma - A coleção de dados está disponível e pronta para uso.
+1. Luma - A coleção de dados está disponível por padrão.
 1. Headless - a coleta de dados deve ser configurada manualmente, dependendo da implementação da loja.
 
-Se você estiver usando uma loja headless, consulte a seguinte documentação para obter mais informações sobre os eventos necessários que precisam ser adicionados:
+Para obter mais informações sobre os eventos necessários que você precisa adicionar se estiver usando uma loja headless, consulte a seguinte documentação:
 
 - [Eventos necessários](events.md) para o painel Recomendações de Produto.
-- [Coletor de eventos de vitrine](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) que precisa ser adicionado como pré-requisito.
+- [Coletor de eventos de vitrine](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework) que precisa ser adicionado como pré-requisito.
 - [Exemplos](https://github.com/adobe/commerce-events/tree/main/examples) da estrutura de eventos.
 
 ## Definir o escopo

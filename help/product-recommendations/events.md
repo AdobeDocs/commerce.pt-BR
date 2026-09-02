@@ -18,9 +18,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 1028
+source-wordcount: 937
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 Quando você instala e configura o [[!DNL Product Recommendations]](install-configure.md), o módulo implanta a coleta de dados comportamentais na vitrine. Esse mecanismo coleta dados comportamentais anônimos de seus compradores e habilita o [!DNL Product Recommendations]. Por exemplo, o evento `view` é usado para calcular o tipo de recomendação `Viewed this, viewed that`, e o evento `place-order` é usado para calcular o tipo de recomendação `Bought this, bought that`.
 
-Consulte a [documentação do desenvolvedor](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) para saber mais sobre os dados comportamentais coletados pelos eventos do [!DNL Product Recommendations].
+Para saber mais sobre os dados comportamentais que os eventos do [!DNL Product Recommendations] coletam, consulte a [documentação do desenvolvedor](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations).
 
 >[!NOTE]
 >
@@ -37,7 +37,9 @@ Consulte a [documentação do desenvolvedor](https://developer.adobe.com/commerc
 
 ## Clientes da área de saúde
 
-Se você for um cliente da área de saúde e tiver instalado a [extensão HIPAA do Data Services](../data-connection/hipaa-readiness.md#installation), que faz parte da [conexão de dados](../data-connection/overview.md), os dados do evento de vitrine usados por [!DNL Product Recommendations] não serão mais capturados. Isso ocorre porque os dados do evento da loja são gerados no lado do cliente. Para continuar capturando e enviando dados do evento da loja, habilite novamente a coleção de eventos para [!DNL Product Recommendations]. Consulte [configuração geral](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/config/general/general#data-services) para saber mais.
+Se você for um cliente da área de saúde e tiver instalado a [extensão HIPAA do Data Services](../data-connection/hipaa-readiness.md#installation), que está incluída na [conexão de dados](../data-connection/overview.md), a [!DNL Product Recommendations] interromperá a coleta de dados do evento da loja porque são gerados no lado do cliente.
+
+Para continuar coletando e enviando dados do evento da loja, habilite novamente a coleta de eventos para [!DNL Product Recommendations]. Para obter mais informações, consulte [Configuração geral](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/config/general/general#data-services).
 
 ## Tipos de dados e eventos
 
@@ -48,16 +50,16 @@ Há dois tipos de dados usados nas Recomendações de produto:
 
 Quando você instala o módulo `magento/product-recommendations`, o Adobe AI agrega os dados comportamentais e de catálogo, criando Recomendações de Produto para cada tipo de recomendação. O serviço de Recomendações de Produto implanta essas recomendações na vitrine eletrônica em um widget que contém os _itens_ de produto recomendados.
 
-Alguns tipos de recomendações usam dados comportamentais de seus compradores para treinar modelos de aprendizado de máquina para criar recomendações personalizadas. Outros tipos de recomendações usam apenas dados de catálogo e não usam dados comportamentais. Se você quiser começar rapidamente a usar o Product Recommendations em seu site, poderá usar os seguintes tipos de recomendações somente de catálogo:
+Alguns tipos de recomendações usam os dados comportamentais dos compradores para treinar modelos de aprendizado de máquina e gerar recomendações personalizadas. Outros dependem apenas dos dados do catálogo. Para começar a usar as Recomendações de Produto rapidamente, escolha um dos seguintes tipos de recomendação somente para catálogo:
 
 - `More like this`
 - `Visual similarity`
 
 ### Arranque a frio
 
-Quando você pode começar a usar tipos de recomendação que usam dados comportamentais? Depende. Isso é conhecido como o problema _Cold Start_.
+Quando você pode começar a usar tipos de recomendação que usam dados comportamentais? Depende. Essa situação é conhecida como o problema _Cold Start_.
 
-O problema _Cold Start_ refere-se ao tempo que um modelo leva para ser treinado e se tornar efetivo. Para recomendações de produtos, isso significa aguardar que o Adobe AI colete dados suficientes para treinar seus modelos de aprendizado de máquina antes de implantar unidades de recomendação em seu site. Quanto mais dados os modelos tiverem, mais precisas e úteis serão as recomendações. Como a coleta de dados ocorre em um site ativo, é melhor iniciar esse processo antecipadamente instalando e configurando o módulo `magento/production-recommendations`.
+O problema _Início a Frio_ é o tempo necessário para o treinamento de um modelo de aprendizado de máquina, antes que ele possa produzir recomendações eficazes. Para o Product Recommendations, a Adobe AI deve coletar dados suficientes para treinar seus modelos antes de implantar unidades de recomendação. Mais dados geralmente melhoram a precisão e a utilidade da recomendação. Como a coleta de dados ocorre no site ativo, inicie esse processo antecipadamente instalando e configurando o módulo `magento/product-recommendations`.
 
 A tabela a seguir fornece algumas orientações gerais sobre o tempo necessário para coletar dados suficientes para cada tipo de recomendação:
 
@@ -76,15 +78,15 @@ Outras variáveis que podem afetar o tempo necessário para treinar:
 
 Para ajudá-lo a visualizar o progresso do treinamento de cada tipo de recomendação, a página [criar recomendação](create.md#readiness-indicators) exibe indicadores de preparação.
 
-Enquanto os dados estão sendo coletados em seu site ativo e os modelos de aprendizado de máquina estão sendo treinados, você pode concluir outras tarefas de teste e configuração necessárias para definir as recomendações. Quando você terminar este trabalho, os modelos terão dados suficientes para criar recomendações úteis, permitindo que você os implante em sua loja.
+Enquanto seu site ativo coleta dados e o treinamento de modelos de aprendizado de máquina, conclua as tarefas restantes de teste e configuração. Quando os modelos tiverem dados suficientes para gerar recomendações úteis, implante as unidades de recomendação na loja.
 
-Se o site não receber tráfego suficiente (exibições, compras, tendências) para a maioria dos SKUs de produtos, talvez não haja dados suficientes para concluir o processo de aprendizado. Isso pode fazer com que o indicador de prontidão do Administrador pareça travado. Os indicadores de prontidão devem fornecer aos comerciantes outro ponto de dados para escolher qual tipo de recomendações é melhor para sua loja. Os números são um guia e podem nunca chegar a 100%. [Saiba mais](create.md#readiness-indicators) sobre os indicadores de preparação.
+Se o site não receber tráfego suficiente (exibições, compras ou tendências) para a maioria dos SKUs de produtos, o processo de aprendizado pode não ser concluído, fazendo com que os indicadores de prontidão no Administrador pareçam travados. Os indicadores de prontidão ajudam os comerciantes a escolher o melhor tipo de recomendação para sua loja, mas eles são apenas um guia e podem nunca chegar a 100%. Saiba mais sobre os indicadores de disponibilidade. [Saiba mais](create.md#readiness-indicators) sobre os indicadores de preparação.
 
 ### Recomendações de backup {#backuprecs}
 
-Se os dados de entrada forem insuficientes para fornecer todos os itens de recomendação solicitados em uma unidade, a Adobe Commerce fornecerá recomendações de backup para preencher as unidades de recomendação. Por exemplo, se você implantar o tipo de recomendação `Recommended for you` na sua página inicial, um comprador novo no site não terá gerado dados comportamentais suficientes para recomendar com precisão os produtos personalizados. Nesse caso, o Adobe Commerce exibe itens baseados no tipo de recomendação `Most viewed` para esse comprador.
+Quando dados de entrada insuficientes impedem que uma unidade de recomendação retorne todos os itens solicitados, o Adobe Commerce os preenche com recomendações de backup. Por exemplo, depois de implantar o tipo de recomendação `Recommended for you` na página inicial, um comprador pela primeira vez pode não ter gerado dados comportamentais suficientes para recomendações personalizadas. Nesse caso, o Adobe Commerce exibe itens com base no tipo de recomendação `Most viewed `.
 
-No caso de coleta de dados de entrada insuficiente, os seguintes tipos de recomendação fazem fallback para o tipo de recomendação `Most viewed`:
+Se a coleta de dados de entrada for insuficiente, os seguintes tipos de recomendação farão fallback para o tipo de recomendação `Most viewed`:
 
 - `Recommended for you`
 - `Viewed this, viewed that`
@@ -96,9 +98,9 @@ No caso de coleta de dados de entrada insuficiente, os seguintes tipos de recome
 
 #### Avisos
 
-- Os bloqueadores de anúncios e as configurações de privacidade podem impedir que eventos sejam capturados e podem fazer com que as [métricas](workspace.md#column-descriptions) de envolvimento e receita sejam reportadas incorretamente. Além disso, alguns eventos podem não ser enviados porque os compradores saem da página ou por problemas de rede.
+- Os bloqueadores de anúncios e as configurações de privacidade podem impedir que eventos sejam capturados e podem fazer com que as [métricas](workspace.md#column-descriptions) de envolvimento e receita sejam reportadas incorretamente. Além disso, alguns eventos não são enviados porque os compradores saem da página ou por problemas de rede.
 - [As implementações headless](headless.md) devem implementar eventos para potencializar o painel Recomendações de produto.
-- Para produtos configuráveis, as Recomendações de produto usam a imagem do produto principal na unidade de recomendação. Se o produto configurável não tiver uma imagem especificada, a unidade de recomendação ficará vazia para esse produto específico.
+- Para produtos configuráveis, as Recomendações de produto usam a imagem do produto principal. Se o produto principal não tiver imagem, ele não aparecerá na unidade de recomendação.
 
 >[!NOTE]
 >

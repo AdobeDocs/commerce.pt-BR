@@ -3,9 +3,9 @@ title: Pesquisa semântica
 description: Habilitar a pesquisa semântica de IA para  [!DNL Live Search]  em Configurações. Nenhuma configuração de atributo ou alteração de vitrine eletrônica é necessária.
 role: Admin
 recommendations: noCatalog
-source-git-commit: 33d9172b2d0455a061c00781128a9f2fe804af7b
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '791'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >
 >A pesquisa semântica está disponível para comerciantes que usam o Adobe Commerce versões 2.4.4 e mais recentes.
 
-A pesquisa semântica usa IA para entender o que os compradores significam, não apenas as palavras exatas que digitam. Consultas como &quot;vestido de casamento na praia&quot; ou &quot;sapatos confortáveis para ficar o dia todo&quot; podem retornar produtos relevantes mesmo quando seu catálogo não usa essas frases exatas.
+A pesquisa semântica usa IA para entender o que os compradores significam, não apenas as palavras que digitam. Consultas como &quot;vestido de casamento na praia&quot; ou &quot;sapatos confortáveis para ficar o dia todo&quot; podem retornar produtos relevantes mesmo quando seu catálogo não usa essas frases exatas.
 
 [!DNL Live Search] combina correspondência de palavra-chave e correspondência semântica em uma experiência de pesquisa. Você não gerencia palavras-chave separadas e modos semânticos na loja. [!DNL Live Search] não oferece controles semânticos avançados (por exemplo, controles deslizantes de reforço ou similaridade) no Administrador. Você pode ativar ou desativar a pesquisa semântica.
 
@@ -33,7 +33,7 @@ A pesquisa semântica é gerenciada no espaço de trabalho **Configurações** n
 
 ## Como funciona
 
-Quando a pesquisa semântica está habilitada, o [!DNL Live Search] usa atributos de catálogo predefinidos escolhidos pelo sistema (como nome e descrição do produto) para interpretar o significado da consulta junto com a pesquisa de palavra-chave tradicional. Você não seleciona nem prioriza atributos no Administrador.
+Para interpretar o significado da consulta junto com a pesquisa tradicional de palavra-chave quando a pesquisa semântica está habilitada, o [!DNL Live Search] usa atributos de catálogo predefinidos escolhidos pelo sistema (como nome e descrição do produto). Você não seleciona nem prioriza atributos no Administrador.
 
 Por exemplo:
 
@@ -74,13 +74,13 @@ O Adobe Commerce na nuvem e os comerciantes locais devem habilitar a pesquisa se
 
 ### Para [!DNL Adobe Commerce as a Cloud Service] clientes
 
-[!DNL Adobe Commerce as a Cloud Service] clientes usam o mesmo espaço de trabalho de **Configurações** no Administrador [!DNL Live Search]. A pesquisa semântica é **habilitada por padrão** para catálogos em inglês qualificados. Confirme se **[!UICONTROL Semantic search]** está habilitado ou desabilite-o se não quiser correspondência semântica na loja.
+[!DNL Adobe Commerce as a Cloud Service] clientes usam o mesmo espaço de trabalho de **Configurações** no Administrador [!DNL Live Search]. O Adobe Commerce habilita a pesquisa semântica por padrão para catálogos em inglês qualificados. Confirme se **[!UICONTROL Semantic search]** está habilitado ou desabilite-o se não quiser correspondência semântica na loja.
 
 Você não precisa de uma etapa de publicação ou configuração de vitrine separada depois de salvar uma alteração.
 
 ## Validar após ativação
 
-Depois que a pesquisa semântica estiver ativa e a indexação for concluída, a Adobe recomenda validar o desempenho da pesquisa. Use o espaço de trabalho [Desempenho](performance.md) para revisar métricas e testar consultas importantes para sua empresa. Isso se aplica se a pesquisa semântica foi habilitada por padrão ou se você a habilitou manualmente.
+Depois que a pesquisa semântica estiver ativa e a indexação for concluída, a Adobe recomenda validar o desempenho da pesquisa. Use o espaço de trabalho [Desempenho](performance.md) para revisar métricas e testar consultas importantes para sua empresa. Isso se aplica se a pesquisa semântica habilitada pelo sistema for padrão ou se você a habilitou manualmente.
 
 1. Revise os principais termos pesquisados no relatório **Pesquisas exclusivas**.
 1. Teste consultas históricas de resultado zero do relatório **Nenhum resultado** na loja.
@@ -90,7 +90,7 @@ Depois que a pesquisa semântica estiver ativa e a indexação for concluída, a
 ## Práticas recomendadas
 
 - Use nomes e descrições de produtos claros e descritivos (idealmente, 50 a 100 palavras) para que a correspondência de palavra-chave e semântica tenha um texto de catálogo sólido para funcionar.
-- Mantenha [sinônimos](synonyms.md) altamente técnicos ou específicos da marca, nos quais a pesquisa semântica pode não abranger termos especializados.
+- Mantenha [sinônimos](synonyms.md) altamente técnicos ou específicos da marca, nos quais a pesquisa semântica não cobre termos especializados.
 
 ## Solução de problemas
 

@@ -17,9 +17,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
-source-wordcount: 2233
+source-wordcount: 2260
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ As atualizações incluem:
 ![Correção](../assets/fix.svg) Correções e melhorias
 ![Bug](../assets/bug.svg) Problemas conhecidos
 
-Consulte a documentação do desenvolvedor para [saber mais sobre o suporte ao produto](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/product-availability).
+[Saiba mais sobre o suporte ao produto](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/product-availability).
 
 ## Atualizações do serviço hospedado
 
@@ -52,7 +52,7 @@ _28 de abril de 2026_
 
 _19 de fevereiro de 2026_
 
-![Correção](../assets/fix.svg) Corrigido um problema no qual os produtos exibidos no tipo de recomendação _Recentemente visualizado_ eram removidos em uma ordem inesperada quando o limite de produtos da unidade de recomendação era atingido. Os produtos agora são removidos na ordem primeiro a entrar, primeiro a sair (FIFO) para que os produtos sejam visualizados.
+![Correção](../assets/fix.svg) Corrigido um problema no qual os produtos exibidos no tipo de recomendação _Recentemente visualizado_ eram removidos em uma ordem inesperada quando o limite de produtos da unidade de recomendação era atingido. Os produtos agora são removidos na ordem primeiro a entrar, primeiro a sair (FIFO) na qual foram visualizados.
 
 _19 de novembro de 2025_
 
@@ -73,11 +73,11 @@ _28 de junho de 2024_
 
 _18 de julho de 2023_
 
-![Novo](../assets/new.svg) [!DNL Product Recommendations] agora tem uma consulta GraphQL [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/).
+![Novo](../assets/new.svg) [!DNL Product Recommendations] agora tem uma consulta GraphQL [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations).
 
 _25 de abril de 2023_
 
-![Novos](../assets/new.svg) clientes do [!DNL Product Recommendations] agora podem aproveitar a [indexação de preços do SaaS](../price-index/price-indexing.md).
+![Novos](../assets/new.svg) [!DNL Product Recommendations] clientes agora podem usar a [indexação de preços do SaaS](../price-index/price-indexing.md).
 
 ## Versão principal atual
 
@@ -113,7 +113,7 @@ _17 de setembro de 2025_
 
 [!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
-![Correção](../assets/fix.svg) Resolveu um problema intermitente em que as unidades de recomendação do produto desapareceriam devido a um erro de JavaScript quando os dados de armazenamento local não estavam disponíveis. Essa correção garante que o PREX não gere mais erros se `ds-view-history-time-decay` estiver ausente no armazenamento local.
+![Correção](../assets/fix.svg) Resolveu um problema intermitente em que as unidades de recomendação do produto desapareciam devido a um erro de JavaScript quando os dados de armazenamento local não estavam disponíveis. Essa correção garante que o PREX não gere mais erros se `ds-view-history-time-decay` estiver ausente no armazenamento local.
 ![Novo](../assets/new.svg) Atualizou as URLS CDN de `recommendations-sdk` para o domínio `adobe.io`.
 
 ### 6.3.0 do magento/product-recommendations
@@ -131,7 +131,7 @@ _14 de julho de 2025_
 
 [!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
-![Correção](../assets/fix.svg) Aprimoramentos feitos no painel [recomendações de visualização](./create.md#preview-recommendations).
+![Correção](../assets/fix.svg) Melhorias no painel [recomendações de visualização](./create.md#preview-recommendations).
 
 ### 6.2.0 do magento/product-recommendations
 
@@ -194,7 +194,7 @@ _15 de setembro de 2023_
 
 ![Novo](../assets/new.svg) Adição de novos módulos para dar suporte ao [Indexador de Preços Saas](../price-index/price-indexing.md).
 ![Novo](../assets/new.svg) Foram adicionados novos módulos de exportação de dados para oferecer suporte à exportação de mais tipos de produtos, incluindo produtos agrupados e cartões-presente.
-![Correção](../assets/fix.svg) O tamanho da tabela dos feeds Produtos e Preço foi bastante reduzido. As tabelas `catalog_data_exporter_products` e `catalog_data_exporter_product_prices` devem ver uma redução substancial no tamanho.
+![Correção](../assets/fix.svg) O tamanho da tabela dos feeds Produtos e Preço foi bastante reduzido. As tabelas `catalog_data_exporter_products` e `catalog_data_exporter_product_prices` observam uma redução substancial no tamanho.
 
 #### Limitações conhecidas
 
@@ -208,13 +208,13 @@ _20 de março de 2023_
 
 ![Novo](../assets/new.svg) Atualizado em [!DNL Product Recommendations] para oferecer suporte ao Adobe Commerce 2.4.6.
 ![Novo](../assets/new.svg) Esta é uma versão principal. [Edite](install-configure.md#update) o arquivo `composer.json` raiz do seu projeto.
-Os ![Novos](../assets/new.svg) [!DNL Product Recommendations] agora oferecem suporte aos recursos completos do [Inventory management](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/inventory/introduction) na Commerce (anteriormente conhecido como Inventário de Várias Source, ou MSI). Para habilitar o suporte completo, você deve [atualizar](install-configure.md#update) o módulo de dependência `commerce-data-export` para a versão 102.2.0+.
+Os ![Novos](../assets/new.svg) [!DNL Product Recommendations] agora oferecem suporte aos recursos completos do [Inventory management](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/inventory/introduction) na Commerce (anteriormente conhecido como Inventário de Várias Source ou MSI). Para habilitar o suporte completo, você deve [atualizar](install-configure.md#update) o módulo de dependência `commerce-data-export` para a versão 102.2.0+.
 
 ### 4.0.1 do magento/product-recommendations
 
 [!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
-![Correção](../assets/fix.svg) anteriormente, [!DNL Product Recommendations] mostraria um erro quando a moeda de exibição fosse trocada por uma moeda não padrão. A troca de moedas agora funciona corretamente.
+![Correção](../assets/fix.svg) Anteriormente, [!DNL Product Recommendations] mostrava um erro quando a moeda de exibição era trocada por uma moeda não padrão. A troca de moedas agora funciona corretamente.
 
 ### 4.0.0 do magento/product-recommendations
 
@@ -252,9 +252,9 @@ Os ![Novos](../assets/new.svg) [!DNL Product Recommendations] agora oferecem sup
 [!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.x e mais recentes
 
 ![Novo](../assets/new.svg) Adicionado aos novos [tipos de recomendação](type.md): Conversão (exibir para carrinho), Conversão (exibir para compra) e Visualizado recentemente. Esses novos tipos de recomendações estão disponíveis no `magento/product-recommendations` módulo 3.2.2 e posterior.
-![Correção](../assets/fix.svg) Corrigido um problema no qual o WAF (Web Application Firewall) do Fastly bloqueava incorretamente um cookie
-![Correção](../assets/fix.svg) Corrigido um problema no qual os produtos atribuídos ao Modo de Exibição de Loja não padrão não eram exibidos no painel _Visualização de Produto do Recommendations_ ao criar uma recomendação para esse Modo de Exibição de Loja específico
-![Correção](../assets/fix.svg) Corrigido um problema no qual certos nomes de unidades de recomendação no Page Builder impediam que a unidade de recomendação fosse exibida na loja
+![Correção](../assets/fix.svg) Corrigido um problema no qual o WAF (Web Application Firewall) do Fastly bloqueava incorretamente um cookie.
+![Correção](../assets/fix.svg) Corrigido um problema no qual os produtos atribuídos ao Modo de Exibição de Loja não padrão não eram exibidos no painel _Visualização de Produto do Recommendations_ ao criar uma recomendação para esse Modo de Exibição de Loja específico.
+![Correção](../assets/fix.svg) Corrigido um problema no qual certos nomes de unidades de recomendação no Page Builder impediam que a unidade de recomendação fosse exibida na loja.
 
 ### 3.3.2 do magento/product-recommendations
 
@@ -272,7 +272,7 @@ Os ![Novos](../assets/new.svg) [!DNL Product Recommendations] agora oferecem sup
 
 [!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.x e mais recentes
 
-![Novo](../assets/new.svg) adição de suporte à Camada de dados de clientes Adobe para padronizar a coleta de dados comportamentais entre os recursos e serviços da Adobe Commerce. Consulte o [readme](https://github.com/adobe/commerce-events/blob/main/packages/storefront-events-collector/README.md) para saber mais.
+![Novo](../assets/new.svg) adição de suporte à Camada de dados de clientes Adobe para padronizar a coleta de dados comportamentais entre os recursos e serviços da Adobe Commerce. Para saber mais, consulte o [readme](https://github.com/adobe/commerce-events/blob/main/packages/storefront-events-collector/README.md).
 
 ### 3.2.6 do magento/product-recommendations
 
@@ -297,15 +297,15 @@ Os ![Novos](../assets/new.svg) [!DNL Product Recommendations] agora oferecem sup
 
 [!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.x e mais recentes
 
-![Correção](../assets/fix.svg) Corrigido o erro &quot;Não é possível recuperar dados de opções do produto configuráveis&quot; durante a Sincronização do Catálogo
-![Correção](../assets/fix.svg) Corrigido um problema no qual o código de armazenamento não estava sendo definido corretamente quando você habilitou a configuração &quot;Adicionar código de armazenamento à URL&quot;
-![Correção](../assets/fix.svg) Detecção aprimorada de alterações de configuração do Painel de Administração para garantir que essas alterações sejam refletidas nos dados de Sincronização do Catálogo
+![Correção](../assets/fix.svg) Corrigido o erro &quot;Não é possível recuperar dados de opções do produto configuráveis&quot; durante a Sincronização do Catálogo.
+![Correção](../assets/fix.svg) Corrigido um problema no qual o código de armazenamento não estava sendo definido corretamente quando você habilitou a configuração &quot;Adicionar código de armazenamento à URL&quot;.
+![Correção](../assets/fix.svg) Detecção aprimorada de alterações de configuração do Painel de Administração para garantir que essas alterações sejam refletidas nos dados de Sincronização do Catálogo.
 
 ### 3.2.2 do magento/product-recommendations
 
 [!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.x e mais recentes
 
-![Novo](../assets/new.svg) Adicionou a capacidade de [visualizar os resultados da recomendação](create.md) no momento da criação. Isso pode exigir que você atualize seu módulo para a versão mais recente.
+![Novo](../assets/new.svg) Adicionou a capacidade de [visualizar os resultados da recomendação](create.md) no momento da criação. Essa atualização exige que você atualize seu módulo para a versão mais recente.
 ![Novo](../assets/new.svg) Adicionou a capacidade de [monitorar e gerenciar](https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/data-services/catalog-sync) o processo de sincronização de catálogo do Administrador.
 ![Novo](../assets/new.svg) Adicionados [filtros](filters.md) para controlar quais produtos são exibidos nas recomendações.
 ![Novo](../assets/new.svg) Adicionou o tipo de recomendação [Semelhança visual](type.md#visualsim).
@@ -346,7 +346,7 @@ Os ![Novos](../assets/new.svg) [!DNL Product Recommendations] agora oferecem sup
 
 [!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.x e mais recentes
 
-![Correção](../assets/fix.svg) Corrigido o erro &quot;Não é possível recuperar dados de opções do produto&quot; que poderia ocorrer durante a exportação do catálogo.
+![Correção](../assets/fix.svg) Corrigido o erro &quot;Não é possível recuperar dados de opções do produto&quot; que ocorreu durante a exportação do catálogo.
 ![Correção](../assets/fix.svg) O símbolo de moeda na coluna _Receita_ do painel _[!DNL Product Recommendations]_&#x200B;agora reflete corretamente a moeda base configurada.
 
 ### 3.0.4 do magento/product-recommendations

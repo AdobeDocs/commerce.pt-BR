@@ -18,16 +18,16 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
-source-wordcount: 1421
+source-wordcount: 1409
 ht-degree: 0%
 
 ---
 
 # Limites e limites
 
-Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Revise os limites e limites a seguir para garantir que o [!DNL Live Search] e o [!DNL Catalog Service] atendam às necessidades da sua empresa. Se você precisar de recursos de pesquisa avançada, como pesquisa de conteúdo, BYOA (traga seu próprio algoritmo) ou merchandising baseado em atributos, considere uma solução de pesquisa de terceiros.
+Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Para garantir que o [!DNL Live Search] e o [!DNL Catalog Service] atendam às necessidades da sua empresa, analise os seguintes limites e limites. Se você precisar de recursos de pesquisa avançada, como pesquisa de conteúdo, BYOA (traga seu próprio algoritmo) ou merchandising baseado em atributos, considere uma solução de pesquisa de terceiros.
 
 ## Geral
 
@@ -40,15 +40,15 @@ Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Revise o
 - Há um limite rígido de 1 MB por atributo, incluindo descrição e atributos personalizados.
 - O adaptador de pesquisa não oferece suporte a atributos de produto criados com um modelo de origem personalizado e usados como facetas. Para oferecer suporte a esta funcionalidade, você deve usar o [Widget de página de listagem de produtos](plp-styling.md).
 - Não há suporte para tipos de produto personalizados.
-- Não há suporte para atributos personalizados criados programaticamente com `"is_user_defined": false`.
-- Você pode filtrar os resultados usando as condições &quot;inicia com&quot; ou &quot;contém&quot; com algumas limitações, conforme descrito na [documentação do desenvolvedor](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#limitations).
+- Atributos personalizados criados programaticamente com `"is_user_defined": false` não são suportados.
+- Você pode filtrar os resultados usando as condições &quot;inicia com&quot; ou &quot;contém&quot; com algumas limitações, conforme descrito na [documentação do desenvolvedor](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#limitations).
 - Você só pode acompanhar métricas de desempenho no último ano.
 - Se uma consulta de pesquisa contiver várias palavras, o espaço em branco entre as palavras fará com que elas sejam tratadas como termos de pesquisa separados. Use [sinônimos](./synonyms.md) se desejar considerar as consultas de pesquisa de várias palavras.
 - [!DNL Live Search] não dá suporte a [redirecionamentos de termo de pesquisa](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/search/search-terms) nativamente. Implemente redirecionamentos usando o Fastly ou outra configuração personalizada.
 
 ## Indexação
 
-- [!DNL Live Search] [indexa](indexing.md) até um total de 450 atributos de produto por exibição de loja. Elas são distribuídas da seguinte maneira:
+- [!DNL Live Search] [indexa](indexing.md) até um total de 450 atributos de produto por exibição de loja. Esses atributos são distribuídos da seguinte maneira:
   - 50 atributos classificáveis
   - 200 atributos filtráveis
   - 200 atributos pesquisáveis
@@ -61,28 +61,28 @@ Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Revise o
 - No conjunto de atributos filtráveis definidos, é possível configurar até 100 atributos como facetas.
 - Dentro de uma faceta, um máximo de 100 grupos podem ser retornados. Se você precisar retornar mais de 100 compartimentos, [crie um tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) para que a Adobe possa analisar o impacto no desempenho e determinar se é viável aumentar esse limite no seu ambiente.
 - Os aspectos dinâmicos podem causar problemas de desempenho em índices grandes e índices com alta ordinalidade. Se você tiver criado facetas dinâmicas e notar qualquer deterioração de desempenho ou carregamento de página sem erros de tempo limite, tente alterar suas facetas para fixado para determinar se isso resolve seu problema de desempenho.
-- O status do estoque (`quantity_and_stock_status`) não tem suporte como uma faceta. No Administrador, você pode definir [!UICONTROL Display Out of Stock Products] = [!UICONTROL No] para filtrar produtos de falta de estoque. Isso é suportado imediatamente no módulo `[PLP Widget](plp-styling.md)`. Para obter detalhes, consulte [Gerenciar produtos indisponíveis](manage-out-of-stock-products.md).
+- O status do estoque (`quantity_and_stock_status`) não tem suporte como uma faceta. No Administrador, você pode definir [!UICONTROL Display Out of Stock Products] = [!UICONTROL No] para filtrar produtos de falta de estoque. Esta funcionalidade tem suporte nativo no módulo `[PLP Widget](plp-styling.md)`. Para obter detalhes, consulte [Gerenciar produtos indisponíveis](manage-out-of-stock-products.md).
 - Atributos de tipo de data não são suportados como uma faceta.
 - Quaisquer alterações feitas nos metadados do atributo após esse atributo ser adicionado como uma faceta não serão refletidas na faceta.
 - Você pode ter até 50 atributos classificáveis e 200 atributos pesquisáveis.
 
 ## Query
 
-- [!DNL Live Search] usa um [ponto de extremidade do GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) exclusivo para as consultas a fim de oferecer suporte a recursos como facetas dinâmicas e search-as-you-type. Embora semelhante à [API do GraphQL](https://developer.adobe.com/commerce/webapi/graphql/), há algumas diferenças e alguns campos podem não ser totalmente compatíveis.
+- [!DNL Live Search] usa um [ponto de extremidade do GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) exclusivo para as consultas a fim de oferecer suporte a recursos como facetas dinâmicas e search-as-you-type. Embora semelhante à [API do GraphQL](https://developer.adobe.com/commerce/webapi/graphql/), há algumas diferenças e alguns campos não são totalmente compatíveis.
 - O número máximo de resultados que podem ser retornados em uma consulta de pesquisa é 10.000.
 - O número máximo de resultados por página é 100.
 - Não é possível filtrar resultados usando um atributo de tipo de data.
 
 >[!NOTE]
 >
->A classificação por posição requer um filtro `categoryPath` ou `categoryIds` válido para estar ativo. [Saiba mais](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#error-handling-for-categorypath-and-categoryids).
+>A classificação por posição requer um filtro `categoryPath` ou `categoryIds` válido para estar ativo. [Saiba mais](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search#error-handling-for-categorypath-and-categoryids).
 
 ## Pesquisar merchandising
 
 - O número máximo de [regras](rules.md) de merchandising por exibição de loja é 50.
 - O número máximo de condições por regra é 10.
 - O número máximo de eventos por regra é 25.
-- As regras e os produtos classificados manualmente são aplicados aos resultados da pesquisa quando a ordem de classificação padrão, &quot;Classificar por: Mais relevante&quot;, é selecionada. Se um comprador alterar a ordem de classificação para algo como classificar por nome ou preço, as regras e as classificações manuais não estarão mais em vigor.
+- As regras e os produtos classificados manualmente são aplicados aos resultados da pesquisa quando a ordem de classificação padrão, &quot;Classificar por: Mais relevante&quot;, é selecionada. Se um comprador alterar a ordem de classificação, as regras e as classificações manuais não estarão mais em vigor.
 - Para evitar resultados imprevisíveis em respostas paginadas, o número de produtos fixados não deve exceder o tamanho de página solicitado.
 
 ## Sinônimos
@@ -109,7 +109,7 @@ Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Revise o
 
 ## [!DNL Storefront popover]
 
-- O [[!DNL popover]](storefront-popover.md) está disponível somente para lojas que usam o tema *Luma* ou um tema personalizado baseado no *Luma*. As navegações estruturais na página de resultados da pesquisa não terão o estilo *Luma*.
+- O [[!DNL popover]](storefront-popover.md) está disponível somente para lojas que usam o tema *Luma* ou um tema personalizado baseado no *Luma*. As navegações estruturais na página de resultados da pesquisa não têm o estilo *Luma*.
 - O [!DNL popover] não oferece suporte ao tema *Em branco*.
 - Não há suporte para [!DNL popover] no formulário de Pedido rápido.
 - As listas de desejos e as comparações de produtos não são compatíveis.

@@ -15,9 +15,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+source-git-commit: 08c4badb4cae27a2cefb9fcb8eb5589bc8264467
 workflow-type: tm+mt
-source-wordcount: 1201
+source-wordcount: 1170
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ Com [!DNL Live Search], você pode:
 
 >[!IMPORTANT]
 >
->Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Antes da implementação, reveja as informações de [Limites e Limites](boundaries-limits.md) para garantir que o [!DNL Live Search] seja adequado às suas necessidades comerciais.
+>Para garantir que o [!DNL Live Search] seja adequado às suas necessidades comerciais, analise as informações de [Limites e Limites](boundaries-limits.md) antes da implementação.
 
 ## Arquitetura
 
@@ -46,7 +46,7 @@ O lado Adobe Commerce da arquitetura inclui hospedar a pesquisa *Admin*, sincron
 
 ## Tour rápido
 
-Com foco na velocidade, relevância e facilidade de uso, o [!DNL Live Search] é um divisor de águas para compradores e comerciantes. Assista ao vídeo a seguir e faça um rápido tour pelo [!DNL Live Search] na loja.
+Com foco na velocidade, relevância e facilidade de uso, o [!DNL Live Search] é um aprimoramento significativo tanto para compradores quanto para comerciantes. Assista ao vídeo a seguir e faça um rápido tour pelo [!DNL Live Search] na loja.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452574?captions=por_br&learn=on)
 
@@ -80,7 +80,7 @@ Além da lógica de pesquisa difusa, transposições também são contabilizadas
 
 ### Filtros versus facetas
 
-[!DNL Live Search] pode filtrar os resultados por qualquer atributo que esteja indexado como filtrável. Uma faceta é simplesmente um atributo filtrável que foi configurado para ser exibido como um filtro voltado para o comprador na loja (por exemplo, Marca, Cor, Preço).
+[!DNL Live Search] pode filtrar os resultados por qualquer atributo que esteja indexado como filtrável. Uma faceta é um atributo filtrável que foi configurado para ser exibido como um filtro voltado para o comprador na loja (por exemplo, Marca, Cor, Preço).
 
 Alguns campos internos — como `inStock` — são filtráveis, mas não fatíveis:
 
@@ -89,13 +89,13 @@ Alguns campos internos — como `inStock` — são filtráveis, mas não fatíve
 
 ### Pesquisa filtrada com facetas
 
-A pesquisa filtrada usa várias dimensões de valores de atributo, ou [facetas](facets.md), como critérios de pesquisa. A seleção de filtros é definida pelo comerciante e muda de acordo com os produtos retornados, com as facetas mais usadas fixadas no topo da lista.
+A pesquisa filtrada usa várias dimensões de valores de atributo, ou [facetas](facets.md), como critérios de pesquisa. O comerciante define a seleção de filtros, que muda de acordo com os produtos retornados, com as facetas mais usadas fixadas no topo da lista.
 
-Use facetas como parâmetros de URL:`http://yourwebsite.com?color=red`, e o Live Search filtra os resultados com base nesses valores de atributo.
+Use facetas como parâmetros de URL: `https://www.mywebsite.com/?color=red`, e o Live Search filtra os resultados com base nesses valores de atributo.
 
 ### Sinônimos
 
-[Sinônimos](synonyms.md) expanda o alcance e ajuste a nitidez do foco das consultas ao incluir palavras que os compradores podem usar diferentes daquelas no catálogo. Você pode ajustar o dicionário de sinônimo para manter os compradores envolvidos e no caminho para comprar.
+[Sinônimos](synonyms.md) expanda o alcance e ajuste a nitidez do foco das consultas ao incluir palavras que os compradores usam diferentes daquelas no catálogo. Para manter os compradores envolvidos e no caminho da compra, ajuste o dicionário de sinônimos.
 
 ### Regras de merchandising
 
@@ -103,7 +103,7 @@ As [regras](rules.md) de merchandising moldam a experiência de compra com instr
 
 ## Componentes do Live Search
 
-- [!DNL Live Search] [widget de popover](storefront-popover.md) é a caixa que é aberta no campo de pesquisa que contém os resultados da pesquisa.
+- [!DNL Live Search] O [widget popover](storefront-popover.md) é a caixa que é aberta no campo de pesquisa que contém os resultados da pesquisa.
 - O [widget Página de listagem de produtos](plp-styling.md) (PLP) fornece uma página de listagem de produtos pesquisável com facetas e suporte a sinônimos. O widget está instalado e ativado no Live Search 4.0.0+ e substitui o Adaptador de pesquisa.
 - (**Desaprovado**) O Adaptador de Pesquisa foi o precursor do widget PLP e foi instalado com o Live Search &lt; 4.0.0. Se você estiver usando uma versão do Live Search anterior à 4.0.0, a Commerce recomenda atualizar para receber os benefícios dos recursos do widget PLP e melhorias futuras. Consulte o [guia de migração](migrate-to-plp.md) para obter informações detalhadas sobre como migrar para o widget PLP.
 
@@ -117,14 +117,14 @@ O [!DNL Live Search] [espaço de trabalho](workspace.md) é a área no Administr
 
 ## Política de retenção de dados do catálogo
 
-Se você não enviar uma consulta de pesquisa para os dados do catálogo no ambiente de teste por 90 dias consecutivos, os dados do catálogo serão definidos para o modo de hibernação e nenhum dado será retornado para qualquer consulta de pesquisa. Os dados do catálogo em seu ambiente de produção não são afetados por essa política.
+Se você não enviar uma consulta de pesquisa para seu ambiente de teste por 90 dias, os dados do catálogo entrarão no modo de hibernação e não retornarão resultados. Essa política não afeta os dados do catálogo no ambiente de produção.
 
 ### Ambiente de teste inativo
 
-Para reativar os dados do catálogo no ambiente de teste, [envie uma solicitação de suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page) com o título: &quot;Reativar [!DNL Live Search]&quot; e incluir as IDs de ambiente. Os dados do catálogo no ambiente de teste devem ser restaurados em algumas horas.
+Para reativar os dados do catálogo no ambiente de teste, [envie uma solicitação de suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page) com o título: &quot;Reativar [!DNL Live Search]&quot; e incluir as IDs de ambiente. Os dados do catálogo no ambiente de teste devem ser restaurados em duas horas.
 
 ### Catálogo vazio
 
 Se o ambiente tiver um catálogo vazio 45 dias após a criação, os dados do catálogo serão definidos para o modo de hibernação e nenhum dado será retornado para nenhuma consulta de pesquisa. Isso inclui ambientes de produção e teste.
 
-Para reativar os dados do catálogo em seu ambiente, [envie uma solicitação de suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page) com o título: &quot;Reativar [!DNL Live Search]&quot; e inclua as IDs de ambiente. Os dados do catálogo em seu ambiente devem ser restaurados em algumas horas.
+Para reativar os dados do catálogo em seu ambiente, [envie uma solicitação de suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page) com o título: &quot;Reativar [!DNL Live Search]&quot; e inclua as IDs de ambiente. Os dados do catálogo no seu ambiente devem ser restaurados em até duas horas.

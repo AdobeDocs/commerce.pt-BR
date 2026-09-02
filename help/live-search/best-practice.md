@@ -15,9 +15,9 @@ topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: f7ea996f3adcd3beb2a9c064ce57d251f49ae5b3
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
-source-wordcount: 3006
+source-wordcount: 2965
 ht-degree: 0%
 
 ---
@@ -28,9 +28,9 @@ Este artigo ajuda os merchandisers a aprimorar a funcionalidade de pesquisa do s
 
 Há vários fatores principais que determinam a relevância e a eficácia dos resultados da pesquisa:
 
-- Dados de produtos bem estruturados garantem que os algoritmos de pesquisa possam corresponder de forma eficaz os produtos às consultas. Dados de produtos de baixa qualidade resultam em resultados de pesquisa relevantes insuficientes. Para afetar diretamente o sucesso de sua estratégia de merchandising:
-   - Configure os atributos corretos como pesquisáveis com seu peso correspondente.
-   - Verifique se os dados nesses atributos são relevantes.
+- Dados de produtos bem estruturados garantem que os algoritmos de pesquisa possam corresponder de forma eficaz os produtos às consultas. Dados de produtos de baixa qualidade levam a resultados de pesquisa menos relevantes. Para afetar diretamente o sucesso de sua estratégia de merchandising:
+  - Configure os atributos corretos como pesquisáveis com seu peso correspondente.
+  - Verifique se os dados nesses atributos são relevantes.
 - Uma experiência de pesquisa bem projetada cria confiança com os clientes e inspira confiança de que eles podem encontrar o que precisam.
 - As regras de pesquisa são críticas, pois podem elevar a visibilidade de determinados produtos com base em popularidade, novos concorrentes, critérios promocionais ou qualquer outra estratégia de merchandising para atender aos requisitos da sua empresa.
 - A navegação facetada permite que os compradores refinem sua pesquisa e obtenham resultados relevantes rapidamente.
@@ -41,7 +41,7 @@ Para gerenciar o [!DNL Live Search], vá para **Marketing** > *SEO e Pesquisa* >
 
 ## Otimizar a funcionalidade de pesquisa
 
-Nesta seção, você aprenderá a otimizar sua funcionalidade de pesquisa usando recursos como preenchimento automático para fornecer sugestões em tempo real, como tipo de comprador, sinônimos e ortografias, para garantir que os compradores encontrem produtos mesmo que usem palavras diferentes, e facetas para permitir que os compradores restrinjam os resultados da pesquisa.
+Nesta seção, você aprenderá a otimizar sua funcionalidade de pesquisa usando recursos como preenchimento automático, sinônimos e aspectos.
 
 ### Preenchimento automático
 
@@ -55,14 +55,14 @@ Saiba mais sobre o widget [popover](storefront-popover.md).
 
 ### Sinônimos e erros ortográficos
 
-O Live Search gerencia erros ortográficos por padrão. Você pode configurar sinônimos para incluir palavras que os compradores podem usar que diferem das palavras especificadas em seu catálogo. Você não quer perder uma venda porque alguém está procurando um &quot;sofá&quot;, enquanto seu produto está listado como um &quot;sofá&quot;. Você pode capturar uma ampla variedade de termos de pesquisa inserindo todas as palavras possíveis que os clientes podem usar para encontrar seus produtos. Você pode [definir sinônimos como unidirecionais ou bidirecionais](synonyms-add.md#step-2-define-the-synonym-by-type) para melhorar os resultados.
+O Live Search gerencia erros ortográficos por padrão. Para incluir palavras que os compradores usam que diferem das palavras especificadas em seu catálogo, configure sinônimos. Você não quer perder uma venda porque alguém está procurando um &quot;sofá&quot;, enquanto seu produto está listado como um &quot;sofá&quot;. Você captura uma ampla variedade de termos de pesquisa inserindo todas as palavras possíveis que os clientes usam para localizar seus produtos. Para melhorar os resultados, [defina sinônimos como unidirecionais ou bidirecionais](synonyms-add.md#step-2-define-the-synonym-by-type).
 
 #### Dicas para otimizar sinônimos
 
 - Mapeie os nomes de marcas e abreviações para seus nomes completos, por exemplo &quot;HP&quot; para &quot;Hewlett-Packard&quot; e apelidos de produtos comuns, por exemplo &quot;iPhone&quot; para &quot;Apple iPhone&quot;.
-- Inclua jargões específicos do setor e termos que os compradores podem usar alternadamente, por exemplo &quot;tênis&quot; e &quot;tênis de corrida&quot;.
+- Inclua jargões específicos do setor e termos que os compradores usam alternadamente, por exemplo &quot;tênis&quot; e &quot;tênis de corrida&quot;.
 - Atualize regularmente a lista de sinônimos com base em novas tendências de pesquisa, adições de produtos e comportamento do comprador.
-- Teste a eficácia dos mapeamentos de sinônimos analisando os resultados da pesquisa e o feedback do comprador. Refine mapeamentos para melhorar a precisão e a relevância.
+- Teste a eficácia dos mapeamentos de sinônimos analisando os resultados da pesquisa e o feedback do comprador. Para melhorar a precisão e a relevância, refine os mapeamentos.
 
 Saiba mais sobre sinônimos:
 
@@ -83,13 +83,13 @@ Para configurar um atributo de produto como uma faceta, ele deve ter as seguinte
 
 #### Dicas para otimizar aspectos
 
-- Determine os atributos mais relevantes e úteis para seus produtos, como título, categoria, marca, faixa de preços, cor e tamanho, e defina-os como [facetas dinâmicas](facets-type.md). 
+- Determine os atributos mais relevantes para seus produtos e defina-os como [facetas dinâmicas](facets-type.md). 
 - Defina e classifique atributos de produto que sejam consistentes em todo o catálogo e altamente relevantes para seus produtos, a fim de melhorar a relevância e os recursos de filtragem para seus compradores.
 - Verifique se os rótulos de facetas são fáceis de entender e nomeados de forma consistente em todo o site. Por exemplo, use &quot;Intervalo de preços&quot; em vez de &quot;Custo&quot;.
 - Evite sobrecarregar os compradores, limitando o número de facetas às mais importantes. Muitas opções podem causar fadiga de decisão. Por padrão, [!DNL Live Search] está limitado a no máximo 100 atributos configurados como facetas e 30 compartimentos retornados em cada faceta. Saiba mais sobre [limitações de facetas](boundaries-limits.md#facets). 
 - Permite que os compradores selecionem vários critérios de filtro simultaneamente para refinar os resultados. Por exemplo, permitir que os compradores selecionem as cores &quot;Vermelho&quot; e &quot;Azul&quot;.
 - Exiba o número de produtos disponíveis ao lado de cada opção de faceta para dar aos compradores uma ideia dos resultados de pesquisa que eles podem esperar.
-- Implemente seções de facetas recolhíveis para manter a interface limpa e gerenciável, especialmente em dispositivos móveis.
+- Para manter a interface limpa e gerenciável, especialmente em dispositivos móveis, implemente seções de facetas recolhíveis.
 - Permita que os compradores redefinam facilmente facetas individuais ou todos os filtros selecionados para iniciar uma nova pesquisa.
 
 Saiba mais sobre aspectos:
@@ -105,11 +105,11 @@ Esta seção discute como melhorar a relevância dos resultados da pesquisa impl
 
 ### Imagens
 
-Certifique-se de que os produtos secundários dos produtos configuráveis tenham imagens com as funções corretas. Ter produtos principais ou secundários pode fazer com que o resultado da pesquisa não tenha imagens.
+Certifique-se de que os produtos secundários dos produtos configuráveis tenham imagens com as funções corretas. Produtos principais ou secundários ausentes fazem com que o resultado da pesquisa não tenha imagens.
 
 >[!NOTE]
 >
->As imagens nos resultados da pesquisa podem ser diferentes, dependendo do termo de pesquisa. Se o termo de pesquisa determinar que um produto secundário é mais relevante, as imagens do produto secundário serão usadas em vez das imagens do produto principal.
+>As imagens nos resultados de pesquisa diferem dependendo do termo de pesquisa. Se o termo de pesquisa determinar que um produto secundário é mais relevante, as imagens do produto secundário substituirão as imagens do produto principal.
 
 ### Pesquisar regras
 
@@ -127,7 +127,7 @@ Para otimizar sua taxa de conversão e receita, você deve implementar regras de
 - Defina regras de pesquisa durante os períodos de promoção ou de vendas automaticamente usando o intervalo de datas durante o período de promoção.
 - Sempre use o painel &quot;Testar a regra&quot; para visualizar como sua estratégia de classificação inteligente afeta os resultados reais da pesquisa para consultas diferentes.
 - Ao habilitar a classificação inteligente, ajuste o **[Aumento de classificação inteligente](rules-add.md#intelligent-ranking-boost)** no editor de regras para equilibrar sinais de estilo de popularidade com relevância textual e verificar resultados para consultas de destino em **Testar sua regra**. O aumento de classificação inteligente não está disponível para a estratégia **Nenhuma**.
-- Personalize os resultados da pesquisa com base no comportamento individual do comprador usando [classificação inteligente](rules-add.md#intelligent-ranking), como &quot;recomendado para você&quot;, &quot;mais visto&quot; e assim por diante. Para adaptar o comportamento do comprador, você deve garantir que o evento seja implementado corretamente. Para os comerciantes da Luma, o evento está disponível e pronto para uso. Para implementações headless ou personalizadas, você deve [implementar um evento](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) com base nas suas necessidades específicas.
+- Personalize os resultados da pesquisa com base no comportamento individual do comprador usando [classificação inteligente](rules-add.md#intelligent-ranking), como &quot;recomendado para você&quot;, &quot;mais visto&quot; e assim por diante. Para adaptar o comportamento do comprador, você deve garantir que o evento seja implementado corretamente. Para comerciantes da Luma, o evento está disponível por padrão. Para implementações headless ou personalizadas, você deve [implementar um evento](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) com base nas suas necessidades específicas.
 
 Saiba mais sobre regras de pesquisa:
 
@@ -135,12 +135,12 @@ Saiba mais sobre regras de pesquisa:
 - [Requisitos](rules.md#requirements)
 - [Regra de pesquisa padrão](rules.md#default-rule)
 - Gerenciar regras de pesquisa
-   - [Criar](rules-add.md)
-   - [Editar, exibir, excluir](rules-manage.md)
+  - [Criar](rules-add.md)
+  - [Editar, exibir, excluir](rules-manage.md)
 - Coleção de dados
-   - [[!DNL Live Search] eventos](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)
-   - [Coletor de eventos do Adobe Commerce](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework/)
-   - [Eventos do GitHub Commerce](https://github.com/adobe/commerce-events/tree/main/examples) 
+  - [[!DNL Live Search] eventos](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#live-search)
+  - [Coletor de eventos do Adobe Commerce](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework)
+  - [Eventos do GitHub Commerce](https://github.com/adobe/commerce-events/tree/main/examples) 
 
 ### Aproveitar metadados do produto
 
@@ -177,7 +177,7 @@ Tornar pesquisáveis os atributos errados pode frustrar os compradores e criar e
 
 #### Pesar os atributos pesquisáveis adequadamente
 
-Para aumentar a relevância da pesquisa, atribua um peso a cada atributo pesquisável. Atributos com um peso maior devem aparecer mais altos nos resultados da pesquisa. A classificação por relevância é afetada por vários critérios, como peso da pesquisa. Isso significa que, às vezes, os atributos com menor peso de pesquisa ainda podem ter mais relevância do que os atributos com maior peso de pesquisa. Outros critérios podem incluir o número de correspondências em qualquer atributo, a posição do termo de pesquisa encontrado e a estrutura geral do texto antes e depois de um termo de pesquisa.
+Para aumentar a relevância da pesquisa, atribua um peso a cada atributo pesquisável. Os atributos com um peso maior aparecem mais alto nos resultados da pesquisa. Vários critérios, como peso da pesquisa, afetam a classificação de relevância. Isso significa que, às vezes, os atributos com menor peso de pesquisa ainda podem ter mais relevância do que os atributos com maior peso de pesquisa. Outros critérios podem incluir o número de correspondências em qualquer atributo, a posição do termo de pesquisa encontrado e a estrutura geral do texto antes e depois de um termo de pesquisa.
 
 **Prioridades de peso:**
 
@@ -228,40 +228,40 @@ Saiba mais sobre atributos de produto para pesquisa:
 
 ## Monitorar resultados da pesquisa
 
-Para otimizar os resultados da pesquisa com o [!DNL Live Search], monitore os KPIs (Indicadores-chave de desempenho) relevantes, como consultas exclusivas, posição média dos cliques, taxas de click-through, taxa de conversão e taxa de resultados zero para entender como os compradores interagem com a funcionalidade da pesquisa. Esses dados o orientam a atualizar e refinar regularmente as regras de pesquisa.
+Para otimizar os resultados da pesquisa com [!DNL Live Search], monitore KPIs para entender como os compradores interagem com a funcionalidade de pesquisa. Esses dados o orientam a atualizar e refinar regularmente as regras de pesquisa.
 
 Você pode monitorar esses KPIs no [!DNL Live Search] [Espaço de trabalho de desempenho](performance.md), onde encontra as seguintes métricas: 
 
-- **Pesquisas Exclusivas** - A contagem de consultas de pesquisa distintas executadas no site [!DNL Commerce]. Cada pesquisa única é contada apenas uma vez, mesmo que seja repetida várias vezes pelo mesmo comprador ou por compradores diferentes. Essa métrica ajuda você a entender a diversidade de termos de pesquisa usados por clientes e fornece insights sobre quais produtos ou informações os compradores estão procurando. O rastreamento de pesquisas exclusivas permite:
+- **Pesquisas Exclusivas** - A contagem de consultas de pesquisa distintas executadas no site [!DNL Commerce]. O sistema conta cada pesquisa única apenas uma vez, mesmo que os mesmos compradores ou compradores diferentes a repitam várias vezes. Essa métrica ajuda você a entender a diversidade de termos de pesquisa usados por clientes e fornece insights sobre quais produtos ou informações os compradores estão procurando. O rastreamento de pesquisas exclusivas permite:
 
-   - Identifique tendências de pesquisa populares e itens pesquisados com frequência.
-   - Detecte possíveis lacunas no catálogo ou conteúdo do produto.
-   - Otimize sua funcionalidade de pesquisa adicionando [sinônimos](synonyms.md), criando ou atualizando regras de pesquisa.
+  - Identifique tendências de pesquisa populares e itens pesquisados com frequência.
+  - Detecte possíveis lacunas no catálogo ou conteúdo do produto.
+  - Otimize sua funcionalidade de pesquisa adicionando [sinônimos](synonyms.md), criando ou atualizando regras de pesquisa.
 
-- **Posição média do clique** - Indica que a posição média dos resultados da pesquisa clicados pelos compradores após executar uma consulta de pesquisa no site. Essa métrica fornece insights sobre a relevância e a eficácia dos resultados da pesquisa.
+- **Posição média de clique** - Indica a posição média dos resultados de pesquisa clicados pelos compradores após executar uma consulta de pesquisa no site. Essa métrica fornece insights sobre a relevância e a eficácia dos resultados da pesquisa.
 
   Uma posição de clique média mais baixa (mais próxima a 1) sugere que os compradores encontrem resultados relevantes rapidamente, indicando que sua estratégia de pesquisa é eficaz. Ele ajuda você a entender o comportamento do comprador e a distância que ele está disposto a percorrer para encontrar o produto desejado. Se a posição média dos cliques for alta, isso poderá indicar que os resultados mais relevantes não estão aparecendo na parte superior, o que exige uma revisão e otimização da estratégia de pesquisa.
 
-- **Taxa de Click-Through (CTR)** - Mede a porcentagem de compradores que clicam em um resultado de pesquisa após executar uma consulta de pesquisa. Um CTR alto indica que os resultados da pesquisa são relevantes e atraentes para os compradores, pois eles estão clicando nos resultados encontrados. O monitoramento da CTR pode ajudar a identificar áreas que precisam ser melhoradas. Baixo CTR pode sugerir que os resultados da pesquisa não correspondem à intenção do comprador, solicitando a necessidade de refinar as regras de pesquisa, aprimorar os dados do produto ou melhorar a apresentação do resultado.
+- **Taxa de Click-Through (CTR)** - Mede a porcentagem de compradores que clicam em um resultado de pesquisa após executar uma consulta de pesquisa. Um CTR alto indica que os resultados da pesquisa são relevantes e atraentes para os compradores, pois eles estão clicando nos resultados encontrados. O monitoramento da CTR pode ajudar a identificar áreas que precisam ser melhoradas. A baixa CTR sugere que os resultados da pesquisa não correspondem à intenção do comprador, solicitando a necessidade de refinar as regras de pesquisa, aprimorar os dados do produto ou melhorar a apresentação dos resultados.
 
-- **Índice de conversão** - Indica a eficácia do recurso de pesquisa na promoção de vendas e na realização de metas comerciais. Ele reflete a eficácia geral da funcionalidade de pesquisa para atender às necessidades do comprador e facilitar uma experiência de compra tranquila. Uma alta taxa de conversão indica que os resultados da pesquisa são altamente relevantes e persuasivos, levando os compradores a concluir as compras. Se o índice de conversão for baixo, ele poderá sugerir problemas com relevância de pesquisa, disponibilidade de produto ou a jornada geral do comprador, desde a pesquisa até a compra.
+- **Índice de conversão** - Indica a eficácia do recurso de pesquisa na promoção de vendas e na realização de metas comerciais. Ele reflete a eficácia geral da funcionalidade de pesquisa para atender às necessidades do comprador e facilitar uma experiência de compra tranquila. Uma alta taxa de conversão indica que os resultados da pesquisa são altamente relevantes e persuasivos, levando os compradores a concluir as compras. Se a taxa de conversão for baixa, isso sugere problemas com relevância de pesquisa, disponibilidade de produto ou a jornada geral do comprador, desde a pesquisa até a compra.
 
 - **Nenhum resultado** - Mede a porcentagem de consultas de pesquisa no site [!DNL Commerce] que não retorna resultados. Essa métrica é essencial para entender com que frequência as pesquisas dos compradores não são bem-sucedidas e pode fornecer insights sobre possíveis lacunas no catálogo de produtos ou na configuração de pesquisa. Uma alta taxa de resultados zero pode frustrar os compradores, resultando em uma experiência de compra ruim e em potencial perda de clientes. Ele pode indicar produtos ou categorias ausentes no catálogo que os compradores estão procurando, orientando as decisões de inventário e de listagem de produtos.
 
   Para reduzir a taxa de resultados zero, é possível:
 
-   - Ofereça termos de pesquisa alternativos ou relacionados, como [sinônimos](synonyms.md), quando nenhuma correspondência exata for encontrada.
-   - Revise regularmente consultas com zero resultados para identificar padrões e fazer os ajustes necessários no catálogo de produtos e nas configurações de pesquisa.
+  - Ofereça termos de pesquisa alternativos ou relacionados, como [sinônimos](synonyms.md), quando nenhuma correspondência exata for encontrada.
+  - Revise regularmente consultas com zero resultados para identificar padrões e fazer os ajustes necessários no catálogo de produtos e nas configurações de pesquisa.
 
-- **Resultados Populares** - Podem melhorar significativamente os resultados da pesquisa alinhando-os às preferências e comportamentos do comprador.
+- **Resultados Populares** - Aperfeiçoe os resultados da pesquisa alinhando-os às preferências e aos comportamentos do comprador.
 
 Você pode usar esses dados de métrica para otimizar a funcionalidade de pesquisa das seguintes maneiras:
 
-- Implemente regras para classificar automaticamente os produtos populares em posições mais altas nos resultados da pesquisa. Os produtos frequentemente clicados ou comprados podem ter prioridade para aparecer no topo. Prepare manualmente listas de produtos populares para consultas de pesquisa específicas e verifique se esses itens são exibidos de forma destacada.
-- Destaque os produtos que estão em tendência ou que tiveram um pico de popularidade recentemente. Isso pode ser particularmente eficaz durante eventos sazonais, feriados ou períodos promocionais. Para isso, use a classificação inteligente que melhor se adapta ao seu caso de uso e às necessidades da empresa ao configurar uma regra de pesquisa.
-- Destaque os filtros ou aspectos populares, caso os compradores filtrem com frequência por determinadas marcas ou intervalos de preço, torne essas opções mais proeminentes fixando esses aspectos e classificando-os de acordo.
+- Para classificar produtos populares em posições mais altas nos resultados de pesquisa, implemente regras. Os produtos frequentemente clicados ou comprados podem ter prioridade para aparecer no topo. Prepare manualmente listas de produtos populares para consultas de pesquisa específicas e verifique se esses itens são exibidos de forma destacada.
+- Destaque os produtos que estão em tendência ou que tiveram um pico de popularidade recentemente. Essa estratégia é eficaz durante eventos sazonais, feriados ou períodos promocionais. Para isso, use a classificação inteligente que melhor se adapta ao seu caso de uso e necessidade de negócios ao configurar uma regra de pesquisa.
+- Destaque os filtros ou aspectos populares; se os compradores filtrarem com frequência por determinadas marcas ou intervalos de preço, torne essas opções mais proeminentes fixando esses aspectos e classificando-os de acordo.
 - Quando uma pesquisa produzir zero resultado, use os dados de resultados populares para sugerir produtos alternativos ou categorias relacionadas que tenham alto engajamento do comprador.
-- Analise termos de pesquisa populares e dados de produtos para identificar palavras-chave importantes. Otimize os atributos pesquisáveis do seu produto com essas palavras-chave para melhorar a relevância da pesquisa.
-- Analise regularmente os dados de seus resultados para entender as tendências em constante mudança, as preferências e o comportamento do comprador, identificar os principais termos de pesquisa e detectar problemas. Use este loop de comentários para refinar e melhorar continuamente suas regras de pesquisa e ofertas de produtos
+- Para identificar palavras-chave importantes, analise termos de pesquisa populares e dados do produto. Para melhorar a relevância da pesquisa, otimize os atributos pesquisáveis do produto com essas palavras-chave.
+- Analise regularmente os dados de seus resultados para entender as tendências em constante mudança, as preferências e o comportamento do comprador, identificar os principais termos de pesquisa e detectar problemas. Use esse loop de comentários para refinar e melhorar continuamente suas regras de pesquisa e ofertas de produtos.
 
-Para obter os dados corretos no relatório [!DNL Live Search], você deve garantir que o evento seja implementado corretamente. Para os comerciantes da Luma, o evento está disponível e pronto para uso. Para implementações headless ou personalizadas, você deve [implementar um evento](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) com base nas suas necessidades específicas.
+Para obter os dados corretos no relatório [!DNL Live Search], você deve garantir que o evento seja implementado corretamente. Para comerciantes da Luma, o evento está disponível por padrão. Para implementações headless ou personalizadas, você deve [implementar um evento](https://developer.adobe.com/commerce/services/shared-services/storefront-events/) com base nas suas necessidades específicas.

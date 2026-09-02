@@ -13,9 +13,9 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 86b218d78731585dca4e8829fb886010ef27a2d5
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 1171
+source-wordcount: 1143
 ht-degree: 0%
 
 ---
@@ -51,32 +51,32 @@ Você pode pesquisar uma categoria ou subcategoria no campo &quot;Pesquisar por 
 O Merchandising por categoria usa os mesmos tipos de classificação que com [produtos individuais](rules-workspace.md).
 Há dois tipos de classificação: Inteligente e Manual.
 
-**A classificação inteligente** aproveita a análise de dados comportamentais de vitrine pela [Adobe AI](https://business.adobe.com/br/ai.html) para classificar todos os produtos nas categorias escolhidas por um determinado algoritmo. Depois que uma classificação inteligente é escolhida, espera-se que a ordem específica dos produtos mude com o tempo, à medida que os dados subjacentes são reanalisados pela Adobe AI continuamente. Por exemplo, os principais produtos de tendências serão alterados automaticamente com o tempo, à medida que as preferências do comprador forem alteradas.
+**A classificação inteligente** aproveita a análise de dados comportamentais de vitrine pela [Adobe AI](https://business.adobe.com/br/ai.html) para classificar todos os produtos nas categorias escolhidas por um determinado algoritmo. Depois de escolher uma classificação Inteligente, a ordem específica dos produtos será alterada com o tempo, à medida que o [!DNL Adobe AI] reanalisar os dados subjacentes de forma contínua. Por exemplo, os principais produtos de tendências mudam automaticamente com o tempo, à medida que as preferências do comprador mudam.
 Os métodos de classificação inteligente são:
 
-* Mais comprados: classifica os produtos de acordo com a frequência com que foram comprados pelos compradores nos sete dias anteriores.
-* Mais adicionados ao carrinho: classifica os produtos de acordo com a frequência com que foram adicionados ao carrinho pelos compradores nos sete dias anteriores.
-* Mais visualizados: classifica os produtos de acordo com a frequência com que foram visualizados pelos compradores nos sete dias anteriores.
+* Mais comprados: classifica os produtos de acordo com a frequência com que os compradores os compraram nos sete dias anteriores.
+* Mais adicionados ao carrinho: classifica os produtos de acordo com a frequência com que os compradores os adicionaram ao carrinho nos sete dias anteriores.
+* Mais visualizados: classifica os produtos de acordo com a frequência com que os compradores os visualizaram nos sete dias anteriores.
 * Recomendado para você: com base no comportamento anterior e atual de cada comprador no local, o classifica os produtos de acordo com a probabilidade de o comprador interagir com cada um.
 * Tendências: classifica os produtos por retomadas recentes de popularidade com base nas visualizações.
 * Nenhum: classifica os produtos de acordo com sua ordem padrão.
 
 
-Para qualquer método de classificação inteligente, com exceção de **Nenhum**, você pode definir **[!UICONTROL Intelligent Ranking Boost]** no editor de regras para ajustar como os sinais de forte comportamento afetam a ordem do produto. Para obter detalhes sobre padrões, limites, comportamento de visualização e como o aumento se compara à **Classificação manual**, consulte [Aumento inteligente de classificação](rules-add.md#intelligent-ranking-boost).
+Para ajustar a intensidade com que os sinais de comportamento afetam a ordem do produto para qualquer método de classificação inteligente, exceto **Nenhum**, defina **[!UICONTROL Intelligent Ranking Boost]** no editor de regras. Para obter detalhes sobre padrões, limites, comportamento de visualização e como o aumento se compara à **Classificação manual**, consulte [Aumento inteligente de classificação](rules-add.md#intelligent-ranking-boost).
 
 **A classificação manual** permite que os usuários substituam a ordem de classificação automática de produtos definindo regras manuais de fixação, reforço, enterramento e ocultação.
 
 ## Classificação herdada
 
-Como comerciante, você pode querer selecionar todas as categorias de roupas femininas para serem classificadas por &quot;tendências&quot;. Isso inclui as subcategorias &quot;Calças femininas&quot;, &quot;Camisas femininas&quot; e &quot;Acessórios femininos&quot;. As categorias masculinas não devem ser afetadas. Você pode usar classificações herdadas para fazer isso.
+Como comerciante, selecione todas as categorias de roupas femininas para classificar por &quot;tendência&quot;. Isso inclui as subcategorias &quot;Calças femininas&quot;, &quot;Camisas femininas&quot; e &quot;Acessórios femininos&quot;. As categorias para homens não devem ser afetadas. Você pode usar classificações herdadas para fazer isso.
 
 Ao selecionar um método de classificação inteligente para uma categoria ou subcategoria que tenha subcategorias, você pode ativar a opção **Aplicar classificações inteligentes a subcategorias**. Isso aplica o método de classificação a todas as subcategorias.
 
 Essas subcategorias agora herdam essa regra da categoria principal (&quot;Sim&quot; na coluna Classificação herdada). Na coluna Ação, as únicas opções disponíveis são **Editar Regra** e **Exibir Detalhes**. A opção **Excluir** está desabilitada para regras herdadas em subcategorias. Excluir a herança de subcategoria requer desfazer a herança da categoria principal.
 
-Qualquer categoria ou subcategoria pode ter somente uma classificação Inteligente aplicada de cada vez. Eles também podem ter classificações manuais adicionais aplicadas.
+Cada categoria ou subcategoria pode ter até uma classificação inteligente aplicada de cada vez. Também pode ter uma ou mais classificações manuais aplicadas simultaneamente.
 
-Se você aplicar uma classificação inteligente a uma categoria e ativar a opção **Aplicar classificação inteligente às subcategorias**, qualquer classificação inteligente já aplicada às subcategorias será substituída.
+Se você aplicar uma classificação Inteligente a uma categoria e habilitar [!UICONTROL Apply intelligent ranking to subcategories], a classificação Inteligente da categoria substituirá qualquer classificação Inteligente já aplicada às suas subcategorias.
 
 ![Lista de subcategorias substituída](assets/category_overwite_subs.png){width="700"}
 
@@ -89,7 +89,7 @@ Ao adicionar uma classificação inteligente diretamente a uma categoria que tem
 Ao excluir a classificação Inteligente da categoria, a herança é restabelecida.
 Em ambos os cenários, qualquer classificação manual é mantida.
 
-Se você remover uma classificação inteligente de uma categoria e a herança da subcategoria for selecionada, somente as classificações inteligentes herdadas serão removidas das subcategorias. As classificações manuais não estão sujeitas à herança e permanecerão.
+Se você remover uma classificação inteligente de uma categoria enquanto [!UICONTROL Apply intelligent ranking to subcategories] estiver habilitado, somente as classificações inteligentes herdadas por suas subcategorias serão removidas. Quaisquer classificações manuais permanecem porque não são herdadas.
 
 Será exibida uma caixa de diálogo explicando quais subcategorias herdadas são afetadas por quaisquer alterações feitas em uma categoria de nível superior.
 
@@ -143,11 +143,13 @@ Eventos são ações que modificam os resultados da pesquisa quando condições 
 
 Criar uma classificação manual:
 
-1. Configure uma regra de classificação Inteligente para uma categoria conforme descrito acima. Os resultados da consulta aparecerão na exibição de Página de categoria de visualização. Ele usa seus dados reais do Live Search para visualizar os resultados.
+1. Configure uma regra de classificação Inteligente para uma categoria conforme descrito acima.
+
+   Os resultados da consulta aparecem na exibição de Página de categoria de visualização. Ele usa seus dados reais do Live Search para visualizar os resultados.
 
 1. Clique e arraste um produto na exibição da Página Visualizar categoria. Arraste e solte-o na posição desejada. Os campos Produto e Posição são automaticamente preenchidos no painel Eventos.
 
-Você também pode clicar no ícone de pino para fixar um produto no local atual. Use o menu de contexto de reticências para &quot;Fixar na parte superior&quot; ou &quot;Fixar na parte inferior&quot;.
+Você também pode clicar no ícone de pino para bloquear um produto no local atual. Use o menu de contexto de reticências para &quot;Fixar na parte superior&quot; ou &quot;Fixar na parte inferior&quot;.
 
 Para adicionar um evento manualmente:
 
