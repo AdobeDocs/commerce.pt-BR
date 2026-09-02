@@ -3,19 +3,13 @@ title: Criar nova recomendação
 description: Saiba como criar uma unidade de recomendação de produto.
 exl-id: 1d5f83c4-1613-4236-9d98-d455f45a47da
 TQID: https://experienceleague.adobe.com/K3cKFg-m22bUzlupyhsHgDVxaJka7xhOvFnOt8wDdII
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 1573
+source-wordcount: 1491
 ht-degree: 0%
 
 ---
@@ -35,11 +29,11 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
 
 1. Na barra lateral _Administrador_, vá para **Marketing** > _Promoções_ > **Recomendações de Produtos** para exibir o espaço de trabalho _Recomendações de Produtos_.
 
-1. Especifique o [Modo de Exibição de Armazenamento](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/setup/websites-stores-views) onde deseja que as recomendações sejam exibidas.
+1. Especifique o [Modo de Exibição de Armazenamento](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) onde deseja que as recomendações sejam exibidas.
 
    >[!NOTE]
    >
-   > As unidades de recomendação do Page Builder devem ser criadas na exibição de armazenamento padrão, mas podem ser usadas em qualquer lugar. Para saber mais sobre como criar recomendações de produto com o Page Builder, consulte [Adicionar conteúdo - Recomendações de produto](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/page-builder/add-content/recommendations).
+   > As unidades de recomendação do Page Builder devem ser criadas na exibição de armazenamento padrão, mas podem ser usadas em qualquer lugar. Para saber mais sobre como criar recomendações de produto com o Page Builder, consulte [Adicionar conteúdo - Recomendações de produto](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations).
 
 1. Clique em **Criar recomendação**.
 
@@ -49,14 +43,14 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
 
    >[!NOTE]
    >
-   > As Recomendações de Produto não são suportadas na página Carrinho quando sua loja está configurada para [exibir a página do carrinho de compras imediatamente após adicionar um produto ao carrinho](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
+   > As Recomendações de Produto não são suportadas na página Carrinho quando sua loja está configurada para [exibir a página do carrinho de compras imediatamente após adicionar um produto ao carrinho](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
 
    * Página inicial
    * Categoria
    * Detalhes do produto
    * Carrinho
    * Confirmação
-   * [Page Builder](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
    É possível criar até 50 unidades de recomendação ativas para cada tipo de página. O tipo de página fica esmaecido quando o limite é atingido.
 
@@ -83,7 +77,7 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
    ![Ordem de recomendação](assets/create-recommendation-select-placement.png)
    _Ordem de recomendação na página_
 
-1. (Opcional) Na seção _Filtros_, [aplique filtros](filters.md) para controlar quais produtos aparecem na unidade de recomendação.
+1. (Opcional) Para controlar quais produtos aparecem na unidade de recomendação, [aplique filtros](filters.md) na seção _Filtros_.
 
    ![Filtros de recomendação](assets/create-recommendation-filter-products.png)
    _Filtros de produto de recomendação_
@@ -100,23 +94,23 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
 
 ## Indicadores de disponibilidade
 
-Os indicadores de disponibilidade mostram quais tipos de recomendação terão melhor desempenho com base no catálogo e nos dados comportamentais disponíveis. Você também pode usar indicadores de prontidão para determinar se tem problemas com seu [evento](events.md) ou se não tem tráfego suficiente para preencher o tipo de recomendação.
+Os indicadores de disponibilidade mostram quais tipos de recomendação têm melhor desempenho com seus dados comportamentais e de catálogo disponíveis. Use-as para identificar problemas de eventos ou tráfego insuficiente para preencher um tipo de recomendação.
 
-Os indicadores de prontidão são categorizados como [baseados em estática](#static-based) ou [baseados em dinâmica](#dynamic-based). Baseado em estática usa somente dados de catálogo; enquanto que os dados comportamentais do uso baseado em dinâmica de seus compradores. Esses dados comportamentais são usados para [treinar modelos de aprendizado de máquina](events.md) para criar recomendações personalizadas e calcular sua pontuação de preparação.
+Os indicadores de disponibilidade dividem-se em duas categorias: [baseado em estática](#static-based) e [baseado em dinâmica](#dynamic-based). As recomendações baseadas em estática usam apenas dados de catálogo. As recomendações baseadas em modo dinâmico usam os dados comportamentais dos compradores para treinar modelos de aprendizado de máquina, gerar recomendações personalizadas e calcular a pontuação de disponibilidade de cada recomendação.
 
 ### Como os indicadores de disponibilidade são calculados
 
 Os indicadores de prontidão são uma indicação do quanto o modelo é treinado. Os indicadores dependem dos tipos de eventos coletados, da amplitude de produtos com os quais o interagiu e do tamanho do catálogo.
 
-A porcentagem do indicador de disponibilidade é derivada de um cálculo que indica quantos produtos podem ser recomendados, dependendo do tipo de recomendação. As estatísticas são aplicadas a produtos com base no tamanho geral do catálogo, no volume de interações (como exibições, cliques, adicionar a carrinhos) e na porcentagem de SKUs que registram esses eventos em uma determinada janela de tempo. Por exemplo, durante o pico do tráfego na temporada de festas, os indicadores de disponibilidade podem mostrar valores mais altos do que nos momentos de volume normal.
+O percentual do indicador de prontidão estima a proporção de produtos que podem ser recomendados para um determinado tipo de recomendação. É calculada usando o tamanho do catálogo, o volume de interação e a porcentagem de SKUs que registram os eventos relevantes em uma janela de tempo definida. Por exemplo, os indicadores de prontidão podem ser mais altos durante picos de tráfego de feriados do que durante períodos de tráfego normal.
 
-Como resultado dessas variáveis, o percentual do indicador de disponibilidade pode flutuar. Isso explica por que você pode ver que os tipos de recomendação entram e saem do estado &quot;Pronto para implantar&quot;.
+Como resultado dessas variáveis, o percentual do indicador de disponibilidade pode flutuar. Isso explica por que os tipos de recomendação flutuam entre estar &quot;pronto para implantar&quot;.
 
 Os indicadores de prontidão são calculados com base em dois fatores:
 
 * Tamanho suficiente do conjunto de resultados: há resultados suficientes sendo retornados na maioria dos cenários para evitar o uso de [recomendações de backup](events.md#backuprecs)?
 
-* Variedade suficiente do conjunto de resultados: os produtos retornados representam uma variedade de produtos do catálogo? O objetivo com esse fator é evitar que uma minoria de produtos seja os únicos itens recomendados no site.
+* Os produtos devolvidos representam uma variedade de produtos do seu catálogo? Esse fator ajuda a garantir que as recomendações no site não sejam limitadas a um pequeno subconjunto de produtos.
 
 Com base nos fatores acima, um valor de disponibilidade é calculado e exibido da seguinte maneira:
 
@@ -168,7 +162,7 @@ _Tipo de recomendação_
 >
 >Os indicadores podem nunca atingir 100%.
 
-O percentual do indicador de disponibilidade para tipos de recomendação que dependem dos dados do catálogo não muda muito, pois o catálogo do comerciante não muda com frequência. Mas a porcentagem do indicador de disponibilidade para tipos de recomendação com base nos dados comportamentais do comprador pode mudar com frequência, dependendo da atividade diária do comprador.
+A porcentagem de preparação para tipos de recomendação baseados em catálogo geralmente muda pouco, pois os catálogos são relativamente estáveis. Por outro lado, o percentual de prontidão para tipos de recomendação com base nos dados comportamentais do comprador pode mudar com frequência com a atividade diária do comprador.
 
 #### O que fazer se a porcentagem do indicador de disponibilidade estiver baixa
 
@@ -180,16 +174,16 @@ Uma baixa porcentagem de prontidão indica que não há muitos produtos do catá
 
 A seguir, uma lista de possíveis motivos e soluções para pontuações comuns de baixa disponibilidade:
 
-* **Baseado em estática** - Baixo percentual para esses indicadores pode ser causado pela falta de dados de catálogo para os produtos exibíveis. Se forem menores do que o esperado, uma sincronização completa pode corrigir esse problema.
-* **Baseado em dinâmico** - Baixo percentual para indicadores baseados em dinâmico pode ser causado por:
+* **Baseado em estática** - A ausência de dados de catálogo para os produtos exibíveis causa porcentagens baixas para esses indicadores. Se forem menores do que o esperado, uma sincronização completa pode corrigir esse problema.
+* **Baseado em dinâmico** - Os seguintes fatores causam porcentagens baixas para indicadores baseados em dinâmico:
 
-   * Campos ausentes nos [eventos de loja](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) necessários para os respectivos tipos de recomendação (requestId, contexto do produto e assim por diante).
-   * Baixo tráfego na loja, portanto, o volume de eventos comportamentais que recebemos é baixo.
-   * A variedade de eventos comportamentais de vitrine em diferentes produtos em sua loja é baixa. Por exemplo, se apenas 10% dos seus produtos forem visualizados ou comprados na maior parte do tempo, os respectivos indicadores de disponibilidade serão baixos.
+  * Campos ausentes nos [eventos de loja](https://developer.adobe.com/commerce/services/shared-services/storefront-events/#product-recommendations) necessários para os respectivos tipos de recomendação (requestId, contexto do produto e assim por diante).
+  * Baixo tráfego na loja, portanto, o volume de eventos comportamentais que recebemos é baixo.
+  * A variedade de eventos comportamentais de vitrine em diferentes produtos em sua loja é baixa. Por exemplo, se apenas 10% dos seus produtos forem visualizados ou comprados na maior parte do tempo, os respectivos indicadores de disponibilidade serão baixos.
 
 ## Visualizar recomendações {#preview}
 
-O painel _Visualização de produtos recomendada_ está sempre disponível com uma amostra de seleção de produtos que podem aparecer na unidade de recomendação quando ela for implantada na loja.
+O painel _Visualização de produtos recomendada_ está sempre disponível com uma amostra de seleção de produtos que aparecem na unidade de recomendação quando ela é implantada na loja.
 
 Para testar uma recomendação ao trabalhar em um ambiente de não produção, você pode buscar dados de recomendação de uma [fonte diferente](settings.md). Isso permite que os comerciantes experimentem com regras e visualizem as recomendações antes de implantar na produção.
 
@@ -200,9 +194,9 @@ Para testar uma recomendação ao trabalhar em um ambiente de não produção, v
 | Preço | O preço do produto. |
 | Tipo de resultado | Principal - indica que há dados de treinamento suficientes coletados para exibir uma recomendação.<br />Backup - indica que não há dados de treinamento suficientes coletados, portanto, uma recomendação de backup é usada para preencher o slot. Acesse [Dados comportamentais](events.md) para saber mais sobre modelos de aprendizado de máquina e recomendações de backup. |
 
-À medida que você cria sua unidade de recomendação, experimente o tipo de página, o tipo de recomendação e os filtros para obter feedback imediato em tempo real sobre os produtos que serão incluídos. À medida que você começa a entender quais produtos aparecem, é possível configurar a unidade de recomendação para atender às suas necessidades comerciais.
+Para ver quais produtos uma unidade de recomendação inclui em tempo real, experimente o tipo de página, o tipo de recomendação e os filtros à medida que você os cria. Em seguida, configure a unidade para atender às suas necessidades comerciais com base nos produtos devolvidos.
 
-Recomendações de [filtros](filters.md) do Adobe Commerce para evitar a exibição de produtos duplicados quando várias unidades de recomendação são implantadas em uma única página. Como resultado, os produtos exibidos no painel de visualização podem ser diferentes daqueles exibidos na loja.
+Quando várias unidades de recomendação são implantadas na mesma página, o Adobe Commerce usa [filtros](#filters.md) para remover produtos duplicados das recomendações exibidas. Como resultado, o painel de visualização pode mostrar um conjunto de produtos diferente da loja.
 
 >[!NOTE]
 >

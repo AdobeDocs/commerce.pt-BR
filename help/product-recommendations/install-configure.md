@@ -5,23 +5,14 @@ autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 exl-id: 2e7f6454-d4cb-44bc-982f-354a179e8e59
 TQID: https://experienceleague.adobe.com/z-ue-sojw9Iewuz-ZToCzkumP3qN-TCWWF3UWdpdIL0
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 last-update: 2026-06-23
-source-git-commit: 7ce47d7abf7519a7e3ecd436faabf4089005cd63
+source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
 workflow-type: tm+mt
-source-wordcount: 578
+source-wordcount: 554
 ht-degree: 0%
 
 ---
@@ -57,13 +48,13 @@ O [!DNL Product Recommendations] for Page Builder é um módulo opcional e é in
 composer require magento/module-page-builder-product-recommendations
 ```
 
-Ao habilitar [!DNL Product Recommendations] no Page Builder, você pode adicionar uma [unidade de recomendação](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/page-builder/add-content/recommendations) existente e ativa a qualquer conteúdo criado no Page Builder, como páginas, blocos e blocos dinâmicos.
+Ao habilitar [!DNL Product Recommendations] no Page Builder, você pode adicionar uma [unidade de recomendação](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations) existente e ativa a qualquer conteúdo criado no Page Builder, como páginas, blocos e blocos dinâmicos.
 
 Consulte [Usar [!DNL Product Recommendations] com conteúdo do Page Builder](page-builder.md) para obter mais instruções.
 
 ### Adicionar tipo de recomendação de similaridade visual {#vissimsupport}
 
-O tipo de recomendação _Semelhança visual_ permite implantar uma unidade de recomendação na página de detalhes do produto que exibe produtos que são [visualmente semelhantes](type.md#visualsim) ao produto que está sendo visualizado. Esse tipo de recomendação é mais útil quando imagens e aspectos visuais dos produtos são partes importantes da experiência de compra. Instale o tipo de recomendação _Similaridade visual_ executando o seguinte comando:
+O tipo de recomendação _Semelhança visual_ exibe os produtos [visualmente semelhantes](type.md#visualsim) ao produto exibido em uma página de detalhes do produto. É mais útil quando as imagens e a aparência do produto são importantes para a experiência de compra. Para instalá-lo, execute o seguinte comando:
 
 ```bash
 composer require magento/module-visual-product-recommendations
@@ -73,11 +64,11 @@ composer require magento/module-visual-product-recommendations
 
 1. Após instalar o módulo `magento/product-recommendations`, configure o [Commerce Services Connector](../landing/saas.md) especificando as Chaves de API e selecionando um Espaço de Dados SaaS.
 
-   A configuração dessa conexão permite a sincronização de dados e a comunicação entre a instância do Commerce, o Serviço de catálogo e outros serviços de suporte. A sincronização de dados é realizada pela [extensão de Exportação de Dados SaaS](../data-export/overview.md).
+   A configuração dessa conexão permite a sincronização de dados e a comunicação entre a instância do Commerce, o Serviço de catálogo e outros serviços de suporte. A [Extensão de Exportação de Dados SaaS](../data-export/overview.md) manipula a sincronização de dados.
 
-1. Para garantir que a exportação de catálogo possa ser executada corretamente, confirme se os trabalhos [cron](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) e os [indexadores](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/cli/manage-indexers) estão em execução e se o indexador `Product Feed` está definido como `Update by Schedule`.
+1. Para garantir que a exportação de catálogo possa ser executada corretamente, confirme se os trabalhos [cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) e os [indexadores](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) estão em execução e se o indexador `Product Feed` está definido como `Update by Schedule`.
 
-Depois de vincular com êxito o aplicativo do Commerce aos Serviços da Commerce e especificar o [Espaço de Dados SaaS](../landing/saas.md#saas-configuration), a sincronização do catálogo será iniciada. Em seguida, você pode [verificar](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify/) se os dados comportamentais estão sendo enviados para a loja.
+Depois de vincular com êxito o aplicativo do Commerce aos Serviços da Commerce e especificar o [Espaço de Dados SaaS](../landing/saas.md#saas-configuration), a sincronização do catálogo será iniciada. Em seguida, você pode [verificar](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/verify) se os dados comportamentais estão sendo enviados para a loja.
 
 ## Monitorar e solucionar problemas de sincronização de dados
 
@@ -103,7 +94,7 @@ Para atualizar para uma versão principal, como de 5.0 para 6.0, você deve edit
 }
 ```
 
-Vamos aumentar a versão principal de `5.0` para `6.0`:
+Atualize a versão principal de `5.0` para `6.0`:
 
 ```json
 "require": {
@@ -135,4 +126,4 @@ Para permitir que as Recomendações de Produto passem por um firewall, adicione
 
 ## Desinstalar [!DNL Product Recommendations] {#uninstall}
 
-Se necessário, você pode [desinstalar](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) o módulo product-recommendations.
+Se necessário, você pode [desinstalar](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) o módulo product-recommendations.

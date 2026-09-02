@@ -3,19 +3,11 @@ title: Workspace [!DNL Product Recommendations]
 description: Saiba como configurar, gerenciar e monitorar o desempenho de recomendações de produtos.
 exl-id: eaf1f0b2-9d9d-4069-8269-06f30166f788
 TQID: https://experienceleague.adobe.com/1dnLBQhNwu1rP0FtnvUGMGpdbKveACW9SNMBIHYzmAg
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: d3cdead0-685a-4489-9250-4bb709942f66id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
 workflow-type: tm+mt
 source-wordcount: 921
 ht-degree: 0%
@@ -37,22 +29,22 @@ _Workspace de recomendações_
 
 Para garantir que cada área funcional do espaço de trabalho contenha os dados corretos, é necessário configurar a coleta de dados com base na implementação de vitrine selecionada:
 
-1. Luma - A coleção de dados está disponível e pronta para uso.
+1. Luma - A coleção de dados está disponível por padrão.
 1. Headless - a coleta de dados deve ser configurada manualmente, dependendo da implementação da loja.
 
-Se você estiver usando uma loja headless, consulte a seguinte documentação para obter mais informações sobre os eventos necessários que precisam ser adicionados:
+Para obter mais informações sobre os eventos necessários que você precisa adicionar se estiver usando uma loja headless, consulte a seguinte documentação:
 
 - [Eventos necessários](events.md) para o painel Recomendações de Produto.
-- [Coletor de eventos de vitrine](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) que precisa ser adicionado como pré-requisito.
+- [Coletor de eventos de vitrine](https://developer.adobe.com/commerce/services/shared-services/storefront-events/reference/event-framework) que precisa ser adicionado como pré-requisito.
 - [Exemplos](https://github.com/adobe/commerce-events/tree/main/examples) da estrutura de eventos.
 
 ## Definir o escopo
 
-Inicialmente, o [escopo](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/setup/websites-stores-views) de todas as configurações de recomendação está definido como `Default Store View`. Se a instalação do Commerce incluir vários modos de exibição de armazenamento, defina o **Escopo** como [modo de exibição de armazenamento](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) ao qual as recomendações se aplicam.
+Inicialmente, o [escopo](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) de todas as configurações de recomendação está definido como `Default Store View`. Se a instalação do Commerce incluir vários modos de exibição de armazenamento, defina o **Escopo** como [modo de exibição de armazenamento](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) ao qual as recomendações se aplicam.
 
 ## Definir intervalo de datas das métricas
 
-1. Clique no controle **Seletor de ![Calendário** &#x200B;](assets/icon-calendar.png).
+1. Clique no controle **Seletor de ![Calendário** ](assets/icon-calendar.png).
 
 1. Escolha uma das seguintes opções:
 
