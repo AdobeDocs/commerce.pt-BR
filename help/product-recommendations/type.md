@@ -3,19 +3,13 @@ title: Tipos de Recomendação
 description: Saiba mais sobre as recomendações que você pode implantar em várias páginas do site.
 exl-id: bbb290b0-b50b-43d9-bf71-1813298d5f39
 TQID: https://experienceleague.adobe.com/d2V9aHGQO8jnPXAIlae-GklfACARMrVEttryLOY3Zr8
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: beb7a3c1-66ab-4786-b879-7621375b3c40
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: beb7a3c1-66ab-4786-b879-7621375b3c40id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+source-git-commit: 0802d0e53a1ed6701318647b7bf78435082ad5f3
 workflow-type: tm+mt
-source-wordcount: 2001
+source-wordcount: 2026
 ht-degree: 0%
 
 ---
@@ -132,6 +126,10 @@ Esses tipos de recomendações recomendam produtos de melhor desempenho com base
 
 O tipo de recomendação _Semelhança visual_ recomenda produtos de aparência semelhante ao produto que está sendo visualizado. Esse tipo de recomendação é mais útil quando imagens e aspectos visuais dos produtos são partes importantes da experiência de compra.
 
+>[!NOTE]
+>
+>Como esse tipo de recomendação não se aplica à maioria dos catálogos, o sistema não o habilita por padrão. [Habilitar explicitamente este tipo de recomendação](#enable-visual-similarity-recommendation-type).
+
 ### Como funciona
 
 O tipo de recomendação _Similaridade visual_ oferece recomendações para outros produtos em seu catálogo que têm uma similaridade visual com as imagens sendo visualizadas no momento. A semelhança visual inclui aspectos como:
@@ -145,15 +143,11 @@ O tipo de recomendação _Similaridade visual_ oferece recomendações para outr
 
 O Adobe AI usa IA para processar e analisar as imagens no catálogo e criar atributos usados para determinar semelhanças visuais.
 
->[!NOTE]
->
-> Se você estiver testando esse tipo de recomendação em um ambiente de não produção, verifique se os URLs de imagem estão acessíveis publicamente.
+#### Considerações especiais
 
->[!NOTE]
->
-> Atualmente, as imagens do produto devem ter 10 MB ou menos.
-
-Como esse tipo de recomendação não se aplica à maioria dos catálogos, o sistema não o habilita por padrão. Habilite explicitamente esse tipo de recomendação.
+- Se você estiver testando esse tipo de recomendação em um ambiente de não produção, verifique se os URLs de imagem estão acessíveis publicamente.
+- Atualmente, as imagens do produto devem ter 10 MB ou menos.
+- O módulo [Fastly Image Otimization](install-configure.md#fastlysupport) opcional pode aplicar parâmetros de Fastly Image Otimization a URLs de imagem [!DNL Product Recommendations]. Consulte [Adicionar suporte ao Fastly Image Otimization](install-configure.md#fastlysupport) para obter detalhes.
 
 ### Habilitar tipo de recomendação de similaridade visual
 
