@@ -22,9 +22,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 5964358bb4370fa4fb0c2f4c447bacb3603d0f5e
+source-git-commit: c08c9248b26b6e3a0271032e869753bece96a8bd
 workflow-type: tm+mt
-source-wordcount: 3356
+source-wordcount: 3412
 ht-degree: 0%
 
 ---
@@ -44,6 +44,12 @@ As atualizações incluem:
 >A extensão [!DNL SaaS data export] é uma coleção de módulos instalados automaticamente com [!DNL Live Search], [!DNL Product Recommendations] e [!DNL Catalog Service]. Você pode verificar a versão instalada em seu sistema usando o [!DNL Composer]. Em alguns casos, você pode querer atualizar a extensão de exportação de dados no seu sistema para coletar correções ou novos recursos sem atualizar a versão do Serviço do Commerce.
 
 ## Versões de 2026 {#release-notes-2026}
+
+### Versão 103.4.33
+
+_1º de setembro de 2026_
+
+![Correção](../assets/fix.svg) **Ressincronizações mais rápidas para catálogos de várias lojas**-Os feeds de produtos e categorias agora filtram por exibição de loja antes de extrair dados, em vez de extrair cada exibição de loja e descartar os resultados irrelevantes posteriormente. Essa atualização melhora significativamente o desempenho da ressincronização para catálogos com muitas exibições de loja, especialmente ao usar o Adobe Commerce Optimizer. <!--MDEE-1441-->
 
 ### Versão 103.4.32
 
