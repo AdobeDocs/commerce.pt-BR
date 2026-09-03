@@ -4,13 +4,11 @@ breadcrumb-title: '[!DNL Adobe Commerce as a Cloud Service]'
 user-guide-description: Este guia fornece instruções detalhadas para usar o  [!DNL Adobe Commerce as a Cloud Service].
 feature: Services, Saas
 recommendations: noDisplay, noCatalog
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-  - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
-source-git-commit: 43d5571c6a1a3c5152d3b389b73887fd4739fa7f
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+source-git-commit: f37892b9a2de995dbc4b631ae1008e09cda68207
 workflow-type: tm+mt
-source-wordcount: 224
-ht-degree: 4%
+source-wordcount: 226
+ht-degree: 3%
 
 ---
 
@@ -39,11 +37,11 @@ ht-degree: 4%
       - [Lista de verificação de preparação do cliente](migration/bulk-data/readiness-checklist.md)
       - [Verificar acesso ao serviço de migração](migration/bulk-data/cdms-access.md)
       - [Executar uma migração de dados em massa](migration/bulk-data/migration-guide.md)
-      - [Apresentação em vídeo](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/bulk-data-migration-tool/introduction){target="_blank"}
+      - [Apresentação em vídeo](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/bulk-data-migration-tool/introduction){target="_blank"}
     - [Ferramenta de avaliação de migração](migration/assessment.md)
-    - [Ferramentas de codificação](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
+    - [Ferramentas de codificação](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/){target="_blank"}
   - {hide-from-toc}[Serviço de documentação RAG](migration/doc-rag.md)
-- [Fazer logon como cliente](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
+- [Fazer logon como cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/manage/login-as-customer){target="_blank"}
 - [Pontos de extremidade REST da conta de cartão-presente](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/gift-card-accounts/){target="_blank"}
 - [Acionamento de email por meio do REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/custom-email/){target="_blank"}
 - Tutorials {#tutorials}
@@ -57,6 +55,6 @@ ht-degree: 4%
   - [Esquema do GraphQL](https://developer.adobe.com/commerce/webapi/reference/graphql/saas/){target="_blank"}
   - [Esquema da API REST](https://developer.adobe.com/commerce/webapi/reference/rest/saas/){target="_blank"}
 - [Agente de desenvolvedor do Commerce](https://developer.adobe.com/commerce/extensibility/developer-agent/){target="_blank"}
-- [Tutoriais em vídeo](https://experienceleague.adobe.com/pt-br/playlists/accs-getting-started-product-overview){target="_blank"}
+- [Tutoriais em vídeo](https://experienceleague.adobe.com/en/playlists/accs-getting-started-product-overview){target="_blank"}
 - [Notas de versão](release-notes.md)
-- [Retornar à página inicial dos Serviços da Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/home)
+- [Retornar à página inicial dos Serviços da Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
