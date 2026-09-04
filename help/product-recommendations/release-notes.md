@@ -17,9 +17,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
+source-git-commit: 77e37e506362498a4ab27cd19152b4e4e742636b
 workflow-type: tm+mt
-source-wordcount: 2260
+source-wordcount: 2322
 ht-degree: 0%
 
 ---
@@ -31,6 +31,7 @@ As notas de versão descrevem atualizações para os seguintes módulos [!DNL Pr
 * [!DNL Product Recommendations] metapackage: `magento/product-recommendations`
 * Suporte ao Page Builder no módulo [!DNL Product Recommendations] (opcional): `magento/module-page-builder-product-recommendations`
 * Suporte a tipo de recomendação de similaridade visual para o módulo [!DNL Product Recommendations] (opcional): `magento/module-visual-product-recommendations`
+* Suporte ao Fastly Image Otimization para o módulo [!DNL Product Recommendations] (opcional): `magento/module-fastly-recommendations`
 
 A Adobe oferece suporte à versão mais recente lançada das Recomendações de produto. As notas de versão para versões mais antigas são fornecidas para referência.
 
@@ -80,6 +81,14 @@ _25 de abril de 2023_
 ![Novos](../assets/new.svg) [!DNL Product Recommendations] clientes agora podem usar a [indexação de preços do SaaS](../price-index/price-indexing.md).
 
 ## Versão principal atual
+
+### 6.8.0 do magento/module-fastly-recommendations
+
+_3 de setembro de 2026_
+
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
+
+![Novo](../assets/new.svg) Adição de suporte opcional à Otimização de imagem do Fastly para [!DNL Product Recommendations]. Este módulo aplica os parâmetros [Fastly Image Otimization](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/cdn/fastly) às URLs de imagem [!DNL Product Recommendations]. Consulte [Adicionar suporte ao Fastly Image Otimization](install-configure.md#fastlysupport) para obter instruções sobre a instalação.
 
 ### 6.7.0 magento/product-recommendations
 

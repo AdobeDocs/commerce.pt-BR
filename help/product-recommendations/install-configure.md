@@ -19,9 +19,9 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
 last-update: 2026-09-02
-source-git-commit: 299da83bd0a9b776ad6b13482b65af61bffe15fa
+source-git-commit: 77e37e506362498a4ab27cd19152b4e4e742636b
 workflow-type: tm+mt
-source-wordcount: 554
+source-wordcount: 600
 ht-degree: 0%
 
 ---
@@ -67,6 +67,14 @@ O tipo de recomendação _Semelhança visual_ exibe os produtos [visualmente sem
 
 ```bash
 composer require magento/module-visual-product-recommendations
+```
+
+### Adicionar suporte à otimização de imagem Fastly {#fastlysupport}
+
+O suporte à Otimização de imagem do Fastly para [!DNL Product Recommendations] é um módulo opcional e é instalado separadamente. Este módulo aplica os parâmetros [Fastly Image Otimization](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/cdn/fastly) às URLs de imagem [!DNL Product Recommendations]. Para instalá-lo, execute o seguinte comando:
+
+```bash
+composer require magento/module-fastly-recommendations
 ```
 
 ## Configurar [!DNL Product Recommendations] {#configure}

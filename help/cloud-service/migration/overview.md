@@ -35,9 +35,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
+source-git-commit: 289267c4bb76bbe1e9f00fd02faa7749b812d0d0
 workflow-type: tm+mt
-source-wordcount: 3302
+source-wordcount: 3372
 ht-degree: 0%
 
 ---
@@ -67,21 +67,17 @@ Esse fluxo de trabalho compartilhado consolida a detecção, alinha as equipes d
 
 ![diagrama do fluxo de migração](../assets/migration-flow.png)
 
-### Comparação de PaaS e SaaS
+### Comparação de SaaS e PaaS
 
-O [!DNL Adobe Commerce on Cloud] ou local (PaaS) e o [!DNL Adobe Commerce as a Cloud Service] (SaaS) diferem na forma como são gerenciados e como os comerciantes interagem com a plataforma.
+O Adobe Commerce está disponível em diferentes modelos de implantação. As principais diferenças são o nível de gerenciamento de infraestrutura, controle de aplicativos, personalização e responsabilidade de upgrade.
 
-**Principais diferenças**
+[!DNL Adobe Commerce as a Cloud Service], [!DNL Adobe Commerce on Cloud] e [!DNL Adobe Commerce on-premises] diferem em como são gerenciados e como os comerciantes interagem com a plataforma.
 
-- [!BADGE Somente PaaS]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."}
-- **[!DNL Adobe Commerce on Cloud Infrastructure]**: O comerciante gerencia o código do aplicativo, as atualizações, os patches e a configuração da infraestrutura.
-- **[!DNL Adobe Commerce]no local**: o comerciante gerencia o código do aplicativo, as atualizações, os patches e a configuração da infraestrutura no ambiente hospedado da Adobe.
-
-  >[!NOTE]
-  >
-  >[Modelo de responsabilidade compartilhada](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/security-and-compliance/shared-responsibility) para serviços (MySQL, Elasticsearch e outros).
-
-- [!BADGE Somente SaaS]{type=Positive url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."} **SaaS (Novo — [!DNL Adobe Commerce as a Cloud Service])**: o Adobe gerencia totalmente o aplicativo principal, a infraestrutura e as atualizações. Os comerciantes se concentram na personalização por meio de pontos de extensibilidade (APIs, App Builder, SDKs de interface). O código do aplicativo principal está bloqueado.
+| Oferta do Adobe Commerce | Modelo de hospedagem | Responsabilidade por serviços e atualizações |
+|---|---|---|
+| **[!DNL Adobe Commerce as a Cloud Service]** | SaaS — hospedado pela Adobe | O Adobe gerencia o aplicativo, a infraestrutura e as atualizações principais do Commerce. Os comerciantes estendem a plataforma por meio de APIs e serviços de extensibilidade (APIs, [!DNL Adobe Developer App Builder], SDKs de interface do usuário) compatíveis. Os comerciantes não podem modificar o código principal do aplicativo. |
+| **[!DNL Adobe Commerce on Cloud Infrastructure]** | PaaS — gerenciado pela Adobe | [Responsabilidade compartilhada](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/security-and-compliance/shared-responsibility): o Adobe gerencia a plataforma hospedada. O comerciante gerencia patches em nível de aplicativo, código personalizado, configuração e atualiza extensões e serviços de plataforma para versões compatíveis, incluindo: banco de dados, cache, pesquisa, tempo de execução de PHP, servidor Web e fila de mensagens. |
+| **[!DNL Adobe Commerce on-premises]** | Hospedado pelo comerciante ou provedor de hospedagem | [Responsabilidade do comerciante](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/overview#merchant-responsibilities): o comerciante ou seu provedor de hospedagem gerencia a infraestrutura e todos os serviços de plataforma. |
 
 **Implicações arquitetônicas**
 
@@ -186,7 +182,9 @@ Também é possível executar novamente as avaliações à medida que seus aplic
 
 Cada migração de [!DNL Adobe Commerce as a Cloud Service] começa com uma avaliação. É uma maneira econômica de estabelecer escopo, reduzir incertezas e criar um blueprint de migração compartilhado antes do início da implementação.
 
-Para obter mais informações sobre ferramentas de avaliação e fluxo de trabalho de desenvolvedor downstream, consulte [Adobe Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/).
+Para obter mais informações sobre ferramentas de avaliação e fluxo de trabalho de desenvolvedor downstream, consulte [Adobe Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/).
+
+Para obter mais informações sobre o Commerce Developer Agent, que é integrado à Ferramenta de Avaliação de Migração, consulte [Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/)
 
 ## Migração de código e vitrine (Commerce Developer MCP)
 
@@ -259,7 +257,9 @@ O MCP não lida com a migração de dados. Os dados corporativos são migrados p
 
 A modernização do código e da loja começa assim que o roteiro da Ferramenta de avaliação de migração estabelece o escopo e as prioridades da migração.
 
-Para obter mais informações sobre como instalar e usar o MCP, consulte a documentação do [Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/).
+Para obter mais informações sobre como instalar e usar o MCP, consulte a documentação do [Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/).
+
+Para obter mais informações sobre o Commerce Developer Agent, que é integrado à Ferramenta de Avaliação de Migração, consulte [Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/)
 
 ## Migração de dados (Serviço de migração de dados da Commerce)
 

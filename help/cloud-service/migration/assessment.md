@@ -25,9 +25,9 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 43d5571c6a1a3c5152d3b389b73887fd4739fa7f
+source-git-commit: dba0c9e79458f516dd36da886423c7a5657a2ad2
 workflow-type: tm+mt
-source-wordcount: 2499
+source-wordcount: 2705
 ht-degree: 0%
 
 ---
@@ -41,7 +41,13 @@ ht-degree: 0%
 
 Uma avaliação de migração do Commerce é uma análise automatizada da implementação existente do Adobe Commerce. As ferramentas da Adobe verificam sua base de códigos Commerce e produzem um relatório estruturado que faz o inventário de tudo o que foi construído, personalizado ou modificado. O relatório indica como as personalizações feitas na sua base de código afetam sua migração para o [!DNL Adobe Commerce as a Cloud Service].
 
-Os relatórios de avaliação de migração processada estão acessíveis em `https://experience.adobe.com/@<ims-org-name>/commerce-migration-assessment/shared-assessments`. Não é necessário acesso ao ambiente de produção, exceto compartilhar inicialmente a base de código do projeto.
+Depois que sua base de código for processada, o relatório de avaliação será vinculado à sua ID da organização IMS e compartilhado com [!DNL Adobe Experience Cloud]. Não é necessário acesso ao ambiente de produção, exceto compartilhar inicialmente a base de código do projeto.
+
+Qualquer membro de sua organização IMS pode visualizar a avaliação compartilhada em: https://experience.adobe.com/commerce-migration-assessment/shared-assessments.
+
+>[!NOTE]
+>
+> Você deve estar conectado à Adobe Experience Cloud com um perfil de usuário vinculado à mesma Organização IMS usada na avaliação de migração para exibir o relatório compartilhado.
 
 **A avaliação fornece:**
 
@@ -49,6 +55,10 @@ Os relatórios de avaliação de migração processada estão acessíveis em `ht
 - Uma classificação de complexidade de migração (alta, Medium ou baixa) calculada a partir de métricas de previsão de riscos
 - Uma exibição priorizada do back-end de maior impacto e das áreas de loja que exigem planejamento de migração
 - Uma descrição de cada módulo personalizado, que você pode usar como entrada direta para as ferramentas de desenvolvedor de IA do Adobe
+
+## Acessar a avaliação de migração
+
+O Adobe conecta uma avaliação de migração concluída à organização IMS da Adobe da sua organização. Depois que a avaliação for conectada, qualquer usuário nessa organização poderá acessar o relatório em https://experience.adobe.com/commerce-migration-assessment/shared-assessments.
 
 ## Noções básicas sobre o relatório de avaliação da migração
 
@@ -232,6 +242,8 @@ Para cada módulo, o relatório exibe:
 | Recomendação de migração | **Recompilar**, **Refatorar**, **Substituir** com um recurso nativo ou **Remover** |
 | Dependências | Com quais outros módulos este módulo interage, o que pode informar o sequenciamento de migração |
 
+Abra o detalhamento de um módulo para visualizar seus detalhes completos. Os módulos com uma recomendação de migração **Recompilar** incluem um botão **[!UICONTROL Open in Developer Agent]**, que copia a descrição do módulo diretamente no [Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/) para que você possa gerar um blueprint para a extensão de substituição imediatamente.
+
 **Fluxo de trabalho**
 
 1. Filtre primeiro para **Módulos de alto impacto**. Elas geram mais esforço e custo de migração.
@@ -240,7 +252,9 @@ Para cada módulo, o relatório exibe:
    - O módulo pode ser substituído por um recurso [!DNL Adobe Commerce as a Cloud Service] nativo?
    - Se o módulo precisar ser recriado, qual funcionalidade sua substituição precisará fornecer?
 1. Identifique os módulos personalizados que podem ser removidos ou substituídos. Cada uma reduz o escopo da migração antes que qualquer código seja escrito.
-1. Copie a descrição de cada módulo personalizado com a recomendação de migração **Recompilar**. Essas descrições podem ser fornecidas diretamente para as ferramentas de desenvolvedor de IA da Adobe. Consulte [Ferramentas de desenvolvedor de IA para extensibilidade do Commerce](#ai-developer-tools-for-commerce-extensibility) para obter mais informações.
+1. Para cada módulo personalizado com uma recomendação de migração **Recompilar**, você pode:
+   - Clique em **[!UICONTROL Open in Developer Agent]** para gerar um blueprint ou copiar a descrição do módulo usando o Commerce Developer Agent.
+   - Copie a descrição de cada módulo personalizado com a recomendação de migração **Recompilar**. Essas descrições podem ser fornecidas diretamente para as ferramentas de desenvolvedor de IA da Adobe. Consulte [Ferramentas de desenvolvedor de IA para extensibilidade do Commerce](#ai-developer-tools-for-commerce-extensibility) para obter mais informações.
 
 ## Referência: termos principais
 
@@ -265,7 +279,7 @@ Você pode usar as descrições do módulo na guia **[!UICONTROL Module Reports]
 
 ### O que as ferramentas fornecem
 
-As [ferramentas de desenvolvedor de IA para extensibilidade do Commerce](https://developer.adobe.com/commerce/extensibility/developer-agent/) da Adobe incluem dois recursos principais.
+As [ferramentas de desenvolvedor de IA para extensibilidade do Commerce](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/) da Adobe incluem dois recursos principais.
 
 - [!DNL Adobe Commerce] [!DNL App Builder] Servidor MCP - Uma integração de protocolo MCP que conecta os assistentes de codificação de IA diretamente à documentação do [!DNL Adobe Commerce], às APIs e aos padrões de desenvolvimento do App Builder. Os desenvolvedores podem descrever o que desejam criar e o servidor MCP fornece geração de código com reconhecimento de Commerce, orientação de arquitetura e automação de implantação no IDE.
 - Habilidades do agente - Habilidades de IA pré-criadas que abrangem padrões comuns de extensibilidade do Commerce, como APIs REST, extensões de check-out, componentes da loja e integrações orientadas por eventos. As habilidades orientam a IA por meio de etapas de arquitetura, implementação, teste e implantação específicas para [!DNL Adobe Commerce as a Cloud Service] e [!DNL App Builder].
@@ -293,15 +307,17 @@ Embora a avaliação forneça um blueprint para desenvolvimento, as ferramentas 
 Manages custom shipping rate calculations based on customer account tier and order    weight thresholds.
 ```
 
-1. Abra o IDE, por exemplo, GitHub Copilot, Cursor ou Claude com o servidor MCP de extensibilidade do Commerce ativado.
-1. Use a descrição do módulo para solicitar o agente de IA.
+1. Clique em **[!UICONTROL Open in Developer Agent]** para copiar a descrição para o [!DNL Commerce Developer Agent] e gerar um blueprint imediatamente.
+
+   Como alternativa, abra o IDE, por exemplo, GitHub Copilot, Cursor ou Claude com o servidor MCP de extensibilidade do Commerce ativado e use a descrição do módulo para solicitar o agente de IA manualmente.
+
 1. Revise o aplicativo [!DNL App Builder] com andaime e itere com o agente para refinar a implementação.
 
 ## Próximas etapas
 
 1. Abra a guia **[!UICONTROL Summary]**. Revise a Complexidade da migração e os Módulos de maior impacto, e verifique as subseções Detalhamento da personalização. Se sua loja tiver um tema personalizado, blocos de alto risco ou um Check-out incluído na lista, planeje um fluxo de trabalho de front-end paralelo junto com a migração de back-end.
 1. Compartilhe a guia **[!UICONTROL Module Reports]** com sua equipe técnica ou parceiro de desenvolvimento. Solicite que eles sinalizem todos os módulos personalizados que não são mais usados ativamente ou que possam ser substituídos por um recurso [!DNL Adobe Commerce as a Cloud Service].
-1. Comece a criar suas personalizações. Use as descrições do módulo como entrada da ferramenta de IA para iniciar as extensões compatíveis com o andaime.
+1. Comece a criar suas personalizações. Na guia **Relatórios de Módulo**, abra qualquer detalhamento de módulo e selecione **Abrir no Agente de Desenvolvedor** para iniciar o andaime de uma extensão compatível diretamente dos dados de avaliação desse módulo.
 1. Agende uma chamada de apresentação com sua equipe de conta da Adobe. A Adobe pode analisar as descobertas com você, responder a qualquer pergunta sobre módulos específicos e sinais de vitrine e ajudar a mapear a abordagem de migração para seu perfil de complexidade.
 
 ## Recursos
@@ -313,7 +329,7 @@ Manages custom shipping rate calculations based on customer account tier and ord
   - [Tutorial do método de envio](../tutorials/shipping-method-extension.md)
 - Extensibilidade
   - [Visão geral](https://developer.adobe.com/commerce/extensibility/)
-  - [Ferramentas do desenvolvedor de IA](https://developer.adobe.com/commerce/extensibility/developer-agent/)
+  - [Ferramentas do desenvolvedor de IA](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/)
     - [Práticas recomendadas](https://developer.adobe.com/commerce/extensibility/developer-agent/best-practices)
     - [Configuração](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools)
     - [Habilidades e prompts](https://developer.adobe.com/commerce/extensibility/developer-agent/skills-and-prompts)
