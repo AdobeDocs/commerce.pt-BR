@@ -3,18 +3,13 @@ title: Adicionar regras
 description: Saiba como criar regras de merchandising de pesquisa.
 exl-id: 7175ccf7-d838-43b0-a176-957e7db040e0
 TQID: https://experienceleague.adobe.com/QnJ-q-Y-ccQ7HKEt2RgPYQFeWcBnhjwSDOtKjlF7Rp0
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+source-git-commit: 0a8adc9dc2c13e0f74fa21b0fbdeb3b904a9bcc6
 workflow-type: tm+mt
-source-wordcount: 2561
+source-wordcount: 2878
 ht-degree: 0%
 
 ---
@@ -26,7 +21,7 @@ Para criar uma regra, a primeira etapa é usar o editor de regras para definir a
 ## Adicionar uma regra
 
 1. No Administrador, vá para **Marketing** > SEO e pesquisa > **[!DNL Live Search]**.
-1. Defina o **Escopo** para identificar a [exibição de repositório](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) onde a regra se aplica.
+1. Defina o **Escopo** para identificar a [exibição de repositório](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings) onde a regra se aplica.
 1. Clique no espaço de trabalho **Pesquisar Merchandising**.
 1. Clique em **Adicionar regra** para iniciar o editor de regras.
 
@@ -101,6 +96,20 @@ Os proprietários de lojas podem configurar os seguintes tipos de estratégias d
 
 Selecione o tipo de estratégia para a regra. A janela **[!UICONTROL Test your rule]** exibe os resultados esperados.
 
+### Sinais comportamentais para produtos e variantes configuráveis {#behavioral-signals-variants}
+
+O **[!DNL Live Search]** coleta sinais comportamentais, como exibições, eventos de adição ao carrinho e compras, em relação ao produto específico com o qual o comprador interage. Para um produto configurável, isso significa que os sinais são gravados no nível da **variante** (produto simples), não contra o pai configurável.
+
+Ao classificar um produto configurável, o **[!DNL Live Search]** agrega os sinais comportamentais coletados de todas as suas variantes e os acumula para o pai configurável. A pontuação de classificação de um produto configurável reflete os sinais combinados de cada variante, não apenas uma.
+
+Essa agregação ocorre no escopo da categoria que está sendo pesquisada. Uma variante contribui apenas com seus sinais comportamentais para a pontuação de classificação do pai configurável para categorias às quais a **variante** está atribuída. Se uma variante estiver ausente em uma categoria, seus sinais não contarão para a classificação do pai nessa categoria, mesmo quando o pai configurável estiver atribuído lá.
+
+**Prática recomendada:** revise as atribuições de categoria para todas as variantes de produtos, especialmente em catálogos que usam estruturas de categoria de tamanho, cor ou outras específicas de variante, para confirmar se cada variante está atribuída a cada categoria onde espera-se que apareça e influencie a classificação.
+
+**Exemplo:**
+
+Um comerciante organiza um catálogo em subcategorias específicas de tamanho, como **200g** e **500g**. Um produto configurável tem duas variantes, uma para cada tamanho. Se apenas a variante 200g for atribuída à categoria 200g, as compras e as exibições da variante 500g não contribuirão para a pontuação de classificação do produto configurável na página de categoria 200g, mesmo que a variante 500g venda bem em outro lugar. O produto configurável poderá então ser classificado abaixo do esperado ou fora de sincronia com o desempenho de vendas real, na página de categoria 200g. Atribuir ambas as variantes às respectivas categorias resolve a incompatibilidade.
+
 ### Aumento inteligente de classificação {#intelligent-ranking-boost}
 
 Para **Recomendado para você**, **Mais visualizados**, **Mais comprados**, **Mais adicionados ao carrinho** e **Tendências**, o editor mostra **[!UICONTROL Intelligent Ranking Boost]** (o fator de reforço). Ela não é usada quando você seleciona **Nenhum**.
@@ -162,6 +171,7 @@ Consulte [regras de pesquisa](./best-practice.md#search-rules) para saber como m
 ### Avisos
 
 * Apóstrofos e citações em queries podem levar a alguns problemas menores com classificação e relevância em alguns idiomas.
+* Se os resultados de classificação inteligentes não estiverem correlacionados com as vendas reais ou com o desempenho da exibição, confirme se todas as variantes de produto relevantes estão atribuídas à categoria que está sendo analisada. As atribuições de categoria de variante ausentes são uma causa comum e facilmente ignorada do comportamento inesperado da classificação. Consulte [Sinais comportamentais para produtos e variantes configuráveis](#behavioral-signals-variants).
 * Para garantir que a classificação inteligente funcione corretamente, verifique se o **Peso da Pesquisa** para qualquer atributo de produto usado para pesquisa ou filtragem (facetas) é `5` ou menos. Para localizar esta configuração no [!DNL Commerce] Admin:
 
   1. Selecione **Lojas** > _Atributos_ > **Produto**.
@@ -178,10 +188,10 @@ Consulte [regras de pesquisa](./best-practice.md#search-rules) para saber como m
 
 Classificação manual (anteriormente conhecida como Eventos) são ações que modificam os resultados da pesquisa quando condições definidas são atendidas. Uma única regra pode ter até 25 eventos.
 
-* Aumentar - Move um produto para cima nos resultados da pesquisa.
-* Enterro - Move um SKU para baixo nos resultados da pesquisa.
-* Fixar um produto - O produto é exibido na &quot;Posição&quot; selecionada na página.
-* Ocultar um produto - Exclui um SKU dos resultados da pesquisa.
+* **[!UICONTROL Boost]** - Move uma SKU para cima nos resultados da pesquisa.
+* **[!UICONTROL Bury]** - Move uma SKU para baixo nos resultados da pesquisa.
+* **[!UICONTROL Pin a product]** - SKU é exibida na &quot;Posição&quot; selecionada na página.
+* **[!UICONTROL Hide a product]** - Exclui uma SKU dos resultados da pesquisa.
 
 A maneira mais fácil de fixar um produto é arrastando e soltando.
 
@@ -199,7 +209,7 @@ Ou eventos podem ser definidos manualmente:
 
 1. Em *Eventos*, escolha o **Evento** que ocorrerá quando as condições associadas forem atendidas.
 
-   Por exemplo, escolha `Hide a product`. Em seguida, insira o nome do produto que deseja ocultar. Os produtos são sugeridos à medida que você digita.
+   Por exemplo, escolha **[!UICONTROL Hide a product]**. Em seguida, insira o nome do produto que deseja ocultar. Os produtos são sugeridos à medida que você digita.
 
 1. Para vários eventos, escolha outros eventos que deseja acionar quando as condições forem atendidas.
 
@@ -262,10 +272,10 @@ As informações inseridas aqui aparecem no painel [Detalhes da Regra](rules-wor
 
 | Evento | Descrição |
 |--- |--- |
-| Aumentar | Move um SKU ou intervalo de SKUs para cima nos resultados da pesquisa. Cada uma é marcada com um selo de visualização &quot;aumentada&quot; nos resultados da pesquisa de teste. |
-| Enterro | Move um SKU ou intervalo de SKUs para baixo nos resultados da pesquisa. Cada uma está marcada com um selo de visualização &quot;entranhado&quot; nos resultados de pesquisa de teste. |
-| Fixar um produto | Anexa um único SKU a uma posição específica nos resultados da pesquisa. O produto é marcado com um selo de visualização &quot;fixado&quot; nos resultados da pesquisa de teste. |
-| Ocultar um produto | Exclui um SKU, ou intervalo de SKUs, dos resultados da pesquisa. |
+| [!UICONTROL Boost] | Move um SKU ou intervalo de SKUs para cima nos resultados da pesquisa. Cada uma é marcada com um selo de visualização &quot;aumentada&quot; nos resultados da pesquisa de teste. |
+| [!UICONTROL Bury] | Move um SKU ou intervalo de SKUs para baixo nos resultados da pesquisa. Cada uma está marcada com um selo de visualização &quot;entranhado&quot; nos resultados de pesquisa de teste. |
+| [!UICONTROL Pin a product] | Anexa um único SKU a uma posição específica nos resultados da pesquisa. O produto é marcado com um selo de visualização &quot;fixado&quot; nos resultados da pesquisa de teste. |
+| [!UICONTROL Hide a product] | Exclui um SKU, ou intervalo de SKUs, dos resultados da pesquisa. |
 
 ### Detalhes
 
