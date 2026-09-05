@@ -1,7 +1,7 @@
 ---
-source-git-commit: 73cfc898b25e731238b049419fe0e964e29e92b6
+source-git-commit: 4a68ab79a6ddbd39efe5825fcbe2137ddf83f471
 workflow-type: tm+mt
-source-wordcount: '1059'
+source-wordcount: '1056'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,28 @@ ht-degree: 1%
 ## Novidades
 
 Esta página contém as alterações feitas nos últimos 60 dias. Excluímos todas as atualizações secundárias, como a edição de cópia, desta lista.
+
+### 2 de setembro de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adição do guia <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/insights/overview">Commerce Insights</a>, uma nova página inicial para implementação estratégica e orientação de segurança da engenharia e do gerenciamento de produtos da Adobe Commerce.</p>
+</td>
+      <td>
+        Novo tópico
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/7c82665f7696cab156f6559ade451df937faa3e5">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 28 de agosto de 2026
 
@@ -353,28 +375,6 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
         Atualização importante
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/976a43b367be87363307dc27c55f98df18271eb1">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 6 de julho de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Remoção da documentação de integração do LLM Optimizer e do Commerce. O recurso foi redefinido pelo escopo e movido para o <a href="https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/products/catalog-enrichment">Guia do Administrador do Commerce</a>.</p>
-</td>
-      <td>
-        Atualização importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/edab7c8b3c7965425c5d3008a537f7e4a1fc374b">confirmar</a></td>
     </tr>
   </tbody>
 </table>
