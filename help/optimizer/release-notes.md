@@ -4,21 +4,15 @@ description: Informações de versão mensais do  [!DNL Adobe Commerce Optimizer
 feature: Release Notes
 role: Admin, Developer, User, Leader
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: e420d461-9ea2-4e32-aa37-230b14a297d7
 TQID: https://experienceleague.adobe.com/apcpxN0AOniRcHDCa5MMAVWysxRO5mTcudXXXjET-Lo
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d36a8adc8cbfe6478c5922dc6cee654b48e9c30d
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 631126cc8d9b69c41aed19e30bf1503dd950d7e9
 workflow-type: tm+mt
-source-wordcount: 1561
+source-wordcount: 1626
 ht-degree: 0%
 
 ---
@@ -49,6 +43,11 @@ _3 de setembro de 2026_
 ## Agosto de 2026
 
 >[!BEGINSHADEBOX]
+
+_9 de setembro de 2026_
+
+![Novas](../assets/new.svg) **Políticas de gatilho de cabeçalho HTTP de vários valores**—As políticas de gatilho que usam o tipo de transporte `HTTP_HEADER` agora podem receber vários valores separados por vírgula em um único cabeçalho (por exemplo, `AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025`). Os filtros de política que usam `IN` avaliam os valores com a semântica `OR`. Os filtros que usam `EQUALS`, `GREATER_THAN_EQUAL` ou `LESS_THAN_EQUAL` rejeitam a solicitação com um erro de validação se o cabeçalho contiver vários valores. Este comportamento se aplica somente a políticas de gatilho que usam o transporte `HTTP_HEADER`. [Saiba mais](./setup/policies.md#multi-value-http-header-triggers).
+<!--COMOPT-2439-->
 
 _7 de agosto de 2026_
 
@@ -153,7 +152,7 @@ _29 de abril de 2026_
 
 <!--v1.52 release-->
 
-**Solicitação em lote necessária** — a API do GraphQL agora impõe um máximo de 100 SKUs por solicitação ao recuperar dados de catálogo. Consulte [limites documentados](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/boundaries-limits#product-discovery).
+**Solicitação em lote necessária** — a API do GraphQL agora impõe um máximo de 100 SKUs por solicitação ao recuperar dados de catálogo. Consulte [limites documentados](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits#product-discovery).
 
 <!--DATA-7156-->
 
