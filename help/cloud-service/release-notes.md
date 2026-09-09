@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: 49a235a3a545b422b0371b53163d7de770df6a38
+source-git-commit: 8fdfd3ebfa088fd219c65c86ce99cae838ff5d54
 workflow-type: tm+mt
-source-wordcount: 6271
+source-wordcount: 6358
 ht-degree: 0%
 
 ---
@@ -50,11 +50,11 @@ As notas de versão a seguir contêm atualizações para [!DNL Adobe Commerce as
 
 ## Setembro de 2026 - versão #1 {#latest}
 
-[!BADGE Sandbox]{type=Caution tooltip="Os itens listados estão disponíveis atualmente apenas em ambientes de sandbox. A Adobe disponibiliza novas versões em ambientes de sandbox primeiro para fornecer tempo para testar alterações futuras antes que a versão esteja disponível em ambientes de produção."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Produção]{type=Neutral tooltip="Os itens listados estão disponíveis atualmente em Ambientes de produção."}
 
-Os itens a seguir serão publicados na Produção em 8 de setembro de 2026.
+Os itens a seguir foram publicados para produção em 8 de setembro de 2026.
 
 >[!BEGINSHADEBOX]
 
@@ -66,7 +66,7 @@ Consulte as [notas de versão do Adobe Commerce 2.4.9](https://experienceleague.
 
 ### Sincronizar configurações de sandbox e produção por meio da API REST
 
-Os novos pontos de extremidade da API REST `GET` e `PUT /V1/system/config` permitem que as integrações leiam e atualizem os valores de configuração do sistema Commerce, incluindo:
+Os novos pontos de extremidade da API REST [`GET` e `PUT /V1/system/config`](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/system-config) permitem que as integrações leiam e atualizem os valores de configuração do sistema Commerce, incluindo:
 
 * Armazenar informações
 * Configurações de remessa e imposto
@@ -77,15 +77,17 @@ Esses pontos de extremidade permitem que os administradores sincronizem a config
 
 ### Consultar a disponibilidade do inventário por meio do GraphQL
 
-Uma nova consulta do GraphQL `sourceAvailability` retorna a disponibilidade de estoque por origem para uma ou mais SKUs, para que as frentes de loja, como páginas de produto e categoria, possam exibir informações de estoque precisas para cada origem de estoque. <!-- ACCS-933 -->
+Uma nova consulta do GraphQL [`sourceAvailability`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/source-availability) retorna a disponibilidade de estoque por origem para uma ou mais SKUs, para que as frentes de loja, como páginas de produto e categoria, possam exibir informações de estoque precisas para cada origem de estoque.
+
+[Habilitar **Disponibilidade Por Source**](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/inventory/configuration/global-options). <!-- ACCS-933 -->
 
 ### Ler configurações persistentes de lista de desejos e compartilhamento de conta por meio do GraphQL
 
-A consulta do GraphQL `storeConfig` agora retorna os valores de configuração `persistent_enabled`, `persistent_shopping_cart`, `persistent_options_wishlist` e `share_customer_accounts_scope`, para que as vitrines possam acessar as configurações do carrinho de compras persistente e da lista de desejos do comerciante sem entrar em contato com o suporte. <!-- USF-4051 -->
+A consulta do GraphQL [`storeConfig`](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/store-config/#query-a-stores-persistent-cart-and-account-sharing-configuration) agora retorna os valores de configuração `persistent_enabled`, `persistent_shopping_cart`, `persistent_options_wishlist` e `share_customer_accounts_scope`, para que as vitrines possam acessar as configurações do carrinho de compras persistente e da lista de desejos do comerciante sem entrar em contato com o suporte. <!-- USF-4051 -->
 
 ### Pesquisar pedidos do cliente por produto, SKU ou ID do pedido
 
-A entrada do GraphQL `CustomerOrdersFilterInput` agora oferece suporte a um campo `search` opcional que corresponde ao número do pedido, SKU do item ou nome do item, combinado com quaisquer outros filtros que você fornecer. <!-- USF-4290 -->
+A entrada do GraphQL [`CustomerOrdersFilterInput`](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/customer) agora dá suporte a um campo `search` opcional que corresponde ao número do pedido, SKU do item ou nome do item, combinado com quaisquer outros filtros que você fornecer. <!-- USF-4290 -->
 
 ### Atualizar e excluir modelos de email personalizados por meio da API
 
@@ -136,15 +138,14 @@ Os comerciantes agora podem realizar o autoatendimento de integração de uma co
 
 ### Regras de preço do carrinho de presente gratuito
 
-A regra de preço do carrinho **Presente gratuito** está disponível no [!DNL Commerce Admin] para vitrines. <!-- AC-17678 -->
+A [**regra de preço do carrinho de presente** gratuito](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-free-gift) agora está disponível na [!DNL Commerce Admin] para vitrines.
+<!-- AC-17678 -->
 
-Essa regra permite adicionar um produto de presente gratuito ao carrinho quando as condições da regra são atendidas.
-
-<!-- dependent on https://github.com/Adobe-Enterprise-Docs/commerce-admin.en/pull/856 and https://github.com/AdobeDocs/commerce-webapi/pull/590 -->
+Essa regra permite adicionar um produto de presente gratuito ao carrinho quando as condições da regra são atendidas. Quando uma regra exige uma escolha, os compradores podem selecionar uma SKU de presente usando a nova mutação do GraphQL [`selectFreeGiftForCart`](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/select-free-gift), que oferece suporte a produtos de presente configuráveis e agrupáveis.
 
 ### Agendar regras de preço do carrinho por data e hora
 
-Agora você pode definir a hora do dia em que deseja que uma [regra de preço do carrinho](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create) comece ou termine em [!DNL Commerce Admin]. A grade Regras de preço do carrinho exibe os horários agendados e a API REST respeita um horário enviado em `from_date` e `to_date` em vez de definir a regra para meia-noite. <!-- ACCS-970 -->
+Agora você pode definir a hora do dia em que deseja que uma [regra de preço do carrinho](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-create#rule-information) comece ou termine em [!DNL Commerce Admin]. A grade Regras de preço do carrinho exibe os horários agendados e a API REST respeita um horário enviado em `from_date` e `to_date` em vez de definir a regra para meia-noite. <!-- ACCS-970 -->
 
 <!-- commenting this out until the B2B compatibility package version is live. -->
 
