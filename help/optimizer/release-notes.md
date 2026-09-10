@@ -16,9 +16,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d36a8adc8cbfe6478c5922dc6cee654b48e9c30d
+source-git-commit: 631126cc8d9b69c41aed19e30bf1503dd950d7e9
 workflow-type: tm+mt
-source-wordcount: 1561
+source-wordcount: 1626
 ht-degree: 0%
 
 ---
@@ -49,6 +49,11 @@ _3 de setembro de 2026_
 ## Agosto de 2026
 
 >[!BEGINSHADEBOX]
+
+_9 de setembro de 2026_
+
+![Novas](../assets/new.svg) **Políticas de gatilho de cabeçalho HTTP de vários valores**—As políticas de gatilho que usam o tipo de transporte `HTTP_HEADER` agora podem receber vários valores separados por vírgula em um único cabeçalho (por exemplo, `AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025`). Os filtros de política que usam `IN` avaliam os valores com a semântica `OR`. Os filtros que usam `EQUALS`, `GREATER_THAN_EQUAL` ou `LESS_THAN_EQUAL` rejeitam a solicitação com um erro de validação se o cabeçalho contiver vários valores. Este comportamento se aplica somente a políticas de gatilho que usam o transporte `HTTP_HEADER`. [Saiba mais](./setup/policies.md#multi-value-http-header-triggers).
+<!--COMOPT-2439-->
 
 _7 de agosto de 2026_
 

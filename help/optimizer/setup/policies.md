@@ -13,9 +13,9 @@ role_v2:
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 4a9bb6c6473680ee7059d1844be5fee718a9ed68
 workflow-type: tm+mt
-source-wordcount: 917
+source-wordcount: 1054
 ht-degree: 0%
 
 ---
@@ -61,6 +61,28 @@ A **Marca** e o **Modelo** são acionadores definidos:
 - `AC-Policy-Model`
 
 Se o comprador clicar no menu suspenso **Marca**, o cabeçalho da chamada de API conterá `AC-Policy-Brand`, que está configurado para mostrar apenas produtos específicos à política `AC-Policy-Brand`.
+
+### Acionadores de cabeçalho HTTP de vários valores {#multi-value-http-header-triggers}
+
+Uma política de gatilho que usa o tipo de transporte `HTTP_HEADER` pode receber vários valores em um único cabeçalho. Os valores devem ser separados por vírgulas e o operador de filtro deve ser `IN`. Cada valor é tratado como uma correspondência aceitável. Os valores são avaliados com a semântica `OR`.
+
+Por exemplo, um filtro de política usando `IN` com o seguinte cabeçalho:
+
+```
+AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025
+```
+
+corresponde a produtos cujo atributo `vehicle` é `UNIVERSAL` ou `veh-bolt-mammoth-limited-2025`.
+
+Enquanto um operador de filtro de `EQUALS`, `GREATER_THAN_EQUAL` ou `LESS_THAN_EQUAL` é rejeitado com um erro de validação.
+
+#### Notas de sintaxe
+
+- O nome do cabeçalho corresponde ao nome do acionador configurado, por exemplo `AC-Policy-Vehicle`.
+- Vírgulas separam valores individuais dentro do cabeçalho. Quando o mesmo cabeçalho `AC-Policy-_Name_` for exibido mais de uma vez, seus valores serão combinados em um único valor de cabeçalho separado por vírgulas
+- O operador de filtro é `IN`.
+- Um filtro de política com **Origem do valor** definida como `TRIGGER`.
+- Um gatilho cujo **Tipo de transporte** é `HTTP_HEADER`.
 
 ## Criar política
 
