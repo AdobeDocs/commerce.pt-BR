@@ -35,9 +35,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 289267c4bb76bbe1e9f00fd02faa7749b812d0d0
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 3372
+source-wordcount: 3374
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ O Adobe Commerce está disponível em diferentes modelos de implantação. As pr
 
 - [Adobe Developer App Builder](https://developer.adobe.com/app-builder/) e [API Mesh para Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/)
 - [Commerce Optimizer](../../optimizer/overview.md)
-- [Edge Delivery Services](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR)
+- [Edge Delivery Services](https://experienceleague.adobe.com/en/tools/commerce-storefront/)
 - Provisionamento de autoatendimento com o [Commerce Cloud Manager](../getting-started.md#create-an-instance)
 
 ### A jornada de migração
@@ -214,7 +214,7 @@ Usando os resultados da [avaliação de migração](#migration-assessment-tool),
 
 ### Modernização de vitrine eletrônica
 
-No front-end, o MCP do Commerce Developer moderniza [vitrines](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR) no Edge Delivery Services (EDS) para Commerce usando a placa-padrão do Adobe Commerce, os Componentes de Entrega e os blocos de EDS.
+No front-end, o MCP do Commerce Developer moderniza [vitrines](https://experienceleague.adobe.com/en/tools/commerce-storefront/) no Edge Delivery Services (EDS) para Commerce usando a placa-padrão do Adobe Commerce, os Componentes de Entrega e os blocos de EDS.
 
 O Commerce Developer MCP carrega projetos de vitrine existentes com base na matriz do Commerce. Ele moderniza sua loja ao:
 

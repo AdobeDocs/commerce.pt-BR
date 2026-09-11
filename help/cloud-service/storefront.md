@@ -22,9 +22,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-source-git-commit: 28102ad0dba698e37a69bbae90e3e9cec364ca81
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 332
+source-wordcount: 335
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 Para configurar seu [!DNL Adobe Commerce Storefront] com a tecnologia [!DNL Edge Delivery Services] para [!DNL Adobe Commerce as a Cloud Service] (SaaS), conclua as etapas a seguir.
 
-Para obter uma apresentação mais personalizável e detalhada, consulte a [documentação sobre vitrines](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/?lang=pt-BR).
+Para obter uma apresentação mais personalizável e detalhada, consulte a [documentação sobre vitrines](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/).
 
 1. Abra a [ferramenta do criador do site](https://da.live/app/adobe-commerce/storefront-tools/tools/site-creator/site-creator).
 
@@ -63,6 +63,6 @@ Consulte os seguintes artigos para obter mais informações:
 * [Atualizando conteúdo da loja](./use-cases.md#update-storefront-content)—Gerencie e exiba conteúdo e dados na loja.
 * [Experimentação contextual](./use-cases.md#contextual-experimentation) — crie e gerencie experimentos em sua loja.
 * [Gerar variações](./use-cases.md#generate-variations) — Use a IA de geração para automatizar a geração de conteúdo de alta qualidade.
-* [Documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR) — obtenha informações detalhadas sobre a atualização do conteúdo do site e a integração com componentes de front-end e dados de back-end do Commerce.
+* [Documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/en/tools/commerce-storefront/) — obtenha informações detalhadas sobre a atualização do conteúdo do site e a integração com componentes de front-end e dados de back-end do Commerce.
 * [Serviço de Configuração](https://www.aem.live/docs/config-service-setup)—Saiba mais sobre como migrar a configuração da loja do `config.json` para usar o Serviço de Configuração, que oferece suporte a casos de uso avançados, como configuração de resposta e sobreposições.
-* [Recursos B2B da Loja](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility/b2b/?lang=pt-BR#major-features)—Saiba mais sobre recursos B2B disponíveis no pacote de compatibilidade da loja, que é instalado automaticamente para todas as instâncias [!DNL Adobe Commerce as a Cloud Service].
+* [Recursos B2B da Loja](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/storefront-compatibility/b2b/#major-features)—Saiba mais sobre recursos B2B disponíveis no pacote de compatibilidade da loja, que é instalado automaticamente para todas as instâncias [!DNL Adobe Commerce as a Cloud Service].

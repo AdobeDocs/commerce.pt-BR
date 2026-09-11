@@ -16,9 +16,9 @@ topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1573
+source-wordcount: 1574
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Depois de criar uma recomendação, é necessário recuperar a ID para implement
 
 1. Na seção **ID de Recomendação**, copie a ID.
 
-1. Use esta ID para configurar o [menu suspenso de recomendação](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/?lang=pt-BR) na sua vitrine da Edge Delivery Services.
+1. Use esta ID para configurar o [menu suspenso de recomendação](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/) na sua vitrine da Edge Delivery Services.
 
 ## Gerenciar recomendações existentes
 
@@ -212,6 +212,6 @@ A seguir, uma lista de possíveis motivos e soluções para pontuações comuns 
 - **Baseado em estática** - Baixo percentual para esses indicadores pode ser causado pela falta de dados de catálogo para os produtos exibíveis. Se forem menores do que o esperado, uma sincronização completa pode corrigir esse problema.
 - **Baseado em dinâmico** - Baixo percentual para indicadores baseados em dinâmico pode ser causado por:
 
-   - Campos ausentes nos [eventos de loja](../../setup/events/overview.md) necessários para os respectivos tipos de recomendação (requestId, contexto do produto e assim por diante).
-   - Tráfego baixo para o armazenamento; portanto, o volume de eventos comportamentais recebidos é baixo.
-   - A variedade de eventos comportamentais de vitrine em diferentes produtos em sua loja é baixa. Por exemplo, se apenas 10% dos seus produtos forem visualizados ou comprados na maior parte do tempo, os respectivos indicadores de disponibilidade serão baixos.
+  - Campos ausentes nos [eventos de loja](../../setup/events/overview.md) necessários para os respectivos tipos de recomendação (requestId, contexto do produto e assim por diante).
+  - Tráfego baixo para o armazenamento; portanto, o volume de eventos comportamentais recebidos é baixo.
+  - A variedade de eventos comportamentais de vitrine em diferentes produtos em sua loja é baixa. Por exemplo, se apenas 10% dos seus produtos forem visualizados ou comprados na maior parte do tempo, os respectivos indicadores de disponibilidade serão baixos.

@@ -33,9 +33,9 @@ topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 last-update: 2026-08-07
-source-git-commit: 8fdfd3ebfa088fd219c65c86ce99cae838ff5d54
+source-git-commit: d8c738212373283ccf45b16cf91dbafc7a7bd0f8
 workflow-type: tm+mt
-source-wordcount: 6358
+source-wordcount: 6365
 ht-degree: 0%
 
 ---
@@ -124,7 +124,7 @@ Os Catálogos de endereços da empresa agora se integram a workflows B2B adicion
 * Cotações negociáveis
 * Modelos de cotação
 
-Para obter informações detalhadas, incluindo mutações do GraphQL e pontos de extremidade REST, consulte o [changelog de Pacote B2B de Compatibilidade de Loja](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=pt-BR#storefront-compatibility-b2b-package-v1-0-24-2026-07-20).
+Para obter informações detalhadas, incluindo mutações do GraphQL e pontos de extremidade REST, consulte o [changelog de Pacote B2B de Compatibilidade de Loja](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/changelog/#storefront-compatibility-b2b-package-v1-0-24-2026-07-20).
 
 <!-- USF-3629, USF-4187, USF-4188, USF-4189, USF-4191, USF-4192, USF-4193, USF-4194, USF-4195 -->
 
@@ -138,7 +138,7 @@ Os comerciantes agora podem realizar o autoatendimento de integração de uma co
 
 ### Regras de preço do carrinho de presente gratuito
 
-A [**regra de preço do carrinho de presente** gratuito](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-free-gift) agora está disponível na [!DNL Commerce Admin] para vitrines.
+A [**regra de preço do carrinho de presente** gratuito](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-free-gift) agora está disponível na [!DNL Commerce Admin] para vitrines.
 <!-- AC-17678 -->
 
 Essa regra permite adicionar um produto de presente gratuito ao carrinho quando as condições da regra são atendidas. Quando uma regra exige uma escolha, os compradores podem selecionar uma SKU de presente usando a nova mutação do GraphQL [`selectFreeGiftForCart`](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/select-free-gift), que oferece suporte a produtos de presente configuráveis e agrupáveis.
@@ -151,7 +151,7 @@ Agora você pode definir a hora do dia em que deseja que uma [regra de preço do
 
 <!-- ### Use a temporary shipping address at B2B checkout -->
 
-<!-- B2B company customers can now enter a custom, temporary shipping address during checkout without saving it to the Company Address Book, when custom shipping addresses are allowed. For detailed information, see the [Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/developer/commerce/storefront/releases/changelog/?lang=pt-BR) and view the **Storefront Compatibility B2B Package v1.0.28** section. USF-4310 -->
+<!-- B2B company customers can now enter a custom, temporary shipping address during checkout without saving it to the Company Address Book, when custom shipping addresses are allowed. For detailed information, see the [Storefront Compatibility B2B Package changelog](https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/changelog/) and view the **Storefront Compatibility B2B Package v1.0.28** section. USF-4310 -->
 
 ### Registrar edições de pedidos no histórico de pedidos
 
@@ -829,20 +829,20 @@ Os itens a seguir foram lançados para os ambientes de Produção do [!DNL Adobe
 
 As seguintes alterações foram feitas aos componentes de devolução direta B2B:
 
-* [!DNL Commerce Storefront on Edge Delivery Services] agora inclui [componentes B2B](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/?lang=pt-BR). Os seguintes menus suspensos B2B agora estão disponíveis:
+* [!DNL Commerce Storefront on Edge Delivery Services] agora inclui [componentes B2B](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/). Os seguintes menus suspensos B2B agora estão disponíveis:
 
-  * **[Gerenciamento da empresa](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-management/?lang=pt-BR)** - Habilita o gerenciamento de perfis da empresa e permissões com base em funções para vitrines da Adobe Commerce.
-  * **[Alternador de empresa](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/company-switcher/?lang=pt-BR)** - Fornece um componente de interface do usuário para que os usuários alternem entre várias empresas às quais estão associados.
-  * **[Ordens de compra](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/purchase-order/?lang=pt-BR)** - Gerencia fluxos de trabalho de ordem de compra, regras de aprovação e histórico de ordens de compra para transações B2B.
-  * **[Gerenciamento de cotações](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/quote-management/?lang=pt-BR)** - Habilita cotações negociáveis para clientes B2B com fluxos de trabalho de solicitação de cotação, negociação e aprovação.
-  * **[Listas de requisições](https://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/requisition-list/?lang=pt-BR)** - Fornece ferramentas para criar e gerenciar listas de requisições para compras repetidas e pedidos em massa.
+  * **[Gerenciamento da empresa](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/company-management/)** - Habilita o gerenciamento de perfis da empresa e permissões com base em funções para vitrines da Adobe Commerce.
+  * **[Alternador de empresa](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/company-switcher/)** - Fornece um componente de interface do usuário para que os usuários alternem entre várias empresas às quais estão associados.
+  * **[Ordens de compra](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/purchase-order/)** - Gerencia fluxos de trabalho de ordem de compra, regras de aprovação e histórico de ordens de compra para transações B2B.
+  * **[Gerenciamento de cotações](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/quote-management/)** - Habilita cotações negociáveis para clientes B2B com fluxos de trabalho de solicitação de cotação, negociação e aprovação.
+  * **[Listas de requisições](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/requisition-list/)** - Fornece ferramentas para criar e gerenciar listas de requisições para compras repetidas e pedidos em massa.
 
 * Lançado o pacote de compatibilidade da vitrine B2B. Este pacote aprimora o esquema do GraphQL B2B [!DNL Adobe Commerce] para ajudar a melhorar o desenvolvimento em sistemas B2B.
 
 <!-- 
-* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/developer/commerce/storefront/dropins-b2b/?lang=pt-BR). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/developer/commerce/storefront/merchants/b2b-commerce-blocks/).
+* [!DNL Commerce Storefront on Edge Delivery Services] now includes [B2B drop-in components](http://experienceleague.adobe.com/en/tools/commerce-storefront/dropins-b2b/). For a complete list of available B2B drop-in blocks, refer to the [storefront documentation](http://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/b2b-commerce-blocks/).
 
-* Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/storefront-compatibility-b2b/?lang=pt-BR). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. 
+* Released the [B2B Storefront Compatibility Package](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/storefront-compatibility-b2b/). This package enhances the [!DNL Adobe Commerce] B2B GraphQL schema to help improve development on B2B systems. 
 -->
 
 ### Links clicáveis para rastreadores de envio externos

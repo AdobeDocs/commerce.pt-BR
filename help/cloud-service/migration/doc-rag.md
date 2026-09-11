@@ -24,9 +24,9 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: f37892b9a2de995dbc4b631ae1008e09cda68207
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1029
+source-wordcount: 1030
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ A tabela a seguir descreve qual documentação está atualmente indexada pelo se
 
 | Categoria | Índice | Conteúdo incluído | Palavras-chave |
 |-------|---------|---------|------------------------|
-| [Vitrine](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR) | commerce-storefront-docs | Edge Delivery Services, drop-ins, componentes de vitrine | loja, drop-in, EDS, lista de produtos, check-out |
+| [Vitrine](https://experienceleague.adobe.com/en/tools/commerce-storefront/) | commerce-storefront-docs | Edge Delivery Services, drop-ins, componentes de vitrine | loja, drop-in, EDS, lista de produtos, check-out |
 | [Extensibilidade](https://developer.adobe.com/commerce/extensibility/) | commerce-extensibility-docs | Webhooks, eventos, extensões, integrações | webhook, evento, extensão, malha de API, GraphQL |
 | [Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/overview) | commerce-core-docs | Commerce principal (catálogo, clientes, pedidos) | catálogo, produto, cliente, ordem, estoque |
 | [App Builder](https://developer.adobe.com/app-builder/docs/intro_and_overview/) | app-builder-docs | App Builder, ações em tempo de execução, extensões da interface do usuário | app builder, ação de tempo de execução, React Spectrum |

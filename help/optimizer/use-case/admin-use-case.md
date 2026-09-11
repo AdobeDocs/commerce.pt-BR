@@ -22,10 +22,10 @@ topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: dc50e4d7bcd118b2b9a800779c600ade5560e0bf
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 2205
-ht-degree: 0%
+source-wordcount: 2232
+ht-degree: 1%
 
 ---
 
@@ -44,23 +44,23 @@ Este caso de uso foi projetado para administradores e desenvolvedores que deseja
 Antes de iniciar este tutorial, verifique se os seguintes pré-requisitos estão em vigor:
 
 - **[!DNL Adobe Commerce Optimizer]Instância**
-   - Acesso a uma instância de teste no Cloud Manager
-   - Consulte [Introdução](../get-started.md) para obter instruções de configuração
+  - Acesso a uma instância de teste no Cloud Manager
+  - Consulte [Introdução](../get-started.md) para obter instruções de configuração
 
 - **Permissões de usuário**
-   - Acesso de administrador ao Adobe Admin Console
-   - Consulte [Gerenciamento de usuários](../user-management.md) para obter a configuração da conta
-   - Se você não tiver acesso, entre em contato com o representante de conta da Adobe.
+  - Acesso de administrador ao Adobe Admin Console
+  - Consulte [Gerenciamento de usuários](../user-management.md) para obter a configuração da conta
+  - Se você não tiver acesso, entre em contato com o representante de conta da Adobe.
 
 - **Dados de Exemplo**
-   - Dados de catálogo do Carvelo Automobile carregados em sua instância
-   - Siga as instruções no [Repositório de assimilação de dados do catálogo de amostra](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)
-   - Você pode excluir dados de exemplo após a conclusão usando o script `reset.js` incluído
+  - Dados de catálogo do Carvelo Automobile carregados em sua instância
+  - Siga as instruções no [Repositório de assimilação de dados do catálogo de amostra](https://github.com/adobe-commerce/aco-sample-catalog-data-ingestion)
+  - Você pode excluir dados de exemplo após a conclusão usando o script `reset.js` incluído
 
 - **Ambiente de vitrine**
-   - Ambiente de desenvolvimento local com Node.js
-   - Projeto de vitrine da loja clonado e configurado
-   - Consulte [Configuração de vitrine](../storefront.md) para obter instruções detalhadas
+  - Ambiente de desenvolvimento local com Node.js
+  - Projeto de vitrine da loja clonado e configurado
+  - Consulte [Configuração de vitrine](../storefront.md) para obter instruções detalhadas
 
 ## Vamos começar
 
@@ -72,7 +72,7 @@ Nesse caso de uso, você está trabalhando com:
 
 >[!NOTE]
 >
-> Saiba mais sobre os arquivos de configuração da loja revisando o [Tópico de introdução](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/boilerplate-project/?lang=pt-BR) na documentação da Adobe Commerce Storefront.
+> Saiba mais sobre os arquivos de configuração da loja revisando o [Tópico de introdução](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/boilerplate-project/) na documentação da Adobe Commerce Storefront.
 
 ### ‌Principais pontos
 
@@ -249,7 +249,7 @@ Crie uma nova exibição de catálogo para o revendedor *Celport* e vincule as s
    - **Nome** = *Celport*
    - **Fontes do catálogo** = *en-US*
    - **Políticas** (use a lista suspensa) = *Marcas da East Coast Inc*; *Categorias de partes do Celport*; *Marca*; *Modelo*
-                         
+                              
 1. Clique em **[!UICONTROL Add]** para criar a exibição do catálogo.
 
    A página Exibições de catálogo é atualizada para exibir a nova exibição de catálogo.
@@ -466,4 +466,4 @@ Para continuar aprendendo sobre [!DNL Adobe Commerce Optimizer]:
 - Saiba mais sobre [configurações avançadas de política](../setup/policies.md)
 - Configurar [exibições adicionais do catálogo](../setup/catalog-view.md) para outras concessionárias
 - Revise a [documentação da API](https://developer.adobe.com/commerce/services/optimizer/) para obter gerenciamento programático de catálogos
-- Saiba como configurar componentes integrados para a sua loja do Edge Delivery Services para criar experiências personalizadas de vitrine para descobertas de produtos, recomendações e outros recursos da loja. Consulte a [documentação da Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=pt-BR)
+- Saiba como configurar componentes integrados para a sua loja do Edge Delivery Services para criar experiências personalizadas de vitrine para descobertas de produtos, recomendações e outros recursos da loja. Consulte a [documentação da Storefront](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins/all/introduction/)

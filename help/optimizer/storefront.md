@@ -20,9 +20,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 13c9dae2f2f8442f2d5c7be5f6e3317b94956cf0
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1573
+source-wordcount: 1580
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ A ferramenta Criador de sites cria um projeto completo da loja com os seguintes 
 * **Site**: página de aterrissagem de vitrines com conteúdo padrão
 * **Código**: repositório com arquivos de origem padronizados
 * **Conteúdo**: ambiente de Autor de Documentos com arquivos de conteúdo do site
-* **Configuração do Commerce**: [configuração da vitrine do Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/setup/configuration/commerce-configuration/?lang=pt-BR){target="_blank"} para configuração específica da instância
+* **Configuração do Commerce**: [configuração da vitrine do Commerce](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/commerce-configuration/){target="_blank"} para configuração específica da instância
 
 ### Etapa 1: gerar o projeto
 
@@ -238,25 +238,25 @@ A funcionalidade de pesquisa ![Lista de Verificação](/help/assets/icons/Smock_
 
 Se os problemas persistirem:
 
-* Revise a [documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR){target="_blank"}
+* Revise a [documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/en/tools/commerce-storefront/){target="_blank"}
 * Verifique o [guia do desenvolvedor do Adobe Commerce Optimizer](https://developer.adobe.com/commerce/services/optimizer/){target="_blank"}
 * Visite os [recursos de Suporte da Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-knowledge-base/kb/overview){target="_blank"}
 
 ## Próximas etapas
 
-* **[Configurar um ambiente de desenvolvimento local](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/create-storefront/?lang=pt-BR#set-up-local-environment){target="_blank"}** — Crie um ambiente local para personalizar o código e o conteúdo da vitrine.
-* **[Habilitar o Editor Universal](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/quick-start/universal-editor/?lang=pt-BR){target="_blank"}**-O Editor Universal permite editar o conteúdo da vitrine no contexto da página renderizada. O conteúdo é então salvo em seu projeto de Criação de documentos (DA.live), onde você pode usar a maioria dos aplicativos de orquestração de conteúdo, como localização, publicação em massa, Instantâneos e muito mais.
+* **[Configurar um ambiente de desenvolvimento local](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/create-storefront/#set-up-local-environment){target="_blank"}** — Crie um ambiente local para personalizar o código e o conteúdo da vitrine.
+* **[Habilitar o Editor Universal](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/quick-start/universal-editor/){target="_blank"}**-O Editor Universal permite editar o conteúdo da vitrine no contexto da página renderizada. O conteúdo é então salvo em seu projeto de Criação de documentos (DA.live), onde você pode usar a maioria dos aplicativos de orquestração de conteúdo, como localização, publicação em massa, Instantâneos e muito mais.
 
 ### Aprender e explorar
 
 * **[Conclua o caso de uso completo](./use-case/admin-use-case.md)**—Saiba mais sobre a configuração de vitrine e o gerenciamento de catálogos usando o [!DNL Adobe Commerce Optimizer].
 
-* **[Explorar personalização de vitrine](https://experienceleague.adobe.com/developer/commerce/storefront/setup/?lang=pt-BR){target="_blank"}**—Saiba mais sobre opções avançadas de instalação e configuração.
+* **[Explorar personalização de vitrine](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/){target="_blank"}**—Saiba mais sobre opções avançadas de instalação e configuração.
 
-* **[Use os suplementos do Commerce para personalizar a experiência da vitrine eletrônica](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/all/introduction/?lang=pt-BR){target="_blank"}**-Adicione componentes pré-compilados para aprimorar sua experiência com a vitrine eletrônica.
+* **[Use os suplementos do Commerce para personalizar a experiência da vitrine eletrônica](https://experienceleague.adobe.com/en/tools/commerce-storefront/dropins/all/introduction/){target="_blank"}**-Adicione componentes pré-compilados para aprimorar sua experiência com a vitrine eletrônica.
 
 * **Migrar para o Serviço de Configuração de Frente de Loja**—Depois de criar sua frente de loja inicial, você pode migrar a configuração para usar o Serviço de Configuração, que oferece suporte a casos de uso avançados, como configuração de resposta e sobreposições. Para obter detalhes, consulte a documentação do [Serviço de Configuração](https://www.aem.live/docs/config-service-setup){target="_blank"} na Adobe Experience Manager.
 
 >[!MORELIKETHIS]
 >
-> Consulte a [documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR){target="_blank"} para saber mais sobre a atualização do conteúdo do site e a integração com componentes de front-end e dados de back-end do Commerce.
+> Consulte a [documentação da Adobe Commerce Storefront](https://experienceleague.adobe.com/en/tools/commerce-storefront/){target="_blank"} para saber mais sobre a atualização do conteúdo do site e a integração com componentes de front-end e dados de back-end do Commerce.

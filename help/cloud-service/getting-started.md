@@ -29,9 +29,9 @@ level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: bef6657cdf6703b6a0a1109bd6582ecbe4e19930
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1337
+source-wordcount: 1338
 ht-degree: 0%
 
 ---
@@ -245,4 +245,4 @@ Agora que você criou uma instância, você está pronto para [configurar sua vi
 
 * [Notas de versão](release-notes.md)
 * [Guia de migração](migration/overview.md)
-* [Documentação da Commerce Storefront](https://experienceleague.adobe.com/developer/commerce/storefront/?lang=pt-BR)
+* [Documentação da Commerce Storefront](https://experienceleague.adobe.com/en/tools/commerce-storefront/)
