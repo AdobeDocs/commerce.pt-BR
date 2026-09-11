@@ -1,24 +1,16 @@
 ---
 title: Criar e gerenciar recomendações
 description: Saiba como criar e gerenciar recomendações.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 7cee0a37-4d43-4ee9-889d-9a0ab9684bb8
 TQID: https://experienceleague.adobe.com/4w6G-IgBjgmYYnnEpbK0HML9pSi3quLDxJfuCp9tV84
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-topic_v2:
-  - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20
+topic_v2: id: c4147b6e-073b-4d3c-9ab1-d60f2f4434efid: e0eb8757-182f-49f3-94a4-1587d16f5094id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
 workflow-type: tm+mt
-source-wordcount: 1573
+source-wordcount: 1574
 ht-degree: 0%
 
 ---
@@ -32,7 +24,7 @@ _Unidade de recomendação_
 
 Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [coletar dados](../../manage-results/recommendation-performance.md) para medir impressões, exibições, cliques e assim por diante. A tabela Recomendações exibe as métricas de cada unidade de recomendação para ajudá-lo a tomar decisões de negócios informadas.
 
-1. Na barra lateral _[!DNL Adobe Commerce Optimizer]_, vá para_ Merchandising _>**Recommendations**&#x200B;para exibir o espaço de trabalho_ Recommendations _.
+1. Na barra lateral _[!DNL Adobe Commerce Optimizer]_, vá para_ Merchandising _>**Recommendations**para exibir o espaço de trabalho_ Recommendations _.
 
 1. No campo **Exibição de catálogo**, selecione a exibição de catálogo na qual deseja que a recomendação fique disponível. Saiba mais sobre [como usar exibições de catálogo para recomendações](../../manage-results/recommendation-performance.md#select-catalog-view).
 
@@ -106,7 +98,7 @@ Depois de criar uma recomendação, é necessário recuperar a ID para implement
 
 1. Na seção **ID de Recomendação**, copie a ID.
 
-1. Use esta ID para configurar o [menu suspenso de recomendação](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/blocks/product-recommendations/?lang=pt-BR) na sua vitrine da Edge Delivery Services.
+1. Use esta ID para configurar o [menu suspenso de recomendação](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/) na sua vitrine da Edge Delivery Services.
 
 ## Gerenciar recomendações existentes
 
@@ -212,6 +204,6 @@ A seguir, uma lista de possíveis motivos e soluções para pontuações comuns 
 - **Baseado em estática** - Baixo percentual para esses indicadores pode ser causado pela falta de dados de catálogo para os produtos exibíveis. Se forem menores do que o esperado, uma sincronização completa pode corrigir esse problema.
 - **Baseado em dinâmico** - Baixo percentual para indicadores baseados em dinâmico pode ser causado por:
 
-   - Campos ausentes nos [eventos de loja](../../setup/events/overview.md) necessários para os respectivos tipos de recomendação (requestId, contexto do produto e assim por diante).
-   - Tráfego baixo para o armazenamento; portanto, o volume de eventos comportamentais recebidos é baixo.
-   - A variedade de eventos comportamentais de vitrine em diferentes produtos em sua loja é baixa. Por exemplo, se apenas 10% dos seus produtos forem visualizados ou comprados na maior parte do tempo, os respectivos indicadores de disponibilidade serão baixos.
+  - Campos ausentes nos [eventos de loja](../../setup/events/overview.md) necessários para os respectivos tipos de recomendação (requestId, contexto do produto e assim por diante).
+  - Tráfego baixo para o armazenamento; portanto, o volume de eventos comportamentais recebidos é baixo.
+  - A variedade de eventos comportamentais de vitrine em diferentes produtos em sua loja é baixa. Por exemplo, se apenas 10% dos seus produtos forem visualizados ou comprados na maior parte do tempo, os respectivos indicadores de disponibilidade serão baixos.
