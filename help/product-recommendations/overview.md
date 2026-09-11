@@ -26,23 +26,23 @@ ht-degree: 0%
 
 # O que são [!DNL Product Recommendations]?
 
-[!DNL Product Recommendations] use o [Adobe AI](https://business.adobe.com/ai.html) e o aprendizado de máquina treinados em comportamento de comprador agregado e dados de catálogo para fornecer recomendações personalizadas nas vitrines do Adobe Commerce. Essa visão geral abrange restrições de serviço (incluindo HIPAA), privacidade de dados, posicionamento de unidade de recomendação, opções de implementação de vitrine, integração de relacionamento de produto e retenção de dados de catálogo.
+[!DNL Product Recommendations] use o [Adobe AI](https://business.adobe.com/br/ai.html) e o aprendizado de máquina treinados em comportamento de comprador agregado e dados de catálogo para fornecer recomendações personalizadas nas vitrines do Adobe Commerce. Essa visão geral abrange restrições de serviço (incluindo HIPAA), privacidade de dados, posicionamento de unidade de recomendação, opções de implementação de vitrine, integração de relacionamento de produto e retenção de dados de catálogo.
 
 >[!IMPORTANT]
 >
 >**[!DNL Product Recommendations]não é um serviço pronto para HIPAA.** Não habilite ou use o [!DNL Product Recommendations] em nenhuma implementação do Adobe Commerce que use a oferta pronta para HIPAA ou que processe informações de integridade protegidas (PHI) de outra forma. [!DNL Product Recommendations] faz parte dos serviços SaaS da Commerce que estão classificados como prontos para não HIPAA.
 >
->Para obter detalhes sobre quais recursos do Adobe Commerce estão prontos para HIPAA e quais serviços não devem ser usados com PHI, consulte [Preparação para HIPAA no Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) e [Operações](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services).
+>Para obter detalhes sobre quais recursos do Adobe Commerce estão prontos para HIPAA e quais serviços não devem ser usados com PHI, consulte [Preparação para HIPAA no Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) e [Operações](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/compliance/hipaa-ready-service/operations#adobe-commerce-services).
 
 ## Manuseio e privacidade de dados
 
 A coleta de dados de [!DNL Product Recommendations] não inclui informações pessoalmente identificáveis (PII). Todos os identificadores de usuário, como IDs de cookies e endereços IP, são estritamente anônimos. Para saber mais, consulte a [Política de Privacidade da Adobe](https://www.adobe.com/privacy/policy.html).
 
-Para obter mais informações sobre a sincronização de dados, consulte o [Painel de Gerenciamento de Dados](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard).
+Para obter mais informações sobre a sincronização de dados, consulte o [Painel de Gerenciamento de Dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard).
 
 ## Onde as recomendações são exibidas
 
-As recomendações são exibidas na loja como unidades com rótulos, como &quot;Clientes que visualizaram este produto também visualizaram&quot;. Você pode criar, gerenciar e implantar recomendações nas visualizações da loja com o Administrador do Adobe Commerce. Se o seu projeto do Commerce usa o [Adobe Commerce Optimizer Connector](https://experienceleague.adobe.com/en/docs/commerce/aco-optimizer-connector/overview), você criará, gerenciará e implantará recomendações por meio do [Adobe Commerce Optimizer](../optimizer/overview.md).
+As recomendações são exibidas na loja como unidades com rótulos, como &quot;Clientes que visualizaram este produto também visualizaram&quot;. Você pode criar, gerenciar e implantar recomendações nas visualizações da loja com o Administrador do Adobe Commerce. Se o seu projeto do Commerce usa o [Adobe Commerce Optimizer Connector](https://experienceleague.adobe.com/pt-br/docs/commerce/aco-optimizer-connector/overview), você criará, gerenciará e implantará recomendações por meio do [Adobe Commerce Optimizer](../optimizer/overview.md).
 
 ## Implementações da loja
 
@@ -58,7 +58,7 @@ Escolha a documentação que corresponde à loja:
 
 ## Recomendações de produto versus relacionamentos de produto
 
-Dadas as complexidades em constante mudança das compras online, o que funciona melhor para sua loja geralmente é uma combinação de várias tecnologias principais. Usar as [!DNL Product Recommendations] e as [Relações de Produto](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships) oferece mais flexibilidade ao promover produtos. Para automatizar suas recomendações em escala, você pode aproveitar o [!DNL Product Recommendations] desenvolvido pela Adobe AI. Em seguida, você poderá aproveitar as [Regras de Produto Relacionadas](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules) quando precisar intervir manualmente e garantir que uma recomendação específica esteja sendo feita a um segmento de comprador de destino ou quando determinadas metas comerciais precisarem ser atendidas.
+Dadas as complexidades em constante mudança das compras online, o que funciona melhor para sua loja geralmente é uma combinação de várias tecnologias principais. Usar as [!DNL Product Recommendations] e as [Relações de Produto](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships) oferece mais flexibilidade ao promover produtos. Para automatizar suas recomendações em escala, você pode aproveitar o [!DNL Product Recommendations] desenvolvido pela Adobe AI. Em seguida, você poderá aproveitar as [Regras de Produto Relacionadas](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules) quando precisar intervir manualmente e garantir que uma recomendação específica esteja sendo feita a um segmento de comprador de destino ou quando determinadas metas comerciais precisarem ser atendidas.
 
 As recomendações de produto permitem:
 
@@ -82,4 +82,4 @@ Se o ambiente tiver um **catálogo vazio** 45 dias após a criação, os dados d
 
 ### Reativar dados do catálogo
 
-Para restaurar os dados do catálogo depois que ele ficar inativo, [envie uma solicitação de suporte](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page) com o título &quot;Reativar [!DNL Product Recommendations]&quot; e inclua as IDs de ambiente. Os dados do catálogo devem ser restaurados em duas horas.
+Para restaurar os dados do catálogo depois que ele ficar inativo, [envie uma solicitação de suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#experience-league-start-page) com o título &quot;Reativar [!DNL Product Recommendations]&quot; e inclua as IDs de ambiente. Os dados do catálogo devem ser restaurados em duas horas.

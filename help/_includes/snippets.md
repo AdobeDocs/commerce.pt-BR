@@ -11,7 +11,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Se a página Status da sincronização do feed de dados não estiver disponível no Commerce Admin for Commerce em implantações na nuvem ou locais, siga as [instruções de instalação da extensão](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension){target="_blank"} para habilitá-la.
+>Se a página Status da sincronização do feed de dados não estiver disponível no Commerce Admin for Commerce em implantações na nuvem ou locais, siga as [instruções de instalação da extensão](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status#install-the-extension){target="_blank"} para habilitá-la.
 
 
 ## Alinhamento do ambiente de integração do Adobe Commerce Optimizer {#aco-integration-environment-alignment}
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Para implantações que usam o [[!DNL Adobe Commerce Optimizer Connector]](../aco-connector/overview.md) para exportar dados de catálogo para [!DNL Adobe Commerce Optimizer], verifique a sincronização de dados de catálogo usando a [página Status da Sincronização do Feed de Dados](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) no Administrador do Commerce e a [página Sincronização de Dados](../optimizer/setup/data-sync.md) em [!DNL Adobe Commerce Optimizer Studio], não o [painel Gerenciamento de Dados](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard).
+>Para implantações que usam o [[!DNL Adobe Commerce Optimizer Connector]](../aco-connector/overview.md) para exportar dados de catálogo para [!DNL Adobe Commerce Optimizer], verifique a sincronização de dados de catálogo usando a [página Status da Sincronização do Feed de Dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) no Administrador do Commerce e a [página Sincronização de Dados](../optimizer/setup/data-sync.md) em [!DNL Adobe Commerce Optimizer Studio], não o [painel Gerenciamento de Dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-dashboard).
 
 ## Nota suspensa do Adobe Commerce Optimizer para atualizações de API {#aco-api-updates-and-dropins}
 
@@ -55,7 +55,7 @@ ht-degree: 0%
     <td style="vertical-align: middle;"><a href="https://developer.adobe.com/commerce/webapi/"><img alt="Developers" src="../assets/icons/developers.svg" /> <strong>Developers</strong></a></td>
     <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/"><img alt="Storefront" src="../assets/icons/storefront.svg" /> <strong>Storefront</strong></a></td>
     <td style="vertical-align: middle;"><a href="../cloud-service/overview.md"><img alt="Merchants" src="../assets/icons/merchants.svg" /> <strong>Merchants</strong></a></td>
-    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/overview"><img alt="Videos" src="../assets/icons/videos.svg" /> <strong>Videos</strong></a></td>
+    <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/getting-started/commerce-as-a-cloud-service/overview"><img alt="Videos" src="../assets/icons/videos.svg" /> <strong>Videos</strong></a></td>
     <td style="vertical-align: middle;"><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/playgrounds/commerce-services/"><img alt="Playgrounds" src="../assets/icons/playgrounds.svg" /> <strong>Playgrounds</strong></a></td>
   </tr>
 </table>
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 O gerenciamento e a autenticação de identidade da Adobe Commerce são gerenciados pelo Adobe Identity Management System (IMS) por meio da Adobe Admin Console.
 
-Para obter informações sobre opções de configuração de identidade, incluindo Adobe ID, Enterprise ID e Federated ID, e instruções para configurar o Logon Único (SSO) para acesso seguro a aplicativos Adobe, consulte [Configurar identidade e logon único](https://helpx.adobe.com/enterprise/using/set-up-identity.html) na documentação do *Enterprise Admin Console*.
+Para obter informações sobre opções de configuração de identidade, incluindo Adobe ID, Enterprise ID e Federated ID, e instruções para configurar o Logon Único (SSO) para acesso seguro a aplicativos Adobe, consulte [Configurar identidade e logon único](https://helpx.adobe.com/br/enterprise/using/set-up-identity.html) na documentação do *Enterprise Admin Console*.
 
 ## Notas de versão de serviços e extensibilidade do ACCS {#accs-release}
 

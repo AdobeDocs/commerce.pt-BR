@@ -3,7 +3,7 @@ title: Migrar para  [!DNL Adobe Commerce as a Cloud Service]
 description: Saiba como migrar para o  [!DNL Adobe Commerce as a Cloud Service].
 feature: Cloud
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 role: Developer
 level: Intermediate
 autotag-review: '2026-06-18T16:12:28.840Z'
@@ -76,8 +76,8 @@ O Adobe Commerce está disponível em diferentes modelos de implantação. As pr
 | Oferta do Adobe Commerce | Modelo de hospedagem | Responsabilidade por serviços e atualizações |
 |---|---|---|
 | **[!DNL Adobe Commerce as a Cloud Service]** | SaaS — hospedado pela Adobe | O Adobe gerencia o aplicativo, a infraestrutura e as atualizações principais do Commerce. Os comerciantes estendem a plataforma por meio de APIs e serviços de extensibilidade (APIs, [!DNL Adobe Developer App Builder], SDKs de interface do usuário) compatíveis. Os comerciantes não podem modificar o código principal do aplicativo. |
-| **[!DNL Adobe Commerce on Cloud Infrastructure]** | PaaS — gerenciado pela Adobe | [Responsabilidade compartilhada](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility): o Adobe gerencia a plataforma hospedada. O comerciante gerencia patches em nível de aplicativo, código personalizado, configuração e atualiza extensões e serviços de plataforma para versões compatíveis, incluindo: banco de dados, cache, pesquisa, tempo de execução de PHP, servidor Web e fila de mensagens. |
-| **[!DNL Adobe Commerce on-premises]** | Hospedado pelo comerciante ou provedor de hospedagem | [Responsabilidade do comerciante](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview#merchant-responsibilities): o comerciante ou seu provedor de hospedagem gerencia a infraestrutura e todos os serviços de plataforma. |
+| **[!DNL Adobe Commerce on Cloud Infrastructure]** | PaaS — gerenciado pela Adobe | [Responsabilidade compartilhada](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/security-and-compliance/shared-responsibility): o Adobe gerencia a plataforma hospedada. O comerciante gerencia patches em nível de aplicativo, código personalizado, configuração e atualiza extensões e serviços de plataforma para versões compatíveis, incluindo: banco de dados, cache, pesquisa, tempo de execução de PHP, servidor Web e fila de mensagens. |
+| **[!DNL Adobe Commerce on-premises]** | Hospedado pelo comerciante ou provedor de hospedagem | [Responsabilidade do comerciante](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/overview#merchant-responsibilities): o comerciante ou seu provedor de hospedagem gerencia a infraestrutura e todos os serviços de plataforma. |
 
 **Implicações arquitetônicas**
 
@@ -315,4 +315,4 @@ Quando estiver pronto para migrar, conclua o [questionário de escopo da migraç
 
 Revise a documentação do [Guia da Ferramenta de Migração de Dados em Massa](bulk-data/migration-tool.md) para saber mais sobre o fluxo de trabalho, os dados com suporte e a verificação.
 
-Os integradores de sistemas que preparam um ambiente de origem também podem usar a [CLI da Adobe Commerce Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) padrão e a [Adobe Developer Console](https://developer.adobe.com) para credenciais IMS.
+Os integradores de sistemas que preparam um ambiente de origem também podem usar a [CLI da Adobe Commerce Cloud](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) padrão e a [Adobe Developer Console](https://developer.adobe.com) para credenciais IMS.
