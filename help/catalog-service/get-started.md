@@ -1,31 +1,38 @@
 ---
-title: Introdução ao  [!DNL Catalog Service]
-description: Saiba como acessar o [!DNL Catalog Service] e integrar a aplicativos de front-end e serviços de terceiros.
+title: Introdução ao [!DNL Catalog Service]
+description: Saiba como acessar o [!DNL Catalog Service] e integrar-se a aplicativos de front-end e serviços de terceiros.
 role: Admin, Developer
 exl-id: ee178e67-519d-4283-8de8-2634ae1f347a
 TQID: https://experienceleague.adobe.com/KBdWesEoKJu-qWsY-Ny1Om-msUkyUPfUTQWftEqSg1g
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 subfeature_v2:
   - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+    internal-label: Storefront configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-last-update: 2026-08-20
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+    internal-label: Data management
+last-update: 2026-09-11
+source-git-commit: 6b784df469162bd536cfa764268a7180f94cc1c7
 workflow-type: tm+mt
-source-wordcount: 437
+source-wordcount: '438'
 ht-degree: 0%
-
 ---
-
 # Introdução ao [!DNL Catalog Service]
 
 Depois que o [!DNL Catalog Service] for habilitado, você poderá acessar o serviço e usá-lo para recuperar dados de catálogo, como informações de produto e categoria, da sua instância do Adobe Commerce. O serviço está disponível como uma API do GraphQL que pode ser acessada pelo administrador do Commerce ou por qualquer aplicativo de front-end que ofereça suporte a consultas do GraphQL.
@@ -36,14 +43,14 @@ Depois que o [!DNL Catalog Service] for habilitado, você poderá acessar o serv
 
 O [!DNL Catalog Service] está disponível como uma API do GraphQL que você pode acessar do Administrador do Commerce ou de qualquer aplicativo de front-end que ofereça suporte a consultas do GraphQL. O serviço está disponível em ambientes SaaS e PaaS.
 
-[!BADGE Somente PaaS]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."}
+[!BADGE Somente PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."}
 
 | Ambiente | Endpoint |
 | ------------ | ----------: |
 | **Testando** | `https://catalog-service-sandbox.adobe.io/graphql` |
 | **Produção** | `https://catalog-service.adobe.io/graphql` |
 
-[!BADGE Somente SaaS]{type=Positive url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."}
+[!BADGE Somente SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."}
 
 | Ambiente | Endpoint |
 | ----------- | --------:|
