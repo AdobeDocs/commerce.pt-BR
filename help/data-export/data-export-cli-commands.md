@@ -1,28 +1,34 @@
 ---
 title: Sincronizar feeds usando a CLI do Commerce
-description: Saiba como usar comandos da CLI do Commerce para gerenciar feeds e processos de sincronização do  [!DNL data export extension]  nos serviços SaaS do Adobe Commerce.
+description: Saiba como usar comandos da CLI do Commerce para gerenciar feeds e processos de sincronização do [!DNL data export extension] nos serviços SaaS do Adobe Commerce.
 autotag-review: '2026-06-17T15:08:59.000Z'
 exl-id: 1ebee09e-e647-4205-b90c-d0f9d2cac963
 TQID: 'https://experienceleague.adobe.com/Vi8hMKOBjTPkSQp0t8DCkjZsJ8s3Q5GSbSXyX2gmWRo'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
   - id: de2e2e68-c5d7-4efe-be7b-27528698f06b
+    internal-label: Commerce as a Cloud Service
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: ef1a9efc579d8d21c145e6981235489a2e4ea203
+    internal-label: Data management
+source-git-commit: 658401a83acf5bab669f0734100eef99af98c908
 workflow-type: tm+mt
-source-wordcount: 728
+source-wordcount: '756'
 ht-degree: 0%
-
 ---
-
 # Sincronizar feeds usando a CLI do Commerce
 
 O comando `saas:resync` no pacote `magento/saas-export` permite gerenciar a sincronização de dados para serviços SaaS [!DNL Adobe Commerce].
@@ -180,6 +186,20 @@ Por padrão, o feed enviado durante uma operação `resync --dry-run` inclui som
 
 ```shell
 bin/magento saas:resync --feed products --dry-run --cleanup-feed
+```
+
+## `--force`
+
+Força a ressincronização de itens de feed, independentemente de seus dados terem sido alterados, sem limpar o estado de exportação do feed.
+
+>[!NOTE]
+>
+>Exige a versão 103.4.30 ou posterior da [Extensão de Exportação de Dados](manage-extension.md#update-a-module-to-a-specific-version).
+
+**Exemplo:**
+
+```shell
+bin/magento saas:resync --feed products --force
 ```
 
 ## `--no-reindex`
