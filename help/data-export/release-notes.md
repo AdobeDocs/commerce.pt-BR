@@ -34,9 +34,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: c878b0f46e20fbdcd9771dae36430a814371e0c2
+source-git-commit: 42e7ecca6c058ebc4e80b601c6d46b84f601e454
 workflow-type: tm+mt
-source-wordcount: '3464'
+source-wordcount: '3447'
 ht-degree: 0%
 ---
 # Notas de versão do [!DNL SaaS Data Export Extension]
@@ -59,7 +59,7 @@ As atualizações incluem:
 
 _17 de setembro de 2026_
 
-![Correção](../assets/fix.svg) **Erro de sincronização de rótulo de opção de atributo**—Correção de um problema em que uma tabela de back-end de atributo inválida poderia causar falhas de exportação de feed durante a ressincronização de rótulo, garantindo que as atualizações de rótulo de atributo sincronizassem de forma confiável.<!--MDEE-1464-->
+![Correção](../assets/fix.svg) Atualizações para dar suporte à integração do Adobe Commerce Optimizer com o Adobe Commerce.<!--MDEE-1464-->
 
 ### Versão 103.4.34
 
