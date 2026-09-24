@@ -1,6 +1,6 @@
 ---
-title: Migrar para  [!DNL Adobe Commerce as a Cloud Service]
-description: Saiba como migrar para o  [!DNL Adobe Commerce as a Cloud Service].
+title: Migrar para [!DNL Adobe Commerce as a Cloud Service]
+description: Saiba como migrar para o [!DNL Adobe Commerce as a Cloud Service].
 feature: Cloud
 exl-id: 9065c92a-f6b2-4464-8ec0-5c549bf78104
 badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
@@ -10,38 +10,57 @@ autotag-review: '2026-06-18T16:12:28.840Z'
 TQID: 'https://experienceleague.adobe.com/GmxaQdGKvAIDpZ2jvmlLFSYw0IFQysIMOT0lUnsJBsI'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
 subfeature_v2:
   - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
   - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+    internal-label: B2B
   - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+    internal-label: Cloud architecture
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
+    internal-label: Data pipelines
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+    internal-label: Data management
+source-git-commit: 464b0d7298bd2a5569b12d0956a84667709e4c3a
 workflow-type: tm+mt
-source-wordcount: 3374
+source-wordcount: '3682'
 ht-degree: 0%
-
 ---
-
 # Migrar para [!DNL Adobe Commerce as a Cloud Service]
 
 Este guia ajuda os desenvolvedores a fazerem a transição do [!DNL Adobe Commerce on Cloud] ou no local para o [!DNL Adobe Commerce as a Cloud Service] (SaaS). Esse modelo SaaS oferece desempenho aprimorado, escalabilidade e integração com o [!DNL Adobe Experience Cloud].
@@ -111,13 +130,13 @@ Cada um dos workflows a seguir tem sua própria ferramenta. Use-os juntos para c
 | Fluxo de trabalho (WRK) | Ferramenta | Descrição |
 | --- | --- | --- |
 | [Avaliação](#migration-assessment-tool) | **Ferramenta de Avaliação de Migração** | Avaliação orientada por IA da implementação existente que faz o inventário de módulos personalizados, extensões de terceiros, integrações, observações de vitrine, esquema do banco de dados, tabelas personalizadas, recomendações de migração, pontuação de complexidade e estimativas do esforço de modernização. |
-| [Modernização de aplicativos e vitrines](#code-and-storefront-migration-commerce-developer-mcp) | **MCP de Desenvolvedor do Commerce** | Modernização do aplicativo Commerce assistida por IA, acelerando a migração de personalizações para o [!DNL App Builder], oferecendo suporte à transformação de vitrine para o Edge Delivery Services (EDS) e orientando desenvolvedores por meio da jornada mais ampla de modernização de aplicativos com implementação revisada e validada pelas equipes de engenharia. |
+| [Modernização de aplicativos e vitrines](#code-and-storefront-migration-commerce-developer-agent) | **Commerce Developer Agent e Commerce Developer MCP** | Modernização do aplicativo Commerce assistida por IA, acelerando a migração de personalizações para o [!DNL App Builder], oferecendo suporte à transformação de vitrine para o Edge Delivery Services (EDS) e orientando desenvolvedores por meio da jornada mais ampla de modernização de aplicativos com implementação revisada e validada pelas equipes de engenharia. |
 | [Migração de dados](#data-migration-commerce-data-migration-service) | **Serviço de Migração de Dados do Commerce** | Verificação de extração, carregamento e integridade de dados de catálogo, cliente e pedido no [!DNL Adobe Commerce as a Cloud Service]. |
 
 Estas faixas não são independentes. Usá-los juntos na ordem correta minimiza o retrabalho.
 
 - **Executar a avaliação primeiro** - Executar a avaliação primeiro identifica personalizações sem suporte, estima o esforço de migração, expõe as considerações de migração de dados e destaca as dependências de integração antes de iniciar a implementação. A avaliação torna-se o blueprint de migração usado pela modernização de aplicativos e fluxos de trabalho de migração de dados.
-- **Modernização de aplicativos** - O Commerce Developer MCP usa a avaliação de migração para determinar quais personalizações devem ser modernizadas e como. Em seguida, o MCP gera os aplicativos [!DNL App Builder] e componentes de vitrine correspondentes.
+- **Modernização de aplicativos** - O Commerce Developer Agent e o Commerce Developer MCP usam a avaliação de migração para determinar quais personalizações devem ser modernizadas e como. Em seguida, o Commerce Developer Agent ou o Commerce Developer MCP gera os aplicativos [!DNL App Builder] e os componentes de vitrine correspondentes.
 - **Migração de dados** - O questionário de escopo da migração de dados captura o escopo, os volumes e as tabelas personalizadas que foram exibidos pela avaliação.
 - **Dados personalizados e de terceiros** - Os dados mantidos em tabelas personalizadas por extensões de terceiros são identificados durante a avaliação, mas não são tratados pela migração de dados padrão e exigem uma personalização de [!DNL App Builder].
 
@@ -182,23 +201,54 @@ Também é possível executar novamente as avaliações à medida que seus aplic
 
 Cada migração de [!DNL Adobe Commerce as a Cloud Service] começa com uma avaliação. É uma maneira econômica de estabelecer escopo, reduzir incertezas e criar um blueprint de migração compartilhado antes do início da implementação.
 
-Para obter mais informações sobre ferramentas de avaliação e fluxo de trabalho de desenvolvedor downstream, consulte [Adobe Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/).
+Para obter mais informações sobre ferramentas de avaliação e fluxo de trabalho de desenvolvedor downstream, consulte [Adobe Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools).
 
 Para obter mais informações sobre o Commerce Developer Agent, que é integrado à Ferramenta de Avaliação de Migração, consulte [Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/)
 
-## Migração de código e vitrine (Commerce Developer MCP)
+## Migração de código e vitrine (Commerce Developer Agent)
 
 No [!DNL Adobe Commerce on Cloud] ou no local, as personalizações podem usar PHP em andamento — módulos, plug-ins e observadores de eventos executados dentro do aplicativo. [!DNL Adobe Commerce as a Cloud Service] é uma plataforma SaaS sem versão e esse modelo não se aplica mais. As personalizações são executadas como aplicativos [!DNL Adobe Developer App Builder] fora de processo que se integram ao Commerce por meio de eventos e APIs. Modernizar as personalizações de um armazenamento para essa arquitetura normalmente é o esforço de engenharia mais significativo em uma migração do [!DNL Adobe Commerce as a Cloud Service].
 
+A Adobe fornece dois caminhos assistidos por IA para este trabalho:
+
+- **Commerce Developer Agent** - Uma experiência guiada e baseada em navegador, além do ponto de partida recomendado para a maioria das migrações.
+- **MCP de desenvolvedor do Commerce** - Uma experiência conversacional do IDE para equipes que desejam trabalhar em seu ambiente de desenvolvimento existente ou que precisam de modernização da vitrine no Edge Delivery Services (EDS).
+
 ### Visão geral da migração de código
 
-Começando pela avaliação de migração, o Commerce Developer MCP fornece uma experiência conversacional do IDE para a modernização de personalizações herdadas do PHP em aplicativos [!DNL App Builder]. Também fornece assistência para a reconstrução de vitrines no Edge Delivery Services (EDS). Ao consumir diretamente as descobertas da Ferramenta de avaliação de migração, o Commerce Developer MCP mantém a implementação alinhada ao roteiro de migração aprovado, reduzindo a interpretação manual, mantendo a rastreabilidade e garantindo a consistência em todo o processo.
+Começando pela avaliação de migração, o Commerce Developer Agent fornece uma experiência de conversação para a modernização de personalizações herdadas do PHP em aplicativos [!DNL App Builder]. Ao consumir diretamente as descobertas da Ferramenta de avaliação de migração, o Commerce Developer Agent mantém a implementação alinhada ao roteiro de migração aprovado, reduzindo a interpretação manual, mantendo a rastreabilidade e garantindo a consistência em todo o processo.
 
-Embora a migração seja o principal caso de uso, o Commerce Developer MCP foi projetado como um agente de desenvolvimento de IA abrangente para [!DNL Adobe Commerce]. O MCP oferece suporte a modernização, novos desenvolvimentos, fluxos de trabalho operacionais e todas as atualizações do [!DNL Adobe Commerce as a Cloud Service]. Esse nível de flexibilidade permite que as equipes continuem criando e estendendo aplicativos Commerce muito tempo após a migração.
+Embora a migração seja o principal caso de uso, o Commerce Developer Agent foi projetado como um agente de desenvolvimento de IA abrangente para [!DNL Adobe Commerce]. O Commerce Developer Agent oferece suporte à modernização, ao novo desenvolvimento, aos fluxos de trabalho operacionais e a todas as atualizações do [!DNL App Builder]. Esse nível de flexibilidade permite que as equipes continuem criando e estendendo aplicativos Commerce muito tempo após a migração.
 
-### Commerce Developer MCP
+### Agente de desenvolvedor do Commerce
 
-Usando os resultados da [avaliação de migração](#migration-assessment-tool), o Commerce Developer MCP transforma as personalizações identificadas em aplicativos [!DNL App Builder] por meio de um fluxo de trabalho de desenvolvimento iterativo. Considere as diretrizes a seguir ao desenvolver usando essas ferramentas:
+Usando os resultados da [avaliação de migração](#migration-assessment-tool), o Commerce Developer Agent transforma as personalizações identificadas em aplicativos [!DNL App Builder] por meio de um fluxo de trabalho de desenvolvimento iterativo. Considere as diretrizes a seguir ao desenvolver usando essas ferramentas:
+
+- **Comece com o blueprint:** O Commerce Developer Agent consome a avaliação de migração e produz um Blueprint estruturado. Este é um plano de migração em fases que sinaliza riscos e mapeia dependências para que você analise.
+
+- **Revisar e aprovar:** nada é gerado automaticamente. O Blueprint requer sua aprovação explícita antes de qualquer geração de código começar, e você pode refiná-lo conversacionalmente em várias versões.
+
+- **Gerar scaffolding do App Builder:** Depois de aprovado, o agente gera [!DNL App Builder] extensões do Commerce com scaffolding, incluindo:
+
+  - Infraestrutura de evento e webhook
+  - Configurações configuráveis pelo comerciante
+  - Padrões de persistência
+
+  Depois de gerar o andaime, o agente executa verificações de validação na saída.
+
+- **Refinar e exportar ou implantar diretamente em [!DNL App Builder]:** Você pode solicitar alterações de acompanhamento no estágio de desenvolvimento e baixar um ZIP do código de extensão gerado, ou pode implantar diretamente em [!DNL App Builder] pelo Commerce Developer Agent. O contexto do projeto e as decisões persistem entre as sessões.
+
+Para obter mais informações, consulte [Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/) e [Introdução](https://developer.adobe.com/commerce/extensibility/developer-agent/getting-started).
+
+### Commerce Developer MCP (desenvolvimento local)
+
+>[!NOTE]
+>
+>O Commerce Developer MCP foi projetado para funcionar dentro do IDE.
+
+As equipes que preferem trabalhar no IDE existente ou que precisam modernizar uma vitrine no Edge Delivery Services (EDS) podem usar o Commerce Developer MCP. Como o Commerce Developer Agent, ele consome a avaliação de migração diretamente, mantendo a implementação alinhada ao roteiro de migração aprovado e reduzindo a interpretação manual.
+
+Considere as diretrizes a seguir ao desenvolver usando essas ferramentas:
 
 - **Comece com o blueprint** - O Commerce Developer MCP consome a avaliação de migração, usando suas personalizações, recomendações e prioridades de migração identificadas como base para o planejamento de implementação.
 
@@ -231,19 +281,19 @@ O MCP também auxilia com:
 - Otimização de experiência
 - Alinhamento com as práticas recomendadas atuais do Edge Delivery Services
 
-### Valor MCP do desenvolvedor
+### Agente de desenvolvedor do Commerce e valor de MCP de desenvolvedor
 
-Mover de personalizações do PHP em andamento para aplicativos [!DNL App Builder] de composição representa uma mudança significativa na arquitetura. O Commerce Developer MCP fecha essa lacuna, incorporando o conhecimento do [!DNL Adobe Commerce], os padrões de implementação do [!DNL App Builder] e as práticas recomendadas do produto diretamente no fluxo de trabalho de desenvolvimento.
+Mover de personalizações do PHP em andamento para aplicativos [!DNL App Builder] de composição representa uma mudança significativa na arquitetura. O Commerce Developer Agent e o Developer MCP fecham essa lacuna, incorporando o conhecimento [!DNL Adobe Commerce], os padrões de implementação [!DNL App Builder] e as práticas recomendadas do produto diretamente no fluxo de trabalho de desenvolvimento.
 
 A inclusão desse contexto melhora a consistência na velocidade de entrega e na qualidade da engenharia. As equipes podem modernizar os aplicativos mais rapidamente e, ao mesmo tempo, produzir implementações que seguem uma orientação de arquitetura consistente.
 
-Ao incorporar padrões de implementação recomendados, o Commerce Developer MCP reduz a dependência de especialistas individuais e ajuda as organizações a dimensionar os esforços de modernização de forma consistente em todos os projetos.
+Ao incorporar padrões de implementação recomendados, o Commerce Developer Agent e o Developer MCP reduzem a dependência de conhecimento individual e ajudam as organizações a dimensionar os esforços de modernização de forma consistente em todos os projetos.
 
 O processo de migração é também uma oportunidade para melhorar a implementação existente. As equipes podem simplificar as personalizações herdadas, desativar funcionalidades obsoletas, adotar recursos SaaS e modernizar a arquitetura do aplicativo em vez de carregar dívidas técnicas históricas.
 
-Como o Commerce Developer MCP consome a avaliação de migração diretamente, todo esforço de modernização mantém a rastreabilidade até a avaliação original, garantindo que a implementação permaneça alinhada ao roteiro de migração aprovado.
+Como o Commerce Developer Agent consome a avaliação de migração diretamente, todo esforço de modernização mantém a rastreabilidade até a avaliação original, garantindo que a implementação permaneça alinhada ao roteiro de migração aprovado.
 
-O Commerce Developer MCP também promove o design de aplicativos combináveis, incentivando aplicativos [!DNL App Builder] modulares que podem evoluir independentemente, à medida que as necessidades dos negócios mudam.
+O Commerce Developer Agent e o MCP do desenvolvedor também promovem o design de aplicativos combináveis, incentivando aplicativos modulares [!DNL App Builder] que podem evoluir independentemente, à medida que as necessidades dos negócios mudam.
 
 ### Escopo do MCP de desenvolvedor
 
@@ -257,9 +307,9 @@ O MCP não lida com a migração de dados. Os dados corporativos são migrados p
 
 A modernização do código e da loja começa assim que o roteiro da Ferramenta de avaliação de migração estabelece o escopo e as prioridades da migração.
 
-Para obter mais informações sobre como instalar e usar o MCP, consulte a documentação do [Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools/).
-
 Para obter mais informações sobre o Commerce Developer Agent, que é integrado à Ferramenta de Avaliação de Migração, consulte [Commerce Developer Agent](https://developer.adobe.com/commerce/extensibility/developer-agent/)
+
+Para obter mais informações sobre como instalar e usar o MCP, consulte a documentação do [Commerce Developer MCP](https://developer.adobe.com/commerce/extensibility/developer-agent/coding-tools).
 
 ## Migração de dados (Serviço de migração de dados da Commerce)
 
