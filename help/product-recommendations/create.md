@@ -5,21 +5,25 @@ exl-id: 1d5f83c4-1613-4236-9d98-d455f45a47da
 TQID: https://experienceleague.adobe.com/K3cKFg-m22bUzlupyhsHgDVxaJka7xhOvFnOt8wDdII
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 88a0b1a238090dec85e0f79082d264b720999fee
+    internal-label: Machine learning
+source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
 workflow-type: tm+mt
-source-wordcount: 1491
+source-wordcount: '1463'
 ht-degree: 0%
-
 ---
-
 # Criar nova recomendação
 
 Ao criar uma recomendação, você cria uma _unidade de recomendação_, ou widget, que contém o produto recomendado _itens_.
@@ -35,11 +39,11 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
 
 1. Na barra lateral _Administrador_, vá para **Marketing** > _Promoções_ > **Recomendações de Produtos** para exibir o espaço de trabalho _Recomendações de Produtos_.
 
-1. Especifique o [Modo de Exibição de Armazenamento](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/setup/websites-stores-views) onde deseja que as recomendações sejam exibidas.
+1. Especifique o [Modo de Exibição de Armazenamento](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) onde deseja que as recomendações sejam exibidas.
 
    >[!NOTE]
    >
-   > As unidades de recomendação do Page Builder devem ser criadas na exibição de armazenamento padrão, mas podem ser usadas em qualquer lugar. Para saber mais sobre como criar recomendações de produto com o Page Builder, consulte [Adicionar conteúdo - Recomendações de produto](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/page-builder/add-content/recommendations).
+   > As unidades de recomendação do Page Builder devem ser criadas na exibição de armazenamento padrão, mas podem ser usadas em qualquer lugar. Para saber mais sobre como criar recomendações de produto com o Page Builder, consulte [Adicionar conteúdo - Recomendações de produto](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations).
 
 1. Clique em **Criar recomendação**.
 
@@ -49,14 +53,14 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
 
    >[!NOTE]
    >
-   > As Recomendações de Produto não são suportadas na página Carrinho quando sua loja está configurada para [exibir a página do carrinho de compras imediatamente após adicionar um produto ao carrinho](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
+   > As Recomendações de Produto não são suportadas na página Carrinho quando sua loja está configurada para [exibir a página do carrinho de compras imediatamente após adicionar um produto ao carrinho](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
 
    * Página inicial
    * Categoria
    * Detalhes do produto
    * Carrinho
    * Confirmação
-   * [Page Builder](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
    É possível criar até 50 unidades de recomendação ativas para cada tipo de página. O tipo de página fica esmaecido quando o limite é atingido.
 
@@ -176,7 +180,7 @@ Uma baixa porcentagem de prontidão indica que não há muitos produtos do catá
 
 >[!IMPORTANT]
 >
->Não há suporte para _Pacotes_, _agrupados_ e tipos de produtos personalizados. Se seu catálogo contiver um grande número desses tipos de produtos, você poderá esperar uma baixa pontuação de preparação. Além disso, qualquer SKU com espaços pode reduzir a relevância da recomendação e deve ser evitada.
+>Quaisquer SKUs com espaços podem reduzir a relevância da recomendação e devem ser evitadas.
 
 A seguir, uma lista de possíveis motivos e soluções para pontuações comuns de baixa disponibilidade:
 

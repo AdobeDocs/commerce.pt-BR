@@ -1,28 +1,34 @@
 ---
 title: Criar e gerenciar regras
 description: Saiba como criar e gerenciar regras de merchandising para páginas de pesquisa, listas de produtos padrão e de categoria.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente ao Adobe Commerce as a Cloud Service e a projetos [!DNL Adobe Commerce Optimizer] (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: fd4df2b2-83de-4c5c-b18c-e97aa07ef8f6
 TQID: https://experienceleague.adobe.com/UOe-TPaF80Wrk-gNuJwLTdndVQMQfbYrbpAfb-r4pJc
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: d36a8adc8cbfe6478c5922dc6cee654b48e9c30d
+    internal-label: Personalization
+source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
 workflow-type: tm+mt
-source-wordcount: 4183
+source-wordcount: '4182'
 ht-degree: 0%
-
 ---
-
 # Criar e gerenciar regras
 
 Para criar e publicar uma regra:
@@ -47,7 +53,7 @@ Cada tipo de regra tem um ícone de informações no editor com uma breve explic
 | Tipo de regra | Finalidade |
 | --- | --- |
 | **Todas as listagens de produtos** | Classificação e merchandising padrão em listas de produtos quando não há mais pesquisa específica ou regra de categoria aplicável. Você só pode criar uma dessas regras; ela não pode conter condições. |
-| **Regra de categoria** | Aplica merchandising e classificação a uma ou mais categorias selecionadas, controlando o pedido do produto nessas páginas de categoria. |
+| **Regra de categoria** | Aplica merchandising e classificação a uma única categoria, controlando o pedido do produto nessa página de categoria. |
 | **Regra de pesquisa** | Aplica merchandising e classificação quando os compradores executam uma pesquisa que corresponde às condições de consulta da regra. |
 
 Na seção **Criar regra**, você define o nome da regra, o agendamento, se a regra se aplica a todas as listas ou a condições de pesquisa e tipos de classificação específicos.
@@ -265,7 +271,7 @@ Ou eventos podem ser definidos manualmente:
 
 >[!AVAILABILITY]
 >
->Este recurso está em [beta](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
+>Este recurso está em [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
 
 **A classificação de atributo** aplica automaticamente uma ação **[!UICONTROL Boost]**, **[!UICONTROL Bury]** ou **[!UICONTROL Hide]** a cada produto que corresponde a uma ou mais condições de atributo, sem exigir que você selecione SKUs individuais. A classificação de atributos aparece no editor de regras junto com a [Classificação inteligente](#intelligent-ranking) e a [Classificação manual](#manual-ranking), e está disponível para a **Regra de todos os produtos**, **Regras de pesquisa** e **Regras de categoria**. Use-o para dimensionar o merchandising em grandes catálogos, por exemplo, aumentando cada produto de uma determinada marca ou enterrando cada produto em uma cor descontinuada.
 
