@@ -1,21 +1,18 @@
 ---
 title: Limites e limites
-description: Saiba mais sobre os limites do  [!DNL Product Recommendations]  para garantir que ele atenda às necessidades da sua empresa.
+description: Saiba mais sobre os limites do [!DNL Product Recommendations] para garantir que ele atenda às necessidades da sua empresa.
 role: Admin, Developer
-source-git-commit: 60df4a608155a4f8ff8b4bf57cfd625aa1b3ccea
+source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '893'
 ht-degree: 0%
-
 ---
-
 # Limites e limites
 
 Revise os limites e limites a seguir para garantir que o [!DNL Product Recommendations] atenda às necessidades da sua empresa. Entender essas restrições ajuda a planejar a implementação, configurar filtros e evitar problemas comuns.
 
 ## Geral
 
-- **Tipos de produtos** - Os tipos de produtos compatíveis incluem _simple_, _configurable_, _virtual_, _downloadable_ e _vale-presente_. Não há suporte para _Pacotes_, _agrupados_ e tipos de produtos personalizados. Se seu catálogo contiver um grande número de tipos de produtos não suportados, você pode esperar uma baixa [pontuação de preparação](create.md#readiness-indicators). Consulte [Filtrar por tipo de produto](filters.md#type).
 - **SKUs com espaços** - SKUs que contêm espaços podem reduzir a relevância da recomendação e devem ser evitadas quando possível.
 - **Página de carrinho** - Recomendações de produto não têm suporte na página de carrinho quando a loja está configurada para [exibir a página do carrinho de compras imediatamente após adicionar um produto ao carrinho](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration). Consulte [Criar recomendações](create.md).
 - **Produtos secundários** - Os produtos secundários de um produto configurável (visibilidade _Não visível individualmente_) não são exibidos em uma unidade de recomendação. Somente o produto configurável (principal) pode ser exibido. Consulte [Filtrar produtos](filters.md#product).

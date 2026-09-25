@@ -5,17 +5,18 @@ exl-id: 140bf047-4f6a-48da-b536-d96e78ae3d17
 TQID: https://experienceleague.adobe.com/IcJh0vfW3tvlyeZT0K9OnyqLqRmHlgfmUOX3lY-50tg
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+    internal-label: Admin
+source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
 workflow-type: tm+mt
-source-wordcount: 778
+source-wordcount: '759'
 ht-degree: 0%
-
 ---
-
 # Filtrar produtos
 
 O Adobe Commerce aplica automaticamente filtros padrão não configuráveis a unidades de recomendação. Se você tiver várias unidades de recomendação implantadas em uma página, o Adobe Commerce filtra todos os produtos que são repetidos nas unidades. Somente a primeira referência a um produto repetido é usada para abrir espaço para outros produtos a serem recomendados. O Adobe Commerce também filtra todos os produtos comprados anteriormente e aqueles que estão no carrinho.
@@ -77,7 +78,7 @@ Os filtros de produto especificam quais produtos específicos estão qualificado
 
 ### Tipo
 
-Um filtro com base no tipo de produto inclui ou exclui todos os produtos de um tipo específico. Os tipos suportados incluem _simple_, _configurable_, _virtual_, _downloadable_ ou _vale-presente_. Não há suporte para _Pacotes_, _agrupados_ e tipos de produtos personalizados.
+Um filtro com base no tipo de produto inclui ou exclui todos os produtos de um tipo específico.
 
 ### Visibilidade
 
