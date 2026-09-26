@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4b9ab9e256edced9a508d08dfcae3589bd27f304
+source-git-commit: b4bbb596143bdcbb8c55a26386db7a36e2961db9
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1093'
 ht-degree: 1%
 ---
 # Modelo de novidades
@@ -9,6 +9,72 @@ ht-degree: 1%
 ## Novidades
 
 Esta página contém as alterações feitas nos últimos 60 dias. Excluímos todas as atualizações secundárias, como a edição de cópia, desta lista.
+
+### 25 de setembro de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Correção da documentação de recomendações de produto do <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/product-recommendations/boundaries-limits">PaaS</a> e do <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/recommendations/create">Commerce Optimizer</a> que declarava incorretamente que não havia suporte para produtos agrupados e agrupados.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/55b17947196acfa459934e4ee373469b84e16ea1">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 24 de setembro de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Atualização da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/migration/overview">Visão geral da migração</a> para explicar como o Commerce Developer Agent pode ajudar no processo de migração.</p>
+</td>
+      <td>
+        Atualização importante
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/739eabe6f43412610862ab00516687ad5aeeac53">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 23 de setembro de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adicionadas as <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/release-notes">notas de versão</a> de produção para o Adobe Commerce as a Cloud Service.</p>
+</td>
+      <td>
+        Atualização importante
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/d879d372a199c24d266abdfb79d1ff0af164d75b">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 17 de setembro de 2026
 
@@ -352,28 +418,6 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
         Atualização importante
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/c8cab2404d47a6cb4a0418a59b533bf11e082b0b">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 23 de julho de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Atualização das <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/release-notes">notas de versão</a> da Sandbox para Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Atualização importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ed8bf2044f77432eb38df3c3cbb13b7708f3c33b">confirmar</a></td>
     </tr>
   </tbody>
 </table>
