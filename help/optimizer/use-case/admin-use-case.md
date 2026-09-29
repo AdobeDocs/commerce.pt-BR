@@ -3,32 +3,41 @@ title: Caso de uso completo do administrador de vitrine e catálogo
 description: Saiba como usar o [!DNL Adobe Commerce Optimizer] para gerenciar seu catálogo usando exibições e políticas de catálogo e como configurar sua loja com base na configuração do catálogo.
 role: Admin, Developer
 feature: Personalization, Integration
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente ao Adobe Commerce as a Cloud Service e a projetos [!DNL Adobe Commerce Optimizer] (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: d11663f8-607e-4f1d-b68f-466a69bcbd91
 TQID: https://experienceleague.adobe.com/sqz0syCSh3ls8F-WIbuzPyqeRguyXdsPw-7OerOnDes
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 subfeature_v2:
   - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+    internal-label: Storefront configuration
   - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+    internal-label: Personalization
+source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
 workflow-type: tm+mt
-source-wordcount: 2232
+source-wordcount: '2234'
 ht-degree: 1%
-
 ---
-
 # Caso de uso completo do administrador de vitrine e catálogo
 
 Esse caso de uso é baseado em um conglomerado fictício de automóveis chamado Carvelo Automobile, que tem uma configuração operacional complexa. Ele demonstra como usar o [!DNL Adobe Commerce Optimizer] para gerenciar um catálogo que oferece suporte a várias marcas, concessionárias e catálogos de preços, além de fornecer uma experiência de vitrine personalizada.
@@ -70,9 +79,9 @@ Nesse caso de uso, você está trabalhando com:
 
 1. Commerce Storefront - renderize a loja usando os dados de catálogo de exemplo carregados em sua instância [!DNL Adobe Commerce Optimizer] e os arquivos de configuração da Commerce Storefront, `fstab.yaml` e `config.json`.
 
->[!NOTE]
->
-> Saiba mais sobre os arquivos de configuração da loja revisando o [Tópico de introdução](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/boilerplate-project/) na documentação da Adobe Commerce Storefront.
+   >[!NOTE]
+   >
+   > Saiba mais sobre os arquivos de configuração da loja revisando o [Tópico de introdução](https://experienceleague.adobe.com/en/tools/commerce-storefront/get-started/boilerplate-project/) na documentação da Adobe Commerce Storefront.
 
 ### ‌Principais pontos
 
