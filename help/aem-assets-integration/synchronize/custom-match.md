@@ -23,7 +23,7 @@ ht-degree: 0%
 ---
 # Correspondência automática personalizada
 
-Se a estratégia de correspondência automática padrão (**correspondência automática OOTB**) não estiver alinhada aos seus requisitos de negócios específicos, selecione a opção de correspondência personalizada. Esta opção oferece suporte ao uso do [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder) para desenvolver um aplicativo de correspondência personalizado que lida com lógica de correspondência complexa ou com ativos provenientes de um sistema de terceiros que não pode preencher metadados no AEM Assets.
+Se a estratégia de correspondência automática padrão (**correspondência automática OOTB**) não estiver alinhada aos seus requisitos de negócios específicos, selecione a opção de correspondência personalizada. Esta opção oferece suporte ao uso do [Adobe Developer App Builder](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder) para desenvolver um aplicativo de correspondência personalizado que lida com lógica de correspondência complexa ou com ativos provenientes de um sistema de terceiros que não pode preencher metadados no AEM Assets.
 
 ## Configurar correspondência automática personalizada
 
@@ -125,9 +125,9 @@ Você pode baixar o arquivo `workspace.json` da [Adobe Developer Console](https:
 
 ## Salvar configuração assíncrona
 
-Se a opção [Salvar Configuração Assíncrona](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save) estiver habilitada na instância do Commerce, as alterações de configuração serão enfileiradas e aplicadas por um consumidor assíncrono, em vez de serem salvas imediatamente na mesma solicitação. Para carregar um arquivo `workspace.json` para correspondência automática personalizada neste modo, conclua as seguintes etapas na ordem:
+Se a opção [Salvar Configuração Assíncrona](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save) estiver habilitada na instância do Commerce, as alterações de configuração serão enfileiradas e aplicadas por um consumidor assíncrono, em vez de serem salvas imediatamente na mesma solicitação. Para carregar um arquivo `workspace.json` para correspondência automática personalizada neste modo, conclua as seguintes etapas na ordem:
 
-1. Confirme se o Salvamento da Configuração Assíncrona do Commerce está [habilitado](https://experienceleague.adobe.com/en/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save).
+1. Confirme se o Salvamento da Configuração Assíncrona do Commerce está [habilitado](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/performance-best-practices/configuration#asynchronous-configuration-save).
 
 1. No Administrador, vá para **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Adobe Services]** > **[!UICONTROL AEM Assets Integration]**.
 
@@ -161,7 +161,7 @@ Se a opção [Salvar Configuração Assíncrona](https://experienceleague.adobe.
 
 ## Pontos de extremidade da API do correspondedor personalizado
 
-Ao criar um aplicativo de correspondência personalizado usando o [App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, o aplicativo deve expor os seguintes pontos de extremidade:
+Ao criar um aplicativo de correspondência personalizado usando o [App Builder](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder){target=_blank}, o aplicativo deve expor os seguintes pontos de extremidade:
 
 * Ponto de extremidade **Ativo App Builder para URL do produto**
 * Ponto de extremidade **Produto App Builder para URL do ativo**
@@ -330,7 +330,7 @@ O parâmetro `asset_matches` contém os seguintes atributos:
 | Atributo | Tipo de dados | Descrição |
 | --- | --- | --- |
 | `asset_id` | String | A ID do ativo. |
-| `asset_roles` | Matriz | Funções do ativo. Usa as [funções de ativos do Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) com suporte, como `thumbnail`, `image`, `small_image` e `swatch_image`. Com a extensão 1.4.6 e posterior do AEM Assets Integration, funções de imagem personalizadas (como `hero` ou `custom_role_1`) também são aceitas. |
+| `asset_roles` | Matriz | Funções do ativo. Usa as [funções de ativos do Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/products/digital-assets/product-image#image-roles) com suporte, como `thumbnail`, `image`, `small_image` e `swatch_image`. Com a extensão 1.4.6 e posterior do AEM Assets Integration, funções de imagem personalizadas (como `hero` ou `custom_role_1`) também são aceitas. |
 | `asset_format` | String | O formato do ativo. Os valores possíveis são `image` e `video`. |
 | `asset_position` | Número | A posição do ativo na galeria de produtos. |
 
