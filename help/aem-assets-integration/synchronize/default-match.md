@@ -6,19 +6,21 @@ exl-id: 8a18639b-f508-456e-8d22-18e3e0fdd515
 TQID: https://experienceleague.adobe.com/z7vpuhsVJnKohiU-bKNrcGnoIQ5WAwcwiccYlvawN0U
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+    internal-label: Metadata
+source-git-commit: cf31a1ed5069095fb3c4c50d99475e60ee61efa9
 workflow-type: tm+mt
-source-wordcount: 317
+source-wordcount: '349'
 ht-degree: 0%
-
 ---
-
 # Correspondência automática padrão
 
 A integração do AEM Assets para Commerce fornece um mecanismo de correspondência automática padrão (**[!UICONTROL Match by product SKU]**) com base na configuração de metadados **AEM Assets**. Esta regra habilita a sincronização perfeita entre o **Adobe Commerce** e o **AEM Assets**, garantindo que os ativos sejam vinculados automaticamente às entidades de merchandising corretas.
@@ -51,11 +53,13 @@ Quando a regra de correspondência do **[!UICONTROL Match by product SKU]** é c
 
 1. Configure os metadados ([!UICONTROL SKU], [!UICONTROL position] e [!UICONTROL role]) que vinculam o ativo à SKU do produto associado.
 
+   As quatro funções padrão são `image`, `small_image`, `thumbnail` e `swatch_image`. Com a extensão de Integração do AEM Assets versão 1.4.6 e posterior, você também pode inserir uma função de imagem personalizada, como `hero` ou `custom_role_1`. Consulte [Correspondência automática personalizada](custom-match.md) para obter detalhes.
+
    >[!NOTE]
    >
    > Se um ativo for usado para vários produtos, configure os metadados para cada SKU associada.
 
-1. Na guia `Basic`, defina o valor padrão do campo _[!UICONTROL Review Status]_&#x200B;como `approved`.
+1. Na guia `Basic`, defina o valor padrão do campo _[!UICONTROL Review Status]_como `approved`.
 
    ![Exemplo de metadados](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 
