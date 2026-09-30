@@ -1,17 +1,15 @@
 ---
 title: Configurar o teste de sandbox
-description: Use uma conta de sandbox do PayPal e a integração do administrador para executar o  [!DNL Payment Services]  no modo de teste antes dos pagamentos ao vivo (Adobe Commerce na nuvem, no local e SaaS).
+description: Use uma conta de sandbox do PayPal e a integração do administrador para executar o [!DNL Payment Services] no modo de teste antes dos pagamentos ao vivo (Adobe Commerce na nuvem, no local e SaaS).
 role: Admin, User
 level: Intermediate
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 5312d23f050d9007132f7f14b17caf13ab52c7df
+source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '778'
 ht-degree: 0%
-
 ---
-
 # Configurar o teste de sandbox
 
 Antes de iniciar a integração da sandbox, você deve se inscrever para obter uma conta gratuita do desenvolvedor do PayPal e criar contas de comerciante (para usar na integração) e de comprador (para usar para testar o check-out). Você pode criar várias contas de desenvolvedor, se desejar.
@@ -57,11 +55,11 @@ Para concluir a integração da sandbox:
 
    O botão **[!UICONTROL Sandbox onboarding]** não está mais visível e você vê o texto &quot;Pagamentos de sandbox pendentes&quot;.
 
-Quando a integração da sandbox do PayPal for aprovada, você deverá ver uma notificação informando que o sistema de pagamento está no modo de sandbox e não está processando pagamentos em tempo real.
+   Quando a integração da sandbox do PayPal for aprovada, você deverá ver uma notificação informando que o sistema de pagamento está no modo de sandbox e não está processando pagamentos em tempo real.
 
->[!IMPORTANT]
->
->Se você revogar o consentimento de [!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magento Open Source] para o processamento de seus pagamentos (nas configurações de sua conta do PayPal), os pedidos em seu armazenamento não poderão ser processados por [!DNL Payment Services]. Na página inicial dos Serviços de pagamento, é exibido um alerta sobre o consentimento revogado. Para ignorar o alerta, clique em **[!UICONTROL Do not show again]**.
+   >[!IMPORTANT]
+   >
+   >Se você revogar o consentimento de [!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magento Open Source] para o processamento de seus pagamentos (nas configurações de sua conta do PayPal), os pedidos em seu armazenamento não poderão ser processados por [!DNL Payment Services]. Na página inicial dos Serviços de pagamento, é exibido um alerta sobre o consentimento revogado. Para ignorar o alerta, clique em **[!UICONTROL Do not show again]**.
 
 ### Redefinir sua conta de sandbox
 

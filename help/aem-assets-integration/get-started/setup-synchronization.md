@@ -6,23 +6,28 @@ exl-id: 3533d010-926f-4d78-935c-98a9b7040d27
 TQID: https://experienceleague.adobe.com/MM-neGrH-N8xBcCwLgnsaIrIjhbX6uYL5kS41QdV79I
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 subfeature_v2:
   - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+    internal-label: Storefront configuration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+    internal-label: Implementation
+source-git-commit: 47b9ea797cbe18bd866159311486ba1b588ffcd3
 workflow-type: tm+mt
-source-wordcount: 967
-ht-degree: 2%
-
+source-wordcount: '1058'
+ht-degree: 1%
 ---
-
 # Configurar a integração
 
 Configure a integração conectando o Commerce à instância do AEM Assets e selecionando a estratégia correspondente para a sincronização de ativos.
@@ -97,6 +102,22 @@ O service level agreement (SLA) para a integração garante os seguintes níveis
 * `< 30 minutes for 99.9% of updates`
 
 Esse nível de serviço garante que as páginas de produtos sempre exibam as imagens mais atualizadas, mantendo o conteúdo da loja preciso e visualmente atraente.
+
+## Sincronizar texto alternativo localizado
+
+O texto alternativo localizado usa o processo de sincronização de ativos existente. Você não precisa de um novo tipo de evento ou de uma configuração de sincronização separada.
+
+1. Adicione uma ou mais linhas de texto alternativo de exibição de armazenamento na guia **[!UICONTROL Commerce]** do ativo AEM.
+
+1. Associe o ativo ao SKU do produto Commerce.
+
+1. Aprove o ativo no AEM Assets.
+
+1. Aguarde a conclusão do evento de ativo e do processo de sincronização.
+
+1. Verifique o valor localizado em Commerce Admin e na resposta da loja.
+
+Para obter os nomes dos campos, as regras de validação e o resultado do Commerce, consulte [Metadados do Commerce no AEM Assets](../metadata.md).
 
 ### Configurar o proprietário da visualização
 

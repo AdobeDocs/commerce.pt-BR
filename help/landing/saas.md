@@ -8,26 +8,34 @@ badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague
 TQID: https://experienceleague.adobe.com/pWbJSCrV9CcdJXNTkuXyCxh73eUA7nYt1okexwtK7II
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
 subfeature_v2:
   - id: f8ddfd3b-6194-46e8-a176-0e918039be56
+    internal-label: Cloud architecture
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 topic_v2:
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
+    internal-label: Behavioral data
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+    internal-label: Data management
+source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
 workflow-type: tm+mt
-source-wordcount: 1665
+source-wordcount: '1665'
 ht-degree: 0%
-
 ---
-
 # [!DNL Commerce Services Connector]
 
 Alguns recursos do Adobe Commerce e do Magento Open Source são viabilizados pelo [!DNL Commerce Services] e implantados como SaaS (software como serviço). Para usar esses serviços, você deve conectar sua instância do [!DNL Commerce] usando chaves de API de sandbox e produção e especificar o espaço de dados na [configuração](#saas-configuration). Você só precisa configurar a conexão uma vez para cada instância.
@@ -108,7 +116,7 @@ Se não conseguir encontrar campos de configuração do Live Search em Admin, ve
 
 Antes de excluir uma chave de API, gere e armazene com segurança uma chave de substituição. Atualize todas as integrações para usar a nova chave e confirme se os serviços dependentes estão funcionando como esperado.
 
-Se você não vir os campos de configuração **[!DNL Live Search]** no Painel de administração, confirme se inseriu a chave de API SaaS correta para esse ambiente. Use a chave SaaS de produção para o espaço de dados de produção e a chave de preparação para o espaço de dados de preparação. Se uma chave errada for configurada, os serviços SaaS (incluindo **[!DNL Live Search]**) não estarão disponíveis em seu ambiente Adobe Commerce.
+Se você não vir os campos de configuração **[!DNL Live Search]** no Painel de administração, confirme se inseriu a chave de API SaaS correta para esse ambiente. Use a chave SaaS de produção para o espaço de dados de produção e a chave de preparação para o espaço de dados de preparação. Se uma chave errada estiver configurada, os serviços SaaS (incluindo **[!DNL Live Search]**) não estarão disponíveis em seu ambiente Adobe Commerce.
 
 Na chave de API a ser removida, clique em **[!UICONTROL Delete]**. Quando solicitado, confirme a operação para remover permanentemente a chave.
 
@@ -155,9 +163,9 @@ Para selecionar ou criar um projeto SaaS, solicite as [!DNL Commerce] chaves de 
 
    Se você tiver instâncias separadas para integrar com os Serviços Commerce, [envie um tíquete de Suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) para solicitar um novo projeto SaaS para cada instância adicional. Depois que o Suporte criar o projeto SaaS, configure o Commerce Services Connector para a instância **usando as mesmas chaves de API** e selecione o novo projeto SaaS e o espaço de dados.
 
->[!WARNING]
->
-> Se você gerar novas chaves no Portal de API, atualize imediatamente as chaves de API na Configuração de administrador. Se o administrador ainda estiver usando chaves antigas, as extensões SaaS deixarão de funcionar e a coleta de dados será interrompida.
+   >[!WARNING]
+   >
+   > Se você gerar novas chaves no Portal de API, atualize imediatamente as chaves de API na Configuração de administrador. Se o administrador ainda estiver usando chaves antigas, as extensões SaaS deixarão de funcionar e a coleta de dados será interrompida.
 
 Para alterar os nomes do projeto SaaS ou do espaço de dados, clique em **Renomear**. Alterar o nome não afeta seu serviço porque o nome é apenas um rótulo que ajuda a identificar e diferenciar entre projetos e espaços de dados.
 

@@ -20,9 +20,9 @@ topic_v2:
     internal-label: Digital asset management
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 4c27d94eca656c48dd50ba8dc69a905ea141c6fd
+source-git-commit: fda6fa7c9ae80a594f0eb05624030cd6b13f0da2
 workflow-type: tm+mt
-source-wordcount: '1839'
+source-wordcount: '1861'
 ht-degree: 1%
 ---
 # Configurar o projeto do AEM Assets
@@ -205,6 +205,8 @@ Depois de enviar o tíquete de suporte, o Adobe habilita o Dynamic Media com rec
 
    * As SKUs do produto e os campos `Eligible for Commerce` estão visíveis.
 
+   * O multicampo **[!UICONTROL Alt texts]** está disponível com **[!UICONTROL Store View Code]** e **[!UICONTROL Alt Text]** entradas.
+
 ### A guia Commerce não está visível nas propriedades
 
 Se a guia **Commerce** não aparecer nas propriedades, você deverá concluir manualmente as seguintes etapas no Editor de Esquema de Metadados:
@@ -220,6 +222,8 @@ Se a guia **Commerce** não aparecer nas propriedades, você deverá concluir ma
 1. Marque a caixa de seleção para **mostrar funções** e **mostrar ordem**.
 
 1. Arraste e solte um componente **caixa de seleção** na guia **Commerce** e mapeie-o para a propriedade `commerce:isCommerce`. Defina **Sim** e **Não** como as opções.
+
+1. Adicione o multicampo **[!UICONTROL Alt texts]** à guia **Commerce**. Configure suas duas propriedades alinhadas ao índice como `commerce:altTextStoreViews` e `commerce:altTextValues`.
 
 Caso encontre outros problemas, crie um [tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) ou entre em contato com o representante de vendas da Integração da AEM Assets para obter ajuda.
 

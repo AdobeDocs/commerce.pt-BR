@@ -6,24 +6,30 @@ exl-id: 40ca36e0-d617-4814-852d-bc60ff53b2b3
 TQID: https://experienceleague.adobe.com/y-207fJaMiLZbQW7bzv2WCzFItckGDnyKUm6Q0tqMw8
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 subfeature_v2:
   - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+    internal-label: Digital asset management
+source-git-commit: cf31a1ed5069095fb3c4c50d99475e60ee61efa9
 workflow-type: tm+mt
-source-wordcount: 1073
+source-wordcount: '1236'
 ht-degree: 0%
-
 ---
-
 # Gerenciar ativos de mídia do Commerce
 
 <!--In ACAP-844, this topic was linked to from the Commerce Admin products images and videos when the Assets integration is enabled. If the URL to the topic changes, be sure to add a redirect.-->
@@ -72,6 +78,14 @@ Para saber como vincular ativos a produtos no AEM Assets (incluindo configuraç�
 
 * [Correspondência automática padrão](synchronize/default-match.md)
 * [Correspondência automática personalizada](synchronize/custom-match.md).
+
+### Gerenciar texto alternativo localizado
+
+O autor localizou o texto alternativo no AEM Assets, não na galeria de mídia do produto Commerce. Adicione uma linha para cada exibição de armazenamento do Commerce no campo **[!UICONTROL Alt Texts]**. Inclua um valor de texto alternativo para esta imagem, como &quot;Camiseta Branca&quot;, e clique em **[!UICONTROL Save & Close]** para que o processo de sincronização existente transfira os valores para o Commerce.
+
+O Commerce armazena cada valor sincronizado no campo de imagem padrão **[!UICONTROL Label]**. A localização de texto alternativo não altera a atribuição do ativo, a função da imagem ou a posição da galeria. Campos de banco de dados criados pelo cliente, como `alt_text`, estão fora do escopo de integração padrão.
+
+![Textos Alternativos do Adobe Experience Manager](./assets/aem-alt-texts.png){width="600" zoomable="yes"}
 
 ### SLAs de sincronização
 
@@ -182,6 +196,8 @@ Após configurar o [Seletor de ativos do AEM](synchronize/asset-selector-integra
 ## Atualizar um ativo
 
 Depois de atualizar e aprovar um ativo no AEM Assets, as atualizações são automaticamente enviadas para a Adobe Commerce usando o recurso de correspondência automatizada. Esse processo é acionado mediante aprovação de ativos. Para garantir que todas as alterações finais e atualizações de metadados sejam incluídas, reprocesse o ativo antes de aprová-lo.
+
+Quando você altera os valores de função ou posição em um ativo já sincronizado, o Commerce atualiza a atribuição de função existente em vez de adicionar uma duplicata. Se uma tentativa de sincronização falhar, verifique os logs do Commerce em busca do erro antes de tentar novamente. Depois que a atualização for concluída, verifique a alteração na seção **Imagens e vídeos** do produto e confirme se o ativo aparece na função e na posição esperadas na galeria de mídia.
 
 Para que o fluxo de trabalho do lado da Commerce vincule ativos a produtos por meio de metadados, consulte o tópico [Correspondência automática padrão](synchronize/default-match.md).
 

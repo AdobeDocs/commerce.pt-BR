@@ -7,21 +7,25 @@ exl-id: c0fb59e1-daf8-4f48-a7a7-b48e8782dfad
 TQID: https://experienceleague.adobe.com/z4WBMzUa6Jn8EjUH1e5oojV4I3bTDZJylwtQ7LZ4wPE
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
+    internal-label: Metadata
+source-git-commit: 555a9c9aff3f4d5f60f13374a9f23a70e2111b3b
 workflow-type: tm+mt
-source-wordcount: 1675
+source-wordcount: '1824'
 ht-degree: 0%
-
 ---
-
 # Instalar pacotes do Adobe Commerce
 
 Essa integração do Commerce permite a sincronização de ativos entre o Adobe Commerce e o Adobe Experience Manager Assets (AEM Assets). A extensão fornece um conjunto de ferramentas e serviços para gerenciar imagem de produto, vídeo e outros ativos de mídia em ambas as plataformas.
@@ -60,6 +64,12 @@ Instale o pacote do Adobe Commerce e prepare o ambiente do Commerce concluindo a
 
 Instale a versão mais recente da extensão de Integração do AEM Assets (`aem-assets-integration`) em uma instância do Adobe Commerce com a versão Adobe Commerce 2.4.5+. A extensão é entregue como um metapackage de compositor do [repositório.magento.com](https://repo.magento.com/admin/dashboard).
 
+Por padrão, o `composer require magento/aem-assets-integration` instala a versão mais recente disponível. Para fixar uma versão exata (por exemplo, para manter vários ambientes na mesma versão validada), use uma restrição exata, como `"magento/aem-assets-integration": "1.4.7"`; use `^1.4.7` somente quando um intervalo 1.x compatível for pretendido.
+
+>[!NOTE]
+>
+>Se você estiver atualizando de uma versão anterior à 1.4.6, a Adobe recomenda atualizar diretamente para a 1.4.7 ou posterior. A versão 1.4.6 introduziu as funções de imagem personalizadas e o verificador de atualização de extensão. A versão 1.4.7 corrige um problema em que o arquivo `workspace.json` usado para [correspondência automática personalizada](../synchronize/custom-match.md) não persistia corretamente quando o Salvamento de configuração assíncrono do Commerce estava habilitado. Se você usar uma correspondência personalizada com o Salvamento de Configuração Assíncrono habilitado, carregue novamente seu arquivo `workspace.json` depois da atualização. Consulte [Salvar Configuração Assíncrona](../synchronize/custom-match.md#async-config-save).
+
 >[!BEGINTABS]
 
 >[!TAB Infraestrutura em nuvem]
@@ -78,10 +88,10 @@ Use este método para instalar a extensão [!DNL AEM Assets Integration] em uma 
    magento-cloud environment:checkout <environment-id>
    ```
 
-1. Adicione a extensão Integração do AEM Assets para Commerce.
+1. Adicione a extensão Integração do AEM Assets para Commerce. Omita a restrição da versão para instalar a versão mais recente disponível ou fixe uma versão específica, como mostrado aqui.
 
    ```shell
-   composer require "magento/aem-assets-integration" "<version-tbd>" --no-update
+   composer require "magento/aem-assets-integration" "^1.4.7" --no-update
    ```
 
 1. Atualizar dependências de pacote.
@@ -106,7 +116,7 @@ Use este método para instalar a extensão [!DNL AEM Assets Integration] em uma 
 
 Use este método para instalar a extensão [!DNL AEM Assets Integration] para uma instância local.
 
-1. Use o Composer para adicionar a extensão do AEM Assets Integration for Commerce ao seu projeto:
+1. Use o Composer para adicionar a extensão do AEM Assets Integration for Commerce ao seu projeto. Omita a restrição de versão para instalar a versão mais recente disponível ou fixe uma versão específica, como `"^1.4.7"`.
 
    ```shell
    composer require "magento/aem-assets-integration" --no-update

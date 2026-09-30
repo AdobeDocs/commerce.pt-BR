@@ -3,13 +3,11 @@ title: Notas de versão da Integração do AEM Assets
 description: Revise as notas de versão para obter informações sobre todas as versões da Integração do AEM Assets.
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: afef108e512c69047a0420566a498dab164c207e
+source-git-commit: a0b269f6d4b709dd0aed4c23264928f28b2f5d98
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1784'
 ht-degree: 0%
-
 ---
-
 # Notas de versão da Integração do AEM Assets
 
 Essas notas de versão descrevem todas as versões da integração do AEM Assets e incluem:
@@ -38,6 +36,36 @@ _11 de fevereiro de 2025_
 
 +++
 
+## v1.4.7
+
+_18 de setembro de 2026_
+
+[!BADGE Com Suporte]{type=Informative tooltip="Compatível"} no Adobe Commerce versão 2.4.5 e posteriores.
+
+![Correção de um problema](../assets/fix.svg)<!-- Issue ACAP-1317 --> Correção de um problema em que o arquivo `workspace.json` carregado para [correspondência automática personalizada](synchronize/custom-match.md) não persistia corretamente quando o Salvamento de Configuração Assíncrona do Commerce estava habilitado. Anteriormente, a solicitação de administrador enfileirava somente os metadados do upload, em vez do conteúdo do arquivo. Portanto, quando o consumidor de configuração assíncrono processava o salvamento, o arquivo de upload temporário não podia mais ser lido. Como resultado, a configuração parecia ser salva com sucesso, enquanto os valores de OAuth do App Builder permaneciam inalterados. As credenciais do App Builder carregadas agora sobrevivem ao limite da fila e são processadas corretamente pelo consumidor assíncrono.
+
+>[!IMPORTANT]
+>
+>Se você usar uma correspondência personalizada com a opção Salvar Configuração Assíncrona habilitada, carregue novamente seu arquivo `workspace.json` depois de atualizar para esta versão. Para obter instruções de upload, consulte [Salvar configuração assíncrona](synchronize/custom-match.md#async-config-save).
+
+## v1.4.6
+
+_8 de setembro de 2026_
+
+[!BADGE Com Suporte]{type=Informative tooltip="Compatível"} no Adobe Commerce versão 2.4.5 e posteriores.
+
+![Novo problema](../assets/new.svg)<!-- Issue ACAP-1272 --> As funções de imagem personalizadas do AEM agora são retidas durante a sincronização. Os valores personalizados no campo de metadados `commerce:roles` do AEM são assimilados e mapeados para dados da galeria de mídia do produto Commerce, além das quatro funções padrão (`image`, `small_image`, `thumbnail` e `swatch_image`). Para obter detalhes, consulte [Correspondência automática personalizada](synchronize/custom-match.md).
+
+![Novo problema](../assets/new.svg)<!-- Issue ACAP-1272 --> O Adobe Commerce agora pode verificar se há atualizações da extensão de Integração do AEM Assets de forma assíncrona e notificar os administradores no Administrador quando uma nova versão estiver disponível. Os administradores também podem executar uma verificação manual usando o `bin/magento aem:assets:check-update`. Para obter detalhes, consulte [Verificar atualizações de extensão](get-started/check-for-updates.md).
+
+## v1.4.5
+
+_3 de agosto de 2026_
+
+[!BADGE Com Suporte]{type=Informative tooltip="Compatível"} no Adobe Commerce versão 2.4.5 e posteriores.
+
+![Correção de um problema](../assets/fix.svg)<!-- Issue ACAP-1321 --> Correção de um problema de compatibilidade com versões anteriores com visibilidade de ativos de exibição de loja. As solicitações de sincronização de ativos existentes que não especificam exibições de armazenamento ocultas continuam a funcionar sem alterações.
+
 ## v1.4.4
 
 _30 de julho de 2026_
@@ -45,6 +73,8 @@ _30 de julho de 2026_
 [!BADGE Com Suporte]{type=Informative tooltip="Compatível"} no Adobe Commerce versão 2.4.5 e posteriores.
 
 ![Novo problema](../assets/new.svg) Agora, os comerciantes podem ocultar exibições de loja específicas para um ativo do AEM. Quando o AEM Assets marca uma imagem como oculta para uma ou mais visualizações da loja, o Commerce exclui essa imagem da loja nessas visualizações da loja. A galeria de mídia do produto Admin agora inclui um campo **[!UICONTROL Store View Visibility]** que mostra quais exibições de loja ocultam a imagem. <!-- Issue ACAP-1308 -->
+
+![Correção de um problema](../assets/fix.svg) em que o pacote de integração do Page Builder exigia incorretamente o pacote `magento/module-page-builder`, impedindo que o pacote fosse instalado independentemente.
 
 ## v1.4.2
 
