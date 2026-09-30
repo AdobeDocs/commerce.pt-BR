@@ -1,16 +1,14 @@
 ---
 user-guide-title: Guia do [!DNL Data Export] para serviços SaaS
 breadcrumb-title: '[!DNL Data Export]'
-user-guide-description: Este guia fornece instruções detalhadas para usar a extensão  [!DNL Data Export]  para serviços SaaS do Adobe Commerce.
+user-guide-description: Este guia fornece instruções detalhadas para usar a extensão [!DNL Data Export] para serviços SaaS do Adobe Commerce.
 role: Admin, Developer
 feature: Services
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: fd87417a494987f33009d386019d870b306dcf73
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '119'
 ht-degree: 2%
-
 ---
-
 # Guia do [!DNL Data Export] para serviços SaaS {#saas-data-export}
 
 - [Visão geral do guia](overview.md)
@@ -18,6 +16,7 @@ ht-degree: 2%
   - [Como a sincronização funciona](sync-overview.md)
   - [Gerenciar sincronização](data-sync-manage.md)
   - [Mecanismo de bloqueio de feed](feed-lock-mechanism.md)
+  - {hide-from-toc}[Suporte para tipos de produtos personalizados (acesso antecipado)](custom-product-types.md)
 - Agendamento e desempenho de exportação {#performance}
   - [Estimar o volume de dados e o tempo de transmissão](estimate-data-volume-sync-time.md)
   - [Melhorar o desempenho das exportações](customize-export-processing.md)
@@ -35,4 +34,4 @@ ht-degree: 2%
   - [Gerenciar a extensão de exportação de dados SaaS](manage-extension.md)
   - [Sincronizar feeds usando a CLI do Commerce](data-export-cli-commands.md)
   - [Esquema de tabela de feed](reference/feed-table-reference.md)
-- [Retornar à página inicial dos Serviços da Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/home)
+- [Retornar à página inicial dos Serviços da Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

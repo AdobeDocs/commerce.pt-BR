@@ -1,29 +1,35 @@
 ---
 title: '[!DNL Catalog Service]'
-description: Acelere sua loja do Adobe Commerce com o [!DNL Catalog Service]  - uma API GraphQL de alto desempenho que reduz o tempo de carregamento de páginas de produtos, páginas de categoria e resultados de pesquisa.
+description: Acelere sua loja da Adobe Commerce com o [!DNL Catalog Service] - uma API GraphQL de alto desempenho que reduz o tempo de carregamento de páginas de produtos, páginas de categoria e resultados de pesquisa.
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: 525e3ff0-efa6-48c7-9111-d0b00f42957a
 TQID: https://experienceleague.adobe.com/CEbJ8-hkc0AGQ4RnRNMDXA6mMijvhPGAfsxyC4eT39Y
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: bb09ff54afbba3d0a0e48bfd1a0392cba435ea9a
+    internal-label: Data management
+source-git-commit: fd87417a494987f33009d386019d870b306dcf73
 workflow-type: tm+mt
-source-wordcount: 1493
+source-wordcount: '1493'
 ht-degree: 0%
-
 ---
-
 # [!DNL Catalog Service] para Adobe Commerce
 
 A extensão do [!DNL Catalog Service] for Adobe Commerce melhora os tempos de carregamento da loja, fornecendo dados de catálogo otimizados e somente leitura por meio de uma API dedicada do GraphQL. Esse serviço foi projetado especificamente para aprimorar as experiências de página relacionadas ao produto, resultando em carregamentos de página mais rápidos e taxas de conversão aprimoradas.
@@ -119,6 +125,12 @@ O esquema reduz a diversidade de tipos de produtos a dois casos de uso:
   * Os compradores podem especificar quantidades para produtos de componentes individuais.
   * As opções de produto (como tamanho, cor, material) são unificadas e funcionam da mesma maneira, independentemente do tipo de produto. Cada seleção de opção aponta para um produto simples específico com seus próprios atributos e preço. O produto final permanece indefinido até que o comprador selecione todas as opções necessárias.
 
+<!--
+>[!NOTE]
+>
+>Custom product types introduced by third-party extensions are not covered by this mapping. For [!DNL Commerce Storefront MCP] deployments (Early Access), a catalog enablement module can represent these custom types as simple products in the catalog data sent to [!DNL Catalog Service]. See [Support for custom product types in SaaS catalog data export](../data-export/custom-product-types.md).
+-->
+
 #### Atributos de exibição do produto
 
 Produtos simples e complexos têm atributos definidos pelo cliente que podem ser exibidos na loja. Estes atributos são retornados como [ProductViewAttributes](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/#productviewattribute-type). No Adobe Commerce, os atributos disponíveis são definidos quando o produto é criado. Você pode adicionar atributos adicionais do back-end do Adobe Commerce ou de forma programática. Consulte [Estender e personalizar dados do feed de exportação de dados SaaS](../data-export/extensibility-and-customizations.md).
@@ -143,7 +155,7 @@ O Serviço de catálogo garante atualizações de preços e cálculos precisos, 
 
 O processo de implementação envolve:
 
-1. [!BADGE Somente PaaS]{type=Informative url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."} **[Instalar e configurar o Serviço de Catálogo](installation.md)**—Instale e configure a extensão Serviço de Catálogo e configure a conexão SaaS usando o [!DNL Commerce Services Connector].
+1. [!BADGE Somente PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."} **[Instalar e configurar o Serviço de Catálogo](installation.md)**—Instale e configure a extensão Serviço de Catálogo e configure a conexão SaaS usando o [!DNL Commerce Services Connector].
 1. **Atualizar código de vitrine**: integre consultas GraphQL do Serviço de Catálogo ao seu front-end.
 1. **Consultas de rota**: todas as consultas do Serviço de catálogo passam pelo gateway do GraphQL (URL fornecida durante a integração)
 1. **Monitorar e solucionar problemas de sincronização de dados**: verifique o desempenho aprimorado e monitore os resultados
