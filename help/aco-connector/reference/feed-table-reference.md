@@ -1,33 +1,42 @@
 ---
 title: Referência do esquema da tabela do feed
-description: Saiba mais sobre o esquema de tabela de feed usado pelo  [!DNL Adobe Commerce Optimizer Connector]  para rastrear o estado do item de feed, o status de exportação e os detalhes do erro.
+description: Saiba mais sobre o esquema de tabela de feed usado pelo [!DNL Adobe Commerce Optimizer Connector] para rastrear o estado do item de feed, o status de exportação e os detalhes do erro.
 autotag-review: '2026-06-23T00:00:00.000Z'
 role: Admin, Developer
 feature: Integration, Configuration
 badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+    internal-label: Data management
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 19de20caafd45e3a00896d0d4b29b7e96dfe94e1
+    internal-label: Data integration
+source-git-commit: 2dbf2b973af0cb7b831a17ca1a868a81b11bc9ee
 workflow-type: tm+mt
-source-wordcount: 324
+source-wordcount: '325'
 ht-degree: 0%
-
 ---
-
 
 # Referência de esquema de tabela de feed
 
@@ -112,5 +121,5 @@ WHERE JSON_UNQUOTE(JSON_EXTRACT(f.feed_data, '$.priceBookId'))  IN ('<PRICE_BOOK
 >
 >- [Módulos de conector e pontos de extremidade de feed](connector-reference.md)
 >- [Pipeline de sincronização do conector](../connector-sync-pipeline.md)
->- [Gerenciar sincronização](../data-sync-manage.md)
+>- [Gerenciar sincronização](../data-sync-status.md)
 >- [Mapeamento de campos para feeds de conector](field-mapping.md)

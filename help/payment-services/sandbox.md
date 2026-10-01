@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install, Paas, Saas
-source-git-commit: 569877d92c66246cfd61cd56b8eae9b5c1284ace
+source-git-commit: fc9fb7a63e4e7c3dd862ed710acdfa8561c91ec5
 workflow-type: tm+mt
 source-wordcount: '778'
 ht-degree: 0%
@@ -57,9 +57,9 @@ Para concluir a integração da sandbox:
 
    Quando a integração da sandbox do PayPal for aprovada, você deverá ver uma notificação informando que o sistema de pagamento está no modo de sandbox e não está processando pagamentos em tempo real.
 
-   >[!IMPORTANT]
-   >
-   >Se você revogar o consentimento de [!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magento Open Source] para o processamento de seus pagamentos (nas configurações de sua conta do PayPal), os pedidos em seu armazenamento não poderão ser processados por [!DNL Payment Services]. Na página inicial dos Serviços de pagamento, é exibido um alerta sobre o consentimento revogado. Para ignorar o alerta, clique em **[!UICONTROL Do not show again]**.
+>[!IMPORTANT]
+>
+>Se você revogar o consentimento de [!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magento Open Source] para o processamento de seus pagamentos (nas configurações de sua conta do PayPal), os pedidos em seu armazenamento não poderão ser processados por [!DNL Payment Services]. Na página inicial dos Serviços de pagamento, é exibido um alerta sobre o consentimento revogado. Para ignorar o alerta, clique em **[!UICONTROL Do not show again]**.
 
 ### Redefinir sua conta de sandbox
 
@@ -102,9 +102,9 @@ Para configurar o país do Comprador:
 
 1. Clique em **[!UICONTROL Save Config]** para salvar suas alterações.
 
->[!NOTE]
->
->A configuração **[!UICONTROL Buyer's country]** aparece somente quando o método está definido como `Sandbox`. Isso não afeta os ambientes de produção.
+   >[!NOTE]
+   >
+   >A configuração **[!UICONTROL Buyer's country]** aparece somente quando o método está definido como `Sandbox`. Isso não afeta os ambientes de produção.
 
 ## Teste em ambiente de sandbox
 

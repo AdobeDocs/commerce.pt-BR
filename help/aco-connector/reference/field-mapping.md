@@ -1,6 +1,6 @@
 ---
-title: Mapeamento de campos para  [!DNL Adobe Commerce Optimizer Connector] Feeds
-description: Saiba mais sobre o  [!DNL Adobe Commerce Optimizer Connector] mapeamento de campos de  [!DNL Adobe Commerce] dados de catálogo para  [!DNL Adobe Commerce Optimizer] formatos de API de assimilação para todos os feeds.
+title: Mapeamento de campos para Feeds [!DNL Adobe Commerce Optimizer Connector]
+description: Saiba mais sobre o mapeamento de campos [!DNL Adobe Commerce Optimizer Connector] dos dados do catálogo [!DNL Adobe Commerce] para os formatos de API de assimilação [!DNL Adobe Commerce Optimizer] para todos os feeds.
 role: Admin, Developer
 feature: Integration, Configuration
 badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
@@ -8,29 +8,40 @@ autotag-review: '2026-06-09T15:49:03.934Z'
 TQID: 'https://experienceleague.adobe.com/SOWOnguudhqzX-r66nGUqc-WKet5qq6GRV11ADx0Me4'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+    internal-label: Data modeling
+source-git-commit: 9c2d0f1c3342d87b1e95a789b905f4a383bc8f5f
 workflow-type: tm+mt
-source-wordcount: 665
-ht-degree: 0%
-
+source-wordcount: '731'
+ht-degree: 3%
 ---
-
 
 # Mapeamento de campos para feeds de conector
 
@@ -56,6 +67,7 @@ O feed `products` envia dados para o [ponto de extremidade de produtos](https://
 | `metaKeyword` | `metaTags/keywords` | String delimitada por nova linha dividida em matriz |
 | `inStock`, `lowStock`, `weight`, `weightUnit` | `attributes[].code = "aco_ac_attributes"` | Objeto codificado em JSON `{inStock, lowStock, weight, weightType}`; sempre presente como a primeira entrada de atributo |
 | `attributes[]` | `attributes[]` | Cada entrada mapeada para `{code, values[], variantReferenceId}`; `inStock`, `lowStock`, `weight`, `weightType` são excluídas (entram em `aco_ac_attributes`) |
+| `(synthesized)` | `attributes[].code = "ac_assortments"` | Matriz de IDs numéricas dos catálogos compartilhados personalizados aos quais o produto pertence, desduplicadas e classificadas. Somente produtos no catálogo público não têm esse atributo. As políticas de [!DNL Commerce Optimizer] filtram neste atributo para impor a classificação de exibição de catálogo privado. |
 | `images[]` | `images[]` | `url`, `label`; funções padrão mapeadas: `image`→`BASE`, `small_image`→`SMALL`, `thumbnail`→`THUMBNAIL`, `swatch_image`→`SWATCH`; funções fora do padrão vão para `customRoles[]` |
 | `categoryData[].categoryPath` | `routes[].path` | |
 | `categoryData[].productPosition` | `routes[].position` | |

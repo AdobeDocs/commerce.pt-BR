@@ -1,9 +1,8 @@
 ---
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+source-git-commit: a3ade1a31d3c2905b601f71bda118de89c43cf59
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '708'
 ht-degree: 0%
-
 ---
 # Commerce snippets
 
@@ -20,6 +19,11 @@ ht-degree: 0%
 >
 >Sempre conecte instâncias do sandbox Otimizer a ambientes de não produção e instâncias de produção a ambientes de produção. Ambientes incompatíveis causam dados de catálogo inconsistentes, resultados de pesquisa e recomendações.
 
+## Nota de processamento da sincronização de dados do Adobe Commerce Optimizer {#aco-data-sync-processing-note}
+
+>[!IMPORTANT]
+>
+>O processamento da sincronização de dados é iniciado em segundo plano assim que você conclui a configuração. Dependendo do tamanho do catálogo, o processo de sincronização de dados pode levar de alguns minutos a várias horas.
 
 ## Serviços de merchandising para o Otimizer {#aco-merchandising-services}
 
@@ -110,3 +114,13 @@ O [!DNL Adobe Commerce Optimizer] funciona com as versões mais recentes da inte
 >[!IMPORTANT]
 >
 >A ferramenta de migração de dados em massa está atualmente em Acesso antecipado. O acesso é fornecido exclusivamente por meio do processo de contrato do Commerce Deployment Engineering (CDE). Para obter uma visão geral da ferramenta e seus requisitos de qualificação, consulte [Ferramenta de migração de dados em massa](../cloud-service/migration/bulk-data/migration-tool.md).
+
+## Instalar links de extensão {#install-extension-links}
+
+>[!NOTE]
+>
+>Para obter instruções detalhadas sobre a instalação de extensões, consulte os guias a seguir:
+>
+>[Instalar extensão em [!DNL Adobe Commerce] na Infraestrutura em Nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/configure-store/extensions)
+>
+>[Instalar extensão em [!DNL Adobe Commerce] no local](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/installation-guide/tutorials/extensions)
