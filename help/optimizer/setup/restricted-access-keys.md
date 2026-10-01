@@ -1,35 +1,48 @@
 ---
 title: Teclas de acesso restrito
-description: Saiba como criar, atribuir e girar chaves de acesso restrito para proteger exibições de catálogo no  [!DNL Adobe Commerce Optimizer]  com autenticação de token assinado.
+description: Saiba como as chaves de acesso restrito protegem exibições de catálogo no [!DNL Adobe Commerce Optimizer], criadas automaticamente para catálogos compartilhados B2B ou gerenciadas manualmente.
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente ao Adobe Commerce as a Cloud Service e a projetos [!DNL Adobe Commerce Optimizer] (infraestrutura SaaS gerenciada pela Adobe)."
 TQID: https://experienceleague.adobe.com/Jmze0Pq3kSNMIXqkkML-hmmlZnv-XKgeEgRB8Q8NZ6s
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+    internal-label: Architecture
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 nudge: true
-source-git-commit: 688bc6e28a4c5a94b1fe55c84f7c05401dd651bc
+source-git-commit: f93bd673624c58050696da772ce733874ce594e5
 workflow-type: tm+mt
-source-wordcount: 791
+source-wordcount: '1251'
 ht-degree: 0%
-
 ---
-
 # Chaves de acesso restrito
 
-As chaves de acesso restrito permitem que aplicativos clientes autorizados acessem uma [exibição de catálogo privado](catalog-view.md). Somente as solicitações que carregam um token assinado válido de uma chave atribuída podem recuperar dados de catálogo. Todas as outras solicitações são negadas, incluindo as de compradores anônimos, compradores que não receberam acesso explícito a essa visualização de catálogo e scripts que sondam a API.
+As chaves de acesso restrito permitem que aplicativos clientes autorizados acessem uma [exibição de catálogo privado](catalog-view.md). Somente as solicitações que carregam um token assinado válido de uma chave atribuída podem recuperar dados de catálogo. Todas as outras solicitações são negadas, incluindo as de compradores que não receberam acesso explicitamente a essa visualização de catálogo e scripts que sondam a API.
+
+As chaves de acesso restrito são provisionadas de uma das duas formas a seguir:
+
+- [!BADGE Private Beta]{type=Caution tooltip="Requer a extensão B2B do Adobe Commerce Optimizer Connector, que atualmente está em beta privado."} **Automaticamente, para catálogos compartilhados B2B**—Para implantações integradas ao [!DNL Adobe Commerce Optimizer Connector for B2B], o conector provisiona e atribui a chave inicial. Em seguida, gerencie as chaves e a atribuição de chaves do administrador do Commerce. Consulte [Autenticação de exibição de catálogo](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage) no *Guia de Administração do Commerce**.
+
+- **Manualmente, para qualquer exibição de catálogo**—Para proteger uma exibição de catálogo por conta própria—por exemplo, para um portal de parceiro ou pré-lançamento—siga as etapas deste tópico, começando com [Criar uma chave de acesso restrita](#create-a-restricted-access-key).
 
 ## Casos de uso da chave de acesso restrito
 
@@ -37,19 +50,15 @@ Em [!DNL Adobe Commerce Optimizer], **[!UICONTROL Price Book ID]** determina qua
 
 As chaves de acesso restrito são normalmente usadas para:
 
-- **Preços B2B com base em contrato**—Restrinja uma exibição de catálogo vinculada a um catálogo de preços negociado para que somente o comprador ao qual ele se aplica possa consultá-lo. Outras organizações compradoras e o público não podem.
+- **Preços B2B com base em contrato**—Restrinja uma exibição de catálogo vinculada a um catálogo de preços negociado para que somente o comprador ao qual ele se aplica possa consultá-lo. Outras organizações compradoras e o público não podem. Para catálogos compartilhados B2B, isso é configurado automaticamente. Consulte [Rotação e gerenciamento de chaves](#key-management-and-rotation).
 - **Portais para parceiros e revendedores** — limite um subconjunto do catálogo para parceiros aprovados que se integram diretamente com a API de merchandising.
 - **Pré-visualizações de pré-lançamento** — Permita que um sistema interno ou de parceiros confiável visualize os produtos futuros antes que eles sejam visíveis publicamente.
 
->[!IMPORTANT]
->
->Atualmente, a geração de chaves, a assinatura de tokens e a rotação são totalmente gerenciadas pelo aplicativo cliente de back-end que autentica os compradores. [!DNL Adobe Commerce Optimizer] não gera nem gira essas chaves em seu nome.
-
 ## Como funcionam as teclas de acesso restrito
 
-Uma chave de acesso restrito é o componente público de um par de chaves RSA. O aplicativo cliente gera e usa essa chave para comprovar que está autorizado a ler uma visualização de catálogo privado. Neste contexto, &quot;aplicativo cliente&quot; significa o sistema de back-end que autentica compradores - por exemplo, lógica personalizada em [!DNL Adobe Commerce] ou um back-end de terceiros - nunca o front-end da loja em si.
+Uma chave de acesso restrito é o componente público de um par de chaves RSA. O aplicativo cliente gera e usa essa chave para comprovar que está autorizado a ler uma visualização de catálogo privado. Neste contexto, o _aplicativo cliente_ refere-se ao sistema de back-end que autentica compradores - por exemplo, lógica personalizada em [!DNL Adobe Commerce] ou um back-end de terceiros - nunca o próprio front-end da loja.
 
-As etapas a seguir descrevem como um par de chaves e um token assinado mudam da criação para a validação:
+As etapas a seguir descrevem como um par de chaves e um token assinado mudam de criação para validação para exibições de catálogo que não fazem parte de um catálogo compartilhado B2B.
 
 1. O aplicativo cliente gera um par de chaves RSA e mantém a chave privada.
 1. Você registra a chave **pública** em [!DNL Commerce Optimizer] como uma chave de acesso restrito.
@@ -58,7 +67,11 @@ As etapas a seguir descrevem como um par de chaves e um token assinado mudam da 
 
 ## Criar uma chave de acesso restrito
 
-Para testes iniciais de exibições de catálogos privados, gere um par de chaves usando uma ferramenta como o [!DNL OpenSSL]. Manter a chave privada em segredo — somente a chave pública é carregada para [!DNL Commerce Optimizer].
+>[!NOTE]
+>
+>Esta seção e as três seguintes descrevem o fluxo manual do [!DNL Adobe Commerce Optimizer] Studio. Se você usa catálogos compartilhados B2B com o [!DNL Adobe Commerce Optimizer Connector B2B extension], gerencie as chaves do Administrador do Commerce. Consulte [Chaves de Acesso Restrito](../../aco-connector/restricted-access-keys.md) na documentação do _Adobe Commerce Optimizer Connector_.
+
+Para testes iniciais de exibições de catálogos privados, gere um par de chaves usando uma ferramenta como o [!DNL OpenSSL]. Mantenha a chave privada em segredo. Somente a chave pública é carregada para [!DNL Commerce Optimizer].
 
 ```bash
 openssl genrsa -out private-key.pem 2048
@@ -89,7 +102,7 @@ As chaves são imutáveis após a criação. Para alterar qualquer valor, exclua
 
 ## Atribuir uma chave a uma exibição de catálogo
 
-Uma chave de acesso restrito só restringe o acesso depois de ser atribuída a uma exibição de catálogo com o **[!UICONTROL Catalog Protection]** habilitado. Consulte [Proteger uma exibição de catálogo](private-catalog-view.md#protect-a-catalog-view) para obter etapas de configuração.
+Uma chave de acesso restrito só autentica o acesso depois de ter sido atribuída a uma exibição de catálogo com o **[!UICONTROL Catalog Protection]** habilitado. Consulte [Proteger uma exibição de catálogo](private-catalog-view.md#protect-a-catalog-view) para obter etapas de configuração.
 
 ## Excluir uma chave
 
@@ -99,7 +112,19 @@ Uma chave de acesso restrito só restringe o acesso depois de ser atribuída a u
 
 1. Confirme a exclusão.
 
-## Girar uma chave
+## Gerenciamento e rotação de chaves
+
+As chaves de acesso restrito são gerenciadas de uma das duas formas a seguir, dependendo de como você usa a proteção de catálogo:
+
+- **Automaticamente, para catálogos compartilhados B2B**—[!BADGE Private Beta]{type=Caution tooltip="Requer a extensão B2B do Adobe Commerce Optimizer Connector, que atualmente está em beta privado."} Para implantações integradas ao [!DNL Adobe Commerce Optimizer Connector for B2B], o serviço gera e atribui automaticamente a primeira chave de acesso restrito quando uma exibição de catálogo é criada. Cada exibição de catálogo recebe sua própria chave. Depois disso, você poderá gerenciar cada chave das páginas Catálogo Compartilhado ou Conta da Empresa. Você também pode exibir e gerenciar chaves da página **Chaves de Acesso Restrito** do Administrador do Commerce (**Sistema** > **Transferência de Dados**). Consulte [Gerenciar configuração de exibição do catálogo](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage).
+
+  Cada combinação de um catálogo compartilhado e uma exibição de loja à qual está atribuído é projetada como uma exibição de catálogo separada. Uma projeção são os dados de configuração de exibição de catálogo, política, referência de catálogo de preços e chave de acesso restrito que o conector exporta para [!DNL Adobe Commerce Optimizer] para essa combinação. Assim, um catálogo compartilhado atribuído a várias exibições de loja produz várias exibições de catálogo, cada uma com sua própria chave. Editar ou girar uma chave para uma exibição de catálogo sem afetar as outras.
+
+  As chaves assumem como padrão um longo período de expiração. Se precisar girar uma chave, adicione a substituição no Admin e mantenha ambas ativas até remover a antiga. Consulte [Alterações no catálogo compartilhado B2B](/help/aco-connector/get-started.md#monitor-b2b-shared-catalog-changes).
+
+- **Manualmente, para qualquer exibição de catálogo** — Para exibições de catálogo não associadas a um catálogo compartilhado B2B no back-end do Adobe Commerce, a geração de chaves, a assinatura de token e a rotação são gerenciadas inteiramente pelo aplicativo cliente back-end que autentica compradores. [!DNL Adobe Commerce Optimizer] não gera nem gira essas chaves em seu nome. Use as etapas anteriores neste tópico para criar, adicionar e excluir chaves. Para girar uma chave, consulte [Girar uma chave](#rotate-a-key).
+
+### Girar uma chave
 
 Para girar uma chave sem uma interrupção de acesso, observe que uma exibição de catálogo pode ter até três chaves atribuídas de uma só vez:
 
@@ -115,4 +140,5 @@ Consulte [Limites de política e exibições de catálogo](../boundaries-limits.
 ## Veja mais aqui
 
 - [Exibições de catálogo privado](private-catalog-view.md) — Saiba como proteger uma exibição de catálogo com chaves de acesso restritas.
+- [Alterações no catálogo compartilhado B2B](/help/aco-connector/get-started.md#monitor-b2b-shared-catalog-changes)—Saiba como o [!DNL Adobe Commerce Optimizer Connector] automatiza o gerenciamento de chaves para catálogos compartilhados B2B.
 

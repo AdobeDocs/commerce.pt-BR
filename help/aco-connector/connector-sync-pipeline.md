@@ -1,39 +1,51 @@
 ---
 title: Pipeline de sincronização de catálogo
-description: Saiba como o pipeline de sincronização  [!DNL Adobe Commerce Optimizer Connector]  funciona, incluindo transformação de feed, agendamentos cron, controle de escopo e tratamento de erros.
+description: Saiba como o pipeline de sincronização do [!DNL Adobe Commerce Optimizer Connector] funciona, incluindo transformação de feed, agendamentos cron, controle de escopo e tratamento de erros.
 feature: Integration, Configuration
-badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
+badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
 autotag-review: '2026-06-09T16:21:52.214Z'
 TQID: 'https://experienceleague.adobe.com/EXUQzAd0I6Hnq4twzhaBZZnv0jLjeGBuTx-QgQz-5MA'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
 feature_v2:
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: addc3a3a-2b1c-4fdf-aea4-4b1eb2931ba6
+    internal-label: Data pipelines
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+    internal-label: Data integration
+source-git-commit: 2dbf2b973af0cb7b831a17ca1a868a81b11bc9ee
 workflow-type: tm+mt
-source-wordcount: 673
+source-wordcount: '674'
 ht-degree: 1%
-
 ---
-
 # Pipeline de sincronização do conector
 
-Criado em [[!DNL SaaS Data Export]](https://experienceleague.adobe.com/pt-br/docs/commerce/saas-data-export/overview), o **[!DNL Adobe Commerce Optimizer Connector]** mapeia os dados coletados pelos indexadores [!DNL SaaS Data Export] para o formato exigido pelo [!DNL Adobe Commerce Optimizer] [!DNL Catalog Data Ingestion API] e manipula a autenticação, o envio em lote e o controle de sincronização baseado em escopo. As seções abaixo descrevem como essa sincronização funciona.
+Criado em [[!DNL SaaS Data Export]](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview), o **[!DNL Adobe Commerce Optimizer Connector]** mapeia os dados coletados pelos indexadores [!DNL SaaS Data Export] para o formato exigido pelo [!DNL Adobe Commerce Optimizer] [!DNL Catalog Data Ingestion API] e manipula a autenticação, o envio em lote e o controle de sincronização baseado em escopo. As seções abaixo descrevem como essa sincronização funciona.
 
 Contexto relacionado:
 
@@ -70,7 +82,7 @@ A extensão **[!DNL SaaS Data Export]** lida com a coleta de feeds e o rastreame
 
 #### Requisitos
 
-- [cron do Commerce deve estar em execução](https://experienceleague.adobe.com/pt-br/docs/experience-cloud-kcs/kbarticles/ka-39832){target="_blank"}.
+- [cron do Commerce deve estar em execução](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-39832){target="_blank"}.
 - Os indexadores de feed devem usar o modo **[!UICONTROL Update by Schedule]**. Consulte [Sincronização parcial](../data-export/sync-overview.md#partial-sync){target="_blank"}.
 
 ## Controle de sincronização baseado em escopo
@@ -93,7 +105,7 @@ Para obter detalhes sobre como personalizar o escopo de sincronização, consult
 | Falhas transitórias | Repetido a cada 5 minutos |
 | Sincronização completa ou catálogos grandes | Minutos a horas |
 
-Monitorar status por feed da página [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) no Administrador do Commerce. Consulte [Verificar se a sincronização de dados está funcionando](./data-sync-manage.md#verify-that-the-data-sync-is-working).
+Monitorar status por feed da página [[!UICONTROL Data Feed Sync Status]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) no Administrador do Commerce. Consulte [Verificar se a sincronização de dados está funcionando](./data-sync-status.md#verify-that-the-data-sync-is-working).
 
 ## Envio de feed e tratamento de erros
 

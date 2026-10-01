@@ -1,6 +1,6 @@
 ---
 title: Lista de verificação do Launch
-description: Saiba como validar a configuração, a vitrine, o SEO, a CDN, as integrações, a segurança, a análise e os testes para a produção do  [!DNL Adobe Commerce Optimizer] .
+description: Saiba como validar a configuração, a loja, o SEO, a CDN, as integrações, a segurança, a análise e os testes para a produção do [!DNL Adobe Commerce Optimizer].
 autotag-review: '2026-06-17T15:08:59.000Z'
 solution: Commerce
 feature: Integration, Storefront, Search, Catalog Management, Personalization
@@ -9,30 +9,38 @@ role: Admin, Developer
 level: Intermediate
 topic: Administration
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente ao Adobe Commerce as a Cloud Service e a projetos [!DNL Adobe Commerce Optimizer] (infraestrutura SaaS gerenciada pela Adobe)."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
   - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
 subfeature_v2:
   - id: ae62cf09-5996-4921-bda8-fbe67b62e470
+    internal-label: Storefront configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 2e7e0f2fb340220d3fe1f13af1f62ef58957aa35
+    internal-label: Implementation
+source-git-commit: 1009ae28286a8503511c85726bf44922c7c2575e
 workflow-type: tm+mt
-source-wordcount: 2309
+source-wordcount: '2311'
 ht-degree: 0%
-
 ---
-
 
 # Lista de verificação de inicialização
 
@@ -55,11 +63,11 @@ A solução geralmente inclui estes componentes:
 
 Confirme se o ambiente do Adobe Commerce na nuvem está pronto para produção.
 
-▢ A instância da nuvem está [provisionada](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/start/new-project).
+▢ A instância da nuvem está [provisionada](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/new-project).
 ▢ Os dados de teste e fictícios foram removidos da instância.
 ▢ Dados de produção carregados na instância.
 ▢ Você conhece o [ponto de extremidade do GraphQL](https://developer.adobe.com/commerce/webapi/graphql/).
-▢ A instância atende aos requisitos de [pronto para inicialização](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/launch/checklist).
+▢ A instância atende aos requisitos de [pronto para inicialização](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/launch/checklist).
 
 ## Verificar instância do Commerce Optimizer {#verify-optimizer}
 
@@ -92,7 +100,7 @@ Conclua essas verificações no projeto na nuvem.
 ▢ O conector do Commerce Optimizer está [instalado e configurado](../../aco-connector/get-started.md).
 ▢ O comando da CLI `aco:conf:show` confirma a conexão com a instância do Commerce Optimizer de produção. A ID da organização, a ID do cliente, o URL de assimilação e o URL da Commerce Optimizer correspondem à produção.
 ▢ Os escopos de sincronização na [Configuração de exportação](../../aco-connector/get-started.md) correspondem aos seus requisitos.
-▢ [Status de sincronização do feed de dados](../../aco-connector/data-sync-manage.md) confirma a exportação de dados da instância da nuvem.
+▢ [Status de sincronização do feed de dados](../../aco-connector/data-sync-status.md) confirma a exportação de dados da instância da nuvem.
 
 ### No Commerce Optimizer
 
@@ -156,7 +164,7 @@ Confirme a configuração de extensibilidade para produção.
 
 ▢ O espaço de trabalho de produção inclui todas as configurações e serviços necessários.
 ▢ O aplicativo de produção passa no teste em cenários de compilação.
-▢ Os limites e limites do produto foram revisados e confirmados com base na [descrição do produto Adobe Developer App Builder](https://helpx.adobe.com/br/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"} e nas [configurações e limitações do sistema App Builder](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}.
+▢ Os limites e limites do produto foram revisados e confirmados com base na [descrição do produto Adobe Developer App Builder](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html){target="_blank"} e nas [configurações e limitações do sistema App Builder](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings){target="_blank"}.
 ▢ O aplicativo de produção usa pontos de extremidade de produção do App Builder.
 ▢ extensões personalizadas do painel *Admin* são implantadas no espaço de trabalho de produção.
 
@@ -181,7 +189,7 @@ Confirme o fluxo de trabalho de criação e os componentes da loja.
 ▢ O conteúdo é publicado usando o ciclo visualizar → publicar.
 ▢ Controle de qualidade de conteúdo e design concluído no domínio `.aem.live`.
 ▢ Um favicon está configurado e é distribuído corretamente pelo site.
-▢ da.live e os visuais de produto usam [credenciais dedicadas &#x200B;](https://docs.da.live/administrators/guides/permissions) configuradas.
+▢ da.live e os visuais de produto usam [credenciais dedicadas ](https://docs.da.live/administrators/guides/permissions) configuradas.
 ▢ Os drop-ins (carrinho, check-out, PDP, PLP, autenticação, conta) foram [personalizados](../storefront.md) e testados.
 A marca da Loja ▢ reflete os tokens de design CSS, tipografia e cores.
 
@@ -225,7 +233,7 @@ A implementação do ▢ [Eventos da vitrine](https://github.com/adobe/commerce-
 Confirme permissões e segredos.
 
 ▢ Permissões apropriadas estão configuradas para conteúdo do DA e sites do EDS. Consulte [Permissões do DA.live](https://da.live/docs/administration/permissions) e [Configuração de autenticação para criação](https://www.aem.live/docs/authentication-setup-authoring).
-▢ A integração dos visuais de produto foi provisionada. Consulte [Visão geral sobre acesso ao AEM Cloud Service](https://experienceleague.adobe.com/pt-br/docs/experience-manager-learn/cloud-service/accessing/overview#).
+▢ A integração dos visuais de produto foi provisionada. Consulte [Visão geral sobre acesso ao AEM Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview#).
 ▢ Os links para redefinição de senha em modelos de email correspondem à configuração do Edge Delivery Services. Consulte as perguntas frequentes da loja: [O que devo fazer se meus links de modelo de email forem quebrados após migrar para o Edge Delivery Services ou Helix?](https://experienceleague.adobe.com/en/tools/commerce-storefront/troubleshooting/faq/#what-should-i-do-if-my-email-template-links-are-broken-after-migrating-to-edge-delivery-services-or-helix){target="_blank"}.
 ▢ As chaves de produção para integrações e provedores de pagamento estão em vigor.
 ▢ Domínios são resolvidos e webhooks de back-end funcionam.
