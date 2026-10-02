@@ -3,9 +3,9 @@ title: Notas de versão da Integração do AEM Assets
 description: Revise as notas de versão para obter informações sobre todas as versões da Integração do AEM Assets.
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: a0b269f6d4b709dd0aed4c23264928f28b2f5d98
+source-git-commit: e8b87b4622bf41f6340bf7ddd0f208512e9b09c7
 workflow-type: tm+mt
-source-wordcount: '1784'
+source-wordcount: '1738'
 ht-degree: 0%
 ---
 # Notas de versão da Integração do AEM Assets
@@ -42,11 +42,11 @@ _18 de setembro de 2026_
 
 [!BADGE Com Suporte]{type=Informative tooltip="Compatível"} no Adobe Commerce versão 2.4.5 e posteriores.
 
-![Correção de um problema](../assets/fix.svg)<!-- Issue ACAP-1317 --> Correção de um problema em que o arquivo `workspace.json` carregado para [correspondência automática personalizada](synchronize/custom-match.md) não persistia corretamente quando o Salvamento de Configuração Assíncrona do Commerce estava habilitado. Anteriormente, a solicitação de administrador enfileirava somente os metadados do upload, em vez do conteúdo do arquivo. Portanto, quando o consumidor de configuração assíncrono processava o salvamento, o arquivo de upload temporário não podia mais ser lido. Como resultado, a configuração parecia ser salva com sucesso, enquanto os valores de OAuth do App Builder permaneciam inalterados. As credenciais do App Builder carregadas agora sobrevivem ao limite da fila e são processadas corretamente pelo consumidor assíncrono.
+![Correção de um problema](../assets/fix.svg)<!-- Issue ACAP-1317 -->. Correção de um problema em que salvar a configuração **[!UICONTROL AEM Assets Integration]**, incluindo seu carregamento `workspace.json`, com o `Commerce Async Config Save` (introduzido no Adobe Commerce 2.4.7) habilitado, não era possível registrar ou atualizar o locatário com o ARES. A configuração pareceu ser salva com sucesso, mas os valores de OAuth do App Builder permaneceram inalterados. As credenciais carregadas agora são processadas corretamente pelo consumidor assíncrono.
 
 >[!IMPORTANT]
 >
->Se você usar uma correspondência personalizada com a opção Salvar Configuração Assíncrona habilitada, carregue novamente seu arquivo `workspace.json` depois de atualizar para esta versão. Para obter instruções de upload, consulte [Salvar configuração assíncrona](synchronize/custom-match.md#async-config-save).
+>Se você usar uma correspondência personalizada com o Salvamento de Configuração Assíncrono habilitado, carregue novamente seu arquivo `workspace.json` depois da atualização. Para obter instruções, consulte [Salvar configuração assíncrona](synchronize/custom-match.md#async-config-save).
 
 ## v1.4.6
 
