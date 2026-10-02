@@ -165,10 +165,10 @@ Itens com um `urlPath` vazio (categorias de raiz lógica) são ignorados e nunca
 | `image` | `images[].url` | Matriz de elemento único; `roles: ["BASE"]` |
 | `isActive` + `includeInMenu` | `families` | `["top_menu"]` quando ambos `true`, `[]` caso contrário |
 
-|0} | `metaTags/keywords` | Divide as palavras-chave delimitadas por nova linha em uma matriz e elimina os espaços em branco. `metaKeywords`|
-|0} | `images[].url` | Quando `image` está presente, exporta uma imagem com a função `BASE`. `image`Exporta uma matriz vazia quando a imagem está vazia ou ausente. |
+|0&rbrace; | `metaTags/keywords` | Divide as palavras-chave delimitadas por nova linha em uma matriz e elimina os espaços em branco. `metaKeywords`|
+|0&rbrace; | `images[].url` | Quando `image` está presente, exporta uma imagem com a função `BASE`. `image`Exporta uma matriz vazia quando a imagem está vazia ou ausente. |
 | `isActive` + `includeInMenu` | `families` | Adiciona `top_menu` somente quando ambos os valores são `true`. Caso contrário, exporta uma matriz vazia. |
-|0} | `attributes[]` | Exporta entradas com um `attributeCode` não vazio como `{code, values[]}`. `attributes[]`Converte valores em cadeias de caracteres. Omite `attributes` quando não existem entradas qualificadas. |
+|0&rbrace; | `attributes[]` | Exporta entradas com um `attributeCode` não vazio como `{code, values[]}`. `attributes[]`Converte valores em cadeias de caracteres. Omite `attributes` quando não existem entradas qualificadas. |
 
 >[!MORELIKETHIS]
 >
