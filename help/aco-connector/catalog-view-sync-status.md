@@ -66,7 +66,7 @@ Na guia [!UICONTROL Catalog View], cada linha representa uma exibição de catá
 | **Retirando** | Você excluiu o catálogo compartilhado em [!DNL Adobe Commerce]. A visualização do catálogo ainda pode ser acessada até que o período de carência de exclusão expire. O período de carência padrão é de sete dias. Você pode modificar o padrão atualizando as [configurações de sincronização de exibição de catálogo](#configure-aco-catalog-view-sync-settings). |
 | **Órfão** | A exibição ou chave do catálogo foi criada diretamente no [!DNL Adobe Commerce Optimizer] Studio, não pelo conector. Consulte [Revisar entradas órfãs e excluídas](#review-orphaned-and-deleted-entries). |
 
-[!UICONTROL Healthy], [!UICONTROL Pending] e [!UICONTROL Deleted] são estados informativos que não exigem ação. Consulte [Valores de status de sincronização](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/catalog-view-sync-status#sync-status-values){target="_blank"} no *Guia de Administração do Commerce* para obter a lista completa.
+[!UICONTROL Healthy], [!UICONTROL Pending] e [!UICONTROL Deleted] são estados informativos que não exigem ação. Consulte [Valores de status de sincronização](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/catalog-view-sync-status#sync-status-values){target="_blank"} no *Guia de Administração do Commerce* para obter a lista completa.
 
 ### Definir configurações de sincronização de exibição de catálogo ACO {#configure-aco-catalog-view-sync-settings}
 
