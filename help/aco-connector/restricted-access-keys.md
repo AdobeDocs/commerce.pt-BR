@@ -60,7 +60,7 @@ Você pode atribuir uma chave à exibição de catálogo na grade Catálogo Comp
 
 >[!NOTE]
 >
->Para obter uma referência dos campos desta página, [Gerenciamento de Chaves de Acesso Restrito](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} no *Guia de Administração do Commerce*.—>
+>Para obter uma referência dos campos desta página, [Gerenciamento de Chaves de Acesso Restrito](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} no *Guia de Administração do Commerce*.—>
 
 ## Quando você precisar de mais do que a chave automática {#when-you-need-more-than-the-automatic-key}
 
@@ -159,7 +159,7 @@ A rotação de chaves automática ainda não está disponível.
 
 >[!MORELIKETHIS]
 >
-> - [Gerenciar chaves de acesso restrito](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} — Referência de campo completa para esta página, no *Guia de Administração do Commerce* —>
+> - [Gerenciar chaves de acesso restrito](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} — Referência de campo completa para esta página, no *Guia de Administração do Commerce* —>
 > - [Monitorar sincronização de exibição de catálogo](catalog-view-sync-status.md) — Monitore as exibições de catálogo que essas chaves protegem
 > - [Exibições de catálogo privado](/help/optimizer/setup/private-catalog-view.md) — Saiba o que é uma exibição de catálogo privado gerenciada por conector
 > - [Chaves de acesso restrito](/help/optimizer/setup/restricted-access-keys.md) — Saiba como funciona o fluxo de chaves manual baseado no ACO Studio para casos de uso que não são B2B
