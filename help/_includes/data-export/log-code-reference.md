@@ -1,9 +1,8 @@
 ---
-source-git-commit: 7d6fa8fa8a93d7d89ca97885f1b9363667a22c7e
+source-git-commit: 04077b9bb408ac858d87e008c9ef9b1317aafc2c
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '507'
 ht-degree: 0%
-
 ---
 # Referência de códigos de log do MDEE
 
@@ -130,3 +129,6 @@ Códigos de log relacionados a erros durante o processo de indexação ou devido
 | CDE04-19 | aviso | `CDE04-19 The identifier for a feed item is empty. Sync is skipped for the entity.` |
 | CDE04-20 | aviso | `CDE04-20 Unexpected call: feed "{feed_name}" is not locked, trace: {stack_trace}` |
 | CDE04-21 | erro | `CDE04-21 Failed to clean up deleted feed items for feed "{feed_name}". Error: {error_message}` |
+| CDE04-22 | erro | `CDE04-22 IndexerStatusManager: unable to remove mview triggers for disabled indexer "{indexer_code}": {error_message}` |
+| CDE04-23 | erro | `CDE04-23 IndexerStatusManager: unable to restore mview triggers for indexer "{indexer_code}": {error_message}` |
+| CDE04-24 | erro | `CDE04-24 IndexerStatusManager: unable to truncate index table "{logical_table}": {error_message}` |
