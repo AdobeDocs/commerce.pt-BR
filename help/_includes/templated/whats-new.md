@@ -1,7 +1,7 @@
 ---
-source-git-commit: b4bbb596143bdcbb8c55a26386db7a36e2961db9
+source-git-commit: c751dca1a7620b45068a7820054a842b50837bcd
 workflow-type: tm+mt
-source-wordcount: '1093'
+source-wordcount: '1277'
 ht-degree: 1%
 ---
 # Modelo de novidades
@@ -9,6 +9,116 @@ ht-degree: 1%
 ## Novidades
 
 Esta página contém as alterações feitas nos últimos 60 dias. Excluímos todas as atualizações secundárias, como a edição de cópia, desta lista.
+
+### 5 de outubro de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Atualização da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">Referência de códigos de log da Exportação de Dados</a> do <a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">log-codes.md de origem</a> mais recente.</p>
+</td>
+      <td>
+        Técnico
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1c4e1f93d81397b7fe9e4667203448866076a475">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 1 de outubro de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Guia do Conector do Adobe Commerce Optimizer<br />Adição de documentação para o Conector do Adobe Commerce Optimizer para B2B:<br />- Atualização de <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aco-optimizer-connector/overview">[!DNL Adobe Commerce Optimizer Connector]</a> e <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aco-optimizer-connector/get-started/get-started">Configuração do conector para Adobe Commerce</a> para informações de referência cruzada sobre a configuração do conector para Commerce B2B.<br />- Adição do tópico <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aco-optimizer-connector/b2b-shared-catalog-projection">Projeção do catálogo compartilhado B2B</a> para explicar como os catálogos compartilhados do Commerce B2B do Adobe são sincronizados com [!DNL Adobe Commerce Optimizer].<br />- Adição de <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aco-optimizer-connector/get-started/get-started-b2b-shared-catalogs">Configuração do conector para Commerce B2B</a> para descrever a instalação da extensão e a validação da sincronização.<br />- Adição de novos tópicos para <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aco-optimizer-connector/manage-sync/catalog-view-sync/catalog-view-sync-status">sincronização de exibição de catálogo de monitoramento</a> e <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aco-optimizer-connector/manage-sync/catalog-view-sync/restricted-access-keys">gerenciamento de chaves de acesso restrito</a> para Adobe B2B Commerce.<br />Guia do Usuário do Adobe Commerce Optimizer<br />- Atualizado <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/setup/private-catalog-view">Exibições de catálogo privado</a> e <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/setup/restricted-access-keys">Chaves de acesso restrito</a> para descrever o provisionamento automático de chaves e exibições de catálogo para catálogos compartilhados B2B, juntamente com o fluxo manual existente.</p>
+</td>
+      <td>
+        Atualização importante, novo tópico
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/479c14c5f7da567510e344364b0b721ad73eba6f">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 30 de setembro de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Foram adicionadas informações sobre como exportar <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/saas-data-export/data-synchronization/custom-product-types">tipos de produto personalizados</a>.</p>
+</td>
+      <td>
+        Novo tópico
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/2564e6acca899868795e73346d66964c59b0a56c">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 29 de setembro de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adição das <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/release-notes">notas de versão</a> da Sandbox para o Adobe Commerce as a Cloud Service.</p>
+</td>
+      <td>
+        Atualização importante
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/b1524825387c1d5fe061bdadf76f27b2f614879d">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 28 de setembro de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adicionada a capacidade de manter <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aem-assets-integration/synchronize/custom-match">funções personalizadas de imagens do AEM</a> durante a sincronização. Além disso, adicionou a capacidade do Adobe Commerce de <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aem-assets-integration/get-started/check-for-updates">verificar se há atualizações de extensão da Integração do AEM Assets de forma assíncrona</a>.</p>
+</td>
+      <td>
+        Atualização importante
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/44272d96ca697d54cbbfbb9ed5a045da94652d75">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 25 de setembro de 2026
 
@@ -308,116 +418,6 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
         Atualização importante
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/c88ec8730e24220b6dfd32da406d1ba3fd3a2ef2">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 5 de agosto de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Atualização da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/migration/overview">visão geral da migração</a> com o fluxo de migração atualizado usando a Ferramenta de avaliação de migração, o Commerce Developer MCP e o Serviço de migração de dados da Commerce.</p>
-</td>
-      <td>
-        Atualização importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/2a0d741c141a4d122b0a068f3a1e7c435d86fd75">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 4 de agosto de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Novo <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/catalog-service/integration/catalog-events-guide">Guia de integração de eventos de catálogo e Adobe I/O</a> explica como habilitar eventos de catálogo, verificar a exportação e a sincronização de feed da Exportação de dados SaaS e integrar com o Adobe I/O Events.</p>
-</td>
-      <td>
-        Atualização importante, novo tópico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/719b6661370f1e639fafb2a89bc1a906a20df37b">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 30 de julho de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Atualização da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/payment-services/compatibility#standard-vs-advanced-payment-services-experience">tabela de Compatibilidade de Serviços de Pagamento para serviços Padrão</a> para refletir a disponibilidade geográfica mais ampla e para expandir os detalhes de países com suporte para a oferta avançada.</p>
-</td>
-      <td>
-        Feedback
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/b667dfd60809e55bc82cecc8c4f7df60483eecba">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 29 de julho de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Atualização das <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/release-notes">notas de versão</a> do Adobe Commerce as a Cloud Service para produção.</p>
-</td>
-      <td>
-        Atualização importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/1f91b5535d30ac894531508278b19d961f5a9d2c">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 28 de julho de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Atualização da documentação da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/migration/migration-tools/bulk-data/migration-tool">Ferramenta de migração de dados em massa</a> com mais informações sobre o processo de migração.</p>
-</td>
-      <td>
-        Atualização importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/c8cab2404d47a6cb4a0418a59b533bf11e082b0b">confirmar</a></td>
     </tr>
   </tbody>
 </table>
