@@ -3,9 +3,9 @@ title: Notas de versão da Integração do AEM Assets
 description: Revise as notas de versão para obter informações sobre todas as versões da Integração do AEM Assets.
 feature: CMS, Media, Release Notes
 exl-id: 0d639565-812f-481a-afd6-6e6fa54ed70e
-source-git-commit: e8b87b4622bf41f6340bf7ddd0f208512e9b09c7
+source-git-commit: 36e6db0c76b0946c28d1a76d5649757c7f244058
 workflow-type: tm+mt
-source-wordcount: '1738'
+source-wordcount: '1847'
 ht-degree: 0%
 ---
 # Notas de versão da Integração do AEM Assets
@@ -35,6 +35,22 @@ _11 de fevereiro de 2025_
 ![Novo problema](../assets/new.svg) Agora, os comerciantes podem sincronizar imagens para produtos e categorias.
 
 +++
+
+## v1.4.9
+
+_7 de outubro de 2026_
+
+[!BADGE Com Suporte]{type=Informative tooltip="Compatível"} no Adobe Commerce versão 2.4.5 e posteriores.
+
+![Correção de um problema](../assets/fix.svg)<!-- Issue CCSAAS-5562 --> Correção de um problema intermitente em que a criação de uma categoria no Administrador exibia um erro `Deprecated Functionality` porque `null` era usado como um deslocamento de matriz. Agora, o formulário **Nova categoria** é carregado sem o aviso de substituição, e as categorias podem ser criadas com êxito.
+
+## v1.4.8
+
+_5 de outubro de 2026_
+
+[!BADGE Com Suporte]{type=Informative tooltip="Compatível"} no Adobe Commerce versão 2.4.5 e posteriores.
+
+![Correção de um problema](../assets/fix.svg)<!-- Issue ACAP-1339 --> Correção de um problema em que imagens de categoria do AEM Assets não eram exportadas para o catálogo ou retornadas em respostas do GraphQL quando o AEM Assets era o Proprietário da visualização. Para exportar a imagem, reatribua o ativo do AEM à categoria depois de aplicar a correção.
 
 ## v1.4.7
 
