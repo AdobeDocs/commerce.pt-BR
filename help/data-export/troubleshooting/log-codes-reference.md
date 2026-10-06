@@ -1,5 +1,5 @@
 ---
-title: '[!Data Exportar] Referência a Códigos de Log'
+title: '[ !Data Exportar] Referência a Códigos de Log'
 description: Lista de referência para códigos, mensagens e níveis de gravidade do log de exportação de dados para solucionar problemas de sincronização e decidir quando uma ressincronização parcial ou completa é necessária.
 autotag-review: '2026-06-17T15:08:59.000Z'
 feature: Services
