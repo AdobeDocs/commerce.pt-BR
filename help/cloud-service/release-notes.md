@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: 6a2300d65c9c77d18813c2eb491bfd02d1fca8ba
+source-git-commit: d4f896450e74c62db575ce9798cf27737466eb07
 workflow-type: tm+mt
-source-wordcount: '7581'
+source-wordcount: '8005'
 ht-degree: 0%
 ---
 # Notas de versão
@@ -129,6 +129,38 @@ Agora é possível aplicar um desconto de envio arbitrário a um carrinho por me
 
 Use `POST /V1/carts/:cartId/shipping-discount` para definir o desconto. É necessário acesso de administrador ou nível de integração para usar este endpoint. <!-- ACCS-1156 -->
 
+### Adicionar itens ao carrinho a um preço personalizado
+
+Agora é possível definir um preço personalizado em um item do carrinho adicionando o atributo de extensão `custom_price` aos pontos de extremidade REST padrão adicionar ou atualizar item do carrinho (`POST /V1/carts/:cartId/items` e `PUT /V1/carts/:cartId/items/:itemId`). Você deve fornecer um token de administrador ou integração para definir um preço personalizado. As solicitações com um preço negativo ou um tipo de produto não compatível, como um produto combinado com preços dinâmicos, são rejeitadas. <!-- ACCS-1155 -->
+
+```json
+{
+  "cartItem": {
+    "sku": "t-shirt",
+    "qty": 1,
+    "quote_id": 17,
+    "extension_attributes": { "custom_price": 15.00 }
+  }
+}
+```
+
+Os pontos de extremidade `GET /V1/carts/:cartId` e `GET /V1/carts/:cartId/items` também retornam o valor `custom_price`.
+
+### Isolar carrinhos criados pelo administrador dos carrinhos de vitrine
+
+Um recurso de aceitação, desativado por padrão, isola os carrinhos que os administradores e as integrações podem criar por meio da API REST do carrinho de vitrine ativo do cliente. Quando habilitado, o `POST /V1/customers/:customerId/carts` sempre cria um novo carrinho inativo que os chamadores de administração e integração podem gerenciar pelos pontos de extremidade REST do carrinho sem alterar o carrinho da loja do comprador. <!-- ACCS-1153 -->
+
+Para ativá-lo, entre em contato com o Gerente de sucesso do cliente da Adobe Commerce ou crie um tíquete de suporte.
+
+### Enviar emails transacionais por meio de plataformas de terceiros
+
+Os novos eventos permitem enviar emails transacionais de uma plataforma de email de terceiros, como [!DNL Salesforce Marketing Cloud], até [!DNL App Builder]. Inscrever-se nos seguintes eventos por meio de [!DNL Adobe I/O Events]: <!-- ACCS-1929 -->
+
+* `observer.customer_balance_save_after` - Um saldo de crédito de armazenamento foi salvo. Adicione uma regra de assinatura em que `notify_by_email` seja igual a `1` para receber um email de notificação de crédito por loja.
+* `observer.giftcard_item_email_send_after` - Um email de cartão-presente é enviado para um item do pedido. A carga inclui todos os códigos de cartão-presente do item.
+* `plugin.customer.api.account_management.activate` - Um cliente confirma sua conta.
+* `plugin.negotiable_quote.api.negotiable_quote_management.decline` - Cotação negociável recusada.
+
 ### Melhorias e correções de erros
 
 Os seguintes aprimoramentos, otimizações e correções de erros selecionados estão incluídos nesta versão:
@@ -152,6 +184,22 @@ Os seguintes aprimoramentos, otimizações e correções de erros selecionados e
 * Correção de um problema em que a solicitação de preços ou totais do carrinho podia retornar um erro quando o carrinho continha um item indisponível. <!-- CEXT-6776 -->
 
 * Solução de um problema em que o consumidor de inventário poderia sobrecarregar a fila de mensagens ao tentar encontrar uma SKU ausente. <!-- ACCS-1976 -->
+
+* A consulta do GraphQL `customerDownloadableProducts` agora retorna metadados de arquivo para produtos baixáveis configurados com uma URL externa, para que as vitrines possam determinar o tipo de arquivo e se o ativo deve ser aberto ou baixado. <!-- ACCS-1735 -->
+
+* A consulta do GraphQL `sourceAvailability` agora aplica permissões de catálogo e categoria compartilhadas B2B, de modo que os compradores recebem estoque por origem somente para produtos que têm permissão para ver. <!-- ACCS-1888 -->
+
+* Correção de um problema em que os clientes não podiam definir uma senha no link do email de boas-vindas e os clientes recém-criados não apareciam na grade do cliente [!DNL Commerce Admin]. <!-- ACCS-1979 -->
+
+* Correção de um problema em que os pedidos editados por meio da API REST de edição de pedido podiam salvar itens com o preço errado. <!-- ACCS-1982 -->
+
+* Correção de um problema em que os produtos removidos do catálogo compartilhado de uma empresa permaneciam visíveis na loja e eram silenciosamente descartados do carrinho. <!-- CCSAAS-5544 -->
+
+* Correção de um problema em que um produto de catálogo compartilhado em uma categoria negada ao grupo de clientes aparecia na loja, mas não podia ser adicionado ao carrinho. Uma permissão de negação de categoria agora tem prioridade sobre a associação ao catálogo compartilhado. <!-- CCSAAS-5549 -->
+
+* Correção de um problema em que fazer um pedido por meio do GraphQL poderia retornar um erro quando um item de imposto de remessa não tinha um título. <!-- CCSAAS-5552 -->
+
+* Correção de um problema em que o ponto de extremidade REST `GET /V1/customers/:customerId/companyRoles` retornava permissões vazias para um administrador de empresa. <!-- ACCS-1998 -->
 
 {{accs-release}}
 
