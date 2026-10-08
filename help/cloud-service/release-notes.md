@@ -49,9 +49,9 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
 last-update: 2026-08-07
-source-git-commit: d4f896450e74c62db575ce9798cf27737466eb07
+source-git-commit: dee10a97e03a115bcd758171082061e95bb6adcc
 workflow-type: tm+mt
-source-wordcount: '8005'
+source-wordcount: '8102'
 ht-degree: 0%
 ---
 # Notas de versão
@@ -64,11 +64,11 @@ As notas de versão a seguir contêm atualizações para [!DNL Adobe Commerce as
 
 ## Outubro de 2026 - versão #1 {#latest}
 
-[!BADGE Sandbox]{type=Caution tooltip="Os itens listados estão disponíveis atualmente apenas em ambientes de sandbox. A Adobe disponibiliza novas versões em ambientes de sandbox primeiro para fornecer tempo para testar alterações futuras antes que a versão esteja disponível em ambientes de produção."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Produção]{type=Neutral tooltip="Os itens listados estão disponíveis atualmente em Ambientes de produção."}
 
-Os itens a seguir serão adicionados aos ambientes de produção em 6 de outubro de 2026.
+Os itens a seguir foram lançados para ambientes de produção em 7 de outubro de 2026.
 
 >[!BEGINSHADEBOX]
 
@@ -78,7 +78,7 @@ A carga de webhook `plugin.out_of_process_shipping_methods.api.shipping_rate_rep
 
 ### Gerenciar regras de preço de catálogo em REST
 
-Os novos pontos de extremidade da REST API permitem que as integrações gerenciem e pesquisem [regras de preço de catálogo](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog) de forma programática. <!-- ACCS-1621 -->
+Os novos [pontos de extremidade de API REST](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/catalog-price-rules) permitem que as integrações gerenciem e pesquisem [regras de preço de catálogo](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/marketing/promotions/catalog-rules/price-rules-catalog) de forma programática. <!-- ACCS-1621 -->
 
 Os pontos de extremidade a seguir estão protegidos pela permissão `Magento_CatalogRule::promo_catalog`, que também protege a tela Regra de Preço do Catálogo de Administração. É necessário acesso de administrador ou nível de integração para usar este endpoint.
 
@@ -125,13 +125,13 @@ Agora você pode definir a hora do dia para uma [regra de preço de catálogo](h
 
 ### Aplicar descontos de envio personalizados por meio da API REST do administrador
 
-Agora é possível aplicar um desconto de envio arbitrário a um carrinho por meio da API REST de administração, para casos que não se encaixam em uma regra de preço de carrinho.
+Agora você pode aplicar um [desconto de envio](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/shipping-discounts) arbitrário a um carrinho por meio da API REST de administração, para casos que não se encaixam em uma regra de preço de carrinho.
 
 Use `POST /V1/carts/:cartId/shipping-discount` para definir o desconto. É necessário acesso de administrador ou nível de integração para usar este endpoint. <!-- ACCS-1156 -->
 
 ### Adicionar itens ao carrinho a um preço personalizado
 
-Agora é possível definir um preço personalizado em um item do carrinho adicionando o atributo de extensão `custom_price` aos pontos de extremidade REST padrão adicionar ou atualizar item do carrinho (`POST /V1/carts/:cartId/items` e `PUT /V1/carts/:cartId/items/:itemId`). Você deve fornecer um token de administrador ou integração para definir um preço personalizado. As solicitações com um preço negativo ou um tipo de produto não compatível, como um produto combinado com preços dinâmicos, são rejeitadas. <!-- ACCS-1155 -->
+Agora é possível definir um [preço personalizado em um item de carrinho](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/cart-custom-price) adicionando o atributo de extensão `custom_price` aos pontos de extremidade REST padrão adicionar ou atualizar item de carrinho (`POST /V1/carts/:cartId/items` e `PUT /V1/carts/:cartId/items/:itemId`). Você deve fornecer um token de administrador ou integração para definir um preço personalizado. As solicitações com um preço negativo ou um tipo de produto não compatível, como um produto combinado com preços dinâmicos, são rejeitadas. <!-- ACCS-1155 -->
 
 ```json
 {
@@ -161,6 +161,10 @@ Os novos eventos permitem enviar emails transacionais de uma plataforma de email
 * `plugin.customer.api.account_management.activate` - Um cliente confirma sua conta.
 * `plugin.negotiable_quote.api.negotiable_quote_management.decline` - Cotação negociável recusada.
 
+### Limites de API em massa
+
+A [API em massa](https://developer.adobe.com/commerce/webapi/rest/use-rest/bulk-endpoints) agora impõe um número máximo de entidades por solicitação. As solicitações que excedem o limite retornam um erro. O campo [!UICONTROL Maximum Entities Per Bulk Request] não configurável na [Referência de Configuração](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/bulk-api) mostra o limite. Para obter mais informações, consulte [Segurança de API](https://developer.adobe.com/commerce/webapi/get-started/api-security#input-limit-for-rest-endpoints). <!-- ACCS-703 -->
+
 ### Melhorias e correções de erros
 
 Os seguintes aprimoramentos, otimizações e correções de erros selecionados estão incluídos nesta versão:
@@ -168,8 +172,6 @@ Os seguintes aprimoramentos, otimizações e correções de erros selecionados e
 * O [!DNL Commerce Admin] agora exibe um aviso ao criar ou editar um webhook que inclui o cabeçalho `X-OW-EXTRA-LOGGING` do Adobe I/O Runtime definido como `on`. O cabeçalho é destinado à depuração e não é recomendado na produção. <!-- CCSAAS-5486 -->
 
 * Os arquivos carregados por meio de URLs de upload S3 pré-assinados agora têm verificações adicionais de malware. <!-- ACCS-1463 -->
-
-* A API em massa agora impõe um número máximo de entidades por solicitação. As solicitações que excedem o limite retornam um erro. <!-- ACCS-703 -->
 
 * Correção de um problema em que a quantidade comercializável podia ser reportada incorretamente para produtos, o que poderia bloquear as verificações de adição ao carrinho, REST e estoque da GraphQL. <!-- ACCS-1908 -->
 
@@ -217,7 +219,7 @@ Os itens a seguir foram adicionados aos ambientes de Produção em 22 de setembr
 
 ### Anexar arquivos e imagens para retornar solicitações
 
-Os clientes agora podem carregar arquivos e imagens ao enviar uma solicitação de retorno por meio da mutação do GraphQL [`requestReturn`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/mutations/request-return/#request-a-return-with-an-image-attachment) da vitrine. Use as [`initiateUpload` e `finishUpload` mutações](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/) para carregar o arquivo e atribuir a chave retornada a um atributo personalizado de item de retorno. <!-- CCSAAS-5410 -->
+Os clientes agora podem carregar arquivos e imagens ao enviar uma solicitação de retorno por meio da mutação do GraphQL [`requestReturn`](https://developer.adobe.com/commerce/webapi/graphql/schema/orders/mutations/request-return/#request-a-return-with-an-image-attachment) da vitrine. Use a [`initiateUpload` mutação](https://developer.adobe.com/commerce/webapi/graphql/schema/uploads/mutations/initiate-upload#recaptcha-validation) para carregar o arquivo e atribuir a chave retornada a um atributo personalizado de item de retorno. <!-- CCSAAS-5410 -->
 
 ### Controlar aparência da origem do inventário
 

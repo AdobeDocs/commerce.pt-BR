@@ -1,15 +1,13 @@
 ---
 title: Acompanhando suas remessas em [!DNL Payment Services]
-description: Personalizar [!DNL Payment Services] informações de remessa e rastreamento exibidas no Painel do Comerciante do Paypal.
+description: Personalizar as informações de rastreamento e remessas de [!DNL Payment Services] exibidas no Painel do Comerciante do Paypal.
 feature: Payments, Paas, Saas
 exl-id: 17aede1f-56ae-441a-b723-3193e865e469
 source-git-commit: 5271668c99e7a66fbe857cd3ae26edfa54211621
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '228'
 ht-degree: 0%
-
 ---
-
 # Acompanhando suas remessas em [!DNL Payment Services]
 
 O [!DNL Payment Services] permite que os comerciantes vejam as informações de rastreamento de uma remessa no Painel do Comerciante do PayPal.
