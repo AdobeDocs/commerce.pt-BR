@@ -1,7 +1,7 @@
 ---
-source-git-commit: c751dca1a7620b45068a7820054a842b50837bcd
+source-git-commit: b12fd59e97279b78017bee0403a7e7672adb1957
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1113'
 ht-degree: 1%
 ---
 # Modelo de novidades
@@ -9,6 +9,50 @@ ht-degree: 1%
 ## Novidades
 
 Esta página contém as alterações feitas nos últimos 60 dias. Excluímos todas as atualizações secundárias, como a edição de cópia, desta lista.
+
+### 8 de outubro de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adicionadas as <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/release-notes">notas de versão</a> de produção para o Adobe Commerce as a Cloud Service.</p>
+</td>
+      <td>
+        Atualização importante
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/a1aed1cc8a66473e936836aef6a2dee4085c8b3f">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 7 de outubro de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adição de uma nova seção sobre como filtrar recomendações com base em <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/recommendations/filters#attributes">atributos de produto</a>.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/16e5c6a7caf2e541bace72b3eb4898eabb13e24a">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 5 de outubro de 2026
 
@@ -374,50 +418,6 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
         Novo tópico
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e18c82a81c49de8175a8a8d77e9a191fe2af4b46">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 10 de agosto de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Atualização do Guia de Instalação do Adobe Commerce Optimizer com instruções para habilitar e configurar exibições de catálogos privados para restringir o acesso aos dados de catálogo com tokens assinados, e atualização de tópicos relacionados para fazer referência ao novo recurso:<br />- Adição de <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/setup/private-catalog-view">Exibições de catálogo privado</a>, que explica como habilitar a Proteção de Catálogo para que somente solicitações com um token assinado válido possam recuperar os dados de uma exibição de catálogo.<br />- Adição de <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/setup/restricted-access-keys">Chaves de acesso restrito</a>, que explica como criar, atribuir e girar as chaves usadas para assinar tokens para a Proteção de Catálogo.<br />- Atualização de <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/setup/catalog-view">Exibições de catálogo</a>, <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/overview">O que é Adobe Commerce Optimizer?</a>, <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/get-started">Introdução</a>, <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/boundaries-limits">Limites e limites</a>, <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/launch/launch-checklist">Lista de verificação do Launch</a> e o <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/aco-optimizer-connector/overview">Guia do Conector Adobe Commerce Optimizer</a> para fazer referência aos novos tópicos Exibições de catálogo privado e Chaves de acesso restritas.</p>
-</td>
-      <td>
-        Atualização importante, novo tópico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/de0de805f8ecd4f329ce3afc90e28197186856c2">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 7 de agosto de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Adição das <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/release-notes">notas de versão</a> da Sandbox para o Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Atualização importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/c88ec8730e24220b6dfd32da406d1ba3fd3a2ef2">confirmar</a></td>
     </tr>
   </tbody>
 </table>

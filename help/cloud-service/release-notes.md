@@ -163,7 +163,7 @@ Os novos eventos permitem enviar emails transacionais de uma plataforma de email
 
 ### Limites de API em massa
 
-A [API em massa](https://developer.adobe.com/commerce/webapi/rest/use-rest/bulk-endpoints) agora impõe um número máximo de entidades por solicitação. As solicitações que excedem o limite retornam um erro. O campo [!UICONTROL Maximum Entities Per Bulk Request] não configurável na [Referência de Configuração](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/bulk-api) mostra o limite. Para obter mais informações, consulte [Segurança de API](https://developer.adobe.com/commerce/webapi/get-started/api-security#input-limit-for-rest-endpoints). <!-- ACCS-703 -->
+A [API em massa](https://developer.adobe.com/commerce/webapi/rest/use-rest/bulk-endpoints) agora impõe um número máximo de entidades por solicitação. As solicitações que excedem o limite retornam um erro. O campo [!UICONTROL Maximum Entities Per Bulk Request] não configurável na [Referência de Configuração](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/config/general/bulk-api) mostra o limite. Para obter mais informações, consulte [Segurança de API](https://developer.adobe.com/commerce/webapi/get-started/api-security#input-limit-for-rest-endpoints). <!-- ACCS-703 -->
 
 ### Melhorias e correções de erros
 
