@@ -61,7 +61,7 @@ Se esses campos estiverem vazios, você deverá [concluir a integração global]
 
 ## Iniciar a conexão no nível do site
 
-1. Na barra lateral _Admin_, vá para **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Sales]**e escolha **[!UICONTROL Payment Methods]**.
+1. Na barra lateral _Admin_, vá para **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Sales]**&#x200B;e escolha **[!UICONTROL Payment Methods]**.
 1. No seletor de escopo, no canto superior esquerdo, alterne de **[!UICONTROL Default Config]** para o **[!UICONTROL Website]** que deseja integrar.
 1. Clique em **[!UICONTROL Connect different account]**.
 
