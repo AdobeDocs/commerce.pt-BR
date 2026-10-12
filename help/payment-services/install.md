@@ -5,13 +5,28 @@ exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade, Paas
 badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
-source-git-commit: 18f6be542e84f1769a91867c4d54ca3cde3c0ac1
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 0%
-
 ---
-
 # Instalar [!DNL Payment Services]
 
 Para começar a usar os Serviços de Pagamento para [!DNL Adobe Commerce] e [!DNL Magento Open Source], você deve concluir algumas etapas de integração.
@@ -140,7 +155,7 @@ Se você vir o seguinte erro que indica que você tem as chaves do Composer inco
 Could not find a matching version of package magento/payment-services. Check the package spelling, your version constraint and that the package is available in a stability which matches your minimum-stability (stable).
 ```
 
-Verifique se as chaves do Composer são válidas e se você tem acesso a outros pacotes do Magento.
+Verifique se as chaves do Composer são válidas e se você tem acesso a outros pacotes da Magento.
 
 Para ver quais chaves do Composer estão configuradas:
 
