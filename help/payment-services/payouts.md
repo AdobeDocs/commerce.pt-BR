@@ -5,13 +5,29 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout, Paas, Saas
-source-git-commit: 73814f5ac5d53399131263f47e170e612643e903
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '1356'
 ht-degree: 0%
-
 ---
-
 # Relatório de pagamentos
 
 O [!DNL Payment Services] for [!DNL Adobe Commerce] e [!DNL Magento Open Source] oferece relatórios abrangentes para você ter uma visão clara das transações, ordens e pagamentos da sua loja.
@@ -31,7 +47,7 @@ Você pode [baixar transações de pagamento](#download-transactions) em um form
 
 >[!NOTE]
 >
->Os relatórios de pagamentos mostram apenas pedidos capturados (a ação de pagamento está definida como [`Authorize and Capture`](production.md#set-payment-services-as-payment-method)) ou [marcados como `Invoiced`](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
+>Os relatórios de pagamentos mostram apenas pedidos capturados (a ação de pagamento está definida como [`Authorize and Capture`](production.md#set-payment-services-as-payment-method)) ou [marcados como `Invoiced`](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice).
 
 ## Visualização de visualização de dados de pagamentos
 
@@ -73,7 +89,7 @@ A visualização de visualização de dados dos Pagamentos inclui as seguintes i
 
 A visualização de relatório Pagamentos está disponível na visualização Pagamentos dos Serviços de pagamento. Ele inclui todas as informações disponíveis sobre pagamentos para sua(s) loja(s).
 
-Na barra lateral _Admin_, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**&#x200B;para ver a exibição detalhada do relatório de Pagamentos em tabelas.
+Na barra lateral _Admin_, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**para ver a exibição detalhada do relatório de Pagamentos em tabelas.
 
 ![Transações de pagamento no Administrador](assets/payouts-report-new.png){width="800" zoomable="yes"}
 
@@ -93,12 +109,12 @@ Na exibição de relatório de Pagamentos, você pode selecionar a fonte de dado
 
 ![Seleção de fontes de dados](assets/datasource.png){width="300" zoomable="yes"}
 
-Se _[!UICONTROL Live]_&#x200B;for a fonte de dados selecionada, você poderá ver informações do relatório de armazenamentos no modo de produção. Se&#x200B;_[!UICONTROL Sandbox]_ for a fonte de dados selecionada, você poderá ver os armazenamentos de informações do relatório no modo sandbox.
+Se _[!UICONTROL Live]_for a fonte de dados selecionada, você poderá ver informações do relatório de armazenamentos no modo de produção. Se_[!UICONTROL Sandbox]_ for a fonte de dados selecionada, você poderá ver os armazenamentos de informações do relatório no modo sandbox.
 
 As seleções de fonte de dados funcionam da seguinte maneira:
 
-* Se você não tiver armazenamentos que estejam no modo Online, a seleção da fonte de dados assumirá _[!UICONTROL Sandbox]_&#x200B;como padrão.
-* Se você tiver armazenamentos (um ou vários) no modo Online, a seleção da fonte de dados assumirá _[!UICONTROL Live]_&#x200B;como padrão.
+* Se você não tiver armazenamentos que estejam no modo Online, a seleção da fonte de dados assumirá _[!UICONTROL Sandbox]_como padrão.
+* Se você tiver armazenamentos (um ou vários) no modo Online, a seleção da fonte de dados assumirá _[!UICONTROL Live]_como padrão.
 * As exportações de relatórios sempre seguem a seleção da fonte de dados.
 
 Para selecionar a origem de dados para o relatório de Status de Pagamento da Ordem:
@@ -159,7 +175,7 @@ Os relatórios de pagamento incluem as seguintes informações.
 | [!UICONTROL Code] | Código de transação que indica Crédito (*CR*) ou Débito (*DR*) |
 | [!UICONTROL Reference ID] | ID da transação original para a qual este evento está relacionado |
 | [!UICONTROL Invoice] | ID da fatura (uma por pedido) da transação |
-| [!UICONTROL Commerce order] | ID do pedido Commerce <br> <br>Para ver as [informações do pedido](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/order-management/orders/orders) relacionadas, clique na ID. |
+| [!UICONTROL Commerce order] | ID do pedido Commerce <br> <br>Para ver as [informações do pedido](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders) relacionadas, clique na ID. |
 | [!UICONTROL Commerce trans] | ID de transação do Commerce |
 | [!UICONTROL Pay method] | Tipo de cartão de crédito—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*—e provedor de cartão associado (como *Visa* ou *MasterCard*) |
 | [!UICONTROL TRANS AMT] | Valor da transação |

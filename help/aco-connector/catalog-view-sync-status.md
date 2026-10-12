@@ -1,10 +1,10 @@
 ---
 title: Monitorar sincronização de exibição de catálogo para catálogos compartilhados B2B
-last-update: 2026-09-03
+last-update: 2026-09-03T00:00:00.000Z
 description: Use a página Status de Sincronização da View de Catálogo para monitorar e reconciliar a view de catálogo, a política, a referência de catálogo de preços e os dados-chave de configuração sincronizados com o Adobe Commerce Optimizer.
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
+badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -19,6 +19,8 @@ feature_v2:
     internal-label: Integrations
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
     internal-label: Admin tools and workspace
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: a40ebd6b-b542-4432-a730-1803ef74518d
     internal-label: Data Transfer
@@ -35,7 +37,7 @@ topic_v2:
     internal-label: Data management
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: 1fd5e3d84d5249ce96014cae46e045528d2790d0
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '1046'
 ht-degree: 0%
@@ -66,7 +68,7 @@ Na guia [!UICONTROL Catalog View], cada linha representa uma exibição de catá
 | **Retirando** | Você excluiu o catálogo compartilhado em [!DNL Adobe Commerce]. A visualização do catálogo ainda pode ser acessada até que o período de carência de exclusão expire. O período de carência padrão é de sete dias. Você pode modificar o padrão atualizando as [configurações de sincronização de exibição de catálogo](#configure-aco-catalog-view-sync-settings). |
 | **Órfão** | A exibição ou chave do catálogo foi criada diretamente no [!DNL Adobe Commerce Optimizer] Studio, não pelo conector. Consulte [Revisar entradas órfãs e excluídas](#review-orphaned-and-deleted-entries). |
 
-[!UICONTROL Healthy], [!UICONTROL Pending] e [!UICONTROL Deleted] são estados informativos que não exigem ação. Consulte [Valores de status de sincronização](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/catalog-view-sync-status#sync-status-values){target="_blank"} no *Guia de Administração do Commerce* para obter a lista completa.
+[!UICONTROL Healthy], [!UICONTROL Pending] e [!UICONTROL Deleted] são estados informativos que não exigem ação. Consulte [Valores de status de sincronização](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/catalog-view-sync-status#sync-status-values){target="_blank"} no *Guia de Administração do Commerce* para obter a lista completa.
 
 ### Definir configurações de sincronização de exibição de catálogo ACO {#configure-aco-catalog-view-sync-settings}
 

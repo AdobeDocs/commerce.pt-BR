@@ -2,13 +2,27 @@
 title: Instalar e acessar [!DNL App Management]
 description: Pré-requisitos e requisitos de acesso para usar o Adobe Commerce [!DNL App Management].
 feature: App Builder, Extensibility, Integration
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 72863f3c-9d27-5dda-afe1-d9f934b1fba0
+    internal-label: Extensibility
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+    internal-label: App Builder
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%
-
 ---
-
 # Instalar e acessar [!DNL App Management]
 
 [!DNL App Management] está disponível no Administrador do Commerce para instâncias do Commerce qualificadas. A disponibilidade depende do tipo de implantação.
@@ -66,7 +80,7 @@ A visualização [!DNL App Management] é exibida. Aqui, você pode associar, co
 
 ## Instalação de aplicativos do App Builder
 
-Se você precisar instalar um aplicativo do App Builder da Adobe Exchange (por exemplo, um aplicativo de integração ou marketplace pré-criado), consulte [Instalar aplicativos do App Builder da Adobe Exchange](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/install-app-builder-app){target="_blank"} para obter instruções passo a passo.
+Se você precisar instalar um aplicativo do App Builder da Adobe Exchange (por exemplo, um aplicativo de integração ou marketplace pré-criado), consulte [Instalar aplicativos do App Builder da Adobe Exchange](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/install-app-builder-app){target="_blank"} para obter instruções passo a passo.
 
 Depois que um aplicativo for instalado e implantado, use o [!DNL App Management] para [associá-lo à sua instância do Commerce](manage-app.md#associate-an-app) e definir suas configurações.
 
@@ -74,7 +88,7 @@ Depois que um aplicativo for instalado e implantado, use o [!DNL App Management]
 
 Alguns aplicativos do App Builder usam [webhooks do Adobe Commerce](https://developer.adobe.com/commerce/extensibility/webhooks/) para que o Commerce possa chamar seu aplicativo por HTTP quando determinados eventos ocorrerem (por exemplo, depois que um produto for salvo). Os pontos de extremidade e a lógica de assinatura do Webhook são definidos pelo **desenvolvedor de aplicativos** quando o aplicativo é criado e implantado; os administradores de loja não configuram webhooks separadamente no Gerenciamento de Aplicativos.
 
-Depois de [associar o aplicativo](https://experienceleague.adobe.com/pt-br/docs/commerce/app-management/manage-app/manage-app) à sua instância do Commerce e concluir as instruções de configuração do aplicativo, o comportamento de webhook segue a implementação do aplicativo.
+Depois de [associar o aplicativo](https://experienceleague.adobe.com/en/docs/commerce/app-management/manage-app/manage-app) à sua instância do Commerce e concluir as instruções de configuração do aplicativo, o comportamento de webhook segue a implementação do aplicativo.
 
 Se [!DNL App Management] não puder acionar o ponto de extremidade de validação do aplicativo (por exemplo, a URL está inacessível ou a resposta não atende aos requisitos), você poderá ver um erro semelhante ao seguinte no painel [!DNL App Management]:
 

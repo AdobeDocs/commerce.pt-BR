@@ -4,34 +4,43 @@ description: Saiba quais dados cada evento de back office captura.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: 65cf8150-1a14-4d4c-aa0c-1545109e4fe7
-TQID: https://experienceleague.adobe.com/ARHjckt-D38iqChgfJpiVGXO8Pz2YN6Oj5HFWmwCVEA
+TQID: 'https://experienceleague.adobe.com/ARHjckt-D38iqChgfJpiVGXO8Pz2YN6Oj5HFWmwCVEA'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: c1256247-af4b-46d8-9dca-0c654ecfa157
+    internal-label: Order Management System
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: 5594f40c-5dc7-522f-a0e0-f84045197b3c
+    internal-label: Eventing
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+    internal-label: Personalization
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 3716
+source-wordcount: '3716'
 ht-degree: 0%
-
 ---
-
 # [!DNL Data Connection] Eventos de Back Office
 
 Veja a seguir uma lista dos eventos de back office do Commerce disponíveis quando você instala a extensão [!DNL Data Connection]. Os dados que esses eventos coletam são enviados para a Adobe Experience Platform. Você também pode criar [eventos personalizados](custom-events.md) para coletar dados adicionais não fornecidos imediatamente.
 
-Além dos dados coletados pelos eventos a seguir, você também obtém [outros dados](https://experienceleague.adobe.com/pt-br/docs/experience-platform/collection/js/js-overview) fornecidos pelo Adobe Experience Platform Web SDK.
+Além dos dados coletados pelos eventos a seguir, você também obtém [outros dados](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview) fornecidos pelo Adobe Experience Platform Web SDK.
 
 Os eventos de back office contêm dados do lado do servidor. Estes dados incluem [status do pedido](#order-status) informações como se um pedido foi feito, cancelado, reembolsado, remetido ou concluído. Os dados do lado do servidor também incluem [informações sobre eventos de perfil do cliente](#customer-profile-events), como se uma conta foi criada, atualizada ou excluída.
 
 >[!NOTE]
 >
->Todos os eventos de back office incluem o campo [`identityMap`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/field-groups/profile/identitymap), que inclui o endereço de email do comprador, quando disponível, e a ECID.
+>Todos os eventos de back office incluem o campo [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap), que inclui o endereço de email do comprador, quando disponível, e a ECID.
 
 ## Status do pedido
 
@@ -418,7 +427,7 @@ Os eventos de perfil capturados do lado do servidor incluem informações de con
 
 >[!NOTE]
 >
->Cada evento de perfil de cliente também inclui o campo [`identityMap`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/field-groups/profile/identitymap), que inclui a ID de cliente da Commerce gerada pelo sistema como o identificador principal do perfil e uma ID de email usada como um identificador secundário. [Saiba](custom-identities.md) como criar atributos de identidade personalizados para aprimorar a identificação do perfil do cliente.
+>Cada evento de perfil de cliente também inclui o campo [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap), que inclui a ID de cliente da Commerce gerada pelo sistema como o identificador principal do perfil e uma ID de email usada como um identificador secundário. [Saiba](custom-identities.md) como criar atributos de identidade personalizados para aprimorar a identificação do perfil do cliente.
 
 ### accountCreated
 

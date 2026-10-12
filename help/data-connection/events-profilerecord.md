@@ -4,21 +4,30 @@ description: Saiba quais dados um registro de perfil captura.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: aaa30886-d9c0-4909-81ee-fad3407cac43
-TQID: https://experienceleague.adobe.com/bHKuzUSApLQNW-M8NY1xb6-WZtjACmRRZ0TtsPM55rU
+TQID: 'https://experienceleague.adobe.com/bHKuzUSApLQNW-M8NY1xb6-WZtjACmRRZ0TtsPM55rU'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: 5594f40c-5dc7-522f-a0e0-f84045197b3c
+    internal-label: Eventing
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+    internal-label: Personalization
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 499
+source-wordcount: '499'
 ht-degree: 0%
-
 ---
-
 # [!DNL Data Connection] Registros do Perfil
 
 A tabela a seguir descreve os dados de registro de perfil do Commerce que estão disponíveis quando você instala a extensão [!DNL Data Connection]. Os dados nos registros de perfil são enviados para a Adobe Experience Platform.
@@ -33,7 +42,7 @@ A seguir estão os dados capturados para um registro de perfil.
 
 | Campo | Descrição |
 |---|---|
-| `channel` | Contém informações sobre a fonte de dados. `_id` e `_type` contêm [valores com namespace](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/schema/namespaces). |
+| `channel` | Contém informações sobre a fonte de dados. `_id` e `_type` contêm [valores com namespace](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/namespaces). |
 | `channel._id` | O identificador exclusivo do canal, como `"https://ns.adobe.com/xdm/channels/web"`. |
 | `channel._type` | Identifica a origem dos dados do canal, como `"https://ns.adobe.com/xdm/channel-types/web"`. |
 | `person` | Contém informações sobre o cliente. |
@@ -68,6 +77,6 @@ A seguir estão os dados capturados para um registro de perfil.
 
 >[!NOTE]
 >
->Cada registro de perfil também inclui o campo [`identityMap`](https://experienceleague.adobe.com/pt-br/docs/experience-platform/xdm/field-groups/profile/identitymap), que inclui a ID de cliente da Commerce gerada pelo sistema como o identificador principal do perfil e uma ID de email usada como um identificador secundário.
+>Cada registro de perfil também inclui o campo [`identityMap`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/field-groups/profile/identitymap), que inclui a ID de cliente da Commerce gerada pelo sistema como o identificador principal do perfil e uma ID de email usada como um identificador secundário.
 
 Saiba como [criar um esquema específico de registro de perfil](profile-data.md) que possa assimilar os dados de seus registros de perfil.

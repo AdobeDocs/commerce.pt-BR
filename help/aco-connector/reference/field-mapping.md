@@ -3,7 +3,7 @@ title: Mapeamento de campos para Feeds [!DNL Adobe Commerce Optimizer Connector]
 description: Saiba mais sobre o mapeamento de campos [!DNL Adobe Commerce Optimizer Connector] dos dados do catálogo [!DNL Adobe Commerce] para os formatos de API de assimilação [!DNL Adobe Commerce Optimizer] para todos os feeds.
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
+badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
 autotag-review: '2026-06-09T15:49:03.934Z'
 TQID: 'https://experienceleague.adobe.com/SOWOnguudhqzX-r66nGUqc-WKet5qq6GRV11ADx0Me4'
 product_v2:
@@ -22,6 +22,8 @@ feature_v2:
     internal-label: Admin tools and workspace
   - id: c32adafa-ed01-4b31-997e-2413013911b0
     internal-label: Integrations
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
@@ -37,7 +39,7 @@ topic_v2:
     internal-label: Personalization
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
     internal-label: Data modeling
-source-git-commit: 1e34df4f07f9043675104fce55c58e0617463b33
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 2%
@@ -165,10 +167,10 @@ Itens com um `urlPath` vazio (categorias de raiz lógica) são ignorados e nunca
 | `image` | `images[].url` | Matriz de elemento único; `roles: ["BASE"]` |
 | `isActive` + `includeInMenu` | `families` | `["top_menu"]` quando ambos `true`, `[]` caso contrário |
 
-|0&rbrace; | `metaTags/keywords` | Divide as palavras-chave delimitadas por nova linha em uma matriz e elimina os espaços em branco. `metaKeywords`|
-|0&rbrace; | `images[].url` | Quando `image` está presente, exporta uma imagem com a função `BASE`. `image`Exporta uma matriz vazia quando a imagem está vazia ou ausente. |
+|0} | `metaTags/keywords` | Divide as palavras-chave delimitadas por nova linha em uma matriz e elimina os espaços em branco. `metaKeywords`|
+|0} | `images[].url` | Quando `image` está presente, exporta uma imagem com a função `BASE`. `image`Exporta uma matriz vazia quando a imagem está vazia ou ausente. |
 | `isActive` + `includeInMenu` | `families` | Adiciona `top_menu` somente quando ambos os valores são `true`. Caso contrário, exporta uma matriz vazia. |
-|0&rbrace; | `attributes[]` | Exporta entradas com um `attributeCode` não vazio como `{code, values[]}`. `attributes[]`Converte valores em cadeias de caracteres. Omite `attributes` quando não existem entradas qualificadas. |
+|0} | `attributes[]` | Exporta entradas com um `attributeCode` não vazio como `{code, values[]}`. `attributes[]`Converte valores em cadeias de caracteres. Omite `attributes` quando não existem entradas qualificadas. |
 
 >[!MORELIKETHIS]
 >

@@ -1,37 +1,46 @@
 ---
 title: Pesquisar correspondência e classificação
-description: Saiba como o  [!DNL Adobe Commerce Optimizer] prioriza correspondências exatas e próximas, correspondências de mesmo campo e correspondências entre campos e como a classificação interage com pesos de pesquisa, classificação inteligente e regras de merchandising.
+description: Saiba como o [!DNL Adobe Commerce Optimizer] prioriza correspondências exatas e próximas, correspondências de mesmo campo e correspondências entre campos e como a classificação interage com pesos de pesquisa, classificação inteligente e regras de merchandising.
 role: Admin, Leader, User
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente ao Adobe Commerce as a Cloud Service e a projetos [!DNL Adobe Commerce Optimizer] (infraestrutura SaaS gerenciada pela Adobe)."
 hide: true
 autotag-review: '2026-06-12T19:49:25.241Z'
 TQID: 'https://experienceleague.adobe.com/GBfssL1pTVx4FKjsi45mDsTx2XyCr0aViexH3OpPjVo'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
 subfeature_v2:
   - id: faf75e43-5608-48b8-8169-3f8a9b8a5caf
+    internal-label: Storefront optimizations
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 717ecbc9c6aa41f8a504579de8ce55f514cc4307
+    internal-label: Optimization
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 946
+source-wordcount: '948'
 ht-degree: 0%
-
 ---
-
 # Pesquisar correspondência e classificação
 
 >[!IMPORTANT]
 >
->O seguinte recurso está em [beta privado](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/beta).
+>O seguinte recurso está em [beta privado](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).
 
 [!DNL Adobe Commerce Optimizer] classifica os resultados para que os compradores vejam primeiro os produtos mais relevantes. O serviço oferece o maior impulso aos produtos cujo texto de catálogo **corresponde melhor** ao que o comprador digita, favorece correspondências em que os termos de consulta aparecem juntos de maneira significativa e, finalmente, inclui correspondências mais amplas (incluindo comportamento que oferece suporte à correspondência de estilo de preenchimento automático).
 
@@ -82,7 +91,7 @@ A relevância não é determinada pela correspondência de frases isoladamente. 
 - Aumentar com base na frase **exata / próxima** correspondente
 - Impulsionar quando **todos os termos da consulta** aparecem no campo **igual**
 - **Classificação inteligente** (quando habilitada), que mescla relevância textual com sinais comportamentais — consulte [Como funciona a pontuação de classificação inteligente](../merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)
-- **[Pesquise peso](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/search/search-results)** em cada atributo e outros fatores de relevância textual (por exemplo, a frequência com que os termos ocorrem e o comprimento do nome ou da descrição). Em *Configurações*, configure quais atributos participam da pesquisa por palavra-chave e seus **[pesos da pesquisa por palavra-chave](../settings.md)** relativos.
+- **[Pesquise peso](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)** em cada atributo e outros fatores de relevância textual (por exemplo, a frequência com que os termos ocorrem e o comprimento do nome ou da descrição). Em *Configurações*, configure quais atributos participam da pesquisa por palavra-chave e seus **[pesos da pesquisa por palavra-chave](../settings.md)** relativos.
 - **[Regras de merchandising](../merchandising/rules/overview.md)**, como fixar, aumentar e atenuar
 
 Como esses sinais interagem, um produto que corresponde somente no nível mais amplo pode, às vezes, ser classificado acima de uma correspondência de frase mais estreita, por exemplo, quando **pesos de pesquisa** ou frequência de termo em um campo de alto peso superam uma correspondência de frase mais fraca em outro lugar.

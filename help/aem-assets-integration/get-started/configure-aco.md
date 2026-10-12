@@ -1,14 +1,27 @@
 ---
 title: Configurar o AEM Assets para o Commerce Optimizer
-description: Saiba como configurar a Integração do AEM Assets para  [!DNL Adobe Commerce Optimizer].
+description: Saiba como configurar a Integração do AEM Assets para [!DNL Adobe Commerce Optimizer].
 feature: CMS, Media, Configuration, Integration
-source-git-commit: 84cd0deaecda0790f9f123fc663d4db7b048746b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 0%
-
 ---
-
 
 # Configurar o AEM Assets para [!DNL Adobe Commerce Optimizer]
 
@@ -56,7 +69,7 @@ A integração do [!DNL Commerce Optimizer] tem as seguintes limitações:
 
 Antes de configurar a integração, verifique se você tem:
 
-* Uma instância [!DNL Adobe Commerce Optimizer] ativa com o direito **Visuais de Produto** (inclui o Dynamic Media com recursos OpenAPI + [AEM Assets Prime](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/assets-prime)) ou uma licença AEM Assets fornecida pelo cliente (por exemplo, **AEM Assets Ultimate**) com o Dynamic Media habilitado.
+* Uma instância [!DNL Adobe Commerce Optimizer] ativa com o direito **Visuais de Produto** (inclui o Dynamic Media com recursos OpenAPI + [AEM Assets Prime](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-prime)) ou uma licença AEM Assets fornecida pelo cliente (por exemplo, **AEM Assets Ultimate**) com o Dynamic Media habilitado.
 * Acesso a um ambiente do AEM Assets as a Cloud Service.
 * O [!DNL Commerce Optimizer] e o AEM Assets na mesma Organização do Adobe IMS.
 * Dynamic Media com OpenAPI habilitado no seu ambiente do AEM Assets (consulte [Configurar o projeto do AEM Assets](configure-aem.md#prerequisites) para ver as etapas de habilitação).
@@ -85,7 +98,7 @@ Para integrar a Integração do AEM Assets com o [!DNL Commerce Optimizer], o Su
 * Eventos do AEM Assets (ativo aprovado, atualizado, removido)
 * [!DNL Commerce Optimizer] eventos de catálogo (produto criado, atualizado)
 
-Para iniciar este processo, [crie um tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) que inclua as seguintes informações:
+Para iniciar este processo, [crie um tíquete de suporte](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) que inclua as seguintes informações:
 
 * **[!DNL Adobe Commerce Optimizer]ID do Locatário** (ID da Instância) encontrada na sua URL [!DNL Commerce Optimizer] ou na interface do Commerce Cloud Manager.
 * **ID de Programa e ID de Ambiente do AEM** configurados quando você [configurou o AEM Assets](#configure-aem-assets-first) para a integração.

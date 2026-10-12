@@ -3,20 +3,26 @@ title: Correspondência automática padrão
 description: Saiba como a regra de correspondência automática padrão permite a sincronização perfeita entre o Adobe Commerce e a integração do AEM Assets, garantindo que os ativos sejam vinculados automaticamente às entidades de merchandising corretas.
 feature: CMS, Media, Integration
 exl-id: 8a18639b-f508-456e-8d22-18e3e0fdd515
-TQID: https://experienceleague.adobe.com/z7vpuhsVJnKohiU-bKNrcGnoIQ5WAwcwiccYlvawN0U
+TQID: 'https://experienceleague.adobe.com/z7vpuhsVJnKohiU-bKNrcGnoIQ5WAwcwiccYlvawN0U'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
     internal-label: Configuration
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: cf31a1ed5069095fb3c4c50d99475e60ee61efa9
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%
@@ -59,7 +65,7 @@ Quando a regra de correspondência do **[!UICONTROL Match by product SKU]** é c
    >
    > Se um ativo for usado para vários produtos, configure os metadados para cada SKU associada.
 
-1. Na guia `Basic`, defina o valor padrão do campo _[!UICONTROL Review Status]_&#x200B;como `approved`.
+1. Na guia `Basic`, defina o valor padrão do campo _[!UICONTROL Review Status]_como `approved`.
 
    ![Exemplo de metadados](../assets/metadata-review-status.png){width="600" zoomable="yes"}
 

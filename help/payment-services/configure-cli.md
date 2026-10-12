@@ -1,18 +1,38 @@
 ---
 title: Configuração da linha de comando
-description: Após a instalação, você pode configurar o [!DNL Payment Services] usando a Interface de Linha de Comando (CLI).
+description: Após a instalação, você pode configurar o [!DNL Payment Services] usando a CLI (Command-line Interface - Interface de Linha de Comando).
 role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
 feature: Payments, Checkout, Configuration, Integration, Paas
-badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
-source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
+badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '734'
 ht-degree: 0%
-
 ---
-
 # Configuração da linha de comando
 
 Após instalar o [!DNL Payment Services], você poderá configurá-lo facilmente a partir do [na página inicial](payments-home.md) ou por meio da CLI (Interface de Linha de Comando).
@@ -25,7 +45,7 @@ Para saber mais sobre os dados usados nos relatórios [!DNL Payment Services], c
 
 ### Configurar cron em [!DNL Magento Open Source]
 
-Se quiser usar um modo de índice `BY SCHEDULE` em [!DNL Magento Open Source], você deve configurar o cron. Consulte [Configurar e executar o cron](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
+Se quiser usar um modo de índice `BY SCHEDULE` em [!DNL Magento Open Source], você deve configurar o cron. Consulte [Configurar e executar o cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs).
 
 ### Definir indexadores
 
@@ -49,13 +69,13 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 >
 >Se você não especificar nenhum indexador em seu comando, todos os indexadores serão atualizados com o mesmo valor. Se quiser alterar um indexador específico, você deve listá-lo no comando.
 
-Para saber mais sobre como alterar manualmente o modo de um indexador, consulte [Configurar indexadores](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers){target="_blank"} na documentação do desenvolvedor. Para saber como alterá-lo no Administrador, consulte [Gerenciamento de índice](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/tools/index-management#change-the-index-mode){target="_blank"} no guia do usuário principal.
+Para saber mais sobre como alterar manualmente o modo de um indexador, consulte [Configurar indexadores](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers){target="_blank"} na documentação do desenvolvedor. Para saber como alterá-lo no Administrador, consulte [Gerenciamento de índice](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode){target="_blank"} no guia do usuário principal.
 
 ### Reindexar dados manualmente
 
-Você pode reindexar os dados manualmente, em vez de esperar que eles aconteçam automaticamente. Consulte [Reindexar](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindex){target="_blank"} em [Gerenciar os Indexadores](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/cli/manage-indexers){target="_blank"} para obter mais informações.
+Você pode reindexar os dados manualmente, em vez de esperar que eles aconteçam automaticamente. Consulte [Reindexar](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindex){target="_blank"} em [Gerenciar os Indexadores](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers){target="_blank"} para obter mais informações.
 
-Quando o modo `BY SCHEDULE` é definido, o sistema rastreia entidades alteradas e o trabalho cron atualiza o índice dessas entidades com base em um agendamento definido. Consulte [Executar cron a partir da linha de comando](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs#config-cli-cron-group-run) em [Configurar e executar cron](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)) para saber como disparar manualmente a indexação usando trabalhos cron.
+Quando o modo `BY SCHEDULE` é definido, o sistema rastreia entidades alteradas e o trabalho cron atualiza o índice dessas entidades com base em um agendamento definido. Consulte [Executar cron a partir da linha de comando](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs#config-cli-cron-group-run) em [Configurar e executar cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)) para saber como disparar manualmente a indexação usando trabalhos cron.
 
 ### Enviar dados reindexados para o serviço de pagamento
 
@@ -89,7 +109,7 @@ Todos os dados necessários para os relatórios são enviados para [!DNL Payment
 bin/magento cron:run --group payment_services_data_export
 ```
 
-Para saber mais sobre indexação e indexadores, consulte o tópico [Gerenciar os indexadores](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/configuration-guide/cli/manage-indexers) na documentação do desenvolvedor.
+Para saber mais sobre indexação e indexadores, consulte o tópico [Gerenciar os indexadores](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) na documentação do desenvolvedor.
 
 ## Configurar escopo via CLI
 

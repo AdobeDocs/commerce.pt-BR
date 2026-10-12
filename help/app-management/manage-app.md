@@ -2,13 +2,27 @@
 title: Gerencie seu aplicativo
 description: Associe, configure e desassocie aplicativos do App Builder com sua instância do Commerce.
 feature: App Builder, Extensibility, Integration
-source-git-commit: 780cef7af3574cd846fd7ee82d7814f2ebe9d6cc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 72863f3c-9d27-5dda-afe1-d9f934b1fba0
+    internal-label: Extensibility
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: cc250cf1-34eb-4863-80d0-d170d45ea067
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a743e5dc-8f37-4b5d-a848-03c32ca30598
+    internal-label: App Builder
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 0%
-
 ---
-
 
 # Gerencie seu aplicativo
 
@@ -46,7 +60,7 @@ Antes de associar um aplicativo, verifique se você tem o seguinte:
 
 Assista a este vídeo para saber como associar um aplicativo a uma instância do Commerce e definir as configurações.
 
->[!VIDEO](https://video.tv.adobe.com/v/3478960?captions=por_br)
+>[!VIDEO](https://video.tv.adobe.com/v/3478944)
 
 ## Associar um aplicativo
 

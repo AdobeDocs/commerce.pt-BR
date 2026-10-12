@@ -3,24 +3,34 @@ title: Seleção manual de ativos
 description: Descubra como o Seletor de ativos da AEM integrado ao Administrador do Commerce ajuda os profissionais de marketing e merchandisers a adicionar imagens facilmente do AEM Assets ao Adobe Commerce, simplificando o gerenciamento de ativos.
 feature: CMS, Media, Integration
 exl-id: 3c1f906f-3ec3-4eac-a47e-b21792767359
-TQID: https://experienceleague.adobe.com/3fYabUvRiY8KTxQX1YiTBbLxABpQqfZLu0a6IBDsM3E
+TQID: 'https://experienceleague.adobe.com/3fYabUvRiY8KTxQX1YiTBbLxABpQqfZLu0a6IBDsM3E'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+    internal-label: Compliance
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 topic_v2:
   - id: da3860b0-d637-47df-bef0-273751180266
-source-git-commit: 494033dc2367b0e2914494ee44cec7c6b45209f1
+    internal-label: Digital asset management
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: 397
+source-wordcount: '397'
 ht-degree: 0%
-
 ---
-
 # Seleção manual de ativos
 
 O **Seletor de ativos do AEM** permite que profissionais de marketing e merchandisers adicionem imagens facilmente do AEM Assets à Adobe Commerce, simplificando o processo de gerenciamento de ativos. Este método garante a consistência e a conformidade da marca, limitando a seleção de ativos àqueles revisados e aprovados no [!DNL DAM (Digital Asset Management system)].
@@ -31,11 +41,11 @@ Quando a integração do **Seletor de ativos do AEM** é configurada, os profiss
 
 * Gerencie imagens de categoria facilmente, garantindo que elas se alinhem às diretrizes de marca e campanha.
 * [!BADGE Somente PaaS]{type=Informative tooltip="Aplicável a projetos do Adobe Commerce na nuvem somente (infraestrutura do PaaS gerenciada pela Adobe)."} atribua ativos diretamente no Page Builder para conteúdo visualmente rico.
-* [!BADGE Somente SaaS]{type=Positive url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."} Atribua o Assets diretamente na Commerce Storefront habilitada pela Edge Delivery Services para conteúdo visualmente enriquecido.
+* [!BADGE Somente SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."} Atribua o Assets diretamente na Commerce Storefront habilitada pela Edge Delivery Services para conteúdo visualmente enriquecido.
 
 >[!NOTE]
 >
-> O Seletor de ativos do AEM é um componente de front-end do AEM Assets para integrar o AEM Assets com aplicativos de criação. Para obter mais informações sobre este componente, consulte o [Seletor de ativos de microfront-end](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/content-advisor/integrate-adobe-non-adobe-applications){target=_blank} no *Guia do Usuário do AEM as a Cloud Service*.
+> O Seletor de ativos do AEM é um componente de front-end do AEM Assets para integrar o AEM Assets com aplicativos de criação. Para obter mais informações sobre este componente, consulte o [Seletor de ativos de microfront-end](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/content-advisor/integrate-adobe-non-adobe-applications){target=_blank} no *Guia do Usuário do AEM as a Cloud Service*.
 
 ## Principais benefícios
 

@@ -1,17 +1,39 @@
 ---
 title: Proteção contra fraude Signifyd
-description: Habilite a proteção automatizada contra fraude para  [!DNL Payment Services]  com Signifyd.
+description: Habilite a proteção automatizada contra fraudes para [!DNL Payment Services] com Signifyd.
 role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration, Security, Paas, Saas
 exl-id: 440296bb-a6ff-408b-8195-3027916e4f84
-source-git-commit: 870c2497a2d6dcfc4066c07f20169fc9040ae81a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: d3b92bef-63fa-5031-a925-d04d9362d616
+    internal-label: Saas
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '421'
 ht-degree: 0%
-
 ---
-
 # Proteção contra fraude Signifyd
 
 Você pode habilitar a proteção automatizada contra fraude para [!DNL Payment Services] com a [extensão Signifyd](https://commercemarketplace.adobe.com/signifyd-module-connect.html).
@@ -33,7 +55,7 @@ Você deve se comunicar diretamente com o Signifyd para integrar a extensão par
 Ao integrar com o Signifyd, você deve:
 
 1. Contate Signifyd para configurar uma nova conta.
-1. Por padrão, Signifyd é [&#128279;](https://github.com/signifyd/magento2/blob/main/docs/RESTRICT-PAYMENTS.md) para garantir que Signifyd não acione outras opções de pagamento não compatíveis no momento. Se quiser proibir um método de pagamento específico, faça alterações.
+1. Por padrão, Signifyd é [](https://github.com/signifyd/magento2/blob/main/docs/RESTRICT-PAYMENTS.md) para garantir que Signifyd não acione outras opções de pagamento não compatíveis no momento. Se quiser proibir um método de pagamento específico, faça alterações.
 1. Confirme com a Signifyd que o PayPal não rejeitará pedidos, por meio da configuração de proteção contra fraude do comerciante no Paypal, que podem ser aprovados pela Signifyd.
 1. Habilite a extensão Signifyd para ser compatível com [!DNL Payment Services]:
    * Ao usar [!DNL Payment Services] no modo _Live_, Signifyd deve estar no modo de Produção.
@@ -45,12 +67,12 @@ Como Signifyd executa alguma ação em seus pedidos, é necessário configurar a
 
 Estas opções de configuração não são compatíveis com os Serviços de pagamento e a integração com o Signifyd:
 
-* Quando [!DNL Payment Services] é configurado com a ação de pagamento _and_ de `Authorize`, Signifyd está no modo `PostAuth` com a opção _[!UICONTROL Decline Guarantees]_&#x200B;definida como **Criar memorando de crédito**.
+* Quando [!DNL Payment Services] é configurado com a ação de pagamento _and_ de `Authorize`, Signifyd está no modo `PostAuth` com a opção _[!UICONTROL Decline Guarantees]_definida como **Criar memorando de crédito**.
 
   Motivo: [!DNL Payment Services] cria uma transação de autorização que Signify e tenta reembolsar.
 
 
-* [!DNL Payment Services] está configurado com a ação de pagamento _de `Authorize and Capture` e_ Signifyd está no modo `PostAuth` com a opção _[!UICONTROL Decline Guarantees]_&#x200B;definida como **Cancelar ordem**.
+* [!DNL Payment Services] está configurado com a ação de pagamento _de `Authorize and Capture` e_ Signifyd está no modo `PostAuth` com a opção _[!UICONTROL Decline Guarantees]_definida como **Cancelar ordem**.
 
   Motivo: [!DNL Payment Services] cria uma transação de captura que Signifyd então tenta anular.
 

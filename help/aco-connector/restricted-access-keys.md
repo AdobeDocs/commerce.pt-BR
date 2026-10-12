@@ -3,7 +3,7 @@ title: Gerenciar chaves de acesso restrito para catálogos compartilhados B2B
 description: Saiba como gerenciar as chaves de acesso restrito que o Adobe Commerce Optimizer Connector usa para proteger projeções de catálogo compartilhado B2B.
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
+badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
@@ -18,6 +18,8 @@ feature_v2:
     internal-label: Integrations
   - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
     internal-label: Admin tools and workspace
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
 subfeature_v2:
   - id: a40ebd6b-b542-4432-a730-1803ef74518d
     internal-label: Data Transfer
@@ -34,7 +36,7 @@ topic_v2:
     internal-label: Data management
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
     internal-label: Data integration
-source-git-commit: a3ade1a31d3c2905b601f71bda118de89c43cf59
+source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
 workflow-type: tm+mt
 source-wordcount: '1105'
 ht-degree: 0%
@@ -60,7 +62,7 @@ Você pode atribuir uma chave à exibição de catálogo na grade Catálogo Comp
 
 >[!NOTE]
 >
->Para obter uma referência dos campos desta página, [Gerenciamento de Chaves de Acesso Restrito](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} no *Guia de Administração do Commerce*.—>
+>Para obter uma referência dos campos desta página, [Gerenciamento de Chaves de Acesso Restrito](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} no *Guia de Administração do Commerce*.—>
 
 ## Quando você precisar de mais do que a chave automática {#when-you-need-more-than-the-automatic-key}
 
@@ -159,7 +161,7 @@ A rotação de chaves automática ainda não está disponível.
 
 >[!MORELIKETHIS]
 >
-> - [Gerenciar chaves de acesso restrito](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} — Referência de campo completa para esta página, no *Guia de Administração do Commerce* —>
+> - [Gerenciar chaves de acesso restrito](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys){target="_blank"} — Referência de campo completa para esta página, no *Guia de Administração do Commerce* —>
 > - [Monitorar sincronização de exibição de catálogo](catalog-view-sync-status.md) — Monitore as exibições de catálogo que essas chaves protegem
 > - [Exibições de catálogo privado](/help/optimizer/setup/private-catalog-view.md) — Saiba o que é uma exibição de catálogo privado gerenciada por conector
 > - [Chaves de acesso restrito](/help/optimizer/setup/restricted-access-keys.md) — Saiba como funciona o fluxo de chaves manual baseado no ACO Studio para casos de uso que não são B2B
