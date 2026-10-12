@@ -1,7 +1,7 @@
 ---
 title: Filtros de recomendação
 description: Saiba como usar filtros para controlar quais produtos aparecem nas recomendações do [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente ao Adobe Commerce as a Cloud Service e a projetos [!DNL Adobe Commerce Optimizer] (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente ao Adobe Commerce as a Cloud Service e a projetos [!DNL Adobe Commerce Optimizer] (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: f6100538-23c0-4e90-9834-a895d4707282
 TQID: https://experienceleague.adobe.com/-pmVrAgEsSkn66K00-eaoQ4TF-7Xyxuwlniip1cR4HM
 product_v2:
@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 40374f0aa28d3635fc567c0311e452f92dc5704c
+source-git-commit: 092ffabea06cf72af39a663c14b448f9e7633f60
 workflow-type: tm+mt
-source-wordcount: '2334'
+source-wordcount: '2364'
 ht-degree: 0%
 ---
 # Filtrar produtos
@@ -280,3 +280,11 @@ Attribute filter support varies by recommendation type.
 - Se houver valores de atributo vazios ou condições inválidas, as recomendações não serão renderizadas na loja ou no painel de visualização.
 - Os valores de atributo devem corresponder exatamente ao que está no catálogo. Isso inclui espaços e letras maiúsculas e minúsculas.
 - Se nenhum dos produtos atender aos critérios de filtro, as recomendações não serão renderizadas na loja ou no painel de visualização.
+
+### Sem estoque
+
+O filtro de exclusão a seguir pode filtrar produtos com base no status do estoque:
+
+- Fora de estoque - (Somente exclusão) Exclui produtos que estão fora de estoque.
+
+![Filtro de Status do Estoque](../../assets/filter-stock-status.png)
