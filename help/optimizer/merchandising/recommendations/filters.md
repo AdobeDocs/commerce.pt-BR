@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 40374f0aa28d3635fc567c0311e452f92dc5704c
+source-git-commit: 092ffabea06cf72af39a663c14b448f9e7633f60
 workflow-type: tm+mt
-source-wordcount: '2334'
+source-wordcount: '2364'
 ht-degree: 0%
 ---
 # Filtrar produtos
@@ -280,3 +280,11 @@ Attribute filter support varies by recommendation type.
 - Se houver valores de atributo vazios ou condições inválidas, as recomendações não serão renderizadas na loja ou no painel de visualização.
 - Os valores de atributo devem corresponder exatamente ao que está no catálogo. Isso inclui espaços e letras maiúsculas e minúsculas.
 - Se nenhum dos produtos atender aos critérios de filtro, as recomendações não serão renderizadas na loja ou no painel de visualização.
+
+### Sem estoque
+
+O filtro de exclusão a seguir pode filtrar produtos com base no status do estoque:
+
+- Fora de estoque - (Somente exclusão) Exclui produtos que estão fora de estoque.
+
+![Filtro de Status do Estoque](../../assets/filter-stock-status.png)
