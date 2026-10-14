@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 559efed5340b7076f18a3efc0077f9afd5f8ca48
 workflow-type: tm+mt
-source-wordcount: '3447'
+source-wordcount: '3576'
 ht-degree: 0%
 ---
 # Notas de versão do [!DNL SaaS Data Export Extension]
@@ -60,6 +60,16 @@ As atualizações incluem:
 >A extensão [!DNL SaaS data export] é uma coleção de módulos instalados automaticamente com [!DNL Live Search], [!DNL Product Recommendations] e [!DNL Catalog Service]. Você pode verificar a versão instalada em seu sistema usando o [!DNL Composer]. Em alguns casos, você pode querer atualizar a extensão de exportação de dados no seu sistema para coletar correções ou novos recursos sem atualizar a versão do Serviço do Commerce.
 
 ## Versões de 2026 {#release-notes-2026}
+
+### Versão 103.5.0
+
+_13 de outubro de 2026_
+
+![Correção](../assets/fix.svg) **Visibilidade de atributo precisa nos metadados exportados**-Correção de um problema em que o campo de visibilidade de atributo exportava a configuração Visibilidade de administrador em vez da configuração Visibilidade de vitrine. Os serviços do Connected Commerce agora recebem a visibilidade correta para cada atributo. <!--MDEE-932-->
+
+![Novos](../assets/new.svg) **Filtros de intervalo para atributos numéricos de produto** - Atributos de produto atualizados para dar suporte ao tipo de entrada **Número**. Esse tipo de entrada se aplica a atributos que armazenam valores decimais, incluindo números negativos, sem exibir um símbolo de moeda. Eles são exportados com metadados que permitem que [!DNL Live Search] gere aspectos de intervalo, para que os compradores possam filtrar por medidas como a temperatura operacional. <!--MDEE-1416-->
+
+![Correção](../assets/fix.svg) **Valores consistentes de atributo de preço personalizado** - Os valores de atributo de preço personalizado agora são exportados com duas casas decimais, na moeda padrão do armazenamento, portanto a formatação de preço na loja corresponde ao formato de dados de preço.<!--MDEE-1459-->
 
 ### Versão 103.4.35
 
