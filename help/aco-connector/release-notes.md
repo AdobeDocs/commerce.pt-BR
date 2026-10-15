@@ -38,9 +38,9 @@ topic_v2:
     internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 1051405a754ac98534b8a27472dccbfb2fff19c7
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '602'
 ht-degree: 0%
 ---
 # Notas de versão do Adobe Commerce Optimizer Connector
@@ -52,6 +52,13 @@ Essas notas de versão descrevem todas as versões do [!DNL Adobe Commerce Optim
 ![Problema conhecido](../assets/bug.svg) Problemas conhecidos
 
 ## Versões de 2026
+
+### Versão 1.2.0
+
+_13 de outubro de 2026_
+
+![Correção](../assets/fix.svg) Habilite o feed de lojas para o serviço de Pagamento. <!--MDEE-1459-->
+![Correção](../assets/fix.svg) Os vídeos de produtos agora são sincronizados com [!DNL Adobe Commerce Optimizer], preservando sua ordem de classificação configurada. <!--DATA-7320-->
 
 ### Versão 1.1.1
 
