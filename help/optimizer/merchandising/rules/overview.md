@@ -1,29 +1,33 @@
 ---
 title: Regras de merchandising
 description: As regras de merchandising do [!DNL Adobe Commerce Optimizer] combinam lógica com ações para moldar resultados de pesquisa, listas de produtos padrão e páginas de categoria.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente ao Adobe Commerce as a Cloud Service e a projetos [!DNL Adobe Commerce Optimizer] (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: f2a9b5e8-d23d-4855-b424-ca6b40e057df
 TQID: https://experienceleague.adobe.com/1lpaqHx0SaVYLXcTSOToxvbpKzhPJKmhfxjlCvNQLkU
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+    internal-label: Storefront
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 70f219ca854a0df0ac16ed31116ba9c510eebec2
+    internal-label: Personalization
+source-git-commit: 44fb94ab5d9ba6deab421a15b391294ec0087f38
 workflow-type: tm+mt
-source-wordcount: 760
+source-wordcount: '821'
 ht-degree: 0%
-
 ---
-
 # Regras de merchandising
 
-As regras de merchandising combinam lógica e ações para moldar como os produtos aparecem nos **resultados de pesquisa**, em **listas de produtos padrão** (**todas as listas de produtos**) e em **páginas de categoria**. Você pode impulsionar, enterrar, fixar ou ocultar produtos e aplicar a **classificação inteligente** para que as listas reflitam suas metas comerciais.
+As regras de merchandising combinam lógica com ações para moldar como os produtos aparecem nos **resultados da pesquisa**, nas **listas de produtos padrão** por meio da **regra de pesquisa padrão** e nas **páginas de categoria**. Você pode impulsionar, enterrar, fixar ou ocultar produtos e aplicar a **classificação inteligente** para que as listas reflitam suas metas comerciais.
 
 Cada **regra de pesquisa** tem três componentes principais:
 
@@ -33,7 +37,7 @@ Cada **regra de pesquisa** tem três componentes principais:
 
 **As regras de categoria** usam **seleção de categoria** em vez das condições de consulta de pesquisa; a classificação inteligente e a classificação manual funcionam da mesma forma que para pesquisa, com diferenças chamadas em [Criar e Gerenciar Regras](add.md).
 
-É possível combinar várias condições e ações para regras de pesquisa e agendar qualquer regra para ficar ativa por um período. Você também pode definir uma **regra padrão** (**Todas as listas de produtos**) que se aplique quando não houver mais regras de pesquisa ou categoria específicas.
+É possível combinar várias condições e ações para regras de pesquisa e agendar qualquer regra para ficar ativa por um período. Você também pode definir uma **regra de pesquisa padrão** que se aplique quando nenhuma outra pesquisa ou regra de categoria específica se aplicar.
 
 ## Regras de categoria {#category-rules}
 
@@ -68,7 +72,7 @@ Ao compor uma regra complexa, pode ser útil anotá-la com recuo para descrever 
 
 ## Regra padrão
 
-Você pode definir uma regra padrão (**Todas as listagens de produtos**) que se aplica quando nenhum termo de pesquisa é fornecido ou nenhuma outra regra de pesquisa pode ser aplicada. Se você definir a regra padrão como &quot;Mais comprados&quot;, as consultas assumirão como padrão esse tipo de classificação, a menos que sejam substituídas por um termo de pesquisa mais específico. Nenhum termo de pesquisa pode ser definido para a regra padrão. **As regras de categoria** são separadas: elas se aplicam apenas às categorias selecionadas e não substituem a regra de listagem padrão.
+Você pode definir uma **regra de pesquisa padrão** que se aplica quando nenhum termo de pesquisa é fornecido, ou nenhuma outra regra de pesquisa pode ser aplicada. Se você definir a regra padrão como &quot;Mais comprados&quot;, as consultas assumirão como padrão esse tipo de classificação, a menos que sejam substituídas por um termo de pesquisa mais específico. Nenhum termo de pesquisa pode ser definido para a regra padrão. **As regras de categoria** são separadas: elas se aplicam apenas às categorias selecionadas e não substituem a regra de listagem padrão.
 
 ## Ordem de precedência com várias regras
 
