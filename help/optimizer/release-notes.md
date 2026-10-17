@@ -25,7 +25,7 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 92e2b81e91e5d78b08d551aa9531b18ebf50d853
 workflow-type: tm+mt
 source-wordcount: '1627'
 ht-degree: 0%
@@ -47,7 +47,7 @@ _3 de setembro de 2026_
 
 ### Classificação de atributo (beta)
 
-[!DNL Adobe Commerce Optimizer] regras de merchandising agora oferecem suporte a [**classificação de atributo**](./merchandising/rules/add.md#attribute-ranking) para **Todas as listas de produtos**, **Regra de categoria** e **Regra de pesquisa**. Aplicar automaticamente uma ação **[!UICONTROL Boost]**, **[!UICONTROL Bury]** ou **[!UICONTROL Hide]** a cada produto que corresponda a uma ou mais condições de atributo, como marca ou categoria, sem selecionar SKUs individuais. A classificação de atributos está na versão beta. [Saiba mais](./merchandising/rules/add.md#attribute-ranking).
+[!DNL Adobe Commerce Optimizer] regras de merchandising agora oferecem suporte a [**classificação de atributo**](./merchandising/rules/add.md#attribute-ranking) para a **Regra de pesquisa padrão**, **Regra de categoria** e **Regra de pesquisa**. Aplicar automaticamente uma ação **[!UICONTROL Boost]**, **[!UICONTROL Bury]** ou **[!UICONTROL Hide]** a cada produto que corresponda a uma ou mais condições de atributo, como marca ou categoria, sem selecionar SKUs individuais. A classificação de atributos está na versão beta. [Saiba mais](./merchandising/rules/add.md#attribute-ranking).
 
 {{aco-release}}
 

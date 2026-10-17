@@ -24,9 +24,9 @@ topic_v2:
     internal-label: Behavioral data
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 3d21aed1af575d15c2cea4a42c49169a0fe37d7e
+source-git-commit: 92e2b81e91e5d78b08d551aa9531b18ebf50d853
 workflow-type: tm+mt
-source-wordcount: '4111'
+source-wordcount: '4108'
 ht-degree: 0%
 ---
 # Criar e gerenciar regras
@@ -52,7 +52,7 @@ Cada tipo de regra tem um ícone de informações no editor com uma breve explic
 
 | Tipo de regra | Finalidade |
 | --- | --- |
-| **Todas as listagens de produtos** | Classificação e merchandising padrão em listas de produtos quando não há mais pesquisa específica ou regra de categoria aplicável. Você só pode criar uma dessas regras; ela não pode conter condições. |
+| **Regra de pesquisa padrão** | Classificação e merchandising padrão em listas de produtos quando não há mais pesquisa específica ou regra de categoria aplicável. Você só pode criar uma dessas regras; ela não pode conter condições. |
 | **Regra de categoria** | Aplica merchandising e classificação a uma única categoria, controlando o pedido do produto nessa página de categoria. |
 | **Regra de pesquisa** | Aplica merchandising e classificação quando os compradores executam uma pesquisa que corresponde às condições de consulta da regra. |
 
@@ -143,7 +143,7 @@ Quando várias categorias tiverem nomes semelhantes, use o caminho de categoria 
 
 ### Classificação inteligente {#intelligent-ranking}
 
-A classificação inteligente solicita produtos usando **sinais comportamentais** e, quando aplicável, IA. Aplica-se a **regras de pesquisa**, **todas as listas de produtos** (regras padrão) e **regras de categoria** (páginas de categoria). Para **pesquisas** do comprador, a classificação também pesa **relevância textual** para a consulta; as **páginas de categoria** não usam o texto da consulta da mesma maneira; o editor focaliza estratégias comportamentais.
+A classificação inteligente solicita produtos usando **sinais comportamentais** e, quando aplicável, IA. Aplica-se a **regras de pesquisa**, **regras de pesquisa padrão** e **regras de categoria** (páginas de categoria). Para **pesquisas** do comprador, a classificação também pesa **relevância textual** para a consulta; as **páginas de categoria** não usam o texto da consulta da mesma maneira; o editor focaliza estratégias comportamentais.
 
 Os proprietários de lojas podem definir estratégias como as seguintes. Os rótulos exatos e as janelas de tempo correspondem ao editor de regras e diferem um pouco de acordo com o tipo de regra.
 
@@ -401,7 +401,7 @@ Esta opção fornece uma maneira rápida de ver todos os parâmetros de regra, e
 | Campo | Descrição |
 | --- | --- |
 | Nome | O nome da regra. Rule names must be unique. |
-| Tipo de regra | **Padrão** (todas as listas de produtos), **Consulta** (condições de pesquisa específicas) ou **Categoria** (páginas de categoria), dependendo da **Regra aplica-se a**. |
+| Tipo de regra | **Regra de pesquisa padrão**, **Consulta** (condições de pesquisa específicas) ou **Categoria** (páginas de categoria), dependendo da **Regra aplica-se a**. |
 | Data inicial | A data de início da regra, se programada. |
 | Data final | A data final da regra, se programada. |
 | Descrição | Uma breve descrição da regra. |

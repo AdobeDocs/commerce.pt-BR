@@ -1,7 +1,7 @@
 ---
-source-git-commit: b12fd59e97279b78017bee0403a7e7672adb1957
+source-git-commit: f43710c77d063d923d136b9fda2d9283ede97788
 workflow-type: tm+mt
-source-wordcount: '1113'
+source-wordcount: '1250'
 ht-degree: 1%
 ---
 # Modelo de novidades
@@ -9,6 +9,80 @@ ht-degree: 1%
 ## Novidades
 
 Esta página contém as alterações feitas nos últimos 60 dias. Excluímos todas as atualizações secundárias, como a edição de cópia, desta lista.
+
+### 16 de outubro de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Atualização da documentação de Regras de merchandising para renomear o tipo de regra Todas as listagens de produtos para Regra de pesquisa padrão em <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/overview">Visão geral das Regras de merchandising</a>, <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/add">Criar e gerenciar regras</a> e <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/release-notes">Notas de versão</a>, correspondendo à opção renomeada no menu Tipo de regra de administrador.</p>
+</td>
+      <td>
+        Feedback
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/b5c9b1b4ead9f355cd7438d3a8f1b90ac08b12d1">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 14 de outubro de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Correção dos valores padrão e de intervalo documentados para [!UICONTROL Intelligent Ranking Boost] em <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost">Criar e gerenciar regras de merchandising</a>: o padrão é <code>50</code> (documentado anteriormente como <code>5</code>) e o intervalo máximo é <code>1000</code> (documentado anteriormente como <code>100</code>).</p>
+</td>
+      <td>
+        Técnico
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/07fb011b0303ebca11dd3e0948d264c72bd2422e">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 12 de outubro de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descrição</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Adição de documentação para o novo filtro de exclusão de Produto indisponível para unidades de recomendação em <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/recommendations/filters">Filtros</a>, que exclui produtos indisponíveis das recomendações.</p>
+</td>
+      <td>
+        Feedback, atualização importante
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/abba2327d9c678e374a94c5bc5ed091f401c8aff">confirmar</a></td>
+    </tr>
+    <tr>
+      <td><p>Atualização da <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/saas-data-export/logs-troubleshooting/log-codes-reference">Referência de códigos de log da Exportação de Dados</a> do <a href="https://github.com/magento/commerce-data-export/blob/main/dev/tests/log-codes.md">log-codes.md de origem</a> mais recente.</p>
+</td>
+      <td>
+        Técnico
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/83acf0b6474920141c0bcc354f7c49ea7d10d29c">confirmar</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 8 de outubro de 2026
 
@@ -388,36 +462,6 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
         Atualização importante
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce.en/commit/b6613edbf84681a860b9c71a07f43a7df40e8784">confirmar</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 12 de agosto de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descrição</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Adicionadas as <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/cloud-service/release-notes">notas de versão</a> de produção para o Adobe Commerce as a Cloud Service.</p>
-</td>
-      <td>
-        Atualização importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/ed13ed011180fbb9d535f5a228a5f932ebf00689">confirmar</a></td>
-    </tr>
-    <tr>
-      <td><p>Os comerciantes agora podem realizar o autoatendimento da integração de uma conta do PayPal diferente no escopo do site diretamente do administrador do Commerce. Consulte <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/payment-services/configure/connect-website-account">Conectar uma conta diferente do PayPal para um site</a> para obter mais informações.</p>
-</td>
-      <td>
-        Novo tópico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce.en/commit/e18c82a81c49de8175a8a8d77e9a191fe2af4b46">confirmar</a></td>
     </tr>
   </tbody>
 </table>
