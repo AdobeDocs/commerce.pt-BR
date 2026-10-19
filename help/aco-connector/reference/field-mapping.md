@@ -3,7 +3,7 @@ title: Mapeamento de campos para Feeds [!DNL Adobe Commerce Optimizer Connector]
 description: Saiba mais sobre o mapeamento de campos [!DNL Adobe Commerce Optimizer Connector] dos dados do catálogo [!DNL Adobe Commerce] para os formatos de API de assimilação [!DNL Adobe Commerce Optimizer] para todos os feeds.
 role: Admin, Developer
 feature: Integration, Configuration
-badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
+badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
 autotag-review: '2026-06-09T15:49:03.934Z'
 TQID: 'https://experienceleague.adobe.com/SOWOnguudhqzX-r66nGUqc-WKet5qq6GRV11ADx0Me4'
 product_v2:
@@ -39,9 +39,9 @@ topic_v2:
     internal-label: Personalization
   - id: b23e006f-0a29-4f1d-8fd0-77aa56f3d12b
     internal-label: Data modeling
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: b62a0a272684daa2494017d290a711da8e1746b9
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1065'
 ht-degree: 2%
 ---
 
@@ -152,7 +152,10 @@ O feed `prices` envia dados de [!DNL Adobe Commerce] para o [ponto de extremidad
 
 O feed `categories` envia dados de [!DNL Adobe Commerce] para o ponto de extremidade [Categorias](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}.
 
-Itens com um `urlPath` vazio (categorias de raiz lógica) são ignorados e nunca enviados.
+O conector identifica registros de feed de categoria por caminho de URL e código de exibição de armazenamento.
+- 
+  - Quando uma categoria é movida para um pai diferente na árvore de categorias, a sincronização envia os novos caminhos para essa categoria e seus descendentes e remove seus caminhos anteriores de [!DNL Adobe Commerce Optimizer].
+- Itens com um `urlPath` vazio (categorias de raiz lógica) são ignorados e nunca enviados.
 
 | Campo [!DNL Adobe Commerce] | Campo de API [!DNL Commerce Optimizer] | Detalhes do mapeamento |
 | --------------- | -------------- | ------- |
@@ -167,10 +170,10 @@ Itens com um `urlPath` vazio (categorias de raiz lógica) são ignorados e nunca
 | `image` | `images[].url` | Matriz de elemento único; `roles: ["BASE"]` |
 | `isActive` + `includeInMenu` | `families` | `["top_menu"]` quando ambos `true`, `[]` caso contrário |
 
-|0&rbrace; | `metaTags/keywords` | Divide as palavras-chave delimitadas por nova linha em uma matriz e elimina os espaços em branco. `metaKeywords`|
-|0&rbrace; | `images[].url` | Quando `image` está presente, exporta uma imagem com a função `BASE`. `image`Exporta uma matriz vazia quando a imagem está vazia ou ausente. |
+|0} | `metaTags/keywords` | Divide as palavras-chave delimitadas por nova linha em uma matriz e elimina os espaços em branco. `metaKeywords`|
+|0} | `images[].url` | Quando `image` está presente, exporta uma imagem com a função `BASE`. `image`Exporta uma matriz vazia quando a imagem está vazia ou ausente. |
 | `isActive` + `includeInMenu` | `families` | Adiciona `top_menu` somente quando ambos os valores são `true`. Caso contrário, exporta uma matriz vazia. |
-|0&rbrace; | `attributes[]` | Exporta entradas com um `attributeCode` não vazio como `{code, values[]}`. `attributes[]`Converte valores em cadeias de caracteres. Omite `attributes` quando não existem entradas qualificadas. |
+|0} | `attributes[]` | Exporta entradas com um `attributeCode` não vazio como `{code, values[]}`. `attributes[]`Converte valores em cadeias de caracteres. Omite `attributes` quando não existem entradas qualificadas. |
 
 >[!MORELIKETHIS]
 >
