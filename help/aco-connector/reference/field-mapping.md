@@ -153,7 +153,7 @@ O feed `prices` envia dados de [!DNL Adobe Commerce] para o [ponto de extremidad
 O feed `categories` envia dados de [!DNL Adobe Commerce] para o ponto de extremidade [Categorias](https://developer.adobe.com/commerce/services/reference/rest/#tag/Categories){target="_blank"}.
 
 O conector identifica registros de feed de categoria por caminho de URL e código de exibição de armazenamento.
-- 
+- &#x200B;
   - Quando uma categoria é movida para um pai diferente na árvore de categorias, a sincronização envia os novos caminhos para essa categoria e seus descendentes e remove seus caminhos anteriores de [!DNL Adobe Commerce Optimizer].
 - Itens com um `urlPath` vazio (categorias de raiz lógica) são ignorados e nunca enviados.
 
@@ -170,10 +170,10 @@ O conector identifica registros de feed de categoria por caminho de URL e códig
 | `image` | `images[].url` | Matriz de elemento único; `roles: ["BASE"]` |
 | `isActive` + `includeInMenu` | `families` | `["top_menu"]` quando ambos `true`, `[]` caso contrário |
 
-|0} | `metaTags/keywords` | Divide as palavras-chave delimitadas por nova linha em uma matriz e elimina os espaços em branco. `metaKeywords`|
-|0} | `images[].url` | Quando `image` está presente, exporta uma imagem com a função `BASE`. `image`Exporta uma matriz vazia quando a imagem está vazia ou ausente. |
+|0&rbrace; | `metaTags/keywords` | Divide as palavras-chave delimitadas por nova linha em uma matriz e elimina os espaços em branco. `metaKeywords`|
+|0&rbrace; | `images[].url` | Quando `image` está presente, exporta uma imagem com a função `BASE`. `image`Exporta uma matriz vazia quando a imagem está vazia ou ausente. |
 | `isActive` + `includeInMenu` | `families` | Adiciona `top_menu` somente quando ambos os valores são `true`. Caso contrário, exporta uma matriz vazia. |
-|0} | `attributes[]` | Exporta entradas com um `attributeCode` não vazio como `{code, values[]}`. `attributes[]`Converte valores em cadeias de caracteres. Omite `attributes` quando não existem entradas qualificadas. |
+|0&rbrace; | `attributes[]` | Exporta entradas com um `attributeCode` não vazio como `{code, values[]}`. `attributes[]`Converte valores em cadeias de caracteres. Omite `attributes` quando não existem entradas qualificadas. |
 
 >[!MORELIKETHIS]
 >
