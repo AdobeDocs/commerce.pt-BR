@@ -63,7 +63,7 @@ A Adobe mantém um conjunto abrangente de certificações e atestados para a inf
 
 - **GDPR e CCPA**: o Adobe fornece ferramentas e documentação para ajudar os clientes a cumprir suas obrigações conforme as regulamentações de privacidade de dados.
 
-Para obter uma lista completa das certificações e da documentação de conformidade da Adobe, visite a [Central de Confiabilidade da Adobe](https://www.adobe.com/trust/compliance/compliance-list.html){target="_blank"}.
+Para obter uma lista completa das certificações e da documentação de conformidade da Adobe, visite a [Central de Confiabilidade da Adobe](https://www.adobe.com/br/trust/compliance/compliance-list.html){target="_blank"}.
 
 ## Certificação para profissionais
 

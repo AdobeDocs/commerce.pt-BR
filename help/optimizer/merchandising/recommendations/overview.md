@@ -33,6 +33,6 @@ As recomendações são exibidas na loja como unidades com rótulos, como &quot;
 
 ## Privacidade
 
-A coleta de dados para os fins das Recomendações não inclui informações pessoalmente identificáveis (PII). Além disso, todos os identificadores de usuários, como IDs de cookies e endereços IP, são estritamente anônimos. Para saber mais, consulte a [Política de Privacidade da Adobe](https://www.adobe.com/privacy/policy.html).
+A coleta de dados para os fins das Recomendações não inclui informações pessoalmente identificáveis (PII). Além disso, todos os identificadores de usuários, como IDs de cookies e endereços IP, são estritamente anônimos. Para saber mais, consulte a [Política de Privacidade da Adobe](https://www.adobe.com/br/privacy/policy.html).
 
 Os usuários do Recommendations podem consultar a página [Sincronização de dados](../../setup/data-sync.md) para obter mais dados sobre a sincronização de dados.

@@ -97,7 +97,7 @@ Para testar como as Recomendações de produto se comportam com restrições de 
 
 ## Conformidade com privacidade
 
-A coleta de dados do Recommendations de produto não inclui informações pessoalmente identificáveis (PII). Todos os identificadores de usuário, como IDs de cookies e endereços IP, são anônimos. Para obter mais informações, consulte a [Política de Privacidade da Adobe](https://www.adobe.com/privacy/policy.html).
+A coleta de dados do Recommendations de produto não inclui informações pessoalmente identificáveis (PII). Todos os identificadores de usuário, como IDs de cookies e endereços IP, são anônimos. Para obter mais informações, consulte a [Política de Privacidade da Adobe](https://www.adobe.com/br/privacy/policy.html).
 
 >[!TIP]
 >
