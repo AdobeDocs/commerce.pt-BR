@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 9ea19181108118892e238ba2ffce4bb7b451ee94
+source-git-commit: 9a378b5e553afb5d96ce79738dab1d32404f4f22
 workflow-type: tm+mt
-source-wordcount: '3608'
+source-wordcount: '3719'
 ht-degree: 0%
 ---
 # Notas de versão do [!DNL SaaS Data Export Extension]
@@ -60,6 +60,16 @@ As atualizações incluem:
 >A extensão [!DNL SaaS data export] é uma coleção de módulos instalados automaticamente com [!DNL Live Search], [!DNL Product Recommendations] e [!DNL Catalog Service]. Você pode verificar a versão instalada em seu sistema usando o [!DNL Composer]. Em alguns casos, você pode querer atualizar a extensão de exportação de dados no seu sistema para coletar correções ou novos recursos sem atualizar a versão do Serviço do Commerce.
 
 ## Versões de 2026 {#release-notes-2026}
+
+### Versão 103.5.2
+
+_19 de outubro de 2026_
+
+![Correção](../assets/fix.svg) **Identificação de categoria consistente**—Identificação de feed de categoria restaurada usando a ID de categoria e o código de exibição de armazenamento na [API GraphQL do Serviço de Catálogo para Serviços da Loja](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/){page="_blank"} com suporte no Adobe Commerce as a Cloud Service, Adobe Commerce na Nuvem e no local. Esta atualização impede que a categoria seja movida e que as categorias sejam marcadas incorretamente como excluídas. <!--MDEE-1473-->
+
+![Correção](../assets/fix.svg) **Processamento de opção de atributo confiável no PHP 8.5**—Correção de valor de opção de atributo fixo para evitar erros de exportação de feed de produto quando os rótulos de opção referenciam uma loja ausente. <!--MDEE-1472-->
+
+![Correção](../assets/fix.svg) **Sincronização de produto configurável confiável no PHP 8.5**—Correção de um problema onde valores de atributo filho nulos impediam que produtos configuráveis fossem sincronizados corretamente. <!--MDEE-1474-->
 
 ### Versão 103.5.1
 
