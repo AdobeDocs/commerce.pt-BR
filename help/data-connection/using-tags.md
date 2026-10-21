@@ -29,14 +29,14 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: e689017374503218dd1100ab1226e7d76fbb7dae
 workflow-type: tm+mt
-source-wordcount: '2697'
+source-wordcount: '2693'
 ht-degree: 0%
 ---
 # Coletar dados do Commerce usando tags do Adobe Experience Platform
 
-Embora você possa usar a extensão [!DNL Data Connection] para publicar e assinar eventos de vitrine eletrônica, alguns comerciantes já podem estar usando uma solução de coleção de dados, como as [marcas Adobe Experience Platform](https://experienceleague.adobe.com/pt-br/docs/platform-learn/data-collection/tags/create-a-property). Para esses comerciantes, o Adobe Commerce fornece uma opção somente de publicação na extensão [!DNL Data Connection] que usa o Adobe Commerce Event SDK.
+Embora você possa usar a extensão [!DNL Data Connection] para publicar e assinar eventos de vitrine eletrônica, alguns comerciantes já podem estar usando uma solução de coleção de dados, como as [marcas Adobe Experience Platform](https://experienceleague.adobe.com/pt-br/docs/experience-platform/tags/home). Para esses comerciantes, o Adobe Commerce fornece uma opção somente de publicação na extensão [!DNL Data Connection] que usa o Adobe Commerce Event SDK.
 
 Fluxo de Dados de Extensão ![[!DNL Data Connection]](assets/tags-data-flow.png)
 Fluxo de Dados de Extensão _[!DNL Data Connection]com Tags_
