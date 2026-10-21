@@ -51,7 +51,7 @@ A documentação confiável e detalhada de cada produto continua a constar em se
 
 <table style="table-layout:fixed"><tr style="border: 0;">
 <td><strong>Aprendizagem e recursos</strong><br/>
-<a href="https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/overview" target="_blank">Tutoriais</a> - <a href="https://experienceleague.adobe.com/en/playlists?solution=Commerce" target="_blank">Listas de reprodução de vídeo</a> - <a href="https://helpx.adobe.com/legal/product-descriptions.html" target="_blank">Descrições do produto</a> - <a href="https://certification.adobe.com/certifications#filters=Adobe%20Commerce" target="_blank">Certificações</a>
+<a href="https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/overview" target="_blank">Tutoriais</a> - <a href="https://experienceleague.adobe.com/pt-br/playlists?solution=Commerce" target="_blank">Listas de reprodução de vídeo</a> - <a href="https://helpx.adobe.com/br/legal/product-descriptions.html" target="_blank">Descrições do produto</a> - <a href="https://certification.adobe.com/certifications#filters=Adobe%20Commerce" target="_blank">Certificações</a>
 
 </td>
 <td><strong>Recursos do desenvolvedor</strong><br/>
