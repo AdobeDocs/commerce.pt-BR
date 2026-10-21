@@ -2,7 +2,7 @@
 title: Limites e limites do Adobe Commerce Optimizer
 description: Saiba mais sobre limites de licença e limites do sistema do Adobe Commerce Optimizer. Planeje a capacidade, rastreie o uso e evite latência e limitação quando os limites forem excedidos.
 role: Admin, Developer
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente ao Adobe Commerce as a Cloud Service e a projetos [!DNL Adobe Commerce Optimizer] (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente ao Adobe Commerce as a Cloud Service e a projetos [!DNL Adobe Commerce Optimizer] (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 nudge: true
 product_v2:
@@ -13,9 +13,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 663a9e8e61850f3d34712971eb28f18893d56ad2
 workflow-type: tm+mt
-source-wordcount: '1495'
+source-wordcount: '1483'
 ht-degree: 0%
 ---
 # Limites e limites
@@ -31,7 +31,7 @@ Sua utilização deve permanecer dentro desses limites. Excedê-los pode causar 
 
 Os limites de licença podem ser aumentados adquirindo os pacotes de licença descritos na seção [Limites de licença e limites do sistema](#license-limits-and-system-boundaries) ou negociando o licenciamento personalizado para casos de uso exclusivos. Entre em contato com seu representante de conta da Adobe para discutir suas necessidades.
 
-Em caso de dúvidas sobre os limites do sistema, contate o [Suporte da Adobe](https://experienceleague.adobe.com/home?lang=pt-BR#support).
+Em caso de dúvidas sobre os limites do sistema, contate o [Suporte da Adobe](https://experienceleague.adobe.com/home?lang=en#support).
 
 ## Evitar problemas de desempenho
 
@@ -118,7 +118,6 @@ O uso do Dynamic Media rastreia solicitações de API que entram nos componentes
 | Políticas por exibição de catálogo | Número de filtros de dados permitidos | 10 | Não |
 | Valores de atributo em uma política | Número de características do produto que podem ser configuradas para filtragem | 100 | Não |
 | [Atribuição de chave de acesso restrito](setup/private-catalog-view.md) | Número de chaves de acesso restrito que podem ser atribuídas a uma única exibição de catálogo | 3 | Não |
-| [Chaves de acesso restrito](setup/restricted-access-keys.md) | Número de chaves por ambiente | Máximo de 100 | Não |
 | Tamanho da chave RSA (chaves de acesso restrito) | Fortaleza de chave mínima e máxima aceita para uma chave de acesso restrito | 2048 bits mínimo, 8192 bits máximo | Não |
 | Chaves de acesso restrito | Atraso na propagação de revogação de chave | Até 5 minutos, devido ao armazenamento em cache. Os tokens assinados por uma chave removida são negados assim que o atraso decorre. | Não se aplica |
 
@@ -172,7 +171,7 @@ Os recursos a seguir estão disponíveis para recomendações de produtos. Algun
 
 | **Recurso** | **Descrição** | **Alocação base** | **Expansível?** | **Notas** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | Capacidade para criar extensões e integrações nativas em nuvem | Com base no nível de GMV<p>Alocação mínima: 1 pacote/ano</p> | Sim<p>Adicionar pacotes adicionais</p> | Para obter os limites definidos por pacote, consulte:<ul><li>[Descrição de produto do App Builder](https://helpx.adobe.com/br/legal/product-descriptions/adobe-developer-app-builder.html) para limites definidos por pacote.</li><li>[Limitações e configurações do sistema](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) nos *Guias do App Builder Runtime*.</li><li>[Requisitos de armazenamento do App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | Capacidade para criar extensões e integrações nativas em nuvem | Com base no nível de GMV<p>Alocação mínima: 1 pacote/ano</p> | Sim<p>Adicionar pacotes adicionais</p> | Para obter os limites definidos por pacote, consulte:<ul><li>[Descrição de produto do App Builder](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html) para limites definidos por pacote.</li><li>[Limitações e configurações do sistema](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) nos *Guias do App Builder Runtime*.</li><li>[Requisitos de armazenamento do App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 
