@@ -57,7 +57,7 @@ Saiba o que é o Adobe Commerce e como o administrador e a loja trabalham juntos
 
 - [[!DNL Adobe Commerce Optimizer role-based workflows]](/help/optimizer/get-started.md#role-based-workflows)
 
-- [Guia de introdução ao Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/guide-overview)
+- [Guia de introdução ao Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/guide-overview)
 
 
 ## Para merchandisers
@@ -90,8 +90,8 @@ A configuração difere por plataforma e se seu projeto usa [!DNL Adobe Commerce
 
 - Para administração da plataforma do Adobe Commerce na nuvem ou no local, consulte:
 
-- [Guia do Commerce na infraestrutura em nuvem](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
-- [Guias Operacionais do Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home) para locais.
+- [Guia do Commerce na infraestrutura em nuvem](https://experienceleague.adobe.com/pt-br/docs/commerce-on-cloud/user-guide/overview)
+- [Guias Operacionais do Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/operational-guides/home) para locais.
 
 ## Para desenvolvedores
 

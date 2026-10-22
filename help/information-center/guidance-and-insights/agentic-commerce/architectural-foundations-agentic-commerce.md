@@ -136,4 +136,4 @@ O comércio eletrônico não está mais restrito a vitrines e resultados de pesq
 * [Políticas](/help/optimizer/setup/policies.md)
 * [Ferramentas de desenvolvedor de codificação de IA para o Adobe Commerce App Builder](/help/cloud-service/migration/coding-tools.md)
 * [APIs do Commerce](../../apis/commerce-apis.md)
-* [Lista de reprodução do Commerce Developer Agent](https://experienceleague.adobe.com/en/playlists/commerce-developer-agent)—Assista a vídeos técnicos sobre como configurar e usar o Commerce Developer Agent.
+* [Lista de reprodução do Commerce Developer Agent](https://experienceleague.adobe.com/pt-br/playlists/commerce-developer-agent)—Assista a vídeos técnicos sobre como configurar e usar o Commerce Developer Agent.

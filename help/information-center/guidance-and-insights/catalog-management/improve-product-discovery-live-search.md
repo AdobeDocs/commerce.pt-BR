@@ -47,7 +47,7 @@ O Adobe Commerce Live Search fornece insights de desempenho de pesquisa que pode
 
 ## Procure sinais no desempenho da pesquisa
 
-No espaço de trabalho Desempenho do Live Search, analise métricas como pesquisas exclusivas, pesquisas sem resultados, resultados populares, taxa de click-through, taxa de conversão e posição média do clique. Use-as para identificar tendências e decidir quais consultas ou produtos precisam de atenção. [Desempenho](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/performance)
+No espaço de trabalho Desempenho do Live Search, analise métricas como pesquisas exclusivas, pesquisas sem resultados, resultados populares, taxa de click-through, taxa de conversão e posição média do clique. Use-as para identificar tendências e decidir quais consultas ou produtos precisam de atenção. [Desempenho](https://experienceleague.adobe.com/pt-br/docs/commerce/live-search/live-search-admin/performance)
 
 ![Espaço de trabalho Desempenho do Live Search mostrando pesquisas exclusivas, posição média de cliques, taxa de cliques, taxa de conversão e taxa de resultados zero, com guias para pesquisas exclusivas, resultados zero e resultados populares](../../assets/guidance-and-insights/live-search-performance-dashboard.png){width="800" zoomable="yes"}
 
@@ -65,7 +65,7 @@ Trate-os como um referencial e sinais de diagnóstico, não como uma falha ou ap
 
 Nem sempre os compradores descrevem os produtos usando a terminologia do catálogo. Alguém que procura &quot;sapatos confortáveis para ficar o dia todo&quot;, por exemplo, pode estar interessado em produtos descritos como &quot;tênis para caminhada acolchoados&quot;.
 
-A pesquisa semântica usa significado e contexto juntamente com a correspondência de palavras-chave, ajudando a conectar consultas em linguagem natural a produtos relevantes, mesmo quando a consulta não corresponde exatamente ao texto do catálogo. O Live Search combina palavra-chave e correspondência semântica em uma experiência de pesquisa. [Pesquisa semântica](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/semantic-search)
+A pesquisa semântica usa significado e contexto juntamente com a correspondência de palavras-chave, ajudando a conectar consultas em linguagem natural a produtos relevantes, mesmo quando a consulta não corresponde exatamente ao texto do catálogo. O Live Search combina palavra-chave e correspondência semântica em uma experiência de pesquisa. [Pesquisa semântica](https://experienceleague.adobe.com/pt-br/docs/commerce/live-search/live-search-admin/semantic-search)
 
 A correspondência semântica pode ajudar com pesquisas exploratórias, mas a relevância ainda depende dos produtos e das informações disponíveis em seu catálogo. Para pesquisas envolvendo um modelo exato, especificação ou requisito de compatibilidade, verifique se os resultados permanecem precisos.
 
@@ -73,9 +73,9 @@ A correspondência semântica pode ajudar com pesquisas exploratórias, mas a re
 
 A configuração depende do produto Adobe Commerce que você usa:
 
-- **Adobe Commerce na infraestrutura de nuvem ou no local:** A pesquisa semântica do Live Search está disponível para o Adobe Commerce 2.4.4 e posterior. No Admin, vá para Marketing > SEO &amp; Search > Live Search, abra Configurações, ative a pesquisa semântica e salve. É compatível com catálogos em inglês. [Configurações—Pesquisa semântica](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/settings)
-- **Adobe Commerce as a Cloud Service:** o sistema habilita a pesquisa semântica por padrão. É compatível com catálogos em inglês. [Pesquisa semântica](https://experienceleague.adobe.com/en/docs/commerce/live-search/live-search-admin/semantic-search)
-- **Adobe Commerce Optimizer:** o sistema habilita a pesquisa semântica por padrão. Opcionalmente, é possível ajustar controles como aumento semântico e o limite de similaridade. As configurações também incluem opções de pesquisa difusa. [Pesquisa Semântica](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/semantic-search) · [Configurações—Ajuste opcional](https://experienceleague.adobe.com/en/docs/commerce/optimizer/settings)
+- **Adobe Commerce na infraestrutura de nuvem ou no local:** A pesquisa semântica do Live Search está disponível para o Adobe Commerce 2.4.4 e posterior. No Admin, vá para Marketing > SEO &amp; Search > Live Search, abra Configurações, ative a pesquisa semântica e salve. É compatível com catálogos em inglês. [Configurações—Pesquisa semântica](https://experienceleague.adobe.com/pt-br/docs/commerce/live-search/live-search-admin/settings)
+- **Adobe Commerce as a Cloud Service:** o sistema habilita a pesquisa semântica por padrão. É compatível com catálogos em inglês. [Pesquisa semântica](https://experienceleague.adobe.com/pt-br/docs/commerce/live-search/live-search-admin/semantic-search)
+- **Adobe Commerce Optimizer:** o sistema habilita a pesquisa semântica por padrão. Opcionalmente, é possível ajustar controles como aumento semântico e o limite de similaridade. As configurações também incluem opções de pesquisa difusa. [Pesquisa Semântica](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/setup/semantic-search) · [Configurações—Ajuste opcional](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/settings)
 
 ## Transformar insights de pesquisa em ação
 
@@ -83,8 +83,8 @@ Use um ciclo de análise contínua para melhorar a descoberta de produtos:
 
 1. **Localizar consultas para investigar.** Revise pesquisas sem resultados, consultas populares e pesquisas com baixo engajamento.
 2. **Verifique o que o comprador está solicitando.** Determine se a consulta aponta para um produto ausente, uma incompatibilidade de texto ou dados de produto não claros.
-3. **Melhore as informações sobre o produto.** Torne os atributos e descrições do produto precisos e úteis para os termos que os compradores usam. Para o Live Search, a Adobe recomenda configurar os atributos e pesos pesquisáveis apropriados e garantir que os dados do atributo sejam relevantes. [Práticas recomendadas do Live Search](https://experienceleague.adobe.com/en/docs/commerce/live-search/best-practice)
-4. **Refine a experiência de pesquisa.** Quando apropriado, use regras de pesquisa, sinônimos e aspectos para ajudar os compradores a encontrar e restringir resultados relevantes. [Práticas recomendadas do Live Search](https://experienceleague.adobe.com/en/docs/commerce/live-search/best-practice)
+3. **Melhore as informações sobre o produto.** Torne os atributos e descrições do produto precisos e úteis para os termos que os compradores usam. Para o Live Search, a Adobe recomenda configurar os atributos e pesos pesquisáveis apropriados e garantir que os dados do atributo sejam relevantes. [Práticas recomendadas do Live Search](https://experienceleague.adobe.com/pt-br/docs/commerce/live-search/best-practice)
+4. **Refine a experiência de pesquisa.** Quando apropriado, use regras de pesquisa, sinônimos e aspectos para ajudar os compradores a encontrar e restringir resultados relevantes. [Práticas recomendadas do Live Search](https://experienceleague.adobe.com/pt-br/docs/commerce/live-search/best-practice)
 5. **Revise os resultados e repita.** Monitore as mesmas consultas e sinais de desempenho após fazer alterações e ajuste com base no que os compradores fazem.
 
 ## Faça com que cada pesquisa conte
