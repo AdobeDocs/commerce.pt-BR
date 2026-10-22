@@ -1,7 +1,7 @@
 ---
-source-git-commit: f43710c77d063d923d136b9fda2d9283ede97788
+source-git-commit: bda4dae0a31e869ced20968bc9a9785f6b730c97
 workflow-type: tm+mt
-source-wordcount: '1250'
+source-wordcount: '1254'
 ht-degree: 1%
 ---
 # Modelo de novidades
@@ -360,7 +360,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição do guia <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/insights/overview">Commerce Insights</a>, uma nova página inicial para implementação estratégica e orientação de segurança da engenharia e do gerenciamento de produtos da Adobe Commerce.</p>
+      <td><p>Adição do guia <a href="https://experienceleague.adobe.com/en/docs/commerce/information-center/insights-and-guidance/overview">Commerce Insights</a>, uma nova página inicial para implementação estratégica e orientação de segurança da engenharia e do gerenciamento de produtos da Adobe Commerce.</p>
 </td>
       <td>
         Novo tópico

@@ -1,8 +1,6 @@
 ---
 title: 'Início: Guias de Serviços'
-description: Navegue pela documentação do produto Adobe Commerce para obter os serviços SaaS da Commerce
-seo-title: Services for Adobe Commerce
-seo-description: Access the product documentation for hosted services that help Adobe Commerce merchants support key components of their business.
+description: Encontre a documentação de serviços da Adobe Commerce para detecção de produtos, pagamentos, sincronização de dados e integrações. Revise a disponibilidade e as orientações de configuração.
 recommendations: noCatalog
 exl-id: 507af1fa-9f3e-41bc-9aaf-cd89839aae0b
 TQID: https://experienceleague.adobe.com/zKL5fNTECsNOKZfEl7OUSYHTo-wrh81z3-C7wB1SoWM
@@ -50,23 +48,28 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
 last-update: 2026-10-09
-source-git-commit: ad2a6b3d25c2597442ded206ea264bd363a66733
+source-git-commit: 4c3c267873a68560a885c6376cd1137a7503710a
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1522'
 ht-degree: 0%
 ---
 # Guias de serviços da Adobe Commerce
 
-Os serviços da Adobe Commerce fornecem recursos avançados que ampliam sua loja, simplificam integrações e otimizam o gerenciamento de dados.
+Os Serviços Adobe Commerce fornecem recursos combináveis que estendem as experiências da loja, conectam a Adobe e soluções de terceiros e ajudam a gerenciar dados comerciais.
+
+
+>[!NOTE]
+>
+>As opções de disponibilidade, configuração e extensão dos Serviços da Adobe Commerce variam de acordo com o serviço e o modelo de implantação da Commerce. Sempre verifique o guia específico do serviço para obter as informações mais precisas.
 
 ## Como o Commerce se conecta aos serviços?
 
-Todos os serviços do Commerce se conectam à sua instância do Commerce por meio do [Commerce Services connector](saas.md).
+Para serviços que o exigem, o [Commerce Services Connector](https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/integration-services/saas) conecta uma instância do Commerce a serviços compatíveis usando chaves de API e um espaço de dados SaaS. As etapas de conexão e sincronização de dados dependem do modelo de implantação e do serviço.
 
-Quando o Commerce Services Connector está configurado, você tem acesso aos seguintes recursos:
+Quando o Commerce Services Connector é configurado, você tem acesso aos seguintes recursos:
 
-- **Serviços de vitrine** - recursos alimentados por IA para descoberta de produtos, recomendações e pagamentos
-- **Serviços de integração** - Conexões com a Adobe Experience Platform, a AEM Assets e outras soluções da Adobe
+* **Serviços de vitrine** - recursos alimentados por IA para descoberta de produtos, recomendações e pagamentos
+* **Serviços de integração** - Conexões com a Adobe Experience Platform, a AEM Assets e outras soluções da Adobe
 
 Esses serviços ajudam a aumentar as conversões, fornecer experiências personalizadas e usar melhor os dados de comércio no ecossistema do Adobe.
 
@@ -76,9 +79,9 @@ Esses serviços ajudam a aumentar as conversões, fornecer experiências persona
 >
 >A Adobe recomenda atualizar para a versão mais recente compatível de todos os serviços da Commerce. Consulte as [notas de versão](release-notes-all.md).
 
-Além desses recursos, há ferramentas que permitem monitorar o fluxo de dados da instância do Commerce para a plataforma SaaS. Essas ferramentas de dados podem sincronizar os dados automaticamente e ajudar você a otimizar o desempenho.
-
 ## Serviços disponíveis
+
+A lista a seguir agrupa serviços por função. A disponibilidade, o licenciamento e a configuração podem diferir entre PaaS e SaaS e podem ser alterados por versão do serviço. Siga os rótulos e pré-requisitos do modelo de implantação em cada guia vinculado.
 
 >[!BEGINTABS]
 
@@ -143,6 +146,13 @@ Os serviços da Storefront são um grupo de recursos alimentados por IA que otim
 </tr>
 </table>
 
+>[!NOTE]
+>
+>
+>O Adobe Commerce Optimizer fornece recursos de catálogo e merchandising nativamente, em vez de usar os serviços Live Search, Serviço de catálogo e Recomendações de produto separados. Consulte [O que é o Adobe Commerce Optimizer?](../optimizer/overview.md)
+>
+>Para implantações do Adobe Commerce integradas ao Otimizer, o Adobe Commerce Optimizer Connector lida com a sincronização de catálogo e preço sem exigir o Commerce Services Connector para essa sincronização. Outras integrações, como [Payment Services](../payment-services/compatibility.md) e [Data Connection](../data-connection/connect-data.md#configure-the-commerce-services-connector), ainda exigem o Commerce Services Connector. Consulte [Configurar o conector para Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce/aco-optimizer-connector/get-started/get-started).
+
 >[!TAB Serviços de integração]
 
 Os serviços de integração se referem a recursos que conectam sua instância do Commerce a outros produtos ou serviços no Adobe.
@@ -193,7 +203,7 @@ Os serviços de integração se referem a recursos que conectam sua instância d
 
 >[!TAB Ferramentas de dados]
 
-As ferramentas de dados ajudam você a gerenciar e otimizar o fluxo de informações entre sua instância do Commerce e os serviços conectados. Essas ferramentas garantem a sincronização eficiente de dados, monitoram operações de sincronização e melhoram o desempenho, descarregando processos que consomem muitos recursos.
+As ferramentas de dados ajudam você a gerenciar e otimizar o fluxo de informações entre sua instância do Commerce e os serviços conectados. Essas ferramentas garantem a sincronização eficiente de dados, monitoram operações de sincronização e melhoram o desempenho, descarregando processos que consomem muitos recursos. Sua disponibilidade e comportamento variam de acordo com o serviço e o modelo de implantação. Consulte cada guia para obter instruções de configuração, sincronização, monitoramento de operações de sincronização e detalhes de desempenho.
 
 <table style="table-layout:fixed">
 <tr style="border: 0;">
@@ -261,20 +271,20 @@ Se você deseja dimensionar seus negócios, melhorar a experiência do cliente o
 
 ## Como os serviços da Commerce trabalham em conjunto
 
-Os serviços da Adobe Commerce são criados em uma plataforma unificada. Ao usar vários serviços, você se beneficia de:
+Os serviços da Adobe Commerce são criados em uma plataforma unificada e podem ser combinados para oferecer suporte a fluxos de trabalho conectados de vitrine, merchandising, pagamento, ativos e dados do cliente. Ao usar vários serviços, você se beneficia de:
 
-- **Pipeline de dados unificado** - Os dados de produtos, preços e inventário são sincronizados automaticamente em todos os serviços, eliminando a necessidade de entrada de dados duplicados ou integrações personalizadas.
-- **Personalização em tempo real** - O comportamento do cliente de pesquisa, navegação e compras potencializa as recomendações inteligentes e a classificação em toda a loja.
-- **Integração consistente da loja** - Independentemente de você estar usando uma loja da Commerce com Edge Delivery Services, PWA Studio ou implementações headless, os mesmos menus suspensos e APIs funcionam perfeitamente em todas as plataformas.
-- **Suporte a várias lojas e vários idiomas** - Todos os serviços respeitam automaticamente as exibições da loja, os segmentos de clientes e as configurações de catálogo B2B sem configurações adicionais.
-- **Visuais avançados do produto** - Quando você integra com o AEM Assets, as imagens otimizadas do produto são exibidas de forma consistente em resultados de pesquisa, páginas de produto e recomendações.
-- **Dados do cliente conectados** - Use a Conexão de Dados para compartilhar comportamento de compra com a Adobe Experience Platform, o Real-Time CDP e o Journey Optimizer, permitindo a personalização entre canais e a otimização de campanhas.
+* **Pipeline de dados unificado** - Os dados de produtos, preços e inventário são sincronizados automaticamente em todos os serviços, eliminando a necessidade de entrada de dados duplicados ou integrações personalizadas.
+* **Personalização em tempo real** - O comportamento do cliente de pesquisa, navegação e compras potencializa as recomendações inteligentes e a classificação em toda a loja.
+* **Integração consistente da loja** - Independentemente de você estar usando uma loja da Commerce com Edge Delivery Services, PWA Studio ou implementações headless, é possível acessar menus suspensos e APIs para fornecer experiências de comércio de forma consistente em todas as plataformas.
+* **Suporte a várias lojas e vários idiomas** - Todos os serviços respeitam automaticamente as exibições da loja, os segmentos de clientes e as configurações de catálogo B2B sem configurações adicionais.
+* **Visuais avançados do produto** - Quando você integra com o AEM Assets, as imagens otimizadas do produto são exibidas de forma consistente em resultados de pesquisa, páginas de produto e recomendações.
+* **Dados do cliente conectados** - Use a Conexão de Dados para compartilhar comportamento de compra com a Adobe Experience Platform, o Real-Time CDP e o Journey Optimizer, permitindo a personalização entre canais e a otimização de campanhas.
 
 Por exemplo, quando um comprador pesquisa um produto usando o Live Search, o adiciona ao carrinho depois de visualizar uma Recomendação de produto e conclui a compra com Serviços de pagamento, toda essa atividade flui perfeitamente pelo pipeline de dados unificado. Esses dados de comportamento alimentam melhores resultados de pesquisa e recomendações mais relevantes para os futuros compradores.
 
 >[!NOTE]
 >
->Você deve configurar a coleta de dados do evento para habilitar o compartilhamento de dados comportamentais entre serviços. Consulte [Configurar Commerce Services](saas.md#saas-configuration) para obter instruções sobre a configuração.
+>Para habilitar o compartilhamento de dados comportamentais com o Adobe Experience Platform, configure a coleção de dados do evento na Conexão de dados. Consulte [Coleção de dados de conexão de dados](../data-connection/connect-data.md#data-collection) para obter instruções de configuração.
 
 Cada serviço pode ser usado de forma independente, mas combiná-los cria uma experiência de compra mais inteligente e personalizada.
 

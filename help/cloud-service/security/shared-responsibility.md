@@ -40,18 +40,28 @@ topic_v2:
     internal-label: Customer experience
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 8b3db59ed02539646dd53a2e9c7a0925b7c3a804
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '472'
 ht-degree: 0%
 ---
 # Segurança de responsabilidade compartilhada e modelo operacional
 
 [!DNL Adobe Commerce as a Cloud Service] é um serviço sob demanda que depende de um modelo operacional e de segurança de responsabilidade compartilhada. A Adobe e os clientes compartilham essas responsabilidades, com cada parte com responsabilidades distintas para proteger e operar o aplicativo da Adobe Commerce.
 
+O [!DNL Adobe Commerce as a Cloud Service with Managed Operations] é uma oferta premium que adiciona um CSE (Engenheiro de Sucesso do Cliente) nomeado e uma equipe de suporte de Operações Gerenciadas P1 24 horas por dia, 7 dias por semana, além do modelo padrão de responsabilidade compartilhada. A Adobe continua a ser proprietária da plataforma, da infraestrutura, da segurança e do aplicativo principal, e você continua a ser proprietário de suas personalizações e integrações. No entanto, com as Operações gerenciadas, a Adobe Managed Services é consultada sobre:
+
+- Integrações
+- aplicativos App Builder
+- Edge Delivery Storefront
+- Gerenciamento de eventos
+- Atualizações da plataforma
+
+O Adobe Managed Services também compartilha a responsabilidade pelo teste de recuperação de desastres, depuração e isolamento de problemas. Seu CSE o orienta desde a integração até a ativação e muito mais, portanto você tem um especialista em Adobe em cada estágio, em vez de operar sozinho.
+
 >[!BEGINSHADEBOX]
 
-As tabelas de resumo a seguir usam o modelo RACI para mostrar as responsabilidades de segurança compartilhadas entre a Adobe e os clientes.
+As tabelas de resumo a seguir usam o modelo RACI para mostrar as responsabilidades de segurança compartilhadas entre a Adobe, as Operações gerenciadas da Adobe e os clientes.
 
 **R** — Responsável
 **A** — Responsável
@@ -60,39 +70,39 @@ As tabelas de resumo a seguir usam o modelo RACI para mostrar as responsabilidad
 
 >[!ENDSHADEBOX]
 
-| Tarefa | Adobe | Cliente |
-| --- | --- | --- |
-| Definir regras de WAF de origem de back-end | RA | |
-| Definição de regras WAF de CDN de back-end | RA | |
-| Implantando e mantendo [!DNL Adobe Developer App Builder] aplicativos | | RA |
-| Implantação de regras do WAF da plataforma de back-end | RA | |
-| Implantação de regras WAF de CDN de back-end | RA | |
-| Correção de bugs principais em [!DNL Adobe Commerce as a Cloud Service] | RA | I |
-| Liberando patches de infraestrutura do [!DNL Adobe Commerce as a Cloud Service] | RA | |
-| Dimensionamento (infraestrutura) | RA | |
-| Dimensionamento (aplicativo principal) | RA | |
-| Integração de aplicativos externos | | RA |
-| Instalação de aplicativos do App Builder | | RA |
-| Teste de desempenho de todos os aplicativos App Builder | | RA |
-| Definição de temas e design de aplicativos personalizados do App Builder | | RA |
-| Configurar DNS de back-end | RA | I |
-| Integração da CDN de back-end | RA | I |
-| Suporte à CDN de back-end | RA | I |
-| Obter um provedor de DNS de back-end | RA | |
-| Provisionamento dos ambientes de produção e sandbox | A | R |
-| Acesso ao Dynamics para Adobe Commerce na infraestrutura em nuvem | R | C |
-| Resolvendo problemas de segurança do cliente de back-end | RA | I |
-| Resolvendo problemas de segurança da CDN de back-end | RA | |
-| Auxiliar a Adobe na pesquisa de segurança (verificações/auditorias) | RA | |
-| Executando verificações ASV de PCI | RA | I |
-| Remediando verificações de PCI da infraestrutura Adobe Commerce | R | |
-| Gerenciamento de segredos de SO e plataforma | RA | |
-| Monitorar logs de segurança de back-end | RA | |
-| Controle do suporte e do acesso do cliente | A | R |
-| Teste e documentação anuais do plano de DR da Adobe e backup e restauração | RA | |
-| Teste e documentação anuais do plano de recuperação de desastres | RA | |
-| Depuração e isolamento de problemas | R | R |
-| Suporte oportuno ao processo de depuração e isolamento de problemas | R | R |
-| Publicação de atualizações e patches no Adobe Commerce Core | RA | I |
-| Instalação de atualizações e patches no Adobe Commerce Core | RA | I |
-| Qualidade do aplicativo principal do Adobe Commerce | RA | |
+| Tarefa | Adobe | Operações gerenciadas do Adobe | Cliente |
+| --- | --- | --- | --- |
+| Definir regras de WAF de origem de back-end | RA | | |
+| Definição de regras WAF de CDN de back-end | RA | | |
+| Implantando e mantendo [!DNL Adobe Developer App Builder] aplicativos | | | RA |
+| Implantação de regras do WAF da plataforma de back-end | RA | | |
+| Implantação de regras WAF de CDN de back-end | RA | | |
+| Correção de bugs principais em [!DNL Adobe Commerce as a Cloud Service] | RA | | I |
+| Liberando patches de infraestrutura do [!DNL Adobe Commerce as a Cloud Service] | RA | | |
+| Dimensionamento (infraestrutura) | RA | | |
+| Dimensionamento (aplicativo principal) | RA | | |
+| Integração de aplicativos externos | | C | RA |
+| Instalação de aplicativos do App Builder | | C | RA |
+| Teste de desempenho de todos os aplicativos App Builder | | C | RA |
+| Definição de temas e design de aplicativos personalizados do App Builder | | C | RA |
+| Configurar DNS de back-end | RA | | I |
+| Integração da CDN de back-end | RA | | I |
+| Suporte à CDN de back-end | RA | | I |
+| Obter um provedor de DNS de back-end | RA | | |
+| Provisionamento dos ambientes de produção e sandbox | A | | R |
+| Acesso ao Dynamics para Adobe Commerce na infraestrutura em nuvem | R | | C |
+| Resolvendo problemas de segurança do cliente de back-end | RA | | I |
+| Resolvendo problemas de segurança da CDN de back-end | RA | | |
+| Auxiliar a Adobe na pesquisa de segurança (verificações/auditorias) | RA | | |
+| Executando verificações ASV de PCI | RA | | I |
+| Remediando verificações de PCI da infraestrutura Adobe Commerce | R | | |
+| Gerenciamento de segredos de SO e plataforma | RA | | |
+| Monitorar logs de segurança de back-end | RA | | |
+| Controle do suporte e do acesso do cliente | A | C | R |
+| Teste e documentação anuais do plano de DR da Adobe e backup e restauração | RA | C | |
+| Teste e documentação anuais do plano de recuperação de desastres | RA | RA | |
+| Depuração e isolamento de problemas | R | R | R |
+| Suporte oportuno ao processo de depuração e isolamento de problemas | R | R | R |
+| Publicação de atualizações e patches no Adobe Commerce Core | RA | C | I |
+| Instalação de atualizações e patches no Adobe Commerce Core | RA | C | I |
+| Qualidade do aplicativo principal do Adobe Commerce | RA | C | |

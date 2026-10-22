@@ -1,6 +1,6 @@
 ---
 title: Adobe Commerce Optimizer Connector
-description: Saiba mais sobre o [!DNL Adobe Commerce Optimizer Connector] para sincronização de catálogo, pesquisa e entrega de vitrine entre [!DNL Adobe Commerce] e [!DNL Adobe Commerce Optimizer].
+description: Saiba como o [!DNL Adobe Commerce Optimizer Connector] sincroniza dados do catálogo do Commerce para o [!DNL Adobe Commerce Optimizer] para pesquisa e entrega de vitrines.
 feature: Integration, Storefront, Configuration
 badgePaas: label="Somente PaaS" type="Informative" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos do Adobe Commerce na nuvem (infraestrutura do PaaS gerenciada pela Adobe) e a projetos locais."
 autotag-review: '2026-06-09T19:00:00.000Z'
@@ -89,9 +89,9 @@ topic_v2:
     internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: a3ade1a31d3c2905b601f71bda118de89c43cf59
+source-git-commit: bda4dae0a31e869ced20968bc9a9785f6b730c97
 workflow-type: tm+mt
-source-wordcount: '1204'
+source-wordcount: '1206'
 ht-degree: 0%
 ---
 # [!DNL Adobe Commerce Optimizer Connector]
@@ -151,7 +151,7 @@ Depois que o conector sincroniza os dados do catálogo, configure o modelo de me
 
 ### Comportamento do conector B2B {#b2b-shared-catalog-projection-specification}
 
-O [!DNL Adobe Commerce Optimizer Connector for B2B] estende o conector base com uma projeção unidirecional do catálogo compartilhado B2B e da configuração de atribuição da empresa em experiências de catálogo protegidas. [!DNL Adobe Commerce] permanece a fonte da verdade para dados de catálogo e preço; o conector B2B se baseia no catálogo base e na sincronização de preços e gerencia suas projeções geradas pelo conector.
+O [!DNL Adobe Commerce Optimizer Connector for B2B] estende o conector base com uma projeção unidirecional do catálogo compartilhado B2B e da configuração de atribuição da empresa em experiências de catálogo protegidas. [!DNL Adobe Commerce] permanece o sistema de registro para dados de catálogo e preço. O conector B2B se baseia no catálogo básico e na sincronização de preços e gerencia suas projeções geradas pelo conector.
 
 Para o mapeamento de projeção, fluxo de autorização de tempo de execução e limite de proteção, consulte [Projeção do catálogo compartilhado B2B](b2b-shared-catalog-projection.md). Para obter instruções de configuração, consulte [Introdução ao conector B2B](/help/aco-connector/get-started-b2b-shared-catalogs.md).
 
