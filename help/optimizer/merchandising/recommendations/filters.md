@@ -1,7 +1,7 @@
 ---
 title: Filtros de recomendação
 description: Saiba como usar filtros para controlar quais produtos aparecem nas recomendações do [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente ao Adobe Commerce as a Cloud Service e a projetos [!DNL Adobe Commerce Optimizer] (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente ao Adobe Commerce as a Cloud Service e a projetos [!DNL Adobe Commerce Optimizer] (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: f6100538-23c0-4e90-9834-a895d4707282
 TQID: https://experienceleague.adobe.com/-pmVrAgEsSkn66K00-eaoQ4TF-7Xyxuwlniip1cR4HM
 product_v2:
@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 092ffabea06cf72af39a663c14b448f9e7633f60
+source-git-commit: b5ef5e736e116d4321444cbaaeae90a08facf047
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2407'
 ht-degree: 0%
 ---
 # Filtrar produtos
@@ -225,6 +225,14 @@ Um filtro de atributo difere de um [filtro de produto](#product) na medida em qu
 #### Configurar um filtro de atributo
 
 Use as etapas a seguir para adicionar uma regra de inclusão ou exclusão de atributo a uma unidade de recomendação.
+
+>[!TIP]
+>
+>Para todos os atributos que você deseja filtrar, use a [API de Metadados](https://developer.adobe.com/commerce/services/reference/rest/#tag/Metadata) para definir o parâmetro `filterable`:
+>
+>{&quot;filterable&quot;: true}
+>
+>O atributo ficará disponível no menu **Atributos** na próxima vez que o catálogo for sincronizado com [!DNL Adobe Commerce Optimizer].
 
 1. Ao [criar ou editar](create.md) uma unidade de recomendação, vá para **[!UICONTROL Filter products]**.
 1. Selecione a guia **[!UICONTROL Inclusions]** ou **[!UICONTROL Exclusions]**. O selo em cada guia mostra quantos filtros desse tipo estão habilitados.
