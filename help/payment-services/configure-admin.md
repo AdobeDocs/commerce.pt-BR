@@ -27,9 +27,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '3767'
+source-wordcount: '3911'
 ht-degree: 0%
 ---
 # Configuração de [!DNL Payment Services]
@@ -59,6 +59,7 @@ Você pode habilitar [!DNL Payment Services] para sua loja e _[!UICONTROL Mercha
 
 1. Seus valores de **[!UICONTROL PayPal Merchant ID]** e **[!UICONTROL PayPal Merchant Status]** são fornecidos automaticamente pelo PayPal assim que você visita o painel [!DNL Payment Services] pela primeira vez.
 1. Para o **Descritor Flexível** (valores personalizados que são exibidos em demonstrativos bancários de transações do cliente para definir entre lojas/marcas/catálogos), adicione seu texto personalizado (até 22 caracteres) ao campo de texto, substituindo `Soft descriptor` ou o valor existente.
+1. Para comerciantes qualificados que usam o [!DNL Payment Services] 2.17.0 ou posterior, defina **[!UICONTROL Over Capture Enabled]** como `Yes` para habilitar a [captura excessiva](over-capture.md). É necessário um contrato de captura excessiva do PayPal, e o **[!UICONTROL Payment Action]** do método de pagamento deve ser definido como `Authorize`.
 1. Clique em **[!UICONTROL Save Config]** para salvar suas alterações.
 1. Navegue até **[!UICONTROL System]** > **[!UICONTROL Cache Management]** e clique em **[!UICONTROL Flush Cache]** para atualizar todos os caches inválidos.
 
@@ -67,6 +68,7 @@ Você pode habilitar [!DNL Payment Services] para sua loja e _[!UICONTROL Mercha
 | Campo | Escopo | Descrição |
 |---|---|---|
 | [!UICONTROL Enable] | site | Habilite ou desabilite o [!DNL Payment Services] para o seu site. Opções: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Over Capture Enabled] | site | Habilite ou desabilite a [captura excessiva](over-capture.md) para comerciantes qualificados com um contrato de captura excessiva do PayPal. Requer [!DNL Payment Services] 2.17.0 ou posterior e uma ação de pagamento de `Authorize`. Opções: `[!UICONTROL Yes]` / `[!UICONTROL No]`. Padrão: `[!UICONTROL No]`. |
 | [!UICONTROL Method] | exibição de loja | Defina o método ou ambiente para sua loja. Opções: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Payment Services Sandbox ID] | exibição de loja | Sua ID de comerciante de sandbox, que é gerada automaticamente durante a integração da sandbox. |
 | [!UICONTROL Payment Services Production ID] | exibição de loja | Sua ID de comerciante de produção, que é gerada automaticamente durante a integração da produção (ao vivo). |
@@ -304,12 +306,15 @@ Configurar [!DNL PayPal payment buttons]
 
 Você pode ativar e configurar as opções de pagamento dos botões de pagamento do PayPal em Admin:
 
+No [!DNL Payment Services] 2.17.0 ou posterior, o **[!UICONTROL Skip Review]** controla se o check-out do PayPal Express inclui uma página de revisão do comerciante depois que o comprador deixa o modal de pagamento do PayPal. Essa página de revisão é separada do modal de pagamentos do PayPal. Consulte a [página de revisão do PayPal Express](payments-options.md#paypal-express-review-page) para obter mais informações.
+
 1. Na barra lateral _Admin_, vá para **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. No painel esquerdo, expanda **[!UICONTROL Sales]** e escolha **[!UICONTROL Payment Methods]**.
 1. Expanda a seção _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_.
 1. Na seção _[!UICONTROL Payment Services]_, expanda a seção&#x200B;_[!UICONTROL PayPal payment buttons]_.
 1. Para alterar o nome do método de pagamento conforme mostrado durante o check-out, edite o campo _[!UICONTROL Title]_.
 1. Para [definir a ação de pagamento](production.md#set-payment-services-as-payment-method), selecione **[!UICONTROL Authorize]** ou **[!UICONTROL Authorize and Capture]**.
+1. Para o check-out do PayPal Express, defina **[!UICONTROL Skip Review]** como `No` para mostrar a página de revisão do comerciante antes que o comprador faça o pedido, ou `Yes` para ignorá-lo.
 1. Para priorizar um método de pagamento na página de check-out, forneça um valor `Numeric Only` no campo **[!UICONTROL Sort order]**.
 1. Para habilitar/desabilitar as [mensagens de Pagamento Posterior](payments-options.md#pay-later-button), selecione `Yes`/`No` para **[!UICONTROL Display Pay Later Message]**.
 
@@ -334,6 +339,7 @@ Você pode ativar e configurar as opções de pagamento dos botões de pagamento
 |---|---|---|
 | [!UICONTROL Title] | exibição de loja | Adicione o texto a ser exibido como o título para esta opção de pagamento na exibição de Método de Pagamento durante a finalização da compra. Opções: campo de texto |
 | [!UICONTROL Payment Action] | site | A [ação de pagamento](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/config/sales/payment-methods/payment-methods#payment-actions){target="_blank"} para o método de pagamento especificado. Opções: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Skip Review] | exibição de loja | Em [!DNL Payment Services] 2.17.0 ou posterior, controle a página de revisão do comerciante para o check-out do PayPal Express. Defina como `[!UICONTROL No]` para mostrar a página após o modal de pagamento do PayPal ou `[!UICONTROL Yes]` para ignorá-la. Opções: `[!UICONTROL Yes]` / `[!UICONTROL No]`. Padrão: `[!UICONTROL Yes]`. |
 | [!UICONTROL Display Pay Later Message] | site | Ative ou desative as mensagens do PayPal Pay Later no carrinho de compras, página do produto, minicarrinho e durante o fluxo de finalização. Opções: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Configure Messaging] | exibição de loja | Modificar os estilos de Mensagens Posteriores do PayPal. Opções: `[!UICONTROL Product page]` / `[!UICONTROL Cart]` |
 | [!UICONTROL Show buttons on checkout page] | exibição de loja | Habilite ou desabilite [!DNL PayPal payment buttons] na página de check-out. Opções: `[!UICONTROL Yes]` / `[!UICONTROL No]` |

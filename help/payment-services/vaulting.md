@@ -22,9 +22,9 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '578'
 ht-degree: 0%
 ---
 # Compartimentalização do cartão de crédito
@@ -100,3 +100,5 @@ Para criar um pedido no Administrador para um cliente usando seu cartão de cré
 ## Segurança
 
 As informações mínimas do cartão de crédito são compartilhadas com o comprador; eles veem apenas os últimos quatro dígitos, a data de expiração e a marca do cartão de crédito com cofre. As informações de cartão de crédito são armazenadas com o provedor de pagamento para atender aos padrões de conformidade [PCI](security.md#pci-compliance).
+
+No [!DNL Payment Services] 2.17.0 ou posterior, os compradores que pagam com um cartão de crédito salvo poderão ser solicitados a concluir um [desafio de autenticação de 3D Secure (3DS)](security.md#3ds) exigido pelo emissor do cartão. Salvar um cartão não ignora a autenticação exigida pelo emissor.

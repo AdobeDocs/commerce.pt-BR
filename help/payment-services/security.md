@@ -21,9 +21,9 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '729'
 ht-degree: 0%
 ---
 # Segurança e conformidade
@@ -57,6 +57,8 @@ O [!UICONTROL Payment Services] fornece a funcionalidade 3DS para permitir que o
 Se você for um comerciante na UE ou na Grã-Bretanha onde a conformidade com 3DS é necessária, ative o 3DS manualmente (é `Off` por padrão) no [Administrador de Configuração](configure-admin.md#credit-card-fields).
 
 O 3DS é compatível com **[Campos de Cartão de Crédito](configure-admin.md#credit-card-fields)** e **[[!DNL Google Pay]](configure-admin.md#google-pay)**. Cada método de pagamento tem sua própria configuração de autenticação Segura 3D no Administrador, que pode ser definida como `Always`, `When required` ou `Off`.
+
+No [!DNL Payment Services] 2.17.0 ou posterior, os compradores que pagam com um [cartão de crédito salvo](vaulting.md) também podem concluir os desafios de autenticação 3DS exigidos pelo emissor. Um cartão salvo não isenta um pagamento da autenticação exigida pelo emissor.
 
 >[!IMPORTANT]
 >

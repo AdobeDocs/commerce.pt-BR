@@ -27,9 +27,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '2328'
+source-wordcount: '2458'
 ht-degree: 0%
 ---
 # Opções de pagamento
@@ -167,6 +167,17 @@ Os clientes podem fazer check-out com facilidade e confiança usando o botão Pa
 
 O botão [!DNL PayPal] é visível na página do produto, no minicarrinho, no carrinho de compras e nas exibições de check-out.
 
+#### Página de revisão do PayPal Express
+
+No [!DNL Payment Services] 2.17.0 ou posterior, os comerciantes podem configurar uma página de revisão de comerciante opcional para o check-out do PayPal Express. Esta página é separada do modal de pagamento do PayPal e permite que os compradores revisem o total do pedido final e os termos e condições aplicáveis antes de fazer um pedido.
+
+Use **[!UICONTROL Skip Review]** na [configuração dos botões de pagamento do PayPal](configure-admin.md#paypal-payment-buttons) para controlar esta etapa:
+
+* `No` — O comprador retorna à página de revisão do comerciante depois de concluir o modal de pagamento do PayPal e confirma o pedido antes que ele seja feito.
+* `Yes` — A página de revisão do comerciante é ignorada.
+
+A configuração da página de revisão não substitui a responsabilidade do comerciante de atender aos requisitos normativos aplicáveis. A [configuração da página de revisão de pagamento do Google](configure-admin.md#google-pay) existente é configurada separadamente.
+
 #### Botão [!DNL Venmo]
 
 Os clientes podem fazer check-out usando o botão [Venmo](https://venmo.com/).
@@ -201,7 +212,7 @@ Saiba como desabilitar ou habilitar as mensagens de [!DNL Pay Later] atualizando
 
 Os métodos de pagamento PayPal, Pagar Mais Tarde e Venmo usam um [retorno de chamada de envio do lado do servidor](https://developer.paypal.com/docs/multiparty/checkout/standard/customize/shipping-module/) que permite que o PayPal se comunique diretamente com sua instância do Commerce para recuperar as opções de envio e calcular os totais em tempo real.
 
-Essa abordagem do lado do servidor permite que o [!DNL Payment Services] ignore a janela pop-up de confirmação de pedido, fornecendo uma experiência de compra mais rápida e simplificada. Como os custos e impostos de envio são calculados dinamicamente por meio de retornos de chamada, o comprador vê os totais precisos diretamente na página de revisão do PayPal ou Venmo.
+Como os custos e impostos de envio são calculados dinamicamente por meio de retornos de chamada, o comprador vê opções de envio atualizadas e totais diretamente no modal de pagamento do PayPal ou Venmo. Para o check-out do PayPal Express, a [página de revisão do comerciante](#paypal-express-review-page) opcional é uma etapa separada após o modal de pagamento do PayPal, controlada por **[!UICONTROL Skip Review]**.
 
 >[!NOTE]
 >
@@ -283,7 +294,7 @@ Com o Adobe Commerce e o Magento Open Source [!DNL Payment Services], você tem 
 
 ### Recálculo de pedido
 
-Quando um cliente entra no fluxo de finalização do minicarrinho, carrinho de compras ou página do produto, ele é direcionado a uma página de revisão do pedido, onde pode ver o endereço de envio selecionado em uma janela pop-up do PayPal. Depois que o cliente selecionar o método de entrega, a quantia da ordem será recalculada apropriadamente e o cliente poderá ver os custos e impostos de entrega.
+Quando um cliente entra no fluxo de check-out do PayPal a partir do minicarrinho, carrinho de compras ou página do produto, ele pode revisar o endereço de envio selecionado no modal de pagamento do PayPal. Depois que o cliente seleciona o método de envio, o valor da ordem é recalculado e o cliente pode ver os custos e impostos de envio. Para o checkout do PayPal Express, a [página de revisão do comerciante](#paypal-express-review-page) opcional permite que o cliente analise o total final e os termos e condições aplicáveis antes de fazer o pedido.
 
 Quando um cliente entra no fluxo de finalização da página de finalização da compra, o sistema já sabe o endereço de entrega e o valor final calculado, e os totais são devidamente representados.
 
