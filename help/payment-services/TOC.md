@@ -1,19 +1,17 @@
 ---
 user-guide-title: Guia do [!DNL Payment Services]
 breadcrumb-title: '[!DNL Payment Services]'
-user-guide-description: Este guia fornece informações detalhadas sobre a instalação e configuração do [!DNL Payment Services] na sua loja [!DNL Adobe Commerce] ou [!DNL Magento Open Source] loja.
+user-guide-description: Este guia fornece informações detalhadas sobre a instalação e configuração do [!DNL Payment Services] para seu armazenamento [!DNL Adobe Commerce] ou [!DNL Magento Open Source].
 index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
 nudge: true
-source-git-commit: c09c161ca293b14918bd1ea3248978c12190584c
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '117'
+source-wordcount: '121'
 ht-degree: 2%
-
 ---
-
 
 # [!DNL Payment Services] para Commerce {#payment-services}
 
@@ -23,7 +21,7 @@ ht-degree: 2%
 - [Notas de versão](release-notes.md)
 - Integrar [!DNL Payment Services] {#get-started}
   - [Visão geral da integração](onboard.md)
-  - [Instalar a extensão  [!DNL Payment Services] &#x200B;](install.md)
+  - [Instalar a extensão  [!DNL Payment Services] ](install.md)
   - [Conectar sua instância](connect.md)
   - [Configurar sandbox de teste](sandbox.md)
   - [Ativar para produção](production.md)
@@ -39,6 +37,7 @@ ht-degree: 2%
   - [Check-out em  [!DNL Payment Services]](checkout.md)
   - Gerenciar pagamentos {#manage}
     - [Itens de linha para  [!DNL Payment Services]](line-items.md)
+    - [Supercaptura](over-capture.md)
     - [Reembolsos](refunds.md)
     - [Nulos](voids.md)
   - [Criar um pedido no Administrador](create-order.md)
@@ -52,4 +51,4 @@ ht-degree: 2%
 - Segurança e conformidade {#security-compliance}
   - [Segurança](security.md)
   - [Proteção contra fraude Signifyd](fraud-protection.md)
-- [Retornar à página inicial dos Serviços da Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/home)
+- [Retornar à página inicial dos Serviços da Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)

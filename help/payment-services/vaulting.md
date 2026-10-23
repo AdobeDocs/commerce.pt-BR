@@ -22,9 +22,9 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '578'
 ht-degree: 0%
 ---
 # Compartimentalização do cartão de crédito
@@ -49,7 +49,7 @@ Os clientes conectados podem colocar no cofre um método de pagamento no painel 
 
 1. Navegando até **[!UICONTROL Stored Payment Methods]** na navegação à esquerda para ver todos os métodos de pagamento armazenados.
 
-   Consulte [Métodos de pagamento armazenados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/payments/stored-payment-methods) para obter mais informações.
+   Consulte [Métodos de pagamento armazenados](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods) para obter mais informações.
 
 1. O cliente clica em **[!UICONTROL Add New Card]** para armazenar um novo cartão.
 
@@ -90,13 +90,15 @@ Você só poderá usar cartões com cofre no Administrador se o cliente tiver um
 
 Para criar um pedido no Administrador para um cliente usando seu cartão de crédito com cofre:
 
-1. [Criar um pedido e adicionar produtos](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order).
-1. Em _[!UICONTROL Payment & Shipping Information]_, selecione **[!UICONTROL Stored Cards]**&#x200B;como método de pagamento.
+1. [Criar um pedido e adicionar produtos](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order).
+1. Em _[!UICONTROL Payment & Shipping Information]_, selecione **[!UICONTROL Stored Cards]**como método de pagamento.
 1. Selecione o método de pagamento com cartão de crédito com cofre desejado.
-1. Após concluir quaisquer outras etapas necessárias para o pedido, [envie-o](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order).
+1. Após concluir quaisquer outras etapas necessárias para o pedido, [envie-o](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order?lang=en#step-3%3A-submit-the-order).
 
    ![Usar cartão de crédito com cofre no Administrador para o cliente](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 
 ## Segurança
 
 As informações mínimas do cartão de crédito são compartilhadas com o comprador; eles veem apenas os últimos quatro dígitos, a data de expiração e a marca do cartão de crédito com cofre. As informações de cartão de crédito são armazenadas com o provedor de pagamento para atender aos padrões de conformidade [PCI](security.md#pci-compliance).
+
+No [!DNL Payment Services] 2.17.0 ou posterior, os compradores que pagam com um cartão de crédito salvo poderão ser solicitados a concluir um [desafio de autenticação de 3D Secure (3DS)](security.md#3ds) exigido pelo emissor do cartão. Salvar um cartão não ignora a autenticação exigida pelo emissor.
