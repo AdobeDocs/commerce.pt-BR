@@ -17,7 +17,7 @@ O PayPal determina o limite de captura excessiva para cada conta de comerciante.
 
 >[!NOTE]
 >
->Este tópico descreve a captura excessiva na extensão [!DNL Payment Services]. Para [!DNL Adobe Commerce as a Cloud Service], consulte [Valores de captura personalizados](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts) para os requisitos separados de disponibilidade e habilitação.
+>Este tópico descreve a captura excessiva na extensão [!DNL Payment Services]. Para [!DNL Adobe Commerce as a Cloud Service], consulte [Valores de captura personalizados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/order-management/invoices#custom-capture-amounts) para os requisitos separados de disponibilidade e habilitação.
 
 ## Pré-requisitos
 
@@ -42,7 +42,7 @@ Antes de ativar a captura excessiva:
 
 ## Capturar um pagamento autorizado
 
-A captura excessiva ocorre durante o faturamento no Admin. O valor de captura solicitado deve estar dentro do limite aprovado pelo PayPal para sua conta de comerciante. Consulte [Criar uma fatura](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) para o fluxo de trabalho de faturamento padrão.
+A captura excessiva ocorre durante o faturamento no Admin. O valor de captura solicitado deve estar dentro do limite aprovado pelo PayPal para sua conta de comerciante. Consulte [Criar uma fatura](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) para o fluxo de trabalho de faturamento padrão.
 
 1. Na barra lateral _Admin_, vá para **[!UICONTROL Sales]** > **[!UICONTROL Orders]**.
 1. Abrir um pedido com um pagamento autorizado que ainda não foi capturado.
