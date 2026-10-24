@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: ca71a86bb37c1ddd90118b0babd0a9c530b71be9
+source-git-commit: f7a84928b817f21a05ecc9e822ace49e103a8dfd
 workflow-type: tm+mt
-source-wordcount: '8909'
+source-wordcount: '9292'
 ht-degree: 0%
 ---
 # Notas de versão
@@ -74,7 +74,66 @@ As notas de versão a seguir contêm atualizações para [!DNL Adobe Commerce as
 >
 >Se você estiver usando o Adobe Commerce no local ou o Adobe Commerce na infraestrutura em nuvem, consulte as [notas de versão do Adobe Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/notes/overview).
 
-## Outubro de 2026 - versão #2 {#latest}
+## Outubro de 2026 - versão #3 {#latest}
+
+[!BADGE Sandbox]{type=Caution tooltip="Os itens listados estão disponíveis atualmente apenas em ambientes de sandbox. A Adobe disponibiliza novas versões em ambientes de sandbox primeiro para fornecer tempo para testar alterações futuras antes que a versão esteja disponível em ambientes de produção."}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+Os seguintes itens estarão disponíveis nos ambientes de Produção em 29 de outubro de 2026.
+
+>[!BEGINSHADEBOX]
+
+### Adicionar variáveis personalizadas para ordenar emails de comentário
+
+O `observer.email_order_comment_set_template_vars_before` [webhook](https://developer.adobe.com/commerce/extensibility/webhooks/) já está disponível. Use-o para adicionar ou alterar variáveis de modelo no email de comentário da ordem antes que o email seja renderizado. <!-- ACCS-2087 -->
+
+### Exportar classificações do produto
+
+Quando as análises de produtos estiverem habilitadas, a contagem de análises aprovadas e a classificação média de cada produto serão exportadas para [!DNL Catalog Service] como atributos de produto do sistema `ac_review_count` e `ac_rating_summary`. As vitrines podem usar esses atributos para exibir classificações do produto. O feed de produto é atualizado quando os resumos de revisão são alterados. As análises de produto estão desativadas por padrão. <!-- ACCS-2196 -->
+
+### Restituição de crédito de armazenamento
+
+O ponto de extremidade REST `POST /V1/creditmemo/refund` agora aceita um campo `extension_attributes.refund_to_store_credit_amount` opcional que reembolsa todo ou parte de um memorando de crédito para o crédito da loja do cliente.<!-- ACCS-2068 -->
+
+Duas novas permissões de função de Administrador controlam o acesso para armazenar crédito: <!-- ACCS-1961 -->
+
+* [!UICONTROL Customers] > [!UICONTROL All Customers] > [!UICONTROL Manage Store Credit Balances]
+* [!UICONTROL Sales] > [!UICONTROL Operations] > [!UICONTROL Orders] > [!UICONTROL Actions] > [!UICONTROL Create] > [!UICONTROL Can Spend Store Credit]
+
+### Enviar emails transacionais
+
+Agora você pode assinar os seguintes eventos no [!DNL Adobe I/O Events] e usar o [!DNL App Builder] para enviar emails transacionais de uma plataforma de email de terceiros: <!-- ACCS-1929 -->
+
+* `observer.company_customer_assign_email_send_after` - Um cliente recebe o email de atribuição da empresa. A carga inclui detalhes da empresa e do cliente.
+* `plugin.inventory_in_store_pickup_sales_api.api.notify_orders_are_ready_for_pickup.execute` - Os pedidos estão marcados como prontos para retirada na loja.
+* `plugin.purchase_order.api.purchase_order_management.reject_purchase_order` - Uma ordem de compra foi rejeitada.
+
+<!-- Not including AGENTCOM-2023 (epic incomplete)  -->
+
+### Melhorias e correções de erros
+
+Os seguintes aprimoramentos, otimizações e correções de erros selecionados estão incluídos nesta versão:
+
+* Correção de um problema em que novos pedidos, faturas e remessas demoravam mais para serem exibidos nas grades de vendas de [!DNL Commerce Admin]. <!-- ACCS-2122 -->
+
+* Correção de um problema em que salvar um produto poderia definir a quantidade vendável de seus produtos relacionados como 0. <!-- ACCS-2139 -->
+
+* Correção de um problema em que produtos sem uma atribuição de categoria podiam ser adicionados ao carrinho por meio do GraphQL sem as permissões de categoria apropriadas. <!-- CCSAAS-5560 -->
+
+* Correção de um problema em que mover uma categoria poderia criar uma categoria duplicada. <!-- MDEE-1473 -->
+
+* Correção de um problema em que os pontos de extremidade REST `/V1/products/external-media` falhavam. <!-- ACCS-1776 -->
+
+* Correção de um problema em que o ponto de extremidade REST `PUT /V1/companyCredits/:id` retornava um erro 400 quando o campo `credit_comment` não estava vazio. O comentário foi salvo. <!-- ACCS-2141 -->
+
+* Desaprovações, avisos e avisos do PHP não fazem com que as solicitações falhem. Essas mensagens são registradas e a solicitação é concluída. <!-- CCSAAS-5602 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## Outubro de 2026 - versão #2
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
