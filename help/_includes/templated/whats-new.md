@@ -360,7 +360,7 @@ Esta página contém as alterações feitas nos últimos 60 dias. Excluímos tod
   </thead>
   <tbody>
     <tr>
-      <td><p>Adição do guia <a href="https://experienceleague.adobe.com/en/docs/commerce/information-center/insights-and-guidance/overview">Commerce Insights</a>, uma nova página inicial para implementação estratégica e orientação de segurança da engenharia e do gerenciamento de produtos da Adobe Commerce.</p>
+      <td><p>Adição do guia <a href="https://experienceleague.adobe.com/pt-br/docs/commerce/information-center/insights-and-guidance/overview">Commerce Insights</a>, uma nova página inicial para implementação estratégica e orientação de segurança da engenharia e do gerenciamento de produtos da Adobe Commerce.</p>
 </td>
       <td>
         Novo tópico
