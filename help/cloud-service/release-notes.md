@@ -94,7 +94,7 @@ Quando as análises de produtos estiverem habilitadas, a contagem de análises a
 
 ### Restituição de crédito de armazenamento
 
-O ponto de extremidade REST [`POST /V1/creditmemo/refund` ](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/store-credit) agora aceita um campo `extension_attributes.refund_to_store_credit_amount` opcional que reembolsa todo ou parte de um memorando de crédito para o crédito de loja do cliente.<!-- ACCS-2068 -->
+O ponto de extremidade REST [`POST /V1/creditmemo/refund` &#x200B;](https://developer.adobe.com/commerce/webapi/rest/saas-integrations/store-credit) agora aceita um campo `extension_attributes.refund_to_store_credit_amount` opcional que reembolsa todo ou parte de um memorando de crédito para o crédito de loja do cliente.<!-- ACCS-2068 -->
 
 Duas [novas permissões de função de Administrador](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/store-credit/store-credit-using#store-credit-role-resources) controlam o acesso para armazenar crédito: <!-- ACCS-1961 -->
 
@@ -949,7 +949,7 @@ Um novo `numeric` [tipo de entrada de atributo de produto](https://experiencelea
 
 ### Consultar a configuração do reCAPTCHA para vários formulários em uma solicitação do GraphQL
 
-A consulta [`recaptchaFormConfigs` ](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/recaptcha-form-configs) pode retornar detalhes de configuração para vários tipos de formulário em uma única solicitação. <!-- ACCS-628 -->
+A consulta [`recaptchaFormConfigs` &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/store/queries/recaptcha-form-configs) pode retornar detalhes de configuração para vários tipos de formulário em uma única solicitação. <!-- ACCS-628 -->
 
 ### Exibir todas as ordens da empresa com uma nova permissão B2B
 
@@ -1129,7 +1129,7 @@ O limite de sites, lojas e visualizações de loja era anteriormente limitado a 
 
 ### Personalizar mensagens de autenticação da loja com códigos de erro estruturados
 
-A [`generateCustomerToken` mutação do GraphQL ](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token){target="_blank"} agora retorna códigos de erro digitados junto com mensagens de erro, permitindo que as vitrines exibam mensagens de interface do usuário específicas por motivo de falha. Os códigos de erro disponíveis são: `CUSTOMER_MISSING_EMAIL`, `CUSTOMER_MISSING_PASSWORD`, `CUSTOMER_SIGN_IN_INCORRECT_OR_LOCKED`, `CUSTOMER_ACCOUNT_NOT_CONFIRMED` e `CUSTOMER_GENERIC_ERROR`. <!-- ACCS-301 -->
+A [`generateCustomerToken` mutação do GraphQL &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token){target="_blank"} agora retorna códigos de erro digitados junto com mensagens de erro, permitindo que as vitrines exibam mensagens de interface do usuário específicas por motivo de falha. Os códigos de erro disponíveis são: `CUSTOMER_MISSING_EMAIL`, `CUSTOMER_MISSING_PASSWORD`, `CUSTOMER_SIGN_IN_INCORRECT_OR_LOCKED`, `CUSTOMER_ACCOUNT_NOT_CONFIRMED` e `CUSTOMER_GENERIC_ERROR`. <!-- ACCS-301 -->
 
 ### Enviar lembretes de email automatizados para inatividade do carrinho e da lista de desejos
 
