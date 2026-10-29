@@ -16,9 +16,9 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: b02fb8e31f4a25cff9e52f64a64812f30d6858b8
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '2009'
 ht-degree: 0%
 ---
 # Notas de versão da Integração do AEM Assets
@@ -48,6 +48,20 @@ _11 de fevereiro de 2025_
 ![Novo problema](../assets/new.svg) Agora, os comerciantes podem sincronizar imagens para produtos e categorias.
 
 +++
+
+## v1.4.12
+
+_28 de outubro de 2026_
+
+[!BADGE Com Suporte]{type=Informative tooltip="Compatível"} no Adobe Commerce versão 2.4.6 e posteriores.
+
+![Correção de um problema](../assets/fix.svg)<!-- Issue ACAP-1335 --> Correção da manipulação de imagem da categoria ao alternar a propriedade da visualização entre o Adobe Commerce e o AEM Assets. As seleções de ativos do AEM agora são armazenadas em um atributo dedicado `asset_role_image`, preservando-as quando a propriedade é alterada. As leituras e exportações de imagem de categoria usam o valor da função de ativo do AEM quando o AEM Assets possui a visualização, incluindo valores específicos da visualização da loja durante a exportação. As URLs de entrega de ativos HTTP/HTTPS do AEM existentes na categoria `image` são migradas para o novo atributo sem substituir os valores de função de ativos existentes.
+
+![Correção de um problema](../assets/fix.svg)<!-- Issue ACAP-2180 --> Corrigido o campo de categoria GraphQL `asset_role_image` para retornar `null` quando a Adobe Commerce possui a visualização e o valor de categoria de função de ativo quando a AEM Assets possui a visualização.
+
+![Correção de um problema](../assets/fix.svg)<!-- Issue ACAP-2180 --> que fazia com que as funções de ativos da AEM não fossem exportadas corretamente no feed de produtos. Agora, as funções de ativos do AEM são exportadas corretamente.
+
+![Correção de um problema](../assets/fix.svg)<!-- Issue ACAP-1338 --> Atualizou as dependências de pacote, incluindo a restauração de requisitos explícitos para o Adobe IMS, eventos do Commerce e pacotes de ID de Serviços e a remoção do requisito explícito `magento/framework`.
 
 ## v1.4.9
 
