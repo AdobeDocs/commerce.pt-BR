@@ -15,13 +15,11 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: a652b6d5659dd6d5aede27d771736222b72b9c5e
 workflow-type: tm+mt
-source-wordcount: 600
-ht-degree: 0%
-
+source-wordcount: '622'
+ht-degree: 3%
 ---
-
 # Adicionar facetas
 
 Qualquer atributo de produto filtrável pode ser usado como uma faceta, exceto o status de estoque (`quantity_and_stock_status`). O painel *[!UICONTROL Add facets]* lista as facetas atuais e facilita a atribuição de atributos de produto adicionais como facetas. Durante esse processo de três etapas, um atributo é escolhido para ser usado como uma faceta, as propriedades são editadas, se necessário, e as alterações são publicadas na loja.
@@ -42,7 +40,7 @@ Qualquer atributo de produto filtrável pode ser usado como uma faceta, exceto o
    * Para localizar um atributo de produto específico, insira os primeiros caracteres do nome do atributo na caixa *Pesquisar*. Em seguida, clique em **Adicionar**.
 
      Para configurar os intervalos e agrupamentos de facetas de preços, consulte [Configurações](settings.md). Para saber mais, vá para [Tipos de facetas](facets-type.md).
-A faceta é adicionada à parte inferior da lista *Facetas Dinâmicas* e o botão *Publicar alterações* fica disponível.
+     A faceta é adicionada à lista *Facetas Dinâmicas* em ordem crescente e o botão *Publicar alterações* fica disponível.
 
 1. Se a faceta que você deseja adicionar não puder ser encontrada, vá para **Lojas** > Atributos > **Produto** e verifique se o atributo tem as [propriedades necessárias](facets.md) para ser usado como uma faceta. Se necessário, atualize as seguintes propriedades da loja do atributo:
 

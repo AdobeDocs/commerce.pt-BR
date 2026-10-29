@@ -1,6 +1,6 @@
 ---
 title: Limites e limites
-description: Saiba mais sobre os limites do  [!DNL Live Search]  para garantir que ele atenda às necessidades da sua empresa.
+description: Saiba mais sobre os limites do [!DNL Live Search] para garantir que ele atenda às necessidades da sua empresa.
 role: Admin, Developer
 exl-id: 28b8d98f-0784-4c4d-b382-81c01838e0de
 TQID: https://experienceleague.adobe.com/QIKvaTUGLWd6yw6cEAyDkP9tCgEcJHLdiwpZDtx1-p4
@@ -28,13 +28,11 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
+source-git-commit: 82da0a6749a2c3e6496992a6450c9ea0e7070b17
 workflow-type: tm+mt
-source-wordcount: 1409
+source-wordcount: '1448'
 ht-degree: 0%
-
 ---
-
 # Limites e limites
 
 Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Para garantir que o [!DNL Live Search] e o [!DNL Catalog Service] atendam às necessidades da sua empresa, analise os seguintes limites e limites. Se você precisar de recursos de pesquisa avançada, como pesquisa de conteúdo, BYOA (traga seu próprio algoritmo) ou merchandising baseado em atributos, considere uma solução de pesquisa de terceiros.
@@ -68,7 +66,7 @@ Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Para gar
 
 ## Facetas
 
-- No conjunto de atributos filtráveis definidos, é possível configurar até 100 atributos como facetas.
+- Por padrão, você pode configurar até 100 atributos filtráveis como facetas. Os comerciantes qualificados podem solicitar um aumento máximo de 500 facetas por meio do [Suporte da Adobe](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}; a aprovação está sujeita à qualificação e avaliação de desempenho.
 - Dentro de uma faceta, um máximo de 100 grupos podem ser retornados. Se você precisar retornar mais de 100 compartimentos, [crie um tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) para que a Adobe possa analisar o impacto no desempenho e determinar se é viável aumentar esse limite no seu ambiente.
 - Os aspectos dinâmicos podem causar problemas de desempenho em índices grandes e índices com alta ordinalidade. Se você tiver criado facetas dinâmicas e notar qualquer deterioração de desempenho ou carregamento de página sem erros de tempo limite, tente alterar suas facetas para fixado para determinar se isso resolve seu problema de desempenho.
 - O status do estoque (`quantity_and_stock_status`) não tem suporte como uma faceta. No Administrador, você pode definir [!UICONTROL Display Out of Stock Products] = [!UICONTROL No] para filtrar produtos de falta de estoque. Esta funcionalidade tem suporte nativo no módulo `[PLP Widget](plp-styling.md)`. Para obter detalhes, consulte [Gerenciar produtos indisponíveis](manage-out-of-stock-products.md).
