@@ -92,7 +92,7 @@ Para configurar um atributo de produto como uma faceta, ele deve ter as seguinte
 - Determine os atributos mais relevantes para seus produtos e defina-os como [facetas dinâmicas](facets-type.md). 
 - Defina e classifique atributos de produto que sejam consistentes em todo o catálogo e altamente relevantes para seus produtos, a fim de melhorar a relevância e os recursos de filtragem para seus compradores.
 - Verifique se os rótulos de facetas são fáceis de entender e nomeados de forma consistente em todo o site. Por exemplo, use &quot;Intervalo de preços&quot; em vez de &quot;Custo&quot;.
-- Evite sobrecarregar os compradores, limitando o número de facetas às mais importantes. Muitas opções podem causar fadiga de decisão. Por padrão, [!DNL Live Search] está limitado a no máximo 100 atributos configurados como facetas e 30 compartimentos retornados em cada faceta. Os comerciantes qualificados podem solicitar um aumento máximo de 500 facetas por meio do [Suporte da Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}; a aprovação está sujeita à qualificação e avaliação de desempenho. Saiba mais sobre [limitações de facetas](boundaries-limits.md#facets).
+- Evite sobrecarregar os compradores, limitando o número de facetas às mais importantes. Muitas opções podem causar fadiga de decisão. Por padrão, [!DNL Live Search] está limitado a no máximo 100 atributos configurados como facetas e 30 compartimentos retornados em cada faceta. Os comerciantes qualificados podem solicitar um aumento máximo de 500 facetas por meio do [Suporte da Adobe](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}; a aprovação está sujeita à qualificação e avaliação de desempenho. Saiba mais sobre [limitações de facetas](boundaries-limits.md#facets).
 - Permite que os compradores selecionem vários critérios de filtro simultaneamente para refinar os resultados. Por exemplo, permitir que os compradores selecionem as cores &quot;Vermelho&quot; e &quot;Azul&quot;.
 - Exiba o número de produtos disponíveis ao lado de cada opção de faceta para dar aos compradores uma ideia dos resultados de pesquisa que eles podem esperar.
 - Para manter a interface limpa e gerenciável, especialmente em dispositivos móveis, implemente seções de facetas recolhíveis.
@@ -230,7 +230,7 @@ Se os resultados da pesquisa forem aleatórios ou irrelevantes, use esta lista d
 Saiba mais sobre atributos de produto para pesquisa:
 
 - [Definir atributos como pesquisáveis](workspace.md#set-attributes-as-searchable)
-- [Atribuir peso aos atributos](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Atribuir peso aos atributos](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Monitorar resultados da pesquisa
 
