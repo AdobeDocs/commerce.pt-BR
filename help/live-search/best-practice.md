@@ -1,6 +1,6 @@
 ---
 title: Práticas recomendadas do [!DNL Live Search]
-description: Conheça as práticas recomendadas para implementar o [!DNL Live Search] em sua loja.
+description: Conheça as práticas recomendadas para implementar o [!DNL Live Search] na sua loja.
 role: Admin, Developer
 exl-id: f7700339-fb13-42fe-a249-17cd4ba36e1b
 TQID: https://experienceleague.adobe.com/X9zgHooEzDJe-zzmLLXHdVVVFUHVX4be47dOUaJyUXU
@@ -23,13 +23,11 @@ topic_v2:
     internal-label: Data collection
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 3688d6544c4f3e13947db6e7e5f078483e4cf146
+source-git-commit: 82da0a6749a2c3e6496992a6450c9ea0e7070b17
 workflow-type: tm+mt
-source-wordcount: 2965
+source-wordcount: '3008'
 ht-degree: 0%
-
 ---
-
 # Práticas recomendadas
 
 Este artigo ajuda os merchandisers a aprimorar a funcionalidade de pesquisa do site, garantindo uma experiência perfeita e eficiente do comprador que maximize as taxas de conversão. Seguindo as estratégias descritas, você aprenderá a implementar recursos de pesquisa avançada e a refinar continuamente sua ferramenta de pesquisa para obter o desempenho ideal com o Adobe Commerce [!DNL Live Search].
@@ -94,7 +92,7 @@ Para configurar um atributo de produto como uma faceta, ele deve ter as seguinte
 - Determine os atributos mais relevantes para seus produtos e defina-os como [facetas dinâmicas](facets-type.md). 
 - Defina e classifique atributos de produto que sejam consistentes em todo o catálogo e altamente relevantes para seus produtos, a fim de melhorar a relevância e os recursos de filtragem para seus compradores.
 - Verifique se os rótulos de facetas são fáceis de entender e nomeados de forma consistente em todo o site. Por exemplo, use &quot;Intervalo de preços&quot; em vez de &quot;Custo&quot;.
-- Evite sobrecarregar os compradores, limitando o número de facetas às mais importantes. Muitas opções podem causar fadiga de decisão. Por padrão, [!DNL Live Search] está limitado a no máximo 100 atributos configurados como facetas e 30 compartimentos retornados em cada faceta. Saiba mais sobre [limitações de facetas](boundaries-limits.md#facets). 
+- Evite sobrecarregar os compradores, limitando o número de facetas às mais importantes. Muitas opções podem causar fadiga de decisão. Por padrão, [!DNL Live Search] está limitado a no máximo 100 atributos configurados como facetas e 30 compartimentos retornados em cada faceta. Os comerciantes qualificados podem solicitar um aumento máximo de 500 facetas por meio do [Suporte da Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide){target="_blank"}; a aprovação está sujeita à qualificação e avaliação de desempenho. Saiba mais sobre [limitações de facetas](boundaries-limits.md#facets).
 - Permite que os compradores selecionem vários critérios de filtro simultaneamente para refinar os resultados. Por exemplo, permitir que os compradores selecionem as cores &quot;Vermelho&quot; e &quot;Azul&quot;.
 - Exiba o número de produtos disponíveis ao lado de cada opção de faceta para dar aos compradores uma ideia dos resultados de pesquisa que eles podem esperar.
 - Para manter a interface limpa e gerenciável, especialmente em dispositivos móveis, implemente seções de facetas recolhíveis.
@@ -232,7 +230,7 @@ Se os resultados da pesquisa forem aleatórios ou irrelevantes, use esta lista d
 Saiba mais sobre atributos de produto para pesquisa:
 
 - [Definir atributos como pesquisáveis](workspace.md#set-attributes-as-searchable)
-- [Atribuir peso aos atributos](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
+- [Atribuir peso aos atributos](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results#weighted-search)
 
 ## Monitorar resultados da pesquisa
 
