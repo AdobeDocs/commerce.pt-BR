@@ -1,7 +1,7 @@
 ---
 title: Filtros de recomendação
 description: Saiba como usar filtros para controlar quais produtos aparecem nas recomendações do [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente ao Adobe Commerce as a Cloud Service e a projetos [!DNL Adobe Commerce Optimizer] (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente ao Adobe Commerce as a Cloud Service e a projetos [!DNL Adobe Commerce Optimizer] (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: f6100538-23c0-4e90-9834-a895d4707282
 TQID: https://experienceleague.adobe.com/-pmVrAgEsSkn66K00-eaoQ4TF-7Xyxuwlniip1cR4HM
 product_v2:
@@ -17,9 +17,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: b5ef5e736e116d4321444cbaaeae90a08facf047
+source-git-commit: 8e3471bb89e2dd77c390ee1b8199c835a4f1e6bc
 workflow-type: tm+mt
-source-wordcount: '2407'
+source-wordcount: '2452'
 ht-degree: 0%
 ---
 # Filtrar produtos
@@ -247,6 +247,8 @@ Use as etapas a seguir para adicionar uma regra de inclusão ou exclusão de atr
 >[!NOTE]
 >
 >Quando você seleciona um atributo cujos metadados definem `number` a `true`, como **Size**, o campo **Value** exibe entradas de intervalo em vez de um único valor de texto.
+
+A lista de atributos depende da **Exibição de Catálogo** selecionada. Se você selecionar **Todas as Exibições**, a lista será baseada na origem do catálogo associada à primeira exibição do catálogo. Se você selecionar uma exibição de catálogo específica, a lista será baseada na origem do catálogo dessa exibição.
 
 #### Usar condições de inclusão e exclusão
 
