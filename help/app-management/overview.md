@@ -18,9 +18,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: a00b9e1654a572e1773b5b7e321683332882d86f
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '489'
 ht-degree: 0%
 ---
 # Visão geral das [!DNL App Management]
@@ -37,7 +37,7 @@ Juntos, esses recursos criam um modelo de extensibilidade escalável que permite
 
 ## O que [!DNL App Management] oferece
 
-* **Um local para todos os seus aplicativos**. Associar, configurar e gerenciar aplicativos de **[!UICONTROL Apps]** > **[!UICONTROL App Management]**. [Pesquise, filtre e adquira aplicativos](manage-app.md) da mesma exibição.
+* **Um local para todos os seus aplicativos**. Associar, instalar, configurar, atualizar e gerenciar aplicativos de **[!UICONTROL Apps]** > **[!UICONTROL App Management]**. [Pesquise, filtre e adquira aplicativos](manage-app.md) da mesma exibição.
 * **Configurações correspondentes à sua empresa**. Aplique configurações diferentes por site, loja ou visualização de loja para configurações de várias regiões ou várias marcas.
 * **Sincronização automática de repositório**. Sites, lojas e visualizações de loja do Commerce são importados quando você associa um aplicativo.
 * **Experiência de administrador nativa**. Trabalhe com aplicativos da Adobe Exchange ou implantações personalizadas sem sair do Commerce.
@@ -45,22 +45,24 @@ Juntos, esses recursos criam um modelo de extensibilidade escalável que permite
 ## Quem usa [!DNL App Management]?
 
 | Função | Caso de uso |
-|------|----------|
-| **Gerentes de aplicativos** | Associe aplicativos, defina configurações e gerencie aplicativos na sua instância do Commerce. |
+| --- | --- |
+| **Gerentes de aplicativos** | Analise os detalhes do aplicativo, associe e instale aplicativos, defina configurações e gerencie atualizações na sua instância do Commerce. |
 | **Administradores do Commerce** | Supervisione as configurações e permissões de aplicativos em toda a organização. |
 | **Arquitetos técnicos** | Verifique se os aplicativos estão configurados corretamente para implantações de várias lojas ou regiões. |
 
 ## O que você pode fazer
 
 * **Associar um aplicativo**. Vincule um aplicativo do App Builder à instância do Commerce selecionando o projeto e o espaço de trabalho.
+* **Revise e instale um aplicativo**. Inspecione os casos de uso de negócios e a configuração do aplicativo, conclua as instruções de pré-instalação e monitore o progresso da instalação.
 * **Definir configurações**. Ajuste as configurações do aplicativo por meio do formulário gerado automaticamente; substitua valores por loja ou região quando necessário.
 * **Gerenciar escopos**. Mantenha a hierarquia da loja sincronizada com os aplicativos e aplique as configurações no nível certo.
-* **Desassociar um aplicativo**. Remova um aplicativo ao desativar uma integração ou limpar as configurações de teste.
+* **Atualize um aplicativo**. Revise e inicie as atualizações quando o desenvolvedor implantar uma nova versão. Os desenvolvedores também podem ativar upgrades automáticos experimentais.
+* **Desassociar um aplicativo**. Analise os componentes afetados e os requisitos de limpeza antes de remover um aplicativo ao desativar uma integração ou limpar as configurações de teste.
 
 ## Próximas etapas
 
 * [Instalar](install.md). Verifique se os pré-requisitos foram atendidos e acesse [!DNL App Management].
-* [Gerencie seu aplicativo](manage-app.md). Associar, configurar e desassociar aplicativos.
+* [Gerencie seu aplicativo](manage-app.md). Revise, associe, instale, configure, atualize e desassocie aplicativos.
 
 ## Para desenvolvedores
 
