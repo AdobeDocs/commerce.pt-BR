@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 9aba7b8541b7b067aa5eb751bf601542e8b3c43c
+source-git-commit: ab9c4d33ab0254c0c4ba990cd91ed01226d3abb9
 workflow-type: tm+mt
-source-wordcount: '9775'
+source-wordcount: '9964'
 ht-degree: 0%
 ---
 # Notas de versão
@@ -92,7 +92,9 @@ Os itens a seguir serão lançados para ambientes de Produção em 10 de novembr
 
 >[!BEGINSHADEBOX]
 
-<!-- ACCS-1980 not included: storefront-router-service#410 (router schema sync) is still open -->
+### Aplicar atributos personalizados ao adicionar produtos ao carrinho
+
+Agora é possível aplicar atributos personalizados a itens do carrinho com a [`addProductsToCart` mutação](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/add-products) especificando uma matriz de pares de chave/valor no campo `CartItemInput.custom_attributes`. <!-- ACCS-1980 -->
 
 ### Alterar atributos de item de devolução
 
@@ -100,6 +102,10 @@ O novo `observer.rma_save_before` [webhook](https://developer.adobe.com/commerce
 
 * A carga inclui itens de retorno quando o salvamento cria ou edita itens, como quando um retorno é criado no [!DNL Commerce Admin], por meio de REST ou da mutação do GraphQL `requestReturn`.
 * O webhook é executado como parte do salvamento do retorno. Se um webhook obrigatório falhar, o retorno não será salvo.
+
+### Excluir itens das remessas
+
+O novo `plugin.magento.out_of_process_shipping_methods.api.shipment_item_filter.filter` [webhook](https://developer.adobe.com/commerce/extensibility/webhooks/) permite excluir itens de pedido de novas remessas, como itens que um terceiro preenche. <!-- ACCS-2088 -->
 
 ### Incluir endereços de entrega
 
@@ -113,6 +119,14 @@ Para criar um pedido sem um endereço de entrega:
 ### Recuperar [!DNL AEM Assets] imagens de categoria
 
 Os tipos de GraphQL `CategoryInterface` e `CategoryTree` agora incluem um campo `asset_role_image` que retorna a imagem de categoria atribuída de [!DNL AEM Assets]. <!-- ACCS-2180 -->
+
+### Recuperar saldos de crédito de armazenamento do cliente
+
+O novo ponto de extremidade REST `GET /V1/customers/:customerId/balance` retorna o saldo de crédito da loja de um cliente. Este ponto de extremidade requer a permissão [!UICONTROL Manage Store Credit Balances]. <!-- CCSAAS-5274 -->
+
+### Recuperar totais de linhas de itens de fatura
+
+O tipo de GraphQL `InvoiceItemInterface` agora inclui um campo `row_total` que retorna o subtotal de linha armazenado para um item de fatura. <!-- USF-4460 -->
 
 ### Melhorias e correções de erros
 
@@ -129,6 +143,16 @@ Os seguintes aprimoramentos, otimizações e correções de erros selecionados e
 * Correção de um problema em que a mutação do GraphQL `requestReturn` falhava quando um atributo personalizado de item de retorno opcional era enviado com um valor vazio. <!-- CCSAAS-5628 -->
 
 * Correção de um problema em que o processamento de estoque poderia parar quando os produtos eram excluídos após uma ação em massa [!UICONTROL Update attributes]. <!-- CCSAAS-5713 -->
+
+* Correção de um problema em que os emails de lembrete de carrinho abandonado podiam enviar emails de lembrete adicionais. <!-- CCSAAS-5707 -->
+
+* Correção de um problema em que os emails de alerta de preço e de back-in-stock não eram enviados. <!-- ACCS-2268 -->
+
+* Correção de um problema em que o webhook `plugin.magento.out_of_process_tax_management.api.oop_tax_collection.collect_taxes` podia omitir `custom_attributes`. <!-- CEXT-6870, CEXT-6959 -->
+
+* Correção de um problema em que a mutação do GraphQL `addProductsToCart` podia retornar um erro ao usar o coletor de totais fora de processo. <!-- ACCS-2263, CEXT-6986 -->
+
+* Correção de um problema em que as consultas e as mutações do carrinho do GraphQL podiam retornar um erro após a exclusão de um produto configurável do carrinho.<!-- CCSAAS-5721 -->
 
 {{accs-release}}
 
