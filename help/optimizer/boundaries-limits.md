@@ -13,9 +13,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 663a9e8e61850f3d34712971eb28f18893d56ad2
+source-git-commit: 0b52c20df4c64d3dd7e43f023e7b0f4517e8fcf7
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1486'
 ht-degree: 0%
 ---
 # Limites e limites
@@ -81,7 +81,7 @@ As tabelas a seguir resumem os limites de licença e os limites do sistema por �
 | --- | --- | --- | --- |
 | Visuais de produto Usuários avançados | Usuário licenciado com recursos completos de gerenciamento de ativos digitais, incluindo ferramentas de IA, [!DNL Adobe Express]/[!DNL Firefly] integrações e compartilhamento de Content Hub, lidando com as principais tarefas do DAM e recursos avançados nativos em nuvem para obter eficiência ideal. | 2 | Sim<p>Atualizar para a licença [!DNL AEM Assets]</p> |
 | Usuários do Product Visuals Collaborator | Acesse e trabalhe com ativos por meio da integração do AEM Commerce, crie e edite conteúdo usando o [!DNL Adobe Express] e o [!DNL Firefly] e, se habilitado, aproveite os ativos aprovados por meio do portal do Content Hub. | 2 | Sim<p>Atualizar para a licença [!DNL AEM Assets]</p> |
-| Armazenamento de dados Visuals do produto | Espaço de armazenamento alocado para ativos | Armazenamento de 1 TB | Não |
+| Armazenamento de dados Visuals do produto | Espaço de armazenamento alocado para ativos | Armazenamento de 1 TB | Sim<p>Atualizar para a licença [!DNL AEM Assets]</p> |
 | Uso do Dynamic Media | Tolerância para operações de processamento de mídia dinâmica que inclui:<ul><li>Entrega de imagem</li><li>Imagem inteligente</li><li>Entrega de vídeo</li></ul><p>Para obter detalhes, consulte *Calcular uso do Dynamic Media* abaixo. | Com base na GMV (valor bruto da mercadoria)<p>Alocação mínima: 5 milhões de operações/mês</p> | Sim<ul><li>Licença de compra para operações adicionais</li><li>Atualizar para a licença [!DNL AEM Assets]</li></ul> |
 | Entrega de vídeo | Subsídio para entrega ou download de vídeo | 300 vídeos, 1 minuto por vídeo | Sim<p>Atualizar para a licença [!DNL AEM Assets]</p> |
 | Geração de ativos | Acesso à IA gerativa [!DNL Adobe Express] e [!DNL Adobe Firefly] para criação de imagens | Nenhum | Adquirir créditos de IA geradores separadamente |

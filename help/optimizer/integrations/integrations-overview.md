@@ -10,6 +10,8 @@ exl-id: 8f3a2c1b-9d4e-5f6a-bc7d-1e2f3a4b5c6d
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
     internal-label: Commerce
+  - id: ef0c45ae-6bee-4821-a65e-e1e118e8a01c
+    internal-label: Commerce Optimizer
 feature_v2:
   - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
     internal-label: Integration
@@ -23,9 +25,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 972d2a1118daca17dc17a29e20ada593656960e1
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '570'
 ht-degree: 0%
 ---
 
@@ -34,13 +36,6 @@ ht-degree: 0%
 O [!DNL Adobe Commerce Optimizer] inclui integrações que permitem sincronizar dados do Adobe Commerce na nuvem ou no local, gerenciar ativos, melhorar as experiências da loja e conectar sistemas externos. As seções abaixo descrevem como cada integração funciona com o [!DNL Adobe Commerce Optimizer]. Siga os links para instalação, configuração e uso diário.
 
 {{aco-integration-environment-alignment}}
-
-## Adobe Commerce Optimizer Connector {#aco-connector}
-
-O Adobe Commerce Optimizer Connector é a ponte que sincroniza os dados de catálogo e preço entre o Adobe Commerce (nuvem ou local) e o [!DNL Adobe Commerce Optimizer]. Ao habilitar o conector, o Commerce permanece o sistema de registro de dados de produtos enquanto o [!DNL Adobe Commerce Optimizer] habilita a descoberta de produtos, as recomendações, as regras de merchandising, a análise e as experiências de frente de loja headless. Para restringir quem pode consultar uma exibição de catálogo sincronizada, consulte [Exibições de catálogo privado](../setup/private-catalog-view.md).
-
-- [Visão geral do Adobe Commerce Optimizer Connector](../../aco-connector/overview.md){target="_blank"}
-- [Introdução ao conector](../../aco-connector/get-started.md){target="_blank"}
 
 ## Visuais de produto com o AEM Assets {#product-visuals}
 
@@ -58,6 +53,20 @@ O Adobe Experience Manager Sites Optimizer analisa sites da Commerce e melhora o
 >Este recurso requer a licença **Ultima** do Adobe Sites Optimizer. Você pode solicitar uma licença por meio do Adobe Customer Technical Advisor. Depois que sua conta é provisionada, o recurso Oportunidades fica disponível na interface do [!DNL Adobe Commerce Optimizer] e você pode começar a usar insights orientados por IA para otimizar suas estratégias de vitrine e merchandising.
 
 - [Oportunidades](../manage-results/opportunities.md)
+
+## Adobe Commerce Optimizer Connector {#aco-connector}
+
+O Adobe Commerce Optimizer Connector é a ponte que sincroniza os dados de catálogo e preço entre o Adobe Commerce (nuvem ou local) e o [!DNL Adobe Commerce Optimizer]. Ao habilitar o conector, o Commerce permanece o sistema de registro de dados de produtos enquanto o [!DNL Adobe Commerce Optimizer] habilita a descoberta de produtos, as recomendações, as regras de merchandising, a análise e as experiências de frente de loja headless. Para restringir quem pode consultar uma exibição de catálogo sincronizada, consulte [Exibições de catálogo privado](../setup/private-catalog-view.md).
+
+- [Visão geral do Adobe Commerce Optimizer Connector](../../aco-connector/overview.md){target="_blank"}
+- [Introdução ao conector](../../aco-connector/get-started.md){target="_blank"}
+
+## Integração de carrinho e check-out de terceiros
+
+A Adobe Commerce Optimizer pode impulsionar a descoberta de produtos e o merchandising para uma loja que usa uma plataforma de comércio separada para transações. A loja usa APIs de serviços de merchandising da Commerce Optimizer para dados de produtos, pesquisa, recomendações e merchandising. A plataforma de comércio host permanece responsável por contas de compradores, carrinho, check-out e processamento de pedidos. A integração com a plataforma de host é uma implementação personalizada, usando a API Mesh, o App Builder, as APIs diretas ou uma combinação dessas ferramentas.
+
+Para o Salesforce Commerce Cloud (SFCC), o [Kit Inicial de Finalização de Compra do Adobe Commerce Optimizer SFCC](https://github.com/adobe-commerce/aco-sfcc-checkout-starter-kit) fornece exemplos de blocos e scripts do Edge Delivery Services para conectar uma loja da Adobe Commerce Optimizer à funcionalidade de finalização de compra, carrinho e comprador do SFCC. Use-a como uma implementação de referência e adapte-a à sua loja; não é um conector genérico e pronto para uso. Um exemplo de loja [headless para Next.js](https://github.com/adobe-commerce/aco-sfcc-storefront-next){target="_blank"} também está disponível.
+
 
 ## Commerce Salesforce Connector {#commerce-salesforce-connector}
 
