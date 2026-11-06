@@ -3,7 +3,7 @@ title: Camadas do catálogo
 description: Saiba como as camadas de catálogo permitem modificar dados do produto sem alterar os dados de origem originais, para que você possa personalizar com segurança e reverter alterações a qualquer momento.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente ao Adobe Commerce as a Cloud Service e a projetos [!DNL Adobe Commerce Optimizer] (infraestrutura SaaS gerenciada pela Adobe)."
 TQID: https://experienceleague.adobe.com/aeuD7Ev8AhkzIspV08x4ZTA9knMjZ3EObSZJpidY8QI
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -27,13 +27,11 @@ topic_v2:
     internal-label: Optimization
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: 1533
+source-wordcount: '1493'
 ht-degree: 0%
-
 ---
-
 # Camadas do catálogo
 
 As camadas de catálogo permitem modificar os dados do produto sem alterar os dados de origem originais. As camadas modificam atributos do produto, como nome, descrição, imagens, links e metadados, criando uma camada na parte superior do catálogo base. Os dados originais do produto permanecem intactos, permitindo personalizar produtos com segurança e reverter alterações a qualquer momento.
@@ -67,8 +65,6 @@ As camadas de catálogo geralmente são usadas para:
 * **Visualizações de Produto**—Aplique imagens de produto do AEM Assets como uma camada sobre o catálogo base.
 
 ## Camada AEM-Assets
-
-Ao habilitar o [Product Visuals](product-visuals.md), a Integração do AEM Assets cria e gerencia automaticamente uma camada de catálogo dedicada exclusivamente ao conteúdo do AEM Assets. O nome da camada padrão é `AEM-Assets`; no entanto, você pode especificar um nome personalizado durante a [integração na integração com o AEM Assets](../../aem-assets-integration/get-started/configure-aco.md).
 
 Essa camada contém imagens de produtos sincronizadas do AEM Assets. Como outras camadas de catálogo, ele é preenchido por meio da [API de Camadas de Produto](https://developer.adobe.com/commerce/services/reference/rest/#tag/Product-Layers){target=_blank}. O Serviço de integração do Assets transforma os metadados de ativos do AEM e os URLs de entrega no formato da API e envia os dados automaticamente quando os ativos são aprovados no AEM Assets.
 

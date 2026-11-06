@@ -5,7 +5,7 @@ solution: Commerce
 feature: Integration, Catalog Management
 role: Developer, Admin
 level: Beginner
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos [!DNL Adobe Commerce Optimizer] (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente a projetos [!DNL Adobe Commerce Optimizer] (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 8f3a2c1b-9d4e-5f6a-bc7d-1e2f3a4b5c6d
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -25,9 +25,9 @@ role_v2:
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
     internal-label: Beginner
-source-git-commit: 972d2a1118daca17dc17a29e20ada593656960e1
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '564'
 ht-degree: 0%
 ---
 
@@ -42,7 +42,6 @@ O [!DNL Adobe Commerce Optimizer] inclui integrações que permitem sincronizar 
 As Visualizações de produto permitem gerenciar imagens de produtos por meio do Adobe Experience Manager (AEM) Assets. Configure o AEM Assets para Commerce Optimizer para ativar Visualizações de produto. Após concluir a configuração, você usa o AEM Assets como a solução centralizada de gerenciamento de ativos digitais para as imagens de seus produtos, com fluxos de trabalho automatizados de revisão e gerenciamento de ativos que mantêm as imagens sincronizadas com seu catálogo Commerce Optimizer. A integração corresponde ativos a produtos por SKU. As atualizações fluem pelos serviços de integração da Adobe, para que as vitrines reflitam a mídia mais recente sem recarregamentos manuais.
 
 - [Visuais de produto com o AEM Assets](../setup/product-visuals.md)
-- [Configurar o AEM Assets para o Commerce Optimizer](../../aem-assets-integration/get-started/configure-aco.md){target="_blank"}
 
 ## Adobe Experience Manager Sites Optimizer {#aem-sites-optimizer}
 
