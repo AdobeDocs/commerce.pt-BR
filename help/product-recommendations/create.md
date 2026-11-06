@@ -39,30 +39,30 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
 
 1. Na barra lateral _Administrador_, vá para **Marketing** > _Promoções_ > **Recomendações de Produtos** para exibir o espaço de trabalho _Recomendações de Produtos_.
 
-1. Especifique o [Modo de Exibição de Armazenamento](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) onde deseja que as recomendações sejam exibidas.
+1. Especifique o [Modo de Exibição de Armazenamento](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/setup/websites-stores-views) onde deseja que as recomendações sejam exibidas.
 
    >[!NOTE]
    >
-   > As unidades de recomendação do Page Builder devem ser criadas na exibição de armazenamento padrão, mas podem ser usadas em qualquer lugar. Para saber mais sobre como criar recomendações de produto com o Page Builder, consulte [Adicionar conteúdo - Recomendações de produto](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations).
+   > As unidades de recomendação do Page Builder devem ser criadas na exibição de armazenamento padrão, mas podem ser usadas em qualquer lugar. Para saber mais sobre como criar recomendações de produto com o Page Builder, consulte [Adicionar conteúdo - Recomendações de produto](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/page-builder/add-content/recommendations).
 
 1. Clique em **Criar recomendação**.
 
 1. Na seção _Nomeie sua recomendação_, digite um nome descritivo para referência interna, como `Home page most popular`.
 
-1. [!BADGE Somente SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service (infraestrutura SaaS gerenciada pela Adobe)."} Na seção **Referência da loja**, insira uma chave de referência para identificar esta unidade de recomendação na sua configuração de vitrine. Depois de criar a recomendação, você pode [copiar seu valor](#get-the-storefront-reference-key) dos **detalhes da Unidade de Recomendação** e usá-lo como `referenceKey` no bloco de recomendações. A chave Reference serve para configurar a loja; o rótulo de exibição da loja é o texto que os compradores veem.
+1. [!BADGE Somente SaaS]{type=Positive url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service (infraestrutura SaaS gerenciada pela Adobe)."} Na seção **Referência da loja**, insira uma chave de referência para identificar esta unidade de recomendação na sua configuração de vitrine. Depois de criar a recomendação, você pode [copiar seu valor](#get-the-storefront-reference-key) dos **detalhes da Unidade de Recomendação** e usá-lo como `referenceKey` no bloco de recomendações. A chave Reference serve para configurar a loja; o rótulo de exibição da loja é o texto que os compradores veem.
 
 1. Na seção _Selecionar tipo de página_, selecione a página na qual deseja que a recomendação seja exibida a partir das seguintes opções:
 
    >[!NOTE]
    >
-   > As Recomendações de Produto não são suportadas na página Carrinho quando sua loja está configurada para [exibir a página do carrinho de compras imediatamente após adicionar um produto ao carrinho](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
+   > As Recomendações de Produto não são suportadas na página Carrinho quando sua loja está configurada para [exibir a página do carrinho de compras imediatamente após adicionar um produto ao carrinho](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
 
    * Página inicial
    * Categoria
    * Detalhes do produto
    * Carrinho
    * Confirmação
-   * [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
+   * [Page Builder](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/page-builder/add-content/recommendations)
 
    É possível criar até 50 unidades de recomendação ativas para cada tipo de página. O tipo de página fica esmaecido quando o limite é atingido.
 
@@ -106,7 +106,7 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
 
 ## Obter a chave de referência da loja
 
-[!BADGE Somente SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service (infraestrutura SaaS gerenciada pela Adobe)."} Depois de criar uma recomendação, use sua chave de referência para configurar a unidade de recomendação na loja.
+[!BADGE Somente SaaS]{type=Positive url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service (infraestrutura SaaS gerenciada pela Adobe)."} Depois de criar uma recomendação, use sua chave de referência para configurar a unidade de recomendação na loja.
 
 1. Abra os detalhes de uma recomendação de produto.
 
