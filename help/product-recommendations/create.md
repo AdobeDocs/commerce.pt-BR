@@ -19,9 +19,9 @@ topic_v2:
     internal-label: Behavioral data
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: b8dd0e31a1deac03b03bfeb90a09761b637e0a40
+source-git-commit: 1effb98aaefee32d6479ffdc0737367edc8d1a3a
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1665'
 ht-degree: 0%
 ---
 # Criar nova recomendação
@@ -48,6 +48,8 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
 1. Clique em **Criar recomendação**.
 
 1. Na seção _Nomeie sua recomendação_, digite um nome descritivo para referência interna, como `Home page most popular`.
+
+1. [!BADGE Somente SaaS]{type=Positive url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service (infraestrutura SaaS gerenciada pela Adobe)."} Na seção **Referência da loja**, insira uma chave de referência para identificar esta unidade de recomendação na sua configuração de vitrine. Depois de criar a recomendação, você pode [copiar seu valor](#get-the-storefront-reference-key) dos **detalhes da Unidade de Recomendação** e usá-lo como `referenceKey` no bloco de recomendações. A chave Reference serve para configurar a loja; o rótulo de exibição da loja é o texto que os compradores veem.
 
 1. Na seção _Selecionar tipo de página_, selecione a página na qual deseja que a recomendação seja exibida a partir das seguintes opções:
 
@@ -101,6 +103,20 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
 >[!IMPORTANT]
 >
 >Alguns navegadores podem bloquear scripts críticos que impedem que o Product Recommendations funcione como esperado.
+
+## Obter a chave de referência da loja
+
+[!BADGE Somente SaaS]{type=Positive url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service (infraestrutura SaaS gerenciada pela Adobe)."} Depois de criar uma recomendação, use sua chave de referência para configurar a unidade de recomendação na loja.
+
+1. Abra os detalhes de uma recomendação de produto.
+
+   ![Obter ID da Recomendação](./assets/get-ref-id.png)
+
+1. Copie o valor da seção **Chave de Referência**.
+
+   Recomendações mais antigas podem mostrar **[!UICONTROL Unit ID]** em vez de **[!UICONTROL Reference Key]**. Você pode continuar usando o **[!UICONTROL Unit ID]** em sua vitrine, mas o [!DNL Adobe Commerce] recomenda que você atualize as recomendações existentes para usar o **[!UICONTROL Reference Key]**.
+
+1. No bloco `product-recommendations` da vitrine eletrônica, use esta chave de referência para configurar o [menu suspenso de recomendações](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/) na sua vitrine do Edge Delivery Services.
 
 ## Indicadores de disponibilidade
 

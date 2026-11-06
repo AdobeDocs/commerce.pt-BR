@@ -37,9 +37,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1109'
 ht-degree: 1%
 ---
 # Integração do AEM Assets para o Commerce
@@ -161,22 +161,6 @@ Selecione sua implantação para seguir as etapas necessárias em ordem:
 1. [Configurar a integração no Administrador do Commerce](get-started/setup-synchronization.md).
 
 1. Opcional. [Habilite a exibição da imagem do produto](get-started/configure-storefront.md#enable-product-images) para que uma vitrine gerenciada pela Edge Delivery Services renderize imagens do produto gerenciadas pela AEM.
-
->[!TAB Adobe Commerce Optimizer]
-
-[!BADGE Somente SaaS]{type=Positive tooltip="Aplicável somente a projetos do Adobe Commerce Optimizer."}
-
-[!DNL Adobe Commerce Optimizer] Não possui interface de configuração de administrador. O Suporte da Adobe configura a integração do seu tíquete de integração, portanto, prepare o AEM Assets primeiro.
-
-1. Para oferecer suporte aos metadados do Commerce, [configure o projeto do AEM Assets](get-started/configure-aem.md). Na versão `2026.5.26309` e posterior do AEM, use o [autoatendimento de integração](get-started/configure-aem.md#enable-aem-commerce-self-service); em versões anteriores, instale o pacote `assets-commerce` manualmente.
-
-1. [Envie o tíquete de suporte de integração](get-started/configure-aco.md#onboarding) com sua ID de locatário, ID de programa do AEM, ID de ambiente do AEM, regra correspondente, camada e localidade.
-
-1. [Configure sua exibição de catálogo](get-started/configure-aco.md#onboarding) com a mesma localidade e camada que você registrou no tíquete.
-
-1. Opcional. [Habilite a exibição da imagem do produto](get-started/configure-storefront.md#enable-product-images) para que uma vitrine gerenciada pela Edge Delivery Services renderize imagens do produto gerenciadas pela AEM.
-
-   Para obter o procedimento completo, as limitações e a orientação da camada, consulte [Configurar o AEM Assets para Commerce Optimizer](get-started/configure-aco.md).
 
 >[!ENDTABS]
 

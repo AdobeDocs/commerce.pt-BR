@@ -24,9 +24,9 @@ topic_v2:
     internal-label: Personalization
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: f316b57d365b8952223d4d250ac14f113cf48601
+source-git-commit: 0be21c4e838dabb8871eecbfc6c36c34af2d3ff0
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1612'
 ht-degree: 0%
 ---
 # Criar e gerenciar recomendações
@@ -48,6 +48,8 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
 
 1. Na seção _Nomeie sua recomendação_, digite um nome descritivo para referência interna, como `Home page most popular`.
 
+1. Na seção **Referência da loja**, insira uma chave de referência para identificar esta unidade de recomendação na configuração da loja. Depois de criar a recomendação, você pode [copiar seu valor](#get-the-storefront-reference-key) dos **detalhes da Unidade de Recomendação** e usá-lo como `referenceKey` no bloco de recomendações. A chave de referência é para a configuração da loja; o rótulo de exibição da loja é o texto que os compradores veem.
+
 1. Na seção _Selecionar tipo de recomendação_, especifique o [tipo de recomendação](types.md) desejado com base em sua estratégia.
 
 1. Na seção _Rótulo de exibição da vitrine_, digite o [rótulo](best-practice.md#recommendation-labels) que está visível para os seus compradores, como &quot;Mais vendidos&quot;.
@@ -66,7 +68,7 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
 
    - **Ative** para habilitar a unidade de recomendação na sua vitrine eletrônica.
 
-   Sua recomendação aparece no espaço de trabalho do Recommendations. Para usar sua recomendação na loja, você precisa encontrar a [ID da recomendação](#get-recommendation-id).
+   Sua recomendação aparece no espaço de trabalho do Recommendations. Para usar sua recomendação na loja, você precisa da [ID da recomendação ou chave de referência](#get-the-recommendation-id-or-reference-key).
 
 >[!NOTE]
 >
@@ -98,21 +100,17 @@ Para testar uma recomendação ao trabalhar em um ambiente de não produção, v
 
 Para configurações de várias lojas, vários idiomas ou várias marcas, você pode configurar se cada recomendação se aplica a todas as exibições de catálogo (global) ou a uma única [exibição de catálogo](../../setup/catalog-view.md). Saiba mais sobre como [definir a exibição do catálogo](../../manage-results/recommendation-performance.md#select-catalog-view) ao trabalhar com recomendações.
 
-## Obter ID da recomendação
+## Obter a chave de referência da loja
 
-Depois de criar uma recomendação, é necessário recuperar a ID para implementar a unidade de recomendação na loja.
+Depois de criar uma recomendação, use sua chave de referência para configurar a unidade de recomendação na loja.
 
-1. Na página **Recommendations**, selecione a recomendação.
+1. Na página **Recommendations**, clique no ícone de informações (![ícone de informações](../../assets/info-icon.png)) ao lado do nome da recomendação para abrir a página **Detalhes da Unidade de Recomendação**.
 
-1. Clique no ícone de informações (![ícone de informações](../../assets/info-icon.png)) ao lado do nome da recomendação.
+   ![Obter ID da Recomendação](../../assets/get-ref-id.png)
 
-   A página **Detalhes da unidade de recomendação** é exibida.
+1. Copie o valor da seção **Chave de referência da loja**.
 
-   ![Obter ID da Recomendação](../../assets/get-rec-id.png)
-
-1. Na seção **ID de Recomendação**, copie a ID.
-
-1. Use esta ID para configurar o [menu suspenso de recomendação](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/) na sua vitrine da Edge Delivery Services.
+1. No bloco `product-recommendations` da vitrine eletrônica, use esta chave de referência para configurar o [menu suspenso de recomendações](https://experienceleague.adobe.com/en/tools/commerce-storefront/merchants/blocks/product-recommendations/) na sua vitrine do Edge Delivery Services.
 
 ## Gerenciar recomendações existentes
 
@@ -127,6 +125,7 @@ Depois de criar uma recomendação, é necessário recuperar a ID para implement
 1. No menu, você pode **Desativar**, **Excluir** ou **Editar** a recomendação. Se você selecionar **Editar**, poderá ajustar as seguintes configurações, conforme necessário:
 
    - Nome da recomendação
+   - Chave de referência
    - Rótulo da vitrine
    - Número de produtos
    - Filtrar produtos
