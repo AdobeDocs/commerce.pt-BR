@@ -15,18 +15,17 @@ role_v2:
 topic_v2:
   - id: c4147b6e-073b-4d3c-9ab1-d60f2f4434ef
     internal-label: Behavioral data
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 97fda73b4f68154aa6fe66eee61ef2d68be979ca
 workflow-type: tm+mt
-source-wordcount: 428
+source-wordcount: '443'
 ht-degree: 0%
-
 ---
-
 # Editar recomendação
 
 A página Editar recomendação oferece a capacidade de ajustar as configurações individuais que compõem a recomendação. Todas as configurações podem ser editadas, exceto o tipo de página e o tipo de recomendação. As seguintes configurações podem ser editadas:
 
 - [Nome da recomendação](#name)
+- [Chave de referência](#reference-key)
 - [Rótulo da vitrine](#label)
 - [Número de produtos](#number)
 - [Posicionamento e Posição](#placement)
@@ -51,6 +50,10 @@ A visualização no lado direito da página mostra como a recomendação com as 
 Escolha um nome descritivo que indique a finalidade da recomendação. O nome é para referência interna e não aparece na loja.
 
 ![Editar nome](assets/edit-name.png)
+
+### Chave de referência {#reference-key}
+
+A chave usada para identificar a unidade de recomendação na configuração da loja.
 
 ### Rótulo da vitrine {#label}
 
