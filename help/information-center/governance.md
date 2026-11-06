@@ -1,9 +1,9 @@
 ---
 title: Controle do Commerce Information Center
 description: Saiba mais sobre o modelo de controle interno do Centro de informações da Commerce. Não publicado no Experience League.
-source-git-commit: a91925091da28cd0745923894a3faab0374f0a0c
+source-git-commit: bd6b2a10f02498b94c8837a27490e943b630c5fc
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '578'
 ht-degree: 0%
 ---
 
@@ -13,9 +13,9 @@ Essa referência interna para a equipe de documentação não está listada em `
 
 ## Propriedade
 
-A equipe de documentação da Adobe Commerce é proprietária do Centro de Informações. Foi criado em `Adobe-Enterprise-Docs/commerce.en`, o repositório listado como `git-repo` em `metadata.md`.
+A equipe de documentação do Adobe Commerce gerencia o processo de entrada, a revisão editorial e a publicação do conteúdo do Centro de Informações proveniente do repositório GitHub `Adobe-Enterprise-Docs/commerce.en`.
 
-Nenhuma equipe de produto é proprietária porque é multiproduto. Escalone as correções específicas do produto para o contato de documentos da equipe de produtos responsável, em vez de corrigi-las aqui.
+Nenhuma equipe de produto é proprietária porque é multiproduto. Os proprietários de produto e engenharia devem aprovar o conteúdo antes de enviar a PR do ExL. Escalone as correções específicas do produto para o contato de documentos da equipe de produtos responsável, em vez de corrigi-las aqui.
 
 ## O que pertence ao Centro de informações
 
@@ -28,6 +28,8 @@ Nenhuma equipe de produto é proprietária porque é multiproduto. Escalone as c
 - O Centro de informações não consolida nem migra a documentação do produto e não documenta recursos de produtos individuais. Vincule ao conteúdo autoritativo existente antes de escrever algo novo.
 
 ## Adição de novo conteúdo
+
+Envie propostas de artigos criando um tíquete JIRA no projeto COMDOX, seguindo o processo descrito na épica [COMDOX-1864](https://jira.corp.adobe.com/browse/COMDOX-1864). Use a descrição do tíquete com IA para gerar um tíquete e vinculá-lo à epic.
 
 ### Artigos em uma seção existente
 
