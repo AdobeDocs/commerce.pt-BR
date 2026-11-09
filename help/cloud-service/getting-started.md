@@ -5,7 +5,7 @@ feature: Cloud, Integration
 role: Admin, Developer, User
 level: Beginner
 exl-id: 58d98b9e-b41d-44db-9666-c924a5b005b3
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente a projetos do Adobe Commerce as a Cloud Service e do Adobe Commerce Optimizer (infraestrutura SaaS gerenciada pela Adobe)."
 autotag-review: '2026-06-18T16:01:44.084Z'
 TQID: 'https://experienceleague.adobe.com/fGnz7X-DD5KzHhVtS0VR2NpVVEpwMQjzD2l0KO97-r4'
 product_v2:
@@ -48,9 +48,9 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 19c1c7d4cfaa6192169e8005e6bb323a0940d875
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1348'
 ht-degree: 0%
 ---
 # Introdução
@@ -88,7 +88,7 @@ Como um grupo combinado, o administrador do sistema, o comerciante e o desenvolv
 
 As etapas a seguir são necessárias para integrar [!DNL Adobe Experience Manager Assets] ou [!DNL Product Visuals powered by AEM Assets] a [!DNL Adobe Commerce as a Cloud Service]:
 
-1. **Administrador do Sistema**: [Adicionar usuários ao [!DNL AEM Assets] perfil de produto [!DNL Product Visuals] 5&rbrace;](user-management.md#add-a-user-to-aem-assets-or-product-visuals)
+1. **Administrador do Sistema**: [Adicionar usuários ao [!DNL AEM Assets] perfil de produto [!DNL Product Visuals] 5}](user-management.md#add-a-user-to-aem-assets-or-product-visuals)
 1. **Desenvolvedores**: [Integrar [!DNL AEM Assets] e [!DNL Product Visuals]](../aem-assets-integration/overview.md)
 1. **Comerciantes**: [Acesse seus [!DNL AEM Assets] e [!DNL Product Visuals]](./user-management.md#access-the-experience-manager-interface)
 
@@ -100,7 +100,7 @@ Selecione uma guia abaixo para ver gráficos de fluxo de trabalho de alto nível
 
 >[!TAB Fluxo de trabalho de comerciante e administrador do sistema]
 
-Este diagrama fornece uma visão geral de alto nível de como os administradores do sistema e comerciantes acessam e gerenciam as instâncias do [!DNL Adobe Commerce as a Cloud Service]. Consulte o [Guia do Adobe Admin Console](https://helpx.adobe.com/br/business/enterprise.html) para obter mais informações sobre fluxos de trabalho de administrador.
+Este diagrama fornece uma visão geral de alto nível de como os administradores do sistema e comerciantes acessam e gerenciam as instâncias do [!DNL Adobe Commerce as a Cloud Service]. Consulte o [Guia do Adobe Admin Console](https://helpx.adobe.com/business/enterprise.html) para obter mais informações sobre fluxos de trabalho de administrador.
 
 ![Diagrama do administrador do sistema e do fluxo de trabalho do comerciante para o Adobe Commerce as a Cloud Service](./assets/merchant-flow.png){zoomable="yes"}
 
@@ -125,7 +125,7 @@ Como administrador do sistema, você é responsável por configurar a organizaç
 | Compreender a plataforma | Saiba mais sobre a arquitetura e os benefícios do Adobe Commerce as a Cloud Service | [Visão geral](overview.md) |
 | Comparar recursos | Entender as diferenças entre o Cloud Service e outras ofertas da Adobe Commerce | [Comparação de recursos](feature-comparison.md) |
 | Criar uma instância | Provisionamento de ambientes de sandbox e produção | [Criar uma instância](#create-an-instance) |
-| Configurar gerenciamento de usuários | Adicionar usuários, atribuir funções e gerenciar permissões | [Gerenciamento de usuários](user-management.md) |
+| Configurar gerenciamento de usuários | Adicione usuários e gerencie o acesso por meio do Adobe Admin Console e configure funções e permissões no Administrador do Commerce. | [Gerenciamento de usuários](user-management.md) |
 | Configurar [!DNL AEM Assets] e [!DNL Product Visuals] (opcional) | Adicionar usuários, atribuir funções e gerenciar permissões | [Gerenciamento de usuários](user-management.md#add-a-user-to-aem-assets-or-product-visuals) |
 
 >[!TAB Comerciante]
@@ -251,7 +251,7 @@ Por padrão, [!DNL Adobe Commerce as a Cloud Service] instâncias não incluem d
 
 Há duas maneiras de importar seu catálogo para o [!DNL Adobe Commerce as a Cloud Service]:
 
-* [**Administrador do Commerce**](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/import/data-import) - Uma interface amigável que permite importar os dados do catálogo com apenas alguns cliques.
+* [**Administrador do Commerce**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import) - Uma interface amigável que permite importar os dados do catálogo com apenas alguns cliques.
 * [**Importar API JSON**](https://developer.adobe.com/commerce/webapi/rest/modules/import/#import-json-api) - Uma API REST que permite importar os dados do catálogo de forma programática.
 
 ### Configurar a loja
