@@ -22,7 +22,7 @@ role_v2:
     internal-label: Leader
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: b3ce7cadce74310cef2b7253b965eccb4a17107d
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Antes de expor o [!DNL Payment Services] for [!DNL Adobe Commerce] e o [!DNL Mag
 Testar o [!DNL Payment Services] em um ambiente de sandbox é uma etapa de validação importante, embora seja um ambiente simulado conectado somente à sandbox do PayPal, não aos bancos e comerciantes reais.
 
 1. Conclua um check-out bem-sucedido de sua loja, com [Campos de Cartão de Crédito](payments-options.md#credit-card-fields) ou com qualquer um dos [botões de pagamento do PayPal](payments-options.md#paypal-payment-buttons). Consulte [Testando credenciais](#testing-credentials) para obter mais informações sobre como usar cartões de crédito falsos para testes.
-1. Capture (quando sua ação de pagamento for [definida como `Authorize and Capture`](production.md#set-payment-services-as-payment-method)), [restitua](refunds.md) ou [anule](voids.md) a ordem recém-concluída. Você também pode simplesmente [criar uma fatura](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} para um pedido, se sua ação de pagamento estiver definida como `Authorize` em vez de `Authorize and Capture`.
+1. Capture (quando sua ação de pagamento for [definida como `Authorize and Capture`](production.md#set-payment-services-as-payment-method)), [restitua](refunds.md) ou [anule](voids.md) a ordem recém-concluída. Você também pode simplesmente [criar uma fatura](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice){target="_blank"} para um pedido, se sua ação de pagamento estiver definida como `Authorize` em vez de `Authorize and Capture`.
 1. Em 24-48 horas, exiba a transação e outras informações no [Relatório de pagamentos](payouts.md).
 1. Veja detalhes do pedido no [Relatório de status do pagamento do pedido](order-payment-status.md).
 
@@ -64,7 +64,7 @@ Para expor seu ambiente local:
 
 1. Restaure a configuração original do URL básico quando o teste estiver concluído.
 
-Se o tempo de resposta do endpoint for inferior a 5 segundos, o PayPal exibe uma mensagem de erro na janela pop-up.
+Se o tempo de resposta do endpoint for superior a 5 segundos, o PayPal exibirá uma mensagem de erro na janela pop-up.
 
 #### Desenvolvimento local do Apple Pay
 
