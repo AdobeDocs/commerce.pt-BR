@@ -48,9 +48,9 @@ level_v2:
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 19c1c7d4cfaa6192169e8005e6bb323a0940d875
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1348'
 ht-degree: 0%
 ---
 # Introdução
@@ -125,7 +125,7 @@ Como administrador do sistema, você é responsável por configurar a organizaç
 | Compreender a plataforma | Saiba mais sobre a arquitetura e os benefícios do Adobe Commerce as a Cloud Service | [Visão geral](overview.md) |
 | Comparar recursos | Entender as diferenças entre o Cloud Service e outras ofertas da Adobe Commerce | [Comparação de recursos](feature-comparison.md) |
 | Criar uma instância | Provisionamento de ambientes de sandbox e produção | [Criar uma instância](#create-an-instance) |
-| Configurar gerenciamento de usuários | Adicionar usuários, atribuir funções e gerenciar permissões | [Gerenciamento de usuários](user-management.md) |
+| Configurar gerenciamento de usuários | Adicione usuários e gerencie o acesso por meio do Adobe Admin Console e configure funções e permissões no Administrador do Commerce. | [Gerenciamento de usuários](user-management.md) |
 | Configurar [!DNL AEM Assets] e [!DNL Product Visuals] (opcional) | Adicionar usuários, atribuir funções e gerenciar permissões | [Gerenciamento de usuários](user-management.md#add-a-user-to-aem-assets-or-product-visuals) |
 
 >[!TAB Comerciante]
