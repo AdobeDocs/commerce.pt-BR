@@ -34,9 +34,9 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 8ed4d2fa87f7a91c3c9c21817391003488c55046
+source-git-commit: 560ae770ae76d28e3358fb4f195aa1f2a03362c8
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '1959'
 ht-degree: 0%
 ---
 # Usuário e Identity Management
@@ -53,7 +53,7 @@ Este processo requer uma organização IMS com acesso a [!DNL Adobe Commerce as 
 
 ## Noções básicas sobre funções
 
-As seguintes funções estão disponíveis para [!DNL Adobe Commerce as a Cloud Service]. Para exibir ou editar essas funções, no Administrador do Commerce, navegue até [!UICONTROL **Sistema**] > [!UICONTROL **Permissões**] > [!UICONTROL **Funções de Usuário**].
+As seguintes funções estão disponíveis para [!DNL Adobe Commerce as a Cloud Service]. Para exibir ou editar essas funções, no Administrador do Commerce, navegue até [!UICONTROL **Sistema**] > [!UICONTROL **Funções de Usuário**].
 
 Você pode criar funções personalizadas no Commerce Admin para fornecer aos usuários permissões mais granulares que as funções padrão do Adobe Admin Console. As funções e atribuições personalizadas do Commerce são preservadas quando os usuários fazem logon subsequentemente por meio do Adobe IMS. Os usuários ainda devem ter acesso à instância do Adobe Commerce as a Cloud Service por meio da Adobe Admin Console. Para criar funções personalizadas, [defina funções no Administrador do Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/user-accounts/permissions-user-roles#define-a-role).
 
@@ -203,7 +203,7 @@ Para adicionar desenvolvedores e administradores de perfil de produto, repita o 
 
 ## Recursos de função
 
-A lista a seguir descreve os recursos que as funções padrão têm permissão para acessar dentro do Administrador [!DNL Adobe Commerce]. Para editar as permissões padrão para cada função, navegue até [!UICONTROL **Sistema**] > [!UICONTROL **Permissões**] > [!UICONTROL **Funções de usuário**] no Administrador do Commerce.
+A lista a seguir descreve os recursos que as funções padrão têm permissão para acessar dentro do Administrador [!DNL Adobe Commerce]. Para editar as permissões padrão para cada função, navegue até [!UICONTROL **Sistema**] > [!UICONTROL **Funções de usuário**] no Administrador do Commerce.
 
 **Usuários**
 
