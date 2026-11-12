@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 >[!IMPORTANT]
 >
->O seguinte recurso está em [beta privado](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta).
+>O seguinte recurso está em [beta privado](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/beta).
 
 Os Serviços de merchandising com o modelo de dados de catálogo combinável (CCDM) classificam os resultados para que os compradores vejam os produtos mais relevantes primeiro. O serviço melhora os produtos cujo texto de catálogo **corresponde diretamente** à consulta do comprador, favorece correspondências em que os termos aparecem juntos e, por fim, inclui correspondências mais amplas.
 
@@ -57,7 +57,7 @@ A correspondência de frases por si só não determina a relevância. Vários si
 - Aumentar com base na frase **exata / próxima** correspondente
 - Impulsionar quando **todos os termos da consulta** aparecem no campo **igual**
 - **Classificação inteligente** (quando habilitada), que mescla relevância textual com sinais comportamentais — consulte [Como funciona a pontuação de classificação inteligente](../merchandising/rules/add.md#how-intelligent-ranking-scoring-works-search)
-- **[Pesquise peso](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results)** em cada atributo e outros fatores de relevância textual (por exemplo, a frequência com que os termos ocorrem em nome ou tamanho de descrição). Em *Configurações*, configure quais atributos participam da pesquisa por palavra-chave e seus **[pesos da pesquisa por palavra-chave](../settings.md)** relativos.
+- **[Pesquise peso](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/search/search-results)** em cada atributo e outros fatores de relevância textual (por exemplo, a frequência com que os termos ocorrem em nome ou tamanho de descrição). Em *Configurações*, configure quais atributos participam da pesquisa por palavra-chave e seus **[pesos da pesquisa por palavra-chave](../settings.md)** relativos.
 - **[Regras de merchandising](../merchandising/rules/overview.md)**, como fixar, aumentar e atenuar
 
 Como os sinais interagem, uma correspondência ampla às vezes fica acima de uma correspondência de frase mais estreita quando **os pesos de pesquisa** ou a frequência de termos ultrapassam uma correspondência de frase mais fraca.
