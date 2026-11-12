@@ -1,7 +1,7 @@
 ---
 title: Tipos de facetas
 description: Saiba mais sobre os diferentes tipos de facetas no [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente ao Adobe Commerce as a Cloud Service e a projetos [!DNL Adobe Commerce Optimizer] (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: f4ab1f27-b393-45e0-94bf-c77d46e3f994
 TQID: https://experienceleague.adobe.com/xuyEZ-CuFXUfhUi24ERf32uVNgENFTTdR5l-K22W4-M
 product_v2:
@@ -22,30 +22,11 @@ topic_v2:
     internal-label: Metadata
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 8041acb445e99eae524cc46933d6b322861be81d
 workflow-type: tm+mt
-source-wordcount: 227
+source-wordcount: '39'
 ht-degree: 0%
-
 ---
-
 # Tipos de facetas
 
-[!DNL Adobe Commerce Optimizer] usa uma variedade de tipos de facetas e elas aparecem na lista *Filtros* somente quando relevantes. A lista de aspectos disponíveis muda de acordo com os produtos retornados. As seguintes características afetam sua apresentação e comportamento:
-
-- Facetas fixadas - As facetas mais usadas podem ser fixadas no topo da lista. As facetas restantes estão listadas na ordem *Tipo de classificação* depois das facetas fixadas.
-- Aspectos dinâmicos - Atributos de produto que o [Adobe AI](https://business.adobe.com/br/ai.html) considera mais relevantes para um conjunto de produtos e uma consulta. O cálculo leva em conta os metadados do atributo de todo o catálogo e determina, no momento da consulta, os aspectos mais relevantes da consulta.
-- Facetas de preço - Devolver produtos por faixa de preço. Você pode especificar o número de seleções e o intervalo de preços no espaço de trabalho [*Configurações*](../../settings.md).
-
-## Rótulos de facetas
-
-Você pode editar rótulos de facetas no [espaço de trabalho de facetas](workspace.md).
-
-## Tipo de classificação
-
-Todas as facetas renderizadas para a loja são classificadas alfabeticamente ou por contagem.
-
-| Tipo de classificação | Descrição |
-|--- |--- |
-| Em ordem alfabética | Na lista *Filtros* da loja, os aspectos são classificados em ordem alfabética. |
-| Contagem | Facetas também podem ser classificadas pelo número de valores encontrados por faceta no conjunto atual de produtos devolvidos. |
+{{$include /help/_includes/ccdm-shared/merchandising/facets/type.md}}

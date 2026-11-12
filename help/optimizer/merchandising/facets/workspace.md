@@ -1,7 +1,7 @@
 ---
 title: Facets Workspace
-description: Saiba como usar o espaço de trabalho de facetas no [!DNL Adobe Commerce Optimizer].
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+description: Saiba como usar o espaço de trabalho de facetas em [!DNL Adobe Commerce Optimizer].
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente ao Adobe Commerce as a Cloud Service e a projetos [!DNL Adobe Commerce Optimizer] (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: bd977769-6565-48ca-b5aa-963a217df3ea
 TQID: https://experienceleague.adobe.com/gpKL-sHYbuIW9obwCgozt4WJgVc7gq9IA4c17Eu-TJo
 product_v2:
@@ -20,31 +20,11 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 8041acb445e99eae524cc46933d6b322861be81d
 workflow-type: tm+mt
-source-wordcount: 212
-ht-degree: 1%
-
+source-wordcount: '38'
+ht-degree: 0%
 ---
-
 # Facets Workspace
 
-O espaço de trabalho *Facetas* lista todas as facetas que estão disponíveis no momento e fornece acesso às ferramentas necessárias para configurar e gerenciar facetas. As facetas fixadas aparecem primeiro na lista de facetas existentes, seguidas pelas facetas dinâmicas. Você pode pesquisar a lista de aspectos.
-
-![Facet Workspace](../../assets/facet-workspace.png)
-
-## Descrições dos campos
-
-| Campo | Descrição |
-|--- |--- |
-| Criar facetas | Abre o [editor de facetas](add.md). |
-| Rótulo | O [rótulo de faceta](type.md#facet-labels) que está visível na vitrine pode ser editado para manter a consistência com sua marca. |
-| Tipo de classificação | O método usado para [classificar](type.md#sort-type) facetas. Todas as [!DNL Adobe Commerce Optimizer] vitrines classificam os aspectos em ordem alfabética e por `Count`. Opções:<br />Alfabético - Classifica aspectos em ordem alfabética.<br />Contagem - Classifica facetas com base no número de correspondências encontradas. |
-| Valor máximo | O número máximo de valores que podem ser exibidos na loja para cada faceta. Os aspectos que representam um intervalo de valores são distribuídos uniformemente. Entradas válidas: 0 - 100; Padrão: 8. |
-
-## Controles
-
-| Controle | Descrição |
-|--- |--- |
-| ![Seletor de pinos](../../assets/btn-pin-blue.png) | Fixa ou desfixa uma faceta na parte superior da lista *Filtros*. |
-| ![Mais seletor](../../assets/btn-more.png) | Exibe um menu de mais ações que podem ser aplicadas à faceta selecionada. Opções: Editar, Excluir |
+{{$include /help/_includes/ccdm-shared/merchandising/facets/workspace.md}}

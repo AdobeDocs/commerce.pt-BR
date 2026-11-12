@@ -1,8 +1,8 @@
 ---
 title: Visão geral de merchandising
-description: Saiba mais sobre os recursos de merchandising do  [!DNL Adobe Commerce Optimizer].
+description: Saiba mais sobre os recursos de merchandising do [!DNL Adobe Commerce Optimizer].
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente ao Adobe Commerce as a Cloud Service e a projetos [!DNL Adobe Commerce Optimizer] (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: cc0f280c-3934-47ca-b5dc-d83023d8e2be
 TQID: https://experienceleague.adobe.com/GJ7017EEKg4wd4Wjom5-FrEcfrPbmvwEAJw0AFgGc64
 product_v2:
@@ -27,28 +27,11 @@ topic_v2:
     internal-label: Personalization
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
+source-git-commit: 1fb7db58ba92437c6fc894178261754d0394b6cd
 workflow-type: tm+mt
-source-wordcount: 237
+source-wordcount: '35'
 ht-degree: 0%
-
 ---
+# Adobe Merchandising
 
-# Merchandising
-
-Nesta seção, você aprenderá a criar experiências personalizadas para seus compradores por meio da descoberta de produtos e de recomendações.
-
-## Descoberta de produto
-
-A Descoberta de produtos equipe os merchandisers com ferramentas poderosas para preparar e otimizar a experiência de compra, garantindo que os clientes encontrem os produtos certos rapidamente, na hora certa. Ao ajustar o comportamento da pesquisa, você pode influenciar diretamente a visibilidade, a relevância e a conversão do produto.
-
-Com a descoberta de produtos, você pode:
-
-* **Use a [pesquisa semântica](../setup/semantic-search.md)** — Habilitada por padrão em [Configurações](../settings.md#advanced-search) para melhorar a relevância para consultas de linguagem natural e baseadas em intenção. Nenhuma configuração de atributo ou alteração de vitrine eletrônica é necessária.
-* **Configure [aspectos](./facets/overview.md), [regras de categoria e pesquisa de merchandising](./rules/overview.md) e [sinônimos](./synonyms/overview.md)** para orientar os compradores para os produtos mais relevantes com o mínimo de atrito.
-
-## Recommendations
-
-O Recommendations usa inteligência artificial e aprendizado de máquina para analisar o comportamento agregado do visitante e as interações do produto na loja. Ao combinar esses dados comportamentais com seu catálogo de produtos, o [!DNL Adobe Commerce Optimizer] fornece sugestões de produtos relevantes e altamente personalizadas que melhoram o engajamento do comprador e aumentam a conversão.
-
-As recomendações são exibidas na loja como unidades rotuladas, como &quot;Clientes que visualizaram este produto também visualizaram&quot;. Essas unidades podem ser colocadas estrategicamente na jornada de compras. Como comerciante, você pode criar, gerenciar e implantar facilmente essas unidades de recomendação diretamente no [!DNL Adobe Commerce Optimizer] para oferecer suporte a metas promocionais, estratégias de venda cruzada e experiências personalizadas.
+{{$include /help/_includes/ccdm-shared/merchandising/overview.md}}
