@@ -2,7 +2,7 @@
 title: Introdução ao Recommendations
 description: O Recommendations é uma poderosa ferramenta de marketing que pode ser usada para aumentar as conversões, aumentar a receita e estimular o engajamento do comprador.
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente ao Adobe Commerce as a Cloud Service e a projetos [!DNL Adobe Commerce Optimizer] (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: cb10c802-afaf-40fa-b463-73f5ae507d66
 TQID: https://experienceleague.adobe.com/dTvy4IlHTOcCHpytRxFkGXCZqUvQwYz4-5q1BXjywII
 product_v2:
@@ -27,21 +27,11 @@ topic_v2:
     internal-label: Personalization
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: 33cd0e217447351b690646ec8d230f76060a74da
+source-git-commit: 01037ab53a431cbec3b90c4a9e3f08daebcae3e1
 workflow-type: tm+mt
-source-wordcount: 202
+source-wordcount: '51'
 ht-degree: 0%
-
 ---
-
 # Introdução ao Recommendations
 
-O Recommendations é uma poderosa ferramenta de marketing que pode ser usada para aumentar as conversões, aumentar a receita e estimular o engajamento do comprador. As recomendações são viabilizadas pelo [Adobe AI](https://business.adobe.com/br/ai.html), que usa inteligência artificial e algoritmos de aprendizado de máquina para executar uma análise detalhada dos dados agregados do visitante. Esses dados, quando combinados com seu catálogo do Adobe Commerce, resultam em uma experiência altamente envolvente, relevante e personalizada.
-
-As recomendações são exibidas na loja como unidades com rótulos, como &quot;Clientes que visualizaram este produto também visualizaram&quot;. Você pode criar, gerenciar e implantar recomendações em suas exibições de loja diretamente do [!DNL Adobe Commerce Optimizer].
-
-## Privacidade
-
-A coleta de dados para os fins das Recomendações não inclui informações pessoalmente identificáveis (PII). Além disso, todos os identificadores de usuários, como IDs de cookies e endereços IP, são estritamente anônimos. Para saber mais, consulte a [Política de Privacidade da Adobe](https://www.adobe.com/br/privacy/policy.html).
-
-Os usuários do Recommendations podem consultar a página [Sincronização de dados](../../setup/data-sync.md) para obter mais dados sobre a sincronização de dados.
+{{$include /help/_includes/ccdm-shared/merchandising/recommendations/overview.md}}

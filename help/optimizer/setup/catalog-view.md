@@ -4,7 +4,7 @@ description: Saiba o que são exibições de catálogo e como criá-las para org
 autotag-review: '2026-06-17T15:08:59.000Z'
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente ao Adobe Commerce as a Cloud Service e a projetos [!DNL Adobe Commerce Optimizer] (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 76c1b81c-b456-4334-89bd-6027308cbc47
 TQID: https://experienceleague.adobe.com/Jmze0Pq3kSNMIXqkkML-hmmlZnv-XKgeEgRB8Q8NZ6s
 product_v2:
@@ -30,35 +30,25 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
 nudge: true
-source-git-commit: 42c252f70f6ed1d7a5c1fd2832324308294da264
+source-git-commit: d081e975b03805a0f46d5194f8c3cd46e3c86839
 workflow-type: tm+mt
-source-wordcount: 1317
+source-wordcount: '733'
 ht-degree: 0%
-
 ---
-
 # Exibições de catálogo para Serviços de merchandising
 
-Uma exibição de catálogo define os produtos e os preços que um cliente pode recuperar. Ele combina fontes de catálogo, camadas de catálogo, políticas e catálogos de preços para oferecer suporte a diferentes marcas, regiões, unidades de negócios ou canais.
+{{$include /help/_includes/ccdm-shared/setup/catalog-view.md}}
 
-## O que são visualizações de catálogo?
+## Gerenciar exibições do catálogo
 
-As exibições de catálogo definem como o catálogo de produtos é organizado e exibido. Eles atuam como filtros que determinam:
+Use estas instruções para gerenciar exibições de catálogo:
 
-- **Quais produtos são visíveis** com base na estrutura comercial (marcas, regiões, revendedores)
-- **Que preços são mostrados** por meio de catálogos de preços vinculados
-- **Como os produtos são filtrados** usando políticas (atributos como marca, modelo, categoria)
-- **Que [origem do catálogo](catalog-sources.md) é usada** com base em atributos como localidade
-- **Quem pode acessar os dados da exibição** por meio da [Proteção de Catálogo](private-catalog-view.md) e das [chaves de acesso restrito](restricted-access-keys.md)
+- [Criar exibição de catálogo](#create-a-catalog-view) — Defina o nome, a origem do catálogo, as políticas e o catálogo de preços. Em seguida, [especifique a exibição do catálogo para recomendações e regras de descoberta de produtos](#specify-catalog-views-for-recommendations-and-product-discovery-rules), revise [camadas de catálogo](#catalog-layers) que substituem atributos de produto ou [torne a exibição do catálogo privada](#make-a-catalog-view-private).
+- [Editar uma exibição de catálogo](#edit-a-catalog-view)—Atualize suas configurações de fontes, políticas, catálogo de preços e proteção.
+- [Excluir uma exibição de catálogo](#delete-a-catalog-view) — Remova uma exibição de catálogo desnecessária.
+- [Exibir detalhes de exibição do catálogo](#view-catalog-view-details)—Examine a configuração de exibição do catálogo na tabela Exibições do catálogo.
 
-Por exemplo, é possível criar exibições de catálogo separadas para:
-
-- Uma marca ou unidade de negócios
-- Uma região geográfica
-- Um canal de revendedor ou parceiro
-- Um segmento de cliente com preços específicos
-
-## Criar uma exibição de catálogo
+### Criar uma exibição de catálogo
 
 Antes de criar uma visualização de catálogo, prepare os seguintes itens conforme necessário:
 
@@ -68,7 +58,7 @@ Antes de criar uma visualização de catálogo, prepare os seguintes itens confo
 - [Catálogos de preços](pricebooks.md) para os preços exibidos na exibição
 - [Chaves de acesso restrito](restricted-access-keys.md) se você deseja criar uma exibição de catálogo privado
 
-### Configuração
+#### Configuração
 
 Nesta seção, você cria uma exibição de catálogo, selecione uma [política](policies.md) e um [catálogo de preços](pricebooks.md).
 
@@ -102,25 +92,21 @@ A página Exibições de catálogo é atualizada para exibir a nova exibição d
 
 Após concluir essas etapas, a exibição do catálogo agora está configurada para exibir produtos e preços com base nas fontes e políticas selecionadas.
 
-### Especificar exibições de catálogo para recomendações e regras de descoberta de produtos
+#### Especificar exibições de catálogo para recomendações e regras de descoberta de produtos
 
 Você pode especificar uma exibição de catálogo ao [criar unidades de recomendação](../merchandising/recommendations/create.md) ou [regras de merchandising](../merchandising/rules/add.md).
 
-## Camadas do catálogo
+#### Camadas do catálogo
 
 As camadas de catálogo permitem substituir atributos de produto selecionados sem alterar os dados do catálogo de origem. Use camadas para personalizar nomes, descrições, imagens, links ou metadados para uma exibição de catálogo.
 
 Consulte [Camadas do catálogo](catalog-layer.md).
 
-## Tornar uma exibição de catálogo privada
+#### Tornar uma exibição de catálogo privada
 
 Por padrão, uma visualização de catálogo é pública para aplicativos clientes que podem acessar a API de merchandising do GraphQL. Para restringir o acesso, configure uma exibição de catálogo privado habilitando **[!UICONTROL Catalog Protection]**.
 
 Para saber como proteger uma exibição de catálogo e verificar se o acesso é imposto, consulte [Exibições de catálogo privado](private-catalog-view.md).
-
-## Gerenciar exibições do catálogo
-
-Para atualizar ou exibir as propriedades de exibições de catálogo existentes, siga estas instruções.
 
 ### Editar uma exibição de catálogo
 
@@ -143,7 +129,7 @@ Para atualizar ou exibir as propriedades de exibições de catálogo existentes,
 
 Esta opção fornece uma maneira rápida de ver todos os parâmetros de exibição do catálogo, permanecendo na tabela **[!UICONTROL Catalog views]**.
 
-No espaço de trabalho **[!UICONTROL Catalog views]**, selecione o ![ícone de informações](../assets/info-icon.png) para uma exibição de catálogo para exibir seus detalhes de configuração.
+No espaço de trabalho **[!UICONTROL Catalog views]**, selecione o ![ícone de informações](/help/assets/ccdm-shared/recommendations/info-icon.png) para uma exibição de catálogo para exibir seus detalhes de configuração.
 
 ![Detalhes de exibição do catálogo](../assets/catalog-view-details.png)
 
@@ -157,82 +143,3 @@ Aqui, você pode ver os detalhes de configuração da visualização do catálog
 - Dados modificados
 
 Algumas dessas configurações são necessárias à medida que você configura sua loja ou usa a API de assimilação de dados.
-
-## Visão geral da arquitetura
-
-As exibições de catálogo são parte da estrutura de Serviços de merchandising que substitui a estrutura de site, loja e loja usada nas bases da Adobe Commerce por um modelo mais flexível:
-
-Arquitetura ![[!DNL Merchandising Services]](../assets/merchandising-svcs-architecture.png)
-
-### Como funciona
-
-**1. Assimilação de dados**
-Os dados do catálogo do PIM, ERP e outros sistemas são assimilados na estrutura de serviços de merchandising. Cada SKU contém informações de local e atributos de produto que mapeiam para exibições de catálogo, políticas e locais. Para obter mais informações sobre a assimilação de dados, consulte a [documentação do desenvolvedor](https://developer.adobe.com/commerce/services/optimizer/).
-
-**2. Catálogo de base unificada**
-Os dados assimilados criam um catálogo base unificado no pipeline de dados do Serviço de catálogo. Essa única fonte elimina a duplicação de dados nas unidades de negócios.
-
-**3. Exibições do catálogo**
-Várias exibições de catálogo representam unidades de negócios diferentes (por exemplo, &quot;Texas Retail&quot;, &quot;Texas Retail Seasonal&quot;). Locais, políticas e catálogos de preços podem ser compartilhados entre exibições de catálogo para maior flexibilidade.
-
-**4. Entrega multicanal**
-Os dados de catálogo filtrados são entregues a destinos como Edge Delivery Services, marketplaces, plataformas de publicidade e microlojas personalizadas. Para obter mais informações sobre a entrega de dados do catálogo, consulte a [documentação do desenvolvedor](https://developer.adobe.com/commerce/services/optimizer/).
-
-Quando uma exibição de catálogo tem **[!UICONTROL Catalog Protection]** habilitada, a entrega para esse destino requer um token assinado válido de uma [chave de acesso restrito](restricted-access-keys.md) atribuída; solicitações não autorizadas são negadas em vez de receber dados de catálogo.
-
-### Componentes principais
-
-| Componente | Finalidade | Exemplo |
-|---|---|---|
-| **Exibição de catálogo** | Unidade de negócios ou canal de distribuição | Rede de revendedores, Loja regional |
-| **Política** | Filtro de produto com base em atributos | Marca, modelo, categoria |
-| **Localidade** | Configuração de idioma/região | en-US, fr-CA, es-MX |
-| **Catálogo de Preços** | Estrutura de preços | Varejo, Atacado, Funcionário |
-| **Chave de acesso restrito** | Credencial de token assinado que dá acesso a uma exibição de catálogo protegida | Chave do portal do parceiro, chave de preços B2B |
-
-### Fluxo de dados
-
-1. **Assimilar** - Dados de produto de sistemas PIM/ERP
-2. **Processo** - Aplicar exibições de catálogo, políticas e preços
-3. **Entrega** - Veicula o catálogo filtrado em vitrines, marketplaces etc.
-
-## Principais recursos
-
-| Recurso | Benefício |
-|---|---|
-| **Catálogo de Base Única** | Eliminar a duplicação de dados em unidades de negócios |
-| **Preços flexíveis** | Vários catálogos de preços por SKU para diferentes segmentos de clientes |
-| **Escalável** | Gerencie mais de 200 milhões de SKUs com eficiência |
-| **Multicanal** | Oferece catálogos para vitrines, mercados e plataformas de publicidade |
-| **Atualizações em tempo real** | Atualize rapidamente os dados do catálogo para promoções e campanhas |
-| **Exibições de catálogo privado** | Restringir uma exibição de catálogo aos clientes autorizados usando a validação de token assinado |
-
-## Casos de uso
-
-### Conglomerado multimarcas
-
-**Desafio**: gerenciar várias marcas, países e idiomas<br>
-**Solução**: catálogo único com exibições de catálogo para cada combinação de marca/região
-
-### Revendedor de peças automotivas
-
-**Desafio**: 3.000 revendedores com os mesmos produtos, mas com preços diferentes<br>
-**Solução**: um catálogo com exibições de catálogo e catálogos específicos de revendedores
-
-### Retailer com vários locais
-
-**Desafio**: preços e inventário diferentes por localização<br>
-**Solução**: exibições de catálogo baseadas em localização com políticas específicas de região
-
->[!NOTE]
->
->Para obter informações detalhadas sobre a assimilação e a entrega de dados do catálogo, consulte a [documentação do desenvolvedor](https://developer.adobe.com/commerce/services/optimizer/).
-
-## Veja mais aqui
-
-- [Fontes do catálogo](catalog-sources.md) — Defina o escopo autoritativo de produtos, atributos e categorias para comportamento de pesquisa, filtro e classificação
-- [Camadas do catálogo](catalog-layer.md)—Saiba como modificar dados do produto sem alterar a origem original
-- [Exibições de catálogo privado](private-catalog-view.md) — Crie uma exibição de catálogo privado para restringir o acesso a clientes autorizados
-- [Chaves de acesso restrito](restricted-access-keys.md)—Crie, atribua e gire as chaves usadas para assinar tokens para Proteção de Catálogo
-- [Políticas](policies.md) — Crie políticas para filtrar produtos nas exibições de catálogo
-- [Catálogos de preços](pricebooks.md) — Gerencie estruturas de preços para diferentes segmentos de clientes

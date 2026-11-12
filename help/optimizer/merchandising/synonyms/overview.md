@@ -1,7 +1,7 @@
 ---
 title: Visão geral de sinônimos
-description: Saiba mais sobre sinônimos no  [!DNL Adobe Commerce Optimizer] e como eles melhoram os resultados da pesquisa.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+description: Saiba mais sobre os sinônimos no [!DNL Adobe Commerce Optimizer] e como eles melhoram os resultados da pesquisa.
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente ao Adobe Commerce as a Cloud Service e a projetos [!DNL Adobe Commerce Optimizer] (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 9efa7b7b-4559-4e23-8858-d2f5da90455b
 TQID: https://experienceleague.adobe.com/Y92PBdhfA6TxH1qFWtllycIqB5XuXCtCgT-ezYvOKhk
 product_v2:
@@ -17,15 +17,11 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 48b94b1b5f38560d5a7be6c5f5431007685202fa
+source-git-commit: 38a78729200299094cf48e30d7bbeba16d83dccf
 workflow-type: tm+mt
-source-wordcount: 158
+source-wordcount: '39'
 ht-degree: 0%
-
 ---
-
 # Sinônimos
 
-Os sinônimos expandem a consulta de pesquisa para incluir palavras que os compradores podem usar que diferem daquelas no catálogo. Você não quer perder uma venda porque alguém está procurando um &quot;sofá&quot;, enquanto seu produto está listado como um &quot;sofá&quot;. Você pode capturar uma ampla variedade de termos de pesquisa inserindo todas as palavras possíveis que os clientes podem usar para encontrar seus produtos.
-
-A [Pesquisa semântica](../../setup/semantic-search.md) está habilitada por padrão e também pode corresponder a termos e linguagem natural semelhantes, entendendo o significado em vez do texto exato. A pesquisa semântica pode reduzir a necessidade de alguns sinônimos gerais (por exemplo, &quot;sofá&quot; e &quot;sofá&quot;); você ainda pode querer sinônimos para termos específicos da marca ou altamente técnicos. Você pode usar sinônimos e pesquisa semântica juntos.
+{{$include /help/_includes/ccdm-shared/merchandising/synonyms/overview.md}}

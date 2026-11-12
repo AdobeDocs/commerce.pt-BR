@@ -3,7 +3,7 @@ title: Origens no catálogo
 description: Saiba o que são as fontes de catálogo e como elas definem o escopo autoritativo de produtos, atributos e categorias para o comportamento de pesquisa, filtragem e classificação.
 role: Admin, Developer
 recommendations: noCatalog
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplica-se somente ao Adobe Commerce as a Cloud Service e  [!DNL Adobe Commerce Optimizer]  projetos (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente ao Adobe Commerce as a Cloud Service e a projetos [!DNL Adobe Commerce Optimizer] (infraestrutura SaaS gerenciada pela Adobe)."
 autotag-review: '2026-06-09T19:36:23.516Z'
 TQID: 'https://experienceleague.adobe.com/MiLbuYx6Pf95n3jvrgvou05Ery9XHXskx8p6KrN6CYg'
 product_v2:
@@ -34,46 +34,11 @@ topic_v2:
     internal-label: Data modeling
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 38fa0734562a631fdcdd7510580571c5d37cb598
+source-git-commit: dd0ff00127242a63faf1eac1fa614673d73a7f24
 workflow-type: tm+mt
-source-wordcount: 457
+source-wordcount: '53'
 ht-degree: 0%
-
 ---
-
 # Origens do catálogo
 
-As origens de catálogo representam escopos autoritativos de produtos, atributos e categorias. Normalmente, eles mapeiam para limites de idioma, público-alvo ou sistema de origem e determinam o comportamento de pesquisa, filtragem e classificação.
-
-## Origens do catálogo versus conceitos relacionados
-
-Entender como as fontes de catálogo se relacionam com outros conceitos do [!DNL Adobe Commerce Optimizer] ajuda a modelar seus dados corretamente:
-
-* **Origem do catálogo** - O contexto de dados subjacente que fornece informações sobre o produto. Uma origem de catálogo normalmente é uma localidade (por exemplo, `en-US`, `fr-CA`) ou um sistema externo, como um PIM ou ERP. Produtos, atributos, metadados e categorias têm escopo por origem de catálogo. Pense em uma origem de catálogo como *de onde* os dados brutos do catálogo vêm e *como* eles afetam a descoberta de produtos (resultados de pesquisa, filtragem e comportamento de classificação).
-
-* **[Exibição de catálogo](catalog-view.md)** - Uma exibição configurada do catálogo para uma necessidade comercial específica. Ao criar uma exibição de catálogo, você seleciona qual origem (ou localidade) de catálogo usar, adiciona [políticas](policies.md) para filtrar quais produtos estão visíveis e vincula [catálogos de preços](pricebooks.md) para controlar preços. Uma única fonte de catálogo pode potencializar várias exibições de catálogo (por exemplo, uma fonte `en-US` com exibições de catálogo separadas para marcas ou regiões diferentes). Pense em uma exibição de catálogo como *como* você expõe esses dados para uma vitrine, canal ou público-alvo.
-
-* **[Camada do catálogo](catalog-layer.md)** - Uma camada aplicada sobre os dados do catálogo base para modificar atributos do produto (nome, descrição, imagens, metadados) sem alterar os dados de origem. Use camadas de catálogo quando as diferenças afetarem somente a exibição da loja, não a descoberta de produtos.
-
-## Regras e limitações
-
-* Cada origem de catálogo é criada ao assimilar um produto por meio da API de assimilação de dados. Consulte [Documentos do desenvolvedor - Assimilação de dados](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/) para obter mais informações.
-* A exclusividade do produto é determinada pela SKU + origem do catálogo.
-* Os compradores não acessam diretamente as fontes do catálogo. Os dados do catálogo são expostos à loja através de [exibições do catálogo](catalog-view.md).
-
-## Orientação de modelagem
-
-Use as orientações a seguir ao decidir como estruturar suas fontes de catálogo:
-
-* Crie uma fonte de catálogo separada para cada idioma do catálogo.
-* Use fontes de catálogo separadas quando as diferenças de produto e atributo afetarem o comportamento de pesquisa, filtragem ou classificação (por exemplo, capacidade de pesquisa, filtragem ou configuração de facetas diferentes para o mesmo atributo).
-* Use [camadas de catálogo](catalog-layer.md) quando as diferenças de produto e atributo afetarem somente a exibição da loja, não a descoberta de produtos.
-
->[!MORELIKETHIS]
->
-> * [Exibições de catálogo](catalog-view.md) - Configure exibições filtradas e com preços na parte superior de uma origem de catálogo
-> * [Camadas do catálogo](catalog-layer.md) - Modificar a apresentação do produto sem alterar os dados de origem
-> * [Políticas](policies.md) - Criar filtros baseados em atributos para exibições de catálogo
-> * [Catálogos de preços](pricebooks.md) - Gerenciar estruturas de preços para diferentes segmentos de clientes
-> * [Chaves de acesso restrito](restricted-access-keys.md) - Proteja uma exibição de catálogo com autenticação de token assinado
-
+{{$include /help/_includes/ccdm-shared/setup/catalog-sources.md}}

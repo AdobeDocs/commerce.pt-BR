@@ -24,7 +24,7 @@ topic_v2:
     internal-label: Insights
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 672e67ef99d52c942013a880ecfec0da31e76756
 workflow-type: tm+mt
 source-wordcount: '3191'
 ht-degree: 0%
@@ -352,7 +352,7 @@ Aplicável a:
 
 Versão principal: [modelo de dados de catálogo combinável](https://developer.adobe.com/commerce/services/optimizer/) para frentes de loja headless, gerenciamento de cabeçalho e manipulação de dados de produto.
 
-![Novo](../assets/new.svg) **Modelo de Dados de Catálogo de Composição (CCDM)** — Oferece suporte a clientes que usam o catálogo de composição para frentes de loja headless. Os novos endpoints aceitam a Exibição de catálogo e as IDs de política (compatíveis com versões anteriores). Detalhes e preços do produto configuráveis com paginação interna.<!--DATA-6018, DATA-6288-->
+![Novo](../assets/new.svg) **modelo de dados de catálogo combinável (CCDM)** — oferece suporte a clientes que usam o catálogo combinável para frentes de loja headless. Os novos endpoints aceitam a Exibição de catálogo e as IDs de política (compatíveis com versões anteriores). Detalhes e preços do produto configuráveis com paginação interna.<!--DATA-6018, DATA-6288-->
 
 ![Novo](../assets/new.svg) **Gerenciamento de Cabeçalho**-`AC-Locale` renomeado para `AC-Scope-Locale` para operações de API de catálogo combinável; mapeamento de cabeçalho e valores padrão especificados.<!--DATA-6303, DATA-6078-->
 

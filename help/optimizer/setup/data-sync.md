@@ -19,56 +19,11 @@ topic_v2:
     internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
     internal-label: Insights
-source-git-commit: 014ae9bbe0a9bb48e6a5d574af4fc47158ad33dc
+source-git-commit: 9163ab912965d82bda7f9da86177e40e7c81cce6
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '44'
 ht-degree: 0%
 ---
 # Sincronização de dados
 
-A página **Sincronização de Dados** exibe uma visão geral do status de sincronização dos dados do produto transferidos de sua fonte de dados (seu catálogo Commerce existente, sistema PIM (Gerenciamento de Informações do Produto), sistema ERP (Planejamento de Recursos Empresariais) etc.) para o [!DNL Adobe Commerce Optimizer].
-
-A página **Sincronização de Dados** fornece informações valiosas sobre a disponibilidade de dados de produtos para a sua vitrine eletrônica, garantindo que eles possam ser exibidos imediatamente aos seus compradores.
-
-A página **Sincronização de Dados** está localizada em *Configuração* > **Sincronização de dados**.
-
-![Sincronização de Dados](../assets/data-sync.png)
-
-A página **Sincronização de Dados** contém os seguintes campos:
-
-| Campo | Descrição |
-| --- | --- |
-| Origem do catálogo | Local específico dos dados sincronizados. |
-| [!DNL Catalog Service] | Exibe a última atualização de sincronização, o total de produtos recebidos, um campo de pesquisa e uma tabela dos produtos sincronizados para [!DNL Catalog Service]. |
-| Descoberta de produto | Exibe a última atualização de sincronização, o total de produtos recebidos, um campo de pesquisa e uma tabela dos produtos sincronizados para Pesquisa. |
-| Recommendations | Exibe a última atualização de sincronização, o total de produtos recebidos, um campo de pesquisa e uma tabela dos produtos sincronizados para o Recommendations. |
-| Produtos recebidos nas últimas 3 horas | Exibe o número de produtos que foram transferidos da origem do catálogo para [!DNL Adobe Commerce Optimizer] nas últimas três horas. Se você fizer atualizações pouco frequentes no catálogo, esse valor será frequentemente zero. |
-| Total de produtos no catálogo | Reflete o número total de produtos de catálogo disponíveis para [!DNL Adobe Commerce Optimizer]. |
-| Produtos sincronizados | Fornece detalhes sobre os produtos sincronizados com o [!DNL Adobe Commerce Optimizer]. Por padrão, essa tabela é classificada por &quot;Última atualização&quot;. Para localizar um produto específico, use o campo **[!UICONTROL Search by Name or SKU]**. |
-
-## Lista de produtos sincronizados
-
-Para ver os detalhes de um produto sincronizado no formato JSON, clique no ícone de código ![Link de código](../assets/data-sync-details.png) na linha do produto da tabela de produtos sincronizados.
-
-![Detalhes do produto sincronizado](../assets/synced-products.png)
-
-## Ressincronizar dados do catálogo
-
-Se você não vir produtos específicos na página **Sincronização de Dados**, precisará iniciar uma ressincronização a partir do sistema upstream. No entanto, lembre-se de que uma ressincronização pode aumentar a carga dos recursos de hardware. No entanto, a ressincronização do catálogo pode ser necessária nos seguintes cenários:
-
-- Quando são feitas alterações significativas no catálogo de produtos, como adicionar novos produtos, atualizar detalhes do produto ou modificar categorias
-
-- Se você observar discrepâncias ou problemas de desempenho na exibição dos dados do produto em suas lojas
-
->[!IMPORTANT]
->
->O tempo necessário para concluir a sincronização varia de acordo com o tamanho do catálogo e o volume de dados atualizados.
-
-## Verifique se a sincronização de dados está funcionando
-
-Para projetos que usam o Adobe Commerce como fonte de dados de upstream por meio do Adobe Commerce Optimizer Connector, é possível monitorar o processo de exportação de dados e iniciar operações de ressincronização na página Status de sincronização do feed de dados. Para obter detalhes, consulte [Verificar se a sincronização de dados está funcionando](../../aco-connector/data-sync-status.md#verify-that-the-data-sync-is-working) na documentação do _Adobe Commerce Optimizer Connector_.
-
-## Tópicos relacionados
-
-- [Adobe Commerce Optimizer Connector](../../aco-connector/overview.md){target="_blank"}
-
+{{$include /help/_includes/ccdm-shared/setup/data-sync.md}}
