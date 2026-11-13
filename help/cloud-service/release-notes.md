@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: 2123503aaa8088baab9b9a5e3ce9c3036518061e
+source-git-commit: c77ccb87ac61a4dae8adc3079bb8aac7a4a9bf58
 workflow-type: tm+mt
-source-wordcount: '10011'
+source-wordcount: '10458'
 ht-degree: 0%
 ---
 # Notas de versão
@@ -82,7 +82,74 @@ Cada experiência de administrador tem seu próprio URL. Os links de instância 
 
 Saiba mais em [Administrador do Commerce na Experiência unificada da Adobe](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/admin/admin-unified-experience).
 
-## Novembro de 2026 - versão #1 {#latest}
+## Novembro de 2026 - versão #2 {#latest}
+
+[!BADGE Sandbox]{type=Caution tooltip="Os itens listados estão disponíveis atualmente apenas em ambientes de sandbox. A Adobe disponibiliza novas versões em ambientes de sandbox primeiro para fornecer tempo para testar alterações futuras antes que a versão esteja disponível em ambientes de produção."}
+
+<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+
+Os itens a seguir foram lançados para ambientes de sandbox em 18 de novembro de 2026.
+
+>[!BEGINSHADEBOX]
+
+### Resenhas do produto
+
+[Resenhas de produtos](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/marketing/merchandising/product-reviews/product-reviews) já estão disponíveis para [!DNL Adobe Commerce as a Cloud Service]. <!-- ACCS-2277, ACCS-432 -->
+
+As análises de produto estão desativadas por padrão. Para habilitar revisões, navegue até [!UICONTROL Stores] > [!UICONTROL Configuration] > [!UICONTROL Catalog] > [!UICONTROL Catalog] > [!UICONTROL Product Reviews], desmarque a caixa de seleção [!UICONTROL Use System Value] e defina [!UICONTROL Enabled] como **Sim**.
+
+Use a consulta do GraphQL [`reviews`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/queries/reviews) para recuperar revisões e a mutação [`createProductReview`](https://developer.adobe.com/commerce/webapi/graphql/schema/products/mutations/create-review) para criar revisões.
+
+### Atributos personalizados
+
+Esta versão apresenta vários novos recursos REST e GraphQL para lidar com atributos personalizados:
+
+* **Avisos de crédito**
+  * O ponto de extremidade REST `GET /V1/creditmemos` agora pode filtrar avisos de crédito por valores de atributos personalizados. Use o nome de campo `custom_attributes.<code>` nos critérios de pesquisa, como `searchCriteria[filter_groups][0][filters][0][field]=custom_attributes.is_appeasement`. <!-- ACCS-2158, ACCS-1915, ACCS-2159, ACCS-2221 -->
+
+  >[!IMPORTANT]
+  >
+  >Esse recurso está desativado por padrão. Para ativá-lo, entre em contato com o Gerente de sucesso do cliente da Adobe Commerce ou crie um tíquete de suporte.
+
+* **Pedidos**
+  * O novo ponto de extremidade REST `POST /V1/orders/:orderId/customAttributes` adiciona ou atualiza atributos personalizados em uma ordem existente. <!-- ACCS-2137 -->
+* **Devoluções**
+  * As Autorizações de devolução de mercadoria (RMAs) agora aceitam atributos personalizados na própria devolução, além de itens de devolução. <!-- CEXT-6925 -->
+    * Os pontos de extremidade REST `/V1/returns` salvam e retornam `custom_attributes` no retorno.
+    * O tipo `Return` do GraphQL inclui um campo `custom_attributes`.
+  * Quando um retorno tem um atributo personalizado `return_address`, o Commerce usa esse endereço em vez do endereço de retorno configurado. Você pode definir este atributo através dos pontos de extremidade REST `/V1/returns` ou do webhook `observer.rma_save_before`. <!-- ACCS-2184 -->
+
+### Melhorias e correções de erros
+
+Os seguintes aprimoramentos, otimizações e correções de erros selecionados estão incluídos nesta versão:
+
+* Correção de um problema em que salvar as configurações de integração do [!DNL AEM Assets] por meio do ponto de extremidade REST do `PUT /V1/system/config` não sincronizava as imagens do produto. <!-- ACCS-2282 -->
+
+* Correção de um problema em que o seletor de SKU de presente em uma regra de preço de carrinho de presente gratuito não era aberto quando várias fontes de inventário eram ativadas. <!-- ACCS-2208 -->
+
+* Correção de um problema em que os compradores B2B não podiam retornar os itens entregues na loja quando os produtos eram removidos do catálogo compartilhado de sua empresa. <!-- ACCS-2283, AC-19727 -->
+
+* Correção de um problema em que os clientes recebiam um email adicional &quot;Você foi vinculado a uma empresa&quot;. <!-- ACCS-2292, ACCS-856 -->
+
+* Cotações e modelos de cota negociáveis agora incluem um campo do GraphQL `created_by` que inclui o nome do vendedor e o nome do comprador. <!-- USF-4511 -->
+
+* Correção de um problema em que o ponto de extremidade REST `POST /V1/customers` retornava um erro 400. <!-- CCSAAS-5786 -->
+
+* Salvar um cliente não salva mais os endereços inalterados. <!-- CCSAAS-5599 -->
+
+* Correção de um problema em que pedidos simultâneos para o mesmo produto com [!UICONTROL Manage Stock] desativado podiam falhar. <!-- CCSAAS-5778, ACP2E-5457 -->
+
+* Correção de um problema em que o ponto de extremidade REST `POST /V1/invoice/:invoiceId/refund` retornava um erro quando você reembolsava a quantidade faturada total restante. <!-- CCSAAS-5794, AC-16056 -->
+
+* Melhora no desempenho do ponto de extremidade REST `GET /V1/products`. <!-- CCSAAS-4664 -->
+
+* As importações de CSV de produtos agora oferecem suporte a URLs de imagem que não terminam com uma extensão de nome de arquivo. <!-- CCSAAS-5605 -->
+
+{{accs-release}}
+
+>[!ENDSHADEBOX]
+
+## Novembro de 2026 - versão #1
 
 <!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
