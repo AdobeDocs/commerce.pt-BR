@@ -77,7 +77,7 @@ Este tópico explica quais alterações ocorrem com o CCDM, quais recursos conti
 
 O modelo do catálogo original usa o Serviço de catálogo para fornecer dados de produtos para vitrines, com o Live Search e o Product Recommendations fornecendo recursos de pesquisa, merchandising e recomendação. Neste modelo, o Commerce sincroniza usando a [exportação de dados SaaS](https://experienceleague.adobe.com/pt-br/docs/commerce/saas-data-export/overview).
 
-Com a CCDM, esses recursos operam na mesma base de catálogo que capacita o Adobe Commerce Optimizer. [Exibições de catálogo](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view) e [políticas](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/policies) definem o contexto do catálogo disponível para uma vitrine. As políticas determinam a variedade de produtos e as regras de merchandising podem ser aplicadas em todas as exibições de catálogo ou ser personalizadas para uma exibição específica.
+Com a CCDM, esses recursos operam na mesma base de catálogo que capacita o Adobe Commerce Optimizer. [Exibições de catálogo](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view) e [políticas](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/merchandising-with-ccdm/setup/policies) definem o contexto do catálogo disponível para uma vitrine. As políticas determinam a variedade de produtos e as regras de merchandising podem ser aplicadas em todas as exibições de catálogo ou ser personalizadas para uma exibição específica.
 
 Isso altera a forma como o catálogo é configurado, acessado e comercializado. O CCDM se baseia nos recursos de pesquisa, recomendações e merchandising do catálogo original do Commerce e, ao mesmo tempo, introduz controles no nível de visualização do catálogo. Os recursos adicionais de gerenciamento e geração de relatórios são descritos abaixo.
 
@@ -99,9 +99,9 @@ O diagrama a seguir mostra a posição dos Serviços de merchandising na arquite
 
 ## O que há de novo para comerciantes?
 
-O novo modelo permite determinar o escopo das regras de merchandising existentes para todas as exibições de catálogo ou para uma exibição específica. Isso permite aplicar merchandising a cada público-alvo da loja. Saiba como [determinar o escopo de uma regra de merchandising para exibições de catálogo](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/merchandising/rules/add).
+O novo modelo permite determinar o escopo das regras de merchandising existentes para todas as exibições de catálogo ou para uma exibição específica. Isso permite aplicar merchandising a cada público-alvo da loja. Saiba como [determinar o escopo de uma regra de merchandising para exibições de catálogo](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/merchandising-with-ccdm/merchandising/rules/add).
 
-No Administrador, você pode configurar o contexto do catálogo com [!UICONTROL Catalog Views] e [!UICONTROL Policies]. Você também pode usar [!UICONTROL Success Metrics] para revisar receita, conversão, envolvimento, aquisição e taxa de rejeição. Consulte [Métricas de sucesso](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/manage-results/success-metrics) para obter mais detalhes.
+No Administrador, você pode configurar o contexto do catálogo com [!UICONTROL Catalog Views] e [!UICONTROL Policies]. Você também pode usar [!UICONTROL Success Metrics] para revisar receita, conversão, envolvimento, aquisição e taxa de rejeição. Consulte [Métricas de sucesso](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/merchandising-with-ccdm/manage-results/success-metrics) para obter mais detalhes.
 
 ## Considerações antes da adoção
 
