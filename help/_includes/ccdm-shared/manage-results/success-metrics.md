@@ -68,7 +68,7 @@ Os metadados C2PA são metadados legíveis por máquina e evidentes em violaçã
 
 ![Inspecionar amostra](/help/assets/ccdm-shared/manage-results/inspect-sample.png)
 
-Saiba mais sobre [Transparência do conteúdo de IA gerativa](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency).
+Saiba mais sobre [Transparência do conteúdo de IA gerativa](https://experienceleague.adobe.com/pt-br/docs/cx-enterprise-ai/experience-cloud-ai/overview/content-transparency).
 
 ## Uso de métricas de sucesso e do Sites Optimizer juntos
 

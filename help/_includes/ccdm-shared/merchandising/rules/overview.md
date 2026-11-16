@@ -14,13 +14,13 @@ Cada **regra de pesquisa** tem três componentes principais:
 - **Eventos** - As ações que ocorrem quando as condições são atendidas (classificação manual e eventos relacionados).
 - **Detalhes** - O nome da regra e o intervalo de tempo e a descrição opcionais.
 
-**As regras de categoria** usam **seleção de categoria** em vez das condições de consulta de pesquisa; a classificação inteligente e a classificação manual funcionam da mesma forma que para pesquisa, com diferenças chamadas em [Criar e Gerenciar Regras](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add).
+**As regras de categoria** usam **seleção de categoria** em vez das condições de consulta de pesquisa; a classificação inteligente e a classificação manual funcionam da mesma forma que para pesquisa, com diferenças chamadas em [Criar e Gerenciar Regras](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/add).
 
 É possível combinar várias condições e ações para regras de pesquisa e agendar qualquer regra para ficar ativa por um período. Você também pode definir uma **regra de pesquisa padrão** que se aplique quando nenhuma outra pesquisa ou regra de categoria específica se aplicar.
 
 ## Regras de categoria {#category-rules}
 
-As **Regras de categoria** controlam o pedido de produto em **páginas de categoria**. Selecione uma ou mais categorias e aplique classificação inteligente (por exemplo, mais visualizada, tendência) e ações manuais, como fixar, aumentar e atenuar. Elas não usam as condições de consulta de pesquisa. Para obter etapas de configuração, tipos de regras e como a classificação se aplica à categoria e à pesquisa, consulte [Criar e Gerenciar Regras](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add).
+As **Regras de categoria** controlam o pedido de produto em **páginas de categoria**. Selecione uma ou mais categorias e aplique classificação inteligente (por exemplo, mais visualizada, tendência) e ações manuais, como fixar, aumentar e atenuar. Elas não usam as condições de consulta de pesquisa. Para obter etapas de configuração, tipos de regras e como a classificação se aplica à categoria e à pesquisa, consulte [Criar e Gerenciar Regras](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/add).
 
 ## Requisitos
 
@@ -55,7 +55,7 @@ Você pode definir uma **regra de pesquisa padrão** que se aplica quando nenhum
 
 ## Ordem de precedência com várias regras
 
-O seguinte se aplica às **regras de pesquisa** e como elas interagem para uma determinada pesquisa. **Regras de categoria** se aplicam por categoria. Consulte [Criar e Gerenciar Regras](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add) para saber como elas se encaixam com as regras padrão e de pesquisa.
+O seguinte se aplica às **regras de pesquisa** e como elas interagem para uma determinada pesquisa. **Regras de categoria** se aplicam por categoria. Consulte [Criar e Gerenciar Regras](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/add) para saber como elas se encaixam com as regras padrão e de pesquisa.
 
 Somente uma regra de pesquisa é aplicada a um termo de pesquisa de cada vez.
 Se várias regras forem consideradas aplicáveis a uma frase de pesquisa, todas elas serão aplicadas. Se houver uma colisão entre duas regras —`rule 1` que aumenta o sku1, mas `rule 2` oculta o mesmo SKU — então a regra aplicada mais recentemente (`rule 2`) tem prioridade.

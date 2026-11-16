@@ -210,7 +210,7 @@ Para melhorar a localização de produtos usando regras, consulte [regras de pes
 
 Para obter informações sobre a configuração de pesos de pesquisa:
 
-- Para todas as implantações do Adobe Commerce, consulte [Resultados da Pesquisa](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results) no _Guia de Gerenciamento de Catálogo_.
+- Para todas as implantações do Adobe Commerce, consulte [Resultados da Pesquisa](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/search/search-results) no _Guia de Gerenciamento de Catálogo_.
 - Para implantações independentes do Adobe Commerce Optimizer, consulte a [API REST de metadados](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) no _Guia do Desenvolvedor de Serviços de Merchandising_.
 
 ### Classificação manual {#manual-ranking}
@@ -246,7 +246,7 @@ Ou eventos podem ser definidos manualmente:
 
 >[!AVAILABILITY]
 >
->Este recurso está em [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
+>Este recurso está em [beta](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
 
 **A classificação de atributo** aplica automaticamente uma ação **[!UICONTROL Boost]**, **[!UICONTROL Bury]** ou **[!UICONTROL Hide]** a cada produto que corresponde a uma ou mais condições de atributo, sem exigir que você selecione SKUs individuais. A classificação de atributos aparece no editor de regras junto com a [Classificação inteligente](#intelligent-ranking) e a [Classificação manual](#manual-ranking), e está disponível para a **Regra de todos os produtos**, **Regras de pesquisa** e **Regras de categoria**. Use-o para dimensionar o merchandising em grandes catálogos, por exemplo, aumentando cada produto de uma determinada marca ou enterrando cada produto em uma cor descontinuada.
 
@@ -297,7 +297,7 @@ Uma única regra pode ter até 25 condições de atributo, o mesmo limite que os
 
 ## Editar, exibir e excluir regras {#edit-view-and-delete-rules}
 
-Para atualizar as propriedades das regras existentes, siga estas instruções. Não é possível alterar a exibição de catálogo (escopo) de uma regra após sua criação; o escopo é definido quando você cria a regra. Consulte [Selecionar exibição de catálogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view).
+Para atualizar as propriedades das regras existentes, siga estas instruções. Não é possível alterar a exibição de catálogo (escopo) de uma regra após sua criação; o escopo é definido quando você cria a regra. Consulte [Selecionar exibição de catálogo](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view).
 
 ### Editar regra
 

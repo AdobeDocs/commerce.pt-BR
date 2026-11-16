@@ -51,4 +51,4 @@ Se você não vir produtos específicos na página **Sincronização de Dados**,
 
 ## Verifique se a sincronização de dados está funcionando
 
-Para projetos que usam o Adobe Commerce como fonte de dados de upstream, você pode monitorar o processo de exportação de dados e iniciar operações de ressincronização na página Status de sincronização do feed de dados. Para obter detalhes, consulte [Monitoramento do status de sincronização do feed de dados](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status).
+Para projetos que usam o Adobe Commerce como fonte de dados de upstream, você pode monitorar o processo de exportação de dados e iniciar operações de ressincronização na página Status de sincronização do feed de dados. Para obter detalhes, consulte [Monitoramento do status de sincronização do feed de dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status).

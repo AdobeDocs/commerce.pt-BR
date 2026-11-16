@@ -6,7 +6,7 @@ ht-degree: 1%
 ---
 # Workspace de regras de merchandising
 
-O espaço de trabalho *Regras de merchandising* lista a seleção atual de regras e seus status, e fornece acesso às ferramentas necessárias para criar e gerenciar regras. Você pode aplicar regras de escopo a todas as [exibições de catálogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) (globais) ou a uma única exibição de catálogo. Consulte [Selecionar exibição de catálogo](#select-catalog-view) para saber como filtrar por exibição de catálogo e criar regras por exibição de catálogo. No espaço de trabalho, é possível:
+O espaço de trabalho *Regras de merchandising* lista a seleção atual de regras e seus status, e fornece acesso às ferramentas necessárias para criar e gerenciar regras. Você pode aplicar regras de escopo a todas as [exibições de catálogo](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/setup/catalog-view) (globais) ou a uma única exibição de catálogo. Consulte [Selecionar exibição de catálogo](#select-catalog-view) para saber como filtrar por exibição de catálogo e criar regras por exibição de catálogo. No espaço de trabalho, é possível:
 
 - Pesquisar regras
 - Exibir detalhes da regra
@@ -66,7 +66,7 @@ O painel de detalhes mostra o nome da regra, o status, as condições e os event
 | Controle | Descrição |
 |--- |--- |
 | Adicionar regra | Abre o [editor de regras](add.md). |
-| Exibição de catálogo | Filtra a tabela para regras que se aplicam à exibição do catálogo selecionado. Também define o escopo quando você [cria uma regra](add.md). Opções: *Todas as exibições* ou uma [exibição de catálogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) específica. Consulte [Selecionar exibição de catálogo](#select-catalog-view). |
+| Exibição de catálogo | Filtra a tabela para regras que se aplicam à exibição do catálogo selecionado. Também define o escopo quando você [cria uma regra](add.md). Opções: *Todas as exibições* ou uma [exibição de catálogo](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/setup/catalog-view) específica. Consulte [Selecionar exibição de catálogo](#select-catalog-view). |
 | Status | Filtra a lista de regras por status. Opções: Todas, Ativas, Inativas, Programadas |
 | ![Seletor de coluna](/help/assets/ccdm-shared/rules/btn-show-hide-columns.png) | Especifica as colunas que ficam visíveis na grade. Opções: Última atualização, Data inicial, Data final, Status |
 | Pesquisar | Pesquisa uma regra por nome completo ou correspondência parcial. |
@@ -89,7 +89,7 @@ O painel de detalhes mostra o nome da regra, o status, as condições e os event
 O seletor **[!UICONTROL Catalog view]** na página Regras de merchandising faz duas coisas:
 
 1. **Filtra a tabela** - Mostra somente as regras (e seus detalhes) que se aplicam à exibição do catálogo selecionado.
-1. **Define o escopo das novas regras** - Quando você [cria uma regra](add.md), a exibição de catálogo selecionada é usada como escopo da regra. As opções são *Todas as exibições* ou uma [exibição de catálogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/catalog-view) específica.
+1. **Define o escopo das novas regras** - Quando você [cria uma regra](add.md), a exibição de catálogo selecionada é usada como escopo da regra. As opções são *Todas as exibições* ou uma [exibição de catálogo](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/setup/catalog-view) específica.
 
    - **Todas as exibições** - A regra se aplica a todas as exibições de catálogo. O comportamento de pesquisa e classificação é o mesmo em todas as lojas que usam o catálogo.
    - **Exibição de catálogo** - A regra se aplica somente à exibição de catálogo selecionada (por exemplo, uma vitrine, região, revendedor ou marca). Use isso quando diferentes exibições de catálogo precisarem de lógica de merchandising diferente.
@@ -104,7 +104,7 @@ Crie regras por exibição de catálogo quando diferentes lojas, regiões ou mar
 - **Várias regiões** - Exibições de catálogo separadas para a UE, os EUA ou outras regiões com regras de merchandising específicas de região.
 - **Várias marcas** - Cada marca tem sua própria exibição de catálogo e você deseja regras específicas da marca (por exemplo, diferentes classificações padrão ou produtos promovidos por marca).
 
-Os dados comportamentais que alimentam a [classificação inteligente](add.md#intelligent-ranking) (como mais vistos, mais comprados, tendências) são calculados por exibição de catálogo por padrão. As regras que usam classificação inteligente, portanto, refletem o comportamento do comprador da visualização de catálogo. Quando sua conta tem um grande número de visualizações de catálogo, o sistema pode agregar dados comportamentais globalmente para manter o desempenho; nesse caso, a classificação pode ser influenciada mais por visualizações de catálogo de alto tráfego, e a relevância para visualizações de tráfego mais baixo pode ser reduzida. Consulte [Limites e limites](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits) para obter os limites atuais.
+Os dados comportamentais que alimentam a [classificação inteligente](add.md#intelligent-ranking) (como mais vistos, mais comprados, tendências) são calculados por exibição de catálogo por padrão. As regras que usam classificação inteligente, portanto, refletem o comportamento do comprador da visualização de catálogo. Quando sua conta tem um grande número de visualizações de catálogo, o sistema pode agregar dados comportamentais globalmente para manter o desempenho; nesse caso, a classificação pode ser influenciada mais por visualizações de catálogo de alto tráfego, e a relevância para visualizações de tráfego mais baixo pode ser reduzida. Consulte [Limites e limites](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/boundaries-limits) para obter os limites atuais.
 
 ### Como configurar uma regra por exibição de catálogo
 

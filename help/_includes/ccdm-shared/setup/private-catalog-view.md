@@ -98,7 +98,7 @@ Se [!UICONTROL Catalog Protection] estiver habilitado e todas as chaves atribuí
 
 >[!NOTE]
 >
->Para implantações B2B do Adobe Commerce usando Serviços de Merchandising com CCDM, você gerencia chaves de acesso da página **Chaves de acesso restritas** do Administrador do Commerce (**Sistema** > **Transferência de dados**). Para obter detalhes, consulte [Gerenciamento de chave de acesso restrito](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys) no *[!DNL Adobe Commerce Optimizer Connector]Guia de Integração*.
+>Para implantações B2B do Adobe Commerce usando Serviços de Merchandising com CCDM, você gerencia chaves de acesso da página **Chaves de acesso restritas** do Administrador do Commerce (**Sistema** > **Transferência de dados**). Para obter detalhes, consulte [Gerenciamento de chave de acesso restrito](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys) no *[!DNL Adobe Commerce Optimizer Connector]Guia de Integração*.
 
 ## Veja mais aqui
 
