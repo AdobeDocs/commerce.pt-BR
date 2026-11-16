@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/setup/private-catalog-view.md
+https://github.com/Adobe-Enterprise-Docs/commerce.pt-BR/blob/main/help/_includes/ccdm-shared/setup/private-catalog-view.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -108,7 +108,7 @@ Se [!UICONTROL Catalog Protection] estiver habilitado e todas as chaves atribuí
 
 >[!NOTE]
 >
->Para implantações B2B do Adobe Commerce usando Serviços de Merchandising com CCDM, você gerencia chaves de acesso da página **Chaves de acesso restritas** do Administrador do Commerce (**Sistema** > **Transferência de dados**). Para obter detalhes, consulte [Gerenciamento de chave de acesso restrito](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys) no *[!DNL Adobe Commerce Optimizer Connector]Guia de Integração*.
+>Para implantações B2B do Adobe Commerce usando Serviços de Merchandising com CCDM, você gerencia chaves de acesso da página **Chaves de acesso restritas** do Administrador do Commerce (**Sistema** > **Transferência de dados**). Para obter detalhes, consulte [Gerenciamento de chave de acesso restrito](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys) no *[!DNL Adobe Commerce Optimizer Connector]Guia de Integração*.
 
 ## Veja mais aqui
 

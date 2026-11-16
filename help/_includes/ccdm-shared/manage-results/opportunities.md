@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/manage-results/opportunities.md
+https://github.com/Adobe-Enterprise-Docs/commerce.pt-BR/blob/main/help/_includes/ccdm-shared/manage-results/opportunities.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -29,7 +29,7 @@ A forma como você abre o espaço de trabalho *Oportunidades* depende do produto
 
 ## O que são oportunidades?
 
-[Oportunidades](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview){target="_blank"} são recomendações alimentadas por IA que ajudam os comerciantes a identificar e resolver problemas que afetam o desempenho do site de comércio. Estas recomendações são viabilizadas pelo [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home){target="_blank"}, um serviço na nuvem que analisa e melhora o desempenho do site.
+[Oportunidades](https://experienceleague.adobe.com/pt-br/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview){target="_blank"} são recomendações alimentadas por IA que ajudam os comerciantes a identificar e resolver problemas que afetam o desempenho do site de comércio. Estas recomendações são viabilizadas pelo [Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/pt-br/docs/experience-manager-sites-optimizer/content/home){target="_blank"}, um serviço na nuvem que analisa e melhora o desempenho do site.
 
 ## Principais recursos
 
@@ -186,12 +186,12 @@ As métricas de sucesso ajudam a monitorar os principais indicadores de desempen
 
 ## Saiba mais sobre o Sites Optimizer
 
-Para obter informações detalhadas sobre os recursos do Sites Optimizer, consulte a [documentação do Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/home).
+Para obter informações detalhadas sobre os recursos do Sites Optimizer, consulte a [documentação do Adobe Experience Manager Sites Optimizer](https://experienceleague.adobe.com/pt-br/docs/experience-manager-sites-optimizer/content/home).
 
 Recursos adicionais:
 
-- [Tipos de oportunidade](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) — Saiba mais sobre as oportunidades de otimização disponíveis.
-- [Recursos do Sites Optimizer](https://experienceleague.adobe.com/en/docs/experience-manager-sites-optimizer/content/documentation/basics)—Explore o que o Sites Optimizer pode fazer.
+- [Tipos de oportunidade](https://experienceleague.adobe.com/pt-br/docs/experience-manager-sites-optimizer/content/documentation/opportunities/overview) — Saiba mais sobre as oportunidades de otimização disponíveis.
+- [Recursos do Sites Optimizer](https://experienceleague.adobe.com/pt-br/docs/experience-manager-sites-optimizer/content/documentation/basics)—Explore o que o Sites Optimizer pode fazer.
 
 ## Veja mais aqui
 

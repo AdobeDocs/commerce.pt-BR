@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/synonyms/best-practice.md
+https://github.com/Adobe-Enterprise-Docs/commerce.pt-BR/blob/main/help/_includes/ccdm-shared/merchandising/synonyms/best-practice.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -18,7 +18,7 @@ This includes related images in help/assets/ccdm-shared/.
 
 A seguir há uma lista de práticas recomendadas para a criação de sinônimos.
 
-- Por padrão, o sistema gerencia erros ortográficos. Para incluir palavras que os compradores possam usar, configure sinônimos. Essas palavras diferem das especificadas no catálogo. Você não quer perder uma venda porque alguém está procurando um &quot;sofá&quot; enquanto seu produto está listado como um &quot;sofá&quot;. Capture uma ampla variedade de termos de pesquisa inserindo todas as palavras possíveis que os clientes podem usar para encontrar seus produtos. Para melhorar os resultados, [defina sinônimos como unidirecionais ou bidirecionais](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/add#step-2-define-the-synonym-by-type).
+- Por padrão, o sistema gerencia erros ortográficos. Para incluir palavras que os compradores possam usar, configure sinônimos. Essas palavras diferem das especificadas no catálogo. Você não quer perder uma venda porque alguém está procurando um &quot;sofá&quot; enquanto seu produto está listado como um &quot;sofá&quot;. Capture uma ampla variedade de termos de pesquisa inserindo todas as palavras possíveis que os clientes podem usar para encontrar seus produtos. Para melhorar os resultados, [defina sinônimos como unidirecionais ou bidirecionais](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/synonyms/add#step-2-define-the-synonym-by-type).
 
 - Mapeie os nomes de marcas e abreviações para seus nomes completos, por exemplo &quot;HP&quot; para &quot;Hewlett-Packard&quot; e apelidos de produtos comuns, por exemplo &quot;iPhone&quot; para &quot;Apple iPhone&quot;.
 
