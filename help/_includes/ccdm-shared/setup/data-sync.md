@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.pt-BR/blob/main/help/_includes/ccdm-shared/setup/data-sync.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # Sincronização do catálogo
 
 A página **Sincronização de Dados** exibe uma visão geral do status de sincronização dos dados do produto transferidos de sua fonte de dados (seu catálogo Commerce existente, o sistema PIM (Gerenciamento de Informações do Produto), o sistema ERP (Planejamento de Recursos Empresariais) etc.) para a camada de dados dos Serviços de Merchandising.

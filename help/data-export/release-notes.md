@@ -40,9 +40,9 @@ topic_v2:
     internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 4f804d488a8c8690ed965c022d673f52c91b3d15
+source-git-commit: b26c1c90a5d88f2a321d5ada807e8f44a0f64342
 workflow-type: tm+mt
-source-wordcount: '3763'
+source-wordcount: '3788'
 ht-degree: 0%
 ---
 # Notas de versão do [!DNL SaaS Data Export Extension]
@@ -60,6 +60,13 @@ As atualizações incluem:
 >A extensão [!DNL SaaS data export] é uma coleção de módulos instalados automaticamente com [!DNL Live Search], [!DNL Product Recommendations] e [!DNL Catalog Service]. Você pode verificar a versão instalada em seu sistema usando o [!DNL Composer]. Em alguns casos, você pode querer atualizar a extensão de exportação de dados no seu sistema para coletar correções ou novos recursos sem atualizar a versão do Serviço do Commerce.
 
 ## Versões de 2026 {#release-notes-2026}
+
+### Versão 103.6.1
+
+_16 de novembro de 2026_
+
+![Correção](../assets/fix.svg) Removeu os módulos `InventoryDataExporter` e `SaaSInventory`. Como resultado, alguns dados relacionados ao inventário não são mais exportados. <!--MDEE-1482-->
+![Corrigir](../assets/fix.svg) Remover metapackages obsoletos. <!--MDEE-1197-->
 
 ### Versão 103.6.0
 

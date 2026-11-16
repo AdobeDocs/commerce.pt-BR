@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '1599'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.pt-BR/blob/main/help/_includes/ccdm-shared/merchandising/recommendations/types.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # Tipos de Recomendação
 
 O [!DNL Product Recommendations] fornece um grande conjunto de recomendações que você pode implantar em várias páginas do site. Todos os tipos de recomendações são orientados por dados. Eles se baseiam em dados comportamentais, dados de atributos de produto e métricas. Para facilitar a referência, os tipos de recomendação são agrupados da seguinte maneira:

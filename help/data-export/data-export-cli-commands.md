@@ -26,14 +26,14 @@ role_v2:
 topic_v2:
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: a473907b3ccb585c862f395021501b5215b7be8d
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '754'
 ht-degree: 0%
 ---
 # Sincronizar feeds usando a CLI do Commerce
 
-O comando `saas:resync` no pacote `magento/saas-export` permite gerenciar a sincronização de dados para serviços SaaS [!DNL Adobe Commerce].
+O comando da CLI `saas:resync` permite gerenciar a sincronização de dados para serviços SaaS [!DNL Adobe Commerce].
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ bin/magento saas:resync --feed products
 
 ## `--by-ids`
 
-Ressincronizar parcialmente entidades específicas por suas IDs. Suporta os feeds `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants` e `categoryPermissions`.
+Ressincronizar parcialmente entidades específicas por suas IDs. Suporta os feeds `products`, `productAttributes`, `productOverrides`, `prices`, `variants` e `categoryPermissions`.
 
 Por padrão, ao usar a opção `--by-ids`, você especifica valores usando valores de SKU do produto. Para usar IDs de produto, adicione a opção `--id-type=productId`.
 
@@ -134,7 +134,7 @@ bin/magento saas:resync --feed products --by-ids='1,2,3' --id-type='productId'
 
 ## `--cleanup-feed`
 
-Limpe a tabela indexadora de feed antes de reindexar e enviar dados para o SaaS. Com suporte somente para `products`, `productAttributes`, `productOverrides`, `inventoryStockStatus`, `prices`, `variants` e `categoryPermissions`.
+Limpe a tabela indexadora de feed antes de reindexar e enviar dados para o SaaS. Com suporte somente para `products`, `productAttributes`, `productOverrides`, `prices`, `variants` e `categoryPermissions`.
 
 Se usada com a opção `--dry-run`, a operação executará uma operação de ressincronização de simulação para todos os itens.
 
