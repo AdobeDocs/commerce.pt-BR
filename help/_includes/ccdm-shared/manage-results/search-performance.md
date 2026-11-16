@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/manage-results/search-performance.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # Desempenho da pesquisa
 
 A página *Desempenho da pesquisa* fornece o insight para os termos de pesquisa que os compradores usam. As informações podem ser usadas para identificar tendências, aumentar o click-through e melhorar o índice de conversão. A página Desempenho da pesquisa fornece um instantâneo das métricas de pesquisa para uma faixa de datas específica e inclui os seguintes relatórios:
@@ -117,7 +127,7 @@ Certifique-se de que os produtos secundários dos produtos configuráveis tenham
 
 ### Aproveitar os metadados do produto
 
-Verifique se os atributos [&#x200B; precisos e detalhados do produto estão configurados como pesquisáveis e se têm um peso atribuído](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata). Observe que os atributos SKU, nome e categoria podem ser pesquisados por padrão e não podem ser excluídos da pesquisa. Para obter melhores resultados, não use espaços nas SKUs.
+Verifique se os atributos [ precisos e detalhados do produto estão configurados como pesquisáveis e se têm um peso atribuído](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata). Observe que os atributos SKU, nome e categoria podem ser pesquisados por padrão e não podem ser excluídos da pesquisa. Para obter melhores resultados, não use espaços nas SKUs.
 
 Para aumentar a relevância da pesquisa, atribua um peso a cada atributo pesquisável. Atributos com um peso maior devem aparecer mais altos nos resultados da pesquisa. A classificação por relevância é afetada por vários critérios, como peso da pesquisa. Isso significa que, às vezes, os atributos com menor peso de pesquisa ainda podem ter mais relevância do que os atributos com maior peso de pesquisa. Outros critérios podem incluir o número de correspondências em qualquer atributo, a posição do termo de pesquisa encontrado e a estrutura geral do texto antes e depois de um termo de pesquisa.
 

@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/synonyms/add.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # Criar sinônimos
 
 Aumente o engajamento do cliente adicionando sua própria lista de sinônimos com curadoria. Você pode adicionar até 200 sinônimos por origem de catálogo.
@@ -58,13 +68,13 @@ Neste exemplo, a palavra-chave a ser correspondida é &quot;calças&quot; e o co
 
 | Campo | Descrição |
 |--- |--- |
-| [Tipo](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/synonyms/type) | Determina se os sinônimos têm o mesmo significado que a palavra-chave ou se são um subconjunto da palavra-chave. Opções:<br />Bidirecional (padrão) - Termos que têm o mesmo significado que a palavra-chave e retornam os mesmos resultados de pesquisa<br />Unidirecional - Termos que são um subconjunto da palavra-chave. Sinônimos unidirecionais retornam uma lista mais restrita de produtos específicos. |
+| [Tipo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/type) | Determina se os sinônimos têm o mesmo significado que a palavra-chave ou se são um subconjunto da palavra-chave. Opções:<br />Bidirecional (padrão) - Termos que têm o mesmo significado que a palavra-chave e retornam os mesmos resultados de pesquisa<br />Unidirecional - Termos que são um subconjunto da palavra-chave. Sinônimos unidirecionais retornam uma lista mais restrita de produtos específicos. |
 | Palavra-chave | Uma palavra que é comumente associada a uma seleção de produtos em seu catálogo. |
 | Expansão | Termos adicionais que têm o mesmo significado ou significado semelhante à palavra-chave. |
 
 ## Gerenciar sinônimos
 
-Siga estas instruções para gerenciar [sinônimos](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/synonyms/overview) existentes.
+Siga estas instruções para gerenciar [sinônimos](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/synonyms/overview) existentes.
 
 ## Localizar sinônimo
 

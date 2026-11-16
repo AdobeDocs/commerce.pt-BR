@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '1606'
 ht-degree: 10%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/setup/events/overview.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # Eventos
 
 Os eventos são uma ferramenta essencial para aprimorar a experiência de compra e gerar conversões aproveitando insights de dados em tempo real.
@@ -12,7 +22,7 @@ Os Serviços de merchandising com o modelo de dados de catálogo combinável (CC
 
 >[!NOTE]
 >
->A coleta de dados não inclui informações de identificação pessoal (PII). Todos os identificadores de usuários, como IDs de cookies e endereços IP, são estritamente anônimos. [Saiba mais](https://www.adobe.com/br/privacy/experience-cloud.html).
+>A coleta de dados não inclui informações de identificação pessoal (PII). Todos os identificadores de usuários, como IDs de cookies e endereços IP, são estritamente anônimos. [Saiba mais](https://www.adobe.com/privacy/experience-cloud.html).
 
 A página **Events** permite observar os dados do evento da loja que está sendo coletado. Ter uma visualização na coleção de dados do evento permite que os comerciantes verifiquem se implementaram os eventos de vitrine corretamente e se os eventos estão sendo capturados com sucesso. Os comerciantes podem usar esta página para identificar possíveis problemas e tomar medidas para resolver quaisquer problemas de evento.
 
@@ -174,4 +184,4 @@ Esta tabela descreve os eventos usados por cada tipo de recomendação.
 
 ## Suporte
 
-Se você observar discrepâncias de dados ou se as recomendações e os resultados da pesquisa não estiverem funcionando como esperado, [envie um tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
+Se você observar discrepâncias de dados ou se as recomendações e os resultados da pesquisa não estiverem funcionando como esperado, [envie um tíquete de suporte](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).

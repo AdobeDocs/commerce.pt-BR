@@ -1,9 +1,19 @@
 ---
-source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
+source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
 workflow-type: tm+mt
 source-wordcount: '853'
 ht-degree: 0%
 ---
+<!--
+SOURCE OF TRUTH: Edit this file in the commerce.en repo:
+https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/setup/private-catalog-view.md
+
+This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
+Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
+are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
+This includes related images in help/assets/ccdm-shared/.
+-->
+
 # Exibições de catálogo privado
 
 Por padrão, uma [exibição de catálogo](catalog-view.md) é pública. Restrinja o acesso a uma exibição de catálogo para que somente as solicitações com um token assinado válido possam recuperar seus dados.
@@ -98,7 +108,7 @@ Se [!UICONTROL Catalog Protection] estiver habilitado e todas as chaves atribuí
 
 >[!NOTE]
 >
->Para implantações B2B do Adobe Commerce usando Serviços de Merchandising com CCDM, você gerencia chaves de acesso da página **Chaves de acesso restritas** do Administrador do Commerce (**Sistema** > **Transferência de dados**). Para obter detalhes, consulte [Gerenciamento de chave de acesso restrito](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys) no *[!DNL Adobe Commerce Optimizer Connector]Guia de Integração*.
+>Para implantações B2B do Adobe Commerce usando Serviços de Merchandising com CCDM, você gerencia chaves de acesso da página **Chaves de acesso restritas** do Administrador do Commerce (**Sistema** > **Transferência de dados**). Para obter detalhes, consulte [Gerenciamento de chave de acesso restrito](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys) no *[!DNL Adobe Commerce Optimizer Connector]Guia de Integração*.
 
 ## Veja mais aqui
 
