@@ -27,13 +27,11 @@ role_v2:
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 182aa9ce819807d1ede85c4fa459714e7dfe0478
+source-git-commit: a473907b3ccb585c862f395021501b5215b7be8d
 workflow-type: tm+mt
-source-wordcount: 585
+source-wordcount: '548'
 ht-degree: 0%
-
 ---
-
 # Estimar o volume de dados e o tempo de transmissão para a sincronização de dados
 
 A Adobe recomenda estimar o volume de dados e o tempo de sincronização antes de iniciar qualquer sincronização do feed de dados para garantir uma programação tranquila e evitar interrupções nas operações do site. Essa estimativa é importante ao planejar sincronizações iniciais ou atualizações de catálogos em larga escala, como alterações de preço em massa.
@@ -72,7 +70,6 @@ Use os valores e as fórmulas na tabela a seguir para calcular o volume de dados
 | Substituições de produto | Produtos com permissões ou no catálogo compartilhado (P): 10000, Grupos de clientes afetados (CG): 5, Sites atribuídos WS: 2 | P \* WS * CG = 100000 | 100000 / Tamanho de Lote (100) = 1000 solicitações | (1.000 solicitações * 0,5 segundo por solicitação) / 60 = 8,3 minutos |
 | Variantes do produto | Variantes (produtos secundários) atribuídas aos produtos configuráveis (PV): 100000 | PV = 100000 | 100000 / Tamanho de Lote (100) = 1000 solicitações | (1.000 solicitações * 0,5 segundo por solicitação) / 60 = 8,3 minutos |
 | Permissões de categoria | Contagem de todas as Permissões de Categoria + 4 registros de fallback (CP): 10000 | CP = 10000 | 10000 / Tamanho de Lote (100) = 100 solicitações | (100 solicitações * 0,5 segundo por solicitação) / 60 = 0,8 minuto (50 segundos) |
-| Status do Estoque de Estoque | Produtos (P): 10000, Produtos de estoque atribuídos a (S): 5 (supondo que cada produto esteja atribuído a cada estoque) | P * S = 50000 | 50000 / Tamanho de Lote (100) = 500 solicitações | (500 solicitações * 0,5 segundo por solicitação) / 60 = 4,2 minutos |
 | Ordens de Venda | Todos os registros de ordem (incluindo NFFs, entregas e assim por diante) (SO): 10000 | SO = 10000 | 10000 / Tamanho de Lote (100) = 100 solicitações | (100 solicitações * 0,5 segundo por solicitação) / 60 = 0,8 minuto (50 segundos) |
 
 >[!MORELIKETHIS]

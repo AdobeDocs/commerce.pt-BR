@@ -29,9 +29,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
     internal-label: Data management
-source-git-commit: 672e67ef99d52c942013a880ecfec0da31e76756
+source-git-commit: a473907b3ccb585c862f395021501b5215b7be8d
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '391'
 ht-degree: 5%
 ---
 # Guia do [!DNL SaaS Data Export]
@@ -47,7 +47,6 @@ A exportação de dados SaaS coleta e exporta vários tipos de dados, chamados d
 - **Feeds de entidade de catálogo** agregam dados de produto. Os dados incluem produtos, atributos de produto, preços de produto, variações de produto, categorias, permissões de categoria e permissões de produto.
 - O **feed de Escopos** agrega dados para grupos de clientes, sites, lojas e visualizações de loja.
 - O **feed de Ordem de Venda** agrega dados de pedidos, incluindo suas entidades relacionadas, como faturas, remessas, avisos de crédito e assim por diante.
-- O **feed de Inventário MultisSource** agrega dados sobre os itens de status do estoque do estoque.
 
 A exportação de dados SaaS é fornecida como uma extensão PHP que oferece suporte à sincronização automática e manual:
 

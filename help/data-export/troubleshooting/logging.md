@@ -31,9 +31,9 @@ topic_v2:
     internal-label: Troubleshooting
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: a473907b3ccb585c862f395021501b5215b7be8d
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1007'
 ht-degree: 0%
 ---
 # Revisar logs e solucionar problemas
@@ -42,7 +42,7 @@ A extensão [!DNL data export] fornece logs para rastrear processos de sincroniz
 
 >[!NOTE]
 >
->Você também pode acompanhar a integridade e o desempenho dos feeds de exportação de dados para dados de produto e categoria no [painel Status de sincronização do feed de dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) em Administrador.
+>Você também pode acompanhar a integridade e o desempenho dos feeds de exportação de dados para dados de produto e categoria no [painel Status de sincronização do feed de dados](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status) em Administrador.
 
 ## Logs
 
@@ -159,7 +159,7 @@ Se os dados estiverem ausentes ou incorretos nos serviços da Commerce, verifiqu
 - O log de erros de Exportação de Dados (`commerce-data-export-errors.log`) captura erros que ocorrem durante a fase de coleta.
 - O log de erros de exportação SaaS (`saas-export-errors.log`) captura os erros que ocorrem durante a fase de transmissão.
 
-Se você vir erros não relacionados à configuração ou a extensões de terceiros, envie um [tíquete de suporte](https://experienceleague.adobe.com/pt-br/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) com o máximo de informações possível.
+Se você vir erros não relacionados à configuração ou a extensões de terceiros, envie um [tíquete de suporte](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) com o máximo de informações possível.
 
 ### Resolver problemas de sincronização do catálogo {#resolvesync}
 
@@ -181,7 +181,7 @@ Após a conclusão da operação, a carga do feed estará disponível para revis
 
 ### Preservar conteúdo na tabela de índice do feed
 
-Para a extensão de exportação de dados SaaS do Commerce (`magento/module-data-exporter`) 103.3.0 e posterior, os feeds de exportação imediatos mantêm somente os dados mínimos necessários na tabela de índice. Os feeds incluem todos os feeds de status do catálogo e do estoque de estoque.
+Para a extensão de exportação de dados SaaS do Commerce (`magento/module-data-exporter`) 103.3.0 e posterior, os feeds de exportação imediatos mantêm somente os dados mínimos necessários na tabela de índice. Os feeds incluem todos os feeds de catálogo.
 
 A preservação de dados de carga útil na tabela de índice não é recomendada em ambientes de produção, mas pode ser útil em um ambiente de desenvolvedor. Inclua a carga do feed no índice adicionando a variável de ambiente `PERSIST_EXPORTED_FEED=1` ao ressincronizar o feed.
 
