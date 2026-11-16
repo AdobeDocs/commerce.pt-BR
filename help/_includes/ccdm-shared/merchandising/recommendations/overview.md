@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '157'
 ht-degree: 0%
 ---
+# Introdução ao Recommendations
+
 O Recommendations é uma poderosa ferramenta de marketing que pode ser usada para aumentar as conversões, aumentar a receita e estimular o engajamento do comprador. As recomendações são viabilizadas pelo [Adobe AI](https://business.adobe.com/br/ai.html), que usa inteligência artificial e algoritmos de aprendizado de máquina para executar uma análise detalhada dos dados agregados do visitante. Esses dados, quando combinados com seu catálogo do Adobe Commerce, resultam em uma experiência altamente envolvente, relevante e personalizada.
 
 As recomendações são exibidas na loja como unidades com rótulos, como &quot;Clientes que visualizaram este produto também visualizaram&quot;. Você pode criar, gerenciar e implantar recomendações em suas visualizações de loja diretamente do espaço de trabalho do Recommendations.

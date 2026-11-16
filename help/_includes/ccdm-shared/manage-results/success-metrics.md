@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '2821'
+source-wordcount: '2823'
 ht-degree: 0%
 ---
+# Métricas de sucesso
+
 Esta página fornece uma visão geral das métricas principais de desempenho da sua loja. O objetivo é entender os resultados da implementação dos Serviços de merchandising com o modelo de dados de catálogo combinável (CCDM) para identificar oportunidades de crescimento e áreas para otimização.
 
 ![Relatório de métricas de sucesso](/help/assets/ccdm-shared/manage-results/success-metrics.png)

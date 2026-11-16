@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: d2bcc58f34af50f26d4a4f082e5b3fc30089ab58
+source-git-commit: d112f591ea46e4f3bdc081566a9a036df4ccfe5a
 workflow-type: tm+mt
-source-wordcount: '5663'
+source-wordcount: '5695'
 ht-degree: 0%
 ---
 
@@ -131,6 +131,13 @@ As ![Novas](../assets/new.svg)<!-- Issue PAY-2854 --> melhorias na experiência 
 >
 > As versões ocorrem frequentemente para fornecer novos recursos e correções, conforme necessário. A programação de lançamento não foi corrigida.
 
+## v2.17.1
+
+_16 de novembro de 2026_
+
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.6 e mais recentes
+
+![Problema corrigido](../assets/fix.svg)<!-- PAY-7254 --> Corrigido um problema no qual a caixa de seleção dos termos e condições era desmarcada após a aprovação do pagamento do PayPal, impedindo que os compradores concluíssem o check-out.
 
 ## v2.17.0
 
@@ -543,7 +550,7 @@ _27 de setembro de 2023_
 
 [!BADGE Com suporte]{type=Informative tooltip="Compatível"} Adobe Commerce versões 2.4.4 e mais recentes
 
-![Correção de um problema](../assets/fix.svg)<!-- Issue PAY-4870 --> que preenche incorretamente o novo atributo de cabeçalho na loja ao enviar a versão da extensão com a versão mais recente. Anteriormente, com a versão `1.3.0` do Conector de serviços da Commerce, não era possível estender `User-Agent header` da extensão [!DNL Payment Services].
+<!-- Issue PAY-4870 --> Correção de um problema que preenchia incorretamente o novo atributo de cabeçalho na Loja ao enviar a versão da extensão com a versão mais recente. Anteriormente, com a versão `1.3.0` do Conector de serviços da Commerce, não era possível estender `User-Agent header` da extensão [!DNL Payment Services].
 
 ## v2.2.0
 

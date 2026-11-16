@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '872'
 ht-degree: 0%
 ---
+# Configurações de merchandising
+
 Use o espaço de trabalho *Configurações* para configurar a pesquisa e a descoberta de produtos para sua loja. As seguintes guias estão disponíveis:
 
 - **Aspectos** — Configure grupos de intervalos de preços e intervalos usados como filtros de pesquisa.

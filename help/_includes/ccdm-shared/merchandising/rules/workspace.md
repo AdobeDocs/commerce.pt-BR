@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '962'
 ht-degree: 1%
 ---
+# Workspace de regras de merchandising
+
 O espaço de trabalho *Regras de merchandising* lista a seleção atual de regras e seus status, e fornece acesso às ferramentas necessárias para criar e gerenciar regras. Você pode aplicar regras de escopo a todas as [exibições de catálogo](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/setup/catalog-view) (globais) ou a uma única exibição de catálogo. Consulte [Selecionar exibição de catálogo](#select-catalog-view) para saber como filtrar por exibição de catálogo e criar regras por exibição de catálogo. No espaço de trabalho, é possível:
 
 - Pesquisar regras

@@ -13,9 +13,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 0b52c20df4c64d3dd7e43f023e7b0f4517e8fcf7
+source-git-commit: 57a905703b11ef8fc4ca4527a5fc136dc81615cc
 workflow-type: tm+mt
-source-wordcount: '1486'
+source-wordcount: '1491'
 ht-degree: 0%
 ---
 # Limites e limites
@@ -151,7 +151,7 @@ Os limites a seguir se aplicam à pesquisa de produtos da loja, à listagem e à
 | Atributos pesquisáveis | O número de características do produto que podem ser indexadas para pesquisa no catálogo | 200 | Não |
 | Atributos classificáveis | O número de características do produto disponíveis como opções de classificação em páginas de pesquisa e categoria. | 50 | Não |
 | Profundidade da paginação de pesquisa | Máximo de produtos acessível por meio de paginação de pesquisa (por exemplo, página 100 × 100 produtos/página) | 10 K | Não |
-| Facetas | O número de atributos de produto filtráveis (como Marca, Cor, Tamanho, Preço) que podem ser configurados para ajudar os compradores a refinar os resultados da pesquisa e procurar categorias | 100<p>Deve ser um atributo filtrável</p> | Não |
+| Facetas | O número de atributos de produto filtráveis (como Marca, Cor, Tamanho, Preço) que podem ser configurados para ajudar os compradores a refinar os resultados da pesquisa e procurar categorias | 100<p>Deve ser um atributo filtrável</p> | Sim<p>Pode aumentar por meio de solicitação de suporte</p> |
 | Opções por faceta | O número de valores de atributo de produto filtráveis que os compradores podem selecionar em uma faceta (por exemplo, &quot;Vermelho&quot;, &quot;Azul&quot; para Cor; &quot;Pequeno&quot;, &quot;Medium&quot; para Tamanho) | 100 | Sim<p>Pode aumentar por meio de solicitação de suporte</p> |
 
 {style="table-layout:auto"}

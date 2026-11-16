@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '805'
 ht-degree: 0%
 ---
+# Regras de merchandising
+
 As regras de merchandising combinam lógica com ações para moldar como os produtos aparecem nos **resultados da pesquisa**, nas **listas de produtos padrão** por meio da **regra de pesquisa padrão** e nas **páginas de categoria**. Você pode impulsionar, enterrar, fixar ou ocultar produtos e aplicar a **classificação inteligente** para que as listas reflitam suas metas comerciais.
 
 Cada **regra de pesquisa** tem três componentes principais:

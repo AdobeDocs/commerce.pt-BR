@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1606'
 ht-degree: 10%
 ---
+# Eventos
+
 Os eventos são uma ferramenta essencial para aprimorar a experiência de compra e gerar conversões aproveitando insights de dados em tempo real.
 
 Os Serviços de merchandising com o modelo de dados de catálogo combinável (CCDM) implantam eventos de vitrine no site automaticamente. Esses eventos capturam dados das interações dos compradores no site. Estes dados anônimos alimentam as [recomendações](../../manage-results/recommendation-performance.md), a [descoberta de produtos](../../manage-results/search-performance.md) e as [métricas de sucesso](../../manage-results/success-metrics.md).

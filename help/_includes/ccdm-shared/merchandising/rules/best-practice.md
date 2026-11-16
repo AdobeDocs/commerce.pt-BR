@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '455'
 ht-degree: 0%
 ---
+# Práticas recomendadas das regras de merchandising
+
 Para otimizar a conversão e a receita, implemente **regras de pesquisa** efetivas, uma **regra de listagem padrão** forte e **[regras de categoria](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/add#rule-types)**. Ajuste classificações usando dados de vendas, estoque, promoções e [classificação inteligente](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking).
 
 É crucial estabelecer uma **regra padrão** bem-pensada. Sua [regra padrão](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/overview#default-rule) determina como os resultados da pesquisa são classificados inicialmente quando nenhuma regra de pesquisa mais específica se aplica, o que melhora a probabilidade de descoberta e compra. Analise-o regularmente para que ele acompanhe as necessidades e campanhas do comprador.

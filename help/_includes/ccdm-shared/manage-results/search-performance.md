@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1925'
 ht-degree: 0%
 ---
+# Desempenho da pesquisa
+
 A página *Desempenho da pesquisa* fornece o insight para os termos de pesquisa que os compradores usam. As informações podem ser usadas para identificar tendências, aumentar o click-through e melhorar o índice de conversão. A página Desempenho da pesquisa fornece um instantâneo das métricas de pesquisa para uma faixa de datas específica e inclui os seguintes relatórios:
 
 - Pesquisas únicas
@@ -66,7 +68,7 @@ Há vários fatores principais que determinam a relevância e a eficácia dos re
 
 Para otimizar os resultados da pesquisa, monitore os Indicadores-chave de desempenho (KPIs) relevantes, como consultas exclusivas, posição média dos cliques, taxas de click-through, taxa de conversão e taxa de resultados zero para entender as interações de pesquisa do comprador. Esses dados o orientam a atualizar e refinar suas regras de pesquisa regularmente.
 
-- **Pesquisas exclusivas** - A contagem de consultas de pesquisa distintas executadas no site. O sistema conta cada pesquisa única apenas uma vez, mesmo que o mesmo comprador ou compradores diferentes a repitam várias vezes. Essa métrica ajuda você a entender a diversidade de termos de pesquisa usados por clientes e fornece insights sobre quais produtos ou informações os compradores estão procurando. O rastreamento de pesquisas exclusivas permite:
+- **Pesquisas exclusivas** - A contagem de pesquisas exclusivas realizadas no site durante o intervalo de datas selecionado. Várias pesquisas do mesmo comprador para a mesma consulta são consideradas exclusivas se enviadas com mais de uma hora de intervalo. Use essa métrica junto com o Relatório de pesquisas exclusivas para entender a atividade de pesquisa e identificar os produtos ou as informações que os compradores estão procurando. O rastreamento de pesquisas exclusivas permite:
 
   - Identifique tendências de pesquisa populares e itens pesquisados com frequência.
   - Detecte possíveis lacunas no catálogo ou conteúdo do produto.

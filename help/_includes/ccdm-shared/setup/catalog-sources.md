@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '510'
 ht-degree: 0%
 ---
+# Origens do catálogo
+
 As origens de catálogo representam escopos autoritativos de produtos, atributos e categorias. Normalmente, eles mapeiam para limites de idioma, público-alvo ou sistema de origem e determinam o comportamento de pesquisa, filtragem e classificação.
 
 ## Origens do catálogo versus conceitos relacionados

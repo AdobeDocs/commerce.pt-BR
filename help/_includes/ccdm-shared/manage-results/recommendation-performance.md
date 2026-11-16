@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '917'
 ht-degree: 0%
 ---
+# Desempenho do Recommendations
+
 A página Desempenho do Recommendations exibe uma lista de recomendações configuradas, juntamente com as métricas principais, para ajudá-lo a avaliar sua eficácia. Você pode configurar a exibição para exibir métricas do dia, semana ou mês passado. Esses insights mostram a frequência com que cada unidade de recomendação é visualizada ou clicada, ajudando a avaliar o desempenho e identificar oportunidades de otimização.
 
 >[!INFO]

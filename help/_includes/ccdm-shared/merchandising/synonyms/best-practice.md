@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '385'
 ht-degree: 0%
 ---
+# Práticas recomendadas de sinônimo
+
 A seguir há uma lista de práticas recomendadas para a criação de sinônimos.
 
 - Por padrão, o sistema gerencia erros ortográficos. Para incluir palavras que os compradores possam usar, configure sinônimos. Essas palavras diferem das especificadas no catálogo. Você não quer perder uma venda porque alguém está procurando um &quot;sofá&quot; enquanto seu produto está listado como um &quot;sofá&quot;. Capture uma ampla variedade de termos de pesquisa inserindo todas as palavras possíveis que os clientes podem usar para encontrar seus produtos. Para melhorar os resultados, [defina sinônimos como unidirecionais ou bidirecionais](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/synonyms/add#step-2-define-the-synonym-by-type).
