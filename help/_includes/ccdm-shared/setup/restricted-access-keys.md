@@ -1,16 +1,16 @@
 ---
-source-git-commit: b6b737220a6dadf55b03da54e8d74226ed578cd0
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1633'
 ht-degree: 0%
 ---
-# Teclas de acesso restrito
+# Chaves de acesso restrito
 
 As chaves de acesso restrito permitem que aplicativos clientes autorizados acessem uma [exibição de catálogo privado](private-catalog-view.md). Somente as solicitações que carregam um token assinado válido de uma chave atribuída podem recuperar dados de catálogo. Todas as outras solicitações são negadas, incluindo as de compradores que não têm acesso explícito a essa exibição de catálogo e scripts que sondam a API de serviços de merchandising da Adobe Commerce.
 
 As chaves de acesso restrito são provisionadas de uma das duas formas a seguir:
 
-- **Automaticamente, para catálogos compartilhados B2B** — O sistema provisiona e atribui a chave inicial para exibições de catálogo associadas a um catálogo compartilhado B2B. Em seguida, gerencie as chaves e a atribuição de chaves do administrador do Commerce. Consulte [Autenticação de exibição de catálogo](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage) no *Guia de Administração do Commerce*. O provisionamento automático está disponível nas seguintes implantações:
+- **Automaticamente, para catálogos compartilhados B2B** — O sistema provisiona e atribui a chave inicial para exibições de catálogo associadas a um catálogo compartilhado B2B. Em seguida, gerencie as chaves e a atribuição de chaves do administrador do Commerce. Consulte [Autenticação de exibição de catálogo](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage) no *Guia de Administração do Commerce*. O provisionamento automático está disponível nas seguintes implantações:
 
   - **Adobe Commerce as a Cloud Service com CCDM** para Adobe Commerce B2B.
   - **Adobe Commerce na nuvem ou no local** integrado ao Adobe Commerce Optimizer por meio de [!DNL Adobe Commerce Optimizer Connector for B2B]. A extensão B2B para o conector é necessária.
@@ -50,7 +50,7 @@ A forma como você abre o espaço de trabalho de chaves de acesso restrito depen
 
 >[!NOTE]
 >
->Esta seção e as duas seguintes descrevem o processo manual para gerenciar chaves de acesso restrito. Para catálogos compartilhados B2B com provisionamento automático de chaves, gerencie as chaves do administrador do Commerce. Consulte [Chaves de Acesso Restrito](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys).
+>Esta seção e as duas seguintes descrevem o processo manual para gerenciar chaves de acesso restrito. Para catálogos compartilhados B2B com provisionamento automático de chaves, gerencie as chaves do administrador do Commerce. Consulte [Chaves de Acesso Restrito](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys).
 
 ### Adicionar uma chave de acesso restrito
 
@@ -60,9 +60,9 @@ Selecione a guia da ferramenta usada para gerenciar chaves: Commerce Admin ou Ad
 
 >[!TAB Administrador do Adobe Commerce]
 
-Os clientes que usam o Adobe Commerce as a Cloud Service com CCDM ou o Adobe Commerce Optimizer conectado ao Adobe Commerce por meio do conector podem gerar pares de chaves RSA do administrador do Commerce. Consulte [Gerenciar chaves de acesso restrito](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys).
+Os clientes que usam o Adobe Commerce as a Cloud Service com CCDM ou o Adobe Commerce Optimizer conectado ao Adobe Commerce por meio do conector podem gerar pares de chaves RSA do administrador do Commerce. Consulte [Gerenciar chaves de acesso restrito](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys).
 
->[!TAB Adobe Commerce Optimizer Studio - gerenciamento manual de chaves]
+>[!TAB Adobe Commerce Optimizer Studio]
 
 Os clientes que usam o Adobe Commerce Optimizer Studio devem gerar e gerenciar seus próprios pares de chaves RSA e, em seguida, adicionar a chave pública ao sistema. Esse é o fluxo de trabalho necessário para o Adobe Commerce Optimizer com um back-end de terceiros. Os clientes que usam o conector também podem usar esse fluxo de trabalho em vez do Administrador do Commerce.
 
@@ -113,7 +113,7 @@ Uma chave de acesso restrito só autentica o acesso depois de ter sido atribuíd
 
 As chaves de acesso restrito são gerenciadas de uma das duas formas a seguir, dependendo de como você usa a proteção de catálogo:
 
-- **Automaticamente, para catálogos compartilhados B2B**—Para implantações B2B do Adobe Commerce usando Serviços de Merchandising com CCDM e para implantações do Adobe Commerce Optimizer integradas por meio do [!DNL Adobe Commerce Optimizer Connector for B2B] (que requer a extensão B2B), o serviço gera e atribui automaticamente a primeira chave de acesso restrito quando uma exibição de catálogo é criada. Cada exibição de catálogo recebe sua própria chave. Depois disso, você poderá gerenciar cada chave das páginas Catálogo Compartilhado ou Conta da Empresa. Você também pode exibir e gerenciar chaves da página **Chaves de Acesso Restrito** do Administrador do Commerce (**Sistema** > **Transferência de Dados**). Consulte [Gerenciar configuração de exibição do catálogo](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage).
+- **Automaticamente, para catálogos compartilhados B2B**—Para implantações B2B do Adobe Commerce usando Serviços de Merchandising com CCDM e para implantações do Adobe Commerce Optimizer integradas por meio do [!DNL Adobe Commerce Optimizer Connector for B2B] (que requer a extensão B2B), o serviço gera e atribui automaticamente a primeira chave de acesso restrito quando uma exibição de catálogo é criada. Cada exibição de catálogo recebe sua própria chave. Depois disso, você poderá gerenciar cada chave das páginas Catálogo Compartilhado ou Conta da Empresa. Você também pode exibir e gerenciar chaves da página **Chaves de Acesso Restrito** do Administrador do Commerce (**Sistema** > **Transferência de Dados**). Consulte [Gerenciar configuração de exibição do catálogo](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-views-manage).
 
   Cada combinação de um catálogo compartilhado e uma exibição de loja é projetada como uma exibição de catálogo separada. Uma projeção são os dados de configuração da exibição de catálogo, política, referência de catálogo de preços e acesso restrito que são exportados para a camada de dados dos Serviços de merchandising para essa combinação. Assim, um catálogo compartilhado atribuído a várias exibições de loja produz várias exibições de catálogo, cada uma com sua própria chave. Editar ou girar uma chave para uma exibição de catálogo sem afetar as outras.
 
@@ -134,9 +134,9 @@ Selecione a guia da ferramenta usada para gerenciar chaves: Commerce Admin ou Ad
 
 >[!TAB Administrador do Adobe Commerce]
 
-Consulte [Seleção e rotação de chaves](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys#key-selection-and-rotation). Isso se aplica ao Adobe Commerce as a Cloud Service com CCDM e a projetos do Adobe Commerce integrados ao Adobe Commerce Optimizer por meio do conector do Adobe Commerce Optimizer.
+Consulte [Seleção e rotação de chaves](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys#key-selection-and-rotation). Isso se aplica ao Adobe Commerce as a Cloud Service com CCDM e a projetos do Adobe Commerce integrados ao Adobe Commerce Optimizer por meio do conector do Adobe Commerce Optimizer.
 
->[!TAB Adobe Commerce Optimizer Studio (gerenciamento manual de chaves)]
+>[!TAB Adobe Commerce Optimizer Studio]
 
 Esse procedimento é necessário para o Adobe Commerce Optimizer com back-end de terceiros. Os clientes que usam o conector também podem usá-lo no lugar do administrador do Commerce.
 
@@ -149,8 +149,9 @@ Esse procedimento é necessário para o Adobe Commerce Optimizer com back-end de
 
 ## Limites
 
-Consulte [Limites de política e exibições de catálogo](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/boundaries-limits).
+Consulte [Limites de política e exibições de catálogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/boundaries-limits).
 
 ## Veja mais aqui
 
 - [Exibições de catálogo privado](private-catalog-view.md) — Saiba como proteger uma exibição de catálogo com chaves de acesso restritas.
+

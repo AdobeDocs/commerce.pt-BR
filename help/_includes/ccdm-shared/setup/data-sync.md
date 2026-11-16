@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '487'
 ht-degree: 0%
 ---
+# Sincronização do catálogo
+
 A página **Sincronização de Dados** exibe uma visão geral do status de sincronização dos dados do produto transferidos de sua fonte de dados (seu catálogo Commerce existente, o sistema PIM (Gerenciamento de Informações do Produto), o sistema ERP (Planejamento de Recursos Empresariais) etc.) para a camada de dados dos Serviços de Merchandising.
 
 A página **Sincronização de Dados** fornece informações valiosas sobre a disponibilidade de dados de produtos para a sua vitrine eletrônica, garantindo que eles possam ser exibidos imediatamente aos seus compradores.
@@ -49,4 +51,4 @@ Se você não vir produtos específicos na página **Sincronização de Dados**,
 
 ## Verifique se a sincronização de dados está funcionando
 
-Para projetos que usam o Adobe Commerce como fonte de dados de upstream, você pode monitorar o processo de exportação de dados e iniciar operações de ressincronização na página Status de sincronização do feed de dados. Para obter detalhes, consulte [Monitoramento do status de sincronização do feed de dados](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status).
+Para projetos que usam o Adobe Commerce como fonte de dados de upstream, você pode monitorar o processo de exportação de dados e iniciar operações de ressincronização na página Status de sincronização do feed de dados. Para obter detalhes, consulte [Monitoramento do status de sincronização do feed de dados](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/data-feed-sync-status).

@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '993'
 ht-degree: 0%
 ---
+# Políticas
+
 As políticas definem filtros que são aplicados aos produtos em uma exibição de catálogo. Eles ajudam a adaptar a variedade de produtos retornados a uma loja ou canal. Isso garante que o conteúdo correto seja entregue ao destino certo. Por exemplo, lojas físicas, marketplaces e canais de publicidade como Google, Facebook e Instagram.
 
 As políticas usam atributos de produto, como marca, modelo ou categoria de peça, para adaptar os dados do catálogo às necessidades dos negócios. &#x200B;

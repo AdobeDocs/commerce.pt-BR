@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '921'
 ht-degree: 0%
 ---
+# Facetas
+
 Facetas é um método de filtragem de alto desempenho que usa várias dimensões de valores de atributo como critérios de pesquisa.
 
 ![Resultados de pesquisa filtrados](/help/assets/ccdm-shared/facets/storefront-search-results-run.png)
@@ -31,7 +33,7 @@ O sistema ativa os seguintes atributos de produto por padrão.
 
 Saiba mais sobre os atributos do produto e suas propriedades:
 
-- Para implantações conectadas a um back-end do Adobe Commerce, consulte [Visão geral dos atributos de produto](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/product-attributes/product-attributes)
+- Para implantações conectadas a um back-end do Adobe Commerce, consulte [Visão geral dos atributos de produto](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes)
 - Para implantações que usam um back-end Commerce de terceiros, consulte a [API de metadados de assimilação de dados](https://developer.adobe.com/commerce/services/optimizer/data-ingestion/#metadata).
 
 ## Pesquisa em camadas e expansão de tipos de pesquisa

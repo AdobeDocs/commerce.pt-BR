@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '1468'
+source-wordcount: '1470'
 ht-degree: 0%
 ---
+# Camadas do catálogo
+
 As camadas de catálogo permitem modificar os dados do produto sem alterar os dados de origem originais. As camadas modificam atributos do produto, como nome, descrição, imagens, links e metadados, criando uma camada na parte superior do catálogo base. Os dados originais do produto permanecem intactos, permitindo personalizar produtos com segurança e reverter alterações a qualquer momento.
 
 ![Camadas do catálogo](/help/assets/ccdm-shared/setup/catalog-layers.png)
@@ -197,6 +199,6 @@ Siga estas recomendações ao trabalhar com camadas de catálogo:
 ## Veja mais aqui
 
 * [Exibições de catálogo](catalog-view.md) — Configure exibições de catálogo para diferentes vitrines
-* [Visuais de Produtos](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/setup/product-visuals)—Use o AEM Assets para imagens de produtos
+* [Visuais de Produtos](https://experienceleague.adobe.com/en/docs/commerce/optimizer/setup/product-visuals)—Use o AEM Assets para imagens de produtos
 * [Oportunidades](../manage-results/opportunities.md)—Saiba mais sobre a otimização baseada em IA usando camadas de catálogo
 * [Chaves de acesso restrito](restricted-access-keys.md)—Proteja uma exibição de catálogo com autenticação de token assinado

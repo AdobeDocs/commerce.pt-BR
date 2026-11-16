@@ -1,9 +1,11 @@
 ---
-source-git-commit: 18c4528fade63545415135808d2d40ac2b95e86d
+source-git-commit: bc3ebc0514874b9678e8b632cc2c48102959d439
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '853'
 ht-degree: 0%
 ---
+# Exibições de catálogo privado
+
 Por padrão, uma [exibição de catálogo](catalog-view.md) é pública. Restrinja o acesso a uma exibição de catálogo para que somente as solicitações com um token assinado válido possam recuperar seus dados.
 
 Uma exibição de catálogo se torna privada de uma das duas formas a seguir:
@@ -96,7 +98,7 @@ Se [!UICONTROL Catalog Protection] estiver habilitado e todas as chaves atribuí
 
 >[!NOTE]
 >
->Para implantações B2B do Adobe Commerce usando Serviços de Merchandising com CCDM, você gerencia chaves de acesso da página **Chaves de acesso restritas** do Administrador do Commerce (**Sistema** > **Transferência de dados**). Para obter detalhes, consulte [Gerenciamento de chave de acesso restrito](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys) no *[!DNL Adobe Commerce Optimizer Connector]Guia de Integração*.
+>Para implantações B2B do Adobe Commerce usando Serviços de Merchandising com CCDM, você gerencia chaves de acesso da página **Chaves de acesso restritas** do Administrador do Commerce (**Sistema** > **Transferência de dados**). Para obter detalhes, consulte [Gerenciamento de chave de acesso restrito](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-sync/catalog-view-sync/restricted-access-keys) no *[!DNL Adobe Commerce Optimizer Connector]Guia de Integração*.
 
 ## Veja mais aqui
 
