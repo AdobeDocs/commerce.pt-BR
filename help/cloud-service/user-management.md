@@ -34,9 +34,9 @@ level_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 560ae770ae76d28e3358fb4f195aa1f2a03362c8
+source-git-commit: 80794cd843b054e043bae4129e1092e31b6e5730
 workflow-type: tm+mt
-source-wordcount: '1959'
+source-wordcount: '2045'
 ht-degree: 0%
 ---
 # Usuário e Identity Management
@@ -200,6 +200,14 @@ Para adicionar desenvolvedores e administradores de perfil de produto, repita o 
 >Atribua aos desenvolvedores a função User antes de adicioná-los como desenvolvedores. A função Usuário é necessária para permissões básicas do Commerce.
 
 ![Opções da guia Desenvolvedores e Administradores no Admin Console](./assets/tab-select.png){width="600" zoomable="yes"}
+
+### Solução de problemas de funções
+
+Se você fizer logon no Administrador do Adobe Commerce e vir apenas a seção [!UICONTROL **Catálogo**], provavelmente será atribuída a função **Usuário** a você. Se precisar de acesso a outras áreas do Administrador, você precisa [adicionar a si mesmo como **Desenvolvedor**](#add-developers-and-product-profile-admins) na Admin Console.
+
+Se você não tiver acesso à Admin Console, entre em contato com o administrador do perfil de produto ou com o administrador do sistema de sua organização e solicite que eles forneçam as permissões apropriadas.
+
+Revise [recursos de função](#role-resources) para obter informações sobre as permissões concedidas a cada função.
 
 ## Recursos de função
 
