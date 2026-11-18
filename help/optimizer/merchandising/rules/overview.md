@@ -1,7 +1,7 @@
 ---
 title: Regras de merchandising
-description: As regras de merchandising do [!DNL Adobe Commerce Optimizer] combinam lógica com ações para moldar resultados de pesquisa, listas de produtos padrão e páginas de categoria.
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente ao Adobe Commerce as a Cloud Service e a projetos [!DNL Adobe Commerce Optimizer] (infraestrutura SaaS gerenciada pela Adobe)."
+description: '[!DNL Adobe Commerce Optimizer] regras de merchandising moldam os resultados da pesquisa, suprimem as consultas de pesquisa e controlam as listagens de produtos padrão e as páginas de categoria.'
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente ao Adobe Commerce as a Cloud Service e a projetos [!DNL Adobe Commerce Optimizer] (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: f2a9b5e8-d23d-4855-b424-ca6b40e057df
 TQID: https://experienceleague.adobe.com/1lpaqHx0SaVYLXcTSOToxvbpKzhPJKmhfxjlCvNQLkU
 product_v2:
@@ -21,7 +21,7 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
 last-update: 2026-11-16
-source-git-commit: e0c7b4c2eba10c12f0ce728decad6f9be8bae14f
+source-git-commit: 0633a6bf0c347ca0448a76fb45391643ac582d5d
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 0%

@@ -1,22 +1,10 @@
 ---
-source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
+source-git-commit: 3478e3f0162b553d03c4ac4f5b3000b8aabd8c66
 workflow-type: tm+mt
-source-wordcount: '4098'
+source-wordcount: '4826'
 ht-degree: 0%
 ---
-<!--
-SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.pt-BR/blob/main/help/_includes/ccdm-shared/merchandising/rules/add.md
-
-This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
-Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
-are synced automatically to commerce-admin.en, so do not edit the copy in that repo.
-This includes related images in help/assets/ccdm-shared/.
--->
-
-# Criar e gerenciar regras
-
-Criar uma regra exige selecionar a exibição de catálogo à qual a regra se aplica, configurar a descrição da regra, o tipo e definir suas condições e classificação, testar os resultados e publicar a regra.
+Criar uma regra exige selecionar a exibição de catálogo à qual a regra se aplica, configurar a descrição e o tipo da regra (pesquisa, supressão de pesquisa, pesquisa padrão ou categoria), definir suas condições e classificação, quando aplicável, testar os resultados se uma visualização estiver disponível e publicar a regra. As regras de supressão de pesquisa não mostram uma visualização.
 
 ## Criar uma regra {#create-a-rule}
 
@@ -37,8 +25,9 @@ Cada tipo de regra tem um ícone de informações no editor com uma breve explic
 | **Regra de pesquisa padrão** | Classificação e merchandising padrão em listas de produtos quando não há mais pesquisa específica ou regra de categoria aplicável. Você só pode criar uma dessas regras; ela não pode conter condições. |
 | **Regra de categoria** | Aplica merchandising e classificação a uma única categoria, controlando o pedido do produto nessa página de categoria. |
 | **Regra de pesquisa** | Aplica merchandising e classificação quando os compradores executam uma pesquisa que corresponde às condições de consulta da regra. |
+| **Pesquisar regra de supressão** | Impede que as consultas de pesquisa correspondentes retornem produtos, de modo que a loja exibe uma página de resultados de pesquisa com zero produtos. A visibilidade do produto por meio da navegação de categoria, páginas de merchandising, recomendações e URLs diretos do produto não é afetada. |
 
-Na seção **Criar regra**, você define o nome da regra, o agendamento, se a regra se aplica a todas as listas ou a condições de pesquisa e tipos de classificação específicos.
+Na seção **Criar sua regra**, você define o nome da regra, o agendamento, o tipo de regra e todas as condições e classificações aplicáveis. As regras de supressão de pesquisa bloqueiam consultas correspondentes em vez de produtos de classificação.
 
 1. No campo **[!UICONTROL Name]**, digite um nome para a regra. Todos os nomes de regras devem ser exclusivos.
 1. No campo **[!UICONTROL Description]**, insira uma descrição para a regra.
@@ -90,6 +79,28 @@ Uma regra pode ter até dez condições. O operador lógico que junta duas condi
 1. Para adicionar outra condição, clique em **Adicionar condição** e repita o processo.
 1. Opcionalmente, defina [Classificação inteligente](#intelligent-ranking), [Classificação manual](#manual-ranking) ou [Classificação de atributo](#attribute-ranking) conforme descrito nas seções a seguir. Os mesmos controles se aplicam às páginas de categoria, com todas as diferenças chamadas.
 
+>[!TAB Pesquisar regra de supressão]
+
+Uma regra de supressão de pesquisa bloqueia resultados para consultas que correspondem a suas condições. Não requer ações de classificação no nível do produto. As consultas correspondentes não retornam produtos, e a loja exibe uma página de resultados de pesquisa com zero produtos.
+
+>[!NOTE]
+>
+>Não é exibida uma visualização para regras de supressão de pesquisa. Revise as condições da consulta antes de publicar e verifique as pesquisas correspondentes e não correspondentes na loja depois que a regra se tornar ativa.
+
+1. Em **[!UICONTROL Rule applies to]**, selecione **Pesquisar regra de supressão**.
+1. Selecione uma condição de consulta e insira o texto a ser correspondido:
+
+   | Condição | Quando a consulta estiver bloqueada | Exemplo |
+   | --- | --- | --- |
+   | **A consulta** | A consulta inteira corresponde ao texto especificado. | `restricted item` bloqueia essa consulta exata. |
+   | **Consulta contém** | A consulta inclui o texto especificado. | `restricted brand` blocos `buy restricted brand shoes`. |
+   | **A consulta começa com** | A consulta começa com o texto especificado. | `restricted brand` blocos `restricted brand accessories`. |
+   | **A consulta termina com** | A consulta termina com o texto especificado. | `restricted item` blocos `discount restricted item`. |
+
+1. Conclua as [etapas de agendamento e publicação](#schedule-publish-search-suppression).
+
+Para obter o escopo e as interações com outras regras, consulte [Pesquisar regras de supressão](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules).
+
 >[!TAB Regra de categoria]
 
 As regras de categoria controlam como os produtos são ordenados em **páginas de categoria**. Combine **regras de categoria** com **classificações inteligentes** e **manuais** ações para preparar descobertas, executar promoções e alinhar páginas de categoria à sua estratégia.
@@ -122,6 +133,44 @@ Quando várias categorias tiverem nomes semelhantes, use o caminho de categoria 
    ![Menu de Ação da Categoria](/help/assets/ccdm-shared/rules/category-action-menu.png){zoomable="yes"}
 
 >[!ENDTABS]
+
+### Criar e gerenciar regras de supressão de pesquisa {#search-suppression-rules}
+
+Use este fluxo de trabalho para bloquear termos de pesquisa sem alterar a visibilidade do produto em outro lugar na loja.
+
+1. Abra **Merchandising** > **Regras de merchandising**.
+1. Selecione **Todas as exibições** ou a **Exibição de catálogo** específica onde a restrição é necessária.
+1. Clique em **[!UICONTROL Create rule]**.
+1. Insira um **Nome** exclusivo e uma **Descrição** que explique a restrição.
+1. Em **[!UICONTROL Rule applies to]**, selecione **Pesquisar regra de supressão**.
+1. Configurar **Consulta**, **Consulta contém**, **Consulta começa com** ou **Consulta termina com**, conforme descrito na guia **Regra de supressão de pesquisa** acima.
+1. Conclua as [etapas de agendamento e publicação](#schedule-publish-search-suppression).
+
+#### Agendar e publicar uma regra de supressão de pesquisa {#schedule-publish-search-suppression}
+
+1. Em **[!UICONTROL Date range]**, defina a data de início e, se necessário, a data de término da restrição. Use uma data inicial futura para programar a regra.
+1. Revise as condições da consulta.
+1. Clique em **Salvar e publicar**.
+1. Localize a regra no espaço de trabalho *Regras de merchandising* e confirme seu status e datas. Uma regra programada entra em vigor durante seu intervalo de datas configurado quando ativada.
+1. Depois que a regra se tornar ativa, confirme se uma pesquisa de vitrine correspondente exibe uma página de resultados de pesquisa com zero produtos. Os resultados da consulta em cache podem levar até 15 minutos para serem atualizados.
+
+#### Editar uma regra de supressão de pesquisa
+
+1. No espaço de trabalho *Regras de Merchandising*, localize a regra e abra **Mais** (...) > **Editar**.
+1. Atualize suas condições de consulta, nome, descrição ou intervalo de datas, conforme necessário.
+1. Revise as condições de consulta atualizadas.
+1. Clique em **Salvar e publicar** para publicar as alterações.
+1. Depois que a regra atualizada se tornar ativa, verifique as pesquisas correspondentes e não correspondentes na loja. Os resultados da consulta em cache podem levar até 15 minutos para serem atualizados.
+
+O escopo de exibição do catálogo não pode ser alterado após a criação. Para aplicar a restrição a outro escopo, crie uma regra nessa exibição de catálogo.
+
+#### Ativar ou desativar uma regra de supressão de pesquisa
+
+1. No espaço de trabalho *Regras de merchandising*, localize a regra e abra **Mais** (...) menu.
+1. Selecione **Desabilitar Regra** para interromper a aplicação da restrição de pesquisa ou **Habilitar Regra** para aplicá-la de acordo com suas datas configuradas.
+1. Confirme o status da regra no espaço de trabalho.
+
+A desativação de uma regra preserva sua configuração. Para alterar suas condições ou agendamento, edite e publique a regra. Consulte [Workspace de regras de merchandising](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/workspace) para obter detalhes.
 
 ### Classificação inteligente {#intelligent-ranking}
 
@@ -220,7 +269,7 @@ Para melhorar a localização de produtos usando regras, consulte [regras de pes
 
 Para obter informações sobre a configuração de pesos de pesquisa:
 
-- Para todas as implantações do Adobe Commerce, consulte [Resultados da Pesquisa](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/search/search-results) no _Guia de Gerenciamento de Catálogo_.
+- Para todas as implantações do Adobe Commerce, consulte [Resultados da Pesquisa](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results) no _Guia de Gerenciamento de Catálogo_.
 - Para implantações independentes do Adobe Commerce Optimizer, consulte a [API REST de metadados](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) no _Guia do Desenvolvedor de Serviços de Merchandising_.
 
 ### Classificação manual {#manual-ranking}
@@ -252,11 +301,13 @@ Ou eventos podem ser definidos manualmente:
 
 1. Para vários eventos, escolha outros eventos que deseja acionar quando as condições forem atendidas.
 
+Quando **[!UICONTROL Hide a product]** é configurado na **regra de pesquisa padrão**, os produtos excluídos também são removidos das **sugestões de pesquisa e preenchimento automático**. Para bloquear uma consulta inteira em vez de produtos selecionados, use uma [regra de supressão de pesquisa](#search-suppression-rules).
+
 ### Classificação de atributo {#attribute-ranking}
 
 >[!AVAILABILITY]
 >
->Este recurso está em [beta](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
+>Este recurso está em [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
 
 **A classificação de atributo** aplica automaticamente uma ação **[!UICONTROL Boost]**, **[!UICONTROL Bury]** ou **[!UICONTROL Hide]** a cada produto que corresponde a uma ou mais condições de atributo, sem exigir que você selecione SKUs individuais. A classificação de atributos aparece no editor de regras junto com a [Classificação inteligente](#intelligent-ranking) e a [Classificação manual](#manual-ranking), e está disponível para a **Regra de todos os produtos**, **Regras de pesquisa** e **Regras de categoria**. Use-o para dimensionar o merchandising em grandes catálogos, por exemplo, aumentando cada produto de uma determinada marca ou enterrando cada produto em uma cor descontinuada.
 
@@ -277,6 +328,8 @@ Ou eventos podem ser definidos manualmente:
 
 A fixação não está disponível na classificação de atributos, pois atribui um produto a uma posição exata, enquanto uma condição de atributo pode corresponder a muitos produtos de uma só vez. Para fixar um produto específico, use a [Classificação manual](#manual-ranking) diretamente na SKU.
 
+As condições de classificação de atributo também são chamadas de **Eventos de merchandising baseados em atributo**. Os produtos excluídos por uma ação **[!UICONTROL Hide]** na **regra de pesquisa padrão** também são excluídos das **sugestões de pesquisa e do preenchimento automático**, da mesma forma que as exclusões manuais nessa regra. Essas exclusões de nível de produto diferem de [supressão de pesquisa](#search-suppression-rules), que bloqueia todos os resultados para uma consulta correspondente.
+
 #### Como a classificação de atributos interage com a classificação inteligente
 
 Quando uma regra combina uma estratégia de classificação inteligente com uma ou mais condições de atributo, a ação de atributo tem prioridade para qualquer produto correspondente. A classificação inteligente continua a solicitar os produtos restantes e incomparáveis.
@@ -293,6 +346,8 @@ Uma única regra pode ter até 25 condições de atributo, o mesmo limite que os
 
 ### Finalização da regra {#finalizing-the-rule}
 
+Para regras de supressão de pesquisa, siga [Agendar e publicar uma regra de supressão de pesquisa](#schedule-publish-search-suppression). Essas regras não mostram uma visualização.
+
 1. Examine os resultados da regra no painel de teste.
 1. Se a regra tiver várias consultas, teste cada uma que possa ser afetada pela regra.
 1. Ao concluir, clique em **Salvar e publicar**.
@@ -303,19 +358,19 @@ Uma única regra pode ter até 25 condições de atributo, o mesmo limite que os
 
 >[!NOTE]
 >
->As regras e os produtos classificados manualmente são aplicados aos resultados da **pesquisa** quando a ordem de classificação padrão, &quot;Classificar por: Mais Relevante&quot;, é selecionada. Se um comprador alterar a ordem de classificação para algo como classificar por nome, as regras e as classificações manuais não estarão mais em vigor. Para as listagens de **categoria**, o comportamento de classificação padrão é descrito em [Classificação manual](#manual-ranking).
+>As regras de classificação e os produtos classificados manualmente são aplicados aos resultados da **pesquisa** quando a ordem de classificação padrão, &quot;Classificar por: Mais Relevante&quot;, é selecionada. Se um comprador alterar a ordem de classificação para algo como classificar por nome, as regras de classificação e as classificações manuais não estarão mais em vigor. Esse comportamento de classificação não permite que uma consulta bloqueada ignore a supressão de pesquisa. Para as listagens de **categoria**, o comportamento de classificação padrão é descrito em [Classificação manual](#manual-ranking).
 
 ## Editar, exibir e excluir regras {#edit-view-and-delete-rules}
 
-Para atualizar as propriedades das regras existentes, siga estas instruções. Não é possível alterar a exibição de catálogo (escopo) de uma regra após sua criação; o escopo é definido quando você cria a regra. Consulte [Selecionar exibição de catálogo](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view).
+Para atualizar as propriedades das regras existentes, siga estas instruções. Não é possível alterar a exibição de catálogo (escopo) de uma regra após sua criação; o escopo é definido quando você cria a regra. Consulte [Selecionar exibição de catálogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view).
 
 ### Editar regra
 
 1. No espaço de trabalho *Regras de merchandising*, encontre a regra na grade que você deseja editar e clique em **Mais** (...) opções.
 1. Clique em **Editar** para acessar o editor de regras.
-1. Atualize as condições, os operadores e os eventos, conforme necessário.
+1. Atualize as condições, os operadores e os eventos, conforme aplicável ao tipo de regra. As regras de supressão de pesquisa usam condições de consulta em vez de eventos de classificação.
 1. Atualize os campos nome, data inicial e final e descrição, conforme necessário. Todos os nomes de regras devem ser exclusivos.
-1. Teste a regra.
+1. Teste a regra se uma visualização estiver disponível. Para regras de supressão de pesquisa, revise as condições de consulta e verifique as pesquisas de vitrine depois que a regra atualizada se tornar ativa.
 1. Publique as alterações.
 A regra é adicionada à lista no espaço de trabalho *Regras*. Embora as regras ativas entrem em vigor imediatamente, pode levar até 15 minutos para que os resultados da consulta em cache na loja sejam atualizados.
 
@@ -386,7 +441,7 @@ Esta opção fornece uma maneira rápida de ver todos os parâmetros de regra, e
 | Campo | Descrição |
 | --- | --- |
 | Nome | O nome da regra. Rule names must be unique. |
-| Tipo de regra | **Regra de pesquisa padrão**, **Consulta** (condições de pesquisa específicas) ou **Categoria** (páginas de categoria), dependendo da **Regra aplica-se a**. |
+| Tipo de regra | **Regra de pesquisa padrão**, **Consulta** (condições de pesquisa específicas), **Regra de supressão de pesquisa** (blocos que correspondem a consultas) ou **Categoria** (páginas de categoria), dependendo da **Regra aplica-se a**. |
 | Data inicial | A data de início da regra, se programada. |
 | Data final | A data final da regra, se programada. |
 | Descrição | Uma breve descrição da regra. |
