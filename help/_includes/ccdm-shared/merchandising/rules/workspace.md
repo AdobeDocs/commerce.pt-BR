@@ -1,8 +1,8 @@
 ---
-source-git-commit: 4032a0871d0a9b129ad870c93f62a2a7596ea8b7
+source-git-commit: e3be9274ca8db80d3559b24a5c8be36f5d61b2ba
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 1%
+source-wordcount: '1154'
+ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
@@ -23,6 +23,8 @@ O espaço de trabalho *Regras de merchandising* lista a seleção atual de regra
 - Ativar/desativar regras
 - Excluir regras
 - Acessar o editor de regras
+
+O espaço de trabalho também inclui **[regras de supressão de pesquisa](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules)**. Use os mesmos controles de gerenciamento de regras para editar, agendar, ativar ou desativar essas regras. Para configurar condições de consulta e publicar alterações, consulte [Criar e gerenciar regras de supressão de pesquisa](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/add#search-suppression-rules). Não é exibida uma visualização para regras de supressão de pesquisa.
 
 ![Workspace de regras de merchandising](/help/assets/ccdm-shared/rules/rules-workspace.png)
 
@@ -60,6 +62,14 @@ O painel de detalhes mostra o nome da regra, o status, as condições e os event
    - Editar regra
    - Excluir regra
    - Ativar/desativar regra
+
+## Ativar ou desativar uma regra {#enable-disable-rule}
+
+1. Localize a regra no espaço de trabalho *Regras de merchandising*.
+1. Abrir o **Mais** (...) e selecione **Habilitar Regra** ou **Desabilitar Regra**. Você também pode usar o controle **Habilitado** no painel de detalhes.
+1. Confirme o status atualizado. Uma regra ativada com uma data de início futura permanece programada até essa data.
+
+Para uma **regra de supressão de pesquisa**, desabilitar a regra impede que ela bloqueie consultas correspondentes sem excluir suas condições. Outras regras de supressão ativas ainda podem bloquear essas consultas. Para alterar as condições ou datas da regra, selecione **Editar**, revise as alterações e clique em **Salvar e publicar**.
 
 ## Descrições da coluna
 
@@ -124,6 +134,6 @@ Os dados comportamentais que alimentam a [classificação inteligente](add.md#in
    A regra criada tem escopo para a exibição de catálogo selecionada.
 1. Crie sua regra no [editor de regras](add.md).
 
-   No editor, defina condições, eventos e detalhes. A regra se aplica somente aos resultados da pesquisa nessa exibição de catálogo.
+   No editor, defina as condições, os eventos e os detalhes que se aplicam ao tipo de regra. As regras de supressão de pesquisa usam condições de consulta para bloquear resultados somente na exibição de catálogo selecionada. Eles não alteram a visibilidade do produto por meio da navegação de categoria, páginas de merchandising, recomendações ou URLs diretos do produto.
 
 Não é possível alterar a exibição de catálogo (escopo) de uma regra após sua criação. Para aplicar uma lógica semelhante a outra exibição de catálogo, crie uma nova regra e selecione essa exibição de catálogo antes de criar.

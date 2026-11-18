@@ -1,6 +1,6 @@
 ---
 title: Práticas recomendadas das regras de merchandising
-description: Saiba mais sobre as práticas recomendadas para implementar regras de merchandising para páginas de pesquisa, listagens padrão e categoria.
+description: Saiba mais sobre as práticas recomendadas para implementar regras de merchandising para páginas de pesquisa, supressão de pesquisa, listagens padrão e categoria.
 role: Admin, Developer
 badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente ao Adobe Commerce as a Cloud Service e a projetos [!DNL Adobe Commerce Optimizer] (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: cc8d0879-c253-4ad4-8e7d-e066dff9112d
@@ -17,9 +17,9 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
 last-update: 2026-11-16
-source-git-commit: e0c7b4c2eba10c12f0ce728decad6f9be8bae14f
+source-git-commit: 0633a6bf0c347ca0448a76fb45391643ac582d5d
 workflow-type: tm+mt
-source-wordcount: '49'
+source-wordcount: '51'
 ht-degree: 0%
 ---
 # Práticas recomendadas das regras de merchandising

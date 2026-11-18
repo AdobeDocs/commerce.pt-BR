@@ -25,9 +25,9 @@ role_v2:
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 92e2b81e91e5d78b08d551aa9531b18ebf50d853
+source-git-commit: 3968a572a628342334fe760526e81ab089b86904
 workflow-type: tm+mt
-source-wordcount: '1627'
+source-wordcount: '1960'
 ht-degree: 0%
 ---
 # Notas de versão
@@ -39,6 +39,64 @@ As notas de versão a seguir contêm atualizações para [!DNL Adobe Commerce Op
 
   {{aco-api-updates-and-dropins}}
 
+## Novembro de 2026
+
+>[!BEGINSHADEBOX]
+
+_2 de novembro de 2026_
+
+![Correção](../assets/fix.svg) **Localidade do filtro de recomendação**—Esclarecimento de que a lista de atributos usa a origem do catálogo associada à primeira exibição do catálogo quando você seleciona **[!UICONTROL All Views]**. Consulte [Filtros de recomendação](./merchandising/recommendations/filters.md).
+
+_6 de novembro de 2026_
+
+![Novo](../assets/new.svg) **Integrações de carrinho e check-out de terceiros**—Orientações adicionadas sobre a integração de serviços de carrinho e check-out de terceiros com o [!DNL Adobe Commerce Optimizer]. Consulte [Integrações](./integrations/integrations-overview.md#third-party-cart-and-checkout-integration).
+
+![Correção](../assets/fix.svg) **Armazenamento de Visuais de Produto**—Esclareceu que você pode expandir a capacidade de armazenamento para [!DNL Product Visuals] atualizando sua licença do [!DNL AEM Assets]. Consulte [Limites e limites](./boundaries-limits.md#product-visuals-limits).
+
+![Correção](../assets/fix.svg) **orientação de instalação do AEM Assets**—Removeu o fluxo de instalação [!DNL Adobe Commerce Optimizer] autônomo para [!DNL AEM Assets] e orientou a instalação para a documentação de configuração [!DNL AEM Assets] geral. Consulte [Integrações](./integrations/integrations-overview.md#product-visuals), [Camadas do catálogo](./setup/catalog-layer.md) e [Visuais de produto](./setup/product-visuals.md).
+
+![Novo](../assets/new.svg) **Chave de referência de recomendação**—Documentado **[!UICONTROL Reference Key]** como uma alternativa para a ID de recomendação quando você configura um bloco de recomendações de vitrine. Consulte [Criar e gerenciar recomendações](./merchandising/recommendations/create.md#get-the-storefront-reference-key).
+
+_16 de novembro de 2026_
+
+![Novo](../assets/new.svg) **Capacidade da faceta** — documentado que você pode aumentar o limite de facetas por meio de uma solicitação de suporte ao cliente. Consulte [Limites e limites](./boundaries-limits.md#catalog-views-and-policies).
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
+## Outubro de 2026
+
+>[!BEGINSHADEBOX]
+
+_1 de outubro de 2026_
+
+![Novo](../assets/new.svg) **exibições de catálogo compartilhado B2B** — documentado como os catálogos compartilhados B2B podem ser provisionados automaticamente como exibições de catálogo privado, junto com a opção de configuração manual para outros casos de uso. Esclarecimento também de que a rotação de chaves de acesso restrito não é automatizada. Consulte [Exibições de catálogo privado](./setup/private-catalog-view.md), [Chaves de acesso restritas](./setup/restricted-access-keys.md), [Sincronização de dados](./setup/data-sync.md) e a [lista de verificação de inicialização](./launch/launch-checklist.md).
+
+_12 de outubro de 2026_
+
+![Novo](../assets/new.svg) **Filtro de recomendação indisponível**—Adição do filtro de exclusão indisponível, que permite evitar que produtos indisponíveis apareçam em unidades de recomendação. Consulte [Filtros de recomendação](./merchandising/recommendations/filters.md#out-of-stock).
+
+_14 de outubro de 2026_
+
+![Correção](../assets/fix.svg) **Valores de reforço de classificação inteligente**—Corrigiu o valor padrão documentado para `50` e o valor máximo para `1000`. Consulte [Criar e gerenciar regras de comercialização](./merchandising/rules/add.md#intelligent-ranking-boost).
+
+_16 de outubro de 2026_
+
+![Correção](../assets/fix.svg) **Nome de regra de pesquisa padrão**—O nome de regra de merchandising foi atualizado de [!UICONTROL All product listings] para [!UICONTROL Default search rule] para corresponder à interface de Administrador. Consulte [Visão geral das regras de merchandising](./merchandising/rules/overview.md) e [Criar e gerenciar regras de merchandising](./merchandising/rules/add.md).
+
+_21 de outubro de 2026_
+
+![Correção](../assets/fix.svg) **Limites de chave de acesso restrito**—Remoção da contagem de chaves de acesso restrito por ambiente dos limites documentados. Consulte [Limites e limites](./boundaries-limits.md#catalog-views-and-policies).
+
+_22 de outubro de 2026_
+
+![Novo](../assets/new.svg) **Filtros de atributo de recomendação**—Adição de orientação para habilitar filtros de atributo por meio da API de metadados. Consulte [Filtros de recomendação](./merchandising/recommendations/filters.md#attributes).
+
+{{aco-release}}
+
+>[!ENDSHADEBOX]
+
 ## Setembro de 2026
 
 >[!BEGINSHADEBOX]
@@ -49,6 +107,11 @@ _3 de setembro de 2026_
 
 [!DNL Adobe Commerce Optimizer] regras de merchandising agora oferecem suporte a [**classificação de atributo**](./merchandising/rules/add.md#attribute-ranking) para a **Regra de pesquisa padrão**, **Regra de categoria** e **Regra de pesquisa**. Aplicar automaticamente uma ação **[!UICONTROL Boost]**, **[!UICONTROL Bury]** ou **[!UICONTROL Hide]** a cada produto que corresponda a uma ou mais condições de atributo, como marca ou categoria, sem selecionar SKUs individuais. A classificação de atributos está na versão beta. [Saiba mais](./merchandising/rules/add.md#attribute-ranking).
 
+_9 de setembro de 2026_
+
+![Novas](../assets/new.svg) **Políticas de gatilho de cabeçalho HTTP de vários valores**—As políticas de gatilho que usam o tipo de transporte `HTTP_HEADER` agora podem receber vários valores separados por vírgula em um único cabeçalho (por exemplo, `AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025`). Os filtros de política que usam `IN` avaliam os valores com a semântica `OR`. Os filtros que usam `EQUALS`, `GREATER_THAN_EQUAL` ou `LESS_THAN_EQUAL` rejeitam a solicitação com um erro de validação se o cabeçalho contiver vários valores. Este comportamento se aplica somente a políticas de gatilho que usam o transporte `HTTP_HEADER`. [Saiba mais](./setup/policies.md#multi-value-http-header-triggers).
+<!--COMOPT-2439-->
+
 {{aco-release}}
 
 >[!ENDSHADEBOX]
@@ -56,11 +119,6 @@ _3 de setembro de 2026_
 ## Agosto de 2026
 
 >[!BEGINSHADEBOX]
-
-_9 de setembro de 2026_
-
-![Novas](../assets/new.svg) **Políticas de gatilho de cabeçalho HTTP de vários valores**—As políticas de gatilho que usam o tipo de transporte `HTTP_HEADER` agora podem receber vários valores separados por vírgula em um único cabeçalho (por exemplo, `AC-Policy-Vehicle: UNIVERSAL,veh-bolt-mammoth-limited-2025`). Os filtros de política que usam `IN` avaliam os valores com a semântica `OR`. Os filtros que usam `EQUALS`, `GREATER_THAN_EQUAL` ou `LESS_THAN_EQUAL` rejeitam a solicitação com um erro de validação se o cabeçalho contiver vários valores. Este comportamento se aplica somente a políticas de gatilho que usam o transporte `HTTP_HEADER`. [Saiba mais](./setup/policies.md#multi-value-http-header-triggers).
-<!--COMOPT-2439-->
 
 _7 de agosto de 2026_
 
@@ -371,4 +429,3 @@ Os URLs de produção de base da região da União Europeia são:
 {{aco-release}}
 
 >[!ENDSHADEBOX]
-
