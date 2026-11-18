@@ -6,7 +6,7 @@ ht-degree: 0%
 ---
 <!--
 SOURCE OF TRUTH: Edit this file in the commerce.en repo:
-https://github.com/Adobe-Enterprise-Docs/commerce.en/blob/main/help/_includes/ccdm-shared/merchandising/rules/best-practice.md
+https://github.com/Adobe-Enterprise-Docs/commerce.pt-BR/blob/main/help/_includes/ccdm-shared/merchandising/rules/best-practice.md
 
 This content is shared by the Adobe Commerce Optimizer Guide (commerce.en) and the
 Merchandising Services with CCDM Guide (commerce-admin.en). Changes made in commerce.en
@@ -16,11 +16,11 @@ This includes related images in help/assets/ccdm-shared/.
 
 # Práticas recomendadas das regras de merchandising
 
-Para otimizar a conversão e a receita, implemente **regras de pesquisa** efetivas, uma **regra de listagem padrão** forte e **[regras de categoria](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#rule-types)**. Ajuste classificações usando dados de vendas, estoque, promoções e [classificação inteligente](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking).
+Para otimizar a conversão e a receita, implemente **regras de pesquisa** efetivas, uma **regra de listagem padrão** forte e **[regras de categoria](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/add#rule-types)**. Ajuste classificações usando dados de vendas, estoque, promoções e [classificação inteligente](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking).
 
-Use as [regras de supressão de pesquisa](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules) somente quando as consultas do comprador correspondentes precisarem retornar zero produtos, e não quando os produtos precisarem de uma classificação diferente.
+Use as [regras de supressão de pesquisa](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules) somente quando as consultas do comprador correspondentes precisarem retornar zero produtos, e não quando os produtos precisarem de uma classificação diferente.
 
-É crucial estabelecer uma **regra padrão** bem-pensada. Sua [regra padrão](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/overview#default-rule) determina como os resultados da pesquisa são classificados inicialmente quando nenhuma regra de pesquisa mais específica se aplica, o que melhora a probabilidade de descoberta e compra. Analise-o regularmente para que ele acompanhe as necessidades e campanhas do comprador.
+É crucial estabelecer uma **regra padrão** bem-pensada. Sua [regra padrão](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/overview#default-rule) determina como os resultados da pesquisa são classificados inicialmente quando nenhuma regra de pesquisa mais específica se aplica, o que melhora a probabilidade de descoberta e compra. Analise-o regularmente para que ele acompanhe as necessidades e campanhas do comprador.
 
 ## Dicas para otimizar as regras de pesquisa
 
@@ -30,20 +30,20 @@ Use as [regras de supressão de pesquisa](https://experienceleague.adobe.com/en/
 - Priorize levemente os produtos com margens de lucro mais altas sem comprometer a relevância.
 - Destaque os produtos que estão à venda ou que fazem parte de promoções especiais.
 - Defina regras de pesquisa durante os períodos de promoção ou de vendas automaticamente usando o intervalo de datas durante o período de promoção.
-- Personalize os resultados da pesquisa com base no comportamento individual do comprador usando [classificação inteligente](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking), como &quot;recomendado para você&quot;, &quot;mais visto&quot; e assim por diante.
-- Quando uma estratégia inteligente diferente de **Nenhuma** for selecionada, ajuste o **[Aumento de classificação inteligente](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost)** por regra e valide em **Testar sua regra** antes de publicar.
+- Personalize os resultados da pesquisa com base no comportamento individual do comprador usando [classificação inteligente](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking), como &quot;recomendado para você&quot;, &quot;mais visto&quot; e assim por diante.
+- Quando uma estratégia inteligente diferente de **Nenhuma** for selecionada, ajuste o **[Aumento de classificação inteligente](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost)** por regra e valide em **Testar sua regra** antes de publicar.
 - Sempre use o painel &quot;Testar a regra&quot; para visualizar como sua estratégia de classificação inteligente afeta os resultados reais da pesquisa para consultas diferentes.
 
 ## Dicas para regras de categoria
 
-- Use as [regras de categoria](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#rule-types) em **páginas de categoria** de tráfego alto ou margem alta, em que a ordem com curadoria é importante tanto quanto a pesquisa, por exemplo, coleções sazonais ou departamentos em destaque.
-- Alinhe a **classificação inteligente** (por exemplo, tendência, mais visualizada) com a forma como os compradores navegam nessa categoria; as páginas de categoria não usam o texto de consulta de pesquisa da mesma forma que as regras de pesquisa. Consulte [Classificação inteligente](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking). Para métodos inteligentes diferentes de **Nenhum**, use **[Aumento inteligente de classificação](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost)** e pré-visualização de categoria para ajustar a intensidade comportamental dessa regra de categoria.
-- Aplique o **pin**, **boost** e **bury** de forma consistente com o plano de campanha; lembre-se de que as posições manuais geralmente se aplicam somente quando o comprador usa a **classificação padrão** para a lista. Consulte [Classificação manual](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#manual-ranking).
+- Use as [regras de categoria](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/add#rule-types) em **páginas de categoria** de tráfego alto ou margem alta, em que a ordem com curadoria é importante tanto quanto a pesquisa, por exemplo, coleções sazonais ou departamentos em destaque.
+- Alinhe a **classificação inteligente** (por exemplo, tendência, mais visualizada) com a forma como os compradores navegam nessa categoria; as páginas de categoria não usam o texto de consulta de pesquisa da mesma forma que as regras de pesquisa. Consulte [Classificação inteligente](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking). Para métodos inteligentes diferentes de **Nenhum**, use **[Aumento inteligente de classificação](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/add#intelligent-ranking-boost)** e pré-visualização de categoria para ajustar a intensidade comportamental dessa regra de categoria.
+- Aplique o **pin**, **boost** e **bury** de forma consistente com o plano de campanha; lembre-se de que as posições manuais geralmente se aplicam somente quando o comprador usa a **classificação padrão** para a lista. Consulte [Classificação manual](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/add#manual-ranking).
 - Visualize no fluxo de regras da **categoria** no editor e valide na loja após a publicação, a mesma disciplina usada para o painel &quot;Testar sua regra&quot; na pesquisa.
 
 ## Pesquisar práticas recomendadas de supressão e casos de uso {#search-suppression-best-practices}
 
-Uma regra de supressão de pesquisa bloqueia os resultados de consultas que correspondem a suas condições, para que a loja exiba uma página de resultados de pesquisa com zero produtos. O editor de regras não fornece uma pré-visualização das regras de supressão. Use a condição mais restrita que atenda à restrição e siga [Criar e gerenciar regras de supressão de pesquisa](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/add#search-suppression-rules). Depois que a regra se tornar ativa, verifique as pesquisas correspondentes e não correspondentes na loja. Verifique a apresentação sem resultados real da loja.
+Uma regra de supressão de pesquisa bloqueia os resultados de consultas que correspondem a suas condições, para que a loja exiba uma página de resultados de pesquisa com zero produtos. O editor de regras não fornece uma pré-visualização das regras de supressão. Use a condição mais restrita que atenda à restrição e siga [Criar e gerenciar regras de supressão de pesquisa](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/add#search-suppression-rules). Depois que a regra se tornar ativa, verifique as pesquisas correspondentes e não correspondentes na loja. Verifique a apresentação sem resultados real da loja.
 
 | Caso de uso | Configuração sugerida | O que verificar |
 | --- | --- | --- |

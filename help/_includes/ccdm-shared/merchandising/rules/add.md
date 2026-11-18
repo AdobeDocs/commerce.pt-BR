@@ -99,7 +99,7 @@ Uma regra de supressão de pesquisa bloqueia resultados para consultas que corre
 
 1. Conclua as [etapas de agendamento e publicação](#schedule-publish-search-suppression).
 
-Para obter o escopo e as interações com outras regras, consulte [Pesquisar regras de supressão](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules).
+Para obter o escopo e as interações com outras regras, consulte [Pesquisar regras de supressão](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/overview#search-suppression-rules).
 
 >[!TAB Regra de categoria]
 
@@ -170,7 +170,7 @@ O escopo de exibição do catálogo não pode ser alterado após a criação. Pa
 1. Selecione **Desabilitar Regra** para interromper a aplicação da restrição de pesquisa ou **Habilitar Regra** para aplicá-la de acordo com suas datas configuradas.
 1. Confirme o status da regra no espaço de trabalho.
 
-A desativação de uma regra preserva sua configuração. Para alterar suas condições ou agendamento, edite e publique a regra. Consulte [Workspace de regras de merchandising](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/workspace) para obter detalhes.
+A desativação de uma regra preserva sua configuração. Para alterar suas condições ou agendamento, edite e publique a regra. Consulte [Workspace de regras de merchandising](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/workspace) para obter detalhes.
 
 ### Classificação inteligente {#intelligent-ranking}
 
@@ -269,7 +269,7 @@ Para melhorar a localização de produtos usando regras, consulte [regras de pes
 
 Para obter informações sobre a configuração de pesos de pesquisa:
 
-- Para todas as implantações do Adobe Commerce, consulte [Resultados da Pesquisa](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results) no _Guia de Gerenciamento de Catálogo_.
+- Para todas as implantações do Adobe Commerce, consulte [Resultados da Pesquisa](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/catalog/search/search-results) no _Guia de Gerenciamento de Catálogo_.
 - Para implantações independentes do Adobe Commerce Optimizer, consulte a [API REST de metadados](https://developer.adobe.com/commerce/services/reference/rest/#operation/createProductMetadata) no _Guia do Desenvolvedor de Serviços de Merchandising_.
 
 ### Classificação manual {#manual-ranking}
@@ -307,7 +307,7 @@ Quando **[!UICONTROL Hide a product]** é configurado na **regra de pesquisa pad
 
 >[!AVAILABILITY]
 >
->Este recurso está em [beta](https://experienceleague.adobe.com/en/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
+>Este recurso está em [beta](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/release/beta#attribute-ranking-public-beta).
 
 **A classificação de atributo** aplica automaticamente uma ação **[!UICONTROL Boost]**, **[!UICONTROL Bury]** ou **[!UICONTROL Hide]** a cada produto que corresponde a uma ou mais condições de atributo, sem exigir que você selecione SKUs individuais. A classificação de atributos aparece no editor de regras junto com a [Classificação inteligente](#intelligent-ranking) e a [Classificação manual](#manual-ranking), e está disponível para a **Regra de todos os produtos**, **Regras de pesquisa** e **Regras de categoria**. Use-o para dimensionar o merchandising em grandes catálogos, por exemplo, aumentando cada produto de uma determinada marca ou enterrando cada produto em uma cor descontinuada.
 
@@ -362,7 +362,7 @@ Para regras de supressão de pesquisa, siga [Agendar e publicar uma regra de sup
 
 ## Editar, exibir e excluir regras {#edit-view-and-delete-rules}
 
-Para atualizar as propriedades das regras existentes, siga estas instruções. Não é possível alterar a exibição de catálogo (escopo) de uma regra após sua criação; o escopo é definido quando você cria a regra. Consulte [Selecionar exibição de catálogo](https://experienceleague.adobe.com/en/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view).
+Para atualizar as propriedades das regras existentes, siga estas instruções. Não é possível alterar a exibição de catálogo (escopo) de uma regra após sua criação; o escopo é definido quando você cria a regra. Consulte [Selecionar exibição de catálogo](https://experienceleague.adobe.com/pt-br/docs/commerce/optimizer/merchandising/rules/workspace#select-catalog-view).
 
 ### Editar regra
 
