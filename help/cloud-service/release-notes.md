@@ -61,9 +61,9 @@ topic_v2:
     internal-label: Insights
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
     internal-label: Machine learning
-source-git-commit: c77ccb87ac61a4dae8adc3079bb8aac7a4a9bf58
+source-git-commit: eebf534ca77d223db63f2062dd889d8f3ceb1866
 workflow-type: tm+mt
-source-wordcount: '10458'
+source-wordcount: '10433'
 ht-degree: 0%
 ---
 # Notas de versão
@@ -84,11 +84,11 @@ Saiba mais em [Administrador do Commerce na Experiência unificada da Adobe](htt
 
 ## Novembro de 2026 - versão #2 {#latest}
 
-[!BADGE Sandbox]{type=Caution tooltip="Os itens listados estão disponíveis atualmente apenas em ambientes de sandbox. A Adobe disponibiliza novas versões em ambientes de sandbox primeiro para fornecer tempo para testar alterações futuras antes que a versão esteja disponível em ambientes de produção."}
+<!-- [!BADGE Sandbox]{type=Caution tooltip="The items listed are currently only available in Sandbox environments. Adobe makes new releases available in Sandbox environments first to provide time to test upcoming changes before the release is available on Production environments."} -->
 
-<!-- [!BADGE Production]{type=Neutral tooltip="The items listed are currently available in Production environments."} -->
+[!BADGE Produção]{type=Neutral tooltip="Os itens listados estão disponíveis atualmente em Ambientes de produção."}
 
-Os itens a seguir foram lançados para ambientes de sandbox em 18 de novembro de 2026.
+Os itens a seguir foram lançados para ambientes de Produção em 18 de novembro de 2026.
 
 >[!BEGINSHADEBOX]
 
