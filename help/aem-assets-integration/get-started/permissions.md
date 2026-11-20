@@ -15,9 +15,9 @@ feature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '966'
 ht-degree: 0%
 ---
 # Permissões de usuário e IMS
@@ -27,14 +27,18 @@ ht-degree: 0%
 * No Adobe Commerce as a Cloud Service, o Administrador ativa a autenticação IMS por padrão.
 * Para o Adobe Commerce na nuvem ou no local, o IMS é opcional.
 
-  [A habilitação do IMS para Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank} fornece uma interface de usuário de configuração avançada (Seletor de Ativos, menus suspensos preenchidos automaticamente), mas você pode configurar a integração sem o IMS inserindo manualmente **ID do Programa** e **ID do Ambiente**.
+  [A habilitação do IMS para Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank} fornece uma interface de usuário de configuração avançada com o Seletor de Ativos e menus suspensos de ambiente e domínio. Se sua configuração exibir campos separados **ID do Programa** e **ID do Ambiente**, você poderá inserir esses identificadores manualmente sem o IMS.
 
 Ao usar o IMS, a Integração do AEM Assets também requer **perfis de produto específicos do Adobe Admin Console**. Os usuários que configuram a integração no Commerce Admin precisam do **perfil de produto Usuários do AEM Assets DM OpenAPI - entrega** ou do perfil de produto **autor** como um fallback. Esse acesso é controlado por meio de perfis de produto do Admin Console na organização IMS do usuário e permite:
 
 * O **Seletor de ativos** permite selecionar imagens do AEM Assets ao gerenciar imagens de categoria ou conteúdo do Page Builder.
-* **Campos de configuração preenchidos automaticamente**, como **ID do Programa**, **ID do Ambiente** e **Mapeamento de domínio** detalhados que extraem valores da sessão IMS do usuário.
+* **Campos de configuração preenchidos automaticamente**, incluindo as listas suspensas **Ambiente AEM** e **Mapeamento de Domínio do AEM**, que extraem valores da sessão IMS do usuário. Consulte [Configurar a integração](setup-synchronization.md) para seleção de ambiente e entrada de ID manual.
 
 Sem as permissões corretas, o Seletor de ativos não está disponível e esses campos aparecem vazios ou exigem entrada manual.
+
+>[!IMPORTANT]
+>
+> Os perfis de produto do Adobe Admin Console controlam o acesso do usuário aos recursos de integração; eles não alteram os direitos de licenciamento. Atribuir um perfil de produto de autor não concede acesso à API do autor do AEM Assets para clientes de Visuais de produto. Consulte [Limites visuais de produto](../../optimizer/boundaries-limits.md#product-visuals-limits) para obter os requisitos de direito.
 
 >[!BEGINSHADEBOX]
 
@@ -52,12 +56,12 @@ A integração só pode carregar domínios mapeados para um perfil. Portanto, os
 
 * **Criar perfil de produto**. Necessário para acessar a interface do usuário do AEM Assets. Também serve como fallback para o Seletor de ativos e a Interface do usuário de configuração quando o usuário não tiver o perfil de produto do delivery do AEM no Admin Console.
 
-Os domínios (incluindo ID de programa, ID de ambiente e Mapeamento de domínio) são atribuídos ao perfil de produto de delivery do AEM. A integração carrega domínios do **perfil de produto de entrega do AEM** quando disponível, ou retorna ao **perfil de produto do autor** quando o perfil de produto de entrega do AEM não está no Admin Console do usuário. Os usuários precisam de um desses perfis para:
+A integração carrega ambientes e mapeamentos de domínio do **perfil de produto de entrega do AEM** quando disponível, ou retorna ao **perfil de produto do autor** quando o perfil de produto de entrega do AEM não está no Admin Console do usuário. Os usuários precisam de um desses perfis para:
 
-* Preencha os menus suspensos **ID do programa**, **ID do ambiente** e **Mapeamento de domínio** na configuração de administrador do Commerce.
+* Preencha os menus suspensos **Ambiente AEM** e **Mapeamento de Domínio AEM** na configuração de Administrador do Commerce.
 * Use o Seletor de ativos para procurar e selecionar ativos da AEM Assets.
 
-Se nenhum dos perfis estiver configurado, os usuários poderão inserir manualmente a **ID do Programa** e a **ID do Ambiente**, mas o Seletor de Ativos não estará disponível.
+Se nenhum dos perfis estiver configurado, o Seletor de ativos não estará disponível. Se sua configuração exibir campos separados **ID do Programa** e **ID do Ambiente**, você poderá inserir os identificadores manualmente.
 
 ## Conceder permissões por tipo de implantação
 
@@ -83,7 +87,7 @@ Adicione o usuário ao **perfil de produto Usuários do AEM Assets DM OpenAPI - 
 
 A **ID do Cliente IMS** é necessária para que o PaaS habilite o Seletor de Ativos. Consulte [Configurar o projeto do AEM Assets](configure-aem.md#prerequisites) para obter os pré-requisitos, incluindo como obter a ID do cliente IMS ao habilitar o Dynamic Media com OpenAPI.
 
-Para usar o Seletor de ativos e os campos de configuração preenchidos automaticamente (ID do programa, ID do ambiente, Mapeamento de domínio):
+Para usar o Seletor de ativos e os menus suspensos **Ambiente AEM** e **Mapeamento de domínio AEM**:
 
 1. [Habilite o Adobe IMS para Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/admin/ims/adobe-ims-config){target=_blank} para que o Administrador do Commerce use a autenticação IMS e possa ler os perfis de produto do Admin Console do usuário.
 
@@ -91,7 +95,7 @@ Para usar o Seletor de ativos e os campos de configuração preenchidos automati
 
 1. No [Adobe Admin Console](https://adminconsole.adobe.com/), adicione o usuário ao **perfil de produto Usuários do AEM Assets DM OpenAPI - entrega**, ou ao perfil de produto **autor** como um fallback.
 
-Sem o IMS, ainda é possível configurar a integração inserindo manualmente a ID do programa e a ID do ambiente no Administrador do Commerce.
+Para configurações que exibem campos separados ID do programa e ID do ambiente, a entrada manual está disponível sem IMS. Consulte [Configurar a integração](setup-synchronization.md).
 
 >[!ENDTABS]
 

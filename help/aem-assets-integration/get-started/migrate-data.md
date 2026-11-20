@@ -24,9 +24,9 @@ topic_v2:
     internal-label: Metadata
   - id: da3860b0-d637-47df-bef0-273751180266
     internal-label: Digital asset management
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1055'
 ht-degree: 0%
 ---
 # Migrar arquivos de mídia para o AEM Assets DAM
@@ -42,6 +42,10 @@ O Adobe Commerce e o Adobe Experience Manager (AEM) fornecem recursos integrados
 | **Conta de Armazenamento na Nuvem** | <ul><li>Conta de armazenamento AWS S3 ou Azure Blob</li><li>Configuração privada de container/bucket</li><li>Credenciais de autenticação</li></ul> |
 | **Conteúdo do Source** | <ul><li>Arquivos de mídia organizados prontos para migração</li><li>Arquivos de imagem e vídeo em <a href="https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/file-format-support#image-formats">formatos com suporte no AEM Assets</a>.</li><li>Ativos limpos e duplicados</li></li> |
 | **Preparação de Metadados** | <ul><li><a href="configure-aem.md">Perfil de metadados do AEM Assets configurado para ativos do Commerce</a></li><li>Valores de metadados mapeados para cada ativo</li><li>Editor de arquivos CSV (por exemplo, Microsoft Excel)</li></ul> |
+
+>[!IMPORTANT]
+>
+>As operações de Upload em massa e Metadados em massa não exigem o AEM Assets Ultimate por si só. Fluxos de trabalho de migração programática ou de metadados que exigem APIs do AEM Assets, incluindo entrada e saída de metadados com base em API, exigem o AEM Assets Ultimate. Antes de escolher um método de migração, revise os [Limites visuais de produto](../../optimizer/boundaries-limits.md#product-visuals-limits).
 
 ## Práticas recomendadas de migração
 
@@ -159,4 +163,4 @@ Veja a seguir uma visão geral de alto nível sobre o uso da ferramenta.
 >
 > [Demonstração de vídeo da ferramenta de Importação em massa](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/manage/add-assets#asset-bulk-ingestor)
 > [Dicas, práticas recomendadas e limitações](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/manage/add-assets#tips-limitations)
-> [Carregar ou assimilar ativos usando APIs](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload)
+> [Carregue ou assimile ativos usando APIs](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis#asset-upload) - Revise [Limites de visuais de produto](../../optimizer/boundaries-limits.md#product-visuals-limits) antes de implementar uma migração orientada por API.

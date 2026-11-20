@@ -37,9 +37,9 @@ topic_v2:
     internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1188'
 ht-degree: 1%
 ---
 # Integração do AEM Assets para o Commerce
@@ -65,6 +65,8 @@ A integração do AEM Assets soluciona esse desafio automatizando os fluxos de t
 * **Notificações de atualização de extensão** - Com a extensão de Integração do AEM Assets versão 1.4.6 ou posterior, a Commerce verifica novas versões de extensão e notifica os administradores no Administrador. Consulte [Verificar atualizações de extensão](get-started/check-for-updates.md).
 
 A localização de texto alternativo não altera a atribuição de imagem do produto ou o mapeamento de galeria. A disponibilidade do ativo de visualização de armazenamento é um recurso separado e não é coberto pelo fluxo de trabalho de texto alternativo.
+
+Visualizações de produtos viabilizadas pelo AEM Assets oferecem suporte a casos de uso de gerenciamento de ativos com foco na Commerce no Adobe Commerce as a Cloud Service e no Adobe Commerce Optimizer. Para obter recursos compatíveis, limites de capacidade e recursos que exigem o AEM Assets Ultimate, consulte [Limites de elementos visuais de produto](../optimizer/boundaries-limits.md#product-visuals-limits).
 
 ## Requisitos para usar a integração
 
@@ -142,7 +144,7 @@ Selecione sua implantação para seguir as etapas necessárias em ordem:
 
 1. Para oferecer suporte aos metadados do Commerce, [configure o projeto do AEM Assets](get-started/configure-aem.md). Na versão `2026.5.26309` e posterior do AEM, use o [autoatendimento de integração](get-started/configure-aem.md#enable-aem-commerce-self-service); em versões anteriores, instale o pacote `assets-commerce` manualmente.
 
-1. [Configure as permissões de usuário do IMS](get-started/permissions.md) para que o Seletor de ativos e os campos **[!UICONTROL Program ID]** e **[!UICONTROL Environment ID]** preenchidos automaticamente estejam disponíveis.
+1. [Configure as permissões de usuário do IMS](get-started/permissions.md) para o Seletor de ativos e para a seleção de domínio e ambiente do AEM.
 
 1. [Configurar a integração no Administrador do Commerce](get-started/setup-synchronization.md).
 
@@ -156,13 +158,17 @@ Selecione sua implantação para seguir as etapas necessárias em ordem:
 
 1. [Instale pacotes do Adobe Commerce](get-started/configure-commerce.md) para adicionar a extensão e gerar as credenciais e conexões necessárias.
 
-1. [Configure as permissões de usuário do IMS](get-started/permissions.md) para que o Seletor de ativos e os campos **[!UICONTROL Program ID]** e **[!UICONTROL Environment ID]** preenchidos automaticamente estejam disponíveis.
+1. [Configure as permissões de usuário do IMS](get-started/permissions.md) para o Seletor de ativos e para a seleção de domínio e ambiente do AEM.
 
 1. [Configurar a integração no Administrador do Commerce](get-started/setup-synchronization.md).
 
 1. Opcional. [Habilite a exibição da imagem do produto](get-started/configure-storefront.md#enable-product-images) para que uma vitrine gerenciada pela Edge Delivery Services renderize imagens do produto gerenciadas pela AEM.
 
 >[!ENDTABS]
+
+Após concluir a instalação, [verifique a integração](get-started/setup-synchronization.md#verify-the-integration) de um ativo qualificado e aprovado por meio da associação e da sincronização do produto com a exibição da loja. Para o Adobe Commerce Optimizer, siga o [Fluxo de trabalho de verificação do Otimizador](get-started/configure-aco.md#match-by-sku-workflow-example); o Status de Sincronização não está disponível.
+
+Para atribuição e verificação de imagem de categoria, consulte [Gerenciar imagens de categoria](manage-assets.md#category-images).
 
 ## Suporte
 

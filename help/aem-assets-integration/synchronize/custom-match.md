@@ -22,18 +22,22 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '1015'
 ht-degree: 0%
 ---
 # Correspondência automática personalizada
 
 Se a estratégia de correspondência automática padrão (**correspondência automática OOTB**) não estiver alinhada aos seus requisitos de negócios específicos, selecione a opção de correspondência personalizada. Esta opção oferece suporte ao uso do [Adobe Developer App Builder](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder) para desenvolver um aplicativo de correspondência personalizado que lida com lógica de correspondência complexa ou com ativos provenientes de um sistema de terceiros que não pode preencher metadados no AEM Assets.
 
+>[!NOTE]
+>
+>Se sua correspondência personalizada ou integração do Adobe Developer App Builder exigir APIs do AEM Assets para gerenciar ativos ou metadados de forma programática, será necessário um direito ao AEM Assets Ultimate. Esse requisito depende das APIs que o aplicativo usa, não somente do uso do App Builder. Consulte [Limites visuais de produto](../../optimizer/boundaries-limits.md#product-visuals-limits).
+
 ## Configurar correspondência automática personalizada
 
-1. No Administrador do Commerce, navegue até **[!UICONTROL Store]** > Configuração > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
+1. No Administrador do Commerce, navegue até **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
 1. Selecione **[!UICONTROL Custom Matcher]** como regra de correspondência.
 
@@ -128,6 +132,10 @@ Você pode baixar o arquivo `workspace.json` da [Adobe Developer Console](https:
 1. Selecione as ações de tempo de execução apropriadas nos menus suspensos para cada fluxo.
 
 1. Clique em **[!UICONTROL Save Config]**.
+
+Depois que a configuração for aplicada, [verifique a integração](../get-started/setup-synchronization.md#verify-the-integration) com um ativo aprovado e um produto ao qual o correspondente personalizado está associado.
+
+[!BADGE Somente PaaS]{type=Informative tooltip="Aplicável a projetos do Adobe Commerce na nuvem somente (infraestrutura do PaaS gerenciada pela Adobe)."} Se a sincronização falhar, examine os [logs de integração](../get-started/logs.md).
 
 ## Salvar configuração assíncrona
 

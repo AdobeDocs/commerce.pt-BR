@@ -26,9 +26,9 @@ role_v2:
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
     internal-label: Optimization
-source-git-commit: 76e77db86adecdbd3be76040970c0d0899c34cdc
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '664'
 ht-degree: 0%
 ---
 # Configurar a vitrine eletrônica
@@ -52,6 +52,8 @@ Para habilitar a integração em vitrines do Commerce viabilizadas pelo Edge Del
 Os menus suspensos do Commerce detectam automaticamente a configuração `commerce-assets-enabled` e ajustam o tratamento da imagem de acordo.
 
 Para obter mais informações sobre como usar o AEM Assets com a Commerce Storefront habilitada pela Edge Delivery Services, consulte o tópico [integração com o AEM Assets](https://experienceleague.adobe.com/en/tools/commerce-storefront/setup/configuration/aem-assets-configuration/) na documentação da *Adobe Commerce Storefront*.
+
+Depois de salvar a configuração da vitrine eletrônica, [verifique a integração](setup-synchronization.md#verify-the-integration) com um ativo aprovado associado a um produto. Confirme se a imagem esperada aparece na loja. Caso contrário, verifique a associação do produto, o Proprietário da visualização e o resultado da sincronização antes de solucionar problemas da entrega de imagens da loja. Para o Adobe Commerce Optimizer, siga o [Fluxo de trabalho de verificação do Otimizador](configure-aco.md#match-by-sku-workflow-example).
 
 >[!TIP]
 >

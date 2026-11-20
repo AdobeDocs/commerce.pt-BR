@@ -21,9 +21,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 9b3448a40c2e829e09de5e394b0972c527ee0e9b
+source-git-commit: 5e9c42e5c93ac81604aa38bf3e55c5df729650a0
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '567'
 ht-degree: 0%
 ---
 
@@ -35,11 +35,11 @@ As Visualizações de produto permitem que os comerciantes do [!DNL Adobe Commer
 >
 >**Visuais de Produto** é o nome do conjunto fornecido com [!DNL Adobe Commerce as a Cloud Service] e [!DNL Adobe Commerce Optimizer]. Ele combina o [Dynamic Media com recursos OpenAPI](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/dynamic-media-open-apis-overview) e o [AEM Assets Prime](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/assets-prime).
 >
->Clientes com uma licença diferente do AEM Assets (por exemplo, **AEM Assets Ultimate**) podem usar a mesma integração; somente a versão do AEM afeta as etapas de integração, não o tipo de licença.
+>Clientes com uma licença diferente do AEM Assets, como o [AEM Assets Ultimate](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview), podem usar a mesma integração. O Ultimate não está incluído nas Visualizações de produto e requer um SKU complementar do AEM Assets Ultimate. Entre em contato com o representante de conta da Adobe para obter licenciamento e provisionamento. A versão do AEM determina o método de integração; os recursos e ambientes disponíveis dependem do direito. Consulte [Limites visuais de produto](../boundaries-limits.md#product-visuals-limits).
 
 ## Principais benefícios
 
-* **Gerenciamento centralizado de ativos**: gerencie todas as imagens de produtos na AEM Assets, a solução de gerenciamento de ativos digitais de nível empresarial.
+* **Gerenciamento centralizado de ativos**: gerencie imagens de produtos no AEM Assets para casos de uso de gerenciamento de ativos com foco na Commerce.
 * **Sincronização automática**: as imagens do produto são sincronizadas automaticamente quando os ativos são aprovados ou atualizados no AEM Assets.
 * **Entrega do Dynamic Media**: aproveite o Dynamic Media com recursos OpenAPI para entrega otimizada de imagens.
 * **Camadas do catálogo**: as imagens do produto são aplicadas como uma camada do catálogo, permitindo que você sobreponha imagens do AEM Assets no catálogo base.
@@ -62,7 +62,7 @@ Consulte [Configurar AEM Assets](../../aem-assets-integration/get-started/config
 
 ## Limitação
 
-Para alocações de capacidade e uso (armazenamento de ativos, operações do Dynamic Media, licenças de usuário), consulte [Limites de elementos visuais de produto](../boundaries-limits.md#product-visuals-limits) no _guia de Limites_.
+Para obter direitos de recurso, capacidade e alocações de uso (armazenamento de ativos, operações do Dynamic Media, licenças de usuário), consulte [Limites de elementos visuais de produto](../boundaries-limits.md#product-visuals-limits) no _guia de Limites e Limites_.
 
 ## Uso de visuais de produto
 
