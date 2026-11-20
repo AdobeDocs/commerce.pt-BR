@@ -2,7 +2,7 @@
 title: Limites e limites do Adobe Commerce Optimizer
 description: Saiba mais sobre limites de licença e limites do sistema do Adobe Commerce Optimizer. Planeje a capacidade, rastreie o uso e evite latência e limitação quando os limites forem excedidos.
 role: Admin, Developer
-badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente ao Adobe Commerce as a Cloud Service e a projetos [!DNL Adobe Commerce Optimizer] (infraestrutura SaaS gerenciada pela Adobe)."
+badgeSaas: label="Somente SaaS" type="Positive" url="https://experienceleague.adobe.com/pt-br/docs/commerce/user-guides/product-solutions" tooltip="Aplicável somente ao Adobe Commerce as a Cloud Service e a projetos [!DNL Adobe Commerce Optimizer] (infraestrutura SaaS gerenciada pela Adobe)."
 exl-id: 58d94da9-8d48-4513-8b6a-8e8c7c27a2a5
 nudge: true
 product_v2:
@@ -31,7 +31,7 @@ Sua utilização deve permanecer dentro desses limites. Excedê-los pode causar 
 
 Os limites de licença podem ser aumentados adquirindo os pacotes de licença descritos na seção [Limites de licença e limites do sistema](#license-limits-and-system-boundaries) ou negociando o licenciamento personalizado para casos de uso exclusivos. Entre em contato com seu representante de conta da Adobe para discutir suas necessidades.
 
-Em caso de dúvidas sobre os limites do sistema, contate o [Suporte da Adobe](https://experienceleague.adobe.com/home?lang=en#support).
+Em caso de dúvidas sobre os limites do sistema, contate o [Suporte da Adobe](https://experienceleague.adobe.com/home?lang=pt-BR#support).
 
 ## Evitar problemas de desempenho
 
@@ -128,7 +128,7 @@ O AEM Assets Ultimate é necessário para:
 
 Esses requisitos não excluem o Dynamic Media com recursos OpenAPI incluídos nas Visualizações de produto para entrega de ativos. O uso do App Builder por si só não requer o AEM Assets Ultimate; o requisito depende das APIs do AEM Assets que o aplicativo usa.
 
-Para obter mais informações sobre DAM corporativo, API, extensibilidade e requisitos da cadeia de fornecimento de conteúdo além das Visualizações do Produto, consulte [AEM Assets Ultimate](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview).
+Para obter mais informações sobre DAM corporativo, API, extensibilidade e requisitos da cadeia de fornecimento de conteúdo além das Visualizações do Produto, consulte [AEM Assets Ultimate](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/assets-ultimate-overview).
 
 ### Exibições e políticas do catálogo
 
@@ -191,7 +191,7 @@ Os recursos a seguir estão disponíveis para recomendações de produtos. Algun
 
 | **Recurso** | **Descrição** | **Alocação base** | **Expansível?** | **Notas** |
 | --- | --- | --- | --- | --- |
-| Adobe Developer App Builder | Capacidade para criar extensões e integrações nativas em nuvem | Com base no nível de GMV<p>Alocação mínima: 1 pacote/ano</p> | Sim<p>Adicionar pacotes adicionais</p> | Para obter os limites definidos por pacote, consulte:<ul><li>[Descrição de produto do App Builder](https://helpx.adobe.com/legal/product-descriptions/adobe-developer-app-builder.html) para limites definidos por pacote.</li><li>[Limitações e configurações do sistema](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) nos *Guias do App Builder Runtime*.</li><li>[Requisitos de armazenamento do App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
+| Adobe Developer App Builder | Capacidade para criar extensões e integrações nativas em nuvem | Com base no nível de GMV<p>Alocação mínima: 1 pacote/ano</p> | Sim<p>Adicionar pacotes adicionais</p> | Para obter os limites definidos por pacote, consulte:<ul><li>[Descrição de produto do App Builder](https://helpx.adobe.com/br/legal/product-descriptions/adobe-developer-app-builder.html) para limites definidos por pacote.</li><li>[Limitações e configurações do sistema](https://developer.adobe.com/app-builder/docs/guides/runtime_guides/system-settings) nos *Guias do App Builder Runtime*.</li><li>[Requisitos de armazenamento do App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/)</li></ul> |
 
 {style="table-layout:auto"}
 

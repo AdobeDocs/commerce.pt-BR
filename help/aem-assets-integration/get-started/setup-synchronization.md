@@ -38,7 +38,7 @@ Configure a integração conectando o Commerce à instância do AEM Assets e sel
 
 Depois de identificar o projeto do AEM Assets, selecione a regra de correspondência para sincronizar ativos entre o Adobe Commerce e o AEM Assets.
 
-* **[!UICONTROL Match by product SKU]** — Regra padrão que corresponde ao SKU nos metadados do ativo com o [SKU do produto Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#sku) para garantir que os ativos estejam associados aos produtos corretos.
+* **[!UICONTROL Match by product SKU]** — Regra padrão que corresponde ao SKU nos metadados do ativo com o [SKU do produto Commerce](https://experienceleague.adobe.com/pt-br/docs/commerce-operations/implementation-playbook/glossary#sku) para garantir que os ativos estejam associados aos produtos corretos.
 
 * **[!UICONTROL Custom match]** — Regra de correspondência para cenários mais complexos ou requisitos de negócios específicos que exigem lógica de correspondência personalizada. A implementação da correspondência personalizada requer o desenvolvimento de código personalizado no Adobe Developer App Builder para definir como os ativos são correspondidos aos produtos. Consulte [Correspondência automática personalizada](../synchronize/custom-match.md).
 
@@ -87,7 +87,7 @@ Antes de configurar a Integração do AEM Assets, verifique se você concluiu as
 1. Selecione uma das regras de correspondência de ativos para sincronização de ativos na lista suspensa **[!UICONTROL Asset matching rule]**.
 
    * Selecione **[!UICONTROL Match by product SKU]** para [correspondência automática padrão](../synchronize/default-match.md).
-   * Selecione **[!UICONTROL Custom match]** para [correspondência automática personalizada](../synchronize/custom-match.md). Esta opção requer [Adobe Developer App Builder](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder).
+   * Selecione **[!UICONTROL Custom match]** para [correspondência automática personalizada](../synchronize/custom-match.md). Esta opção requer [Adobe Developer App Builder](https://experienceleague.adobe.com/pt-br/docs/commerce-learn/tutorials/extensibility/adobe-developer-app-builder/introduction-to-app-builder).
 
 1. Para **[!UICONTROL Match by product SKU]**, insira o [nome da propriedade dos metadados do AEM Assets](../metadata.md) no campo **[!UICONTROL Match by product SKU attribute name]**. O padrão é `commerce:skus`.
 
@@ -135,7 +135,7 @@ A configuração **Proprietário da visualização** determina qual sistema forn
 
 O Administrador exibe as imagens disponíveis para esse proprietário, enquanto o restante das imagens é esmaecido e exibido com um rótulo **oculto**.
 
-Consulte o tópico [definir detalhes da imagem](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank} para obter detalhes sobre o comportamento de exibição da imagem.
+Consulte o tópico [definir detalhes da imagem](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/catalog/products/digital-assets/product-image#set-image-details){target=_blank} para obter detalhes sobre o comportamento de exibição da imagem.
 
 >[!TIP]
 >
@@ -159,7 +159,7 @@ Obtenha do administrador do AEM o URL de domínio personalizado de entrega de at
 
 >[!NOTE]
 >
->Configurar um URL de domínio personalizado não atualiza os URLs de ativos sincronizados anteriormente. Esses ativos retêm suas URLs anteriores até que sejam [reprocessados no AEM Assets](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/reprocessing){target=_blank}. Depois de salvar a configuração de domínio personalizado, reprocesse esses ativos para atualizar seus URLs para usar o domínio personalizado.
+>Configurar um URL de domínio personalizado não atualiza os URLs de ativos sincronizados anteriormente. Esses ativos retêm suas URLs anteriores até que sejam [reprocessados no AEM Assets](https://experienceleague.adobe.com/pt-br/docs/experience-manager-cloud-service/content/assets/manage/reprocessing){target=_blank}. Depois de salvar a configuração de domínio personalizado, reprocesse esses ativos para atualizar seus URLs para usar o domínio personalizado.
 
 1. Navegue até **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL ADOBE SERVICES]** > **[!UICONTROL AEM Assets Integration]**.
 
