@@ -1,6 +1,6 @@
 ---
-title: Modelo de dados de catálogo combinável e serviços de merchandising
-description: Saiba como o Modelo de Dados do Catálogo de Composição altera a entrega do catálogo no [!DNL Adobe Commerce as a Cloud Service] e o que os comerciantes e as equipes de vitrine precisam saber.
+title: Serviços de merchandising com o modelo de dados de catálogo combinável
+description: Saiba como os Serviços de Merchandising com o Modelo de Dados de Catálogo Combinável alteram a entrega do catálogo no [!DNL Adobe Commerce as a Cloud Service] e o que os comerciantes e as equipes de vitrine precisam saber.
 feature: Catalog Management, Personalization, Saas
 role: Leader
 level: Beginner
@@ -61,13 +61,13 @@ topic_v2:
     internal-label: Reporting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
     internal-label: Personalization
-source-git-commit: 0bda134570bb3bf2f43da545917dedc95394df5e
+source-git-commit: 71700f3fc10957ec2b1cccb7df12acd9840c35a1
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '998'
 ht-degree: 0%
 ---
 
-# Serviços de merchandising
+# Serviços de merchandising com o modelo de dados de catálogo combinável
 
 O Adobe Commerce as a Cloud Service agora é compatível com o modelo de dados de catálogo combinável (CCDM) por meio dos Serviços de merchandising. A Adobe Commerce Optimizer apresentou esse modelo de dados, e a CCDM fornece aos dois produtos uma base comum para atender aos recursos de comercialização e navegação do catálogo de vitrines, enquanto a Commerce Foundation continua gerenciando produtos, preços e transações.
 
@@ -75,9 +75,9 @@ Este tópico explica quais alterações ocorrem com o CCDM, quais recursos conti
 
 ## Quais alterações o CCDM apresenta?
 
-O modelo do catálogo original usa o Serviço de catálogo para fornecer dados de produtos para vitrines, com o Live Search e o Product Recommendations fornecendo recursos de pesquisa, merchandising e recomendação. Neste modelo, o Commerce sincroniza usando a [exportação de dados SaaS](https://experienceleague.adobe.com/pt-br/docs/commerce/saas-data-export/overview).
+O modelo do catálogo original usa o [Serviço de Catálogo](https://experienceleague.adobe.com/en/docs/commerce/catalog-service/overview) para fornecer dados do produto para vitrines, com o Live Search e o Product Recommendations fornecendo recursos de pesquisa, merchandising e recomendação. Neste modelo, o Commerce sincroniza dados para a camada de serviços usando a [exportação de dados SaaS](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/overview).
 
-Com a CCDM, esses recursos operam na mesma base de catálogo que capacita o Adobe Commerce Optimizer. [Exibições de catálogo](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view) e [políticas](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/merchandising-with-ccdm/setup/policies) definem o contexto do catálogo disponível para uma vitrine. As políticas determinam a variedade de produtos e as regras de merchandising podem ser aplicadas em todas as exibições de catálogo ou ser personalizadas para uma exibição específica.
+Com a CCDM, esses recursos operam na mesma base de catálogo que capacita o Adobe Commerce Optimizer. [Exibições de catálogo](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/catalog-view) e [políticas](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/setup/policies) definem o contexto do catálogo disponível para uma vitrine. As políticas determinam a variedade de produtos e as regras de merchandising podem ser aplicadas em todas as exibições de catálogo ou ser personalizadas para uma exibição específica.
 
 Isso altera a forma como o catálogo é configurado, acessado e comercializado. O CCDM se baseia nos recursos de pesquisa, recomendações e merchandising do catálogo original do Commerce e, ao mesmo tempo, introduz controles no nível de visualização do catálogo. Os recursos adicionais de gerenciamento e geração de relatórios são descritos abaixo.
 
@@ -85,7 +85,7 @@ A Commerce Foundation continua sendo a fonte canônica de produtos e preços. Os
 
 ## Licenciamento e provisionamento
 
-Os Serviços de merchandising estão incluídos na SKU atual do Adobe Commerce as a Cloud Service. Não é um segundo produto ou assinatura e não requer uma compra, um direito ou um locatário separados da Adobe Commerce Optimizer.
+Os serviços de merchandising com CCDM estão incluídos na SKU atual do Adobe Commerce as a Cloud Service. Não é um segundo produto ou assinatura e não requer uma compra, um direito ou um locatário separados da Adobe Commerce Optimizer.
 
 ## Visão geral da arquitetura
 
@@ -93,19 +93,19 @@ O [!DNL Commerce Foundation] continua sendo o registro principal de produtos e p
 
 As vitrines usam os Serviços de merchandising com suporte do CDM para recuperar dados de catálogo e contexto para navegação, pesquisa, recomendações e merchandising. As solicitações usam o contexto do catálogo para recuperar produtos e preços para o público-alvo desejado. Você continua a gerenciar as configurações de site, armazenamento e exibição de loja no [!DNL Commerce].
 
-O diagrama a seguir mostra a posição dos Serviços de merchandising na arquitetura mais ampla do Adobe Commerce as a Cloud Service.
+O diagrama a seguir mostra a posição dos Serviços de merchandising com o CCDM na arquitetura mais ampla do Adobe Commerce as a Cloud Service.
 
 ![Arquitetura do Commerce mostrando o fluxo de dados do catálogo para os Serviços de Merchandising](./assets/data-flow-ccdm.png){zoomable="yes"}
 
 ## O que há de novo para comerciantes?
 
-O novo modelo permite determinar o escopo das regras de merchandising existentes para todas as exibições de catálogo ou para uma exibição específica. Isso permite aplicar merchandising a cada público-alvo da loja. Saiba como [determinar o escopo de uma regra de merchandising para exibições de catálogo](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/merchandising-with-ccdm/merchandising/rules/add).
+O novo modelo permite determinar o escopo das regras de merchandising existentes para todas as exibições de catálogo ou para uma exibição específica. Isso permite aplicar merchandising a cada público-alvo da loja. Saiba como [determinar o escopo de uma regra de merchandising para exibições de catálogo](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/merchandising/rules/add).
 
-No Administrador, você pode configurar o contexto do catálogo com [!UICONTROL Catalog Views] e [!UICONTROL Policies]. Você também pode usar [!UICONTROL Success Metrics] para revisar receita, conversão, envolvimento, aquisição e taxa de rejeição. Consulte [Métricas de sucesso](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/merchandising-with-ccdm/manage-results/success-metrics) para obter mais detalhes.
+No Administrador, você pode configurar o contexto do catálogo com [!UICONTROL Catalog Views] e [!UICONTROL Policies]. Você também pode usar [!UICONTROL Success Metrics] para revisar receita, conversão, envolvimento, aquisição e taxa de rejeição. Consulte [Métricas de sucesso](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/manage-results/success-metrics) para obter mais detalhes.
 
 ## Considerações antes da adoção
 
-Analise como o modelo CCDM afeta seus fluxos de trabalho de licenciamento, integrações de catálogo, vitrine e administrador antes de adotar os Serviços de merchandising.
+Revise como o modelo CCDM afeta seus fluxos de trabalho de licenciamento, integrações de catálogo, vitrine e administrador antes de adotar os Serviços de merchandising com o CCDM.
 
 ### Gerenciamento e integrações de catálogo
 
@@ -126,7 +126,7 @@ Revise aplicativos e extensões de terceiros que leem dados de catálogo ou cons
 
 ### Experiência do administrador
 
-O Adobe Commerce as a Cloud Service com CCDM usa [[!DNL Adobe Unified Experience]](https://experienceleague.adobe.com/pt-br/docs/commerce-admin/start/admin/admin-unified-experience) (Unified Shell). A Adobe lançou o Unified Shell separadamente do CCDM. As instâncias existentes no modelo original de serviços de catálogo retêm acesso ao Classic e ao Unified Shell.
+O Adobe Commerce as a Cloud Service com CCDM usa [[!DNL Adobe Unified Experience]](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin-unified-experience) (Unified Shell). A Adobe lançou o Unified Shell separadamente do CCDM. As instâncias existentes no modelo original de serviços de catálogo retêm acesso ao Classic e ao Unified Shell.
 
 ### Limites
 
@@ -134,8 +134,12 @@ O modelo CCDM não altera os limites do Adobe Commerce as a Cloud Service. Compa
 
 ## Disponibilidade e migração
 
-As organizações que começam com o Adobe Commerce as a Cloud Service após esta versão recebem Serviços de merchandising por padrão. Se sua organização exigir o modelo original de dados do catálogo, entre em contato com a equipe de conta da Adobe para discutir se uma exceção está disponível.
+As organizações que começam com o Adobe Commerce as a Cloud Service após a versão de 18 de novembro de 2026 incluem Serviços de merchandising com CCDM por padrão. Se sua organização exigir o modelo original de dados do catálogo, entre em contato com a equipe de conta da Adobe para discutir se uma exceção está disponível.
 
 As organizações que tinham o Adobe Commerce as a Cloud Service antes desta versão podem escolher qualquer modelo de catálogo ao [provisionar uma nova instância](./getting-started.md#create-an-instance). Por padrão, o alternador [!UICONTROL Enable CCDM] está desabilitado. Depois que o CCDM é ativado, não é possível desativá-lo.
 
 As instâncias existentes não são alteradas automaticamente. Na disponibilidade geral (GA), não é possível migrar uma instância existente dos serviços de catálogo originais para os Serviços de merchandising.
+
+>[!MORELIKETHIS]
+>
+>* [Guia de Administração do Merchandising Services com o CCDM Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/merchandising-with-ccdm/overview)
